@@ -1,0 +1,60 @@
+{
+  "source": "GeoNames",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "retrieved_utc": "2026-10-18T10:49:14.298246+00:00",
+  "places": 548985,
+  "state_and_union_territory_counts": {
+    "Andaman and Nicobar": 155,
+    "Andhra Pradesh": 26142,
+    "Arunachal Pradesh": 452,
+    "Assam": 1356,
+    "Bihar": 42947,
+    "Chandigarh": 47,
+    "Chhattisgarh": 17732,
+    "Dadra and Nagar Haveli and Daman and Diu": 62,
+    "Delhi": 612,
+    "Goa": 446,
+    "Gujarat": 4449,
+    "Haryana": 7185,
+    "Himachal Pradesh": 21142,
+    "Jammu and Kashmir": 11508,
+    "Jharkhand": 28053,
+    "Karnataka": 31519,
+    "Kerala": 6364,
+    "Ladakh": 482,
+    "Lakshadweep": 10,
+    "Madhya Pradesh": 47811,
+    "Maharashtra": 22337,
+    "Manipur": 237,
+    "Meghalaya": 223,
+    "Mizoram": 231,
+    "Nagaland": 221,
+    "Odisha": 21328,
+    "Puducherry": 220,
+    "Punjab": 11473,
+    "Rajasthan": 19962,
+    "Sikkim": 335,
+    "Tamil Nadu": 40153,
+    "Telangana": 12776,
+    "Tripura": 117,
+    "Uttar Pradesh": 155088,
+    "Uttarakhand": 11589,
+    "West Bengal": 4221
+  },
+  "inputs": {
+    "IN.zip": {
+      "url": "https://download.geonames.org/export/dump/IN.zip",
+      "sha256": "9c099f1149d3948d06ba235b15f4099be165793945c5bb1c9c61e200e811bf60"
+    },
+    "admin1CodesASCII.txt": {
+      "url": "https://download.geonames.org/export/dump/admin1CodesASCII.txt",
+      "sha256": "1da92a6323a5fec3176f3f743bf4cf4040fd56a876da55e46fbca23c863aa60a"
+    },
+    "admin2Codes.txt": {
+      "url": "https://download.geonames.org/export/dump/admin2Codes.txt",
+      "sha256": "985b37390cad51f51b03897e503748db5acddfd9442438532cfab1ac9fd1cbcd"
+    }
+  },
+  "output_sha256": "171f20eec9fc6c546d16f90d9fb890e4070432b346433bb666c28b1917b018cf"
+}

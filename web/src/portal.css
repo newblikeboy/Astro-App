@@ -1,0 +1,382 @@
+/* Dedicated authentication, customer workspace and administration shells. */
+.account-button {
+  text-decoration: none;
+}
+.portal-header {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px max(28px, calc((100vw - 1320px) / 2));
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+.portal-header .brand {
+  flex: 0 1 auto;
+}
+.portal-header .brand strong {
+  font-size: 24px;
+}
+.portal-header .brand-symbol {
+  width: 43px;
+  height: 43px;
+}
+.portal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.portal-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--maroon);
+  min-height: 40px;
+}
+.portal-header-admin {
+  background: #fff;
+}
+.portal-admin-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #fae6d8;
+  color: var(--maroon);
+  border-radius: 7px;
+  font-size: 11px;
+}
+.portal-footer {
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--muted);
+  padding: 20px;
+  font-size: 11px;
+}
+.auth-page {
+  min-height: calc(100dvh - 147px);
+  display: grid;
+  align-items: center;
+  padding: 46px 28px;
+  background: #fcf5f0;
+}
+.auth-layout {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 20px 70px #2d180b08;
+}
+.auth-story {
+  position: relative;
+  background: var(--night);
+  color: #f9ede7;
+  padding: 48px 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.auth-story::after {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border: 1px solid #b77b5533;
+  border-radius: 50%;
+  bottom: -230px;
+  right: -160px;
+  box-shadow:
+    0 0 0 40px #b77b5510,
+    0 0 0 80px #b77b550a;
+  pointer-events: none;
+}
+.auth-story > svg {
+  color: var(--saffron);
+  margin-bottom: 30px;
+}
+.auth-story h2 {
+  font: 600 35px/1.2 var(--display);
+  color: #fff7ef;
+  letter-spacing: -1px;
+  margin: 0 0 18px;
+}
+.auth-story p {
+  color: #e0c7b6;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+.auth-story ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0;
+}
+.auth-story li {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 12px;
+  padding-block: 12px;
+  border-bottom: 1px solid #ffffff17;
+}
+.auth-story li svg {
+  flex-shrink: 0;
+  color: #efbb82;
+}
+.auth-card {
+  padding: 42px;
+  min-width: 0;
+}
+.auth-card-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #fbf0e4;
+  color: var(--action);
+  margin-bottom: 20px;
+}
+.auth-card h1 {
+  color: var(--maroon);
+  margin: 0 0 14px;
+  font: 600 30px/1.25 var(--display);
+  letter-spacing: -0.8px;
+}
+.auth-card form {
+  min-width: 0;
+}
+.auth-card form .modal-intro {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 25px;
+  line-height: 1.8;
+}
+.auth-card label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 18px 0 8px;
+}
+.auth-card input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #e8cebd;
+  border-radius: 9px;
+  padding: 12px 14px;
+  min-height: 49px;
+  background: white;
+  color: var(--ink);
+}
+.auth-card .field-note,
+.auth-card .muted {
+  font-size: 11px;
+  line-height: 1.8;
+}
+.auth-card .notice {
+  margin-block: 18px;
+  font-size: 12px;
+}
+.auth-card .full {
+  margin-top: 20px;
+}
+.auth-legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 22px;
+  color: var(--muted);
+}
+.auth-legal button {
+  background: transparent;
+  padding: 8px 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+.portal-status {
+  min-height: calc(100dvh - 147px);
+  padding: 70px 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.portal-status h1 {
+  font-size: 30px;
+  color: var(--maroon);
+}
+.portal-status p {
+  max-width: 520px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.account-page {
+  min-height: calc(100dvh - 147px);
+  background: #fbf8f6;
+  padding-bottom: 30px;
+}
+.admin-app {
+  min-height: 100dvh;
+  background: #f9f6f4;
+}
+.admin-app main {
+  min-height: calc(100dvh - 147px);
+}
+.admin-app .admin-login {
+  max-width: 500px;
+  margin: 48px auto;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 12px 50px #2d180b07;
+}
+.admin-app .admin-login h1 {
+  font: 600 30px/1.25 var(--display);
+  margin: 14px 0;
+  color: var(--maroon);
+}
+.admin-app .admin-login .eyebrow {
+  font-size: 11px;
+  justify-content: start;
+}
+.admin-app .admin-login form input {
+  min-width: 0;
+}
+.admin-app .admin-login > p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.admin-app .admin-login .notice {
+  margin-top: 24px;
+  font-size: 11px;
+}
+.admin-app .admin-workspace {
+  padding-top: 32px;
+}
+.admin-app .admin-workspace .workspace-heading {
+  margin-top: 0;
+}
+.admin-app .admin-tabs {
+  background: #fff;
+  padding: 7px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  gap: 4px;
+}
+.admin-app .admin-tabs button {
+  border: 0;
+  border-radius: 7px;
+}
+.admin-app .admin-tabs button.active {
+  background: var(--maroon);
+  color: white;
+}
+@media (max-width: 900px) {
+  .auth-story {
+    padding: 36px 26px;
+  }
+  .auth-story h2 {
+    font-size: 29px;
+  }
+  .auth-card {
+    padding: 34px 28px;
+  }
+}
+@media (max-width: 650px) {
+  .portal-header {
+    min-height: 76px;
+    padding: 14px 20px;
+    gap: 12px;
+  }
+  .portal-header .brand strong {
+    font-size: 20px;
+  }
+  .portal-header .brand-symbol {
+    display: none;
+  }
+  .portal-header .brand small {
+    font-size: 7px;
+  }
+  .portal-header-actions {
+    gap: 12px;
+  }
+  .portal-header .language-selector {
+    margin: 0;
+  }
+  .portal-back {
+    width: 30px;
+    justify-content: center;
+  }
+  .portal-back span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+  .portal-admin-label {
+    display: none;
+  }
+  .auth-page {
+    display: block;
+    padding: 28px 16px;
+    min-height: calc(100dvh - 137px);
+  }
+  .auth-layout {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 460px;
+    border-radius: 17px;
+  }
+  .auth-story {
+    display: none;
+  }
+  .auth-card {
+    padding: 28px 23px;
+  }
+  .auth-card h1 {
+    font-size: 27px;
+  }
+  .auth-card-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 20px;
+  }
+  .auth-card form .modal-intro {
+    font-size: 12px;
+  }
+  .portal-status {
+    min-height: calc(100dvh - 137px);
+  }
+  .admin-app .admin-login {
+    width: calc(100% - 32px);
+    padding: 25px 22px;
+    margin-block: 28px;
+  }
+  .admin-app .admin-login h1 {
+    font-size: 27px;
+  }
+  .admin-app .admin-workspace {
+    padding-top: 24px;
+  }
+  .account-page {
+    min-height: calc(100dvh - 137px);
+  }
+}

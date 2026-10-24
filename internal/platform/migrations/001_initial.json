@@ -1,0 +1,9 @@
+{
+ "version":1,
+ "description":"Structured BSON entities and a transaction guard for booking/payment invariants.",
+ "indexes":[
+  {"collection":"records","name":"kind_key_unique","fields":["kind","key"],"unique":true},
+  {"collection":"records","name":"kind_user","fields":["kind","data.value.user_id"],"unique":false},
+  {"collection":"records","name":"kind_status","fields":["kind","data.value.status"],"unique":false}
+ ]
+}

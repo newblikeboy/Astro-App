@@ -1,0 +1,98 @@
+.astro-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  background: #fff0d9;
+  color: #87360d;
+}
+.astro-symbol svg {
+  width: 21px;
+  height: 21px;
+}
+.astro-sun,
+.astro-amrit,
+.astro-abhijit {
+  color: #9c5b17;
+  background: #fff0d9;
+}
+.astro-moon,
+.astro-nakshatra {
+  color: #645383;
+  background: #f1edf8;
+}
+.astro-mars,
+.astro-rog,
+.astro-rahu-kaal {
+  color: #a34b38;
+  background: #fbede7;
+}
+.astro-mercury,
+.astro-shubh,
+.astro-labh {
+  color: #46715e;
+  background: #edf5ef;
+}
+.astro-jupiter {
+  color: #96631e;
+  background: #fbf0db;
+}
+.astro-venus {
+  color: #9a4b70;
+  background: #f9edf3;
+}
+.astro-saturn,
+.astro-ketu,
+.astro-karana {
+  color: #536681;
+  background: #edf1f7;
+}
+.astro-rahu,
+.astro-kaal {
+  color: #726077;
+  background: #f1edf2;
+}
+.planet-identity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.zodiac-identity {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.zodiac-mark {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  color: var(--action);
+}
+.planet-identity > span:last-child {
+  min-width: 0;
+}
+.motion-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.motion-label svg {
+  flex-shrink: 0;
+}
+@media (max-width: 650px) {
+  .planet-identity {
+    gap: 7px;
+  }
+  .planet-identity .astro-symbol {
+    width: 29px;
+    height: 29px;
+    border-radius: 9px;
+  }
+  .planet-identity .astro-symbol svg {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,13 @@
+{
+ "source": "Official Swiss Ephemeris 2.10.03 swetest CLI; -b1.1.2026 -ut0 -solecl/-lunecl -n2; local -b1.1.2020 -solecl -local -geopos; UT1 times labelled Z; compare to UTC with 1-second tolerance",
+ "global": [
+  {"kind":"Solar","type":"Annular","maximum":"2026-02-17T12:11:53.3Z"},
+  {"kind":"Lunar","type":"Total","maximum":"2026-03-03T11:33:41.2Z"},
+  {"kind":"Solar","type":"Total","maximum":"2026-08-12T17:45:59.2Z"},
+  {"kind":"Lunar","type":"Partial","maximum":"2026-08-28T04:12:58.0Z"}
+ ],
+ "local": [
+  {"latitude":28.6139,"longitude":77.209,"type":"Partial","maximum":"2020-06-21T06:31:37.0Z","first":"2020-06-21T04:49:57.5Z","last":"2020-06-21T08:18:35.9Z"},
+  {"latitude":30.3165,"longitude":78.0322,"type":"Annular","maximum":"2020-06-21T06:35:18.1Z","first":"2020-06-21T04:54:01.7Z","last":"2020-06-21T08:20:34.4Z"}
+ ]
+}

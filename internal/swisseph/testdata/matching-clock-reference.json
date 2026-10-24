@@ -1,0 +1,153 @@
+{
+  "source": "Official Swiss2.10.03 swetest CLI; actual UTC clock from1972, documented UT1 convention before1972; sid1 Lahiri, apparent, Swissfiles. AstroSage values are observations, not expected astronomical truth.",
+  "tolerance_degrees": 1e-06,
+  "cases": [
+    {
+      "at": "1995-08-15T05:00:00Z",
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "lagna": 178.4575108,
+      "planets": [
+        {
+          "name": "Sun",
+          "longitude": 118.1199542,
+          "speed": 0.960312
+        },
+        {
+          "name": "Moon",
+          "longitude": 354.9276065,
+          "speed": 12.7987009
+        },
+        {
+          "name": "Mars",
+          "longitude": 171.3216658,
+          "speed": 0.6279875
+        },
+        {
+          "name": "Mercury",
+          "longitude": 135.2654862,
+          "speed": 1.6781352
+        },
+        {
+          "name": "Jupiter",
+          "longitude": 221.970445,
+          "speed": 0.0378251
+        },
+        {
+          "name": "Venus",
+          "longitude": 116.5251071,
+          "speed": 1.2358549
+        },
+        {
+          "name": "Saturn",
+          "longitude": 329.6998126,
+          "speed": -0.0591812
+        },
+        {
+          "name": "Rahu",
+          "longitude": 185.9901023,
+          "speed": -0.052992
+        }
+      ],
+      "astrosage_observed_moon": 354.9202637288697
+    },
+    {
+      "at": "1992-02-29T12:45:00Z",
+      "latitude": 19.076,
+      "longitude": 72.8777,
+      "lagna": 130.5569337,
+      "planets": [
+        {
+          "name": "Sun",
+          "longitude": 316.4362259,
+          "speed": 1.0041271
+        },
+        {
+          "name": "Moon",
+          "longitude": 272.4131479,
+          "speed": 11.7675825
+        },
+        {
+          "name": "Mars",
+          "longitude": 284.9476352,
+          "speed": 0.7696255
+        },
+        {
+          "name": "Mercury",
+          "longitude": 330.6417166,
+          "speed": 1.7449193
+        },
+        {
+          "name": "Jupiter",
+          "longitude": 135.8618677,
+          "speed": -0.1313083
+        },
+        {
+          "name": "Venus",
+          "longitude": 289.6185116,
+          "speed": 1.2346348
+        },
+        {
+          "name": "Saturn",
+          "longitude": 289.0588895,
+          "speed": 0.1108268
+        },
+        {
+          "name": "Rahu",
+          "longitude": 252.9019095,
+          "speed": -0.052992
+        }
+      ],
+      "astrosage_observed_moon": 272.4075916043695
+    },
+    {
+      "at": "1940-01-01T00:00:31Z",
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "lagna": 231.9801624,
+      "planets": [
+        {
+          "name": "Sun",
+          "longitude": 256.3979525,
+          "speed": 1.0191346
+        },
+        {
+          "name": "Moon",
+          "longitude": 150.6535871,
+          "speed": 14.2147618
+        },
+        {
+          "name": "Mars",
+          "longitude": 334.9428482,
+          "speed": 0.6773024
+        },
+        {
+          "name": "Mercury",
+          "longitude": 239.1481465,
+          "speed": 1.4425236
+        },
+        {
+          "name": "Jupiter",
+          "longitude": 338.1321659,
+          "speed": 0.1179536
+        },
+        {
+          "name": "Venus",
+          "longitude": 285.2757286,
+          "speed": 1.2386465
+        },
+        {
+          "name": "Saturn",
+          "longitude": 1.4087643,
+          "speed": 0.007241
+        },
+        {
+          "name": "Rahu",
+          "longitude": 182.5344816,
+          "speed": -0.0529921
+        }
+      ],
+      "astrosage_observed_moon": null
+    }
+  ]
+}

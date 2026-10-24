@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "catalog-ruby",
+    "slug": "ruby",
+    "name": "Ruby",
+    "hindi_name": "माणिक",
+    "kind": "precious",
+    "description": "Ruby is the red variety of corundum, valued for saturated colour and lively reflections. Natural inclusions are common; treatment and clarity strongly influence value.",
+    "hindi_description": "माणिक कोरंडम का लाल प्रकार है, जिसे गहरे रंग और चमक के लिए पसंद किया जाता है। प्राकृतिक समावेशन आम हैं; उपचार और पारदर्शिता से कीमत बदलती है।",
+    "price": 1500000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Oval",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Navratna",
+        "hi": "नवरत्न"
+      },
+      "planet": {
+        "en": "Sun",
+        "hi": "सूर्य"
+      },
+      "mineral": {
+        "en": "Corundum",
+        "hi": "कोरंडम"
+      },
+      "hardness": {
+        "en": "9",
+        "hi": "9"
+      },
+      "color": {
+        "en": "Crimson to pinkish red",
+        "hi": "गहरा लाल से गुलाबी लाल"
+      },
+      "tradition": {
+        "en": "Traditionally linked with the Sun and symbols of confidence, leadership and vitality.",
+        "hi": "परंपरा में सूर्य तथा आत्मविश्वास, नेतृत्व और उत्साह के प्रतीकों से जुड़ा है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Clean gently with lukewarm soapy water and a soft brush. Avoid steam and ultrasonic cleaning until treatments are confirmed.",
+        "hi": "हल्के गुनगुने साबुन पानी और मुलायम ब्रश से साफ करें। उपचार की पुष्टि तक भाप और अल्ट्रासोनिक सफाई से बचें।"
+      },
+      "buying": {
+        "en": "Compare natural, heated and glass-filled rubies separately. Request treatment identification; a sample image does not establish origin or quality.",
+        "hi": "प्राकृतिक, गरम किए गए और काँच भरे माणिक की अलग तुलना करें। उपचार की जाँच लें; नमूना तस्वीर से मूल स्थान या गुणवत्ता तय नहीं होती।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 300000,
+      "source": "https://www.navratan.com/categories/ruby-manik-stone"
+    }
+  },
+  {
+    "id": "catalog-yellow-sapphire",
+    "slug": "yellow-sapphire",
+    "name": "Yellow sapphire",
+    "hindi_name": "पुखराज",
+    "kind": "precious",
+    "description": "Yellow sapphire is yellow corundum, ranging from pale lemon to golden tones. Colour consistency, clarity and disclosed treatments matter more than a name alone.",
+    "hindi_description": "पुखराज पीला कोरंडम है, जिसका रंग हल्के नींबू से सुनहरे तक होता है। समान रंग, पारदर्शिता और बताए गए उपचार नाम से अधिक महत्त्व रखते हैं।",
+    "price": 2500000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Oval",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Navratna",
+        "hi": "नवरत्न"
+      },
+      "planet": {
+        "en": "Jupiter",
+        "hi": "बृहस्पति"
+      },
+      "mineral": {
+        "en": "Corundum",
+        "hi": "कोरंडम"
+      },
+      "hardness": {
+        "en": "9",
+        "hi": "9"
+      },
+      "color": {
+        "en": "Lemon yellow to golden yellow",
+        "hi": "नींबू पीला से सुनहरा पीला"
+      },
+      "tradition": {
+        "en": "Jupiter's traditional Navratna stone, associated with learning, wisdom and guidance.",
+        "hi": "बृहस्पति का पारंपरिक नवरत्न, जिसे विद्या, विवेक और मार्गदर्शन से जोड़ा जाता है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Clean gently with lukewarm soapy water and a soft brush. Avoid steam and ultrasonic cleaning until treatments are confirmed.",
+        "hi": "हल्के गुनगुने साबुन पानी और मुलायम ब्रश से साफ करें। उपचार की पुष्टि तक भाप और अल्ट्रासोनिक सफाई से बचें।"
+      },
+      "buying": {
+        "en": "Ask whether heat, diffusion or other colour enhancement is present. Confirm laboratory findings before paying an origin premium.",
+        "hi": "पूछें कि गरम करना, डिफ्यूज़न या रंग सुधार किया गया है या नहीं। मूल स्थान के लिए अधिक कीमत देने से पहले प्रयोगशाला रिपोर्ट देखें।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 500000,
+      "source": "https://rashiratanbhagya.com/collections/yellow-sapphire-pukhraj-stone"
+    }
+  },
+  {
+    "id": "catalog-emerald",
+    "slug": "emerald",
+    "name": "Emerald",
+    "hindi_name": "पन्ना",
+    "kind": "precious",
+    "description": "Emerald is green beryl, often displaying a natural garden of internal inclusions. A well-proportioned cut brings out its colour; fissures can make it sensitive to impact.",
+    "hindi_description": "पन्ना हरा बेरिल है, जिसमें प्राकृतिक आंतरिक समावेशन अक्सर दिखते हैं। संतुलित कट रंग निखारता है; दरारों के कारण चोट से सावधानी रखें।",
+    "price": 1750000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Emerald cut",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Navratna",
+        "hi": "नवरत्न"
+      },
+      "planet": {
+        "en": "Mercury",
+        "hi": "बुध"
+      },
+      "mineral": {
+        "en": "Beryl",
+        "hi": "बेरिल"
+      },
+      "hardness": {
+        "en": "7.5–8",
+        "hi": "7.5–8"
+      },
+      "color": {
+        "en": "Green to bluish green",
+        "hi": "हरा से नीला हरा"
+      },
+      "tradition": {
+        "en": "Traditionally associated with Mercury, communication, learning and thoughtful expression.",
+        "hi": "परंपरा में बुध, संवाद, अध्ययन और विचारपूर्ण अभिव्यक्ति से जुड़ा है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Use gentle lukewarm soapy water, then dry softly. Avoid ultrasonic cleaners, steam, heat and knocks that can worsen fissures.",
+        "hi": "हल्के गुनगुने साबुन पानी से साफ कर नरमी से सुखाएँ। अल्ट्रासोनिक, भाप, गर्मी और दरार बढ़ाने वाली चोट से बचाएँ।"
+      },
+      "buying": {
+        "en": "Oil and resin filling need disclosure. Compare colour and transparency, and ask the report to identify the extent of clarity enhancement.",
+        "hi": "तेल और रेज़िन भरने की जानकारी लें। रंग व पारदर्शिता की तुलना करें और रिपोर्ट में स्पष्टता सुधार की मात्रा देखें।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 350000,
+      "source": "https://ratnagems.com/emerald-panna-stone-buying-guide/"
+    }
+  },
+  {
+    "id": "catalog-blue-sapphire",
+    "slug": "blue-sapphire",
+    "name": "Blue sapphire",
+    "hindi_name": "नीलम",
+    "kind": "precious",
+    "description": "Blue sapphire is blue corundum, prized for strong colour and durability. Evenly distributed colour and transparent areas help distinguish different quality grades.",
+    "hindi_description": "नीलम नीला कोरंडम है, जिसे रंग और टिकाऊपन के लिए पसंद किया जाता है। समान रंग और पारदर्शी भाग अलग गुणवत्ता स्तर समझने में मदद करते हैं।",
+    "price": 3000000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Oval",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Navratna",
+        "hi": "नवरत्न"
+      },
+      "planet": {
+        "en": "Saturn",
+        "hi": "शनि"
+      },
+      "mineral": {
+        "en": "Corundum",
+        "hi": "कोरंडम"
+      },
+      "hardness": {
+        "en": "9",
+        "hi": "9"
+      },
+      "color": {
+        "en": "Cornflower to deep royal blue",
+        "hi": "हल्का नीला से गहरा शाही नीला"
+      },
+      "tradition": {
+        "en": "Saturn's Navratna stone, traditionally linked with discipline, perseverance and responsibility.",
+        "hi": "शनि का नवरत्न, जिसे परंपरा में अनुशासन, धैर्य और उत्तरदायित्व से जोड़ा जाता है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Clean gently with lukewarm soapy water and a soft brush. Avoid steam and ultrasonic cleaning until treatments are confirmed.",
+        "hi": "हल्के गुनगुने साबुन पानी और मुलायम ब्रश से साफ करें। उपचार की पुष्टि तक भाप और अल्ट्रासोनिक सफाई से बचें।"
+      },
+      "buying": {
+        "en": "Separate natural origin from treatment status. Heating and diffusion affect value; do not infer Kashmir or Ceylon origin from colour alone.",
+        "hi": "प्राकृतिक उत्पत्ति और उपचार की स्थिति अलग समझें। गरम करने और डिफ्यूज़न से कीमत बदलती है; केवल रंग से कश्मीर या सीलोन मूल न मानें।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 600000,
+      "source": "https://www.navratan.com/categories/blue-sapphire-neelam"
+    }
+  },
+  {
+    "id": "catalog-pearl",
+    "slug": "pearl",
+    "name": "Pearl",
+    "hindi_name": "मोती",
+    "kind": "precious",
+    "description": "Pearls form in molluscs and are valued for lustre, surface quality and shape. Natural and cultured pearls are distinct categories; cultured pearls are widely available.",
+    "hindi_description": "मोती सीप जैसे जीवों में बनते हैं और चमक, सतह व आकार से मूल्यवान होते हैं। प्राकृतिक और कल्चर्ड मोती अलग श्रेणियाँ हैं; कल्चर्ड मोती अधिक उपलब्ध हैं।",
+    "price": 250000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Round",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Navratna",
+        "hi": "नवरत्न"
+      },
+      "planet": {
+        "en": "Moon",
+        "hi": "चंद्रमा"
+      },
+      "mineral": {
+        "en": "Organic nacre",
+        "hi": "जैविक नैकर"
+      },
+      "hardness": {
+        "en": "2.5–4.5",
+        "hi": "2.5–4.5"
+      },
+      "color": {
+        "en": "White, cream and soft overtones",
+        "hi": "सफेद, क्रीम और हल्की रंग आभा"
+      },
+      "tradition": {
+        "en": "Traditionally linked with the Moon and symbols of gentleness, reflection and emotional balance.",
+        "hi": "परंपरा में चंद्रमा तथा कोमलता, चिंतन और भावनात्मक संतुलन के प्रतीकों से जुड़ा है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Wipe with a soft damp cloth. Keep away from perfume, acids, harsh cleaners, heat and prolonged soaking; store separately.",
+        "hi": "मुलायम नम कपड़े से पोंछें। इत्र, अम्ल, तेज़ क्लीनर, गर्मी और लंबे समय भिगोने से बचाएँ; अलग रखें।"
+      },
+      "buying": {
+        "en": "Confirm natural or cultured formation, freshwater or saltwater type, diameter and any dyeing. This reference is not a rare Basra-pearl quote.",
+        "hi": "प्राकृतिक या कल्चर्ड, मीठे या खारे पानी का प्रकार, व्यास और रंगाई की जानकारी लें। यह दुर्लभ बसरा मोती की कीमत नहीं है।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 50000,
+      "source": "https://www.navratan.com/categories/pearl-moti-stone"
+    }
+  },
+  {
+    "id": "catalog-amethyst",
+    "slug": "amethyst",
+    "name": "Amethyst",
+    "hindi_name": "जमुनिया",
+    "kind": "semi-precious",
+    "description": "Amethyst is purple quartz, available in soft lavender and richer violet shades. Its accessible pricing makes it popular for jewellery and decorative collections.",
+    "hindi_description": "जमुनिया बैंगनी क्वार्ट्ज है, जो हल्के लैवेंडर से गहरे बैंगनी रंग में मिलता है। अपेक्षाकृत सुलभ कीमत के कारण आभूषण और संग्रह में लोकप्रिय है।",
+    "price": 250000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Cushion",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Alternative & popular gems",
+        "hi": "वैकल्पिक और लोकप्रिय रत्न"
+      },
+      "planet": {
+        "en": "Saturn (alternative tradition)",
+        "hi": "शनि (वैकल्पिक परंपरा)"
+      },
+      "mineral": {
+        "en": "Quartz",
+        "hi": "क्वार्ट्ज"
+      },
+      "hardness": {
+        "en": "7",
+        "hi": "7"
+      },
+      "color": {
+        "en": "Lavender to deep purple",
+        "hi": "लैवेंडर से गहरा बैंगनी"
+      },
+      "tradition": {
+        "en": "Some astrologers use amethyst as an alternative Saturn stone; this is not a mineral equivalent of sapphire.",
+        "hi": "कुछ ज्योतिषी इसे शनि का वैकल्पिक रत्न मानते हैं; खनिज के रूप में यह नीलम के समान नहीं है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Clean gently with lukewarm soapy water and a soft brush. Avoid steam and ultrasonic cleaning until treatments are confirmed.",
+        "hi": "हल्के गुनगुने साबुन पानी और मुलायम ब्रश से साफ करें। उपचार की पुष्टि तक भाप और अल्ट्रासोनिक सफाई से बचें।"
+      },
+      "buying": {
+        "en": "Look for pleasing colour zoning and a balanced cut. Natural quartz and synthetic quartz should be clearly distinguished.",
+        "hi": "आकर्षक रंग वितरण और संतुलित कट देखें। प्राकृतिक और कृत्रिम क्वार्ट्ज का स्पष्ट अंतर बताया जाना चाहिए।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 50000,
+      "source": "https://www.navratan.com/categories/amethyst-stone"
+    }
+  },
+  {
+    "id": "catalog-red-coral",
+    "slug": "red-coral",
+    "name": "Red coral",
+    "hindi_name": "लाल मूंगा",
+    "kind": "precious",
+    "description": "Red coral is an opaque organic gem material, usually polished into a smooth cabochon. Colour, surface uniformity and material identification influence its value.",
+    "hindi_description": "लाल मूंगा अपारदर्शी जैविक रत्न पदार्थ है, जिसे प्रायः चिकने काबोशॉन में पॉलिश करते हैं। रंग, समान सतह और पदार्थ की पहचान से कीमत बदलती है।",
+    "price": 600000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Oval cabochon",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Navratna",
+        "hi": "नवरत्न"
+      },
+      "planet": {
+        "en": "Mars",
+        "hi": "मंगल"
+      },
+      "mineral": {
+        "en": "Organic coral material",
+        "hi": "जैविक प्रवाल पदार्थ"
+      },
+      "hardness": {
+        "en": "3–4",
+        "hi": "3–4"
+      },
+      "color": {
+        "en": "Orange-red to deep red",
+        "hi": "नारंगी लाल से गहरा लाल"
+      },
+      "tradition": {
+        "en": "Mars's traditional Navratna material, associated with courage, action and determination.",
+        "hi": "मंगल का पारंपरिक नवरत्न पदार्थ, जिसे साहस, कर्म और दृढ़ता से जोड़ा जाता है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Wipe with a soft damp cloth. Keep away from perfume, acids, harsh cleaners, heat and prolonged soaking; store separately.",
+        "hi": "मुलायम नम कपड़े से पोंछें। इत्र, अम्ल, तेज़ क्लीनर, गर्मी और लंबे समय भिगोने से बचाएँ; अलग रखें।"
+      },
+      "buying": {
+        "en": "Ask for material identification, dye or impregnation disclosure and documented sourcing. Glass, resin and reconstructed coral are different products.",
+        "hi": "पदार्थ की पहचान, रंगाई या भराव और दस्तावेज़ सहित स्रोत पूछें। काँच, रेज़िन और पुनर्निर्मित मूंगा अलग उत्पाद हैं।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 120000,
+      "source": "https://www.navratan.com/categories/italian-red-coral"
+    }
+  },
+  {
+    "id": "catalog-hessonite",
+    "slug": "hessonite",
+    "name": "Hessonite",
+    "hindi_name": "गोमेद",
+    "kind": "precious",
+    "description": "Hessonite is an orange-brown grossular garnet, often recognised by warm cinnamon tones and a slightly treacly internal appearance.",
+    "hindi_description": "गोमेद नारंगी भूरे रंग का ग्रोसुलर गार्नेट है, जो दालचीनी जैसे गर्म रंग और कभी-कभी शहद जैसी आंतरिक बनावट से पहचाना जाता है।",
+    "price": 600000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Oval",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Navratna",
+        "hi": "नवरत्न"
+      },
+      "planet": {
+        "en": "Rahu",
+        "hi": "राहु"
+      },
+      "mineral": {
+        "en": "Grossular garnet",
+        "hi": "ग्रोसुलर गार्नेट"
+      },
+      "hardness": {
+        "en": "6.5–7.5",
+        "hi": "6.5–7.5"
+      },
+      "color": {
+        "en": "Honey, cinnamon and orange-brown",
+        "hi": "शहद, दालचीनी और नारंगी भूरा"
+      },
+      "tradition": {
+        "en": "The Navratna stone traditionally assigned to Rahu, associated with focus and navigating uncertainty.",
+        "hi": "राहु से जुड़ा पारंपरिक नवरत्न, जिसे एकाग्रता और अनिश्चितता से निपटने के प्रतीकों से जोड़ा जाता है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Clean gently with lukewarm soapy water and a soft brush. Avoid steam and ultrasonic cleaning until treatments are confirmed.",
+        "hi": "हल्के गुनगुने साबुन पानी और मुलायम ब्रश से साफ करें। उपचार की पुष्टि तक भाप और अल्ट्रासोनिक सफाई से बचें।"
+      },
+      "buying": {
+        "en": "Seek an identification report distinguishing garnet from glass or quartz. Compare transparency, cracks and attractive warm colour.",
+        "hi": "गार्नेट को काँच या क्वार्ट्ज से अलग पहचानने वाली रिपोर्ट लें। पारदर्शिता, दरारें और आकर्षक गर्म रंग की तुलना करें।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 120000,
+      "source": "https://www.navratan.com/categories/hessonite-gomed"
+    }
+  },
+  {
+    "id": "catalog-cats-eye",
+    "slug": "cats-eye",
+    "name": "Cat's eye",
+    "hindi_name": "लहसुनिया",
+    "kind": "precious",
+    "description": "Chrysoberyl cat's eye displays a narrow moving band of reflected light across a polished dome. The sharpness and centring of this band are key visual features.",
+    "hindi_description": "क्राइसोबेरिल लहसुनिया की पॉलिश सतह पर रोशनी की पतली चलती पट्टी दिखती है। पट्टी की स्पष्टता और बीच में होना मुख्य दृश्य गुण हैं।",
+    "price": 1500000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Oval cabochon",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Navratna",
+        "hi": "नवरत्न"
+      },
+      "planet": {
+        "en": "Ketu",
+        "hi": "केतु"
+      },
+      "mineral": {
+        "en": "Chrysoberyl",
+        "hi": "क्राइसोबेरिल"
+      },
+      "hardness": {
+        "en": "8.5",
+        "hi": "8.5"
+      },
+      "color": {
+        "en": "Honey to yellowish olive",
+        "hi": "शहद से पीला जैतूनी"
+      },
+      "tradition": {
+        "en": "Ketu's traditional Navratna stone, associated with introspection and spiritual detachment.",
+        "hi": "केतु का पारंपरिक नवरत्न, जिसे आत्मचिंतन और आध्यात्मिक वैराग्य से जोड़ा जाता है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Clean gently with lukewarm soapy water and a soft brush. Avoid steam and ultrasonic cleaning until treatments are confirmed.",
+        "hi": "हल्के गुनगुने साबुन पानी और मुलायम ब्रश से साफ करें। उपचार की पुष्टि तक भाप और अल्ट्रासोनिक सफाई से बचें।"
+      },
+      "buying": {
+        "en": "Confirm chrysoberyl rather than quartz, glass or fibre-optic imitation. Check the eye under a single light and request material identification.",
+        "hi": "क्वार्ट्ज, काँच या फाइबर-ऑप्टिक नकली के बजाय क्राइसोबेरिल की पुष्टि करें। एक प्रकाश में पट्टी देखें और पहचान रिपोर्ट लें।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 300000,
+      "source": "https://www.navratan.com/categories/cats-eye-lehsunia"
+    }
+  },
+  {
+    "id": "catalog-diamond",
+    "slug": "diamond",
+    "name": "Diamond",
+    "hindi_name": "हीरा",
+    "kind": "precious",
+    "description": "Diamond is crystalline carbon, valued using cut, colour, clarity and carat weight. Natural and laboratory-grown diamonds require separate disclosure and pricing.",
+    "hindi_description": "हीरा क्रिस्टलीय कार्बन है, जिसका मूल्य कट, रंग, स्पष्टता और कैरेट वजन से तय होता है। प्राकृतिक और प्रयोगशाला में बने हीरे की जानकारी व कीमत अलग होनी चाहिए।",
+    "price": 25000000,
+    "weight_milli_carat": 1000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Round brilliant",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Navratna",
+        "hi": "नवरत्न"
+      },
+      "planet": {
+        "en": "Venus",
+        "hi": "शुक्र"
+      },
+      "mineral": {
+        "en": "Diamond / carbon",
+        "hi": "हीरा / कार्बन"
+      },
+      "hardness": {
+        "en": "10",
+        "hi": "10"
+      },
+      "color": {
+        "en": "Colourless to near-colourless reference",
+        "hi": "रंगहीन से लगभग रंगहीन संदर्भ"
+      },
+      "tradition": {
+        "en": "Venus's classical Navratna stone, associated with beauty, refinement and artistic expression.",
+        "hi": "शुक्र का शास्त्रीय नवरत्न, जिसे सौंदर्य, परिष्कार और कला से जोड़ा जाता है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Clean gently with lukewarm soapy water and a soft brush. Avoid steam and ultrasonic cleaning until treatments are confirmed.",
+        "hi": "हल्के गुनगुने साबुन पानी और मुलायम ब्रश से साफ करें। उपचार की पुष्टि तक भाप और अल्ट्रासोनिक सफाई से बचें।"
+      },
+      "buying": {
+        "en": "Request an independent grading report, verify its number and distinguish diamond from moissanite. This starter price models a natural-diamond category, not a promised grade.",
+        "hi": "स्वतंत्र ग्रेडिंग रिपोर्ट लें, उसका नंबर जाँचें और मोइसैनाइट से अंतर समझें। शुरुआती कीमत प्राकृतिक हीरे की श्रेणी का उदाहरण है, किसी निश्चित ग्रेड का वादा नहीं।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 25000000,
+      "source": "https://www.ratanmandir.com/blogs/gemstone/diamond-heera-price-in-india-complete-2026-guide"
+    }
+  },
+  {
+    "id": "catalog-white-sapphire",
+    "slug": "white-sapphire",
+    "name": "White sapphire",
+    "hindi_name": "सफेद पुखराज",
+    "kind": "semi-precious",
+    "description": "White sapphire is colourless corundum with silvery brilliance. It is a different mineral from diamond and has its own appearance and price range.",
+    "hindi_description": "सफेद पुखराज रंगहीन कोरंडम है, जिसमें चाँदी जैसी चमक होती है। यह हीरे से अलग खनिज है और इसका रूप व मूल्य सीमा अलग है।",
+    "price": 1500000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Oval",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Alternative & popular gems",
+        "hi": "वैकल्पिक और लोकप्रिय रत्न"
+      },
+      "planet": {
+        "en": "Venus (alternative tradition)",
+        "hi": "शुक्र (वैकल्पिक परंपरा)"
+      },
+      "mineral": {
+        "en": "Corundum",
+        "hi": "कोरंडम"
+      },
+      "hardness": {
+        "en": "9",
+        "hi": "9"
+      },
+      "color": {
+        "en": "Colourless to near-colourless",
+        "hi": "रंगहीन से लगभग रंगहीन"
+      },
+      "tradition": {
+        "en": "Often offered as an alternative Venus stone in some astrological traditions.",
+        "hi": "कुछ ज्योतिष परंपराओं में शुक्र के वैकल्पिक रत्न के रूप में दिया जाता है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Clean gently with lukewarm soapy water and a soft brush. Avoid steam and ultrasonic cleaning until treatments are confirmed.",
+        "hi": "हल्के गुनगुने साबुन पानी और मुलायम ब्रश से साफ करें। उपचार की पुष्टि तक भाप और अल्ट्रासोनिक सफाई से बचें।"
+      },
+      "buying": {
+        "en": "Ask whether it is natural or laboratory-grown and whether it has been treated. Do not compare its optical fire with diamond as if they were identical.",
+        "hi": "पूछें कि यह प्राकृतिक है या प्रयोगशाला में बना है और उपचार किया गया है या नहीं। इसकी प्रकाश चमक को हीरे के समान न मानें।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 300000,
+      "source": "https://www.gemselections.in/blogs/news/diamond-v-s-white-sapphires-know-the-difference"
+    }
+  },
+  {
+    "id": "catalog-opal",
+    "slug": "opal",
+    "name": "Opal",
+    "hindi_name": "ओपल",
+    "kind": "semi-precious",
+    "description": "Precious opal can show moving flashes of colour against a light or dark body. Patterns, brightness and whether the gem is solid or assembled affect its value.",
+    "hindi_description": "कीमती ओपल की हल्की या गहरी सतह पर बदलते रंगों की झलक दिख सकती है। पैटर्न, चमक और ठोस या जोड़े गए प्रकार से कीमत बदलती है।",
+    "price": 750000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Oval cabochon",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Alternative & popular gems",
+        "hi": "वैकल्पिक और लोकप्रिय रत्न"
+      },
+      "planet": {
+        "en": "Venus (alternative tradition)",
+        "hi": "शुक्र (वैकल्पिक परंपरा)"
+      },
+      "mineral": {
+        "en": "Hydrated silica",
+        "hi": "जलयुक्त सिलिका"
+      },
+      "hardness": {
+        "en": "5–6.5",
+        "hi": "5–6.5"
+      },
+      "color": {
+        "en": "Milky white with play of colour",
+        "hi": "रंगों की झलक वाला दूधिया सफेद"
+      },
+      "tradition": {
+        "en": "Some astrologers recommend opal as an alternative Venus stone, associated with creativity and harmony.",
+        "hi": "कुछ ज्योतिषी इसे शुक्र का विकल्प मानते हैं और रचनात्मकता व सामंजस्य से जोड़ते हैं।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Protect from knocks, sudden heat and harsh cleaners. Use a soft damp cloth; avoid steam, ultrasonic cleaning and prolonged soaking.",
+        "hi": "चोट, अचानक गर्मी और तेज़ क्लीनर से बचाएँ। मुलायम नम कपड़ा इस्तेमाल करें; भाप, अल्ट्रासोनिक और लंबे समय भिगोने से बचें।"
+      },
+      "buying": {
+        "en": "Check solid opal versus doublet or triplet, treatment and water absorption behaviour. Different opal types need different care.",
+        "hi": "ठोस ओपल और डबलट या ट्रिपलट, उपचार व पानी सोखने की प्रकृति जाँचें। अलग प्रकारों की देखभाल अलग हो सकती है।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 150000,
+      "source": "https://www.navratan.com/categories/opal-stone"
+    }
+  },
+  {
+    "id": "catalog-citrine",
+    "slug": "citrine",
+    "name": "Citrine",
+    "hindi_name": "सुनैला",
+    "kind": "semi-precious",
+    "description": "Citrine is yellow to orange quartz. It offers warm colour at an accessible price; much commercial citrine is produced by heating other quartz varieties.",
+    "hindi_description": "सुनैला पीले से नारंगी रंग का क्वार्ट्ज है। यह सुलभ कीमत में गर्म रंग देता है; बाज़ार में कई सुनैला अन्य क्वार्ट्ज को गरम करके बनते हैं।",
+    "price": 150000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Cushion",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Alternative & popular gems",
+        "hi": "वैकल्पिक और लोकप्रिय रत्न"
+      },
+      "planet": {
+        "en": "Jupiter (alternative tradition)",
+        "hi": "बृहस्पति (वैकल्पिक परंपरा)"
+      },
+      "mineral": {
+        "en": "Quartz",
+        "hi": "क्वार्ट्ज"
+      },
+      "hardness": {
+        "en": "7",
+        "hi": "7"
+      },
+      "color": {
+        "en": "Pale yellow to amber orange",
+        "hi": "हल्का पीला से अंबर नारंगी"
+      },
+      "tradition": {
+        "en": "Some traditions use citrine as an alternative Jupiter stone; it is not yellow sapphire.",
+        "hi": "कुछ परंपराएँ इसे बृहस्पति का वैकल्पिक रत्न मानती हैं; यह पुखराज नहीं है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Clean gently with lukewarm soapy water and a soft brush. Avoid steam and ultrasonic cleaning until treatments are confirmed.",
+        "hi": "हल्के गुनगुने साबुन पानी और मुलायम ब्रश से साफ करें। उपचार की पुष्टि तक भाप और अल्ट्रासोनिक सफाई से बचें।"
+      },
+      "buying": {
+        "en": "Request clear heat-treatment disclosure and distinguish quartz from yellow sapphire or yellow topaz.",
+        "hi": "गरम करने के उपचार की स्पष्ट जानकारी लें और क्वार्ट्ज को पुखराज या पीले टोपाज़ से अलग समझें।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 30000,
+      "source": "https://www.navratan.com/categories/citrine-stone"
+    }
+  },
+  {
+    "id": "catalog-turquoise",
+    "slug": "turquoise",
+    "name": "Turquoise",
+    "hindi_name": "फिरोज़ा",
+    "kind": "semi-precious",
+    "description": "Turquoise is an opaque blue to greenish-blue gem, sometimes crossed by natural matrix veins. Porosity and stabilisation affect how it should be worn and cleaned.",
+    "hindi_description": "फिरोज़ा अपारदर्शी नीला से हरा नीला रत्न है, जिसमें प्राकृतिक शिराएँ हो सकती हैं। छिद्रयुक्त बनावट और स्थिरीकरण से पहनने व सफाई का तरीका बदलता है।",
+    "price": 250000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Oval cabochon",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Alternative & popular gems",
+        "hi": "वैकल्पिक और लोकप्रिय रत्न"
+      },
+      "planet": {
+        "en": "Varies by tradition",
+        "hi": "परंपरा के अनुसार अलग"
+      },
+      "mineral": {
+        "en": "Hydrated copper-aluminium phosphate",
+        "hi": "जलयुक्त ताँबा-एल्युमिनियम फॉस्फेट"
+      },
+      "hardness": {
+        "en": "5–6",
+        "hi": "5–6"
+      },
+      "color": {
+        "en": "Blue to greenish blue",
+        "hi": "नीला से हरा नीला"
+      },
+      "tradition": {
+        "en": "Worn as a traditional talisman in several cultures; planetary associations differ and are not a universal Navratna assignment.",
+        "hi": "कई संस्कृतियों में पारंपरिक ताबीज़ के रूप में पहना जाता है; ग्रह संबंध अलग हैं और यह सार्वभौमिक नवरत्न संबंध नहीं है।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Wipe with a soft damp cloth. Keep away from perfume, acids, harsh cleaners, heat and prolonged soaking; store separately.",
+        "hi": "मुलायम नम कपड़े से पोंछें। इत्र, अम्ल, तेज़ क्लीनर, गर्मी और लंबे समय भिगोने से बचाएँ; अलग रखें।"
+      },
+      "buying": {
+        "en": "Ask about stabilisation, dye, reconstitution and imitation materials such as dyed howlite. Matrix patterns do not prove geographic origin.",
+        "hi": "स्थिरीकरण, रंगाई, पुनर्निर्माण और रंगे हाउलाइट जैसे नकली पदार्थों के बारे में पूछें। शिराओं से मूल स्थान सिद्ध नहीं होता।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 50000,
+      "source": "https://ratnagems.com/turquoise-firoza/"
+    }
+  },
+  {
+    "id": "catalog-peridot",
+    "slug": "peridot",
+    "name": "Peridot",
+    "hindi_name": "पेरिडॉट",
+    "kind": "semi-precious",
+    "description": "Peridot is gem-quality olivine, recognised by fresh yellow-green tones. Attractive colour, clarity and a cut that avoids dark areas improve its visual appeal.",
+    "hindi_description": "पेरिडॉट रत्न गुणवत्ता का ओलिविन है, जो ताज़े पीले हरे रंग से पहचाना जाता है। आकर्षक रंग, स्पष्टता और अँधेरे भागों से बचने वाला कट सुंदरता बढ़ाता है।",
+    "price": 400000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Oval",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Alternative & popular gems",
+        "hi": "वैकल्पिक और लोकप्रिय रत्न"
+      },
+      "planet": {
+        "en": "Mercury (alternative tradition)",
+        "hi": "बुध (वैकल्पिक परंपरा)"
+      },
+      "mineral": {
+        "en": "Olivine",
+        "hi": "ओलिविन"
+      },
+      "hardness": {
+        "en": "6.5–7",
+        "hi": "6.5–7"
+      },
+      "color": {
+        "en": "Yellowish green to olive green",
+        "hi": "पीला हरा से जैतूनी हरा"
+      },
+      "tradition": {
+        "en": "Used by some astrologers as an alternative Mercury stone, with associations of learning and fresh perspectives.",
+        "hi": "कुछ ज्योतिषी इसे बुध का विकल्प मानते हैं और अध्ययन व नए दृष्टिकोण से जोड़ते हैं।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Protect from knocks, sudden heat and harsh cleaners. Use a soft damp cloth; avoid steam, ultrasonic cleaning and prolonged soaking.",
+        "hi": "चोट, अचानक गर्मी और तेज़ क्लीनर से बचाएँ। मुलायम नम कपड़ा इस्तेमाल करें; भाप, अल्ट्रासोनिक और लंबे समय भिगोने से बचें।"
+      },
+      "buying": {
+        "en": "Check colour, visible inclusions and edge condition. Peridot is distinct from emerald and green glass.",
+        "hi": "रंग, दिखाई देने वाले समावेशन और किनारों की स्थिति देखें। पेरिडॉट पन्ना और हरे काँच से अलग है।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 80000,
+      "source": "https://www.navratan.com/categories/peridot-stone"
+    }
+  },
+  {
+    "id": "catalog-moonstone",
+    "slug": "moonstone",
+    "name": "Moonstone",
+    "hindi_name": "चंद्रमणि",
+    "kind": "semi-precious",
+    "description": "Moonstone is a feldspar gem displaying a floating sheen called adularescence. Cabochon cutting brings this effect across the curved surface.",
+    "hindi_description": "चंद्रमणि फेल्डस्पार रत्न है, जिसमें तैरती आभा को एड्युलरेसेंस कहते हैं। काबोशॉन कट घुमावदार सतह पर इस प्रभाव को उभारता है।",
+    "price": 300000,
+    "weight_milli_carat": 5000,
+    "stock": 10,
+    "available": 10,
+    "origin": "Not verified — sample listing",
+    "material": "not-specified",
+    "treatment": "Not assessed — confirm for actual stock",
+    "shape": "Oval cabochon",
+    "dimensions": "To be measured for actual stock",
+    "image": "",
+    "certificate_lab": "",
+    "certificate_no": "",
+    "certificate_url": "",
+    "status": "published",
+    "version": 1,
+    "preview": false,
+    "sample": true,
+    "updated": "2026-10-20T00:00:00Z",
+    "details": {
+      "group": {
+        "en": "Alternative & popular gems",
+        "hi": "वैकल्पिक और लोकप्रिय रत्न"
+      },
+      "planet": {
+        "en": "Moon (alternative tradition)",
+        "hi": "चंद्रमा (वैकल्पिक परंपरा)"
+      },
+      "mineral": {
+        "en": "Feldspar",
+        "hi": "फेल्डस्पार"
+      },
+      "hardness": {
+        "en": "6–6.5",
+        "hi": "6–6.5"
+      },
+      "color": {
+        "en": "Milky translucent with blue-white sheen",
+        "hi": "नीली सफेद आभा वाला दूधिया पारदर्शी"
+      },
+      "tradition": {
+        "en": "Some traditions treat moonstone as an alternative Moon stone, associated with reflection and gentleness.",
+        "hi": "कुछ परंपराएँ इसे चंद्रमा का विकल्प मानती हैं और चिंतन व कोमलता से जोड़ती हैं।"
+      },
+      "wearing": {
+        "en": "Ring or pendant options depend on your preference and consultation. Metal, finger, timing and weight are individual choices; this sample weight is not a prescription.",
+        "hi": "अंगूठी या पेंडेंट आपकी पसंद और परामर्श पर निर्भर हैं। धातु, उँगली, समय और वजन व्यक्तिगत चुनाव हैं; नमूना वजन पहनने की सलाह नहीं है।"
+      },
+      "care": {
+        "en": "Protect from knocks, sudden heat and harsh cleaners. Use a soft damp cloth; avoid steam, ultrasonic cleaning and prolonged soaking.",
+        "hi": "चोट, अचानक गर्मी और तेज़ क्लीनर से बचाएँ। मुलायम नम कपड़ा इस्तेमाल करें; भाप, अल्ट्रासोनिक और लंबे समय भिगोने से बचें।"
+      },
+      "buying": {
+        "en": "Assess the sheen under moving light and check for fractures. Trade names including rainbow moonstone may describe different feldspar varieties.",
+        "hi": "बदलती रोशनी में आभा और दरारें देखें। रेनबो मूनस्टोन जैसे व्यापारिक नाम अलग फेल्डस्पार प्रकारों के लिए हो सकते हैं।"
+      }
+    },
+    "reference": {
+      "checked_at": "2026-10-20",
+      "rate_paise_per_carat": 60000,
+      "source": "https://www.navratan.com/categories/moonstone-chandramani"
+    }
+  }
+]

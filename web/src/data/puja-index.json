@@ -1,0 +1,380 @@
+[
+  {
+    "slug": "diwali",
+    "kind": "festival",
+    "title": {
+      "en": "Diwali Puja",
+      "hi": "दीपावली पूजा"
+    },
+    "description": {
+      "en": "A household sequence for the festival of lights.",
+      "hi": "दीपोत्सव पर घर में पूजन का सरल क्रम।"
+    },
+    "art": "lakshmi",
+    "related": "/bhakti/aarti/lakshmi-mata-aarti"
+  },
+  {
+    "slug": "lakshmi",
+    "kind": "deity",
+    "title": {
+      "en": "Lakshmi Puja",
+      "hi": "लक्ष्मी पूजा"
+    },
+    "description": {
+      "en": "Offerings and prayer to Shri Mahalakshmi.",
+      "hi": "श्री महालक्ष्मी के पूजन और अर्पण का क्रम।"
+    },
+    "art": "lakshmi",
+    "related": "/bhakti/aarti/lakshmi-mata-aarti"
+  },
+  {
+    "slug": "ganesha",
+    "kind": "deity",
+    "title": {
+      "en": "Ganesha Puja",
+      "hi": "गणेश पूजा"
+    },
+    "description": {
+      "en": "A simple beginning with Shri Ganapati.",
+      "hi": "श्री गणपति के साथ मंगल पूजन का आरंभ।"
+    },
+    "art": "ganesha",
+    "related": "/bhakti/mantra/lord-ganesha-mantras"
+  },
+  {
+    "slug": "shiva",
+    "kind": "deity",
+    "title": {
+      "en": "Shiva Puja",
+      "hi": "शिव पूजा"
+    },
+    "description": {
+      "en": "Abhisheka and offerings to Lord Shiva.",
+      "hi": "भगवान शिव का अभिषेक और पूजन।"
+    },
+    "art": "shiva",
+    "related": "/bhakti/aarti/lord-shiva-aarti"
+  },
+  {
+    "slug": "maha-shivaratri",
+    "kind": "festival",
+    "title": {
+      "en": "Maha Shivaratri Puja",
+      "hi": "महाशिवरात्रि पूजा"
+    },
+    "description": {
+      "en": "Night worship and remembrance of Shiva.",
+      "hi": "शिव की रात्रि पूजा और नाम-स्मरण।"
+    },
+    "art": "shiva",
+    "related": "/bhakti/chalisa/shiva-chalisa"
+  },
+  {
+    "slug": "kubera",
+    "kind": "deity",
+    "title": {
+      "en": "Kubera Puja",
+      "hi": "कुबेर पूजा"
+    },
+    "description": {
+      "en": "Remember the guardian of wealth with gratitude.",
+      "hi": "धनाध्यक्ष कुबेर का कृतज्ञतापूर्वक पूजन।"
+    },
+    "art": "kubera",
+    "related": "/bhakti/aarti/lord-kubera-aarti"
+  },
+  {
+    "slug": "rama-navami",
+    "kind": "festival",
+    "title": {
+      "en": "Rama Navami Puja",
+      "hi": "राम नवमी पूजा"
+    },
+    "description": {
+      "en": "Celebrate the birth of Shri Rama.",
+      "hi": "श्री राम के जन्मोत्सव का पूजन।"
+    },
+    "art": "rama",
+    "related": "/bhakti/aarti/shree-rama-aarti"
+  },
+  {
+    "slug": "krishna-janmashtami",
+    "kind": "festival",
+    "title": {
+      "en": "Krishna Janmashtami Puja",
+      "hi": "कृष्ण जन्माष्टमी पूजा"
+    },
+    "description": {
+      "en": "Worship Balakrishna at the birth celebration.",
+      "hi": "जन्मोत्सव पर बालकृष्ण का पूजन।"
+    },
+    "art": "krishna",
+    "related": "/bhakti/aarti/shree-krishna-aarti"
+  },
+  {
+    "slug": "holi",
+    "kind": "festival",
+    "title": {
+      "en": "Holi & Holika Puja",
+      "hi": "होली और होलिका पूजा"
+    },
+    "description": {
+      "en": "Offer prayer before the community Holika Dahan.",
+      "hi": "सामुदायिक होलिका दहन से पहले पूजन।"
+    },
+    "art": "fire",
+    "related": "/bhakti/mantra/lord-narasimha-mantras"
+  },
+  {
+    "slug": "saraswati",
+    "kind": "deity",
+    "title": {
+      "en": "Saraswati Puja",
+      "hi": "सरस्वती पूजा"
+    },
+    "description": {
+      "en": "Worship the Goddess of learning and the arts.",
+      "hi": "विद्या और कला की देवी का पूजन।"
+    },
+    "art": "saraswati",
+    "related": "/bhakti/aarti/saraswati-mata-aarti"
+  },
+  {
+    "slug": "karwa-chauth",
+    "kind": "vrat",
+    "title": {
+      "en": "Karwa Chauth Puja",
+      "hi": "करवा चौथ पूजा"
+    },
+    "description": {
+      "en": "Evening worship, Katha and the Moon offering.",
+      "hi": "संध्या पूजन, कथा और चंद्र अर्घ्य का क्रम।"
+    },
+    "art": "parvati",
+    "related": "/bhakti/aarti/parvati-mata-aarti"
+  },
+  {
+    "slug": "ghatasthapana",
+    "kind": "festival",
+    "title": {
+      "en": "Ghatasthapana",
+      "hi": "घटस्थापना"
+    },
+    "description": {
+      "en": "Prepare the Kalash at the beginning of Navratri.",
+      "hi": "नवरात्रि के आरंभ में कलश स्थापना।"
+    },
+    "art": "durga",
+    "related": "/bhakti/aarti/durga-mata-aarti"
+  },
+  {
+    "slug": "ganesha-chaturthi",
+    "kind": "festival",
+    "title": {
+      "en": "Ganesha Chaturthi Puja",
+      "hi": "गणेश चतुर्थी पूजा"
+    },
+    "description": {
+      "en": "Welcome Ganapati and maintain daily worship.",
+      "hi": "गणपति का स्वागत और नित्य पूजन।"
+    },
+    "art": "ganesha",
+    "related": "/bhakti/mantra/lord-ganesha-mantras"
+  },
+  {
+    "slug": "raksha-bandhan",
+    "kind": "festival",
+    "title": {
+      "en": "Raksha Bandhan",
+      "hi": "रक्षा बंधन"
+    },
+    "description": {
+      "en": "Consecrate the Raksha thread with auspicious prayers.",
+      "hi": "मंगल प्रार्थना के साथ रक्षासूत्र का पूजन।"
+    },
+    "art": "krishna",
+    "related": "/bhakti/mantra/lord-krishna-mantras"
+  },
+  {
+    "slug": "kali",
+    "kind": "deity",
+    "title": {
+      "en": "Kali Puja",
+      "hi": "काली पूजा"
+    },
+    "description": {
+      "en": "A simple devotional offering to Maa Kali.",
+      "hi": "माँ काली के लिए सरल भक्तिपूर्ण अर्पण।"
+    },
+    "art": "kali",
+    "related": "/bhakti/aarti/durga-mata-aarti"
+  },
+  {
+    "slug": "durga",
+    "kind": "deity",
+    "title": {
+      "en": "Durga Puja",
+      "hi": "दुर्गा पूजा"
+    },
+    "description": {
+      "en": "Daily offerings and prayer to Maa Durga.",
+      "hi": "माँ दुर्गा के लिए नित्य अर्पण और प्रार्थना।"
+    },
+    "art": "durga",
+    "related": "/bhakti/aarti/durga-mata-aarti"
+  },
+  {
+    "slug": "hanuman",
+    "kind": "deity",
+    "title": {
+      "en": "Hanuman Puja",
+      "hi": "हनुमान पूजा"
+    },
+    "description": {
+      "en": "Worship Hanuman through devotion to Shri Rama.",
+      "hi": "श्री राम भक्ति के भाव से हनुमान पूजन।"
+    },
+    "art": "hanuman",
+    "related": "/bhakti/chalisa/shri-hanuman-chalisa"
+  },
+  {
+    "slug": "hartalika",
+    "kind": "vrat",
+    "title": {
+      "en": "Hartalika Teej Puja",
+      "hi": "हरतालिका तीज पूजा"
+    },
+    "description": {
+      "en": "Worship Uma–Maheshwara with devotion.",
+      "hi": "उमा–महेश्वर का श्रद्धापूर्वक पूजन।"
+    },
+    "art": "parvati",
+    "related": "/bhakti/aarti/parvati-mata-aarti"
+  },
+  {
+    "slug": "ahoi-ashtami",
+    "kind": "vrat",
+    "title": {
+      "en": "Ahoi Ashtami Puja",
+      "hi": "अहोई अष्टमी पूजा"
+    },
+    "description": {
+      "en": "Ahoi Mata worship and family well-being prayers.",
+      "hi": "अहोई माता पूजन और परिवार के मंगल की प्रार्थना।"
+    },
+    "art": "ahoi",
+    "related": "/bhakti/aarti/ahoi-mata-aarti"
+  },
+  {
+    "slug": "varalakshmi",
+    "kind": "vrat",
+    "title": {
+      "en": "Varalakshmi Vratam",
+      "hi": "वरलक्ष्मी व्रत"
+    },
+    "description": {
+      "en": "Offerings and remembrance of Shri Varalakshmi.",
+      "hi": "श्री वरलक्ष्मी का पूजन और स्मरण।"
+    },
+    "art": "lakshmi",
+    "related": "/bhakti/aarti/lakshmi-mata-aarti"
+  },
+  {
+    "slug": "dhanvantari",
+    "kind": "deity",
+    "title": {
+      "en": "Dhanvantari Puja",
+      "hi": "धन्वन्तरि पूजा"
+    },
+    "description": {
+      "en": "Traditional worship on Dhanvantari Trayodashi.",
+      "hi": "धन्वन्तरि त्रयोदशी का पारंपरिक पूजन।"
+    },
+    "art": "dhanvantari",
+    "related": "/bhakti/aarti/lord-dhanvantari-aarti"
+  },
+  {
+    "slug": "govardhan",
+    "kind": "festival",
+    "title": {
+      "en": "Govardhan & Annakut Puja",
+      "hi": "गोवर्धन और अन्नकूट पूजा"
+    },
+    "description": {
+      "en": "Honour Govardhan, Shri Krishna and the gift of food.",
+      "hi": "गोवर्धन, श्री कृष्ण और अन्न के प्रति कृतज्ञता।"
+    },
+    "art": "govardhan",
+    "related": "/bhakti/aarti/shri-govardhan-aarti"
+  },
+  {
+    "slug": "naraka-chaturdashi",
+    "kind": "festival",
+    "title": {
+      "en": "Naraka Chaturdashi",
+      "hi": "नरक चतुर्दशी"
+    },
+    "description": {
+      "en": "Abhyanga Snana and the traditional lamp offering.",
+      "hi": "अभ्यंग स्नान और परंपरागत दीप अर्पण।"
+    },
+    "art": "yama",
+    "related": "/bhakti/stotram/yama-stotram"
+  },
+  {
+    "slug": "vat-savitri",
+    "kind": "vrat",
+    "title": {
+      "en": "Vat Savitri Puja",
+      "hi": "वट सावित्री पूजा"
+    },
+    "description": {
+      "en": "Savitri remembrance and traditional banyan worship.",
+      "hi": "सावित्री स्मरण और वटवृक्ष का पारंपरिक पूजन।"
+    },
+    "art": "yama",
+    "related": "/bhakti/stotram/yama-stotram"
+  },
+  {
+    "slug": "satyanarayana",
+    "kind": "vrat",
+    "title": {
+      "en": "Satyanarayana Puja",
+      "hi": "सत्यनारायण पूजा"
+    },
+    "description": {
+      "en": "Shri Satyanarayana worship, Katha and Prasad.",
+      "hi": "श्री सत्यनारायण पूजन, कथा और प्रसाद।"
+    },
+    "art": "vishnu",
+    "related": "/bhakti/aarti/lord-satyanarayana-aarti"
+  },
+  {
+    "slug": "ganapati-homa",
+    "kind": "homa",
+    "title": {
+      "en": "Ganapati Homa",
+      "hi": "गणपति होम"
+    },
+    "description": {
+      "en": "An overview of the priest-guided Ganapati fire rite.",
+      "hi": "आचार्य के मार्गदर्शन में गणपति हवन का परिचय।"
+    },
+    "art": "ganesha",
+    "related": "/bhakti/mantra/lord-ganesha-mantras"
+  },
+  {
+    "slug": "durga-homa",
+    "kind": "homa",
+    "title": {
+      "en": "Devi Durga Homa",
+      "hi": "देवी दुर्गा होम"
+    },
+    "description": {
+      "en": "An overview of Devi worship through Homa.",
+      "hi": "होम के माध्यम से देवी उपासना का परिचय।"
+    },
+    "art": "durga",
+    "related": "/bhakti/aarti/durga-mata-aarti"
+  }
+]

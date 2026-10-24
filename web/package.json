@@ -1,0 +1,28 @@
+{
+  "name": "mishra4you-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "docs:check": "node ../scripts/code-docs.cjs --check",
+    "docs:write": "node ../scripts/code-docs.cjs --write",
+    "build": "tsc -b && vite build",
+    "test:e2e": "npm run build && playwright test"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@babel/parser": "^7.29.9",
+    "@playwright/test": "latest",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "latest",
+    "typescript": "latest",
+    "vite": "8.3.4"
+  }
+}

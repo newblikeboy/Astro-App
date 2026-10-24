@@ -1,0 +1,761 @@
+/* Kundli workspace: a compact reading desk, using the public brand tokens. */
+.kundli-workspace {
+  min-width: 0;
+}
+.kundli-workspace .workspace-heading h1 {
+  overflow-wrap: anywhere;
+}
+.kundli-workspace .workspace-heading {
+  background: var(--night);
+  border-radius: 18px;
+  padding: 27px 30px;
+  color: #fad6bf;
+}
+.kundli-workspace .workspace-heading h1 {
+  color: #fff7f2;
+}
+.kundli-workspace .workspace-heading p {
+  color: #ecc4aa;
+}
+.kundli-workspace .workspace-heading .button {
+  background: #fdb98b;
+  border-color: #fdb98b;
+  color: #391c08;
+}
+.kundli-workspace .workspace-heading > div {
+  min-width: 0;
+}
+.kundli-tabs {
+  gap: 4px;
+  overflow-x: auto;
+  max-width: 100%;
+  padding-bottom: 0;
+  scrollbar-width: thin;
+}
+.kundli-tabs button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 15px 18px;
+  min-height: 48px;
+}
+.kundli-panel {
+  outline-offset: 5px;
+  min-width: 0;
+}
+.kundli-panel h2 {
+  font: 600 25px/1.3 var(--sans);
+  letter-spacing: -0.035em;
+  margin: 0 0 14px;
+}
+.kundli-panel h3 {
+  font: 600 17px/1.5 var(--sans);
+  margin: 0 0 8px;
+}
+.kundli-panel .report-layout {
+  min-width: 0;
+  align-items: start;
+}
+.kundli-panel .report-layout > * {
+  min-width: 0;
+}
+.overview-details .kundli-summary {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.overview-details .kundli-summary > div {
+  padding: 16px 18px;
+}
+.overview-details .report-caption {
+  margin: 12px 0 18px;
+}
+.kundli-panel .report-chart {
+  height: auto;
+}
+.kundli-panel .kundli-chart {
+  max-width: 430px;
+  margin: 18px auto;
+  display: block;
+}
+.kundli-panel .table-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+.kundli-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.kundli-panel th,
+.kundli-panel td {
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+.kundli-panel thead th {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 500;
+}
+.kundli-panel tbody th {
+  font-weight: 500;
+}
+.kundli-panel table small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 400;
+}
+.kundli-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+.kundli-summary > div {
+  border-radius: 12px;
+  background: #fff8ef;
+  border: 1px solid #eedfd0;
+  padding: 22px 24px;
+  min-width: 0;
+}
+.kundli-summary dt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+.kundli-summary dt svg {
+  color: var(--action);
+  flex-shrink: 0;
+}
+.chart-viewer-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 11px;
+  color: var(--muted);
+  padding: 12px 0;
+  border-block: 1px solid #ebd9c6;
+}
+.chart-viewer-meta > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.chart-house {
+  fill: transparent;
+}
+.chart-house-ascendant {
+  fill: #fcf0df;
+}
+.chart-house-selected {
+  fill: #f6d3a4;
+}
+.chart-legend-label {
+  font-size: 11px;
+  color: var(--muted);
+  text-align: left;
+  margin: 12px 0;
+}
+.chart-legend {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+.chart-legend button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 6px;
+  min-width: 0;
+  min-height: 44px;
+  border: 1px solid #eadbcf;
+  border-radius: 8px;
+  background: #fffdf9;
+  color: var(--ink);
+  font-size: 11px;
+}
+.chart-legend button > span:not(.astro-symbol) {
+  overflow-wrap: anywhere;
+}
+.chart-legend button small {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 9px;
+}
+.chart-legend .astro-symbol {
+  width: 22px;
+  height: 24px;
+  background: transparent;
+  border-radius: 0;
+}
+.chart-legend .astro-symbol svg {
+  width: 18px;
+  height: 18px;
+}
+.chart-legend button[aria-pressed="true"] {
+  background: var(--maroon);
+  color: #fff;
+  border-color: var(--maroon);
+}
+.chart-legend button[aria-pressed="true"] small,
+.chart-legend button[aria-pressed="true"] .astro-symbol {
+  color: #f6c68d;
+}
+.chart-legend button:focus-visible {
+  outline: 2px solid var(--action);
+  outline-offset: 3px;
+}
+.chart-house-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  background: #f8eadb;
+  border-radius: 9px;
+  padding: 12px 14px;
+  margin-top: 12px;
+  font-size: 12px;
+  min-height: 66px;
+}
+.chart-house-detail strong {
+  font-weight: 600;
+}
+.chart-house-detail > span {
+  color: var(--muted);
+}
+.house-badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 27px;
+  height: 27px;
+  border-radius: 8px;
+  background: #f7ede6;
+  color: var(--maroon);
+  font-size: 12px;
+}
+.kundli-panel .natal-table tbody tr:nth-child(even) {
+  background: #fcfaf9;
+}
+.kundli-panel .natal-table thead {
+  background: var(--surface);
+}
+.kundli-summary dd {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.kundli-summary dd small {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+.report-caption {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 15px 0 24px;
+}
+.chart-switch {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.chart-switch button {
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 10px 16px;
+  color: var(--ink);
+  min-height: 44px;
+  font-size: 12px;
+}
+.chart-switch button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--cream);
+  border-color: var(--ink);
+}
+.report-section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 24px;
+}
+.report-section-heading p {
+  max-width: 570px;
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+.faladesh-topic-label {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.faladesh-topic-tabs {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 9px;
+  margin-bottom: 24px;
+}
+.faladesh-topic-tabs button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 0;
+  padding: 14px 8px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  color: #6b5344;
+  font-size: 12px;
+  font-weight: 500;
+}
+.faladesh-topic-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  color: var(--action);
+  background: #faf0e8;
+  flex-shrink: 0;
+}
+.faladesh-topic-tabs button:hover {
+  background: #fbf5f0;
+  border-color: #d1b5a2;
+}
+.faladesh-topic-tabs button[aria-selected="true"] {
+  background: var(--maroon);
+  color: #fff;
+  border-color: var(--maroon);
+}
+.faladesh-topic-tabs button[aria-selected="true"] .faladesh-topic-icon {
+  background: #ffffff14;
+  color: #f4bd7d;
+}
+.faladesh-topic-tabs button:focus-visible,
+.faladesh-topic-panel:focus-visible {
+  outline: 2px solid var(--action);
+  outline-offset: 3px;
+}
+@media (max-width: 1100px) {
+  .faladesh-topic-tabs {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.chart-facts {
+  border-block: 1px solid var(--line);
+  padding: 22px 0 6px;
+}
+.fact-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 40px;
+  margin: 0;
+}
+.fact-list > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+  padding: 13px 0;
+  font-size: 13px;
+}
+.fact-list dt {
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.fact-list dd {
+  margin: 0;
+  text-align: right;
+}
+.faladesh-reading {
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line);
+}
+.faladesh-reading h3 {
+  margin-top: 14px;
+}
+.faladesh-reading p {
+  max-width: 800px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.reading-status {
+  display: flex;
+  gap: 12px;
+  align-items: start;
+  padding: 22px 0;
+  color: var(--muted);
+}
+.reading-status svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.reading-status p {
+  margin: 0;
+  font-size: 13px;
+  max-width: 800px;
+}
+.dasha-panel,
+.placement-panel,
+.transit-panel {
+  border-radius: 14px;
+  background: white;
+  border: 1px solid var(--line);
+  padding: 30px;
+}
+.dasha-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-block: 1px solid var(--line);
+  margin: 24px 0 0;
+  background: var(--surface);
+}
+.dasha-summary > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+}
+.dasha-summary > div + div {
+  border-left: 1px solid var(--line);
+}
+.dasha-summary small,
+.dasha-summary span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.dasha-summary strong {
+  font-size: 23px;
+  font-weight: 500;
+}
+.dasha-timeline details {
+  border-top: 1px solid var(--line);
+}
+.dasha-timeline details:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.dasha-timeline summary {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  cursor: pointer;
+  min-height: 68px;
+  padding: 18px 4px;
+}
+.dasha-timeline summary::-webkit-details-marker {
+  display: none;
+}
+.dasha-lord {
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 130px;
+}
+.dasha-lord small,
+.antardasha-list small {
+  font-size: 10px;
+  color: var(--action);
+  margin-left: 10px;
+  font-weight: 500;
+}
+.dasha-range {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  color: var(--muted);
+  font-size: 13px;
+}
+.dasha-timeline summary svg {
+  flex-shrink: 0;
+  transition: transform 0.15s;
+}
+.dasha-timeline details[open] summary svg {
+  transform: rotate(180deg);
+}
+.antardasha-list {
+  list-style: none;
+  padding: 0 20px 16px;
+  margin: 0;
+  background: #f6f1e7;
+}
+.antardasha-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  font-size: 12px;
+  border-top: 1px solid var(--line);
+}
+.antardasha-list li > span:last-child {
+  color: var(--muted);
+}
+.antardasha-list li.is-current > span:first-child {
+  font-weight: 600;
+}
+.placement-list {
+  margin-top: 24px;
+}
+.placement-list article {
+  padding: 23px 0;
+  border-top: 1px solid var(--line);
+}
+.placement-list article:last-child {
+  padding-bottom: 0;
+}
+.placement-list article > div {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: start;
+}
+.placement-list article p,
+.sade-sati p {
+  max-width: 800px;
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.placement-list article small {
+  color: var(--muted);
+  font-size: 11px;
+}
+.check-result {
+  background: #efe6d7;
+  padding: 5px 9px;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+.sade-sati {
+  padding: 20px;
+  margin-block: 24px;
+  background: #f3eddf;
+  border-left: 3px solid var(--action);
+}
+.sade-sati strong {
+  font-weight: 500;
+}
+.kundli-panel .settings-list dd {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 900px) {
+  .kundli-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .kundli-workspace .report-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .chart-legend button small {
+    display: none;
+  }
+  .chart-legend .astro-symbol {
+    width: 18px;
+  }
+  .chart-legend button > span:not(.astro-symbol) {
+    white-space: nowrap;
+    overflow-wrap: normal;
+  }
+  .kundli-panel .report-chart {
+    padding: 22px 14px;
+  }
+  .kundli-panel .natal-table {
+    min-width: 0;
+    display: block;
+  }
+  .natal-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .natal-table tbody {
+    display: grid;
+    gap: 10px;
+  }
+  .kundli-panel .natal-table tbody tr {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+  }
+  .kundli-panel .natal-table th {
+    grid-column: 1/-1;
+    padding: 12px;
+    background: #fdf5ef;
+  }
+  .kundli-panel .natal-table td {
+    padding: 10px 12px;
+    border: 0;
+    min-width: 0;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+  .kundli-panel .natal-table td::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--muted);
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .kundli-panel .natal-table td:last-child {
+    grid-column: 1/-1;
+    border-top: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .kundli-panel .natal-table td:last-child::before {
+    margin: 0;
+  }
+  .kundli-workspace {
+    padding-top: 24px;
+  }
+  .kundli-workspace .workspace-heading {
+    margin-block: 16px 18px;
+    gap: 16px;
+    padding: 18px 20px;
+  }
+  .kundli-workspace .workspace-heading h1 {
+    font-size: 23px;
+    line-height: 1.3;
+  }
+  .kundli-workspace > .notice {
+    padding: 13px;
+    font-size: 11px;
+    line-height: 1.7;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .kundli-tabs {
+    margin-bottom: 24px;
+  }
+  .kundli-tabs button {
+    font-size: 12px;
+    padding-inline: 13px;
+  }
+  .kundli-panel h2 {
+    font-size: 22px;
+  }
+  .kundli-panel .planet-panel {
+    padding: 22px 14px;
+  }
+  .kundli-summary {
+    gap: 8px;
+  }
+  .kundli-summary > div {
+    padding: 15px 13px;
+  }
+  .kundli-summary dd {
+    font-size: 17px;
+  }
+  .kundli-summary dt {
+    font-size: 10px;
+  }
+  .report-section-heading {
+    display: block;
+  }
+  .faladesh-topic-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .faladesh-topic-tabs button {
+    flex-direction: row;
+    justify-content: start;
+    gap: 8px;
+    padding: 10px 9px;
+    min-height: 56px;
+    text-align: left;
+    font-size: 11px;
+  }
+  .faladesh-topic-icon {
+    width: 27px;
+    height: 27px;
+    border-radius: 8px;
+  }
+  .faladesh-topic-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+  .fact-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .fact-list > div {
+    font-size: 12px;
+  }
+  .dasha-panel,
+  .placement-panel,
+  .transit-panel {
+    padding: 22px 15px;
+  }
+  .dasha-summary > div {
+    padding: 14px 11px;
+  }
+  .dasha-summary strong {
+    font-size: 20px;
+  }
+  .dasha-summary small,
+  .dasha-summary span {
+    font-size: 10px;
+  }
+  .dasha-timeline summary {
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-block: 15px;
+  }
+  .dasha-lord {
+    min-width: 0;
+    flex: 1;
+    font-size: 15px;
+  }
+  .dasha-range {
+    order: 3;
+    flex-basis: 100%;
+    font-size: 11px;
+  }
+  .antardasha-list {
+    padding-inline: 12px;
+  }
+  .antardasha-list li {
+    flex-direction: column;
+    gap: 3px;
+    font-size: 11px;
+  }
+  .placement-list article > div {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .check-result {
+    flex-shrink: 1;
+  }
+  .kundli-panel table {
+    min-width: 350px;
+  }
+  .kundli-panel .settings-list > div {
+    display: block;
+  }
+  .kundli-panel .settings-list dt {
+    width: auto;
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,129 @@
+/* Bhagwa, kumkum and marigold enrich the devotional collection within the shared warm identity. */
+.devotional-layout {
+  --ink: #472414;
+  --muted: #775a43;
+  --paper: #fffaf1;
+  --line: #efd5b3;
+  --maroon: #87360d;
+  --devotion-saffron: #c94b0b;
+  --devotion-deep: #8d310c;
+  min-height: 100dvh;
+  color: var(--ink);
+  background: radial-gradient(ellipse at 95% 10%, #ffdd9a55, transparent 45%), #fffaf1;
+}
+.devotional-layout .portal-header { background: #fffaf5; border-bottom-color: #efd5b3; }
+.devotional-layout .portal-back { color: #87360d; }
+.devotional-layout .portal-footer { background: #fff4e2; border-top-color: #efd5b3; }
+.devotional-page { max-width: 1180px; margin: auto; padding: 28px 28px 72px; color: var(--ink); }
+.devotional-page a { text-decoration: none; }
+.devotional-back, .devotional-kicker, .devotional-breadcrumb, .devotional-read { display: inline-flex; align-items: center; gap: 9px; }
+.devotional-back { color: var(--muted); font-size: 13px; margin-bottom: 26px; min-height: 32px; }
+.puja-library-link { display: flex; align-items: center; gap: 10px; width: fit-content; max-width: 100%; padding: 12px 15px; margin: 0 0 24px; border: 1px solid #edc897; border-radius: 10px; color: #87360d; background: #fff2dc; font-size: 13px; line-height: 1.7; }
+.puja-library-link > svg { flex-shrink: 0; }
+.devotional-kicker { color: var(--devotion-deep); font-size: 12px; font-weight: 700; letter-spacing: .08em; }
+.devotional-intro {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-bottom: 24px;
+  padding: 35px 210px 35px 35px;
+  border: 1px solid #edbd7f;
+  border-radius: 22px;
+  background: linear-gradient(110deg, #fff0d2, #ffdc9c 70%, #ffc36d);
+  box-shadow: inset 0 1px 0 #fff9;
+}
+.devotional-intro::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 5px; background: #df590d; }
+.devotional-intro h1 { margin: 12px 0; font-size: clamp(32px, 5vw, 48px); line-height: 1.3; color: #7b2c0c; }
+.devotional-intro p { margin: 0; max-width: 690px; color: #72431f; line-height: 1.9; }
+.devotional-intro-art { position: absolute; z-index: -1; width: 170px; height: 200px; right: 23px; bottom: 0; display: grid; place-items: center; color: #a8440b; border: 1px solid #dc9e58; border-bottom: 0; border-radius: 100px 100px 0 0; background: linear-gradient(#fff1cc80, #ffb75055); }
+.devotional-intro-art .devotional-motif { width: 130px; height: 130px; }
+.devotional-categories { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; margin-bottom: 36px; }
+.devotional-categories a { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 9px; padding: 14px 16px; color: #77330f; border: 1px solid #edc897; border-radius: 15px; background: linear-gradient(145deg, #fff8e9, #ffe7c0); transition: background .18s, border-color .18s; }
+.devotional-categories a > .devotional-motif { width: 40px; height: 40px; color: #ac460c; }
+.devotional-categories a span { font-weight: 700; font-size: 13px; }
+.devotional-categories a small { color: #79512e; font-size: 12px; }
+.devotional-categories a:hover { border-color: #d17528; background: #ffdfac; }
+.devotional-categories a[aria-current="page"] { color: #fff9e9; border-color: #ad3a08; background: linear-gradient(135deg, #ce510c, #ae360a); box-shadow: 0 5px 15px #ad440b1c, inset 0 1px 0 #ffd99d70; }
+.devotional-categories a[aria-current="page"] > .devotional-motif, .devotional-categories a[aria-current="page"] small { color: #fff3d7; }
+.devotional-collection-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
+.devotional-collection-heading h2 { margin: 0 0 8px; font-size: 25px; color: #74300e; }
+.devotional-collection-heading p { margin: 0; font-size: 13px; color: var(--muted); }
+.devotional-search { display: flex; align-items: center; gap: 10px; width: min(100%, 380px); padding: 0 14px; border: 1px solid #dbb481; border-radius: 12px; background: #fffefa; }
+.devotional-search svg { flex-shrink: 0; color: #a13e0b; }
+.devotional-search input { width: 100%; min-width: 0; border: 0; box-shadow: none; background: transparent; padding: 14px 0; color: #472414; }
+.devotional-search input::placeholder { color: #80614b; opacity: 1; }
+.devotional-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.devotional-card { --card-start: #ffe19c; --card-end: #ffb650; --card-symbol: #94390b; position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; color: var(--ink); border: 1px solid #e9bd85; border-radius: 18px; background: #fffdf7; box-shadow: 0 4px 14px #a8550910; transition: border-color .18s, box-shadow .18s, transform .18s; }
+.devotional-card[data-devotion="chalisa"] { --card-start: #ffe0bf; --card-end: #fca36d; --card-symbol: #942b16; }
+.devotional-card[data-devotion="stotram"] { --card-start: #ffe4ca; --card-end: #ffb092; --card-symbol: #983b22; }
+.devotional-card[data-devotion="ashtakam"] { --card-start: #fff1b1; --card-end: #ffd16b; --card-symbol: #87500b; }
+.devotional-card[data-devotion="mantra"] { --card-start: #ffdfa3; --card-end: #ffb560; --card-symbol: #97330b; }
+.devotional-card[data-devotion="kavacham"] { --card-start: #fce1b8; --card-end: #eeb16d; --card-symbol: #864015; }
+.devotional-card:hover { border-color: #c96619; box-shadow: 0 10px 24px #a8550920; transform: translateY(-3px); }
+.devotional-card-art { position: relative; display: grid; place-items: center; height: 224px; padding: 0; color: var(--card-symbol); background: radial-gradient(ellipse at center, #fff9eb, #f9e3bf); border-bottom: 1px solid #ecd6b6; }
+.devotional-card-art > .devotional-motif { position: absolute; z-index: 1; top: 12px; left: 12px; width: 36px; height: 36px; padding: 5px; border: 1px solid #d8b78380; border-radius: 50%; background: #fff9eee8; }
+.devotional-card-photo { width: 144px; height: 144px; display: grid; place-items: center; overflow: hidden; border: 1px solid #e0bd8c; border-radius: 12px; background: #fff5e2; }
+.devotional-card-photo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.devotional-card-art .devotional-card-photo { position: absolute; inset: 0; display: block; width: 100%; height: 100%; border: 0; border-radius: 0; background: transparent; }
+.devotional-card-content { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 23px; }
+.devotional-card-category { padding: 4px 9px; color: #91350c; background: #ffedd0; border: 1px solid #f1d1a4; border-radius: 5px; font-size: 10px; font-weight: 700; letter-spacing: .04em; }
+.devotional-card h3 { margin: 12px 0 9px; font-size: 18px; line-height: 1.55; color: #65280f; overflow-wrap: anywhere; }
+.devotional-card-content > p { margin: 0 0 22px; color: #7a5032; font-size: 15px; line-height: 1.9; overflow-wrap: anywhere; }
+.devotional-read { width: 100%; justify-content: space-between; margin-top: auto; padding-top: 14px; border-top: 1px solid #f0ddc2; font-size: 12px; font-weight: 700; color: #a73f0b; }
+.devotional-empty { text-align: center; padding: 50px 15px; color: var(--muted); }
+.devotional-empty .button, .devotional-reader .button { color: #fffaf0; background: #b6440c; }
+.devotional-empty .button { margin-top: 15px; }
+.devotional-breadcrumb { display: flex; flex-wrap: wrap; color: var(--muted); font-size: 12px; margin-bottom: 20px; }
+.devotional-breadcrumb a { color: #96390c; }
+.devotional-reader { max-width: 800px; margin: auto; border: 1px solid #e8c28f; border-top: 5px solid #d65a11; border-radius: 20px; padding: 30px clamp(20px, 5vw, 64px) 40px; background: linear-gradient(#fff2da, #fffdf7 320px); box-shadow: 0 8px 30px #a8550910; }
+.devotional-reader > header { text-align: center; border-bottom: 1px solid #ead1ae; padding-bottom: 24px; }
+.devotional-reader-symbol { display: block; width: 76px; height: 76px; margin: 0 auto 16px; color: #b64a0c; }
+.devotional-reader h1 { margin: 18px 0 12px; font-size: clamp(25px, 4vw, 36px); line-height: 1.6; color: #79300e; overflow-wrap: anywhere; }
+.devotional-hindi-title { color: var(--muted); font-size: 18px; }
+.devotional-script-note { color: var(--muted); font-size: 13px; line-height: 1.8; }
+.devotional-verses[lang="sa-Latn"] { font-family: var(--sans); }
+.devotional-reader-tools { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; margin-top: 22px; }
+.devotional-reader-tools span { color: var(--muted); font-size: 12px; margin-right: 6px; }
+.devotional-reader-tools button { min-width: 40px; min-height: 40px; padding: 7px; border: 1px solid #dfb986; border-radius: 8px; color: #8d330c; background: #fff4df; }
+.devotional-reader-tools button:disabled { opacity: .45; }
+.devotional-verses { font-family: Noto, "Nirmala UI", sans-serif; text-align: center; color: #492a19; line-height: 2.15; overflow-wrap: anywhere; padding: 24px 0; }
+.devotional-verses p { margin: 0 0 1.3em; white-space: pre-line; }
+.devotional-reader > footer { display: flex; align-items: center; justify-content: center; gap: 10px; color: #9b410e; border-top: 1px solid #ead1ae; padding-top: 24px; font-size: 12px; }
+.devotional-page :is(a, button, input):focus-visible { outline: 3px solid #a33c09; outline-offset: 4px; }
+.devotional-page h1:focus { outline: none; }
+.devotional-collection-heading h2 { scroll-margin-top: 24px; }
+.devotional-collection-heading h2:focus { outline: none; }
+.devotional-pagination { margin-top: 30px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.devotional-pagination > p { margin: 0; color: var(--muted); font-size: 13px; }
+.devotional-page-links, .devotional-page-number { display: flex; align-items: center; gap: 5px; }
+.devotional-page-links { flex-wrap: wrap; }
+.devotional-page-links a, .devotional-page-links > span[aria-disabled] { min-height: 40px; min-width: 40px; display: inline-flex; align-items: center; justify-content: center; padding: 8px 11px; border: 1px solid #dfb986; border-radius: 8px; color: #8d330c; background: #fff4df; font-size: 12px; }
+.devotional-page-links > span[aria-disabled] { color: #8a7464; background: transparent; border-color: #ecdac3; }
+.devotional-page-links a[aria-current="page"] { background: #ad3909; border-color: #ad3909; color: #fff9e9; font-weight: 700; }
+.devotional-page-gap { padding-inline: 3px; color: var(--muted); }
+.devotional-image-credits { margin-top: 26px; padding-top: 16px; border-top: 1px solid #ecd5b6; color: var(--muted); font-size: 11px; line-height: 1.8; }
+.devotional-image-credits summary { cursor: pointer; width: fit-content; min-height: 30px; color: #8d330c; }
+.devotional-image-credits ul { padding-left: 18px; }
+.devotional-image-credits li { margin-block: 9px; overflow-wrap: anywhere; }
+.devotional-image-credits a { text-decoration: underline; color: #8d330c; }
+@media (max-width: 1000px) { .devotional-categories { grid-template-columns: repeat(3, minmax(0, 1fr)); } .devotional-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .devotional-page { padding: 20px 18px 48px; }
+  .devotional-back { margin-bottom: 20px; }
+  .devotional-intro { padding: 26px 22px; border-radius: 18px; }
+  .devotional-intro h1 { position: relative; font-size: 32px; }
+  .devotional-intro-art { width: 110px; height: 135px; right: -25px; bottom: -25px; opacity: .16; }
+  .devotional-intro-art .devotional-motif { width: 95px; height: 95px; }
+  .devotional-categories { gap: 8px; margin-bottom: 28px; }
+  .devotional-categories a { padding: 12px 10px; gap: 7px; }
+  .devotional-categories a span { font-size: 12px; }
+  .devotional-categories a > .devotional-motif { width: 36px; height: 36px; }
+  .devotional-collection-heading { align-items: stretch; flex-direction: column; }
+  .devotional-search { width: 100%; }
+  .devotional-grid { grid-template-columns: 1fr; }
+  .devotional-card-content { padding: 22px; }
+  .devotional-card-art { height: 224px; }
+  .devotional-reader { padding: 24px 17px 28px; }
+}
+@media (prefers-reduced-motion: reduce) { .devotional-card, .devotional-categories a { transition: none; } .devotional-card:hover { transform: none; } }
+@media print { .devotional-layout { background: #fff; } .portal-header, .portal-footer, .devotional-back, .devotional-breadcrumb, .devotional-reader-tools, .skip { display: none; } .devotional-page { max-width: none; padding: 0; } .devotional-reader { border: 0; box-shadow: none; background: #fff; max-width: none; padding: 0; } .devotional-verses p { break-inside: avoid; } }

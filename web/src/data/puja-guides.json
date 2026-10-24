@@ -1,0 +1,1383 @@
+[
+  {
+    "slug": "diwali",
+    "kind": "festival",
+    "title": {
+      "en": "Diwali Puja",
+      "hi": "दीपावली पूजा"
+    },
+    "art": "lakshmi",
+    "related": "/bhakti/aarti/lakshmi-mata-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/diwali/info/diwali-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "A household sequence for the festival of lights.",
+      "hi": "दीपोत्सव पर घर में पूजन का सरल क्रम।"
+    },
+    "materials": {
+      "en": [
+        "Lakshmi–Ganesha images",
+        "Water, flowers, rice",
+        "Lamp and incense",
+        "Sweets and fruit",
+        "Account book, if customary"
+      ],
+      "hi": [
+        "लक्ष्मी–गणेश के चित्र",
+        "जल, पुष्प, अक्षत",
+        "दीपक और धूप",
+        "मिठाई और फल",
+        "परंपरानुसार बहीखाता"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Clean the altar and arrange the images on a cloth-covered seat.",
+        "Remember Ganesha; state your name, place and intention for worship.",
+        "Offer water, sandal paste, flowers and incense to Ganesha and Lakshmi.",
+        "Include Saraswati, Kubera and the account book according to family custom.",
+        "Present sweets, perform Aarti, offer thanks and share Prasad."
+      ],
+      "hi": [
+        "वेदी स्वच्छ करके कपड़ा बिछाएँ और लक्ष्मी–गणेश को स्थापित करें।",
+        "गणेश स्मरण करें; अपना नाम, स्थान और पूजन का संकल्प लें।",
+        "गणेश और लक्ष्मी को जल, चंदन, पुष्प और धूप अर्पित करें।",
+        "कुल-परंपरा अनुसार सरस्वती, कुबेर और बहीखाते का पूजन करें।",
+        "मिठाई का भोग लगाएँ, आरती करें और प्रसाद बाँटें।"
+      ]
+    },
+    "note": {
+      "en": "Check the city-specific Lakshmi Puja window separately.",
+      "hi": "लक्ष्मी पूजन का समय अपने नगर के अनुसार अलग से देखें।"
+    }
+  },
+  {
+    "slug": "lakshmi",
+    "kind": "deity",
+    "title": {
+      "en": "Lakshmi Puja",
+      "hi": "लक्ष्मी पूजा"
+    },
+    "art": "lakshmi",
+    "related": "/bhakti/aarti/lakshmi-mata-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/lakshmipuja/info/lakshmi-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Offerings and prayer to Shri Mahalakshmi.",
+      "hi": "श्री महालक्ष्मी के पूजन और अर्पण का क्रम।"
+    },
+    "materials": {
+      "en": [
+        "Lakshmi image",
+        "Flowers and sandal paste",
+        "Water and clean cloth",
+        "Lamp, incense and sweets"
+      ],
+      "hi": [
+        "लक्ष्मी का चित्र",
+        "पुष्प और चंदन",
+        "जल और स्वच्छ वस्त्र",
+        "दीपक, धूप और मिठाई"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Prepare a clean seat and begin with Ganesha remembrance.",
+        "Meditate on Lakshmi, invite Her presence and offer flowers as a seat.",
+        "Offer water; bathe only a suitable idol, then offer cloth and sandal paste.",
+        "Present flowers, incense, a lamp and prepared food with devotion.",
+        "Read a Lakshmi prayer, perform Aarti and distribute Prasad."
+      ],
+      "hi": [
+        "स्वच्छ आसन तैयार करें और गणेश स्मरण से आरंभ करें।",
+        "लक्ष्मी का ध्यान और आवाहन करके आसन के लिए पुष्प अर्पित करें।",
+        "जल अर्पित करें; उपयुक्त मूर्ति को स्नान कराकर वस्त्र और चंदन चढ़ाएँ।",
+        "श्रद्धा से पुष्प, धूप, दीप और नैवेद्य अर्पित करें।",
+        "लक्ष्मी स्तुति पढ़ें, आरती करें और प्रसाद वितरित करें।"
+      ]
+    },
+    "note": {
+      "en": "For a picture, offer bathing water symbolically nearby.",
+      "hi": "चित्र के लिए स्नान का जल पास के पात्र में प्रतीकात्मक अर्पित करें।"
+    }
+  },
+  {
+    "slug": "ganesha",
+    "kind": "deity",
+    "title": {
+      "en": "Ganesha Puja",
+      "hi": "गणेश पूजा"
+    },
+    "art": "ganesha",
+    "related": "/bhakti/mantra/lord-ganesha-mantras",
+    "sources": [
+      "https://www.drikpanchang.com/hindu-gods/ganesha/puja-vidhi/lord-ganesha-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "A simple beginning with Shri Ganapati.",
+      "hi": "श्री गणपति के साथ मंगल पूजन का आरंभ।"
+    },
+    "materials": {
+      "en": [
+        "Ganesha image",
+        "Flowers and Durva",
+        "Water, sandal paste, rice",
+        "Lamp, incense and Modak"
+      ],
+      "hi": [
+        "गणेश का चित्र",
+        "पुष्प और दूर्वा",
+        "जल, चंदन, अक्षत",
+        "दीपक, धूप और मोदक"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Arrange the altar and state the intention of your worship.",
+        "Remember Ganapati, invoke Him and offer a seat with flowers.",
+        "Offer water, sandal paste, flowers and Durva according to custom.",
+        "Light incense and the lamp; present Modak or another customary sweet.",
+        "Recite a Ganapati prayer, perform Aarti and share Prasad."
+      ],
+      "hi": [
+        "वेदी सजाएँ और अपने पूजन का संकल्प लें।",
+        "गणपति का ध्यान, आवाहन और पुष्प से आसन अर्पित करें।",
+        "परंपरानुसार जल, चंदन, पुष्प और दूर्वा अर्पित करें।",
+        "धूप और दीप दिखाकर मोदक या पारंपरिक मिठाई चढ़ाएँ।",
+        "गणपति स्तुति पढ़ें, आरती करें और प्रसाद बाँटें।"
+      ]
+    },
+    "note": {
+      "en": "Daily worship does not require a new installation ceremony.",
+      "hi": "नित्य पूजन में हर दिन नई स्थापना का अनुष्ठान आवश्यक नहीं है।"
+    }
+  },
+  {
+    "slug": "shiva",
+    "kind": "deity",
+    "title": {
+      "en": "Shiva Puja",
+      "hi": "शिव पूजा"
+    },
+    "art": "shiva",
+    "related": "/bhakti/aarti/lord-shiva-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/hindu-gods/trimurti/lord-shiva/info/puja-vidhi/lord-shiva-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Abhisheka and offerings to Lord Shiva.",
+      "hi": "भगवान शिव का अभिषेक और पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Shiva Linga or image",
+        "Clean water",
+        "Bilva leaves and flowers",
+        "Sandal paste, lamp, incense",
+        "Fruit or customary Prasad"
+      ],
+      "hi": [
+        "शिवलिंग या चित्र",
+        "स्वच्छ जल",
+        "बिल्वपत्र और पुष्प",
+        "चंदन, दीपक, धूप",
+        "फल या पारंपरिक प्रसाद"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Clean the place and take the Sankalpa for Shiva worship.",
+        "Meditate on Shiva and offer water with a calm mind.",
+        "Perform gentle water Abhisheka on a suitable Shiva Linga.",
+        "Offer sandal paste, Bilva leaves, flowers, incense and a lamp.",
+        "Recite Shiva prayers, offer food, perform Aarti and bow."
+      ],
+      "hi": [
+        "स्थान स्वच्छ करके शिव पूजन का संकल्प लें।",
+        "शिव का ध्यान करें और शांत मन से जल अर्पित करें।",
+        "उपयुक्त शिवलिंग पर स्वच्छ जल से शांतिपूर्वक अभिषेक करें।",
+        "चंदन, बिल्वपत्र, पुष्प, धूप और दीप अर्पित करें।",
+        "शिव स्तुति पढ़ें, नैवेद्य लगाएँ, आरती करके प्रणाम करें।"
+      ]
+    },
+    "note": {
+      "en": "Use symbolic offerings when worshipping a picture.",
+      "hi": "चित्र के पूजन में अर्पण प्रतीकात्मक रूप से करें।"
+    }
+  },
+  {
+    "slug": "maha-shivaratri",
+    "kind": "festival",
+    "title": {
+      "en": "Maha Shivaratri Puja",
+      "hi": "महाशिवरात्रि पूजा"
+    },
+    "art": "shiva",
+    "related": "/bhakti/chalisa/shiva-chalisa",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/maha-shivaratri/maha-shivaratri-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Night worship and remembrance of Shiva.",
+      "hi": "शिव की रात्रि पूजा और नाम-स्मरण।"
+    },
+    "materials": {
+      "en": [
+        "Shiva Linga",
+        "Water and Bilva leaves",
+        "Flowers, lamp and incense",
+        "Customary offerings"
+      ],
+      "hi": [
+        "शिवलिंग",
+        "जल और बिल्वपत्र",
+        "पुष्प, दीपक और धूप",
+        "परंपरानुसार नैवेद्य"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Bathe and take a worship or Vrat Sankalpa according to your capacity.",
+        "Prepare the altar before the chosen night-worship period.",
+        "Offer water Abhisheka, Bilva leaves, flowers, incense and light.",
+        "Remember Shiva with prayer; repeat worship in four Praharas if customary.",
+        "Conclude with Aarti; follow the separately verified Parana time if fasting."
+      ],
+      "hi": [
+        "स्नान करके अपनी क्षमता के अनुसार पूजा या व्रत का संकल्प लें।",
+        "चुने हुए रात्रि पूजन से पहले वेदी तैयार करें।",
+        "जलाभिषेक करें; बिल्वपत्र, पुष्प, धूप और दीप अर्पित करें।",
+        "शिव स्तुति करें; परंपरा हो तो चार प्रहर में पूजन दोहराएँ।",
+        "आरती करें; व्रत रखा हो तो प्रमाणित पारण समय का पालन करें।"
+      ]
+    },
+    "note": {
+      "en": "Single-night worship and four-Prahara worship are distinct practices.",
+      "hi": "एक बार रात्रि पूजन और चार-प्रहर पूजन अलग प्रचलित विधियाँ हैं।"
+    }
+  },
+  {
+    "slug": "kubera",
+    "kind": "deity",
+    "title": {
+      "en": "Kubera Puja",
+      "hi": "कुबेर पूजा"
+    },
+    "art": "kubera",
+    "related": "/bhakti/aarti/lord-kubera-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/dhanteras/info/kuber-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Remember the guardian of wealth with gratitude.",
+      "hi": "धनाध्यक्ष कुबेर का कृतज्ञतापूर्वक पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Kubera image or customary chest",
+        "Roli, rice and Moli",
+        "Water and flowers",
+        "Lamp, incense and fruit"
+      ],
+      "hi": [
+        "कुबेर चित्र या पारंपरिक तिजोरी",
+        "रोली, अक्षत और मौली",
+        "जल और पुष्प",
+        "दीपक, धूप और फल"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Set the image or clean chest on the worship space.",
+        "If customary, mark the chest with Roli and tie Moli.",
+        "Meditate on Kubera, invoke Him and offer flowers as a seat.",
+        "Offer water, sandal paste, rice, flowers, incense, light and food.",
+        "Offer the worship with gratitude and share the Prasad."
+      ],
+      "hi": [
+        "चित्र या स्वच्छ तिजोरी को पूजन स्थान पर रखें।",
+        "परंपरानुसार तिजोरी पर रोली का मंगल चिह्न बनाकर मौली बाँधें।",
+        "कुबेर का ध्यान, आवाहन और पुष्प से आसन अर्पित करें।",
+        "जल, चंदन, अक्षत, पुष्प, धूप, दीप और नैवेद्य चढ़ाएँ।",
+        "कृतज्ञता से पूजा समर्पित करें और प्रसाद बाँटें।"
+      ]
+    },
+    "note": {
+      "en": "A chest is a traditional symbolic alternative to a Kubera idol.",
+      "hi": "कुबेर की मूर्ति न हो तो तिजोरी का प्रतीकात्मक पूजन प्रचलित है।"
+    }
+  },
+  {
+    "slug": "rama-navami",
+    "kind": "festival",
+    "title": {
+      "en": "Rama Navami Puja",
+      "hi": "राम नवमी पूजा"
+    },
+    "art": "rama",
+    "related": "/bhakti/aarti/shree-rama-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/dashavatara/rama-navami/puja-vidhi/rama-navami-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Celebrate the birth of Shri Rama.",
+      "hi": "श्री राम के जन्मोत्सव का पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Rama family image",
+        "Water and clean cloth",
+        "Flowers and sandal paste",
+        "Lamp, incense and Prasad"
+      ],
+      "hi": [
+        "राम परिवार का चित्र",
+        "जल और स्वच्छ वस्त्र",
+        "पुष्प और चंदन",
+        "दीपक, धूप और प्रसाद"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Prepare a clean altar and remember Ganesha.",
+        "Take the Sankalpa and meditate on Rama with His family.",
+        "Offer water, cloth, sandal paste, flowers and incense.",
+        "At the observed birth-celebration time, sing Rama prayers and offer food.",
+        "Perform Aarti, bow and distribute Prasad."
+      ],
+      "hi": [
+        "स्वच्छ वेदी तैयार करके गणेश स्मरण करें।",
+        "संकल्प लेकर श्री राम और उनके परिवार का ध्यान करें।",
+        "जल, वस्त्र, चंदन, पुष्प और धूप अर्पित करें।",
+        "जन्मोत्सव के समय राम स्तुति गाएँ और भोग लगाएँ।",
+        "आरती करके प्रणाम करें और प्रसाद बाँटें।"
+      ]
+    },
+    "note": {
+      "en": "The birth celebration traditionally relates to Madhyahna; verify local timing.",
+      "hi": "जन्मोत्सव का संबंध मध्याह्न से है; स्थानीय समय अलग से जाँचें।"
+    }
+  },
+  {
+    "slug": "krishna-janmashtami",
+    "kind": "festival",
+    "title": {
+      "en": "Krishna Janmashtami Puja",
+      "hi": "कृष्ण जन्माष्टमी पूजा"
+    },
+    "art": "krishna",
+    "related": "/bhakti/aarti/shree-krishna-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/dashavatara/lord-krishna/janmashtami/puja-vidhi/krishna-janmashtami-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Worship Balakrishna at the birth celebration.",
+      "hi": "जन्मोत्सव पर बालकृष्ण का पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Balakrishna image or idol",
+        "Water and clean cloth",
+        "Flowers and Tulasi",
+        "Lamp and customary sweets"
+      ],
+      "hi": [
+        "बालकृष्ण का चित्र या मूर्ति",
+        "जल और स्वच्छ वस्त्र",
+        "पुष्प और तुलसी",
+        "दीपक और पारंपरिक मिठाई"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Decorate the altar and take the Janmashtami worship Sankalpa.",
+        "Meditate on Balakrishna and invite His presence.",
+        "Bathe a suitable idol gently and offer clean clothing and flowers.",
+        "Offer Tulasi and food, singing birth-celebration prayers at the observed time.",
+        "Perform Aarti and distribute Prasad; verify Parana separately if fasting."
+      ],
+      "hi": [
+        "वेदी सजाएँ और जन्माष्टमी पूजन का संकल्प लें।",
+        "बालकृष्ण का ध्यान करके उनका आवाहन करें।",
+        "उपयुक्त मूर्ति को स्नान कराकर स्वच्छ वस्त्र और पुष्प अर्पित करें।",
+        "निर्धारित जन्मोत्सव पर तुलसी और भोग अर्पित करके मंगल गीत गाएँ।",
+        "आरती और प्रसाद वितरण करें; व्रत का पारण अलग से जाँचें।"
+      ]
+    },
+    "note": {
+      "en": "Smarta and Vaishnava observance dates may differ.",
+      "hi": "स्मार्त और वैष्णव परंपराओं की तिथि अलग हो सकती है।"
+    }
+  },
+  {
+    "slug": "holi",
+    "kind": "festival",
+    "title": {
+      "en": "Holi & Holika Puja",
+      "hi": "होली और होलिका पूजा"
+    },
+    "art": "fire",
+    "related": "/bhakti/mantra/lord-narasimha-mantras",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/holi/holi-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Offer prayer before the community Holika Dahan.",
+      "hi": "सामुदायिक होलिका दहन से पहले पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Water, Roli and rice",
+        "Flowers and raw thread",
+        "New grain and coconut",
+        "Customary sweets"
+      ],
+      "hi": [
+        "जल, रोली और अक्षत",
+        "पुष्प और कच्चा सूत",
+        "नई फसल के दाने और नारियल",
+        "पारंपरिक मिठाई"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Prepare the Puja plate and attend an organised Holika worship space.",
+        "Take the Sankalpa and remember Ganesha, Ambika and Narasimha.",
+        "Offer Roli, rice, flowers, grain and water with devotion.",
+        "Follow the customary thread offering and circumambulation before lighting.",
+        "Let organisers conduct Dahan at the verified Muhurat; receive Prasad afterward."
+      ],
+      "hi": [
+        "पूजा की थाली तैयार करके व्यवस्थित होलिका स्थल पर जाएँ।",
+        "संकल्प लेकर गणेश, अंबिका और नरसिंह का स्मरण करें।",
+        "श्रद्धा से रोली, अक्षत, पुष्प, अन्न और जल अर्पित करें।",
+        "अग्नि प्रज्वलन से पहले परंपरानुसार सूत अर्पण और परिक्रमा करें।",
+        "प्रमाणित मुहूर्त में आयोजकों को दहन करने दें; बाद में प्रसाद लें।"
+      ]
+    },
+    "note": {
+      "en": "Keep a respectful distance once the bonfire is lit.",
+      "hi": "होलिका की अग्नि प्रज्वलित होने पर सुरक्षित दूरी बनाए रखें।"
+    }
+  },
+  {
+    "slug": "saraswati",
+    "kind": "deity",
+    "title": {
+      "en": "Saraswati Puja",
+      "hi": "सरस्वती पूजा"
+    },
+    "art": "saraswati",
+    "related": "/bhakti/aarti/saraswati-mata-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/hindu-goddesses/saraswati/puja-vidhi/shodashopachara/saraswati-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Worship the Goddess of learning and the arts.",
+      "hi": "विद्या और कला की देवी का पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Saraswati image",
+        "Books or instruments",
+        "Water, flowers and sandal paste",
+        "Lamp, incense and food"
+      ],
+      "hi": [
+        "सरस्वती का चित्र",
+        "पुस्तकें या वाद्य",
+        "जल, पुष्प और चंदन",
+        "दीपक, धूप और नैवेद्य"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Clean the altar and respectfully place books or instruments nearby.",
+        "Remember Ganesha and take the Saraswati worship Sankalpa.",
+        "Meditate on Saraswati; offer a seat, water and customary adornments.",
+        "Offer flowers, incense, a lamp and food with a prayer for learning.",
+        "Read a Saraswati prayer and conclude with Aarti and Prasad."
+      ],
+      "hi": [
+        "वेदी स्वच्छ करें और पुस्तकें या वाद्य सम्मान से पास रखें।",
+        "गणेश स्मरण करके सरस्वती पूजन का संकल्प लें।",
+        "सरस्वती का ध्यान करके आसन, जल और परंपरानुसार श्रृंगार अर्पित करें।",
+        "विद्या की प्रार्थना के साथ पुष्प, धूप, दीप और नैवेद्य चढ़ाएँ।",
+        "सरस्वती स्तुति पढ़ें और आरती व प्रसाद से समापन करें।"
+      ]
+    },
+    "note": {
+      "en": "Books and instruments are honoured as companions in learning.",
+      "hi": "पुस्तकों और वाद्यों का सम्मान विद्या-साधना के अंग के रूप में करें।"
+    }
+  },
+  {
+    "slug": "karwa-chauth",
+    "kind": "vrat",
+    "title": {
+      "en": "Karwa Chauth Puja",
+      "hi": "करवा चौथ पूजा"
+    },
+    "art": "parvati",
+    "related": "/bhakti/aarti/parvati-mata-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/karwa-chauth/info/karwa-chauth.html"
+    ],
+    "description": {
+      "en": "Evening worship, Katha and the Moon offering.",
+      "hi": "संध्या पूजन, कथा और चंद्र अर्घ्य का क्रम।"
+    },
+    "materials": {
+      "en": [
+        "Gauri or Chauth Mata image",
+        "Karwa and water",
+        "Roli, rice and flowers",
+        "Lamp and customary food"
+      ],
+      "hi": [
+        "गौरी या चौथ माता का चित्र",
+        "करवा और जल",
+        "रोली, अक्षत और पुष्प",
+        "दीपक और पारंपरिक भोग"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Take the observance Sankalpa according to your capacity and tradition.",
+        "Prepare the Karwa and arrange the evening Puja plate.",
+        "Worship Gauri and the Shiva family with the customary offerings.",
+        "Listen to the Katha and offer prayers with the family.",
+        "After actual Moon sighting, offer Arghya and conclude the observance."
+      ],
+      "hi": [
+        "अपनी क्षमता और परंपरा अनुसार व्रत-पूजन का संकल्प लें।",
+        "करवा तैयार करके संध्या पूजन की थाली सजाएँ।",
+        "गौरी और शिव परिवार को परंपरानुसार पूजन सामग्री अर्पित करें।",
+        "परिवार के साथ कथा सुनें और श्रद्धापूर्वक प्रार्थना करें।",
+        "वास्तविक चंद्रदर्शन के बाद अर्घ्य देकर व्रत-पूजन का समापन करें।"
+      ]
+    },
+    "note": {
+      "en": "A predicted moonrise is not the same as visible Moon sighting.",
+      "hi": "गणना का चंद्रोदय समय वास्तविक चंद्रदर्शन से भिन्न हो सकता है।"
+    }
+  },
+  {
+    "slug": "ghatasthapana",
+    "kind": "festival",
+    "title": {
+      "en": "Ghatasthapana",
+      "hi": "घटस्थापना"
+    },
+    "art": "durga",
+    "related": "/bhakti/aarti/durga-mata-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/navratri/info/ghatasthapana-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Prepare the Kalash at the beginning of Navratri.",
+      "hi": "नवरात्रि के आरंभ में कलश स्थापना।"
+    },
+    "materials": {
+      "en": [
+        "Clay pot, soil and grain",
+        "Kalash and water",
+        "Leaves and coconut",
+        "Red cloth, Moli and flowers",
+        "Lamp and offerings"
+      ],
+      "hi": [
+        "मिट्टी का पात्र, मिट्टी और अनाज",
+        "कलश और जल",
+        "पत्ते और नारियल",
+        "लाल वस्त्र, मौली और पुष्प",
+        "दीपक और नैवेद्य"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Verify the Ghatasthapana Muhurat before preparing the worship space.",
+        "Place soil and customary grain seeds in the wide clay vessel.",
+        "Fill the Kalash with clean water and customary auspicious offerings.",
+        "Arrange leaves and the wrapped coconut; place the Kalash securely.",
+        "Invoke Devi, offer flowers, incense, light and food; continue daily worship."
+      ],
+      "hi": [
+        "पूजन स्थान तैयार करने से पहले घटस्थापना का मुहूर्त जाँचें।",
+        "चौड़े मिट्टी के पात्र में मिट्टी और परंपरागत अनाज के बीज रखें।",
+        "कलश में स्वच्छ जल और परंपरागत मंगल सामग्री रखें।",
+        "पत्ते और वस्त्रयुक्त नारियल सजाकर कलश को स्थिर रखें।",
+        "देवी का आवाहन करके पुष्प, धूप, दीप और नैवेद्य से नित्य पूजन करें।"
+      ]
+    },
+    "note": {
+      "en": "This begins the Navratri observance; care for the altar daily.",
+      "hi": "यह नवरात्रि पूजन का आरंभ है; प्रतिदिन वेदी की देखभाल करें।"
+    }
+  },
+  {
+    "slug": "ganesha-chaturthi",
+    "kind": "festival",
+    "title": {
+      "en": "Ganesha Chaturthi Puja",
+      "hi": "गणेश चतुर्थी पूजा"
+    },
+    "art": "ganesha",
+    "related": "/bhakti/mantra/lord-ganesha-mantras",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/ganesh-chaturthi/ganesha-chaturthi-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Welcome Ganapati and maintain daily worship.",
+      "hi": "गणपति का स्वागत और नित्य पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Ganesha idol",
+        "Cloth, water and sandal paste",
+        "Flowers and Durva",
+        "Lamp, incense and Modak"
+      ],
+      "hi": [
+        "गणेश की मूर्ति",
+        "वस्त्र, जल और चंदन",
+        "पुष्प और दूर्वा",
+        "दीपक, धूप और मोदक"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Prepare a clean, stable seat and take the festival Sankalpa.",
+        "Welcome Ganapati; follow your priest for formal installation rites.",
+        "Offer water, cloth, sandal paste, flowers and Durva.",
+        "Present incense, light and Modak, followed by Ganapati Aarti.",
+        "Continue daily worship until the customary farewell and immersion."
+      ],
+      "hi": [
+        "स्वच्छ और स्थिर आसन तैयार करके पर्व का संकल्प लें।",
+        "गणपति का स्वागत करें; औपचारिक स्थापना में आचार्य का मार्गदर्शन लें।",
+        "जल, वस्त्र, चंदन, पुष्प और दूर्वा अर्पित करें।",
+        "धूप, दीप और मोदक अर्पित करके गणपति आरती करें।",
+        "परंपरानुसार विदाई और विसर्जन तक प्रतिदिन पूजन करते रहें।"
+      ]
+    },
+    "note": {
+      "en": "Use an authorised immersion arrangement and follow local rules.",
+      "hi": "विसर्जन के लिए अधिकृत व्यवस्था और स्थानीय नियमों का पालन करें।"
+    }
+  },
+  {
+    "slug": "raksha-bandhan",
+    "kind": "festival",
+    "title": {
+      "en": "Raksha Bandhan",
+      "hi": "रक्षा बंधन"
+    },
+    "art": "krishna",
+    "related": "/bhakti/mantra/lord-krishna-mantras",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/raksha-bandhan/info/raksha-bandhan-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Consecrate the Raksha thread with auspicious prayers.",
+      "hi": "मंगल प्रार्थना के साथ रक्षासूत्र का पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Raksha thread or Rakhi",
+        "Roli, rice and flowers",
+        "Lamp and sweets"
+      ],
+      "hi": [
+        "रक्षासूत्र या राखी",
+        "रोली, अक्षत और पुष्प",
+        "दीपक और मिठाई"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Verify the appropriate tying period, including the Bhadra restriction.",
+        "Arrange the thread, Roli, rice, flowers and sweets on a plate.",
+        "Offer the thread before the deity and pray for mutual well-being.",
+        "Apply Tilak and tie the thread with your customary Raksha prayer.",
+        "Share sweets, blessings and the commitment to care for one another."
+      ],
+      "hi": [
+        "भद्रा का विचार करके रक्षासूत्र बाँधने का समय जाँचें।",
+        "थाली में रक्षासूत्र, रोली, अक्षत, पुष्प और मिठाई सजाएँ।",
+        "देवता के सम्मुख रक्षासूत्र अर्पित करके परस्पर मंगल की प्रार्थना करें।",
+        "तिलक करें और परंपरागत रक्षा प्रार्थना के साथ सूत्र बाँधें।",
+        "मिठाई और आशीर्वाद बाँटें तथा परस्पर सहयोग का भाव रखें।"
+      ]
+    },
+    "note": {
+      "en": "Family Rakhi and the priest-led Raksha rite have different customs.",
+      "hi": "पारिवारिक राखी और पुरोहित द्वारा रक्षाबंधन की परंपराएँ अलग हो सकती हैं।"
+    }
+  },
+  {
+    "slug": "kali",
+    "kind": "deity",
+    "title": {
+      "en": "Kali Puja",
+      "hi": "काली पूजा"
+    },
+    "art": "kali",
+    "related": "/bhakti/aarti/durga-mata-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/diwali/kali-puja/info/kali-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "A simple devotional offering to Maa Kali.",
+      "hi": "माँ काली के लिए सरल भक्तिपूर्ण अर्पण।"
+    },
+    "materials": {
+      "en": [
+        "Kali image",
+        "Flowers, water and Roli",
+        "Lamp and incense",
+        "Customary food offering"
+      ],
+      "hi": [
+        "काली का चित्र",
+        "पुष्प, जल और रोली",
+        "दीपक और धूप",
+        "परंपरानुसार नैवेद्य"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Clean the altar and remember Ganesha before taking the Sankalpa.",
+        "Meditate on Maa Kali and respectfully invite Her presence.",
+        "Offer a seat, water, sandal paste and flowers.",
+        "Present incense, a lamp and customary food; read a Devi prayer.",
+        "Conclude with Aarti, thanks and Prasad distribution."
+      ],
+      "hi": [
+        "वेदी स्वच्छ करके गणेश स्मरण और पूजन का संकल्प लें।",
+        "माँ काली का ध्यान और श्रद्धापूर्वक आवाहन करें।",
+        "आसन, जल, चंदन और पुष्प अर्पित करें।",
+        "धूप, दीप और पारंपरिक भोग चढ़ाकर देवी स्तुति पढ़ें।",
+        "आरती, कृतज्ञता और प्रसाद वितरण से समापन करें।"
+      ]
+    },
+    "note": {
+      "en": "Diwali pen-and-inkpot worship differs from elaborate Bengali Kali rituals.",
+      "hi": "दीपावली का लेखनी-दवात पूजन विस्तृत बंगाली काली पूजा से अलग है।"
+    }
+  },
+  {
+    "slug": "durga",
+    "kind": "deity",
+    "title": {
+      "en": "Durga Puja",
+      "hi": "दुर्गा पूजा"
+    },
+    "art": "durga",
+    "related": "/bhakti/aarti/durga-mata-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/navratri/durga-puja/puja-vidhi/durga-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Daily offerings and prayer to Maa Durga.",
+      "hi": "माँ दुर्गा के लिए नित्य अर्पण और प्रार्थना।"
+    },
+    "materials": {
+      "en": [
+        "Durga image",
+        "Water, red cloth and flowers",
+        "Sandal paste and Kumkum",
+        "Lamp, incense and food"
+      ],
+      "hi": [
+        "दुर्गा का चित्र",
+        "जल, लाल वस्त्र और पुष्प",
+        "चंदन और कुमकुम",
+        "दीपक, धूप और नैवेद्य"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Prepare the altar and take the Sankalpa after Ganesha remembrance.",
+        "Meditate on Durga, invoke Her and offer a seat.",
+        "Offer water, cloth, sandal paste, Kumkum and flowers.",
+        "Offer incense, light and food while reciting Devi prayers.",
+        "Perform Aarti and offer thanks before sharing Prasad."
+      ],
+      "hi": [
+        "गणेश स्मरण के बाद वेदी तैयार करके पूजन का संकल्प लें।",
+        "दुर्गा का ध्यान, आवाहन और आसन अर्पण करें।",
+        "जल, वस्त्र, चंदन, कुमकुम और पुष्प अर्पित करें।",
+        "देवी स्तुति के साथ धूप, दीप और नैवेद्य चढ़ाएँ।",
+        "आरती करें और कृतज्ञता के साथ प्रसाद बाँटें।"
+      ]
+    },
+    "note": {
+      "en": "Sandhi Puja and large festival installations follow additional procedures.",
+      "hi": "संधि पूजा और बड़े उत्सव की स्थापना में अतिरिक्त विधियाँ होती हैं।"
+    }
+  },
+  {
+    "slug": "hanuman",
+    "kind": "deity",
+    "title": {
+      "en": "Hanuman Puja",
+      "hi": "हनुमान पूजा"
+    },
+    "art": "hanuman",
+    "related": "/bhakti/chalisa/shri-hanuman-chalisa",
+    "sources": [
+      "https://www.drikpanchang.com/hindu-gods/hanuman/puja-vidhi/hanuman-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Worship Hanuman through devotion to Shri Rama.",
+      "hi": "श्री राम भक्ति के भाव से हनुमान पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Hanuman image",
+        "Flowers and sandal paste",
+        "Water, lamp and incense",
+        "Fruit or customary sweets"
+      ],
+      "hi": [
+        "हनुमान का चित्र",
+        "पुष्प और चंदन",
+        "जल, दीपक और धूप",
+        "फल या पारंपरिक मिठाई"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Clean the altar and take the Sankalpa for Hanuman worship.",
+        "Remember Shri Rama and meditate on Hanuman.",
+        "Offer water, cloth, sandal paste and flowers according to custom.",
+        "Offer incense, light and food, then read Hanuman Chalisa.",
+        "Perform Aarti, bow and share the Prasad."
+      ],
+      "hi": [
+        "वेदी स्वच्छ करके हनुमान पूजन का संकल्प लें।",
+        "श्री राम का स्मरण करके हनुमान का ध्यान करें।",
+        "परंपरानुसार जल, वस्त्र, चंदन और पुष्प अर्पित करें।",
+        "धूप, दीप और भोग लगाकर हनुमान चालीसा पढ़ें।",
+        "आरती करें, प्रणाम करें और प्रसाद बाँटें।"
+      ]
+    },
+    "note": {
+      "en": "Do not apply oil or colour to temple images without permission.",
+      "hi": "अनुमति के बिना मंदिर की मूर्ति पर तेल या रंग न लगाएँ।"
+    }
+  },
+  {
+    "slug": "hartalika",
+    "kind": "vrat",
+    "title": {
+      "en": "Hartalika Teej Puja",
+      "hi": "हरतालिका तीज पूजा"
+    },
+    "art": "parvati",
+    "related": "/bhakti/aarti/parvati-mata-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/teej/info/hartalika-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Worship Uma–Maheshwara with devotion.",
+      "hi": "उमा–महेश्वर का श्रद्धापूर्वक पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Shiva–Parvati images or clay forms",
+        "Flowers and Bilva leaves",
+        "Water and customary adornments",
+        "Lamp, incense and Prasad"
+      ],
+      "hi": [
+        "शिव–पार्वती के चित्र या मिट्टी के स्वरूप",
+        "पुष्प और बिल्वपत्र",
+        "जल और परंपरागत श्रृंगार",
+        "दीपक, धूप और प्रसाद"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Bathe, prepare the altar and take a Sankalpa suited to your capacity.",
+        "Arrange the Shiva and Parvati forms on a clean seat.",
+        "Invoke Uma–Maheshwara and offer water, flowers and customary adornments.",
+        "Listen to the Hartalika Katha and remember Shiva and Parvati.",
+        "Perform Aarti and conclude the observance according to family practice."
+      ],
+      "hi": [
+        "स्नान करके वेदी तैयार करें और अपनी क्षमता अनुसार संकल्प लें।",
+        "स्वच्छ आसन पर शिव और पार्वती के स्वरूप रखें।",
+        "उमा–महेश्वर का आवाहन करके जल, पुष्प और परंपरागत श्रृंगार चढ़ाएँ।",
+        "हरतालिका कथा सुनें और शिव–पार्वती का स्मरण करें।",
+        "आरती करें और परिवार की परंपरा अनुसार व्रत-पूजन पूर्ण करें।"
+      ]
+    },
+    "note": {
+      "en": "Sand or clay forms are customary; practices differ by region.",
+      "hi": "रेत या मिट्टी के स्वरूप प्रचलित हैं; क्षेत्रीय विधि अलग हो सकती है।"
+    }
+  },
+  {
+    "slug": "ahoi-ashtami",
+    "kind": "vrat",
+    "title": {
+      "en": "Ahoi Ashtami Puja",
+      "hi": "अहोई अष्टमी पूजा"
+    },
+    "art": "ahoi",
+    "related": "/bhakti/aarti/ahoi-mata-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/ahoi-ashtami/info/ahoi-ashtami-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Ahoi Mata worship and family well-being prayers.",
+      "hi": "अहोई माता पूजन और परिवार के मंगल की प्रार्थना।"
+    },
+    "materials": {
+      "en": [
+        "Ahoi Mata picture",
+        "Kalash, Karwa and water",
+        "Roli, rice and flowers",
+        "Customary Puri, Pua or sweets"
+      ],
+      "hi": [
+        "अहोई माता का चित्र",
+        "कलश, करवा और जल",
+        "रोली, अक्षत और पुष्प",
+        "परंपरानुसार पूरी, पुए या मिठाई"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Take the observance Sankalpa according to your capacity.",
+        "Place the Ahoi picture and prepare the Kalash and Karwa.",
+        "During evening worship offer Roli, rice, flowers and food.",
+        "Listen to the Ahoi Katha and perform Aarti.",
+        "Offer Arghya to stars or the Moon, following your family tradition."
+      ],
+      "hi": [
+        "अपनी क्षमता अनुसार व्रत-पूजन का संकल्प लें।",
+        "अहोई का चित्र रखें और कलश व करवा तैयार करें।",
+        "संध्या पूजन में रोली, अक्षत, पुष्प और नैवेद्य अर्पित करें।",
+        "अहोई कथा सुनें और माता की आरती करें।",
+        "कुल-परंपरा के अनुसार तारों या चंद्रमा को अर्घ्य दें।"
+      ]
+    },
+    "note": {
+      "en": "Star sighting and Moon sighting are different regional practices.",
+      "hi": "तारादर्शन और चंद्रदर्शन अलग क्षेत्रीय परंपराएँ हैं।"
+    }
+  },
+  {
+    "slug": "varalakshmi",
+    "kind": "vrat",
+    "title": {
+      "en": "Varalakshmi Vratam",
+      "hi": "वरलक्ष्मी व्रत"
+    },
+    "art": "lakshmi",
+    "related": "/bhakti/aarti/lakshmi-mata-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/vrats/varalakshmi/puja-vidhi/varalakshmi-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Offerings and remembrance of Shri Varalakshmi.",
+      "hi": "श्री वरलक्ष्मी का पूजन और स्मरण।"
+    },
+    "materials": {
+      "en": [
+        "Varalakshmi image or customary Kalash",
+        "Water and clean cloth",
+        "Flowers and turmeric",
+        "Lamp, incense and Prasad"
+      ],
+      "hi": [
+        "वरलक्ष्मी चित्र या परंपरागत कलश",
+        "जल और स्वच्छ वस्त्र",
+        "पुष्प और हल्दी",
+        "दीपक, धूप और प्रसाद"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Prepare the altar and the customary Varalakshmi representation.",
+        "Take the Sankalpa, meditate on the Goddess and invite Her presence.",
+        "Offer a seat, water, cloth, turmeric and flowers.",
+        "Present incense, light and food; recite Lakshmi prayers.",
+        "Perform Aarti and follow the family Vrat conclusion and Prasad sharing."
+      ],
+      "hi": [
+        "वेदी और वरलक्ष्मी का परंपरागत स्वरूप तैयार करें।",
+        "संकल्प लेकर देवी का ध्यान और आवाहन करें।",
+        "आसन, जल, वस्त्र, हल्दी और पुष्प अर्पित करें।",
+        "धूप, दीप और नैवेद्य चढ़ाकर लक्ष्मी स्तुति करें।",
+        "आरती करें; पारिवारिक व्रत-विधि के अनुसार समापन और प्रसाद वितरण करें।"
+      ]
+    },
+    "note": {
+      "en": "The full sixteen- or thirty-two-offering ritual is more elaborate.",
+      "hi": "पूर्ण षोडशोपचार या बत्तीस-उपचार पूजन की विधि अधिक विस्तृत है।"
+    }
+  },
+  {
+    "slug": "dhanvantari",
+    "kind": "deity",
+    "title": {
+      "en": "Dhanvantari Puja",
+      "hi": "धन्वन्तरि पूजा"
+    },
+    "art": "dhanvantari",
+    "related": "/bhakti/aarti/lord-dhanvantari-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/diwali/dhanvantari-trayodashi/puja-vidhi/dhanvantari-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Traditional worship on Dhanvantari Trayodashi.",
+      "hi": "धन्वन्तरि त्रयोदशी का पारंपरिक पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Dhanvantari image",
+        "Water, rice and flowers",
+        "Sandal paste, lamp and incense",
+        "Fruit or customary offering"
+      ],
+      "hi": [
+        "धन्वन्तरि का चित्र",
+        "जल, अक्षत और पुष्प",
+        "चंदन, दीपक और धूप",
+        "फल या परंपरागत भोग"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Bathe and prepare a clean worship place.",
+        "Take the Sankalpa and remember Ganesha.",
+        "Meditate on Dhanvantari and offer a seat and water.",
+        "Present sandal paste, flowers, incense, light and food.",
+        "Read a Dhanvantari prayer, perform Aarti and share Prasad."
+      ],
+      "hi": [
+        "स्नान करके स्वच्छ पूजन स्थान तैयार करें।",
+        "संकल्प लें और गणेश का स्मरण करें।",
+        "धन्वन्तरि का ध्यान करके आसन और जल अर्पित करें।",
+        "चंदन, पुष्प, धूप, दीप और नैवेद्य चढ़ाएँ।",
+        "धन्वन्तरि स्तुति पढ़ें, आरती करें और प्रसाद बाँटें।"
+      ]
+    },
+    "note": {
+      "en": "Dhanvantari worship and Lakshmi–Kubera worship are separate observances.",
+      "hi": "धन्वन्तरि पूजन और लक्ष्मी–कुबेर पूजन अलग उपासनाएँ हैं।"
+    }
+  },
+  {
+    "slug": "govardhan",
+    "kind": "festival",
+    "title": {
+      "en": "Govardhan & Annakut Puja",
+      "hi": "गोवर्धन और अन्नकूट पूजा"
+    },
+    "art": "govardhan",
+    "related": "/bhakti/aarti/shri-govardhan-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/govardhan-puja/puja-vidhi/govardhan-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Honour Govardhan, Shri Krishna and the gift of food.",
+      "hi": "गोवर्धन, श्री कृष्ण और अन्न के प्रति कृतज्ञता।"
+    },
+    "materials": {
+      "en": [
+        "Govardhan image or customary form",
+        "Water, flowers and Roli",
+        "Lamp and incense",
+        "Cooked vegetarian Annakut"
+      ],
+      "hi": [
+        "गोवर्धन चित्र या परंपरागत स्वरूप",
+        "जल, पुष्प और रोली",
+        "दीपक और धूप",
+        "शाकाहारी पकवानों का अन्नकूट"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Prepare the customary Govardhan representation on a clean space.",
+        "Remember Krishna and take the worship Sankalpa.",
+        "Offer water, flowers, Roli, incense and a lamp.",
+        "Arrange the Annakut, offer the food and perform customary circumambulation.",
+        "Perform Aarti and share Prasad respectfully without wasting food."
+      ],
+      "hi": [
+        "स्वच्छ स्थान पर गोवर्धन का परंपरागत स्वरूप तैयार करें।",
+        "श्री कृष्ण का स्मरण करके पूजन का संकल्प लें।",
+        "जल, पुष्प, रोली, धूप और दीप अर्पित करें।",
+        "अन्नकूट सजाकर भोग लगाएँ और परंपरानुसार परिक्रमा करें।",
+        "आरती करके सम्मानपूर्वक प्रसाद बाँटें और अन्न का अपव्यय न करें।"
+      ]
+    },
+    "note": {
+      "en": "Many families also honour cows and calves on this day.",
+      "hi": "कई परिवार इस दिन गौमाता और बछड़ों का भी सम्मान करते हैं।"
+    }
+  },
+  {
+    "slug": "naraka-chaturdashi",
+    "kind": "festival",
+    "title": {
+      "en": "Naraka Chaturdashi",
+      "hi": "नरक चतुर्दशी"
+    },
+    "art": "yama",
+    "related": "/bhakti/stotram/yama-stotram",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/abhyangsnan/puja-vidhi/naraka-chaturdashi-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Abhyanga Snana and the traditional lamp offering.",
+      "hi": "अभ्यंग स्नान और परंपरागत दीप अर्पण।"
+    },
+    "materials": {
+      "en": [
+        "Bathing water and customary oil",
+        "Ubtan, if customary",
+        "Lamp, wick and oil",
+        "Flowers and food offering"
+      ],
+      "hi": [
+        "स्नान का जल और परंपरागत तेल",
+        "परंपरानुसार उबटन",
+        "दीपक, बाती और तेल",
+        "पुष्प और नैवेद्य"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Verify the local Chaturdashi bathing window before making preparations.",
+        "Follow your customary Abhyanga bathing practice before sunrise.",
+        "Wear clean clothes and remember the household deities.",
+        "Offer flowers and food; observe the Yama lamp custom where followed.",
+        "Offer thanks and prepare the home for the remaining Diwali observances."
+      ],
+      "hi": [
+        "तैयारी से पहले चतुर्दशी के स्थानीय स्नान समय की पुष्टि करें।",
+        "सूर्योदय से पहले अपनी परंपरा अनुसार अभ्यंग स्नान करें।",
+        "स्वच्छ वस्त्र पहनकर घर के आराध्य देवताओं का स्मरण करें।",
+        "पुष्प और नैवेद्य चढ़ाएँ; परंपरा हो तो यम दीप अर्पित करें।",
+        "कृतज्ञता व्यक्त करके दीपावली के अन्य पूजन की तैयारी करें।"
+      ]
+    },
+    "note": {
+      "en": "Bathing and evening lamp rites can fall on different civil dates.",
+      "hi": "प्रातः स्नान और संध्या दीपदान की नागरिक तिथि अलग हो सकती है।"
+    }
+  },
+  {
+    "slug": "vat-savitri",
+    "kind": "vrat",
+    "title": {
+      "en": "Vat Savitri Puja",
+      "hi": "वट सावित्री पूजा"
+    },
+    "art": "yama",
+    "related": "/bhakti/stotram/yama-stotram",
+    "sources": [
+      "https://www.drikpanchang.com/festivals/savitri/puja-vidhi/vat-savitri-puja-vidhi.html"
+    ],
+    "description": {
+      "en": "Savitri remembrance and traditional banyan worship.",
+      "hi": "सावित्री स्मरण और वटवृक्ष का पारंपरिक पूजन।"
+    },
+    "materials": {
+      "en": [
+        "Accessible banyan worship place",
+        "Water, flowers and rice",
+        "Raw thread",
+        "Lamp and customary Prasad"
+      ],
+      "hi": [
+        "वटवृक्ष का उपयुक्त पूजन स्थान",
+        "जल, पुष्प और अक्षत",
+        "कच्चा सूत",
+        "दीपक और पारंपरिक प्रसाद"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Take the Vrat or worship Sankalpa according to your capacity.",
+        "Remember Savitri, Satyavan and the deities honoured in the observance.",
+        "Offer water, flowers, rice and customary food at the banyan.",
+        "Follow the thread and circumambulation custom without harming the tree.",
+        "Listen to the Savitri Katha, pray and share Prasad."
+      ],
+      "hi": [
+        "अपनी क्षमता अनुसार व्रत या पूजन का संकल्प लें।",
+        "सावित्री, सत्यवान और व्रत के पूज्य देवताओं का स्मरण करें।",
+        "वटवृक्ष पर जल, पुष्प, अक्षत और परंपरागत भोग अर्पित करें।",
+        "वृक्ष को हानि पहुँचाए बिना सूत और परिक्रमा की परंपरा निभाएँ।",
+        "सावित्री कथा सुनें, प्रार्थना करें और प्रसाद बाँटें।"
+      ]
+    },
+    "note": {
+      "en": "Vat Amavasya and Vat Purnima traditions differ across regions.",
+      "hi": "वट अमावस्या और वट पूर्णिमा की क्षेत्रीय परंपराएँ भिन्न हैं।"
+    }
+  },
+  {
+    "slug": "satyanarayana",
+    "kind": "vrat",
+    "title": {
+      "en": "Satyanarayana Puja",
+      "hi": "सत्यनारायण पूजा"
+    },
+    "art": "vishnu",
+    "related": "/bhakti/aarti/lord-satyanarayana-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/vrat-katha/satyanarayana/pujan-vidhi/satyanarayana-vrat-pujan-vidhi.html"
+    ],
+    "description": {
+      "en": "Shri Satyanarayana worship, Katha and Prasad.",
+      "hi": "श्री सत्यनारायण पूजन, कथा और प्रसाद।"
+    },
+    "materials": {
+      "en": [
+        "Vishnu or Satyanarayana image",
+        "Kalash, water and flowers",
+        "Tulasi, lamp and incense",
+        "Fruit and customary Prasad"
+      ],
+      "hi": [
+        "विष्णु या सत्यनारायण का चित्र",
+        "कलश, जल और पुष्प",
+        "तुलसी, दीपक और धूप",
+        "फल और पारंपरिक प्रसाद"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Prepare the altar and invite family members to listen attentively.",
+        "Remember Ganesha and take the Satyanarayana worship Sankalpa.",
+        "Worship the Kalash and Vishnu with water, flowers and Tulasi.",
+        "Offer food and listen to the complete Katha in your tradition.",
+        "Perform Aarti and distribute the offered Prasad to those present."
+      ],
+      "hi": [
+        "वेदी तैयार करें और परिवार को श्रद्धापूर्वक कथा सुनने के लिए आमंत्रित करें।",
+        "गणेश स्मरण करके सत्यनारायण पूजन का संकल्प लें।",
+        "कलश और विष्णु को जल, पुष्प और तुलसी अर्पित करें।",
+        "भोग लगाएँ और अपनी परंपरा की संपूर्ण कथा सुनें।",
+        "आरती करें और उपस्थित सभी लोगों को चढ़ाया हुआ प्रसाद दें।"
+      ]
+    },
+    "note": {
+      "en": "This guide gives the worship sequence; it does not replace the Katha.",
+      "hi": "यह पूजन का क्रम है; संपूर्ण कथा का विकल्प नहीं है।"
+    }
+  },
+  {
+    "slug": "ganapati-homa",
+    "kind": "homa",
+    "title": {
+      "en": "Ganapati Homa",
+      "hi": "गणपति होम"
+    },
+    "art": "ganesha",
+    "related": "/bhakti/mantra/lord-ganesha-mantras",
+    "sources": [
+      "https://www.drikpanchang.com/puja-vidhi/homa/ganapati-homa/ganapati-homa-vidhi.html"
+    ],
+    "description": {
+      "en": "An overview of the priest-guided Ganapati fire rite.",
+      "hi": "आचार्य के मार्गदर्शन में गणपति हवन का परिचय।"
+    },
+    "materials": {
+      "en": [
+        "Purpose-built Havan Kunda",
+        "Approved Samidha and ghee",
+        "Water and offering utensils",
+        "Flowers and Prasad"
+      ],
+      "hi": [
+        "उपयुक्त हवन कुंड",
+        "अनुष्ठानानुसार समिधा और घी",
+        "जल और अर्पण के पात्र",
+        "पुष्प और प्रसाद"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Arrange the rite with a trained priest and a suitable ventilated place.",
+        "Perform purification and state the Sankalpa under the priest’s guidance.",
+        "The priest establishes the sacred fire and completes the preliminary offerings.",
+        "Offer the prescribed Ganapati Ahutis with the guided mantra recitation.",
+        "Complete the closing offerings, Purnahuti, prayer and Prasad distribution."
+      ],
+      "hi": [
+        "प्रशिक्षित आचार्य के साथ उपयुक्त हवादार स्थान पर अनुष्ठान की व्यवस्था करें।",
+        "आचार्य के मार्गदर्शन में शुद्धिकरण और संकल्प करें।",
+        "आचार्य अग्नि स्थापना और प्रारंभिक आहुतियों का क्रम पूरा कराएँ।",
+        "आचार्य के मंत्रोच्चार के अनुसार गणपति की निर्धारित आहुतियाँ दें।",
+        "समापन की आहुतियाँ, पूर्णाहुति, प्रार्थना और प्रसाद वितरण करें।"
+      ]
+    },
+    "note": {
+      "en": "Keep flammable objects away; attend the Kunda until it is fully safe.",
+      "hi": "ज्वलनशील वस्तुएँ दूर रखें; अग्निकुंड सुरक्षित होने तक उसे अकेला न छोड़ें।"
+    }
+  },
+  {
+    "slug": "durga-homa",
+    "kind": "homa",
+    "title": {
+      "en": "Devi Durga Homa",
+      "hi": "देवी दुर्गा होम"
+    },
+    "art": "durga",
+    "related": "/bhakti/aarti/durga-mata-aarti",
+    "sources": [
+      "https://www.drikpanchang.com/puja-vidhi/homa/goddesses/durga/durga-homa/durga-homa-vidhi.html"
+    ],
+    "description": {
+      "en": "An overview of Devi worship through Homa.",
+      "hi": "होम के माध्यम से देवी उपासना का परिचय।"
+    },
+    "materials": {
+      "en": [
+        "Purpose-built Havan Kunda",
+        "Approved Samidha and ghee",
+        "Water and offering utensils",
+        "Flowers and Prasad"
+      ],
+      "hi": [
+        "उपयुक्त हवन कुंड",
+        "अनुष्ठानानुसार समिधा और घी",
+        "जल और अर्पण के पात्र",
+        "पुष्प और प्रसाद"
+      ]
+    },
+    "steps": {
+      "en": [
+        "Choose a trained priest and prepare a suitable ventilated ritual space.",
+        "Begin with purification, Ganesha remembrance and the Devi Homa Sankalpa.",
+        "Follow the priest through fire establishment and preliminary offerings.",
+        "Offer the prescribed Devi Ahutis with correctly guided recitation.",
+        "Conclude with Purnahuti, peace prayers, Aarti and Prasad."
+      ],
+      "hi": [
+        "प्रशिक्षित आचार्य चुनें और उपयुक्त हवादार अनुष्ठान स्थल तैयार करें।",
+        "शुद्धिकरण, गणेश स्मरण और देवी होम के संकल्प से आरंभ करें।",
+        "आचार्य के अनुसार अग्नि स्थापना और प्रारंभिक आहुतियाँ दें।",
+        "आचार्य के शुद्ध मंत्रोच्चार अनुसार देवी की निर्धारित आहुतियाँ अर्पित करें।",
+        "पूर्णाहुति, शांति प्रार्थना, आरती और प्रसाद से समापन करें।"
+      ]
+    },
+    "note": {
+      "en": "Saptashati Homa requires its own recitation and ritual guidance.",
+      "hi": "सप्तशती हवन का पाठ और अनुष्ठान अलग मार्गदर्शन में किया जाता है।"
+    }
+  }
+]

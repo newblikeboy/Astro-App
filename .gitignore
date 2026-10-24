@@ -1,0 +1,76 @@
+# Local environment and secrets (keep example configuration)
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.sample
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Dependencies and frontend build/cache output
+node_modules/
+dist/
+.vite/
+.vite-temp/
+.cache/
+*.tsbuildinfo
+
+# Local application data, scratch work and generated previews
+.local/
+/bin/
+/build/
+tmp/
+temp/
+docs/
+
+# Go/native binaries, test binaries and profiling output
+*.exe
+*.exe~
+*.test
+*.out
+*.prof
+*.o
+*.obj
+/server
+/kundalicheck
+/channelvideos
+/shopcatalog
+/codemap
+
+# Logs and process files
+*.log
+*.pid
+*.pid.lock
+
+# Test reports and coverage
+test-results/
+playwright-report/
+playwright/.cache/
+blob-report/
+coverage/
+.nyc_output/
+coverage.txt
+coverage.xml
+
+# Python caches and local virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local editor and operating system files
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/

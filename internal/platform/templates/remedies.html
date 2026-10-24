@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<title>{{.Report.Birth.Name}} - व्यक्तिगत कुंडली और उपाय | Mishra 4 You</title>
+<style>
+@font-face{font-family:Noto;font-weight:400;src:url(data:font/ttf;base64,{{.Font}})}
+@font-face{font-family:Noto;font-weight:700;src:url(data:font/ttf;base64,{{.Bold}})}
+@page{size:A4;margin:19mm 18mm 20mm}
+*{box-sizing:border-box}
+body{font-family:Noto,sans-serif;color:#382b23;font-size:12px;line-height:1.75;margin:0;padding:6mm 8mm}
+.page-frame{position:fixed;top:0;left:0;width:100%;height:258mm;border:1.4px solid #b66d39;outline:3px double #e6c69a;outline-offset:-6px;pointer-events:none;z-index:1}
+.corner{position:absolute;width:22px;height:22px;border:3px double #a25427;background:#fffaf1;transform:rotate(45deg)}
+.tl{left:3px;top:3px}.tr{right:3px;top:3px}.bl{left:3px;bottom:3px}.br{right:3px;bottom:3px}
+h1,h2,h3{color:#783d25;line-height:1.5}h1{font-size:31px;margin:24px 0 10px}h2{font-size:23px;margin:0 0 16px;padding:0 0 10px;border-bottom:2px solid #dba16a;break-after:avoid}h3{font-size:15px;margin:20px 0 8px;break-after:avoid}p{margin:8px 0 12px;orphans:3;widows:3}
+header{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:3px double #c58a53;gap:20px}
+.brand{font-size:24px;color:#783d25;font-weight:700}.brand small{display:block;font-size:12px;letter-spacing:1px}.tag{font-size:11px;color:#9b592b;letter-spacing:1px;text-align:right}
+.eyebrow{font-size:11px;letter-spacing:2px;color:#9b592b;margin:22px 0 6px}.lead{font-size:15px;color:#7b5740}.ornament{text-align:center;color:#b5723d;letter-spacing:9px;margin:22px 0}
+.meta,.notice{background:#fff7e9;border:1px solid #e5c8a5;padding:15px 18px;border-radius:3px}.meta p{margin:4px 0}.demo{border:2px solid #b7672c;padding:10px 14px;font-size:11px;color:#85431d;background:#fff5e5}
+.contents{columns:2;column-gap:26px;margin:18px 0}.contents a{display:block;break-inside:avoid;margin:0 0 9px;text-decoration:none;border-bottom:1px solid #ecdecb;padding-bottom:6px;color:#783d25;font-size:12px}
+.section{break-before:page;padding-top:6mm}.intro{color:#775b47;margin-bottom:18px;break-after:avoid}.block{margin:0 0 22px}.block h3{padding-left:10px;border-left:3px solid #c7864b}.block-note,.muted{font-size:10.5px;color:#806b5b;overflow-wrap:anywhere}.block-note{margin-top:0;break-after:avoid}
+table{width:100%;border-collapse:collapse;font-size:11px;line-height:1.65;table-layout:fixed}thead{display:table-header-group}th,td{padding:7px 6px;text-align:left;vertical-align:top;border:1px solid #e9dccb;overflow-wrap:anywhere}th{background:#faedda;color:#704227;font-weight:700}tbody tr:nth-child(even){background:#fffbf5}tr{break-inside:avoid}
+.chart{width:280px;max-width:100%;display:block;margin:16px auto}.chart-block{display:flex;align-items:center;gap:20px;break-inside:avoid}.chart-block .chart{width:245px;flex:0 0 245px;margin:12px 0}.chart-block table{flex:1;min-width:0;font-size:10.5px}.chart-block th,.chart-block td{padding:5px}.block:has(.chart-block){break-inside:avoid}
+.rule{padding:0 0 22px;margin-bottom:22px;border-bottom:1px solid #e4c6a3}.rule h3{font-size:18px;margin-top:0}.rule p,.remedy-text{white-space:pre-line;overflow-wrap:anywhere}.rule-type{font-size:10px;letter-spacing:1px;color:#9a633c}.remedy{border-left:3px solid #bd7a40;padding:7px 14px;background:#fff8ec;margin:15px 0;box-decoration-break:clone;-webkit-box-decoration-break:clone}.remedy h4{color:#7c4428;font-size:13px;margin:0 0 6px;break-after:avoid}.rule .muted{font-size:9px}.rule h3,.remedy h4{break-after:avoid}
+.follow-up{margin-top:22px;padding:16px 18px;border:1px solid #dca66d;background:#fff8ec;break-inside:avoid}.follow-up a{color:#89451d}.ref{font-size:9px;overflow-wrap:anywhere}.wide-table table:has(th:nth-child(10)){font-size:9px}.wide-table table:has(th:nth-child(10)) th,.wide-table table:has(th:nth-child(10)) td{padding:5px 3px;text-align:center}.wide-table table:has(th:nth-child(10)) th:first-child,.wide-table table:has(th:nth-child(10)) td:first-child{width:55px;text-align:left}
+footer{margin-top:24px;border-top:2px double #d7b18b;padding-top:14px}.legend{font-size:10px;color:#795e46}.reference-note{font-size:10.5px}.reference-note p{margin:8px 0}
+</style>
+</head>
+<body>
+<div class="page-frame" aria-hidden="true"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i></div>
+<header><div class="brand">Mishra 4 You<small>पं. राजा मिश्रा</small></div><div class="tag">परंपरा · गणना · मार्गदर्शन<br>व्यक्तिगत कुंडली और उपाय</div></header>
+{{if .Order.Demo}}<p class="demo">डेमो रिपोर्ट · परीक्षण भुगतान · यह स्वीकृत व्यक्तिगत सलाह नहीं है।</p>{{end}}
+<div class="eyebrow">आपके जन्म विवरण पर आधारित</div>
+<h1>{{.Report.Birth.Name}} की<br>व्यक्तिगत कुंडली</h1>
+<p class="lead">अपनी कुंडली को समझें। मार्गदर्शन और उपाय एक जगह पाएँ।</p>
+<div class="ornament">◇ · ◇ · ◇</div>
+<div class="meta"><p><b>जन्म तारीख:</b> {{.Report.Birth.Date}} · <b>समय:</b> {{clock .Report.Birth.Time}}</p><p><b>स्थान:</b> {{if .Report.Place.Hindi}}{{.Report.Place.Hindi}}{{else}}{{.Report.Place.Name}}{{end}}</p><p><b>समय क्षेत्र:</b> {{.Report.Place.Zone}}</p><p><b>निर्देशांक:</b> {{.Report.Place.Lat}}, {{.Report.Place.Lon}}</p><p><b>जन्म UTC:</b> {{instant .Report.Chart.UTC "UTC"}}</p>{{if not .Report.Created.IsZero}}<p><b>गणना का संदर्भ:</b> {{date .Report.Created}}</p>{{end}}</div>
+<h3>इस रिपोर्ट में</h3>
+<nav class="contents"><a href="#guidance">व्यक्तिगत फलादेश और उपाय</a><a href="#d1">जन्म कुंडली और ग्रह सारणी</a>{{range .Sections}}<a href="#{{.ID}}">{{.Title}}</a>{{end}}</nav>
+<p class="muted">रिपोर्ट सुरक्षित जन्म विवरण और सामग्री के संस्करण पर आधारित है। गोचर और सक्रिय दशाएँ रिपोर्ट के संदर्भ समय की हैं।</p>
+
+<section class="section" id="guidance"><h2>व्यक्तिगत फलादेश और उपाय</h2>
+<p class="intro">हर विषय की व्याख्या और उससे जुड़े उपलब्ध उपाय नीचे दिए हैं। मंत्र और रत्न का मार्गदर्शन उसी रूप में रखा गया है जिसमें वह रिपोर्ट में सुरक्षित है।</p>
+{{range .Report.Rules}}
+<article class="rule">
+<div class="rule-type">{{category .Category}}{{if .Demo}} · डेमो सामग्री{{end}}</div>
+<h3>{{.Topic}}</h3><p>{{.Hindi}}</p>
+{{if .Mantra}}<div class="remedy"><h4>मंत्र और संबंधित निर्देश</h4><p class="remedy-text">{{.Mantra}}</p></div>{{end}}
+{{if .Gemstone}}<div class="remedy"><h4>रत्न संबंधी मार्गदर्शन</h4><p class="remedy-text">{{.Gemstone}}</p><p class="muted">इस PDF की खरीद में रत्न शामिल नहीं है।</p></div>{{end}}
+<p class="muted">सामग्री संदर्भ: {{.ID}} · संस्करण {{.Version}}{{if eq .Status "approved"}} · स्वीकृत{{else}} · {{label .Status}}{{end}}{{if .Approver}} · {{.Approver}}{{end}}{{if .ApprovedAt}} · {{date .ApprovedAt}}{{end}}</p>
+</article>
+{{else}}<div class="notice">इस सुरक्षित संस्करण में व्यक्तिगत व्याख्या और उपाय उपलब्ध नहीं हैं।</div>{{end}}
+{{if .Links}}<div class="follow-up"><b>अगला कदम</b><p><a href="{{.Links.Report}}">वेबसाइट पर अपनी पूरी कुंडली देखें</a> · <a href="{{.Links.Consultation}}">गुरुजी से परामर्श देखें</a></p><p class="muted">अपने खाते में प्रवेश आवश्यक हो सकता है। उपलब्ध सेवा और कीमत वेबसाइट पर देखें।</p></div>{{end}}
+</section>
+
+<section class="section" id="d1"><h2>जन्म कुंडली · D1</h2><p class="intro">लग्न: {{sign .Report.Chart.Lagna.RashiNumber}} {{.Report.Chart.Lagna.DMS}} · लाहिड़ी अयनांश · राशि आधारित भाव</p>
+{{.Chart}}<p class="legend">राशि संख्या 1-12 हैं। सू सूर्य · चं चंद्र · मं मंगल · बु बुध · गु गुरु · शु शुक्र · श शनि · रा राहु · के केतु। लग्न से भाव वामावर्त पढ़ें।</p>
+<table><thead><tr><th>ग्रह</th><th>राशि</th><th>अंश</th><th>नक्षत्र / पद</th><th>भाव</th><th>वक्री</th></tr></thead><tbody>{{range .Report.Chart.Planets}}<tr><td>{{label .Name}}</td><td>{{sign .RashiNumber}}</td><td>{{.DMS}}</td><td>{{label .Nakshatra}} / {{.Pada}}</td><td>{{.House}}</td><td>{{if .Retrograde}}हाँ{{else}}नहीं{{end}}</td></tr>{{end}}</tbody></table></section>
+
+{{range .Sections}}<section class="section wide-table" id="{{.ID}}"><h2>{{.Title}}</h2>{{if .Intro}}<p class="intro">{{.Intro}}</p>{{end}}
+{{range .Blocks}}<div class="block"><h3>{{.Title}}</h3>{{if .Note}}<p class="block-note">{{.Note}}</p>{{end}}
+{{if .Chart}}<div class="chart-block">{{.Chart}}{{end}}
+{{if .Rows}}<table><thead><tr>{{range .Headers}}<th>{{.}}</th>{{end}}</tr></thead><tbody>{{range .Rows}}<tr>{{range .}}<td>{{.}}</td>{{end}}</tr>{{end}}</tbody></table>{{end}}
+{{if .Chart}}</div>{{end}}</div>{{end}}
+</section>{{end}}
+
+<div class="reference-note">{{range .Report.Limitations}}<p>{{.}}</p>{{end}}<p>ज्योतिषीय व्याख्या और खगोलीय गणना अलग हैं। परिणाम की गारंटी नहीं है। दशा की तारीखें घोषित पद्धति पर निर्भर हैं। गोचर सुरक्षित संदर्भ समय का है।</p></div>
+<footer><p>रिपोर्ट और व्यक्तिगत सामग्री का संस्करण खरीद के समय सुरक्षित किया गया है।</p><div class="ref">रिपोर्ट: {{.Report.ID}}<br>ऑर्डर: {{.Order.ID}} · राशि: {{money .Order.Amount}}{{if and .Order.TaxMode (ne .Order.TaxMode "unconfigured")}} · कर व्यवस्था: {{.Order.TaxMode}}{{end}}</div>{{if .Links}}<p><a href="{{.Links.Account}}">अपने खाते और सेवा की स्थिति देखें</a></p>{{end}}<p class="muted">Mishra 4 You · पं. राजा मिश्रा</p></footer>
+</body></html>

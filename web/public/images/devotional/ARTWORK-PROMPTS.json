@@ -1,0 +1,128 @@
+[
+  {
+    "id": "ganesha",
+    "prompt": "Use case: illustration-story. Asset: devotional website card portrait, a single standalone square image. Create a refined traditional Indian devotional painting of Shri Ganesha, elephant head, kind serene expression, four arms, lotus and modak bowl, blessing hand, seated on a lotus cushion. Respectful recognizable Hindu iconography, balanced anatomy. Warm ivory and subtle saffron backdrop with soft golden halo, jewel red and gold textiles, finely painted face and details, sophisticated natural colors rather than neon, luminous soft light. Entire crown, ears and hands inside the central 80% with generous breathing room. No text, letters, watermark, frame, collage or other deities. Clean high quality image suitable for a small devotional card.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/ganesha-v2.webp"
+  },
+  {
+    "id": "hanuman",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Shri Hanuman, monkey face, exactly two arms, seated in devotion wearing a red dhoti and golden crown, one hand in blessing and a golden gada mace resting beside him, long curling tail.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/hanuman-v2.webp"
+  },
+  {
+    "id": "shiva",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Lord Shiva meditating on a tiger skin, ash blue skin, exactly two arms, matted topknot with crescent moon, third eye, rudraksha beads, small cobra at neck, trident and damaru beside him.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/shiva-v2.webp"
+  },
+  {
+    "id": "krishna",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Shri Krishna, youthful blue skin, two arms holding a flute to his lips, peacock feather crown, yellow dhoti, gentle Vrindavan foliage in the background. No other figures.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/krishna-v2.webp"
+  },
+  {
+    "id": "lakshmi",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Maa Lakshmi seated on a pink lotus, exactly four arms, upper hands each holding one lotus flower, lower right blessing, lower left with a small stream of golden coins, red sari and traditional golden crown.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/lakshmi-v2.webp"
+  },
+  {
+    "id": "durga",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Maa Durga seated regally on a lion, red sari and golden crown, eight arms with traditional lotus, trident, discus, conch and sword, one hand blessing. Peaceful devotional portrayal, no battle or violence.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/durga-v2.webp"
+  },
+  {
+    "id": "rama",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Shri Rama standing gracefully, blue skin, exactly two arms, golden crown, yellow dhoti and saffron shawl, long bow in left hand and a quiver behind the shoulder.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/rama-v2.webp"
+  },
+  {
+    "id": "vishnu",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Shri Vishnu seated on a pink lotus, blue skin, golden crown and yellow dhoti, exactly four arms holding discus, conch, lotus and mace, balanced peaceful devotional composition.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/vishnu-v2.webp"
+  },
+  {
+    "id": "saraswati",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Maa Saraswati seated on a white lotus, white sari with gold border, exactly four arms, front two hands playing a veena, back hands holding a book and prayer beads, a white swan beside her.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/saraswati-v2.webp"
+  },
+  {
+    "id": "parvati",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Maa Parvati, serene Himalayan goddess seated on a lotus cushion, exactly two arms, red silk sari and golden crown, holding a pink lotus in her left hand and blessing with her right. Subtle Himalayan landscape, no other figures.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/parvati-v2.webp"
+  },
+  {
+    "id": "kali",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Maa Kali in a dignified peaceful devotional portrait, deep blue skin, three eyes, long dark hair, red sari, golden crown, exactly four arms with a sword and lotus, lower hands in blessing and protection. No severed heads, blood, violence or bodies.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/kali-v2.webp"
+  },
+  {
+    "id": "fire",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: A sacred Hindu havan kund, square copper and brick fire altar with a small bright controlled flame, brass puja vessels, marigold flowers, incense and a ladle beside the altar. A clean calm puja arrangement. No people or deity figures.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/fire-v2.webp"
+  },
+  {
+    "id": "kubera",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Shri Kubera, benevolent pot-bellied god of wealth seated on a cushioned throne, exactly two arms, jeweled golden crown, rich gold and green garments, a small pot of coins in one hand and the other blessing. No other deities.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/kubera-v2.webp"
+  },
+  {
+    "id": "dhanvantari",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Shri Dhanvantari, traditional Hindu deity of Ayurveda, blue skin, golden crown and yellow robes, four arms holding a conch, discus, healing herbs and golden amrita vessel. Calm seated devotional portrait, no medical claims or text.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/dhanvantari-v2.webp"
+  },
+  {
+    "id": "govardhan",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Shri Krishna as Govardhan-dhari, blue skin and peacock-feather crown, yellow dhoti, standing with one hand lifting Govardhan hill above him as shelter; a few cows resting safely beneath the hill, gentle devotional scene, no storm.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/govardhan-v2.webp"
+  },
+  {
+    "id": "yama",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Shri Yama Dharmaraja in a dignified peaceful traditional devotional painting, dark blue skin, golden crown, red and gold robes, exactly two arms holding a staff and a looped rope, seated on a black buffalo. No punishment, fear, violence or other figures.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/yama-v2.webp"
+  },
+  {
+    "id": "ahoi",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: An Ahoi Ashtami household worship arrangement, a traditional hand-painted eight-sided Ahoi Mata puja wall motif, with a clearly drawn small porcupine and seven small cubs in its lower section, a decorated clay water vessel, marigold flowers and a lit diya in front. Respectful warm devotional still life. No text, no invented human portrait.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/ahoi-v2.webp"
+  },
+  {
+    "id": "surya",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Shri Surya Narayana, radiant sun deity seated on a golden chariot with seven white horses clearly arranged in front, golden crown, exactly two arms each holding a lotus, warm gentle rising sun behind. Balanced peaceful Hindu devotional painting.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/surya-v2.webp"
+  },
+  {
+    "id": "shani",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Shri Shani Dev, dignified dark blue skin, golden crown, deep blue garments, exactly two arms, one blessing and the other holding a staff, seated on a black crow. Peaceful devotional portrait, no intimidation or other deities.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/shani-v2.webp"
+  },
+  {
+    "id": "narasimha",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Shri Lakshmi Narasimha, the serene lion-headed avatar of Vishnu with a human torso, golden mane, crown and yellow dhoti, seated on an ornate throne with Lakshmi in a red sari beside him. Peaceful worship form, Narasimha has four coherent arms holding discus and conch, one blessing. No violence or battle.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/narasimha-v2.webp"
+  },
+  {
+    "id": "ganga",
+    "prompt": "Use case: illustration-story. Asset: one standalone square devotional website painting. Refined traditional Indian devotional art, respectful and recognizable Hindu iconography, serene face, anatomically coherent hands and limbs. Warm ivory background, gentle golden halo, restrained saffron, jewel red and gold accents, luminous soft light, finely painted details. Keep crown, face and identifying objects safely inside the central 80% with generous breathing room; complete seated figure where possible. No text, lettering, watermark, modern objects, collage, frame or multiple panels. Subject: Maa Ganga, serene river goddess in a white sari with gold border and golden crown, exactly two arms holding a water pot and lotus, seated on a traditional makara crocodile-like aquatic mount, a clear sacred river and distant Himalayan peaks.",
+    "tool": "built-in image_gen",
+    "asset": "/images/devotional/ganga-v2.webp"
+  }
+]

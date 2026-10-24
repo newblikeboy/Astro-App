@@ -1,0 +1,152 @@
+/* A quiet daily overview; every calculation remains available on deliberate expansion. */
+#root #panchang {
+  background: #fff8ee;
+  border-block: 1px solid #efdfc9;
+  padding-block: 56px;
+}
+#root #panchang .panchang-heading { margin-bottom: 26px; align-items: center; }
+#root #panchang .panchang-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ab400b;
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#root #panchang .panchang-heading h2 { font-size: clamp(28px, 3vw, 38px); letter-spacing: -.8px; margin-bottom: 9px; }
+#root #panchang .panchang-heading p { font-size: 13px; line-height: 1.8; max-width: 560px; }
+#root #panchang .daily-free { display: inline-flex; align-items: center; gap: 7px; background: transparent; font-size: 11px; padding: 8px 12px; color: #7d4b2b; border-color: #e7cba6; }
+#root #panchang .daily-sheet { background: #fffdf8; border: 1px solid #e8d4b9; border-radius: 22px; box-shadow: 0 14px 48px #83400b09; }
+#root #panchang .daily-tabs { background: #fff5e6; padding: 10px; gap: 5px; border-color: #eedcc2; border-radius: 22px 22px 0 0; }
+#root #panchang .daily-tabs button { min-height: 48px; gap: 8px; border-radius: 10px; font-size: 12px; color: #775238; }
+#root #panchang .daily-tabs button:hover { background: #ffebca; color: #87360d; }
+#root #panchang .daily-tabs button[aria-selected="true"] { background: var(--bhagwa-gloss); color: #fff; box-shadow: inset 0 1px 0 #fff4, 0 3px 8px #b54a0b12; }
+#root #panchang #daily-panel { padding: 26px; }
+#root #panchang .daily-controls { grid-template-columns: minmax(0, 1fr) 190px auto; gap: 16px; border: 0; padding: 0; margin-bottom: 24px; }
+#root #panchang .daily-controls label { font-size: 11px; color: #775238; }
+#root #panchang .daily-controls input,
+#root #panchang .daily-date-nav button { border: 1px solid #dfc8a9; background: #fffefa; border-radius: 10px; }
+#root #panchang .daily-controls input:focus { border-color: #b95b20; }
+#root #panchang .daily-date-nav button:hover { background: #fff0d6; }
+#root #panchang .daily-solar { padding: 17px 20px; margin-bottom: 28px; background: #fff4e1; border: 1px solid #edd8b8; border-radius: 14px; gap: 16px 32px; }
+#root #panchang .daily-date-context strong { font-size: 16px; color: #673414; }
+#root #panchang .daily-date-context small { font-size: 11px; color: #7b5b43; }
+#root #panchang .daily-solar > span { display: grid; grid-template-columns: 18px auto; gap: 2px 8px; font-size: 11px; }
+#root #panchang .daily-solar > span > svg { grid-row: 1 / 3; align-self: center; color: #a94c12; }
+#root #panchang .daily-solar > span > b { grid-column: 2; font-size: 14px; font-weight: 600; color: #673414; }
+#root #panchang .panchang-overview-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 18px; }
+#root #panchang .panchang-eyebrow { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: .1em; color: #946240; margin-bottom: 6px; }
+#root #panchang .panchang-overview-heading h3 { font-size: 24px; letter-spacing: -.5px; margin: 0; color: #6a3115; }
+#root #panchang .panchang-snapshot-label { font-size: 11px; color: #7b4b2a; padding: 6px 10px; border-radius: 100px; border: 1px solid #e9d3b1; background: #fff7e9; flex-shrink: 0; }
+#root #panchang .panchang-essentials { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border: 1px solid #e9d5b8; border-radius: 16px; overflow: hidden; background: #fffefa; margin-bottom: 26px; }
+#root #panchang .panchang-essential { min-width: 0; padding: 22px 20px; border-right: 1px solid #eedec6; }
+#root #panchang .panchang-essential:last-child { border-right: 0; }
+#root #panchang .panchang-essential-label { display: flex; align-items: center; gap: 8px; color: #806046; font-size: 11px; }
+#root #panchang .panchang-essential-label .astro-symbol { width: 28px; height: 28px; border-radius: 9px; background: #fff0d9; color: #9c511d; }
+#root #panchang .panchang-essential-label .astro-symbol svg { width: 17px; height: 17px; }
+#root #panchang .panchang-essential h4 { font-size: 20px; line-height: 1.5; font-weight: 600; color: #623417; margin: 17px 0 10px; min-height: 3em; overflow-wrap: anywhere; }
+#root #panchang .panchang-essential p { font-size: 11px; line-height: 1.8; color: #806046; margin: 0; }
+#root #panchang .panchang-essential time { color: #6b3e1f; font-weight: 550; }
+#root #panchang .panchang-essential-featured { background: linear-gradient(135deg, #ae420b, #90300c); border-color: #a13b0b; position: relative; isolation: isolate; overflow: hidden; }
+#root #panchang .panchang-essential-featured::before { content: ""; position: absolute; inset: auto -40px -80px auto; width: 180px; height: 180px; border-radius: 50%; border: 1px solid #ffce7933; box-shadow: 0 0 0 18px #ffdca00a, 0 0 0 36px #ffdca008; z-index: -1; pointer-events: none; }
+#root #panchang .panchang-essential-featured h4 { color: #fff9ec; }
+#root #panchang .panchang-essential-featured :is(.panchang-essential-label, p, time) { color: #ffe9c8; }
+#root #panchang .panchang-essential-featured .astro-symbol { background: #fff1d71a; color: #ffe3b3; }
+#root #panchang .panchang-expansions { border: 1px solid #e8d6bb; border-radius: 14px; background: #fffefa; }
+#root #panchang .panchang-disclosure + .panchang-disclosure { border-top: 1px solid #ecddc7; }
+#root #panchang .panchang-disclosure > summary { display: flex; align-items: center; gap: 14px; cursor: pointer; padding: 19px 20px; list-style: none; min-height: 76px; border-radius: 13px; }
+#root #panchang .panchang-disclosure > summary::-webkit-details-marker { display: none; }
+#root #panchang .panchang-disclosure > summary:hover { background: #fff5e5; }
+#root #panchang .panchang-disclosure-icon { width: 38px; height: 38px; display: grid; place-items: center; flex-shrink: 0; background: #fff1da; color: #9e511d; border-radius: 11px; }
+#root #panchang .panchang-disclosure-copy { flex: 1; min-width: 0; }
+#root #panchang .panchang-disclosure-copy strong { display: block; font-size: 14px; color: #653517; font-weight: 600; }
+#root #panchang .panchang-disclosure-copy small { display: block; font-size: 11px; line-height: 1.7; color: #85664c; margin-top: 4px; }
+#root #panchang .panchang-disclosure-chevron { color: #a46b35; flex-shrink: 0; transition: transform .18s; }
+#root #panchang .panchang-disclosure[open] > summary .panchang-disclosure-chevron { transform: rotate(180deg); }
+#root #panchang .panchang-disclosure-body { padding: 4px 20px 22px; }
+#root #panchang .panchang-timeline-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+#root #panchang .panchang-details { border-top: 0; padding-top: 0; }
+#root #panchang .panchang-details h3 { font-size: 18px; }
+#root #panchang .panchang-detail-tabs { gap: 6px; }
+/* Independent timing groups need their own surfaces, including when stacked. */
+#root #panchang .extended-split { gap: 22px; margin-top: 24px; align-items: start; }
+#root #panchang :is(.extended-split > section, .panchang-detail-card) { min-width: 0; border: 1px solid #e5cfad; border-radius: 14px; padding: 0 18px; background: #fffdf8; overflow: hidden; }
+#root #panchang .panchang-detail-card { margin-top: 22px; }
+#root #panchang :is(.extended-split > section, .panchang-detail-card) > h4 { margin: 0 -18px; padding: 16px 18px; min-height: 56px; box-sizing: border-box; background: #fff0d9; border-bottom: 1px solid #e5cfad; line-height: 1.5; }
+#root #panchang :is(.extended-split > section, .panchang-detail-card) > h4 svg { color: #a54a13; flex-shrink: 0; }
+#root #panchang :is(.extended-split > section, .panchang-detail-card) .extended-periods li { padding-block: 18px; }
+#root #panchang :is(.extended-split > section, .panchang-detail-card) .extended-periods li:last-child { border-bottom: 0; }
+#root #panchang .extended-split > section > .daily-explainer { padding-block: 16px; margin: 0; }
+#root #panchang .daily-period-group { border-color: #e5cfad; background: #fffefa; }
+#root #panchang .daily-night { background: #faf5ed; }
+#root #panchang .daily-group-heading { background: #fff0d8; border-color: #e8d2b3; }
+#root #panchang .daily-night .daily-group-heading { background: #eee5d8; }
+#root #panchang .daily-periods li { border-color: #efdfca; }
+#root #panchang .daily-foot { padding-top: 14px; }
+#root #panchang .daily-foot > p { max-width: 85ch; font-size: 11px; line-height: 1.8; }
+#root #panchang .daily-foot > details > summary { min-height: 40px; padding-block: 8px; color: #86502b; }
+@media (max-width: 900px) {
+  #root #panchang .extended-split .extended-periods li { flex-direction: column; align-items: stretch; }
+  #root #panchang .extended-split .extended-periods li > .time-range { text-align: left; justify-content: start; }
+  #root #panchang .daily-controls { grid-template-columns: minmax(0, 1fr) auto; }
+  #root #panchang .daily-controls .daily-location { grid-column: 1 / -1; }
+  #root #panchang .daily-tabs button { flex-direction: row; gap: 6px; padding-inline: 5px; font-size: 11px; }
+  #root #panchang .daily-tabs button svg { width: 15px; height: 15px; flex-shrink: 0; }
+  #root #panchang .panchang-essential { padding: 19px 14px; }
+  #root #panchang .panchang-essential h4 { font-size: 17px; }
+  #root #panchang .panchang-timeline-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+  #root #panchang { padding-block: 36px; }
+  #root #panchang .panchang-heading { align-items: start; gap: 14px; flex-direction: column; margin-bottom: 20px; }
+  #root #panchang .panchang-heading h2 { font-size: 29px; }
+  #root #panchang .panchang-heading p { font-size: 12px; }
+  #root #panchang .daily-free { padding: 0; border: 0; font-size: 10px; }
+  #root #panchang .daily-sheet { border-radius: 18px; }
+  #root #panchang .daily-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 7px; gap: 4px; border-radius: 18px 18px 0 0; }
+  #root #panchang .daily-tabs button { min-height: 44px; font-size: 10px; padding: 9px 4px; gap: 5px; }
+  #root #panchang #daily-panel { padding: 19px 15px; }
+  #root #panchang .daily-controls { grid-template-columns: minmax(0, 1fr) 92px; gap: 13px 10px; margin-bottom: 20px; }
+  #root #panchang .daily-controls .daily-location { grid-column: 1 / -1; }
+  #root #panchang .daily-date-nav { display: grid; grid-template-columns: repeat(2, 44px); gap: 4px; }
+  #root #panchang .daily-date-nav button { min-width: 0; min-height: 44px; padding-inline: 5px; }
+  #root #panchang .daily-date-nav button:first-child { grid-column: 1; grid-row: 2; }
+  #root #panchang .daily-date-nav button:nth-child(2) { grid-column: 1 / -1; grid-row: 1; min-height: 30px; font-size: 10px; }
+  #root #panchang .daily-date-nav button:last-child { grid-column: 2; grid-row: 2; }
+  #root #panchang .daily-controls .daily-date input { padding-inline: 8px; font-size: 13px; }
+  #root #panchang .daily-solar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px 10px; padding: 15px; margin-bottom: 23px; }
+  #root #panchang .daily-date-context { grid-column: 1 / -1; margin: 0; text-align: left; }
+  #root #panchang .daily-date-context strong { font-size: 14px; }
+  #root #panchang .daily-date-context small { justify-content: flex-start; font-size: 10px; }
+  #root #panchang .daily-solar > span { justify-content: start; font-size: 10px; }
+  #root #panchang .daily-solar > span > b { font-size: 13px; }
+  #root #panchang .panchang-overview-heading { align-items: start; gap: 10px; }
+  #root #panchang .panchang-overview-heading h3 { font-size: 21px; line-height: 1.4; }
+  #root #panchang .panchang-eyebrow { font-size: 9px; letter-spacing: .06em; }
+  #root #panchang .panchang-snapshot-label { font-size: 9px; padding: 5px 7px; margin-top: 2px; }
+  #root #panchang .panchang-essentials { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 20px; border-radius: 14px; }
+  #root #panchang .panchang-essential { padding: 17px 13px; }
+  #root #panchang .panchang-essential:nth-child(2) { border-right: 0; }
+  #root #panchang .panchang-essential:nth-child(n+3) { border-top: 1px solid #eedec6; }
+  #root #panchang .panchang-essential-label { font-size: 10px; gap: 6px; }
+  #root #panchang .panchang-essential-label .astro-symbol { width: 24px; height: 24px; flex-shrink: 0; border-radius: 7px; }
+  #root #panchang .panchang-essential h4 { font-size: 16px; margin-block: 12px 8px; }
+  #root #panchang .panchang-essential p { font-size: 10px; }
+  #root #panchang .panchang-disclosure > summary { gap: 10px; padding: 16px 13px; }
+  #root #panchang .panchang-disclosure-icon { width: 30px; height: 34px; border-radius: 9px; }
+  #root #panchang .panchang-disclosure-icon svg { width: 17px; }
+  #root #panchang .panchang-disclosure-copy strong { font-size: 12px; }
+  #root #panchang .panchang-disclosure-copy small { font-size: 10px; }
+  #root #panchang .panchang-disclosure-body { padding: 4px 13px 17px; }
+  #root #panchang .panchang-timeline-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #root #panchang .panchang-disclosure-chevron { transition: none; }
+}
+@media (forced-colors: active) {
+  #root #panchang .panchang-essential-featured { background: Canvas; color: CanvasText; }
+  #root #panchang .panchang-essential-featured :is(h4, p, time, .panchang-essential-label) { color: CanvasText; }
+}

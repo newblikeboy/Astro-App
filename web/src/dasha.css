@@ -1,0 +1,453 @@
+.dasha-explorer {
+  min-width: 0;
+}
+.dasha-explorer .report-section-heading {
+  align-items: flex-start;
+}
+.dasha-explorer .report-section-heading p {
+  max-width: 640px;
+}
+.dasha-running-card {
+  padding: 20px 22px 0;
+  background: linear-gradient(115deg, #fff4e4, #fcf2eb 80%);
+  border: 1px solid #ebd6ca;
+  border-radius: 16px;
+}
+.dasha-live-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+.dasha-live-heading h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin: 0;
+  color: var(--maroon);
+}
+.dasha-live-heading > span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.dasha-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #a65b21;
+}
+.dasha-current-chain {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 21px 0 16px;
+}
+.dasha-current-chain li {
+  position: relative;
+  min-width: 0;
+}
+.dasha-current-chain li > small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  margin-bottom: 7px;
+}
+.dasha-current-chain li > span {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  color: var(--maroon);
+}
+.dasha-current-chain strong {
+  font-size: 16px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.dasha-current-chain .astro-symbol {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.dasha-current-chain li > svg {
+  position: absolute;
+  right: -13px;
+  bottom: 4px;
+  color: #a57c7a;
+}
+.dasha-jump-current {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #e6d4cf;
+  background: transparent;
+  color: var(--action);
+  padding: 12px 0;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.dasha-jump-current:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.dasha-clock-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: var(--muted);
+  margin: 17px 0 22px;
+  font-size: 11px;
+}
+.dasha-clock-note > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.dasha-clock-note strong {
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.dasha-clock-note p {
+  margin: 4px 0 0;
+  line-height: 1.6;
+}
+.dasha-explore-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.dasha-explore-heading h3 {
+  font-size: 16px;
+  margin: 0;
+}
+.dasha-explore-heading button {
+  border: 0;
+  background: transparent;
+  color: var(--action);
+  font: inherit;
+  font-size: 12px;
+  min-height: 44px;
+  padding: 6px;
+  cursor: pointer;
+}
+.dasha-tree {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: clip;
+}
+.dasha-period-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.dasha-item {
+  min-width: 0;
+  background: var(--paper);
+}
+.dasha-item + .dasha-item {
+  border-top: 1px solid var(--line);
+}
+.dasha-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 20px;
+  padding: 16px 20px;
+}
+.dasha-item.is-open > .dasha-row {
+  background: #f9eee7;
+  box-shadow: inset 3px 0 var(--action);
+}
+.dasha-item.is-current:not(.is-open) > .dasha-row {
+  background: #fff8ed;
+}
+.dasha-toggle,
+.dasha-leaf {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+  text-align: left;
+  font: inherit;
+  border-radius: 6px;
+}
+.dasha-toggle {
+  cursor: pointer;
+}
+.dasha-toggle:hover strong {
+  color: var(--action);
+}
+.dasha-planet-mark {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #eadbd0;
+  border-radius: 50%;
+  background: #fffcfa;
+  color: var(--action);
+  flex-shrink: 0;
+}
+.dasha-planet-mark .astro-symbol {
+  width: 23px;
+  height: 23px;
+}
+.dasha-planet-label {
+  display: block;
+  min-width: 0;
+  flex: 1;
+}
+.dasha-planet-label > small {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 8px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+  margin-bottom: 3px;
+}
+.dasha-planet-label strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.dasha-running {
+  border-radius: 4px;
+  padding: 0 5px;
+  color: #85501f;
+  background: #f9e7cd;
+  font-size: 9px;
+}
+.dasha-disclosure-icon {
+  flex-shrink: 0;
+  color: var(--action);
+  transition: transform 0.18s ease;
+}
+.dasha-toggle[aria-expanded="true"] > .dasha-disclosure-icon {
+  transform: rotate(180deg);
+}
+.dasha-explorer dl,
+.dasha-explorer dd {
+  margin: 0;
+}
+.dasha-times {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.dasha-times > div {
+  min-width: 0;
+}
+.dasha-explorer dt {
+  color: var(--muted);
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.dasha-explorer time {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.dasha-explorer time > span {
+  font-size: 12px;
+  font-weight: 500;
+}
+.dasha-explorer time > small {
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.dasha-children {
+  margin-left: 20px;
+  border-left: 1px solid #dbb59c;
+}
+.dasha-children[hidden] {
+  display: none;
+}
+.dasha-child-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 20px;
+  background: #fcf7f4;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--action);
+}
+.dasha-child-heading > span {
+  font-size: 11px;
+  font-weight: 600;
+}
+.dasha-child-heading > small {
+  font-size: 10px;
+  color: var(--muted);
+}
+.dasha-branch-status {
+  padding: 14px 20px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.dasha-branch-status > p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dasha-load-error p {
+  margin: 0 0 8px;
+}
+.dasha-load-error button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  background: transparent;
+  color: var(--action);
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+  padding: 6px 0;
+}
+.dasha-method {
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.dasha-method summary {
+  padding: 12px 0;
+  cursor: pointer;
+  color: var(--action);
+}
+.dasha-method p {
+  line-height: 1.8;
+}
+.dasha-method code {
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
+.dasha-explorer button:focus-visible,
+.dasha-leaf:focus-visible,
+#dasha-root-heading:focus-visible {
+  outline: 2px solid var(--action);
+  outline-offset: 4px;
+}
+.dasha-row :is(button, .dasha-leaf) {
+  scroll-margin-top: 180px;
+}
+@media (max-width: 900px) {
+  .dasha-row {
+    gap: 14px;
+    padding: 14px;
+  }
+  .dasha-children {
+    margin-left: 12px;
+  }
+  .dasha-planet-mark {
+    width: 32px;
+    height: 32px;
+  }
+  .dasha-planet-mark .astro-symbol {
+    width: 20px;
+    height: 20px;
+  }
+  .dasha-toggle,
+  .dasha-leaf {
+    gap: 8px;
+  }
+}
+@media (max-width: 650px) {
+  .dasha-running-card {
+    padding: 16px 14px 0;
+    border-radius: 12px;
+  }
+  .dasha-live-heading > span {
+    font-size: 10px;
+  }
+  .dasha-current-chain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 24px;
+    margin: 18px 0 16px;
+  }
+  .dasha-current-chain li > small {
+    font-size: 9px;
+    margin-bottom: 5px;
+  }
+  .dasha-current-chain strong {
+    font-size: 13px;
+  }
+  .dasha-current-chain .astro-symbol {
+    width: 16px;
+    height: 16px;
+  }
+  .dasha-current-chain li > svg {
+    right: -19px;
+    bottom: 3px;
+    width: 12px;
+  }
+  .dasha-live-heading h3 {
+    font-size: 12px;
+  }
+  .dasha-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 11px;
+    padding: 12px;
+  }
+  .dasha-children {
+    margin-left: 7px;
+  }
+  .dasha-child-heading {
+    padding: 11px 12px;
+  }
+  .dasha-planet-label strong {
+    font-size: 13px;
+  }
+  .dasha-times {
+    gap: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ebdfd880;
+  }
+  .dasha-explorer time > span {
+    font-size: 11px;
+  }
+  .dasha-explorer time > small {
+    font-size: 10px;
+  }
+  .dasha-branch-status {
+    padding: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dasha-disclosure-icon {
+    transition: none;
+  }
+}
+@media print {
+  .dasha-jump-current,
+  .dasha-explore-heading button,
+  .dasha-disclosure-icon {
+    display: none;
+  }
+  .dasha-row {
+    break-inside: avoid;
+  }
+}

@@ -1,0 +1,2309 @@
+{
+  "source": "NASA/JPL Horizons DE441; Earth geocentre; apparent observer quantity 31",
+  "api": "https://ssd-api.jpl.nasa.gov/doc/horizons.html",
+  "manual": "https://ssd.jpl.nasa.gov/horizons/manual.html#obsquan",
+  "method": "Independent hourly NASA search; four-point Lagrange cubic; shared nutation-inclusive Lahiri origin from Swiss CLI. Not an independent certification of Lahiri or nodes.",
+  "position_tolerance_arcsec": 0.5,
+  "ingress_tolerance_seconds": 60,
+  "station_tolerance_seconds": 120,
+  "year": 2026,
+  "positions": [
+    {
+      "planet": "Sun",
+      "at": "1995-08-15T05:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 141.918561,
+      "jpl_apparent_latitude": -7.16e-05,
+      "lahiri_origin": 23.7986203,
+      "sidereal_longitude": 118.11994070000001
+    },
+    {
+      "planet": "Sun",
+      "at": "2000-01-01T12:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 280.3689092,
+      "jpl_apparent_latitude": 0.0002381,
+      "lahiri_origin": 23.8532225,
+      "sidereal_longitude": 256.5156867
+    },
+    {
+      "planet": "Sun",
+      "at": "2026-10-18T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 204.9010132,
+      "jpl_apparent_latitude": -6.88e-05,
+      "lahiri_origin": 24.2336888,
+      "sidereal_longitude": 180.66732439999998
+    },
+    {
+      "planet": "Sun",
+      "at": "2026-10-19T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 205.8938862,
+      "jpl_apparent_latitude": -3.82e-05,
+      "lahiri_origin": 24.2337346,
+      "sidereal_longitude": 181.6601516
+    },
+    {
+      "planet": "Sun",
+      "at": "2026-10-20T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 206.8872328,
+      "jpl_apparent_latitude": -4.1e-06,
+      "lahiri_origin": 24.2337702,
+      "sidereal_longitude": 182.65346259999998
+    },
+    {
+      "planet": "Sun",
+      "at": "2026-10-20T00:54:37+00:00",
+      "jpl_apparent_tropical_longitude": 206.6558352,
+      "jpl_apparent_latitude": -1.23e-05,
+      "lahiri_origin": 24.2337629,
+      "sidereal_longitude": 182.42207230000002
+    },
+    {
+      "planet": "Moon",
+      "at": "1995-08-15T05:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 18.7262134,
+      "jpl_apparent_latitude": 0.8880231,
+      "lahiri_origin": 23.7986203,
+      "sidereal_longitude": 354.9275931
+    },
+    {
+      "planet": "Moon",
+      "at": "2000-01-01T12:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 223.323786,
+      "jpl_apparent_latitude": 5.1707422,
+      "lahiri_origin": 23.8532225,
+      "sidereal_longitude": 199.47056350000003
+    },
+    {
+      "planet": "Moon",
+      "at": "2026-10-18T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 290.4955824,
+      "jpl_apparent_latitude": -3.1174896,
+      "lahiri_origin": 24.2336888,
+      "sidereal_longitude": 266.2618936
+    },
+    {
+      "planet": "Moon",
+      "at": "2026-10-19T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 302.4106383,
+      "jpl_apparent_latitude": -2.2137177,
+      "lahiri_origin": 24.2337346,
+      "sidereal_longitude": 278.1769037
+    },
+    {
+      "planet": "Moon",
+      "at": "2026-10-20T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 314.4909939,
+      "jpl_apparent_latitude": -1.199544,
+      "lahiri_origin": 24.2337702,
+      "sidereal_longitude": 290.2572237
+    },
+    {
+      "planet": "Moon",
+      "at": "2026-10-20T00:54:37+00:00",
+      "jpl_apparent_tropical_longitude": 311.6580033,
+      "jpl_apparent_latitude": -1.4438708,
+      "lahiri_origin": 24.2337629,
+      "sidereal_longitude": 287.42424040000003
+    },
+    {
+      "planet": "Mars",
+      "at": "1995-08-15T05:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 195.1202723,
+      "jpl_apparent_latitude": 0.0794296,
+      "lahiri_origin": 23.7986203,
+      "sidereal_longitude": 171.321652
+    },
+    {
+      "planet": "Mars",
+      "at": "2000-01-01T12:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 327.9632921,
+      "jpl_apparent_latitude": -1.0677752,
+      "lahiri_origin": 23.8532225,
+      "sidereal_longitude": 304.1100696
+    },
+    {
+      "planet": "Mars",
+      "at": "2026-10-18T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 131.4270891,
+      "jpl_apparent_latitude": 1.3268591,
+      "lahiri_origin": 24.2336888,
+      "sidereal_longitude": 107.1934003
+    },
+    {
+      "planet": "Mars",
+      "at": "2026-10-19T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 131.9688369,
+      "jpl_apparent_latitude": 1.3459436,
+      "lahiri_origin": 24.2337346,
+      "sidereal_longitude": 107.73510230000002
+    },
+    {
+      "planet": "Mars",
+      "at": "2026-10-20T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 132.5079329,
+      "jpl_apparent_latitude": 1.3651545,
+      "lahiri_origin": 24.2337702,
+      "sidereal_longitude": 108.27416269999999
+    },
+    {
+      "planet": "Mars",
+      "at": "2026-10-20T00:54:37+00:00",
+      "jpl_apparent_tropical_longitude": 132.3826134,
+      "jpl_apparent_latitude": 1.3606688,
+      "lahiri_origin": 24.2337629,
+      "sidereal_longitude": 108.1488505
+    },
+    {
+      "planet": "Mercury",
+      "at": "1995-08-15T05:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 159.0640928,
+      "jpl_apparent_latitude": 0.9605311,
+      "lahiri_origin": 23.7986203,
+      "sidereal_longitude": 135.2654725
+    },
+    {
+      "planet": "Mercury",
+      "at": "2000-01-01T12:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 271.8892699,
+      "jpl_apparent_latitude": -0.994819,
+      "lahiri_origin": 23.8532225,
+      "sidereal_longitude": 248.03604739999997
+    },
+    {
+      "planet": "Mercury",
+      "at": "2026-10-18T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 228.9145568,
+      "jpl_apparent_latitude": -3.1837052,
+      "lahiri_origin": 24.2336888,
+      "sidereal_longitude": 204.680868
+    },
+    {
+      "planet": "Mercury",
+      "at": "2026-10-19T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 229.5039152,
+      "jpl_apparent_latitude": -3.1950549,
+      "lahiri_origin": 24.2337346,
+      "sidereal_longitude": 205.2701806
+    },
+    {
+      "planet": "Mercury",
+      "at": "2026-10-20T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 230.0069039,
+      "jpl_apparent_latitude": -3.1923408,
+      "lahiri_origin": 24.2337702,
+      "sidereal_longitude": 205.7731337
+    },
+    {
+      "planet": "Mercury",
+      "at": "2026-10-20T00:54:37+00:00",
+      "jpl_apparent_tropical_longitude": 229.8979065,
+      "jpl_apparent_latitude": -3.1943073,
+      "lahiri_origin": 24.2337629,
+      "sidereal_longitude": 205.66414360000002
+    },
+    {
+      "planet": "Jupiter",
+      "at": "1995-08-15T05:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 245.7690516,
+      "jpl_apparent_latitude": 0.566577,
+      "lahiri_origin": 23.7986203,
+      "sidereal_longitude": 221.9704313
+    },
+    {
+      "planet": "Jupiter",
+      "at": "2000-01-01T12:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 25.2530736,
+      "jpl_apparent_latitude": -1.2621868,
+      "lahiri_origin": 23.8532225,
+      "sidereal_longitude": 1.3998510999999993
+    },
+    {
+      "planet": "Jupiter",
+      "at": "2026-10-18T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 142.449933,
+      "jpl_apparent_latitude": 0.6458415,
+      "lahiri_origin": 24.2336888,
+      "sidereal_longitude": 118.21624419999999
+    },
+    {
+      "planet": "Jupiter",
+      "at": "2026-10-19T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 142.5994187,
+      "jpl_apparent_latitude": 0.6489014,
+      "lahiri_origin": 24.2337346,
+      "sidereal_longitude": 118.36568410000001
+    },
+    {
+      "planet": "Jupiter",
+      "at": "2026-10-20T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 142.7469534,
+      "jpl_apparent_latitude": 0.6519877,
+      "lahiri_origin": 24.2337702,
+      "sidereal_longitude": 118.5131832
+    },
+    {
+      "planet": "Jupiter",
+      "at": "2026-10-20T00:54:37+00:00",
+      "jpl_apparent_tropical_longitude": 142.7127676,
+      "jpl_apparent_latitude": 0.6512665,
+      "lahiri_origin": 24.2337629,
+      "sidereal_longitude": 118.4790047
+    },
+    {
+      "planet": "Venus",
+      "at": "1995-08-15T05:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 140.3237138,
+      "jpl_apparent_latitude": 1.2381988,
+      "lahiri_origin": 23.7986203,
+      "sidereal_longitude": 116.52509350000001
+    },
+    {
+      "planet": "Venus",
+      "at": "2000-01-01T12:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 241.5657794,
+      "jpl_apparent_latitude": 2.0663548,
+      "lahiri_origin": 23.8532225,
+      "sidereal_longitude": 217.71255689999998
+    },
+    {
+      "planet": "Venus",
+      "at": "2026-10-18T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 214.2010758,
+      "jpl_apparent_latitude": -7.281755,
+      "lahiri_origin": 24.2336888,
+      "sidereal_longitude": 189.967387
+    },
+    {
+      "planet": "Venus",
+      "at": "2026-10-19T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 213.6522272,
+      "jpl_apparent_latitude": -7.1850845,
+      "lahiri_origin": 24.2337346,
+      "sidereal_longitude": 189.4184926
+    },
+    {
+      "planet": "Venus",
+      "at": "2026-10-20T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 213.0832161,
+      "jpl_apparent_latitude": -7.0743192,
+      "lahiri_origin": 24.2337702,
+      "sidereal_longitude": 188.84944589999998
+    },
+    {
+      "planet": "Venus",
+      "at": "2026-10-20T00:54:37+00:00",
+      "jpl_apparent_tropical_longitude": 213.217359,
+      "jpl_apparent_latitude": -7.1013726,
+      "lahiri_origin": 24.2337629,
+      "sidereal_longitude": 188.9835961
+    },
+    {
+      "planet": "Saturn",
+      "at": "1995-08-15T05:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 353.4984191,
+      "jpl_apparent_latitude": -2.2873101,
+      "lahiri_origin": 23.7986203,
+      "sidereal_longitude": 329.6997988
+    },
+    {
+      "planet": "Saturn",
+      "at": "2000-01-01T12:00:00+00:00",
+      "jpl_apparent_tropical_longitude": 40.3956492,
+      "jpl_apparent_latitude": -2.4448565,
+      "lahiri_origin": 23.8532225,
+      "sidereal_longitude": 16.5424267
+    },
+    {
+      "planet": "Saturn",
+      "at": "2026-10-18T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 10.2384712,
+      "jpl_apparent_latitude": -2.7082084,
+      "lahiri_origin": 24.2336888,
+      "sidereal_longitude": 346.0047824
+    },
+    {
+      "planet": "Saturn",
+      "at": "2026-10-19T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 10.1641675,
+      "jpl_apparent_latitude": -2.7070808,
+      "lahiri_origin": 24.2337346,
+      "sidereal_longitude": 345.9304329
+    },
+    {
+      "planet": "Saturn",
+      "at": "2026-10-20T06:30:00+00:00",
+      "jpl_apparent_tropical_longitude": 10.0904871,
+      "jpl_apparent_latitude": -2.705858,
+      "lahiri_origin": 24.2337702,
+      "sidereal_longitude": 345.8567169
+    },
+    {
+      "planet": "Saturn",
+      "at": "2026-10-20T00:54:37+00:00",
+      "jpl_apparent_tropical_longitude": 10.10759,
+      "jpl_apparent_latitude": -2.7061512,
+      "lahiri_origin": 24.2337629,
+      "sidereal_longitude": 345.8738271
+    }
+  ],
+  "events": [
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-02T03:56:02.014929+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-04T04:13:11.888183+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-06T06:47:53.102574+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-08T13:09:19.882856+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-10T23:22:43.448621+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-01-12T22:28:05.044979+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-13T11:51:23.886611+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-01-14T09:37:21.070605+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Mars",
+      "kind": "Sign ingress",
+      "at": "2026-01-15T22:58:36.001514+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-16T00:17:55.363439+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-01-17T04:54:05.888762+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-18T11:11:08.703029+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-20T20:05:35.916264+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-23T03:03:48.841404+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-25T08:05:56.774267+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-27T11:15:07.242528+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-29T13:01:09.197373+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-01-31T14:31:16.701000+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-02T17:17:53.719678+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-02-03T16:22:03.053688+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-04T22:50:03.391177+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-02-05T19:41:39.269554+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-07T07:52:00.386380+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-09T19:41:19.302273+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-12T08:12:31.743957+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-02-12T22:38:59.896770+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-14T19:12:28.440022+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-17T03:35:53.129070+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-19T09:30:09.391295+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-21T13:37:16.174925+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Mars",
+      "kind": "Sign ingress",
+      "at": "2026-02-23T06:20:25.519042+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-23T16:42:32.046874+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-25T19:24:54.077894+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Retrograde begins",
+      "at": "2026-02-26T06:47:30.633875+00:00",
+      "retrograde": true
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-02-27T22:22:35.437745+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-03-01T19:27:05.460956+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-02T02:21:40.996671+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-04T08:15:47.246113+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-06T16:48:52.319428+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-09T03:59:59.440486+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Jupiter",
+      "kind": "Direct motion begins",
+      "at": "2026-03-11T03:52:31.821144+00:00",
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-11T16:30:26.870695+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-14T04:03:13.410368+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-03-14T19:33:04.740063+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-16T12:44:29.425819+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-18T18:06:15.042244+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Direct motion begins",
+      "at": "2026-03-20T19:32:57.878612+00:00",
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-20T20:57:56.822495+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-22T22:44:05.894672+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-25T00:47:25.286251+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-03-25T23:39:19.641178+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-27T04:06:09.862171+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-29T09:08:06.748488+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-03-31T16:02:56.766320+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Mars",
+      "kind": "Sign ingress",
+      "at": "2026-04-02T09:59:39.484386+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-03T00:58:52.305225+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-05T11:58:07.572323+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-08T00:24:04.230346+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-10T12:34:05.666939+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-04-10T19:46:06.978051+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-12T22:14:51.787100+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-04-14T04:02:39.885624+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-15T04:07:42.400784+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-17T06:32:26.850081+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-19T07:01:14.818916+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-04-19T10:16:54.769513+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-21T07:30:58.880755+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-23T09:43:26.806118+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-25T14:34:59.110068+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-27T22:05:58.512022+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-04-30T01:22:34.462306+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-04-30T07:44:22.548670+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-02T19:00:04.182727+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-05T07:24:52.055481+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-07T19:56:38.634114+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-10T06:43:04.922778+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Mars",
+      "kind": "Sign ingress",
+      "at": "2026-05-11T07:08:42.669957+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-12T13:55:06.812872+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-05-14T05:23:48.185449+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-14T17:04:04.163774+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-05-14T19:02:03.908936+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-05-15T00:52:03.097910+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-16T17:16:46.133983+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-18T16:34:58.513207+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-20T17:08:59.784354+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-22T20:38:16.617364+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-25T03:37:26.158612+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-27T13:30:10.025449+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-05-29T05:41:55.612295+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-05-30T01:09:00.137525+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-01T13:38:46.534097+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Jupiter",
+      "kind": "Sign ingress",
+      "at": "2026-06-01T20:20:22.576069+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-04T02:11:48.424451+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-06T13:33:58.121802+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-06-08T12:13:01.718563+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-08T22:06:44.484871+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-11T02:46:36.188578+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-13T03:55:33.972846+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-15T03:10:56.950447+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-06-15T07:23:01.489714+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-17T02:43:29.046875+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-19T04:37:05.106564+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Mars",
+      "kind": "Sign ingress",
+      "at": "2026-06-20T18:29:38.013380+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-21T10:10:12.376732+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-06-22T10:00:42.207506+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-23T19:23:04.985993+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-26T07:03:19.035765+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-06-28T19:39:01.808014+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Retrograde begins",
+      "at": "2026-06-29T17:34:30.164677+00:00",
+      "retrograde": true
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-01T08:01:51.941899+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-03T19:18:39.471744+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-07-04T13:43:57.466618+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-06T04:27:36.884433+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-07-07T05:16:19.310643+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 3,
+      "retrograde": true
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-08T10:30:30.210176+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-10T13:15:09.802903+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-12T13:36:38.223311+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-14T13:19:02.388358+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-16T14:22:29.920031+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-07-16T18:09:23.682859+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-18T18:29:03.178409+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-21T02:24:43.052543+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-23T13:31:17.277488+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Direct motion begins",
+      "at": "2026-07-23T22:58:45.888631+00:00",
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-26T02:05:00.289646+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Saturn",
+      "kind": "Retrograde begins",
+      "at": "2026-07-26T18:57:52.957211+00:00",
+      "retrograde": true
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-28T14:19:31.774337+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-07-31T01:08:16.545636+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-08-01T03:58:19.756273+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-02T09:57:01.011728+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Mars",
+      "kind": "Sign ingress",
+      "at": "2026-08-02T17:21:31.739467+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-04T16:24:20.868192+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-08-05T14:24:16.966770+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-06T20:23:33.836222+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-08T22:19:09.775699+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-10T23:13:39.138791+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-13T00:36:52.562616+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-15T04:04:49.621493+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-08-17T02:28:46.670521+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-17T10:49:39.031636+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-19T21:00:28.075700+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-22T09:19:26.678939+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-08-22T14:01:52.195781+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-24T21:36:25.720008+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-27T08:05:45.054057+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-29T16:07:47.357839+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-08-31T21:54:01.327390+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-09-02T08:14:32.832263+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-03T01:56:05.632553+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-05T04:48:33.993162+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-07T07:08:46.344410+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-09-07T08:02:56.561280+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-09T09:44:37.428060+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-11T13:38:23.628745+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-13T19:56:37.297120+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-16T05:19:18.225396+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-09-17T02:22:58.617664+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Mars",
+      "kind": "Sign ingress",
+      "at": "2026-09-18T11:05:39.625718+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-18T17:14:55.918248+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-21T05:45:12.222620+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-23T16:27:08.560784+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-26T00:03:13.891639+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-09-26T07:08:35.040445+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-28T04:46:31.415709+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-09-30T07:43:53.759936+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-02T10:10:39.077860+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Retrograde begins",
+      "at": "2026-10-03T07:13:17.529104+00:00",
+      "retrograde": true
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-04T13:02:01.983434+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-06T16:47:47.223833+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-08T21:48:18.183818+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-11T04:34:14.078358+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-13T13:42:33.790974+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-16T01:17:47.684811+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-10-17T14:21:42.876247+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-18T14:03:16.511205+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-21T01:30:31.648522+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-23T09:34:05.653332+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Retrograde begins",
+      "at": "2026-10-24T07:12:39.006921+00:00",
+      "retrograde": true
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-25T13:52:18.993169+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-27T15:36:47.711036+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-29T16:36:46.707109+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Jupiter",
+      "kind": "Sign ingress",
+      "at": "2026-10-31T06:32:52.336416+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-10-31T18:30:52.300536+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-02T22:16:34.831270+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-05T04:04:45.411939+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-11-05T19:34:17.604370+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 6,
+      "retrograde": true
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-07T11:45:20.036296+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-09T21:18:27.161210+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-12T08:49:16.048819+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Mars",
+      "kind": "Sign ingress",
+      "at": "2026-11-12T14:48:38.667244+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Direct motion begins",
+      "at": "2026-11-13T15:54:23.468695+00:00",
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Direct motion begins",
+      "at": "2026-11-14T00:29:45.365966+00:00",
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-14T21:41:28.629513+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-11-16T14:13:13.632948+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-17T10:00:39.858037+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-19T19:20:09.253041+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-22T00:25:08.020045+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-11-22T11:51:12.266939+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-24T01:54:48.820891+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-26T01:41:12.751133+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-28T01:52:43.664621+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-11-30T04:12:31.527959+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-02T09:29:26.946149+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-12-02T11:57:32.249187+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-04T17:32:57.014033+00:00",
+      "from_sign_number": 6,
+      "to_sign_number": 7,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-07T03:44:03.807668+00:00",
+      "from_sign_number": 7,
+      "to_sign_number": 8,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-09T15:30:47.541290+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Saturn",
+      "kind": "Direct motion begins",
+      "at": "2026-12-11T00:29:59.999973+00:00",
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-12T04:21:44.045468+00:00",
+      "from_sign_number": 9,
+      "to_sign_number": 10,
+      "retrograde": false
+    },
+    {
+      "planet": "Jupiter",
+      "kind": "Retrograde begins",
+      "at": "2026-12-13T00:30:41.387520+00:00",
+      "retrograde": true
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-14T17:05:59.384235+00:00",
+      "from_sign_number": 10,
+      "to_sign_number": 11,
+      "retrograde": false
+    },
+    {
+      "planet": "Sun",
+      "kind": "Sign ingress",
+      "at": "2026-12-16T04:55:03.357991+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-17T03:43:14.906017+00:00",
+      "from_sign_number": 11,
+      "to_sign_number": 12,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-19T10:28:14.077698+00:00",
+      "from_sign_number": 12,
+      "to_sign_number": 1,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-21T13:06:14.913566+00:00",
+      "from_sign_number": 1,
+      "to_sign_number": 2,
+      "retrograde": false
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-12-22T02:09:42.752882+00:00",
+      "from_sign_number": 8,
+      "to_sign_number": 9,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-23T12:56:04.649368+00:00",
+      "from_sign_number": 2,
+      "to_sign_number": 3,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-25T12:03:04.857462+00:00",
+      "from_sign_number": 3,
+      "to_sign_number": 4,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-27T12:34:52.523855+00:00",
+      "from_sign_number": 4,
+      "to_sign_number": 5,
+      "retrograde": false
+    },
+    {
+      "planet": "Moon",
+      "kind": "Sign ingress",
+      "at": "2026-12-29T16:07:37.600565+00:00",
+      "from_sign_number": 5,
+      "to_sign_number": 6,
+      "retrograde": false
+    }
+  ],
+  "dense_events": [
+    {
+      "planet": "Jupiter",
+      "kind": "Sign ingress",
+      "at": "2026-10-31T06:32:52.350910+00:00"
+    },
+    {
+      "planet": "Mercury",
+      "kind": "Sign ingress",
+      "at": "2026-07-07T05:16:19.303281+00:00"
+    },
+    {
+      "planet": "Venus",
+      "kind": "Sign ingress",
+      "at": "2026-11-05T19:34:17.596542+00:00"
+    }
+  ],
+  "provenance": [
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&START_TIME=%272025-12-31+16%3A30%27&STOP_TIME=%272026-12-31+20%3A30%27&STEP_SIZE=%271+h%27",
+      "sha256": "3394ec0b0962ea6e9cc213c17eee8f7faded8704a5bb0d9ffe886bc4876ce516",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Sun (10)                        {source: DE441}",
+      "planet": "Sun",
+      "purpose": "annual search",
+      "rows": 8765
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&TLIST=%272449944.708333333489%2C2451545.000000000000%2C2461331.770833333489%2C2461332.770833333489%2C2461333.770833333489%2C2461333.537928240839%27&TLIST_TYPE=%27JD%27",
+      "sha256": "f1b3511c69c39882083da35a7b7b660fbf413210c35fd5b02a1977c54e0c6f94",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      },
+      "target": "Target body name: Sun (10)                        {source: DE441}",
+      "planet": "Sun",
+      "purpose": "matched positions",
+      "rows": 6
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&START_TIME=%272025-12-31+16%3A30%27&STOP_TIME=%272026-12-31+20%3A30%27&STEP_SIZE=%271+h%27",
+      "sha256": "298a719c9b530b49ef3f14d10106f3ea4cd8cc26c74472df48c5de153b830fd8",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Moon (301)                      {source: DE441}",
+      "planet": "Moon",
+      "purpose": "annual search",
+      "rows": 8765
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&TLIST=%272449944.708333333489%2C2451545.000000000000%2C2461331.770833333489%2C2461332.770833333489%2C2461333.770833333489%2C2461333.537928240839%27&TLIST_TYPE=%27JD%27",
+      "sha256": "b763ad47ec2ebfe8cb09227598d3cae6c1a28e5a53cf1902a7a91d331c5f5e56",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Moon (301)                      {source: DE441}",
+      "planet": "Moon",
+      "purpose": "matched positions",
+      "rows": 6
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%274%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&START_TIME=%272025-12-31+16%3A30%27&STOP_TIME=%272026-12-31+20%3A30%27&STEP_SIZE=%271+h%27",
+      "sha256": "ee3f637db6a2c775d38dce0fee1f3b74521cdb14387e317a7f2092b1749ea109",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Mars Barycenter (4)             {source: DE441}",
+      "planet": "Mars",
+      "purpose": "annual search",
+      "rows": 8765
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%274%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&TLIST=%272449944.708333333489%2C2451545.000000000000%2C2461331.770833333489%2C2461332.770833333489%2C2461333.770833333489%2C2461333.537928240839%27&TLIST_TYPE=%27JD%27",
+      "sha256": "a59ce24f1843dfde83c1dd477906ea8081f6ab201af0a309ba222a9751332e23",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Mars Barycenter (4)             {source: DE441}",
+      "planet": "Mars",
+      "purpose": "matched positions",
+      "rows": 6
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27199%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&START_TIME=%272025-12-31+16%3A30%27&STOP_TIME=%272026-12-31+20%3A30%27&STEP_SIZE=%271+h%27",
+      "sha256": "42d5dc325a174d40f180c04ed7c23027dc95344c528b067b3dd791d5be39a6ce",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      },
+      "target": "Target body name: Mercury (199)                   {source: DE441}",
+      "planet": "Mercury",
+      "purpose": "annual search",
+      "rows": 8765
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27199%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&TLIST=%272449944.708333333489%2C2451545.000000000000%2C2461331.770833333489%2C2461332.770833333489%2C2461333.770833333489%2C2461333.537928240839%27&TLIST_TYPE=%27JD%27",
+      "sha256": "d3c144aece4ba1e956e2877dfbd3b2f4471c9e62d5ac842ec14c74161f4b457c",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Mercury (199)                   {source: DE441}",
+      "planet": "Mercury",
+      "purpose": "matched positions",
+      "rows": 6
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%275%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&START_TIME=%272025-12-31+16%3A30%27&STOP_TIME=%272026-12-31+20%3A30%27&STEP_SIZE=%271+h%27",
+      "sha256": "0636462266519f7aa947d1fce8850edcb40fac596640dea461e66715e32dd5fa",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Jupiter Barycenter (5)          {source: DE441}",
+      "planet": "Jupiter",
+      "purpose": "annual search",
+      "rows": 8765
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%275%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&TLIST=%272449944.708333333489%2C2451545.000000000000%2C2461331.770833333489%2C2461332.770833333489%2C2461333.770833333489%2C2461333.537928240839%27&TLIST_TYPE=%27JD%27",
+      "sha256": "a8edf83c6b6ad5c084405629c9216a2a830251df0acc163ec17236f77a25fdf3",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Jupiter Barycenter (5)          {source: DE441}",
+      "planet": "Jupiter",
+      "purpose": "matched positions",
+      "rows": 6
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27299%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&START_TIME=%272025-12-31+16%3A30%27&STOP_TIME=%272026-12-31+20%3A30%27&STEP_SIZE=%271+h%27",
+      "sha256": "de7a5c069bb3f7d11a11cd7cadd0b85de6ce37c5af8c24a4b1f9149db2a9a018",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Venus (299)                     {source: DE441}",
+      "planet": "Venus",
+      "purpose": "annual search",
+      "rows": 8765
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27299%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&TLIST=%272449944.708333333489%2C2451545.000000000000%2C2461331.770833333489%2C2461332.770833333489%2C2461333.770833333489%2C2461333.537928240839%27&TLIST_TYPE=%27JD%27",
+      "sha256": "f64e342a89e9a527c267c857535ff4684ddacf35426ee7a4ee8f746eeda917fa",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Venus (299)                     {source: DE441}",
+      "planet": "Venus",
+      "purpose": "matched positions",
+      "rows": 6
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%276%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&START_TIME=%272025-12-31+16%3A30%27&STOP_TIME=%272026-12-31+20%3A30%27&STEP_SIZE=%271+h%27",
+      "sha256": "c7a11f2ab616ab6b042c9bfab1562ca49048cac5810824574a9546b539c243fa",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Saturn Barycenter (6)           {source: DE441}",
+      "planet": "Saturn",
+      "purpose": "annual search",
+      "rows": 8765
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%276%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&TLIST=%272449944.708333333489%2C2451545.000000000000%2C2461331.770833333489%2C2461332.770833333489%2C2461333.770833333489%2C2461333.537928240839%27&TLIST_TYPE=%27JD%27",
+      "sha256": "38546a0f6740b2144f64ffc1ae2216612f8d1106ea7a1dcdea6ef5533df51dd4",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Saturn Barycenter (6)           {source: DE441}",
+      "planet": "Saturn",
+      "purpose": "matched positions",
+      "rows": 6
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%275%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&START_TIME=%272026-10-31+06%3A00%27&STOP_TIME=%272026-10-31+07%3A00%27&STEP_SIZE=%271+m%27",
+      "sha256": "6783b875f33c68ec6231ff2b4a87ad6102e02d7e470a822838a3d1d26108aabd",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Jupiter Barycenter (5)          {source: DE441}",
+      "planet": "Jupiter",
+      "purpose": "dense one-minute ingress",
+      "rows": 61
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27199%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&START_TIME=%272026-07-07+05%3A00%27&STOP_TIME=%272026-07-07+06%3A00%27&STEP_SIZE=%271+m%27",
+      "sha256": "40335b697b758b715448fc6435c9868318e0d37ab0cecaf097e601a99f4b271d",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      },
+      "target": "Target body name: Mercury (199)                   {source: DE441}",
+      "planet": "Mercury",
+      "purpose": "dense one-minute ingress",
+      "rows": 61
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27299%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27OBSERVER%27&QUANTITIES=%2731%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27&CAL_TYPE=%27GREGORIAN%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&OBJ_DATA=%27NO%27&START_TIME=%272026-11-05+19%3A00%27&STOP_TIME=%272026-11-05+20%3A00%27&STEP_SIZE=%271+m%27",
+      "sha256": "f3436af94f6fb46a4381f35e328959b68fe76ab5773afc918ac1deb1f9afe754",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      },
+      "target": "Target body name: Venus (299)                     {source: DE441}",
+      "planet": "Venus",
+      "purpose": "dense one-minute ingress",
+      "rows": 61
+    }
+  ]
+}

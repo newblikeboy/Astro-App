@@ -1,0 +1,64 @@
+/* The existing Bhagwa prayer collection and the practical worship guides share one identity. */
+.puja-layout .puja-categories { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-bottom: 32px; }
+.puja-categories a { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; min-width: 0; padding: 16px 14px; border: 1px solid #e8c28f; border-radius: 12px; background: #fff2dc; color: #78350f; }
+.puja-categories a > svg { flex-shrink: 0; }
+.puja-categories a > span { flex: 1; font-size: 12px; line-height: 1.6; font-weight: 650; }
+.puja-categories a > small { font-size: 11px; }
+.puja-categories a[aria-current="page"] { color: #fff8e9; background: var(--bhagwa-gloss); border-color: #a73c0b; }
+.puja-categories a:hover { border-color: #a84c17; }
+.puja-layout .puja-library-link { margin-top: 28px; }
+.puja-card .devotional-card-content > p { font-size: 14px; }
+.puja-reader { max-width: 1040px; margin: auto; }
+.puja-reader-heading { display: flex; align-items: center; gap: 24px; padding: 26px; border: 1px solid #e8c28f; border-radius: 18px; background: linear-gradient(110deg, #fff1d6, #ffe3b5); }
+.puja-reader-heading > div:last-child { min-width: 0; }
+.puja-reader-heading h1 { margin: 12px 0; color: #74300f; font-size: clamp(26px, 4vw, 36px); line-height: 1.5; overflow-wrap: anywhere; }
+.puja-reader-heading p { margin: 0; color: #785336; font-size: 14px; line-height: 1.9; }
+.puja-reader-art { flex-shrink: 0; }
+.puja-reader .devotional-reader-tools { justify-content: flex-end; margin: 22px 0; }
+.puja-reading { line-height: 1.9; overflow-wrap: anywhere; }
+.puja-reading-grid { display: grid; grid-template-columns: minmax(210px, .8fr) minmax(0, 1.8fr); align-items: start; gap: 24px; }
+.puja-panel { min-width: 0; border: 1px solid #e3c79e; border-radius: 15px; overflow: hidden; background: #fffdf8; }
+.puja-reading :is(h2) { font-size: 18px; font-weight: 650; line-height: 1.6; color: #71340f; }
+.puja-panel h2 { margin: 0; padding: 17px 22px; border-bottom: 1px solid #e3c79e; background: #fff0d9; }
+.puja-materials ul { padding: 4px 24px 4px 42px; margin: 16px 0; }
+.puja-materials li { padding: 7px 0; }
+.puja-materials li::marker { color: #ac4a13; }
+.puja-steps ol { list-style: none; counter-reset: worship-step; margin: 0; padding: 0 22px; }
+.puja-steps li { counter-increment: worship-step; display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 13px; padding: 22px 0; border-bottom: 1px solid #eedcc4; }
+.puja-steps li:last-child { border-bottom: 0; }
+.puja-steps li::before { content: counter(worship-step, decimal-leading-zero); align-self: start; display: grid; place-items: center; width: 32px; height: 32px; margin-top: 2px; border: 1px solid #eccb9c; border-radius: 50%; background: #fff1d9; color: #97400e; font-size: 12px; font-weight: 650; }
+.puja-steps p { margin: 0; }
+.puja-notes { margin-top: 24px; padding: 22px 24px; border: 1px solid #e8c28f; border-left: 4px solid #b84a0d; border-radius: 12px; background: #fff3df; }
+.puja-notes h2 { margin: 0 0 12px; }
+.puja-notes p { margin: 10px 0 0; }
+.puja-notes p:last-child { font-size: 14px; color: #785336; }
+.puja-related { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.puja-related a { display: inline-flex; align-items: center; gap: 10px; padding: 13px 15px; border: 1px solid #e3c79e; border-radius: 10px; background: #fffdf8; color: #88380f; font-size: 13px; line-height: 1.7; }
+.puja-related a > svg { flex-shrink: 0; }
+.puja-loading { padding: 30px; text-align: center; }
+@media (max-width: 1000px) {
+  .puja-layout .puja-categories { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .puja-reading-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .puja-reader-heading { padding: 22px 18px; gap: 18px; align-items: start; }
+  .puja-reader-art .devotional-card-photo { width: 70px; height: 90px; }
+  .puja-reader-heading .devotional-kicker { font-size: 10px; }
+  .puja-reader-heading h1 { font-size: 25px; }
+  .puja-reader-heading p { font-size: 13px; }
+}
+@media (max-width: 500px) {
+  .puja-layout .puja-categories { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .puja-categories a { padding: 13px 11px; }
+  .puja-reader-heading { flex-direction: column; }
+  .puja-reader-art .devotional-card-photo { width: 82px; height: 100px; }
+  .puja-panel h2 { padding: 15px 18px; }
+  .puja-steps ol { padding-inline: 16px; }
+  .puja-steps li { gap: 11px; }
+  .puja-notes { padding: 19px; }
+}
+@media print {
+  .puja-categories, .puja-related, .puja-layout .devotional-image-credits { display: none; }
+  .puja-reading-grid { display: block; }
+  .puja-panel { break-inside: avoid; margin-bottom: 20px; }
+}

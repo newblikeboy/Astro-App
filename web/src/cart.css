@@ -1,0 +1,110 @@
+.cart-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--maroon);
+  background: var(--paper);
+  text-decoration: none;
+}
+.cart-purchase-control {
+  margin-top: 14px;
+  min-width: 0;
+}
+.cart-purchase-control .button {
+  display: inline-flex;
+  width: 100%;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px 12px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.cart-purchase-feedback {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+  line-height: 1.5;
+  color: var(--maroon);
+}
+.cart-purchase-error {
+  color: #a12636;
+}
+.home-stone-image-link {
+  display: block;
+}
+.home-stone-copy h3 a {
+  text-decoration: none;
+}
+.home-stone-bottom a {
+  color: var(--maroon);
+}
+.home-stone-price-note {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+}
+.cart-link:hover,
+.cart-link[aria-current="page"] {
+  background: var(--cream);
+  border-color: #d8bba9;
+}
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 20px;
+  height: 20px;
+  padding-inline: 4px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--paper);
+  border-radius: 20px;
+  background: var(--maroon);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+@media (max-width: 650px) {
+  .site-header .nav-wrap {
+    gap: 8px;
+    padding-inline: 12px;
+  }
+  .site-header .brand-symbol {
+    display: none;
+  }
+  .portal-header .portal-header-actions {
+    gap: 8px;
+  }
+  .portal-header .language-selector > svg {
+    display: none;
+  }
+  .portal-header .language-selector select {
+    width: 67px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .site-header .nav-wrap {
+    gap: 5px;
+    padding-inline: 10px;
+  }
+  .site-header .nav-wrap .brand strong {
+    font-size: 18px;
+  }
+  .site-header .nav-wrap .language-selector select {
+    width: 60px;
+  }
+  .portal-header:not(.portal-header-admin) {
+    padding-inline: 12px;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,104 @@
+.brand:has(.brand-mark) {
+  gap: 9px;
+}
+.brand .brand-mark {
+  display: block;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+}
+.brand .brand-wordmark {
+  display: block;
+  min-width: 0;
+}
+.brand .brand-wordmark > strong {
+  font-size: 25px;
+  font-weight: 750;
+  letter-spacing: -1.15px;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+.brand .brand-wordmark > strong em {
+  color: #a04d15;
+  font-style: normal;
+}
+.brand .brand-wordmark > small {
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+.site-footer .brand .brand-wordmark > strong {
+  color: #fff6f0;
+}
+.site-footer .brand .brand-wordmark > strong em {
+  color: #fca76e;
+}
+.site-footer .brand .brand-wordmark > small {
+  color: #d7ae93;
+}
+.shop-footer .shop-container > div:first-child:has(.brand) {
+  display: block;
+}
+.shop-footer .brand .brand-wordmark > small {
+  margin: 5px 0 0;
+}
+.shop-footer .shop-container > div:first-child > p {
+  margin: 14px 0 0;
+}
+@media (max-width: 1100px) {
+  .shop-header .brand .brand-mark {
+    width: 40px;
+    height: 40px;
+  }
+  .shop-header .brand .brand-wordmark > strong {
+    font-size: 22px;
+  }
+}
+@media (max-width: 650px) {
+  .site-header .brand .brand-mark,
+  .shop-header .brand .brand-mark,
+  .portal-header .brand .brand-mark {
+    width: 30px;
+    height: 30px;
+  }
+  .site-header .brand,
+  .shop-header .brand,
+  .portal-header .brand {
+    gap: 6px;
+  }
+  .site-header .brand .brand-wordmark > strong,
+  .shop-header .brand .brand-wordmark > strong,
+  .portal-header .brand .brand-wordmark > strong {
+    font-size: 18px;
+    letter-spacing: -0.65px;
+  }
+  .site-header .brand .brand-wordmark > small,
+  .shop-header .brand .brand-wordmark > small,
+  .portal-header .brand .brand-wordmark > small {
+    font-size: 6px;
+    letter-spacing: 0.045em;
+    margin-top: 4px;
+  }
+}
+@media (max-width: 360px) {
+  .site-header .nav-wrap .brand .brand-mark,
+  .shop-header .brand .brand-mark,
+  .portal-header .brand .brand-mark {
+    width: 25px;
+    height: 25px;
+  }
+  .site-header .nav-wrap .brand .brand-wordmark > strong,
+  .shop-header .brand .brand-wordmark > strong,
+  .portal-header .brand .brand-wordmark > strong {
+    font-size: 14px;
+    letter-spacing: -0.5px;
+  }
+  .site-header .brand .brand-wordmark > small,
+  .shop-header .brand .brand-wordmark > small,
+  .portal-header .brand .brand-wordmark > small {
+    font-size: 5px;
+    letter-spacing: 0;
+    margin-top: 3px;
+  }
+}

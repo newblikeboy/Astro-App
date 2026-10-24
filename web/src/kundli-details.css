@@ -1,0 +1,810 @@
+.kundli-details {
+  min-width: 0;
+  color: var(--ink);
+}
+.kundli-details :is(h2, h3, h4) {
+  overflow-wrap: anywhere;
+}
+.kundli-details .report-section-heading,
+.dasha-explorer .report-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 12px;
+}
+.kundli-details .report-section-heading > div,
+.dasha-explorer .report-section-heading > div {
+  min-width: 0;
+}
+.birth-record-strip > * {
+  max-width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.mangal-reference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+.mangal-reference-grid article {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+}
+.mangal-reference-grid strong,
+.mangal-reference-grid span,
+.mangal-reference-grid small {
+  display: block;
+  margin: 5px 0;
+}
+.mangal-reference-grid strong {
+  font-size: 14px;
+  color: var(--maroon);
+}
+.mangal-reference-grid span {
+  font-size: 13px;
+}
+.mangal-reference-grid small,
+.mangal-reference-grid li {
+  font-size: 11px;
+  color: var(--muted);
+}
+.kundli-mangal-assessment code {
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
+.kundli-mangal-assessment ul {
+  padding-left: 18px;
+}
+@media (max-width: 650px) {
+  .mangal-reference-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.varga-strength-list {
+  margin: 16px 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: clip;
+}
+.varga-strength-list article {
+  display: grid;
+  grid-template-columns: minmax(110px, 0.7fr) minmax(0, 1.6fr) minmax(
+      75px,
+      0.5fr
+    );
+  gap: 18px;
+  align-items: center;
+  padding: 15px 18px;
+}
+.varga-strength-list article + article {
+  border-top: 1px solid var(--line);
+}
+.varga-strength-list article > span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+}
+.varga-strength-list .astro-symbol {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+.varga-strength-list strong {
+  text-align: right;
+  font-size: 14px;
+  color: var(--maroon);
+}
+.varga-strength-list strong small {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 400;
+}
+.varga-strength-list meter {
+  width: 100%;
+  height: 15px;
+  border: 0;
+  accent-color: var(--action);
+}
+.varga-strength-list meter::-webkit-meter-bar {
+  background: #f2e8e1;
+  border: 0;
+  border-radius: 10px;
+}
+.varga-strength-list meter::-webkit-meter-optimum-value {
+  background: var(--action);
+  border-radius: 10px;
+}
+@media (max-width: 650px) {
+  .varga-strength-list article {
+    grid-template-columns: minmax(0, 1fr) minmax(65px, 0.5fr);
+    gap: 8px;
+    padding: 14px;
+  }
+  .varga-strength-list meter {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+}
+.kundli-details h3 {
+  font-size: 17px;
+  margin: 24px 0 9px;
+}
+.kundli-details h4 {
+  font-size: 15px;
+  margin: 12px 0;
+}
+.kundli-details .muted {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.birth-record-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  align-items: center;
+  background: linear-gradient(110deg, #fff2df, #faf0e9);
+  border: 1px solid #ead8d0;
+  border-radius: 13px;
+  padding: 17px 20px;
+  font-size: 13px;
+  margin: 15px 0 20px;
+}
+.birth-record-strip > strong {
+  font-size: 17px;
+  color: var(--maroon);
+}
+.birth-record-strip > span {
+  overflow-wrap: anywhere;
+}
+.birth-record-strip span strong {
+  display: block;
+  margin-top: 6px;
+}
+.birth-day-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.birth-day-facts > span {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  padding: 16px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.birth-day-facts > span + span {
+  border-left: 1px solid var(--line);
+}
+.birth-day-facts strong {
+  flex-basis: 100%;
+  font-size: 15px;
+  color: var(--ink);
+  font-weight: 600;
+}
+.birth-day-facts .astro-symbol {
+  width: 18px;
+  height: 18px;
+}
+.birth-limb-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+.birth-limb-grid article {
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 18px;
+  background: var(--paper);
+}
+.birth-limb-grid article:first-child {
+  border-color: #e9c99f;
+  background: #fff8ed;
+}
+.detail-card-label {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+.detail-card-label .astro-symbol {
+  height: 24px;
+  width: 24px;
+}
+.birth-limb-grid .time-range {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+.birth-limb-grid h4 {
+  min-height: 45px;
+  font-size: 17px;
+  color: var(--maroon);
+}
+.kundli-details .time-range {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.kundli-details .time-range small {
+  font-size: 10px;
+}
+.kundli-details .time-range time {
+  overflow-wrap: anywhere;
+}
+.birth-solar-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 18px;
+}
+.birth-solar-strip > div {
+  display: flex;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.birth-solar-strip svg {
+  color: #a55c21;
+  flex-shrink: 0;
+}
+.birth-solar-strip strong {
+  display: block;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 7px;
+}
+.detail-disclosure {
+  border-bottom: 1px solid var(--line);
+  margin: 12px 0;
+  padding: 4px 0 12px;
+  font-size: 12px;
+  line-height: 1.75;
+}
+.detail-disclosure > summary {
+  padding: 12px 0;
+  color: var(--action);
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.detail-disclosure > small {
+  display: block;
+  color: var(--muted);
+  margin-top: 13px;
+}
+.detail-disclosure p {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.detail-section-heading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 30px;
+  color: var(--maroon);
+}
+.detail-section-heading h3 {
+  margin: 0;
+}
+.detail-section-heading > .astro-symbol {
+  width: 23px;
+  height: 23px;
+}
+.birth-chakra-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin: 17px 0;
+  overflow: clip;
+}
+.birth-chakra-grid > div {
+  padding: 18px;
+  min-width: 0;
+}
+.birth-chakra-grid > div:not(:nth-child(4n + 1)) {
+  border-left: 1px solid var(--line);
+}
+.birth-chakra-grid > div:nth-child(n + 5) {
+  border-top: 1px solid var(--line);
+}
+.birth-chakra-grid dt {
+  font-size: 11px;
+  color: var(--muted);
+}
+.birth-chakra-grid dd {
+  margin: 7px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.chart-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.additional-chart-select {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--muted);
+  max-width: 100%;
+  margin: 12px 0;
+}
+.additional-chart-select select {
+  font: inherit;
+  font-size: 13px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  min-height: 44px;
+  padding: 9px 30px 9px 11px;
+  max-width: 100%;
+}
+.chart-controls .additional-chart-select {
+  margin: 0;
+  min-width: 210px;
+}
+.planet-condition-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.planet-condition-grid article {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px;
+}
+.condition-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.condition-title .astro-symbol {
+  width: 26px;
+  height: 26px;
+}
+.kundli-details .condition-title h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.dignity-label {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 4px 7px;
+  background: #fce8db;
+  color: var(--action);
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 14px;
+}
+.planet-condition-grid dl {
+  margin: 10px 0 0;
+}
+.planet-condition-grid dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+}
+.planet-condition-grid dl > div:last-child {
+  border-bottom: 0;
+}
+.planet-condition-grid dt {
+  color: var(--muted);
+}
+.planet-condition-grid dd {
+  margin: 0;
+  text-align: right;
+}
+.planet-condition-grid dd small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  margin-top: 3px;
+}
+.aspect-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.aspect-grid article {
+  border: 1px solid var(--line);
+  padding: 12px;
+  border-radius: 8px;
+}
+.aspect-grid strong,
+.aspect-grid span,
+.aspect-grid small {
+  display: block;
+  margin: 3px 0;
+}
+.aspect-grid small {
+  color: var(--muted);
+}
+.sarva-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  margin: 17px 0;
+}
+.sarva-grid article {
+  border: 1px solid #e7d7cc;
+  border-radius: 10px;
+  padding: 14px;
+  background: #fff9f0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+.sarva-grid span {
+  font-size: 11px;
+}
+.sarva-grid strong {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--maroon);
+}
+.sarva-grid small {
+  font-size: 10px;
+  color: var(--muted);
+}
+.prastara-planet > summary {
+  padding: 13px;
+  cursor: pointer;
+  color: var(--action);
+}
+.yoga-pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+  margin: 18px 0;
+}
+.yoga-pattern-grid article {
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 16px;
+}
+.yoga-pattern-grid article > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.yoga-pattern-grid h4 {
+  margin: 0;
+}
+.yoga-pattern-grid p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.yoga-pattern-grid small {
+  font-size: 11px;
+}
+.pattern-matches,
+.pattern-absent {
+  font-size: 10px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: #f4f1f1;
+  color: var(--muted);
+}
+.pattern-matches {
+  background: #fcebd3;
+  color: #87501d;
+}
+.yogini-periods {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: clip;
+  margin: 15px 0;
+}
+.yogini-periods > details + details {
+  border-top: 1px solid var(--line);
+}
+.yogini-periods > details > summary {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+  padding: 17px 20px;
+}
+.yogini-periods > details > summary .astro-symbol {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.yogini-periods summary small {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.yogini-expand-label {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--action);
+}
+.yogini-summary-times {
+  margin-left: auto;
+  max-width: 55%;
+}
+@media (max-width: 650px) {
+  .yogini-periods > details > summary {
+    flex-wrap: wrap;
+  }
+  .yogini-summary-times {
+    flex-basis: 100%;
+    max-width: none;
+    width: 100%;
+    margin: 5px 0 0;
+  }
+  .yogini-expand-label {
+    margin-left: auto;
+  }
+}
+.yogini-periods > details.is-current {
+  background: #fff6e9;
+}
+.yogini-parent-times {
+  padding: 0 20px 18px;
+}
+.yogini-children {
+  border-left: 2px solid #dcb499;
+  margin-left: 20px;
+  background: var(--paper);
+}
+.yogini-children article {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.5fr);
+  gap: 14px;
+  padding: 17px;
+  border-top: 1px solid var(--line);
+  align-items: center;
+}
+.yogini-children article > strong {
+  font-size: 13px;
+}
+.yogini-children article > strong > small {
+  display: block;
+  color: #8a5423;
+  font-size: 10px;
+  margin-top: 6px;
+}
+.yogini-children .is-current {
+  background: #fff6e9;
+}
+.saturn-window {
+  display: flex;
+  gap: 14px;
+  align-items: end;
+  flex-wrap: wrap;
+  margin: 20px 0 8px;
+}
+.saturn-window label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  flex: 1;
+  min-width: 140px;
+}
+.saturn-window input {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  padding: 12px;
+  min-height: 45px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.saturn-window .button {
+  min-height: 45px;
+}
+.saturn-window-caption {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 22px 0 12px;
+}
+.saturn-period-list {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: clip;
+}
+.saturn-period-list > article {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.5fr);
+  gap: 22px;
+  align-items: center;
+  padding: 20px;
+}
+.saturn-period-list > article + article {
+  border-top: 1px solid var(--line);
+}
+.saturn-period-list h4 {
+  margin: 10px 0 6px;
+}
+.saturn-period-list small {
+  font-size: 11px;
+  color: var(--muted);
+}
+.saturn-kind,
+.dhaiya-kind {
+  display: inline-block;
+  font-size: 10px;
+  padding: 4px 7px;
+  border-radius: 4px;
+  color: var(--action);
+  background: #f6e9e1;
+}
+.dhaiya-kind {
+  color: #935619;
+  background: #fff0d9;
+}
+@media (max-width: 1000px) {
+  .birth-limb-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .planet-condition-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .aspect-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sarva-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .birth-record-strip {
+    padding: 15px;
+    gap: 9px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .birth-day-facts {
+    grid-template-columns: 1fr;
+  }
+  .birth-day-facts > span {
+    padding: 12px 14px;
+  }
+  .birth-day-facts > span + span {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .birth-day-facts strong {
+    flex-basis: auto;
+    margin-left: auto;
+    font-size: 13px;
+  }
+  .birth-limb-grid {
+    gap: 10px;
+  }
+  .birth-limb-grid article {
+    padding: 13px;
+    min-width: 0;
+  }
+  .birth-limb-grid h4 {
+    font-size: 15px;
+    overflow-wrap: anywhere;
+  }
+  .birth-limb-grid .time-range {
+    font-size: 11px;
+  }
+  .birth-solar-strip {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+  .birth-chakra-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .birth-chakra-grid > div {
+    padding: 14px;
+  }
+  .birth-chakra-grid > div:not(:nth-child(4n + 1)) {
+    border-left: 0;
+  }
+  .birth-chakra-grid > div:nth-child(even) {
+    border-left: 1px solid var(--line);
+  }
+  .birth-chakra-grid > div:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
+  }
+  .birth-chakra-grid dd {
+    font-size: 13px;
+  }
+  .chart-controls {
+    align-items: stretch;
+  }
+  .chart-controls .additional-chart-select {
+    width: 100%;
+    min-width: 0;
+  }
+  .planet-condition-grid {
+    grid-template-columns: 1fr;
+  }
+  .planet-condition-grid article {
+    padding: 15px;
+  }
+  .aspect-grid {
+    grid-template-columns: 1fr;
+  }
+  .sarva-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .sarva-grid article {
+    padding: 12px 8px;
+  }
+  .sarva-grid strong {
+    font-size: 22px;
+  }
+  .yoga-pattern-grid {
+    grid-template-columns: 1fr;
+  }
+  .yogini-periods > details > summary {
+    padding: 15px 12px;
+    gap: 9px;
+  }
+  .yogini-parent-times {
+    padding: 0 12px 16px;
+  }
+  .yogini-children {
+    margin-left: 8px;
+  }
+  .yogini-children article {
+    grid-template-columns: 1fr;
+    padding: 13px;
+  }
+  .saturn-window {
+    gap: 12px;
+  }
+  .saturn-window label {
+    min-width: 100px;
+  }
+  .saturn-window .button {
+    width: 100%;
+  }
+  .saturn-period-list > article {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+  .kundli-details .time-range {
+    gap: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .birth-limb-grid {
+    grid-template-columns: 1fr;
+  }
+  .birth-limb-grid h4 {
+    min-height: 0;
+  }
+  .birth-limb-grid .time-range {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+}

@@ -1,0 +1,24 @@
+[Unit]
+Description=Mishra 4 You Go service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=mishra4you
+Group=mishra4you
+WorkingDirectory=/opt/mishra4you
+EnvironmentFile=/etc/mishra4you/app.env
+ExecStart=/opt/mishra4you/bin/mishra4you
+Restart=on-failure
+RestartSec=5
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/mishra4you
+UMask=0077
+# Keep Chromium's sandbox available. Verify the browser's user namespace /
+# setuid sandbox requirements on the chosen Ubuntu image before enabling service.
+
+[Install]
+WantedBy=multi-user.target

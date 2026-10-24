@@ -1,0 +1,35 @@
+.gem-photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fdf5ef;
+}
+.gem-product-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.gem-photo-label {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  max-width: calc(100% - 24px);
+  padding: 4px 8px;
+  border: 1px solid #efd4c1;
+  border-radius: 6px;
+  background: #fffcfaf2;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.4;
+}
+.gem-photo-missing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}

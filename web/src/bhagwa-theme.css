@@ -1,0 +1,709 @@
+/* Shared Bhagwa identity. #root keeps lazy route styles consistent with the site palette. */
+:root {
+  --bhagwa-ink: #472414;
+  --bhagwa-saffron: #c94b0b;
+  --bhagwa-ochre: #87360d;
+  --bhagwa-night: #35180b;
+  --bhagwa-gold: #ffdc9c;
+  --bhagwa-cream: #fff0d7;
+  --bhagwa-edge: #efd5b3;
+  --bhagwa-gloss: linear-gradient(
+    165deg,
+    #bd4b0c 0%,
+    #b3420b 35%,
+    #9f3409 66%,
+    #ae400b 100%
+  );
+  --bhagwa-depth:
+    radial-gradient(ellipse at 78% 35%, #d66b1236 0%, transparent 49%),
+    linear-gradient(115deg, #7a2809 8%, #a13a0b 53%, #8d3109 100%);
+  --bhagwa-surface: linear-gradient(
+    150deg,
+    #fff 20%,
+    #fffaf1 68%,
+    #fff1dd 100%
+  );
+  --paper: #fffaf1;
+  --cream: #fff0d7;
+  --ink: var(--bhagwa-ink);
+  --maroon: #87360d;
+  --saffron: var(--bhagwa-saffron);
+  --action: #ad3d0b;
+  --yellow: var(--bhagwa-gold);
+  --muted: #775a43;
+  --line: var(--bhagwa-edge);
+  --surface: #fff3e1;
+  --night: var(--bhagwa-night);
+  --shadow: 0 18px 48px #552c100c, 0 3px 10px #552c1005;
+}
+
+body {
+  background: var(--paper);
+}
+::selection {
+  background: #fdccab;
+  color: #311706;
+}
+:focus-visible {
+  outline-color: #9e470d;
+}
+#root .button:not(.secondary):not(.danger) {
+  background: var(--bhagwa-gloss);
+  border-color: #8e4718;
+  color: #fff;
+  box-shadow:
+    inset 0 1px 0 #ffffff52,
+    0 5px 13px #84411320;
+}
+#root .button:not(.secondary):not(.danger):hover {
+  background: linear-gradient(165deg, #c05711, #94440e 40%, #7f3a0d 80%);
+  box-shadow:
+    inset 0 1px 0 #ffffff70,
+    0 8px 22px #84411330;
+}
+#root .button.secondary {
+  background: linear-gradient(165deg, #fff, #fef0e6);
+  border-color: #f0cbb2;
+  box-shadow: inset 0 1px 0 #fff;
+}
+#root .button.secondary:hover {
+  background: #fee4d3;
+  border-color: #e49d6d;
+}
+#root .dev-ribbon {
+  background: #fbe9de;
+  color: #755743;
+}
+#root .status-dot {
+  background: #ac5b24;
+}
+#root .site-header,
+#root .shop-header,
+#root .portal-header {
+  background: #fffefef5;
+  background: linear-gradient(110deg, #fffffff7, #fff5eef7);
+  border-bottom-color: #efd6c6;
+  box-shadow: 0 2px 18px #50270b06;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+#root .site-header .brand .brand-wordmark > strong,
+#root .shop-header .brand .brand-wordmark > strong,
+#root .portal-header .brand .brand-wordmark > strong {
+  color: #46220b;
+}
+#root .brand .brand-wordmark > strong em {
+  color: #a04d15;
+}
+#root .site-footer .brand .brand-wordmark > strong em {
+  color: #fca76e;
+}
+#root .brand .brand-mark {
+  filter: drop-shadow(0 2px 3px #7c3f1614);
+}
+#root .account-button,
+#root .cart-link {
+  background: linear-gradient(150deg, #fff, #fff4ed);
+  border-color: #efd6c4;
+  box-shadow: inset 0 1px 0 #fff;
+}
+#root .site-header nav button[aria-current="location"],
+#root .site-header nav button:hover {
+  background: #fee5d4;
+}
+
+/* Saffron light, golden facets and a clear illustrative chart lead the page. */
+#root .hero {
+  background:
+    radial-gradient(ellipse at 78% 35%, #df792536 0%, transparent 49%),
+    linear-gradient(115deg, #91390f 8%, #b84712 53%, #a23e10 100%);
+  border-bottom: 1px solid #ed701c50;
+}
+#root .hero::before {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background:
+    linear-gradient(
+      118deg,
+      transparent 40%,
+      #fb7b2508 40.1%,
+      #fb7b2503 55%,
+      transparent 55.1%
+    ),
+    radial-gradient(ellipse at 3% 0%, #8e4d2132, transparent 52%);
+}
+#root .hero::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 8%;
+  right: 8%;
+  top: 0;
+  background: linear-gradient(90deg, transparent, #fdcdad80, transparent);
+  pointer-events: none;
+}
+#root .hero h1 {
+  color: #fff;
+  font-weight: 650;
+}
+#root .hero h1 span {
+  color: #ffdc9c;
+  background: linear-gradient(105deg, #fff3d7 0%, #ffd794 44%, #ffe9bc 96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#root .hero-signature {
+  color: #ffebce;
+  padding: 8px 12px;
+  background: linear-gradient(110deg, #f1670a1c, #fdcaa806);
+  border: 1px solid #fc9b5a36;
+  border-radius: 100px;
+  box-shadow: inset 0 1px 0 #ffffff0c;
+}
+#root .hero-description {
+  color: #ffebce;
+}
+#root .hero-actions .button:not(.secondary) {
+  color: #331806;
+  background: linear-gradient(160deg, #fff 0%, #fee0cc 32%, #fc9b5b 100%);
+  border-color: #fdcdad;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    0 6px 32px #fb914a24;
+}
+#root .hero-actions .button:not(.secondary):hover {
+  background: linear-gradient(160deg, #fff, #fdc19a);
+  box-shadow:
+    inset 0 1px 0 #fff,
+    0 6px 35px #fb914a45;
+}
+#root .hero-actions .text-button {
+  color: #fed8be;
+}
+#root .hero-points span,
+#root .atlas-caption,
+#root .hero-shortcuts small {
+  color: #ffebce;
+}
+#root .hero-points svg,
+#root .hero-shortcuts button > svg:first-child,
+#root .hero-shortcuts button > svg:last-child {
+  color: #fcad79;
+}
+#root .sky-atlas::before {
+  content: "";
+  position: absolute;
+  inset: -7% -3%;
+  background: url("/images/brand/saffron-prism.svg") center / contain no-repeat;
+  opacity: 0.8;
+  pointer-events: none;
+}
+#root .atlas-orbits {
+  filter: drop-shadow(0 0 5px #fb7b2633);
+}
+#root .atlas-chart {
+  background: linear-gradient(135deg, #fff, #fee4d3 52%, #fed7bd);
+  border: 1px solid #fdccac;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    inset -2px -2px 10px #f0ae8360,
+    0 20px 60px #180a0075,
+    0 0 32px #fb7c2728;
+  color: #915832;
+  transform: rotate(-10deg);
+}
+#root .atlas-chart .kundli-chart {
+  --chart-fill: #feefe4;
+  color: #915832;
+}
+#root .atlas-chart .chart-sign {
+  fill: #a06c49;
+}
+#root .atlas-chart .chart-planets {
+  fill: #5e3114;
+}
+#root .atlas-note {
+  color: #f6d5be;
+  border-color: #c8895f;
+}
+#root .atlas-caption span {
+  background: #f48f4c;
+}
+#root .hero-shortcuts button {
+  background: linear-gradient(135deg, #fdb58616, #fee3d005);
+  border-color: #f1985d3d;
+  color: #feeee2;
+  box-shadow:
+    inset 0 1px 0 #ffffff12,
+    0 4px 20px #13080118;
+}
+#root .hero-shortcuts button:hover {
+  background: linear-gradient(135deg, #fdb58629, #fee3d00b);
+  border-color: #fca3688c;
+}
+
+/* Pearl surfaces carry the same edge highlights through the working product. */
+#root .steps-section {
+  background: linear-gradient(95deg, #fff, #fff5ee 50%, #fff6f1);
+}
+#root .step > span,
+#root .free-label,
+#root .offer-icon,
+#root .auth-card-icon,
+#root .portal-admin-label,
+#root .stone-planet {
+  color: #7f4722;
+  background: linear-gradient(145deg, #fff, #feddc7);
+  border-color: #fdcbaa;
+  box-shadow: inset 0 1px 0 #fff;
+}
+#root .subtle-note svg,
+#root .birth-benefits svg,
+#root .check-list svg,
+#root .faq-list summary svg {
+  color: #af5920;
+}
+#root .birth-form,
+#root .offer-card,
+#root .auth-layout,
+#root .home-stone,
+#root .gem-card,
+#root .matching-form-section,
+#root .report-chart,
+#root .planet-panel,
+#root .reading-panel,
+#root .saved-report,
+#root .admin-panel,
+#root .admin-stat {
+  background: var(--bhagwa-surface);
+  border-color: var(--bhagwa-edge);
+  box-shadow:
+    inset 0 1px 0 #fff,
+    var(--shadow);
+}
+#root .birth-form {
+  border-top-color: #e6a173;
+  box-shadow:
+    inset 0 2px 0 #fff,
+    0 14px 50px #61341610;
+}
+#root input:not([type="checkbox"]):not([type="radio"]),
+#root textarea,
+#root .input-icon {
+  border-color: #e8cebd;
+}
+#root input::placeholder,
+#root textarea::placeholder {
+  color: #957661;
+}
+#root input:focus,
+#root textarea:focus,
+#root .input-icon:focus-within {
+  border-color: #c86a2b;
+}
+#root .guru-section,
+#root .home-gemstones,
+#root .videos-section,
+#root .panchang-section {
+  background: linear-gradient(135deg, #fdf1e9, #fff4ed 55%, #fef3eb);
+  border-color: #efd7c6;
+}
+#root .portrait-placeholder {
+  background:
+    radial-gradient(ellipse at 25% 15%, #fff, transparent 65%),
+    linear-gradient(135deg, #fcdcc6, #fbd6bd);
+  border-color: #eec1a4;
+}
+#root .portrait-halo {
+  background: linear-gradient(140deg, #fff1e8, #f1af83);
+  border-color: #e2a57d;
+  box-shadow:
+    inset 0 2px 0 #ffffffa0,
+    0 10px 40px #83482024;
+}
+#root .portrait-monogram {
+  color: #885532;
+}
+#root .portrait-label {
+  background: #fbf2ecd9;
+  border-color: #e9c8b2;
+}
+#root .offer-card.consultation-offer {
+  background:
+    radial-gradient(ellipse at 100% 0%, #93552b, transparent 65%),
+    linear-gradient(140deg, #401d06, #3a2110);
+  border-color: #9d633d;
+  box-shadow:
+    inset 0 1px 0 #ffffff3a,
+    0 12px 32px #53301818;
+}
+#root .consultation-offer :is(h3, .offer-price) {
+  color: #fff;
+}
+#root .consultation-offer .offer-price small,
+#root .consultation-offer .offer-kicker,
+#root .consultation-offer > p:not(.offer-disclaimer),
+#root .consultation-offer .offer-disclaimer {
+  color: #efd2be;
+}
+#root .consultation-offer .offer-icon {
+  background: #ffffff0c;
+  color: #fdc9a6;
+  border-color: #d6966c6e;
+}
+#root .consultation-offer .check-list svg {
+  color: #fca971;
+}
+#root .consultation-offer .button:not(.secondary):not(.danger) {
+  color: #391c08;
+  background: linear-gradient(150deg, #fff, #fdc098);
+  border-color: #fed3b7;
+}
+#root .closing-strip {
+  background: linear-gradient(110deg, #fedfca, #feeadd 50%, #feebde);
+  border-color: #f1cbb1;
+}
+#root .closing-strip > .container > svg {
+  color: #a75a27;
+}
+#root .site-footer {
+  background:
+    radial-gradient(ellipse at 70% 0%, #5c341b, transparent 60%), #2b180b;
+  color: #e8c4ad;
+  border-top: 1px solid #b6704166;
+}
+#root .footer-top {
+  border-color: #b37b5544;
+}
+#root .footer-top > .text-button,
+#root .footer-bottom button {
+  color: #f4ceb5;
+}
+#root .footer-bottom > span,
+#root .footer-note,
+#root .site-footer .brand .brand-wordmark > small {
+  color: #d7ae93;
+}
+#root .shop-footer {
+  background: linear-gradient(115deg, #fdede2, #fff6f0);
+  border-color: #eed6c5;
+}
+#root .shop-footer .brand .brand-wordmark > small {
+  padding: 0;
+  border: 0;
+}
+
+/* Commerce has the same identity while photography retains its true colours. */
+#root .shop-app {
+  background: var(--paper);
+}
+#root .shop-app .shop-hero {
+  background: var(--bhagwa-depth);
+  border-bottom: 1px solid #f2985c4d;
+}
+#root .shop-hero .shop-kicker,
+#root .shop-hero h1 span {
+  color: #fdbb8f;
+}
+#root .shop-hero p,
+#root .shop-art-caption {
+  color: #efcfba;
+}
+#root .shop-hero-art > .gem-photo {
+  border: 1px solid #fdcaa877;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    0 0 65px #fb802f30,
+    0 22px 55px #180a0160;
+}
+#root .shop-orbit,
+#root .shop-orbit-two {
+  border-color: #fca56a40;
+}
+#root .home-stone,
+#root .gem-card {
+  transition:
+    box-shadow 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
+}
+#root .home-stone:hover,
+#root .gem-card:hover {
+  border-color: #ea9e6b;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    0 10px 30px #6f3e1d17;
+  transform: translateY(-3px);
+}
+#root .shop-category-tabs button[aria-pressed="true"],
+#root .shop-category-tabs button.active {
+  background: linear-gradient(145deg, #fff2ea, #fdddc7);
+  border-color: #edb28b;
+  color: #613212;
+}
+#root .stone-main-photo {
+  border-color: #edd2c1;
+  box-shadow:
+    0 14px 45px #5e30120d,
+    inset 0 1px 0 #fff;
+}
+#root .shop-app:has(.checkout-page),
+#root .auth-page,
+#root .account-page,
+#root .admin-app {
+  background:
+    radial-gradient(ellipse at 0% 0%, #fbe2d180, transparent 60%), #fcf5f0;
+}
+#root .checkout-page .checkout-items,
+#root .checkout-page .shop-delivery-form,
+#root .checkout-page .shop-signin-card,
+#root .checkout-page .shop-order-summary,
+#root .checkout-payment-card,
+#root .admin-app .admin-login {
+  background: var(--bhagwa-surface);
+  border-color: #edd5c4;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    var(--shadow);
+}
+#root .checkout-summary-heading {
+  background: linear-gradient(125deg, #8b4b20, #4c270e 70%);
+  box-shadow: inset 0 1px 0 #ffffff30;
+}
+#root .checkout-summary-heading > small {
+  color: #f8d4bc;
+}
+#root .checkout-progress li > span {
+  border-color: #eccfbc;
+  background: #fff;
+}
+#root .checkout-progress .is-active > span {
+  background: #fde3d3;
+  border-color: #f2be9b;
+}
+#root .checkout-progress [aria-current="step"] > span {
+  background: var(--bhagwa-gloss);
+  border-color: #b15d26;
+  box-shadow:
+    inset 0 1px 0 #ffffff52,
+    0 0 0 5px #8843150a;
+}
+#root .checkout-next-step {
+  background: #fdf0e7;
+  border-color: #f4dccc;
+}
+#root .auth-story,
+#root .kundli-workspace .workspace-heading {
+  background: var(--bhagwa-depth);
+  box-shadow: inset 0 1px 0 #ffffff25;
+}
+#root .auth-story > svg,
+#root .auth-story li svg {
+  color: #fcaf7b;
+}
+#root .auth-story p,
+#root .auth-story li,
+#root .kundli-workspace .workspace-heading p {
+  color: #efd2be;
+}
+#root .matching-page {
+  --match-ink: var(--ink);
+  --match-burgundy: var(--maroon);
+  --match-copper: var(--action);
+  --match-line: var(--line);
+  --match-muted: var(--muted);
+  background: linear-gradient(135deg, #fff4ed, #fff6ef);
+}
+#root .matching-page .matching-form-section {
+  background: var(--bhagwa-surface);
+  border-color: var(--line);
+}
+#root .matching-linked-icons svg {
+  background: #fdede2;
+  border-color: #eabfa2;
+}
+#root .matching-linked-icons svg + svg {
+  background: #fee4d2;
+}
+#root .matching-free {
+  color: #7b441f;
+  background: linear-gradient(150deg, #fff, #feddc7);
+  border-color: #f0c4a6;
+  box-shadow: inset 0 1px 0 #fff;
+}
+#root .matching-birth-card:nth-child(2) .matching-person-icon {
+  color: #894f28;
+  background: linear-gradient(145deg, #fff7f2, #fee2cf);
+}
+#root .matching-submit-row {
+  background: linear-gradient(120deg, #fff9f5, #fef2eb);
+}
+#root .matching-submit,
+#root .matching-download,
+#root .matching-result-tabs button[aria-selected="true"] {
+  color: #fff;
+  background: var(--bhagwa-gloss);
+  border-color: #8e4718;
+  box-shadow:
+    inset 0 1px 0 #ffffff52,
+    0 5px 13px #84411320;
+}
+#root .matching-submit:hover,
+#root .matching-download:hover {
+  background: linear-gradient(165deg, #c05711, #94440e 40%, #7f3a0d 80%);
+}
+#root .matching-score {
+  background: linear-gradient(145deg, #844820, #3d2311);
+  box-shadow: inset 0 1px 0 #ffffff25;
+}
+#root .workspace .tabs,
+#root .panchang-view-switch {
+  background: #f8e8dc;
+  border-color: #efd5c4;
+}
+#root .workspace .tabs button[aria-selected="true"],
+#root .workspace .tabs button.active {
+  box-shadow:
+    inset 0 1px 0 #fff,
+    0 2px 6px #5c321510;
+  background: linear-gradient(160deg, #fff, #fffaf7);
+}
+#root .daily-tabs {
+  background: linear-gradient(110deg, #fdf0e8, #fff4ec);
+}
+#root .daily-tabs button[aria-selected="true"],
+#root .panchang-view-switch button[aria-pressed="true"],
+#root .sky-switch button[aria-pressed="true"],
+#root .admin-app .admin-tabs button.active {
+  color: #fff;
+  background: var(--bhagwa-gloss);
+  box-shadow:
+    inset 0 1px 0 #ffffff45,
+    0 2px 7px #7a3f1719;
+}
+#root .daily-element {
+  background: linear-gradient(145deg, #fff9f5, #fff 70%);
+  box-shadow: inset 0 1px 0 #fff;
+}
+#root .daily-element:first-child {
+  border-color: #eeb48d;
+  background: linear-gradient(145deg, #fee5d4, #fff7f2 80%);
+}
+#root .daily-now,
+#root .panchang-detail-tabs button[aria-selected="true"],
+#root .shop-product-list > button.active {
+  color: #6f3b19;
+  background: #fcdfcc;
+  border-color: #e6b08b;
+}
+#root .kundli-chart {
+  color: #a86a41;
+}
+#root .chart-sign {
+  fill: #8e674c;
+}
+#root .chart-planets {
+  fill: #583116;
+}
+#root .kundli-summary > div {
+  background: linear-gradient(145deg, #fff, #fee7d8);
+  border-color: #f0d2be;
+  box-shadow: inset 0 1px 0 #fff;
+}
+#root .chart-viewer-meta,
+#root .chart-legend button {
+  border-color: #f0d5c3;
+}
+#root .chart-legend button {
+  background: #fffaf7;
+}
+#root .chart-legend button[aria-pressed="true"] {
+  background: var(--bhagwa-gloss);
+  color: #fff;
+}
+#root .chart-legend button[aria-pressed="true"] small,
+#root .chart-legend button[aria-pressed="true"] .astro-symbol {
+  color: #fed6bb;
+}
+#root .chart-house-ascendant {
+  fill: #fee6d7;
+}
+#root .chart-house-selected {
+  fill: #fdc59f;
+}
+#root .chart-house-detail,
+#root .house-badge {
+  background: #fbe4d5;
+}
+#root .planet-panel th,
+#root .admin-workspace th {
+  background: #f9ece3;
+}
+#root .report-next,
+#root .booking-date {
+  background: linear-gradient(125deg, #fdece0, #fff2ea);
+}
+#root .finance-grid {
+  background: #edd3c1;
+  border-color: #edd3c1;
+  border-radius: 12px;
+}
+#root .finance-grid > div {
+  background: linear-gradient(145deg, #fff, #fff5ee);
+}
+#root .finance-grid b {
+  color: #5f3113;
+}
+#root .finance-grid > div.finance-highlight {
+  background: linear-gradient(140deg, #fed4b8, #fee1cd);
+  box-shadow: inset 0 1px 0 #ffffff70;
+}
+#root .modal {
+  background: var(--bhagwa-surface);
+  box-shadow:
+    0 30px 90px #26110340,
+    inset 0 1px 0 #fff;
+}
+dialog::backdrop {
+  background: #221005c9;
+}
+@media (max-width: 650px) {
+  #root .hero-signature {
+    font-size: 10px;
+    padding: 7px 10px;
+    margin-bottom: 24px;
+  }
+  #root .sky-atlas::before {
+    inset: -5% 0;
+    opacity: 0.7;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+  #root .button,
+  #root .button svg,
+  #root .home-stone,
+  #root .gem-card {
+    transition: none;
+  }
+  #root .button:hover,
+  #root .home-stone:hover,
+  #root .gem-card:hover {
+    transform: none;
+  }
+}
+@media (forced-colors: active) {
+  #root .hero h1 span {
+    background: none;
+    -webkit-text-fill-color: currentColor;
+  }
+}

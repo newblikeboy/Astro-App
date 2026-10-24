@@ -1,0 +1,598 @@
+/* Content hierarchy and action placement, using the shared Bhagwa identity. */
+/* Reserve room for Puja Vidhi beside the longer signed-in account label. */
+#root .site-header nav { gap: 3px; }
+#root .site-header nav button { padding-inline: 9px; }
+@media (min-width: 1281px) and (max-width: 1400px) {
+  #root .site-header .nav-wrap { gap: 16px; }
+}
+#root .site-header nav button.nav-primary {
+  color: #fff;
+  background: var(--bhagwa-gloss);
+  box-shadow: inset 0 1px 0 #ffffff45;
+}
+#root .hero {
+  padding-block: 30px 22px;
+}
+#root .hero-copy {
+  padding-block: 18px;
+}
+#root .hero-art {
+  width: min(100%, 390px);
+  margin-inline: auto;
+}
+#root .hero-shortcuts {
+  margin-top: 16px;
+}
+#root .hero-shortcuts button {
+  min-height: 48px;
+  padding: 11px 15px;
+  gap: 10px;
+}
+#root .hero-shortcuts small {
+  display: none;
+}
+#root .birth-section {
+  padding-block: 48px;
+}
+#root .birth-layout {
+  align-items: start;
+  gap: 18px 60px;
+}
+#root .birth-layout > .section-intro {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 18px;
+}
+#root .birth-layout > .birth-form {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+#root .birth-reassurance {
+  grid-column: 1;
+  grid-row: 2;
+}
+#root .birth-reassurance .subtle-note {
+  margin-top: 0;
+}
+#root .birth-reassurance .birth-benefits {
+  margin-block: 20px 0;
+}
+#root .steps {
+  padding-block: 19px;
+}
+#root .guru-section {
+  padding-block: 38px;
+}
+#root .guru-layout {
+  grid-template-columns: clamp(220px, 28vw, 340px) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 56px);
+  align-items: start;
+}
+#root .guru-identity {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 11px;
+  width: 100%;
+  max-width: 340px;
+  margin-inline: auto;
+}
+#root .guru-photo-frame {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid #dfaf72;
+  border-radius: 28px;
+  background: radial-gradient(circle at 50% 30%, #fff9eb, transparent 65%),
+    linear-gradient(145deg, #ffedd0, #f9cc92);
+  box-shadow: inset 0 1px 0 #fff9, 0 12px 30px #9a490b0d;
+}
+#root .guru-photo-frame::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 82%;
+  aspect-ratio: 1;
+  border: 1px solid #bc7c3430;
+  border-radius: 50%;
+  box-shadow: 0 0 0 18px #fff3, 0 0 0 36px #fff2;
+}
+#root .guru-photo-frame img {
+  width: 112px;
+  height: 112px;
+  max-width: 45%;
+  object-fit: contain;
+}
+#root .guru-photo-caption {
+  position: absolute;
+  inset: auto 20px 20px;
+  padding: 12px 10px;
+  border: 1px solid #dfaf7260;
+  border-radius: 12px;
+  background: #fff8ebd9;
+  color: var(--maroon);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+#root .guru-copy h2 {
+  font-size: 28px;
+  max-width: none;
+  margin-bottom: 12px;
+}
+#root .guru-copy h2 br {
+  display: none;
+}
+#root .guru-name {
+  margin: 8px 0;
+}
+#root .guru-copy > p {
+  max-width: none;
+  margin-bottom: 10px;
+  text-align: justify;
+  text-align-last: start;
+  text-justify: inter-word;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  line-height: 1.95;
+}
+#root .guru-copy .editorial-note {
+  margin-bottom: 8px;
+}
+#root :is(#kundli, #gemstones, #panchang, #videos) {
+  /* html supplies the shared 100px sticky-header offset. */
+  scroll-margin-top: 10px;
+}
+#root .offer-card h3 {
+  min-height: 76px;
+}
+#root .offer-bottom {
+  flex-wrap: wrap;
+}
+#root .shop-hero-inner {
+  min-height: 230px;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  padding-block: 30px;
+  gap: 40px;
+}
+#root .shop-hero h1 {
+  font-size: clamp(30px, 3.6vw, 44px);
+  margin: 12px 0;
+}
+#root .shop-hero p {
+  font-size: 13px;
+  max-width: 620px;
+  margin-bottom: 0;
+}
+#root .shop-hero-art {
+  min-height: 170px;
+}
+#root .shop-hero-art > .gem-photo {
+  width: 164px;
+  height: 164px;
+  border-radius: 18px;
+}
+#root .shop-orbit {
+  width: 185px;
+  height: 125px;
+}
+#root .shop-orbit-two {
+  width: 140px;
+  height: 180px;
+}
+#root .shop-art-caption {
+  display: none;
+}
+#root .shop-collection {
+  padding-top: 30px;
+}
+#root .shop-section-heading {
+  margin-bottom: 20px;
+}
+#root .shop-filters {
+  gap: 10px 18px;
+  align-items: center;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+}
+#root .shop-filter-tools {
+  flex: 1;
+  justify-content: flex-end;
+}
+#root .shop-search {
+  flex: 1;
+  max-width: 380px;
+}
+#root .shop-search input {
+  min-width: 0;
+  width: 100%;
+}
+#root .shop-extra-filters {
+  width: 100%;
+  border-top: 1px solid var(--line);
+  padding-top: 5px;
+}
+#root .shop-extra-filters > summary {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 7px;
+  min-height: 44px;
+  font-size: 12px;
+  color: var(--action);
+  cursor: pointer;
+  list-style: none;
+}
+#root .shop-extra-filters > summary::-webkit-details-marker {
+  display: none;
+}
+#root .shop-extra-filters > summary::after {
+  content: "+";
+  margin-left: 5px;
+  font-size: 18px;
+}
+#root .shop-extra-filters[open] > summary::after {
+  content: "−";
+}
+#root .shop-extra-filters > summary > span {
+  border: 1px solid var(--line);
+  background: var(--cream);
+  padding: 2px 7px;
+  border-radius: 20px;
+  font-size: 10px;
+}
+#root .shop-extra-filter-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  padding-bottom: 12px;
+}
+#root .shop-clear-filters {
+  min-height: 44px;
+  font-size: 11px;
+  margin-left: auto;
+}
+#root .stone-heading {
+  min-width: 0;
+}
+#root .stone-purchase {
+  min-width: 0;
+}
+#root .stone-order-buttons > .cart-purchase-control,
+#root .stone-order-buttons > .stone-view-cart {
+  margin: 0;
+}
+#root .stone-order-buttons .button {
+  min-height: 48px;
+  justify-content: center;
+}
+#root .stone-order-controls {
+  margin-top: 20px;
+}
+#root .stone-mobile-cart {
+  background: linear-gradient(140deg, #fff, #feecdf);
+}
+#root .kundli-section-select {
+  display: none;
+}
+@media (max-width: 800px) {
+  #root .birth-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  #root .birth-layout > * {
+    width: 100%;
+  }
+  #root .birth-layout > .section-intro {
+    padding-top: 0;
+  }
+  #root .birth-reassurance {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  #root .birth-reassurance .birth-benefits {
+    margin: 0;
+  }
+  #root .checkout-page .shop-order-summary {
+    grid-row: 3;
+  }
+  #root .checkout-page .shop-delivery-form,
+  #root .checkout-page .shop-signin-card,
+  #root .checkout-estimate-note {
+    grid-row: 2;
+  }
+}
+@media (max-width: 650px) {
+  #root .offer-card h3 {
+    min-height: 0;
+  }
+  #root .kundli-section-select {
+    display: grid;
+    gap: 7px;
+    margin-block: 20px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  #root .kundli-section-select select {
+    min-height: 48px;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid var(--line);
+    background: var(--bhagwa-surface);
+    color: var(--maroon);
+  }
+  #root .kundli-tabs {
+    display: none;
+  }
+  #root .hero {
+    padding-block: 26px 18px;
+  }
+  #root .hero::before {
+    background: url("/images/brand/saffron-prism.svg") right bottom / 210px auto
+      no-repeat;
+    opacity: 0.25;
+  }
+  #root .hero-copy {
+    padding: 0;
+  }
+  #root .hero-art {
+    display: none;
+  }
+  #root .hero h1 {
+    font-size: 39px;
+  }
+  #root .hero-signature {
+    margin-bottom: 18px;
+  }
+  #root .hero-actions {
+    gap: 8px 14px;
+  }
+  #root .hero-actions .text-button {
+    font-size: 11px;
+  }
+  #root .hero-points {
+    margin-top: 16px;
+  }
+  #root .hero-shortcuts {
+    gap: 7px;
+    margin-top: 20px;
+  }
+  #root .hero-shortcuts button {
+    flex-direction: row;
+    gap: 7px;
+    min-height: 48px;
+    padding: 8px;
+    text-align: left;
+  }
+  #root .hero-shortcuts button > svg:first-child {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+  }
+  #root .hero-shortcuts strong {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  #root .birth-section {
+    padding-block: 28px;
+  }
+  /* The nearby form labels its purpose; the longer intro remains accessible and visible on larger screens. */
+  #root .birth-layout > .section-intro {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  #root .birth-section .section-intro h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  #root .birth-section .section-intro > p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  #root .birth-reassurance {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  #root .birth-reassurance .subtle-note {
+    max-width: none;
+  }
+  #root .birth-reassurance .birth-benefits {
+    gap: 10px;
+  }
+  #root .guru-layout {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 28px;
+  }
+  #root .guru-identity {
+    max-width: 280px;
+  }
+  #root .guru-identity > span {
+    display: none;
+  }
+  #root .guru-copy h2 {
+    font-size: 24px;
+  }
+  #root .guru-section {
+    padding-block: 28px;
+  }
+  #root .shop-hero-inner {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding-block: 24px;
+    gap: 0;
+  }
+  #root .shop-hero-art {
+    display: none;
+  }
+  #root .shop-hero h1 {
+    font-size: 31px;
+  }
+  #root .shop-hero p {
+    font-size: 12px;
+  }
+  #root .shop-collection {
+    padding-top: 24px;
+  }
+  #root .shop-section-heading h2 {
+    font-size: 28px;
+  }
+  #root .shop-filters {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 10px;
+  }
+  #root .shop-filter-tools {
+    display: contents;
+  }
+  #root .shop-search {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    max-width: none;
+  }
+  #root .shop-collection-select {
+    flex-direction: column;
+    align-items: start;
+    min-width: 0;
+    gap: 5px;
+  }
+  #root .shop-collection-select select {
+    width: 100%;
+  }
+  #root .shop-sort {
+    min-width: 0;
+    align-self: end;
+  }
+  #root .shop-sort select {
+    width: 100%;
+    min-width: 0;
+  }
+  #root .shop-extra-filters {
+    grid-column: 1 / -1;
+  }
+  #root .shop-extra-filter-content {
+    gap: 12px;
+  }
+  #root .shop-clear-filters {
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
+  #root .home-gemstones-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  #root .home-stone {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr);
+  }
+  #root .home-stone-visual {
+    aspect-ratio: auto;
+    height: 100%;
+  }
+  #root .home-stone-copy {
+    padding: 14px;
+  }
+  #root .home-stone-copy h3 {
+    font-size: 18px;
+  }
+  #root .home-stone-status {
+    top: 8px;
+    left: 6px;
+    right: 6px;
+    padding-inline: 5px;
+    font-size: 8px;
+    text-align: center;
+  }
+  #root .home-stone-copy > p {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  #root .stone-detail-top {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  #root .stone-detail-top > *,
+  #root .stone-purchase {
+    width: 100%;
+  }
+  #root .stone-buy-panel {
+    display: contents;
+  }
+  #root .stone-heading {
+    order: -1;
+  }
+  #root .stone-heading h1 {
+    font-size: 32px;
+    margin-top: 8px;
+  }
+  #root .stone-local-name {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  #root .stone-planet {
+    margin: 5px 0 0;
+  }
+  #root .stone-main-photo {
+    aspect-ratio: 1.15;
+  }
+  #root .stone-purchase .stone-summary {
+    margin-top: 0;
+  }
+  #root .stone-order-buttons > .stone-view-cart {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    min-height: 44px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 650px) {
+  #root .shop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  #root .gem-card-copy {
+    padding: 13px;
+  }
+  #root .gem-card-copy h3 {
+    font-size: 18px;
+    min-height: 46px;
+  }
+  #root .gem-card-copy > p {
+    font-size: 10px;
+  }
+  #root .gem-card-label {
+    font-size: 8px;
+    padding: 4px 7px;
+    top: 8px;
+    left: 8px;
+  }
+  #root .gem-card-copy .cart-purchase-control .button {
+    padding-inline: 7px;
+    gap: 4px;
+    font-size: 11px;
+  }
+  #root .gem-card-bottom {
+    font-size: 12px;
+  }
+  #root .gem-card-arrow {
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+  }
+}

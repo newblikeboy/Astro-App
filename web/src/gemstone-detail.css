@@ -1,0 +1,459 @@
+.gemstone-detail {
+  padding-block: 24px 70px;
+}
+.stone-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  margin-bottom: 26px;
+  flex-wrap: wrap;
+}
+.stone-breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+.stone-detail-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 54px;
+  align-items: start;
+}
+.stone-gallery {
+  position: sticky;
+  top: 28px;
+  min-width: 0;
+}
+.stone-main-photo {
+  position: relative;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  overflow: hidden;
+}
+.stone-zoom {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: #fffdfbea;
+  color: var(--maroon);
+}
+.stone-photo-note {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 12px 4px 0;
+}
+.stone-buy-panel {
+  min-width: 0;
+}
+.stone-buy-panel h1 {
+  font-size: clamp(32px, 4vw, 49px);
+  letter-spacing: -0.04em;
+  margin: 14px 0 5px;
+  line-height: 1.1;
+}
+.stone-local-name {
+  font-size: 18px;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+.stone-planet {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #fce8db;
+  font-size: 11px;
+  color: var(--maroon);
+  margin: 8px 0;
+}
+.stone-summary {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 16px 0 20px;
+}
+.stone-price {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.stone-price strong {
+  font-size: 32px;
+  color: var(--maroon);
+  letter-spacing: -1px;
+}
+.stone-price span,
+.stone-rate {
+  font-size: 11px;
+  color: var(--muted);
+}
+.stone-rate {
+  margin: 4px 0 18px;
+}
+.stone-sample-note {
+  background: #fff5e8;
+  border: 1px solid #eddbc2;
+  border-radius: 10px;
+  padding: 13px 16px;
+  margin: 16px 0;
+  color: #6a4827;
+}
+.stone-sample-note strong {
+  font-size: 12px;
+}
+.stone-sample-note p {
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 4px 0 0;
+}
+.stone-quick-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-block: 1px solid var(--line);
+  padding: 14px 0;
+  gap: 12px 18px;
+  margin: 20px 0;
+}
+.stone-quick-facts dt {
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.stone-quick-facts dd {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+.stone-quantity {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 14px;
+}
+.stone-quantity > div {
+  display: flex;
+  width: 142px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+.stone-quantity button {
+  width: 44px;
+  background: var(--paper);
+  font-size: 19px;
+  flex-shrink: 0;
+}
+.stone-quantity input {
+  border: 0;
+  text-align: center;
+  width: 52px;
+  padding: 0;
+  background: #fff;
+  font-size: 13px;
+  border-radius: 0;
+  appearance: textfield;
+}
+.stone-quantity input::-webkit-inner-spin-button {
+  appearance: none;
+}
+.stone-order-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.stone-view-cart {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+.stone-stock {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 14px 0;
+}
+.stone-service-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  padding-top: 15px;
+  border-top: 1px solid var(--line);
+}
+.stone-service-row span {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 11px;
+  color: var(--muted);
+}
+.stone-section-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  padding: 22px 0;
+  border-block: 1px solid var(--line);
+  margin: 42px 0 26px;
+}
+.stone-section-links a {
+  font-size: 12px;
+  color: var(--maroon);
+  text-decoration: none;
+  padding-block: 6px;
+}
+.stone-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.stone-info-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: white;
+  scroll-margin-top: 24px;
+  min-width: 0;
+}
+.stone-info-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  margin: 0 0 22px;
+}
+.stone-info-card h3 {
+  font-size: 14px;
+  margin: 22px 0 8px;
+}
+.stone-info-card p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+.stone-info-card a {
+  font-size: 12px;
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+}
+.stone-specs {
+  margin: 0;
+}
+.stone-specs > div {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+.stone-specs dt {
+  color: var(--muted);
+}
+.stone-specs dd {
+  margin: 0;
+}
+.stone-belief-note {
+  background: #fdf5ef;
+  padding: 12px 15px;
+  border-radius: 8px;
+}
+.stone-reference {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  margin-top: 22px;
+}
+.stone-reference summary {
+  font-size: 12px;
+  color: var(--maroon);
+  cursor: pointer;
+}
+.stone-faq {
+  margin: 44px 0;
+}
+.stone-faq h2,
+.stone-related h2 {
+  font-size: 28px;
+}
+.stone-faq details {
+  border-bottom: 1px solid var(--line);
+  padding: 17px 0;
+}
+.stone-faq summary {
+  font-size: 14px;
+  color: var(--maroon);
+  cursor: pointer;
+}
+.stone-faq p {
+  font-size: 12px;
+  color: var(--muted);
+  max-width: 850px;
+  margin: 12px 0 0;
+}
+.stone-related > div {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.stone-related article {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: white;
+  padding-bottom: 16px;
+}
+.stone-related article > a {
+  text-decoration: none;
+}
+.stone-related-photo {
+  aspect-ratio: 1.3;
+}
+.stone-related h3 {
+  font-size: 17px;
+  margin: 16px 16px 8px;
+}
+.stone-related p {
+  margin: 0 16px 12px;
+  font-size: 14px;
+  color: var(--maroon);
+}
+.stone-related .cart-purchase-control {
+  margin-inline: 16px;
+}
+.stone-photo-dialog {
+  width: min(850px, 90vw);
+  height: min(850px, 90vw);
+  max-height: 90dvh;
+  border: 0;
+  border-radius: 18px;
+  padding: 0;
+  background: #fdf5ef;
+}
+.stone-photo-dialog::backdrop {
+  background: #1f1108d9;
+}
+.stone-dialog-close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  z-index: 2;
+  background: white;
+  border-radius: 50%;
+}
+.stone-mobile-cart {
+  display: none;
+}
+.shop-guide-editor {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.shop-guide-editor summary {
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: var(--maroon);
+}
+@media (max-width: 900px) {
+  .stone-detail-top {
+    gap: 28px;
+  }
+  .stone-order-buttons {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .stone-related > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .gemstone-detail {
+    padding-top: 18px;
+    padding-bottom: 110px;
+  }
+  .stone-mobile-cart {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 35;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    box-shadow: 0 -6px 24px #2d180b0b;
+  }
+  .stone-mobile-cart strong {
+    display: block;
+    font-size: 20px;
+    color: var(--maroon);
+  }
+  .stone-mobile-cart small {
+    display: block;
+    font-size: 9px;
+    color: var(--muted);
+  }
+  .stone-mobile-cart .cart-purchase-control {
+    margin: 0;
+  }
+  .stone-mobile-cart .cart-purchase-feedback {
+    font-size: 9px;
+  }
+  .stone-detail-top,
+  .stone-info-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .stone-gallery {
+    position: static;
+  }
+  .stone-buy-panel h1 {
+    font-size: 35px;
+  }
+  .stone-buy-panel .shop-kicker {
+    font-size: 10px;
+  }
+  .stone-info-card {
+    padding: 20px;
+  }
+  .stone-section-links {
+    gap: 6px 15px;
+    margin-top: 28px;
+  }
+  .stone-section-links a {
+    font-size: 11px;
+  }
+  .stone-price strong {
+    font-size: 30px;
+  }
+  .stone-related > div {
+    gap: 12px;
+  }
+  .stone-related .gem-photo-label {
+    font-size: 8px;
+    left: 6px;
+    bottom: 6px;
+    max-width: calc(100% - 12px);
+    padding: 3px 5px;
+  }
+  .stone-related h3 {
+    font-size: 15px;
+    margin-inline: 10px;
+  }
+  .stone-related p,
+  .stone-related .cart-purchase-control {
+    margin-inline: 10px;
+  }
+}

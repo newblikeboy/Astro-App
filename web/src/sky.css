@@ -1,0 +1,740 @@
+.sky-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+.sky-switch button,
+.sky-controls button,
+.sky-controls select,
+.sky-controls input[type="time"],
+.sky-more {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid #e8cebd;
+  border-radius: 8px;
+  min-height: 44px;
+  padding: 9px 12px;
+  font-size: 12px;
+}
+.sky-switch button[aria-pressed="true"] {
+  background: var(--maroon);
+  color: white;
+  border-color: var(--maroon);
+}
+.sky-method {
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.sky-method summary { cursor: pointer; color: var(--maroon); font-weight: 600; }
+.sky-combustion-evidence { color: var(--muted); line-height: 1.8; }
+.sky-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px 18px;
+  margin-bottom: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.sky-controls .daily-location {
+  flex: 1 1 280px;
+}
+.sky-controls .daily-date {
+  flex: 0 1 200px;
+}
+.sky-controls .daily-date label,
+.sky-controls .daily-location label {
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+}
+.sky-controls .daily-location label {
+  margin-bottom: 7px;
+}
+.sky-controls .daily-location input,
+.sky-controls .daily-date input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid #e8cebd;
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 46px;
+  padding: 10px 12px;
+  font: 14px var(--sans);
+}
+.sky-controls .daily-date label {
+  margin-bottom: 7px;
+}
+@media (max-width: 650px) {
+  .sky-controls .daily-location,
+  .sky-controls .daily-date {
+    flex-basis: 100%;
+  }
+  .sky-controls .daily-date-nav {
+    width: 100%;
+  }
+}
+.sky-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  min-width: 0;
+}
+.sky-controls label.sky-visible {
+  flex-direction: row;
+  align-items: center;
+  min-height: 44px;
+  gap: 8px;
+}
+.sky-visible input {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--action);
+}
+.sky-year {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.sky-year button {
+  display: grid;
+  place-items: center;
+  min-width: 40px;
+  padding-inline: 8px;
+}
+.sky-controls button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.sky-controls .sky-current-time {
+  color: var(--action);
+}
+.sky-timestamp,
+.sky-count,
+.sky-location-note {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 0 0 16px;
+}
+.sky-positions {
+  min-width: 0;
+  max-width: 100%;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  table-layout: fixed;
+  font-size: 13px;
+}
+.sky-positions th,
+.sky-positions td {
+  padding: 14px 8px;
+  border-bottom: 1px solid var(--line);
+  overflow-wrap: anywhere;
+  vertical-align: middle;
+}
+.sky-positions tbody tr:nth-child(even) {
+  background: #fcf9f7;
+}
+.sky-positions tbody tr:hover {
+  background: #fbf4ed;
+}
+.sky-positions thead {
+  background: #f8f2ef;
+}
+.sky-positions thead th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.sky-positions thead th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.sky-positions thead th {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 500;
+}
+.sky-positions thead th:nth-child(1) {
+  width: 20%;
+}
+.sky-positions thead th:nth-child(2) {
+  width: 15%;
+}
+.sky-positions thead th:nth-child(3) {
+  width: 16%;
+}
+.sky-positions thead th:nth-child(4) {
+  width: 22%;
+}
+.sky-positions thead th:nth-child(5) {
+  width: 7%;
+}
+.sky-positions thead th:nth-child(6) {
+  width: 20%;
+}
+.sky-positions tbody th {
+  font-weight: 600;
+}
+.sky-positions small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+.sky-retro {
+  color: #8e4321;
+  font-size: 11px;
+}
+.sky-direct {
+  color: var(--muted);
+  font-size: 11px;
+}
+.sky-transits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.sky-transits li {
+  display: grid;
+  grid-template-columns: 40px 180px minmax(0, 1fr) auto;
+  gap: 12px;
+  padding: 17px 8px;
+  border-bottom: 1px solid var(--line);
+  align-items: center;
+}
+.sky-transits li > .astro-symbol {
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+}
+.sky-transits .sky-sign {
+  color: var(--maroon);
+  background: #f7f0eb;
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+.sky-transits time {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.sky-transits strong {
+  font-size: 14px;
+  margin-right: 12px;
+}
+.sky-transits div > span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.sky-transits p {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+.sky-transits li > span {
+  text-align: right;
+}
+.sky-transits > li > .motion-label {
+  padding: 4px 7px;
+  border-radius: 6px;
+  background: #f6f1eb;
+  font-size: 10px;
+}
+.sky-more {
+  display: block;
+  margin: 18px auto 0;
+  color: var(--action);
+}
+.sky-empty {
+  margin: 20px 0;
+  padding: 24px;
+  background: var(--surface);
+  font-size: 13px;
+  color: var(--muted);
+}
+.sky-eclipses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.sky-eclipses article {
+  border: 1px solid var(--line);
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 0;
+  background: linear-gradient(150deg, #fff8ed, #fdfcff 48%);
+}
+.sky-eclipses .sky-lunar-eclipse {
+  background: linear-gradient(150deg, #f5eff8, #fdfcff 48%);
+}
+.sky-eclipse-symbol {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #fbebcd;
+  color: #945b1b;
+}
+.sky-lunar-eclipse .sky-eclipse-symbol {
+  color: #695280;
+  background: #eae0f2;
+}
+.sky-eclipse-heading {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.sky-eclipse-heading time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.sky-eclipse-heading h3 {
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 5px 0 0;
+  font-weight: 600;
+}
+.sky-visible-badge,
+.sky-hidden-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  justify-self: start;
+  grid-column: 2;
+  color: #3e654e;
+  background: #edf5ef;
+  padding: 4px 8px;
+  font-size: 10px;
+  border-radius: 5px;
+}
+.sky-hidden-badge {
+  color: var(--muted);
+  background: #f8eedf;
+}
+.sky-eclipse-facts,
+.sky-contacts {
+  margin: 0;
+}
+.sky-eclipse-facts > div {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ede5e8;
+}
+.sky-eclipse-facts > div:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.sky-eclipse-facts dt {
+  font-size: 11px;
+  color: var(--muted);
+}
+.sky-eclipse-facts dd {
+  margin: 3px 0 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.sky-eclipse-details {
+  border-top: 1px solid var(--line);
+  margin-top: 12px;
+  font-size: 12px;
+}
+.sky-eclipse-details summary {
+  padding: 12px 0;
+  cursor: pointer;
+  color: var(--action);
+  min-height: 44px;
+}
+.sky-eclipse-details > p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.sky-contacts > div {
+  padding-block: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.sky-contacts dt {
+  font-size: 11px;
+  color: var(--muted);
+}
+.sky-contacts dt small {
+  display: inline-block;
+  margin-left: 8px;
+  color: #8e4321;
+  font-size: 10px;
+}
+.sky-contacts dd {
+  margin: 3px 0 0;
+  font-size: 12px;
+}
+.sky-engine {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  margin-top: 18px;
+}
+@media (max-width: 900px) {
+  .sky-eclipses {
+    grid-template-columns: 1fr;
+  }
+  .sky-transits li {
+    grid-template-columns: 36px 155px minmax(0, 1fr) auto;
+  }
+}
+@media (max-width: 650px) {
+  .sky-switch {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+  }
+  .sky-switch button {
+    flex: 1;
+    padding: 8px 6px;
+    font-size: 11px;
+  }
+  .sky-controls {
+    gap: 10px;
+  }
+  .sky-controls label {
+    font-size: 11px;
+  }
+  .sky-controls label.sky-visible {
+    flex-basis: 100%;
+  }
+  .sky-positions,
+  .sky-positions tbody {
+    display: block;
+  }
+  .sky-positions thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+  .sky-positions tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 12px;
+    padding: 14px 12px;
+    border: 1px solid var(--line);
+    margin-bottom: 10px;
+    border-radius: 11px;
+  }
+  .sky-positions tbody th {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 15px;
+    background: transparent;
+    color: var(--ink);
+  }
+  .sky-positions td,
+  .sky-positions tbody th {
+    display: block;
+    border: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  .sky-positions td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 2px;
+    color: var(--muted);
+    font-size: 10px;
+  }
+  .sky-positions td:last-child {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+  }
+  .sky-positions td:last-child::before {
+    display: none;
+  }
+  .sky-transits li {
+    grid-template-columns: 34px minmax(0, 1fr) auto;
+    gap: 7px 8px;
+    padding-inline: 0;
+  }
+  .sky-transits li > .astro-symbol {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+  }
+  .sky-transits li > time {
+    grid-column: 2/-1;
+    font-size: 10px;
+  }
+  .sky-transit-copy {
+    grid-column: 2/-1;
+  }
+  .sky-transits li > .motion-label {
+    grid-column: 2/-1;
+    justify-self: start;
+  }
+  .sky-transits strong {
+    font-size: 13px;
+    margin-right: 6px;
+  }
+  .sky-transits div > span {
+    font-size: 11px;
+  }
+  .sky-transits p {
+    font-size: 11px;
+  }
+  .sky-eclipses article {
+    padding: 17px 14px;
+  }
+  .sky-eclipse-heading {
+    margin-bottom: 14px;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .sky-eclipse-symbol {
+    width: 42px;
+    height: 42px;
+  }
+  .sky-eclipse-symbol svg {
+    width: 25px;
+    height: 25px;
+  }
+  .sky-eclipse-heading h3 {
+    font-size: 15px;
+  }
+  .sky-empty {
+    padding: 16px;
+    font-size: 12px;
+  }
+}
+.eclipse-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.eclipse-summary-group {
+  min-width: 0;
+}
+.eclipse-summary-group > header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.eclipse-summary-group .sky-eclipse-symbol {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  color: #9b5a10;
+  background: linear-gradient(140deg, #fff8dc, #fce0ac);
+  box-shadow: inset 0 1px 0 #fff, 0 3px 12px #c38a2420;
+}
+.eclipse-kind-description {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.eclipse-summary-group h3 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 600;
+}
+.eclipse-summary-lunar .sky-eclipse-symbol {
+  background: linear-gradient(140deg, #f1f2ff, #dddaf9);
+  color: #5c4a9a;
+  box-shadow: inset 0 1px 0 #fff, 0 3px 12px #7161b820;
+}
+.eclipse-neighbours {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.eclipse-neighbour {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #ead8ba;
+  border-radius: 14px;
+  background: linear-gradient(160deg, #fff, #fffbf3);
+  box-shadow: 0 5px 18px #9f742509, inset 0 1px 0 #fff;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+.eclipse-neighbour-next {
+  border-color: #d9b26d;
+  background: linear-gradient(160deg, #fffdf8, #fff5e2);
+}
+.eclipse-summary-lunar .eclipse-neighbour {
+  border-color: #dcd7f2;
+  background: linear-gradient(160deg, #fff, #f5f5ff);
+  box-shadow: 0 5px 18px #5744a509, inset 0 1px 0 #fff;
+}
+.eclipse-summary-lunar .eclipse-neighbour-next {
+  border-color: #b8a5e0;
+  background: linear-gradient(160deg, #fdfbff, #eeeaff);
+}
+.eclipse-art {
+  height: 140px;
+  margin: -20px -20px 18px;
+  overflow: hidden;
+  border-bottom: 1px solid #ecd2a850;
+  color: #ffe7bd;
+  background: radial-gradient(ellipse at 50% 100%, #483126, #191624 65%, #101320);
+}
+.eclipse-art-lunar {
+  color: #d9dcff;
+  border-bottom-color: #b6a5f850;
+  background: radial-gradient(ellipse at 50% 100%, #35325e, #1c1d3b 65%, #11182c);
+}
+.eclipse-art svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.eclipse-art-note {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 18px 0 0;
+}
+.eclipse-neighbour h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin: 0 0 18px;
+  font-size: 12px;
+  font-weight: 550;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+.eclipse-neighbour h4 svg {
+  flex-shrink: 0;
+  color: var(--action);
+}
+.eclipse-summary-date {
+  display: block;
+  font-size: 22px;
+  line-height: 1.45;
+  color: var(--maroon);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.eclipse-summary-type {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+.eclipse-summary-type > span,
+.eclipse-peak > span {
+  color: var(--muted);
+  font-size: 10px;
+}
+.eclipse-summary-type strong {
+  font-size: 15px;
+  font-weight: 550;
+}
+.eclipse-peak {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.eclipse-peak time {
+  font-size: 13px;
+  color: var(--ink);
+}
+.eclipse-summary-visibility {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  color: var(--muted);
+  font-size: 11px;
+  margin: 16px 0 0;
+  line-height: 1.7;
+}
+.eclipse-summary-visibility > svg {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+.eclipse-summary-visibility.is-visible {
+  color: #3e654e;
+}
+.eclipse-summary-visibility small {
+  display: block;
+  font-size: 10px;
+  margin-top: 4px;
+}
+@media (max-width: 1100px) {
+  .eclipse-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .eclipse-summary-grid {
+    gap: 25px;
+  }
+  .eclipse-summary-group > header {
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .eclipse-summary-group h3 {
+    font-size: 18px;
+  }
+  .eclipse-neighbours {
+    gap: 10px;
+  }
+  .eclipse-neighbour {
+    padding: 15px 12px;
+    border-radius: 10px;
+  }
+  .eclipse-art {
+    height: 112px;
+    margin: -15px -12px 15px;
+  }
+  .eclipse-kind-description {
+    font-size: 11px;
+  }
+  .eclipse-neighbour h4 {
+    font-size: 11px;
+    margin-bottom: 14px;
+  }
+  .eclipse-summary-date {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .eclipse-summary-type strong {
+    font-size: 14px;
+  }
+  .eclipse-peak time {
+    font-size: 12px;
+  }
+  .eclipse-summary-visibility {
+    font-size: 10px;
+  }
+}
