@@ -14,6 +14,8 @@ import { hindiPlanets, signs } from "./Chart";
 import AstroSymbol from "./AstroSymbol";
 import ChartViewer from "./ChartViewer";
 import TimeRange from "./TimeRange";
+import NatalYogaChecks from "./NatalYogaChecks";
+import { mangalConclusion, placementConclusion } from "./yoga-conclusions";
 import { minuteTimestamp } from "./time-display";
 import {
   mangalRuleLabels,
@@ -760,14 +762,23 @@ export function PlanetAnalysisPanel({ report }: { report: Report }) {
 /** ExpandedYogaPatterns renders the supplementary chart's labelled placement patterns and supporting evidence. */
 export function ExpandedYogaPatterns({ report }: { report: Report }) {
   if (!report.details) return null;
+  const mangal = report.details.mangal && mangalConclusion(report.details.mangal);
   return (
     <section className="kundli-details">
+      <NatalYogaChecks report={report} />
       {report.details.mangal && (
         <div className="kundli-mangal-assessment">
           <div className="detail-section-heading">
             <AstroSymbol name="Mars" />
             <h3>{t("Mangal analysis")}</h3>
           </div>
+          <div className="yoga-conclusion">
+            <span className="detail-card-label">{t("Conclusion")}</span>
+            <p className="natal-yoga-status">{mangal?.status}</p>
+            <p>{mangal?.meaning}</p>
+          </div>
+          <details className="detail-disclosure">
+            <summary>{t("Calculation details")}</summary>
           <p className="muted">
             {t(
               "The six-house convention checks 1, 2, 4, 7, 8 and 12 from Lagna, Moon and Venus. One flagged reference is low coverage; two or three are high.",
@@ -832,34 +843,33 @@ export function ExpandedYogaPatterns({ report }: { report: Report }) {
               "Full planetary strength and context-dependent exceptions still require a professional reading. A possible benefic-strength condition is not treated as a confirmed cancellation.",
             )}
           </p>
+          </details>
         </div>
       )}
       <div className="detail-section-heading">
         <Sparkles size={20} aria-hidden="true" />
         <h3>{t("Additional yoga placement patterns")}</h3>
       </div>
-      <p className="muted">
-        {t(
-          "These checks identify geometric conditions. They do not establish final yoga strength or promise outcomes.",
-        )}
-      </p>
+      <p className="muted">{t("yoga.scope")}</p>
       <div className="yoga-pattern-grid">
         {report.details.analysis.patterns.map((p) => (
           <article key={p.code}>
             <div>
-              <h4>{t(p.name)}</h4>
+              <h4>{t(`yoga.name.${p.code}`)}</h4>
               <span
                 className={p.matches ? "pattern-matches" : "pattern-absent"}
               >
-                {t(
-                  p.matches ? "Placement matches" : "Placement does not match",
-                )}
+                {placementConclusion(p.code, p.matches).status}
               </span>
             </div>
-            <p>{t(p.condition)}</p>
+            <p>{placementConclusion(p.code, p.matches).meaning}</p>
+            <details className="detail-disclosure">
+              <summary>{t("Calculation details")}</summary>
+              <p>{t(p.condition)}</p>
             {p.planets.length > 0 && (
               <small>{p.planets.map(planet).join(" · ")}</small>
             )}
+            </details>
           </article>
         ))}
       </div>

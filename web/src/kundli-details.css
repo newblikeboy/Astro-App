@@ -478,6 +478,25 @@
   gap: 13px;
   margin: 18px 0;
 }
+
+.natal-yoga-checks {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  overflow-wrap: anywhere;
+}
+
+.natal-yoga-checks > section {
+  min-width: 0;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.natal-yoga-status {
+  font-weight: 700;
+  color: var(--burgundy, #751e30);
+}
+
 .yoga-pattern-grid article {
   border: 1px solid var(--line);
   border-radius: 11px;
@@ -808,3 +827,23 @@
     display: grid;
   }
 }
+.yoga-conclusion {
+  margin: 14px 0 20px;
+  padding: 16px 18px;
+  border-inline-start: 3px solid var(--saffron, #a44c18);
+  border-radius: 8px;
+  background: var(--surface-soft, #fff8ee);
+}
+.yoga-conclusion p { line-height: 1.8; }
+.yoga-conclusion .natal-yoga-status { margin-top: 8px; }
+.natal-yoga-checks tr[aria-current="true"] { background: var(--surface-soft, #fff8ee); }
+.kundli-details > .yoga-pattern-grid article > div { display: block; }
+.kundli-details > .yoga-pattern-grid .pattern-matches,
+.kundli-details > .yoga-pattern-grid .pattern-absent {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+.kundli-details > .yoga-pattern-grid p { font-size: 13px; }

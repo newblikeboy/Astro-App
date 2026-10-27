@@ -13,6 +13,7 @@ export type Varga = {
   }[];
 };
 export type KundliDetails = {
+  yoga_checks?: NatalYogaChecks;
   mangal: MangalAssessment;
   mangal_method: string;
   method: string;
@@ -126,6 +127,33 @@ export type KundliDetails = {
     current_sub_lord: string;
     lords: { name: string; lord: string; years: number }[];
     periods: DashaPeriod[];
+  };
+};
+export type RajyogPair = {
+  kendra_house: number;
+  trikona_house: number;
+  kendra_lord: string;
+  trikona_lord: string;
+  kendra_lord_sign: number;
+  trikona_lord_sign: number;
+  links: string[];
+};
+export type NatalYogaChecks = {
+  method: string;
+  kaal_sarp: {
+    status: "present" | "absent" | "boundary";
+    type?: string;
+    arc: string;
+    rahu_longitude: number;
+    ketu_longitude: number;
+    rahu_house: number;
+    ketu_house: number;
+    planets: { planet: string; longitude: number; from_rahu_degrees: number; side: string }[];
+  };
+  rajyog: {
+    matches: boolean;
+    pairs: RajyogPair[];
+    yogakarakas: { planet: string; kendra_house: number; trikona_house: number }[];
   };
 };
 export type SaturnTimelineData = {

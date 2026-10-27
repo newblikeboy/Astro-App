@@ -1,69 +1,127 @@
 <!doctype html>
-<html lang="hi">
+<html lang="{{.Language}}">
 <head>
 <meta charset="utf-8">
-<title>{{.Report.Birth.Name}} - व्यक्तिगत कुंडली और उपाय | Mishra 4 You</title>
+<title>{{.Report.Birth.Name}} {{t "- व्यक्तिगत कुंडली और उपाय | Mishra 4 You"}}</title>
 <style>
 @font-face{font-family:Noto;font-weight:400;src:url(data:font/ttf;base64,{{.Font}})}
 @font-face{font-family:Noto;font-weight:700;src:url(data:font/ttf;base64,{{.Bold}})}
-@page{size:A4;margin:19mm 18mm 20mm}
+@page{size:A4;margin:23mm 20mm 22mm}
 *{box-sizing:border-box}
-body{font-family:Noto,sans-serif;color:#382b23;font-size:12px;line-height:1.75;margin:0;padding:6mm 8mm}
-.page-frame{position:fixed;top:0;left:0;width:100%;height:258mm;border:1.4px solid #b66d39;outline:3px double #e6c69a;outline-offset:-6px;pointer-events:none;z-index:1}
-.corner{position:absolute;width:22px;height:22px;border:3px double #a25427;background:#fffaf1;transform:rotate(45deg)}
-.tl{left:3px;top:3px}.tr{right:3px;top:3px}.bl{left:3px;bottom:3px}.br{right:3px;bottom:3px}
-h1,h2,h3{color:#783d25;line-height:1.5}h1{font-size:31px;margin:24px 0 10px}h2{font-size:23px;margin:0 0 16px;padding:0 0 10px;border-bottom:2px solid #dba16a;break-after:avoid}h3{font-size:15px;margin:20px 0 8px;break-after:avoid}p{margin:8px 0 12px;orphans:3;widows:3}
-header{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:3px double #c58a53;gap:20px}
-.brand{font-size:24px;color:#783d25;font-weight:700}.brand small{display:block;font-size:12px;letter-spacing:1px}.tag{font-size:11px;color:#9b592b;letter-spacing:1px;text-align:right}
-.eyebrow{font-size:11px;letter-spacing:2px;color:#9b592b;margin:22px 0 6px}.lead{font-size:15px;color:#7b5740}.ornament{text-align:center;color:#b5723d;letter-spacing:9px;margin:22px 0}
-.meta,.notice{background:#fff7e9;border:1px solid #e5c8a5;padding:15px 18px;border-radius:3px}.meta p{margin:4px 0}.demo{border:2px solid #b7672c;padding:10px 14px;font-size:11px;color:#85431d;background:#fff5e5}
-.contents{columns:2;column-gap:26px;margin:18px 0}.contents a{display:block;break-inside:avoid;margin:0 0 9px;text-decoration:none;border-bottom:1px solid #ecdecb;padding-bottom:6px;color:#783d25;font-size:12px}
-.section{break-before:page;padding-top:6mm}.intro{color:#775b47;margin-bottom:18px;break-after:avoid}.block{margin:0 0 22px}.block h3{padding-left:10px;border-left:3px solid #c7864b}.block-note,.muted{font-size:10.5px;color:#806b5b;overflow-wrap:anywhere}.block-note{margin-top:0;break-after:avoid}
-table{width:100%;border-collapse:collapse;font-size:11px;line-height:1.65;table-layout:fixed}thead{display:table-header-group}th,td{padding:7px 6px;text-align:left;vertical-align:top;border:1px solid #e9dccb;overflow-wrap:anywhere}th{background:#faedda;color:#704227;font-weight:700}tbody tr:nth-child(even){background:#fffbf5}tr{break-inside:avoid}
-.chart{width:280px;max-width:100%;display:block;margin:16px auto}.chart-block{display:flex;align-items:center;gap:20px;break-inside:avoid}.chart-block .chart{width:245px;flex:0 0 245px;margin:12px 0}.chart-block table{flex:1;min-width:0;font-size:10.5px}.chart-block th,.chart-block td{padding:5px}.block:has(.chart-block){break-inside:avoid}
-.rule{padding:0 0 22px;margin-bottom:22px;border-bottom:1px solid #e4c6a3}.rule h3{font-size:18px;margin-top:0}.rule p,.remedy-text{white-space:pre-line;overflow-wrap:anywhere}.rule-type{font-size:10px;letter-spacing:1px;color:#9a633c}.remedy{border-left:3px solid #bd7a40;padding:7px 14px;background:#fff8ec;margin:15px 0;box-decoration-break:clone;-webkit-box-decoration-break:clone}.remedy h4{color:#7c4428;font-size:13px;margin:0 0 6px;break-after:avoid}.rule .muted{font-size:9px}.rule h3,.remedy h4{break-after:avoid}
-.follow-up{margin-top:22px;padding:16px 18px;border:1px solid #dca66d;background:#fff8ec;break-inside:avoid}.follow-up a{color:#89451d}.ref{font-size:9px;overflow-wrap:anywhere}.wide-table table:has(th:nth-child(10)){font-size:9px}.wide-table table:has(th:nth-child(10)) th,.wide-table table:has(th:nth-child(10)) td{padding:5px 3px;text-align:center}.wide-table table:has(th:nth-child(10)) th:first-child,.wide-table table:has(th:nth-child(10)) td:first-child{width:55px;text-align:left}
-footer{margin-top:24px;border-top:2px double #d7b18b;padding-top:14px}.legend{font-size:10px;color:#795e46}.reference-note{font-size:10.5px}.reference-note p{margin:8px 0}
+body{font-family:Noto,sans-serif;color:#342b2b;font-size:13px;line-height:1.85;margin:0}
+h1,h2,h3,h4{color:#6f2839;font-weight:700;line-height:1.5}h1{font-size:43px;margin:8px 0}h2{font-size:25px;margin:0 0 14px}h3{font-size:18px;margin:23px 0 10px}h4{font-size:14px;margin:0 0 8px}
+h2,h3,h4,summary{break-after:avoid}p{margin:8px 0 14px;orphans:3;widows:3;overflow-wrap:anywhere}a{color:#733248;text-decoration:none}a:focus{outline:2px solid #b47b36}
+.cover{min-height:245mm;break-after:page;background:linear-gradient(145deg,#fffaf0 0%,#fffdf8 60%,#f4ebe2 100%);padding:28px 28px 22px;border-bottom:7px solid #742d3b;position:relative}
+.cover-brand{display:flex;justify-content:space-between;align-items:start;border-bottom:1px solid #ddc8ae;padding-bottom:15px;color:#742d3b}.brand{font-size:24px;font-weight:700;line-height:1.3}.brand small{display:block;font-size:11px;font-weight:400;margin-top:7px}.cover-edition{text-align:right;font-size:10px;letter-spacing:1px}
+.seal{display:block;width:154px;height:154px;margin:25px auto 10px;color:#ac7433}.invocation{text-align:center;font-size:12px;color:#886236;margin:0 0 20px}.cover .eyebrow{font-size:11px;letter-spacing:1px;color:#8c6048}
+.cover-name{font-size:28px;color:#34302d;font-weight:700;line-height:1.65;margin:19px 0 6px;overflow-wrap:anywhere}.cover-line{color:#815b45;font-size:13px;line-height:1.8;max-width:420px}.cover-note{font-size:13px;color:#685a50;margin:15px 0 22px}
+.cover-name-long{font-size:22px;line-height:1.45}.cover:has(.cover-name-long) .seal{width:114px;height:114px;margin:16px auto 7px}
+.cover-details{display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;border-top:1px solid #ddc8ae;padding-top:18px;margin:19px 0}.cover-details dt{font-size:10px;color:#8a7063}.cover-details dd{font-size:13px;margin:2px 0 0;font-weight:700;overflow-wrap:anywhere}.cover-details .full{grid-column:1/-1}.cover-bottom{font-size:9px;color:#8b7668;margin-top:22px}
+.demo{border:1px solid #bd8c43;background:#fff2d9;color:#72471c;font-size:11px;padding:8px 12px;border-radius:4px;break-inside:avoid}
+.contents-page,.reading-chapter,.data-appendix,.reference-close{break-before:page;padding-top:3mm}
+.chapter-heading{display:flex;align-items:flex-start;gap:19px;border-bottom:1px solid #dbc7b6;padding-bottom:14px;margin-bottom:22px;break-inside:avoid;break-after:avoid}.chapter-number{font-size:32px;color:#b48852;line-height:1.3;min-width:52px}.chapter-heading h2{margin:2px 0 0}.chapter-kicker{font-size:10px;color:#95745f;letter-spacing:1px}
+.intro{font-size:13px;color:#69564c;line-height:1.9;break-after:avoid}.contents{display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;margin:15px 0 25px}.contents a{display:flex;gap:12px;border-bottom:1px solid #e8ddd1;padding:10px 0;break-inside:avoid;font-size:12px;line-height:1.6}.contents b{min-width:29px;color:#b17b38;font-size:11px}.contents-group{font-size:12px;color:#487166;margin:22px 0 0}
+.reader-guide{padding:17px 20px;border-left:3px solid #497267;background:#f2f6f3;break-inside:avoid;margin:20px 0}.reader-guide h3{margin:0 0 10px;font-size:16px}.reader-guide p{font-size:12px;line-height:1.8;margin:7px 0}
+.fact-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:22px 0}.fact-card{border:1px solid #e5d5c2;border-top:3px solid #be9359;border-radius:5px;padding:16px 17px;break-inside:avoid}.fact-label{font-size:11px;color:#8e6e58}.fact-value{font-size:21px;color:#742d3b;margin:7px 0 8px;font-weight:700;line-height:1.5}.fact-card p{font-size:12px;line-height:1.8;margin:0;color:#65554c}
+.portrait-bottom{display:flex;align-items:center;gap:25px;margin-top:24px}.portrait-chart{flex:0 0 230px}.portrait-chart .chart{width:230px;margin:0}.portrait-bottom p{font-size:12px;line-height:1.9}
+.topic-group+.topic-group{break-before:page;padding-top:3mm}.topic-heading{padding:18px 20px;background:#f8f2e9;border-left:4px solid #aa793e;margin:20px 0;break-inside:avoid;break-after:avoid}.topic-heading h3{margin:0 0 8px;font-size:21px}.topic-heading p{font-size:12px;color:#6b5849;margin:0}
+.rule{margin:0 0 28px;padding-bottom:22px;border-bottom:1px solid #e4d8cd}.rule h4{font-size:18px;margin:18px 0 12px}.rule-reading{font-size:14px;line-height:1.95;white-space:pre-line;overflow-wrap:anywhere}.remedy{border-left:3px solid #5a8071;background:#f2f6f2;padding:15px 18px;margin:19px 0;box-decoration-break:clone;-webkit-box-decoration-break:clone}.remedy h4{font-size:15px;margin:0 0 10px;color:#365a4d}.remedy-text{white-space:pre-line;line-height:1.95;overflow-wrap:anywhere}.remedy p{margin-bottom:7px}
+.reading-card{padding:21px 22px;border:1px solid #e7d7c7;border-radius:6px;margin:0 0 20px;break-inside:avoid}.reading-card h3{margin:0 0 14px}.reading-card .reading-conclusion{font-size:15px;line-height:1.85;font-weight:700;color:#742d3b;margin:10px 0 15px}.meaning-label{font-size:10px;letter-spacing:.4px;color:#507269;margin:15px 0 5px}.reading-card p{font-size:13px;line-height:1.9;white-space:pre-line}.reading-card .basis{font-size:10px;color:#8e7565;margin-bottom:0}
+.absent-list{columns:2;padding-left:18px;font-size:12px;line-height:1.85}.absent-list li{break-inside:avoid;margin:5px 0}.notice{border:1px solid #dbc7ae;border-left:3px solid #ad7b40;padding:15px 19px;background:#fffaf0;break-inside:avoid}.muted{font-size:10px;color:#877265}.follow-up{padding:20px;border:1px solid #dbc5aa;background:#fcf8f0;margin-top:25px;break-inside:avoid}
+.block{margin:0 0 25px}.block h3{padding:7px 0 0 12px;border-left:3px solid #b78448;font-size:17px;margin:18px 0 12px;break-inside:avoid}.block-note{font-size:11.5px;color:#65544a;line-height:1.9;white-space:pre-line;margin:0 0 15px}.block:has(table)>.block-note{break-after:avoid}.reader-blocks .block-note{font-size:13px;color:#40352e;line-height:1.85}.reader-blocks .block h3{font-size:19px}.block-together{break-inside:avoid}
+#numerology .block{margin-bottom:17px}#numerology .block:last-child h3{font-size:15px}#numerology .block:last-child .block-note{font-size:11px;line-height:1.75}
+.numerology-yantra{display:block;width:210px;height:210px;max-width:100%;margin:12px 0}
+table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:11px;line-height:1.7;margin:12px 0 18px}thead{display:table-header-group}th,td{border:1px solid #e4d8ca;vertical-align:top;text-align:left;padding:8px 7px;overflow-wrap:anywhere}th{background:#f2e7d7;color:#6b3a36;font-weight:700}tbody tr:nth-child(even){background:#fcf9f4}tr{break-inside:avoid}.reader-blocks table{font-size:11.5px}
+.chart{display:block;width:270px;max-width:100%;margin:18px auto}.chart-block{display:flex;align-items:center;gap:22px;break-inside:avoid}.chart-block .chart{width:220px;flex:0 0 220px;margin:12px 0}.chart-block table{flex:1;min-width:0;font-size:10.5px}.chart-block th,.chart-block td{padding:6px 4px}.block:has(.chart-block){break-inside:avoid}
+.wide-table table:has(th:nth-child(10)){font-size:9px}.wide-table table:has(th:nth-child(10)) th,.wide-table table:has(th:nth-child(10)) td{padding:5px 3px;text-align:center}.wide-table table:has(th:nth-child(10)) th:first-child,.wide-table table:has(th:nth-child(10)) td:first-child{width:57px;text-align:left}
+.legend,.reference-note{font-size:10.5px;line-height:1.85;color:#766255}.appendix-banner{border-left:3px solid #497267;padding:0 0 0 15px;margin:0 0 24px}.appendix-banner b{color:#497267;font-size:14px}.appendix-banner p{font-size:11px;margin:7px 0}.source-record{padding:12px 0;border-bottom:1px solid #e4d8ca;break-inside:avoid;font-size:10px}.source-record strong{font-size:12px}.ref{font-size:9px;color:#88766a;overflow-wrap:anywhere}.reference-close h3{margin-top:0}.reference-note p{margin:8px 0}.no-break{break-inside:avoid}
+#d1 .chart{width:240px}#d1 th,#d1 td{padding:6px;font-size:10.5px}#d1 .chapter-heading{margin-bottom:16px}
 </style>
 </head>
-<body>
-<div class="page-frame" aria-hidden="true"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i></div>
-<header><div class="brand">Mishra 4 You<small>पं. राजा मिश्रा</small></div><div class="tag">परंपरा · गणना · मार्गदर्शन<br>व्यक्तिगत कुंडली और उपाय</div></header>
-{{if .Order.Demo}}<p class="demo">डेमो रिपोर्ट · परीक्षण भुगतान · यह स्वीकृत व्यक्तिगत सलाह नहीं है।</p>{{end}}
-<div class="eyebrow">आपके जन्म विवरण पर आधारित</div>
-<h1>{{.Report.Birth.Name}} की<br>व्यक्तिगत कुंडली</h1>
-<p class="lead">अपनी कुंडली को समझें। मार्गदर्शन और उपाय एक जगह पाएँ।</p>
-<div class="ornament">◇ · ◇ · ◇</div>
-<div class="meta"><p><b>जन्म तारीख:</b> {{.Report.Birth.Date}} · <b>समय:</b> {{clock .Report.Birth.Time}}</p><p><b>स्थान:</b> {{if .Report.Place.Hindi}}{{.Report.Place.Hindi}}{{else}}{{.Report.Place.Name}}{{end}}</p><p><b>समय क्षेत्र:</b> {{.Report.Place.Zone}}</p><p><b>निर्देशांक:</b> {{.Report.Place.Lat}}, {{.Report.Place.Lon}}</p><p><b>जन्म UTC:</b> {{instant .Report.Chart.UTC "UTC"}}</p>{{if not .Report.Created.IsZero}}<p><b>गणना का संदर्भ:</b> {{date .Report.Created}}</p>{{end}}</div>
-<h3>इस रिपोर्ट में</h3>
-<nav class="contents"><a href="#guidance">व्यक्तिगत फलादेश और उपाय</a><a href="#d1">जन्म कुंडली और ग्रह सारणी</a>{{range .Sections}}<a href="#{{.ID}}">{{.Title}}</a>{{end}}</nav>
-<p class="muted">रिपोर्ट सुरक्षित जन्म विवरण और सामग्री के संस्करण पर आधारित है। गोचर और सक्रिय दशाएँ रिपोर्ट के संदर्भ समय की हैं।</p>
-
-<section class="section" id="guidance"><h2>व्यक्तिगत फलादेश और उपाय</h2>
-<p class="intro">हर विषय की व्याख्या और उससे जुड़े उपलब्ध उपाय नीचे दिए हैं। मंत्र और रत्न का मार्गदर्शन उसी रूप में रखा गया है जिसमें वह रिपोर्ट में सुरक्षित है।</p>
-{{range .Report.Rules}}
-<article class="rule">
-<div class="rule-type">{{category .Category}}{{if .Demo}} · डेमो सामग्री{{end}}</div>
-<h3>{{.Topic}}</h3><p>{{.Hindi}}</p>
-{{if .Mantra}}<div class="remedy"><h4>मंत्र और संबंधित निर्देश</h4><p class="remedy-text">{{.Mantra}}</p></div>{{end}}
-{{if .Gemstone}}<div class="remedy"><h4>रत्न संबंधी मार्गदर्शन</h4><p class="remedy-text">{{.Gemstone}}</p><p class="muted">इस PDF की खरीद में रत्न शामिल नहीं है।</p></div>{{end}}
-<p class="muted">सामग्री संदर्भ: {{.ID}} · संस्करण {{.Version}}{{if eq .Status "approved"}} · स्वीकृत{{else}} · {{label .Status}}{{end}}{{if .Approver}} · {{.Approver}}{{end}}{{if .ApprovedAt}} · {{date .ApprovedAt}}{{end}}</p>
-</article>
-{{else}}<div class="notice">इस सुरक्षित संस्करण में व्यक्तिगत व्याख्या और उपाय उपलब्ध नहीं हैं।</div>{{end}}
-{{if .Links}}<div class="follow-up"><b>अगला कदम</b><p><a href="{{.Links.Report}}">वेबसाइट पर अपनी पूरी कुंडली देखें</a> · <a href="{{.Links.Consultation}}">गुरुजी से परामर्श देखें</a></p><p class="muted">अपने खाते में प्रवेश आवश्यक हो सकता है। उपलब्ध सेवा और कीमत वेबसाइट पर देखें।</p></div>{{end}}
+<body class="language-{{.Language}}">
+<section class="cover" id="cover">
+<header class="cover-brand"><div class="brand">Mishra 4 You<small>{{t "पं. राजा मिश्रा"}}</small></div><div class="cover-edition">{{t "परंपरा · गणना · मार्गदर्शन"}}<br>{{t "व्यक्तिगत कुंडली और उपाय"}}</div></header>
+<svg class="seal" viewBox="0 0 180 180" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="90" cy="90" r="76" stroke-width=".8"/><circle cx="90" cy="90" r="65" stroke-dasharray="1 5"/><circle cx="90" cy="90" r="49" stroke-width=".65"/><g stroke-width=".8"><path d="M90 20 Q122 58 90 90 Q58 58 90 20ZM90 160 Q122 122 90 90 Q58 122 90 160ZM20 90 Q58 58 90 90 Q58 122 20 90ZM160 90 Q122 58 90 90 Q122 122 160 90Z"/><path d="M40 40 Q90 44 90 90 Q44 90 40 40ZM140 140 Q90 136 90 90 Q136 90 140 140ZM140 40 Q136 90 90 90 Q90 44 140 40ZM40 140 Q44 90 90 90 Q90 136 40 140Z"/></g><circle cx="90" cy="90" r="16" fill="#fffaf0"/><circle cx="90" cy="90" r="7" fill="currentColor"/></g></svg>
+<p class="invocation">{{t "book.invocation"}}</p>
+<div class="eyebrow">{{t "आपके जन्म विवरण पर आधारित"}}</div>
+<h1>{{t "book.title"}}</h1>
+<p class="cover-line">{{t "book.cover-line"}}</p>
+<div class="cover-name{{if gt (len .Report.Birth.Name) 90}} cover-name-long{{end}}">{{.Report.Birth.Name}}</div>
+<p class="cover-note">{{t "book.cover-note"}}</p>
+<dl class="cover-details"><div><dt>{{t "जन्म तारीख:"}}</dt><dd>{{birthDate .Report.Birth.Date}}</dd></div><div><dt>{{t "समय:"}}</dt><dd>{{clock .Report.Birth.Time}}</dd></div><div class="full"><dt>{{t "स्थान:"}}</dt><dd>{{if eq .Language "en"}}{{.Report.Place.Name}}{{else if .Report.Place.Hindi}}{{.Report.Place.Hindi}}{{else}}{{.Report.Place.Name}}{{end}}</dd></div><div class="full"><dt>{{t "समय क्षेत्र:"}}</dt><dd>{{.Report.Place.Zone}}</dd></div></dl>
+{{if .Order.Demo}}<p class="demo">{{t "डेमो रिपोर्ट · परीक्षण भुगतान · यह स्वीकृत व्यक्तिगत सलाह नहीं है।"}}</p>{{end}}
+<p class="cover-bottom">{{t "रिपोर्ट सुरक्षित जन्म विवरण और सामग्री के संस्करण पर आधारित है। गोचर और सक्रिय दशाएँ रिपोर्ट के संदर्भ समय की हैं।"}}</p>
 </section>
 
-<section class="section" id="d1"><h2>जन्म कुंडली · D1</h2><p class="intro">लग्न: {{sign .Report.Chart.Lagna.RashiNumber}} {{.Report.Chart.Lagna.DMS}} · लाहिड़ी अयनांश · राशि आधारित भाव</p>
-{{.Chart}}<p class="legend">राशि संख्या 1-12 हैं। सू सूर्य · चं चंद्र · मं मंगल · बु बुध · गु गुरु · शु शुक्र · श शनि · रा राहु · के केतु। लग्न से भाव वामावर्त पढ़ें।</p>
-<table><thead><tr><th>ग्रह</th><th>राशि</th><th>अंश</th><th>नक्षत्र / पद</th><th>भाव</th><th>वक्री</th></tr></thead><tbody>{{range .Report.Chart.Planets}}<tr><td>{{label .Name}}</td><td>{{sign .RashiNumber}}</td><td>{{.DMS}}</td><td>{{label .Nakshatra}} / {{.Pada}}</td><td>{{.House}}</td><td>{{if .Retrograde}}हाँ{{else}}नहीं{{end}}</td></tr>{{end}}</tbody></table></section>
+<section class="contents-page" id="contents">
+<div class="chapter-heading"><span class="chapter-number">M4Y</span><div><div class="chapter-kicker">{{t "book.main-part"}}</div><h2>{{t "book.contents"}}</h2></div></div>
+<p class="intro">{{t "book.contents-intro"}}</p>
+<h3 class="contents-group">{{t "book.main-part"}}</h3>
+<nav class="contents"><a href="#portrait"><b>01</b><span>{{t "book.portrait"}}</span></a><a href="#guidance"><b>02</b><span>{{t "book.guidance"}}</span></a><a href="#yoga-reading"><b>03</b><span>{{t "book.yogas"}}</span></a><a href="#numerology"><b>04</b><span>{{t "Numerology"}}</span></a><a href="#time-reading"><b>05</b><span>{{t "book.periods"}}</span></a></nav>
+<h3 class="contents-group">{{t "book.appendix-part"}}</h3>
+<nav class="contents"><a href="#d1"><b>A01</b><span>{{t "जन्म कुंडली और ग्रह सारणी"}}</span></a>{{range .Book.Appendices}}<a href="#{{.ID}}"><b>{{.Number}}</b><span>{{.Title}}</span></a>{{end}}<a href="#sources"><b>REF</b><span>{{t "book.sources"}}</span></a></nav>
+<div class="reader-guide"><h3>{{t "book.how-title"}}</h3><p>{{t "book.how-1"}}</p><p>{{t "book.how-2"}}</p><p>{{t "book.how-3"}}</p></div>
+</section>
 
-{{range .Sections}}<section class="section wide-table" id="{{.ID}}"><h2>{{.Title}}</h2>{{if .Intro}}<p class="intro">{{.Intro}}</p>{{end}}
-{{range .Blocks}}<div class="block"><h3>{{.Title}}</h3>{{if .Note}}<p class="block-note">{{.Note}}</p>{{end}}
-{{if .Chart}}<div class="chart-block">{{.Chart}}{{end}}
-{{if .Rows}}<table><thead><tr>{{range .Headers}}<th>{{.}}</th>{{end}}</tr></thead><tbody>{{range .Rows}}<tr>{{range .}}<td>{{.}}</td>{{end}}</tr>{{end}}</tbody></table>{{end}}
-{{if .Chart}}</div>{{end}}</div>{{end}}
-</section>{{end}}
+<section class="reading-chapter" id="portrait">
+<div class="chapter-heading"><span class="chapter-number">01</span><div><div class="chapter-kicker">{{t "book.main-part"}}</div><h2>{{t "book.portrait"}}</h2></div></div>
+<p class="intro">{{t "book.portrait-intro"}}</p>
+<div class="fact-grid">{{range .Book.Portrait}}<article class="fact-card"><div class="fact-label">{{.Label}}</div><div class="fact-value">{{.Value}}</div><p>{{.Meaning}}</p></article>{{end}}</div>
+<div class="portrait-bottom"><div class="portrait-chart">{{.Chart}}</div><div><p>{{t "book.chart-note"}}</p><a href="#d1">{{t "जन्म कुंडली और ग्रह सारणी"}} →</a></div></div>
+</section>
 
-<div class="reference-note">{{range .Report.Limitations}}<p>{{.}}</p>{{end}}<p>ज्योतिषीय व्याख्या और खगोलीय गणना अलग हैं। परिणाम की गारंटी नहीं है। दशा की तारीखें घोषित पद्धति पर निर्भर हैं। गोचर सुरक्षित संदर्भ समय का है।</p></div>
-<footer><p>रिपोर्ट और व्यक्तिगत सामग्री का संस्करण खरीद के समय सुरक्षित किया गया है।</p><div class="ref">रिपोर्ट: {{.Report.ID}}<br>ऑर्डर: {{.Order.ID}} · राशि: {{money .Order.Amount}}{{if and .Order.TaxMode (ne .Order.TaxMode "unconfigured")}} · कर व्यवस्था: {{.Order.TaxMode}}{{end}}</div>{{if .Links}}<p><a href="{{.Links.Account}}">अपने खाते और सेवा की स्थिति देखें</a></p>{{end}}<p class="muted">Mishra 4 You · पं. राजा मिश्रा</p></footer>
-</body></html>
+<section class="reading-chapter" id="guidance">
+<div class="chapter-heading"><span class="chapter-number">02</span><div><div class="chapter-kicker">{{t "book.main-part"}}</div><h2>{{t "book.guidance"}}</h2></div></div>
+<p class="intro">{{t "book.guidance-intro"}}</p>
+{{range .Book.Topics}}<section class="topic-group" id="{{.ID}}"><div class="topic-heading"><h3>{{.Title}}</h3><p>{{.Intro}}</p></div>
+{{range .Rules}}<article class="rule"><h4>{{.Topic}}</h4><p class="rule-reading">{{ruleText .}}</p>
+{{if and (eq $.Language "en") (not (hasEnglish .))}}<p class="muted">English interpretation was not supplied in this saved version. The original text is retained above.</p>{{end}}
+{{if and (eq $.Language "en") (or .Mantra .Gemstone)}}<p class="muted">Mantras and remedy instructions below retain their original supplied language and wording.</p>{{end}}
+{{if .Mantra}}<div class="remedy"><h4>{{t "मंत्र और संबंधित निर्देश"}}</h4><p class="remedy-text">{{.Mantra}}</p></div>{{end}}
+{{if .Gemstone}}<div class="remedy"><h4>{{t "रत्न संबंधी मार्गदर्शन"}}</h4><p class="remedy-text">{{.Gemstone}}</p><p class="muted">{{t "इस PDF की खरीद में रत्न शामिल नहीं है।"}}</p></div>{{end}}
+</article>{{end}}</section>
+{{else}}<div class="notice">{{t "इस सुरक्षित संस्करण में व्यक्तिगत व्याख्या और उपाय उपलब्ध नहीं हैं।"}}</div>{{end}}
+{{if .Links}}<div class="follow-up"><b>{{t "अगला कदम"}}</b><p><a href="{{.Links.Report}}">{{t "वेबसाइट पर अपनी पूरी कुंडली देखें"}}</a> · <a href="{{.Links.Consultation}}">{{t "गुरुजी से परामर्श देखें"}}</a></p><p class="muted">{{t "अपने खाते में प्रवेश आवश्यक हो सकता है। उपलब्ध सेवा और कीमत वेबसाइट पर देखें।"}}</p></div>{{end}}
+</section>
+
+<section class="reading-chapter" id="yoga-reading">
+<div class="chapter-heading"><span class="chapter-number">03</span><div><div class="chapter-kicker">{{t "book.main-part"}}</div><h2>{{t "book.yogas"}}</h2></div></div>
+<p class="intro">{{t "book.yogas-intro"}}</p>
+{{range .Book.Yogas}}<article class="reading-card"><h3>{{.Title}}</h3><div class="meaning-label">{{t "Conclusion"}}</div><p class="reading-conclusion">{{.Conclusion}}</p>{{if .Meaning}}<div class="meaning-label">{{t "book.meaning"}}</div><p>{{.Meaning}}</p>{{end}}<p class="basis"><a href="#{{$.Book.YogaReference}}">{{t "book.basis-link"}}</a></p></article>{{else}}<p class="notice">{{t "Recreate this Kundli from its birth details to include Kaal Sarp Dosha and Rajyog checks. This saved report has not been assessed for them."}}</p>{{end}}
+{{if .Book.AbsentYogas}}<div class="reader-guide"><h3>{{t "book.absent-yogas"}}</h3><p>{{t "book.absent-note"}}</p><ul class="absent-list">{{range .Book.AbsentYogas}}<li>{{.}}</li>{{end}}</ul></div>{{end}}
+<p class="reference-note">{{t "yoga.scope"}}</p>
+</section>
+
+<section class="reading-chapter reader-blocks" id="numerology">
+<div class="chapter-heading"><span class="chapter-number">04</span><div><div class="chapter-kicker">{{t "book.main-part"}}</div><h2>{{t "Numerology"}}</h2></div></div>
+<p class="intro">{{.Book.Numerology.Intro}}</p>
+{{template "blocks" .Book.Numerology.Blocks}}
+</section>
+
+<section class="reading-chapter reader-blocks" id="time-reading">
+<div class="chapter-heading"><span class="chapter-number">05</span><div><div class="chapter-kicker">{{t "book.main-part"}}</div><h2>{{t "book.periods"}}</h2></div></div>
+<p class="intro">{{.Book.Periods.Intro}}</p>
+{{template "blocks" .Book.Periods.Blocks}}
+</section>
+
+<section class="data-appendix" id="d1">
+<div class="chapter-heading"><span class="chapter-number">A01</span><div><div class="chapter-kicker">{{t "book.appendix-part"}}</div><h2>{{t "जन्म कुंडली · D1"}}</h2></div></div>
+<p class="intro">{{t "लग्न:"}} {{sign .Report.Chart.Lagna.RashiNumber}} {{.Report.Chart.Lagna.DMS}} {{t "· लाहिड़ी अयनांश · राशि आधारित भाव"}}</p>
+{{.Chart}}<p class="legend">{{t "राशि संख्या 1-12 हैं। सू सूर्य · चं चंद्र · मं मंगल · बु बुध · गु गुरु · शु शुक्र · श शनि · रा राहु · के केतु। लग्न से भाव वामावर्त पढ़ें।"}}</p>
+<table><thead><tr><th>{{t "ग्रह"}}</th><th>{{t "राशि"}}</th><th>{{t "अंश"}}</th><th>{{t "नक्षत्र / पद"}}</th><th>{{t "भाव"}}</th><th>{{t "वक्री"}}</th></tr></thead><tbody>{{range .Report.Chart.Planets}}<tr><td>{{label .Name}}</td><td>{{sign .RashiNumber}}</td><td>{{.DMS}}</td><td>{{label .Nakshatra}} / {{.Pada}}</td><td>{{.House}}</td><td>{{if .Retrograde}}{{t "हाँ"}}{{else}}{{t "नहीं"}}{{end}}</td></tr>{{end}}</tbody></table>
+<p class="ref no-break">{{t "जन्म UTC:"}} {{instant .Report.Chart.UTC "UTC"}} · {{t "निर्देशांक:"}} {{.Report.Place.Lat}}, {{.Report.Place.Lon}}{{if not .Report.Created.IsZero}}<br>{{t "गणना का संदर्भ:"}} {{date .Report.Created}}{{end}}</p>
+</section>
+
+{{range .Book.Appendices}}<section class="data-appendix wide-table" id="{{.ID}}"><div class="chapter-heading"><span class="chapter-number">{{.Number}}</span><div><div class="chapter-kicker">{{t "book.appendix-part"}}</div><h2>{{.Title}}</h2></div></div>{{if .Intro}}<p class="intro">{{.Intro}}</p>{{end}}{{template "blocks" .Blocks}}</section>{{end}}
+
+<section class="reference-close" id="sources"><div class="chapter-heading"><span class="chapter-number">REF</span><div><div class="chapter-kicker">{{t "book.appendix-part"}}</div><h2>{{t "book.sources"}}</h2></div></div>
+<p class="intro">{{t "book.sources-intro"}}</p>
+{{range .Report.Rules}}<div class="source-record"><strong>{{.Topic}}</strong><br>{{t "सामग्री संदर्भ:"}} {{.ID}} {{t "· संस्करण"}} {{.Version}}{{if eq .Status "approved"}} {{t "· स्वीकृत"}}{{else}} · {{label .Status}}{{end}}{{if .Approver}} · {{.Approver}}{{end}}{{if .ApprovedAt}} · {{date .ApprovedAt}}{{end}}</div>{{end}}
+<div class="reference-note">{{range .Report.Limitations}}<p>{{t .}}</p>{{end}}<p>{{t "ज्योतिषीय व्याख्या और खगोलीय गणना अलग हैं। परिणाम की गारंटी नहीं है। दशा की तारीखें घोषित पद्धति पर निर्भर हैं। गोचर सुरक्षित संदर्भ समय का है।"}}</p></div>
+<div class="follow-up"><h3>{{t "book.close"}}</h3><p>{{t "book.close-note"}}</p>{{if .Links}}<a href="{{.Links.Account}}">{{t "अपने खाते और सेवा की स्थिति देखें"}} →</a>{{end}}</div>
+<footer><p class="ref">{{t "रिपोर्ट और व्यक्तिगत सामग्री का संस्करण खरीद के समय सुरक्षित किया गया है।"}}<br>{{t "रिपोर्ट:"}} {{.Report.ID}}<br>{{t "ऑर्डर:"}} {{.Order.ID}} {{t "· राशि:"}} {{money .Order.Amount}}{{if and .Order.TaxMode (ne .Order.TaxMode "unconfigured")}} {{t "· कर व्यवस्था:"}} {{.Order.TaxMode}}{{end}}</p><p class="muted">{{t "Mishra 4 You · पं. राजा मिश्रा"}}</p></footer>
+</section>
+</body>
+</html>
+{{define "blocks"}}{{range .}}<div class="block{{if .KeepTogether}} block-together{{end}}"><h3>{{.Title}}</h3>{{if .Note}}<p class="block-note">{{.Note}}</p>{{end}}
+{{if .Chart}}<div class="chart-block">{{.Chart}}{{end}}{{if .Rows}}<table><thead><tr>{{range .Headers}}<th>{{.}}</th>{{end}}</tr></thead><tbody>{{range .Rows}}<tr>{{range .}}<td>{{.}}</td>{{end}}</tr>{{end}}</tbody></table>{{end}}{{if .Chart}}</div>{{end}}</div>{{end}}{{end}}

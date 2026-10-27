@@ -19,6 +19,12 @@ func TestKundliExpansionSnapshotAndCoreIsolation(t *testing.T) {
 	if full.Details == nil || len(full.Details.Vargas) != 16 || len(full.Details.Birth.Limbs) != 4 || len(full.Details.Analysis.Conditions) != 9 || full.Details.Ashtakavarga.Total != 337 || len(full.Details.Yogini.Periods) < 32 {
 		t.Fatal("complete Kundli details missing")
 	}
+	if full.Details.YogaChecks == nil || full.Details.YogaChecks.Method == "" || len(full.Details.YogaChecks.KaalSarp.Planets) != 7 || len(full.Details.YogaChecks.Rajyog.Pairs) == 0 {
+		t.Fatal("new natal yoga checks missing from full calculation")
+	}
+	if full.Numerology == nil || full.Numerology.Mulank.Value != 6 || full.Numerology.Bhagyank.Value != 2 {
+		t.Fatal("known-time Kundli lost date-based numerology")
+	}
 	raw, e := json.Marshal(full)
 	if e != nil {
 		t.Fatal(e)
@@ -26,6 +32,9 @@ func TestKundliExpansionSnapshotAndCoreIsolation(t *testing.T) {
 	var restored Report
 	if e = json.Unmarshal(raw, &restored); e != nil || restored.Details == nil || restored.Details.Birth.Chakra.Nadi != full.Details.Birth.Chakra.Nadi || len(restored.Details.Chalit.Houses) != 12 {
 		t.Fatal("new details lost in immutable snapshot", e)
+	}
+	if restored.Details.YogaChecks == nil || restored.Details.YogaChecks.KaalSarp.Status != full.Details.YogaChecks.KaalSarp.Status || len(restored.Details.YogaChecks.Rajyog.Pairs) != len(full.Details.YogaChecks.Rajyog.Pairs) {
+		t.Fatal("natal yoga evidence lost in saved snapshot")
 	}
 	core, e := calculateCore(a.Config, birth, nil, a.Now())
 	if e != nil || core.Details != nil || core.Chart == nil || core.Dasha == nil {

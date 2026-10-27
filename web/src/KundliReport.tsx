@@ -21,6 +21,7 @@ import {
   Settings2,
   Compass,
   Moon,
+  Hash,
 } from "lucide-react";
 import { hindiPlanets, signs } from "./Chart";
 import ChartViewer from "./ChartViewer";
@@ -37,6 +38,8 @@ import ZodiacMark from "./ZodiacMark";
 import AstroSymbol from "./AstroSymbol";
 import { t, useLanguage } from "./i18n";
 import type { DashaPeriod, Report, Rule } from "./types";
+import { placementConclusion } from "./yoga-conclusions";
+import NumerologyPanel from "./NumerologyPanel";
 
 /** planetName returns the localized name for a report graha. */
 const planetName = (name: string) => t(hindiPlanets[name] || name);
@@ -55,6 +58,7 @@ const categories = [
 const tabs = [
   ["overview", "Overview"],
   ["birth", "Birth details"],
+  ["numerology", "Numerology"],
   ["charts", "Charts"],
   ["reading", "Faladesh"],
   ["dasha", "Dasha"],
@@ -66,6 +70,7 @@ const tabs = [
 const tabIcons = [
   LayoutDashboard,
   CalendarDays,
+  Hash,
   Grid2X2,
   Sparkles,
   Clock,
@@ -422,7 +427,7 @@ export default function KundliReport({
         aria-labelledby={`kundli-tab-${tab}`}
         tabIndex={0}
       >
-        {!chart ? (
+        {tab === "numerology" ? <NumerologyPanel report={report} /> : !chart ? (
           <div className="empty-state">
             <Clock size={36} />
             <h2>{t("सही जन्म समय के बिना गणना सीमित है।")}</h2>
@@ -431,6 +436,10 @@ export default function KundliReport({
                 "An accurate birth time is needed for charts, Faladesh inputs, Dasha and transit comparisons. No assumed time has been used.",
               )}
             </p>
+            {report.numerology && <>
+              <p>{t("numerology.unknown-time")}</p>
+              <button className="button secondary" onClick={() => setTab("numerology")}>{t("numerology.open")}</button>
+            </>}
             <button className="button" onClick={onEditBirth || onBack}>
               {t("जन्म विवरण बदलें")}
             </button>
@@ -811,13 +820,12 @@ export default function KundliReport({
               <section className="placement-panel">
                 <h2>{t("Yogas & Doshas")}</h2>
                 <p className="muted">
-                  {t(
-                    "Transparent placement checks. These are not final assessments of yoga strength, dosha cancellation or life outcomes.",
-                  )}
+                  {t("yoga.intro")}
                 </p>
+                <ExpandedYogaPatterns report={report} />
                 {report.checks?.length ? (
                   <div className="placement-list">
-                    {report.checks.map((check) => {
+                    {report.checks.filter((check) => !report.details?.mangal || !check.code.startsWith("mangal-")).map((check) => {
                       const copy = checkCopy[check.code];
                       return (
                         copy && (
@@ -825,19 +833,19 @@ export default function KundliReport({
                             <div>
                               <h3>{t(copy[0])}</h3>
                               <span className="check-result">
-                                {t(
-                                  check.matches
-                                    ? "Placement matches"
-                                    : "Placement does not match",
-                                )}
+                                {placementConclusion(check.code, check.matches).status}
                               </span>
                             </div>
-                            <p>{t(copy[1])}</p>
+                            <p>{placementConclusion(check.code, check.matches).meaning}</p>
+                            <details className="detail-disclosure">
+                              <summary>{t("Calculation details")}</summary>
+                              <p>{t(copy[1])}</p>
                             {check.house && (
                               <small>
                                 {t("Calculated house")} {check.house}
                               </small>
                             )}
+                            </details>
                           </article>
                         )
                       );
@@ -850,7 +858,6 @@ export default function KundliReport({
                     )}
                   </p>
                 )}
-                <ExpandedYogaPatterns report={report} />
               </section>
             )}
             {tab === "transits" && (

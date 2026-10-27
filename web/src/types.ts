@@ -52,6 +52,7 @@ export type Rule = {
   demo: boolean;
 };
 export type Report = {
+  numerology?: Numerology;
   details?: KundliDetails;
   id: string;
   user_id: string;
@@ -98,6 +99,37 @@ export type Report = {
   engine: string;
   demo: boolean;
 };
+export type NumerologyNumber = {
+  value: number;
+  planet: string;
+  digits: number[];
+  steps: number[];
+};
+export type Numerology = {
+  method: string;
+  birth_date: string;
+  mulank: NumerologyNumber;
+  bhagyank: NumerologyNumber;
+  extended?: {
+    method: string;
+    name_status: "available" | "needs_latin_spelling";
+    naamank?: {
+      spelling: string;
+      letters: string[];
+      number: NumerologyNumber;
+      meaning: NumerologyWording;
+    };
+    lucky_numbers: number[];
+    lucky_dates: number[];
+    profile: {
+      number: number;
+      facts: { id: string; label: NumerologyWording; value: NumerologyWording }[];
+      guidance: { id: string; title: NumerologyWording; text: NumerologyWording }[];
+      yantra: number[][];
+    };
+  };
+};
+export type NumerologyWording = { hi: string; en: string };
 export type DashaPeriod = {
   lord: string;
   start: string;

@@ -3,12 +3,18 @@ package platform
 import (
 	"astroapp/backend/internal/swisseph"
 	"fmt"
+	"html"
 	"html/template"
 	"strings"
 )
 
 // pdfChart draws D1 directly from the immutable snapshot without reclassifying rounded longitudes.
 func pdfChart(r *Report) template.HTML {
+	return (pdfLocale{"hi"}).chart(r)
+}
+
+// chart draws the saved D1 with language-specific glyphs and unchanged signs and houses.
+func (l pdfLocale) chart(r *Report) template.HTML {
 	var signs [12]int
 	placements := []swisseph.DivisionalPlacement{}
 	for i := range signs {
@@ -17,16 +23,24 @@ func pdfChart(r *Report) template.HTML {
 	for _, p := range r.Chart.Planets {
 		placements = append(placements, swisseph.DivisionalPlacement{Name: p.Name, House: p.House})
 	}
-	return pdfPlacementChart(signs, placements)
+	return l.placementChart(signs, placements)
 }
 
 // pdfPlacementChart draws whole-sign or Chalit houses using only numeric placements and owned glyphs.
 // Three labels per line keep crowded conjunctions inside their house rather than overflowing one text line.
 func pdfPlacementChart(signs [12]int, planets []swisseph.DivisionalPlacement) template.HTML {
+	return (pdfLocale{"hi"}).placementChart(signs, planets)
+}
+
+// placementChart renders the same saved placements with localized owned planet abbreviations.
+func (l pdfLocale) placementChart(signs [12]int, planets []swisseph.DivisionalPlacement) template.HTML {
 	centers := [][2]int{{150, 82}, {77, 30}, {28, 82}, {75, 152}, {28, 225}, {77, 275}, {150, 229}, {223, 275}, {272, 225}, {225, 152}, {272, 82}, {223, 30}}
 	short := map[string]string{"Sun": "सू", "Moon": "चं", "Mars": "मं", "Mercury": "बु", "Jupiter": "गु", "Venus": "शु", "Saturn": "श", "Rahu": "रा", "Ketu": "के"}
+	if l.language == "en" {
+		short = map[string]string{"Sun": "Su", "Moon": "Mo", "Mars": "Ma", "Mercury": "Me", "Jupiter": "Ju", "Venus": "Ve", "Saturn": "Sa", "Rahu": "Ra", "Ketu": "Ke"}
+	}
 	var s strings.Builder
-	s.WriteString(`<svg class="chart" viewBox="-3 -3 306 306" role="img" aria-label="उत्तर भारतीय जन्म कुंडली"><rect width="300" height="300" fill="#fff8ea" stroke="#b36c30"/><path d="M0 0L300 300M300 0L0 300M150 0L300 150L150 300L0 150Z" fill="none" stroke="#b36c30"/><g font-family="Noto" text-anchor="middle" fill="#76241e">`)
+	s.WriteString(`<svg class="chart" viewBox="-3 -3 306 306" role="img" aria-label="` + html.EscapeString(l.text("उत्तर भारतीय जन्म कुंडली")) + `"><rect width="300" height="300" fill="#fff8ea" stroke="#b36c30"/><path d="M0 0L300 300M300 0L0 300M150 0L300 150L150 300L0 150Z" fill="none" stroke="#b36c30"/><g font-family="Noto" text-anchor="middle" fill="#76241e">`)
 	for i, xy := range centers {
 		names := []string{}
 		for _, p := range planets {

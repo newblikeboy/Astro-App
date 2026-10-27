@@ -1,6 +1,7 @@
 package platform
 
 import (
+	"astroapp/backend/internal/numerology"
 	"astroapp/backend/internal/swisseph"
 	"time"
 )
@@ -35,12 +36,14 @@ type Place struct {
 	Zone  string  `json:"zone"`
 }
 type Birth struct {
-	Name    string `json:"name"`
-	Date    string `json:"date"`
-	Time    string `json:"time"`
-	PlaceID string `json:"place_id"`
-	Unknown bool   `json:"unknown_time"`
-	Offset  *int   `json:"utc_offset_minutes,omitempty"`
+	Name string `json:"name"`
+	// Deprecated: accept legacy snapshots and cached requests; new calculations use Name exclusively.
+	NumerologyName string `json:"numerology_name,omitempty"`
+	Date           string `json:"date"`
+	Time           string `json:"time"`
+	PlaceID        string `json:"place_id"`
+	Unknown        bool   `json:"unknown_time"`
+	Offset         *int   `json:"utc_offset_minutes,omitempty"`
 }
 type Rule struct {
 	ID         string     `json:"id"`
@@ -65,6 +68,7 @@ type Rule struct {
 	Demo       bool       `json:"demo"`
 }
 type Report struct {
+	Numerology  *numerology.Reading   `json:"numerology,omitempty"`
 	ID          string                `json:"id"`
 	UserID      string                `json:"user_id"`
 	Birth       Birth                 `json:"birth"`

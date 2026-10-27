@@ -16,6 +16,7 @@ type KundliExpansion struct {
 	Yogini       swisseph.Yogini           `json:"yogini"`
 	Mangal       swisseph.MangalAssessment `json:"mangal"`
 	MangalMethod string                    `json:"mangal_method"`
+	YogaChecks   *swisseph.NatalYogaChecks `json:"yoga_checks,omitempty"`
 }
 
 // expandKundli assembles the report's birth Panchang, vargas, planetary analysis and supplementary timelines.
@@ -52,5 +53,9 @@ func expandKundli(c Config, chart swisseph.Kundali, at, asOf time.Time, zone str
 	if err != nil {
 		return nil, err
 	}
-	return &KundliExpansion{Method: "m4y-kundli-details-v1", Birth: birth, Chalit: chalit, Vargas: vargas, Analysis: analysis, Ashtakavarga: ashtaka, Yogini: yogini, Mangal: mangal, MangalMethod: swisseph.MangalMethod}, nil
+	yogaChecks, err := swisseph.CalculateNatalYogaChecks(chart)
+	if err != nil {
+		return nil, err
+	}
+	return &KundliExpansion{Method: "m4y-kundli-details-v2", Birth: birth, Chalit: chalit, Vargas: vargas, Analysis: analysis, Ashtakavarga: ashtaka, Yogini: yogini, Mangal: mangal, MangalMethod: swisseph.MangalMethod, YogaChecks: &yogaChecks}, nil
 }

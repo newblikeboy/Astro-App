@@ -816,12 +816,22 @@ func (a *App) simulateHTTP(w http.ResponseWriter, r *http.Request) {
 	jsonOut(w, copy)
 }
 
-// downloadPDF serves an owned, purchased PDF once its background rendering job has completed.
+// downloadPDF serves the original file for legacy links, or the selected-language presentation of the paid snapshot.
 func (a *App) downloadPDF(w http.ResponseWriter, r *http.Request) {
 	sess, ok := a.guard(w, r, false)
 	if !ok {
 		return
 	}
+	selectedLanguage := r.URL.Query().Get("language")
+	language := selectedLanguage
+	if language == "" {
+		language = "hi" // Preserve the original download URL and existing Hindi file.
+	}
+	if language != "en" && language != "hi" {
+		fail(w, 400, fmt.Errorf("Choose English or Hindi for the remedy PDF."))
+		return
+	}
+	var purchased *Order
 	e := a.Store.View(r.Context(), func(s *State) error {
 		o := s.Orders[r.PathValue("id")]
 		if o == nil || o.UserID != sess.UserID || o.Status != "paid" || o.Product != "pdf" {
@@ -831,10 +841,15 @@ func (a *App) downloadPDF(w http.ResponseWriter, r *http.Request) {
 		if j == nil || j.Status != "done" {
 			return fmt.Errorf("PDF तैयार हो रहा है; बाद में पुनः प्रयास करें")
 		}
+		purchased = o
 		return nil
 	})
 	if e != nil {
 		fail(w, 404, e)
+		return
+	}
+	if selectedLanguage != "" {
+		a.downloadRemedyPDF(w, r, purchased, sess.UserID, language)
 		return
 	}
 	p := filepath.Join(a.Config.DataDir, "pdf", r.PathValue("id")+".pdf")

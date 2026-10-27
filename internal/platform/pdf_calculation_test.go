@@ -64,7 +64,7 @@ func TestPDFTemplatePreservesSignBoundaryClassification(t *testing.T) {
 		t.Fatal(err)
 	}
 	var output bytes.Buffer
-	if err = tmpl.Execute(&output, map[string]any{"Order": o, "Report": r, "Chart": template.HTML("")}); err != nil {
+	if err = tmpl.Execute(&output, map[string]any{"Order": o, "Report": r, "Chart": template.HTML(""), "Book": (pdfLocale{"hi"}).book(r, time.UTC, nil)}); err != nil {
 		t.Fatal(err)
 	}
 	if got := output.String(); strings.Contains(got, "30.0000") || strings.Count(got, position.DMS) != 2 || !strings.Contains(got, "₹90071992547409.90") {

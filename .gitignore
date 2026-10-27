@@ -20,6 +20,7 @@ dist/
 
 # Local application data, scratch work and generated previews
 .local/
+output/
 /bin/
 /build/
 tmp/

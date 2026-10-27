@@ -13,7 +13,6 @@ import (
 	"net/url"
 	"os"
 	"path/filepath"
-	"strings"
 	"time"
 )
 
@@ -36,16 +35,7 @@ func pdfMoney(v int64) string {
 
 // pdfTemplateFunctions registers exact-money, date, chart and text helpers used by the paid PDF template.
 func pdfTemplateFunctions(zone *time.Location) template.FuncMap {
-	return template.FuncMap{
-		"clock":    pdfClockMinutes,
-		"instant":  pdfMinuteInstant,
-		"money":    pdfMoney,
-		"join":     strings.Join,
-		"date":     func(v time.Time) string { return pdfDate(v, zone) },
-		"label":    pdfText,
-		"sign":     pdfSign,
-		"category": pdfCategory,
-	}
+	return (pdfLocale{"hi"}).templateFunctions(zone)
 }
 
 // Rendering helpers never alter the stored birth instant or calculation data.
@@ -54,6 +44,15 @@ func pdfClockMinutes(value string) string {
 		return value[:5]
 	}
 	return value
+}
+
+// pdfBirthDate displays a stored Gregorian date without applying a timezone or shifting its civil day.
+func pdfBirthDate(value string) string {
+	at, err := time.Parse("2006-01-02", value)
+	if err != nil {
+		return value
+	}
+	return at.Format("02-01-2006")
 }
 
 // pdfMinuteInstant formats a report instant to minute precision without changing the stored timestamp.
@@ -68,6 +67,15 @@ func pdfMinuteInstant(value, zone string) string {
 
 // document assembles self-contained Hindi HTML from the purchased snapshot, with no live content lookup.
 func (p ChromePDF) document(o *Order) ([]byte, error) {
+	return p.documentLanguage(o, "hi")
+}
+
+// documentLanguage assembles a localized document solely from the immutable purchase snapshot.
+func (p ChromePDF) documentLanguage(o *Order, language string) ([]byte, error) {
+	if language != "en" && language != "hi" {
+		return nil, fmt.Errorf("English or Hindi PDF language required")
+	}
+	l := pdfLocale{language}
 	if o.Snapshot == nil || o.Snapshot.Chart == nil {
 		return nil, fmt.Errorf("calculation snapshot missing")
 	}
@@ -83,12 +91,13 @@ func (p ChromePDF) document(o *Order) ([]byte, error) {
 	if zoneErr != nil {
 		return nil, fmt.Errorf("snapshot timezone unavailable")
 	}
-	t, e := template.New("report").Funcs(pdfTemplateFunctions(reportZone)).Parse(pdfTemplate)
+	t, e := template.New("report").Funcs(l.templateFunctions(reportZone)).Parse(pdfTemplate)
 	if e != nil {
 		return nil, e
 	}
 	var html bytes.Buffer
-	e = t.Execute(&html, map[string]any{"Order": o, "Report": o.Snapshot, "Font": base64.StdEncoding.EncodeToString(font), "Bold": base64.StdEncoding.EncodeToString(bold), "Chart": pdfChart(o.Snapshot), "Sections": pdfSections(o.Snapshot, reportZone), "Links": pdfLinks(p.Origin, o.ReportID)})
+	sections := l.sections(o.Snapshot, reportZone)
+	e = t.Execute(&html, map[string]any{"Language": language, "Order": o, "Report": o.Snapshot, "Font": base64.StdEncoding.EncodeToString(font), "Bold": base64.StdEncoding.EncodeToString(bold), "Chart": l.chart(o.Snapshot), "Sections": sections, "Book": l.book(o.Snapshot, reportZone, sections), "Links": pdfLinks(p.Origin, o.ReportID)})
 	if e != nil {
 		return nil, e
 	}
@@ -97,7 +106,12 @@ func (p ChromePDF) document(o *Order) ([]byte, error) {
 
 // Render renders an immutable purchased report snapshot as a Hindi-capable PDF file.
 func (p ChromePDF) Render(ctx context.Context, o *Order) ([]byte, error) {
-	html, e := p.document(o)
+	return p.RenderLanguage(ctx, o, "hi")
+}
+
+// RenderLanguage prints the selected English/Hindi view without mutating snapshots or existing files.
+func (p ChromePDF) RenderLanguage(ctx context.Context, o *Order, language string) ([]byte, error) {
+	html, e := p.documentLanguage(o, language)
 	if e != nil {
 		return nil, e
 	}
@@ -129,7 +143,7 @@ func (p ChromePDF) Render(ctx context.Context, o *Order) ([]byte, error) {
 		e = chromedp.Run(browser, chromedp.ActionFunc(func(ctx context.Context) error {
 			var e error
 			result, _, e = page.PrintToPDF().WithPrintBackground(true).WithPreferCSSPageSize(true).WithGenerateDocumentOutline(true).WithGenerateTaggedPDF(true).
-				WithDisplayHeaderFooter(true).WithHeaderTemplate(`<span></span>`).
+				WithDisplayHeaderFooter(true).WithHeaderTemplate(`<div style="width:100%;margin:0 20mm;padding-bottom:5px;border-bottom:1px solid #e5d9cb;font-family:Arial,sans-serif;font-size:8px;color:#8e7566;display:flex;justify-content:space-between"><span>MISHRA 4 YOU</span><span>JANMA KUNDLI</span></div>`).
 				WithFooterTemplate(`<div style="width:100%;margin:0 17mm 3mm;font-family:Arial,sans-serif;font-size:8px;color:#875132;display:flex;justify-content:space-between"><span>MISHRA 4 YOU · PERSONAL KUNDLI</span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>`).Do(ctx)
 			return e
 		}))

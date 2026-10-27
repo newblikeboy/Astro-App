@@ -1,0 +1,2000 @@
+{
+  "1": {
+    "number": 1,
+    "facts": [
+      {
+        "id": "rashi",
+        "label": {
+          "hi": "शुभ राशि-संकेत",
+          "en": "Favourable sign correspondence"
+        },
+        "value": {
+          "hi": "सिंह",
+          "en": "Leo"
+        }
+      },
+      {
+        "id": "letters",
+        "label": {
+          "hi": "अंक से जुड़े नाम-अक्षर",
+          "en": "Associated name letters"
+        },
+        "value": {
+          "hi": "A, I, J, Q, Y",
+          "en": "A, I, J, Q, Y"
+        }
+      },
+      {
+        "id": "weekdays",
+        "label": {
+          "hi": "शुभ दिन",
+          "en": "Favourable day"
+        },
+        "value": {
+          "hi": "रविवार",
+          "en": "Sunday"
+        }
+      },
+      {
+        "id": "colors",
+        "label": {
+          "hi": "शुभ रंग",
+          "en": "Favourable colours"
+        },
+        "value": {
+          "hi": "सुनहरा, केसरिया",
+          "en": "Gold, saffron"
+        }
+      },
+      {
+        "id": "direction",
+        "label": {
+          "hi": "दिशा-संकेत",
+          "en": "Direction correspondence"
+        },
+        "value": {
+          "hi": "पूर्व",
+          "en": "East"
+        }
+      },
+      {
+        "id": "deity",
+        "label": {
+          "hi": "आराध्य देवता",
+          "en": "Devotional association"
+        },
+        "value": {
+          "hi": "सूर्य नारायण",
+          "en": "Surya Narayana"
+        }
+      },
+      {
+        "id": "fast",
+        "label": {
+          "hi": "व्रत-परम्परा का दिन",
+          "en": "Traditional observance day"
+        },
+        "value": {
+          "hi": "रविवार",
+          "en": "Sunday"
+        }
+      },
+      {
+        "id": "gemstone",
+        "label": {
+          "hi": "पारम्परिक रत्न-संबंध",
+          "en": "Traditional gemstone association"
+        },
+        "value": {
+          "hi": "माणिक्य",
+          "en": "Ruby"
+        }
+      },
+      {
+        "id": "mantra",
+        "label": {
+          "hi": "सरल उपासना मंत्र",
+          "en": "Simple devotional mantra"
+        },
+        "value": {
+          "hi": "ॐ सूर्याय नमः।",
+          "en": "Om Suryaya Namah."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "id": "personality",
+        "title": {
+          "hi": "स्वभाव और व्यवहार",
+          "en": "Nature and behaviour"
+        },
+        "text": {
+          "hi": "आपके मूलांक का स्वामी सूर्य माना जाता है। इस अंक में अपनी पहचान बनाने, निर्णय लेने और किसी काम की जिम्मेदारी उठाने की प्रवृत्ति का विचार किया जाता है। अपनी पहल से काम आरम्भ करना इसकी विशेषता है।\n\nनेतृत्व तब अधिक उपयोगी होता है, जब उसके साथ दूसरों की बात सुनने का धैर्य भी हो। प्रशंसा की अपेक्षा काम की गुणवत्ता पर ध्यान दें और जिम्मेदारियाँ बाँटना सीखें।",
+          "en": "Sun is the traditional ruler of your Mulank. Initiative, a wish to establish an identity and willingness to take responsibility are its main themes.\n\nLeadership works best with patience and listening. Focus on the quality of the work and share responsibilities rather than carrying everything alone."
+        }
+      },
+      {
+        "id": "career",
+        "title": {
+          "hi": "कार्यक्षेत्र और योग्यता",
+          "en": "Work and abilities"
+        },
+        "text": {
+          "hi": "प्रबन्धन, प्रशासन, उद्यम, आयोजन और किसी दल का नेतृत्व करने वाले काम इस अंक के विषयों से मेल खाते हैं। स्पष्ट लक्ष्य और निर्णय लेने का अवसर आपकी रुचि को दिशा दे सकते हैं। काम का चुनाव अपनी शिक्षा, अनुभव और उपलब्ध अवसरों के अनुसार करें।",
+          "en": "Management, administration, enterprise and coordinating people reflect this number’s themes. Clear goals and scope for decisions may appeal to you. Choose work using your education, experience and real opportunities."
+        }
+      },
+      {
+        "id": "places",
+        "title": {
+          "hi": "अनुकूल दिशा और स्थान",
+          "en": "Direction and surroundings"
+        },
+        "text": {
+          "hi": "पूर्व दिशा सूर्य से सम्बद्ध मानी जाती है। प्रकाशयुक्त, व्यवस्थित और खुला कार्यस्थल इस अंक के प्रतीक से मेल खाता है। केवल दिशा के आधार पर शहर बदलना या किसी स्थान को अशुभ मानना उचित नहीं है।",
+          "en": "East is associated with the Sun. A bright, orderly and open workspace suits its symbolism. This correspondence does not make a city fortunate or require relocation."
+        }
+      },
+      {
+        "id": "timing",
+        "title": {
+          "hi": "अनुकूल समय का विचार",
+          "en": "Favourable timing"
+        },
+        "text": {
+          "hi": "ऊपर दिए शुभ दिन तथा मूलांक–भाग्यांक से जुड़ी तिथियाँ नियमित काम की योजना बनाने के लिए परम्परागत संकेत हैं। पढ़ाई, तैयारी या किसी अधूरे काम को पूरा करने का क्रम इन दिनों से आरम्भ कर सकते हैं।\n\nयह मासिक भविष्यवाणी या विवाह, यात्रा और गृहप्रवेश का मुहूर्त नहीं है। जिस महीने में सूची की कोई तारीख न हो, उसे न लें। जरूरी काम को केवल अंक के कारण टालना आवश्यक नहीं है।",
+          "en": "The favourable day and the date series linked to your Mulank and Bhagyank are traditional cues for planning ordinary tasks. You may use them to begin a study routine, preparation or pending work.\n\nThis is not a monthly forecast or a calculated muhurta for marriage, travel or entering a home. Use only dates that exist in the month, and do not postpone necessary work because of a number."
+        }
+      },
+      {
+        "id": "wellbeing",
+        "title": {
+          "hi": "स्वास्थ्य और दिनचर्या",
+          "en": "Wellbeing and routine"
+        },
+        "text": {
+          "hi": "लगातार जिम्मेदारी सँभालते समय विश्राम पीछे छूट सकता है। काम के बीच विराम, नियमित नींद और अपनी क्षमता के अनुरूप शारीरिक गतिविधि का क्रम रखें। केवल मूलांक से किसी रोग का निर्णय नहीं किया जाता।",
+          "en": "Responsibility can crowd out rest. Keep regular sleep, breaks between tasks and physical activity suited to your capacity. A birth number does not establish an illness."
+        }
+      },
+      {
+        "id": "devotion",
+        "title": {
+          "hi": "व्रत और उपासना",
+          "en": "Observance and devotion"
+        },
+        "text": {
+          "hi": "रविवार को सूर्य नारायण का स्मरण और कृतज्ञता का भाव इस अंक की उपासना-परम्परा से जुड़ा है। मन स्थिर करके सरल मंत्र का पाठ कर सकते हैं। व्रत रखना व्यक्तिगत श्रद्धा और सामर्थ्य का विषय है; भोजन छोड़ना आवश्यक नहीं है।",
+          "en": "Sunday remembrance of Surya Narayana and a practice of gratitude belong to this devotional tradition. You may recite the simple mantra calmly. Observance is voluntary and does not require skipping meals."
+        }
+      },
+      {
+        "id": "remedies",
+        "title": {
+          "hi": "सरल आचरण और उपाय",
+          "en": "Everyday practice and remedies"
+        },
+        "text": {
+          "hi": "प्रतिदिन एक काम समय पर पूरा करने का संकल्प लें। बड़ों और मार्गदर्शकों के प्रति सम्मान रखें तथा किसी साथी को उसका उचित श्रेय दें। सूर्योपासना के साथ विनम्रता का अभ्यास इस अंक का उपयोगी आचरण माना जा सकता है।",
+          "en": "Complete one promised task on time each day. Respect mentors and give colleagues their due credit. Humility provides a practical balance to the Sun’s leadership symbolism."
+        }
+      },
+      {
+        "id": "gemstone",
+        "title": {
+          "hi": "रत्न-विचार",
+          "en": "Gemstone context"
+        },
+        "text": {
+          "hi": "ऊपर दिया रत्न अंक-स्वामी का पारम्परिक संबंध बताता है। केवल मूलांक देखकर इसे धारण करने का व्यक्तिगत निर्देश नहीं दिया गया है। रत्न का निर्णय जन्मकुण्डली, ग्रह की भूमिका और व्यक्तिगत परिस्थिति का अलग विचार माँगता है। इस भाग से कोई खरीद या धारण-विधि निर्धारित नहीं होती।",
+          "en": "The gemstone above is a traditional correspondence of the number’s planet. It is not an individual recommendation to wear it. A gemstone decision requires separate consideration of the birth chart, planetary role and personal circumstances. This section sets no purchase or wearing instructions."
+        }
+      },
+      {
+        "id": "yantra",
+        "title": {
+          "hi": "अंक-यंत्र का परिचय",
+          "en": "Number yantra"
+        },
+        "text": {
+          "hi": "नीचे अंक-स्वामी से सम्बद्ध नौ-खानों का परम्परागत अंक-यंत्र दिखाया गया है। इसकी हर पंक्ति, स्तम्भ और दोनों विकर्णों का योग समान है। इसे उपासना के प्रतीक के रूप में समझें; यह जन्मतिथि का लो-शू ग्रिड नहीं है।\n\nयहाँ प्राण-प्रतिष्ठा, धारण या निश्चित फल मिलने का दावा नहीं किया गया है। श्रद्धा हो तो स्वच्छ स्थान पर इसका स्मरण कर सकते हैं; विशेष अनुष्ठान अलग मार्गदर्शन का विषय है।",
+          "en": "The nine-cell number yantra below corresponds to the number’s planet. Every row, column and both diagonals have the same sum. It is a devotional symbol, not a Lo Shu birth-date grid.\n\nNo consecration, wearing procedure or guaranteed result is prescribed. It may serve as a voluntary devotional reference; specific rituals require separate guidance."
+        }
+      }
+    ],
+    "yantra": [
+      [
+        6,
+        1,
+        8
+      ],
+      [
+        7,
+        5,
+        3
+      ],
+      [
+        2,
+        9,
+        4
+      ]
+    ]
+  },
+  "2": {
+    "number": 2,
+    "facts": [
+      {
+        "id": "rashi",
+        "label": {
+          "hi": "शुभ राशि-संकेत",
+          "en": "Favourable sign correspondence"
+        },
+        "value": {
+          "hi": "कर्क",
+          "en": "Cancer"
+        }
+      },
+      {
+        "id": "letters",
+        "label": {
+          "hi": "अंक से जुड़े नाम-अक्षर",
+          "en": "Associated name letters"
+        },
+        "value": {
+          "hi": "B, K, R",
+          "en": "B, K, R"
+        }
+      },
+      {
+        "id": "weekdays",
+        "label": {
+          "hi": "शुभ दिन",
+          "en": "Favourable day"
+        },
+        "value": {
+          "hi": "सोमवार",
+          "en": "Monday"
+        }
+      },
+      {
+        "id": "colors",
+        "label": {
+          "hi": "शुभ रंग",
+          "en": "Favourable colours"
+        },
+        "value": {
+          "hi": "सफेद, क्रीम",
+          "en": "White, cream"
+        }
+      },
+      {
+        "id": "direction",
+        "label": {
+          "hi": "दिशा-संकेत",
+          "en": "Direction correspondence"
+        },
+        "value": {
+          "hi": "वायव्य अर्थात उत्तर-पश्चिम",
+          "en": "North-West"
+        }
+      },
+      {
+        "id": "deity",
+        "label": {
+          "hi": "आराध्य देवता",
+          "en": "Devotional association"
+        },
+        "value": {
+          "hi": "भगवान शिव",
+          "en": "Shiva"
+        }
+      },
+      {
+        "id": "fast",
+        "label": {
+          "hi": "व्रत-परम्परा का दिन",
+          "en": "Traditional observance day"
+        },
+        "value": {
+          "hi": "सोमवार",
+          "en": "Monday"
+        }
+      },
+      {
+        "id": "gemstone",
+        "label": {
+          "hi": "पारम्परिक रत्न-संबंध",
+          "en": "Traditional gemstone association"
+        },
+        "value": {
+          "hi": "मोती",
+          "en": "Pearl"
+        }
+      },
+      {
+        "id": "mantra",
+        "label": {
+          "hi": "सरल उपासना मंत्र",
+          "en": "Simple devotional mantra"
+        },
+        "value": {
+          "hi": "ॐ चन्द्राय नमः।",
+          "en": "Om Chandraya Namah."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "id": "personality",
+        "title": {
+          "hi": "स्वभाव और व्यवहार",
+          "en": "Nature and behaviour"
+        },
+        "text": {
+          "hi": "आपके मूलांक का सम्बन्ध चन्द्र से है। संवेदनशीलता, कल्पना और लोगों की भावनाओं को समझना इसके प्रमुख विषय हैं। सहयोगपूर्ण वातावरण में अपनी बात रखने में आपको सहजता अनुभव हो सकती है।\n\nदूसरों की प्रतिक्रिया को बहुत देर तक मन में रखने के बजाय अपनी आवश्यकता साफ शब्दों में कहें। निर्णय लेते समय भावना के साथ तथ्य भी देखें। इससे सम्बन्धों में अपनापन और अपने काम में स्थिरता बनाए रखने में सहायता मिलती है।",
+          "en": "Your Mulank is associated with the Moon. Sensitivity, imagination and awareness of others’ feelings are its main themes. A cooperative setting may help you express yourself.\n\nState your needs clearly rather than dwelling on reactions. Consider facts alongside feelings when making a decision, giving both relationships and your own work a steadier foundation."
+        }
+      },
+      {
+        "id": "career",
+        "title": {
+          "hi": "कार्यक्षेत्र और योग्यता",
+          "en": "Work and abilities"
+        },
+        "text": {
+          "hi": "लेखन, कला, अतिथि-सेवा, जनसम्पर्क, शिक्षण और सहयोग से चलने वाले कार्य इस अंक के विषयों से मेल खाते हैं। सुनने और लोगों को जोड़ने की क्षमता विकसित करना उपयोगी हो सकता है। कार्यक्षेत्र अपनी वास्तविक रुचि और प्रशिक्षण के अनुसार चुनें।",
+          "en": "Writing, arts, hospitality, public relations, teaching and collaborative work reflect this number’s themes. Develop listening and coordination skills. Choose a field according to genuine interest and training."
+        }
+      },
+      {
+        "id": "places",
+        "title": {
+          "hi": "अनुकूल दिशा और स्थान",
+          "en": "Direction and surroundings"
+        },
+        "text": {
+          "hi": "चन्द्र का दिशा-संकेत वायव्य अर्थात उत्तर-पश्चिम माना गया है। शान्त, हवादार और सहज बातचीत वाला वातावरण इस अंक के स्वभाव से मेल खाता है। किसी विशेष शहर को जन्मतिथि मात्र से शुभ या अशुभ नहीं कहा जा रहा है।",
+          "en": "The Moon’s direction correspondence is North-West. Calm, airy surroundings with room for conversation fit its symbolism. No particular city is classified as fortunate or unfortunate from the birth date."
+        }
+      },
+      {
+        "id": "timing",
+        "title": {
+          "hi": "अनुकूल समय का विचार",
+          "en": "Favourable timing"
+        },
+        "text": {
+          "hi": "ऊपर दिए शुभ दिन तथा मूलांक–भाग्यांक से जुड़ी तिथियाँ नियमित काम की योजना बनाने के लिए परम्परागत संकेत हैं। पढ़ाई, तैयारी या किसी अधूरे काम को पूरा करने का क्रम इन दिनों से आरम्भ कर सकते हैं।\n\nयह मासिक भविष्यवाणी या विवाह, यात्रा और गृहप्रवेश का मुहूर्त नहीं है। जिस महीने में सूची की कोई तारीख न हो, उसे न लें। जरूरी काम को केवल अंक के कारण टालना आवश्यक नहीं है।",
+          "en": "The favourable day and the date series linked to your Mulank and Bhagyank are traditional cues for planning ordinary tasks. You may use them to begin a study routine, preparation or pending work.\n\nThis is not a monthly forecast or a calculated muhurta for marriage, travel or entering a home. Use only dates that exist in the month, and do not postpone necessary work because of a number."
+        }
+      },
+      {
+        "id": "wellbeing",
+        "title": {
+          "hi": "स्वास्थ्य और दिनचर्या",
+          "en": "Wellbeing and routine"
+        },
+        "text": {
+          "hi": "मन में बात दबाकर रखने के बजाय भरोसेमन्द व्यक्ति से संवाद करें। सोने-जागने का नियमित समय, पर्याप्त विश्राम और दिनचर्या में शान्त समय रखना उपयोगी है। यह सामान्य दिनचर्या का विचार है, रोग का फलादेश नहीं।",
+          "en": "Speak with a trusted person rather than holding concerns inside. Regular sleep, adequate rest and quiet time can support a steadier routine. This is a reflection on habits, not a prediction of illness."
+        }
+      },
+      {
+        "id": "devotion",
+        "title": {
+          "hi": "व्रत और उपासना",
+          "en": "Observance and devotion"
+        },
+        "text": {
+          "hi": "सोमवार को भगवान शिव का स्मरण और चन्द्र के सरल मंत्र का पाठ श्रद्धानुसार किया जा सकता है। उपासना में शान्त मन और नियमितता को स्थान दें। व्रत का अर्थ संयम और सदाचार भी है; निराहार रहना आवश्यक नहीं है।",
+          "en": "Monday remembrance of Shiva and recitation of the Moon’s simple mantra may be part of a voluntary practice. Give attention to calmness and regularity. Observance can mean restraint and thoughtful conduct without fasting."
+        }
+      },
+      {
+        "id": "remedies",
+        "title": {
+          "hi": "सरल आचरण और उपाय",
+          "en": "Everyday practice and remedies"
+        },
+        "text": {
+          "hi": "बोलने से पहले अपनी बात मन में स्पष्ट करें और दिन के आवश्यक काम लिख लें। परिवार में किसी की बात बिना टोके सुनना तथा अपनी सामर्थ्य के अनुसार सहायता करना इस अंक के लिए सरल आचरण हो सकता है।",
+          "en": "Clarify your thoughts before speaking and write down essential tasks. Listen to a family member without interrupting and offer help within your means as a simple everyday practice."
+        }
+      },
+      {
+        "id": "gemstone",
+        "title": {
+          "hi": "रत्न-विचार",
+          "en": "Gemstone context"
+        },
+        "text": {
+          "hi": "ऊपर दिया रत्न अंक-स्वामी का पारम्परिक संबंध बताता है। केवल मूलांक देखकर इसे धारण करने का व्यक्तिगत निर्देश नहीं दिया गया है। रत्न का निर्णय जन्मकुण्डली, ग्रह की भूमिका और व्यक्तिगत परिस्थिति का अलग विचार माँगता है। इस भाग से कोई खरीद या धारण-विधि निर्धारित नहीं होती।",
+          "en": "The gemstone above is a traditional correspondence of the number’s planet. It is not an individual recommendation to wear it. A gemstone decision requires separate consideration of the birth chart, planetary role and personal circumstances. This section sets no purchase or wearing instructions."
+        }
+      },
+      {
+        "id": "yantra",
+        "title": {
+          "hi": "अंक-यंत्र का परिचय",
+          "en": "Number yantra"
+        },
+        "text": {
+          "hi": "नीचे अंक-स्वामी से सम्बद्ध नौ-खानों का परम्परागत अंक-यंत्र दिखाया गया है। इसकी हर पंक्ति, स्तम्भ और दोनों विकर्णों का योग समान है। इसे उपासना के प्रतीक के रूप में समझें; यह जन्मतिथि का लो-शू ग्रिड नहीं है।\n\nयहाँ प्राण-प्रतिष्ठा, धारण या निश्चित फल मिलने का दावा नहीं किया गया है। श्रद्धा हो तो स्वच्छ स्थान पर इसका स्मरण कर सकते हैं; विशेष अनुष्ठान अलग मार्गदर्शन का विषय है।",
+          "en": "The nine-cell number yantra below corresponds to the number’s planet. Every row, column and both diagonals have the same sum. It is a devotional symbol, not a Lo Shu birth-date grid.\n\nNo consecration, wearing procedure or guaranteed result is prescribed. It may serve as a voluntary devotional reference; specific rituals require separate guidance."
+        }
+      }
+    ],
+    "yantra": [
+      [
+        7,
+        2,
+        9
+      ],
+      [
+        8,
+        6,
+        4
+      ],
+      [
+        3,
+        10,
+        5
+      ]
+    ]
+  },
+  "3": {
+    "number": 3,
+    "facts": [
+      {
+        "id": "rashi",
+        "label": {
+          "hi": "शुभ राशि-संकेत",
+          "en": "Favourable sign correspondence"
+        },
+        "value": {
+          "hi": "धनु, मीन",
+          "en": "Sagittarius, Pisces"
+        }
+      },
+      {
+        "id": "letters",
+        "label": {
+          "hi": "अंक से जुड़े नाम-अक्षर",
+          "en": "Associated name letters"
+        },
+        "value": {
+          "hi": "C, G, L, S",
+          "en": "C, G, L, S"
+        }
+      },
+      {
+        "id": "weekdays",
+        "label": {
+          "hi": "शुभ दिन",
+          "en": "Favourable day"
+        },
+        "value": {
+          "hi": "गुरुवार",
+          "en": "Thursday"
+        }
+      },
+      {
+        "id": "colors",
+        "label": {
+          "hi": "शुभ रंग",
+          "en": "Favourable colours"
+        },
+        "value": {
+          "hi": "पीला, सुनहरा",
+          "en": "Yellow, gold"
+        }
+      },
+      {
+        "id": "direction",
+        "label": {
+          "hi": "दिशा-संकेत",
+          "en": "Direction correspondence"
+        },
+        "value": {
+          "hi": "ईशान अर्थात उत्तर-पूर्व",
+          "en": "North-East"
+        }
+      },
+      {
+        "id": "deity",
+        "label": {
+          "hi": "आराध्य देवता",
+          "en": "Devotional association"
+        },
+        "value": {
+          "hi": "भगवान विष्णु, देवगुरु बृहस्पति",
+          "en": "Vishnu, Brihaspati"
+        }
+      },
+      {
+        "id": "fast",
+        "label": {
+          "hi": "व्रत-परम्परा का दिन",
+          "en": "Traditional observance day"
+        },
+        "value": {
+          "hi": "गुरुवार",
+          "en": "Thursday"
+        }
+      },
+      {
+        "id": "gemstone",
+        "label": {
+          "hi": "पारम्परिक रत्न-संबंध",
+          "en": "Traditional gemstone association"
+        },
+        "value": {
+          "hi": "पुखराज",
+          "en": "Yellow sapphire"
+        }
+      },
+      {
+        "id": "mantra",
+        "label": {
+          "hi": "सरल उपासना मंत्र",
+          "en": "Simple devotional mantra"
+        },
+        "value": {
+          "hi": "ॐ बृहस्पतये नमः।",
+          "en": "Om Brihaspataye Namah."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "id": "personality",
+        "title": {
+          "hi": "स्वभाव और व्यवहार",
+          "en": "Nature and behaviour"
+        },
+        "text": {
+          "hi": "मूलांक 3 का स्वामी गुरु माना जाता है। अध्ययन, विचारों को क्रम देना और अपनी समझ दूसरों तक पहुँचाना इसके प्रमुख विषय हैं। किसी काम का उद्देश्य समझकर आगे बढ़ना इस अंक की विशेषता मानी जाती है।\n\nसलाह देते समय सामने वाले की परिस्थिति भी समझें। अपने विचार पर भरोसा रखें, पर नई बात सीखने के लिए मन खुला रखें। ज्ञान के साथ व्यवहार की सरलता सम्बन्धों को सहज बनाती है।",
+          "en": "Jupiter is the traditional ruler of Mulank 3. Study, organised thought and sharing understanding are its main themes. A sense of purpose often matters in this reading.\n\nConsider the other person’s circumstances before offering advice. Keep confidence in your understanding while remaining open to learning. Simplicity in conduct helps knowledge become useful."
+        }
+      },
+      {
+        "id": "career",
+        "title": {
+          "hi": "कार्यक्षेत्र और योग्यता",
+          "en": "Work and abilities"
+        },
+        "text": {
+          "hi": "शिक्षण, प्रशिक्षण, लेखन, परामर्श, विधि, शोध और व्यवस्था से जुड़े काम इस अंक के विषयों से मेल खाते हैं। किसी विषय में गहराई से योग्यता बनाना और उसे स्पष्ट ढंग से समझाना उपयोगी दिशा हो सकती है।",
+          "en": "Teaching, training, writing, advisory work, law, research and organisation reflect this number’s themes. Develop depth in a subject and the ability to explain it clearly; professional qualifications still matter."
+        }
+      },
+      {
+        "id": "places",
+        "title": {
+          "hi": "अनुकूल दिशा और स्थान",
+          "en": "Direction and surroundings"
+        },
+        "text": {
+          "hi": "गुरु का दिशा-संकेत उत्तर-पूर्व माना गया है। अध्ययनकक्ष, पुस्तकालय और व्यवस्थित शान्त स्थान इस अंक की प्रतीकात्मक प्रकृति से मेल खाते हैं। रहने की जगह सुविधा, सुरक्षा और आवश्यकता देखकर चुनें।",
+          "en": "Jupiter’s direction correspondence is North-East. Study rooms, libraries and orderly quiet spaces fit its symbolism. Practical needs, safety and convenience should guide where you live."
+        }
+      },
+      {
+        "id": "timing",
+        "title": {
+          "hi": "अनुकूल समय का विचार",
+          "en": "Favourable timing"
+        },
+        "text": {
+          "hi": "ऊपर दिए शुभ दिन तथा मूलांक–भाग्यांक से जुड़ी तिथियाँ नियमित काम की योजना बनाने के लिए परम्परागत संकेत हैं। पढ़ाई, तैयारी या किसी अधूरे काम को पूरा करने का क्रम इन दिनों से आरम्भ कर सकते हैं।\n\nयह मासिक भविष्यवाणी या विवाह, यात्रा और गृहप्रवेश का मुहूर्त नहीं है। जिस महीने में सूची की कोई तारीख न हो, उसे न लें। जरूरी काम को केवल अंक के कारण टालना आवश्यक नहीं है।",
+          "en": "The favourable day and the date series linked to your Mulank and Bhagyank are traditional cues for planning ordinary tasks. You may use them to begin a study routine, preparation or pending work.\n\nThis is not a monthly forecast or a calculated muhurta for marriage, travel or entering a home. Use only dates that exist in the month, and do not postpone necessary work because of a number."
+        }
+      },
+      {
+        "id": "wellbeing",
+        "title": {
+          "hi": "स्वास्थ्य और दिनचर्या",
+          "en": "Wellbeing and routine"
+        },
+        "text": {
+          "hi": "काम और अध्ययन में लम्बे समय तक बैठे रहने पर बीच-बीच में उठने का क्रम रखें। भोजन, विश्राम और गतिविधि में नियमितता उपयोगी है। किसी भी शारीरिक समस्या को अंक से जोड़कर अनदेखा न करें।",
+          "en": "Break up long periods of seated work or study. A regular pattern of meals, rest and activity is useful. Do not explain away a physical concern through numerology."
+        }
+      },
+      {
+        "id": "devotion",
+        "title": {
+          "hi": "व्रत और उपासना",
+          "en": "Observance and devotion"
+        },
+        "text": {
+          "hi": "गुरुवार को भगवान विष्णु और देवगुरु बृहस्पति का स्मरण कर सकते हैं। गुरुजनों का सम्मान, स्वाध्याय और सरल मंत्र का पाठ इस परम्परा से जुड़े हैं। व्रत श्रद्धानुसार हो; कठोर नियम अनिवार्य नहीं हैं।",
+          "en": "Thursday remembrance of Vishnu and Brihaspati, respect for teachers, study and simple mantra recitation belong to this tradition. Observance is voluntary; strict fasting rules are not required."
+        }
+      },
+      {
+        "id": "remedies",
+        "title": {
+          "hi": "सरल आचरण और उपाय",
+          "en": "Everyday practice and remedies"
+        },
+        "text": {
+          "hi": "किसी विद्यार्थी को अपनी क्षमता के अनुसार पढ़ाई में सहायता दें या उपयोगी पुस्तक साझा करें। सीखी हुई बात को व्यवहार में लाने और अधूरी सलाह देने से बचने का संकल्प इस अंक का सार्थक अभ्यास है।",
+          "en": "Help a learner within your capacity or share a useful book. Put what you learn into practice and avoid offering advice beyond your knowledge."
+        }
+      },
+      {
+        "id": "gemstone",
+        "title": {
+          "hi": "रत्न-विचार",
+          "en": "Gemstone context"
+        },
+        "text": {
+          "hi": "ऊपर दिया रत्न अंक-स्वामी का पारम्परिक संबंध बताता है। केवल मूलांक देखकर इसे धारण करने का व्यक्तिगत निर्देश नहीं दिया गया है। रत्न का निर्णय जन्मकुण्डली, ग्रह की भूमिका और व्यक्तिगत परिस्थिति का अलग विचार माँगता है। इस भाग से कोई खरीद या धारण-विधि निर्धारित नहीं होती।",
+          "en": "The gemstone above is a traditional correspondence of the number’s planet. It is not an individual recommendation to wear it. A gemstone decision requires separate consideration of the birth chart, planetary role and personal circumstances. This section sets no purchase or wearing instructions."
+        }
+      },
+      {
+        "id": "yantra",
+        "title": {
+          "hi": "अंक-यंत्र का परिचय",
+          "en": "Number yantra"
+        },
+        "text": {
+          "hi": "नीचे अंक-स्वामी से सम्बद्ध नौ-खानों का परम्परागत अंक-यंत्र दिखाया गया है। इसकी हर पंक्ति, स्तम्भ और दोनों विकर्णों का योग समान है। इसे उपासना के प्रतीक के रूप में समझें; यह जन्मतिथि का लो-शू ग्रिड नहीं है।\n\nयहाँ प्राण-प्रतिष्ठा, धारण या निश्चित फल मिलने का दावा नहीं किया गया है। श्रद्धा हो तो स्वच्छ स्थान पर इसका स्मरण कर सकते हैं; विशेष अनुष्ठान अलग मार्गदर्शन का विषय है।",
+          "en": "The nine-cell number yantra below corresponds to the number’s planet. Every row, column and both diagonals have the same sum. It is a devotional symbol, not a Lo Shu birth-date grid.\n\nNo consecration, wearing procedure or guaranteed result is prescribed. It may serve as a voluntary devotional reference; specific rituals require separate guidance."
+        }
+      }
+    ],
+    "yantra": [
+      [
+        10,
+        5,
+        12
+      ],
+      [
+        11,
+        9,
+        7
+      ],
+      [
+        6,
+        13,
+        8
+      ]
+    ]
+  },
+  "4": {
+    "number": 4,
+    "facts": [
+      {
+        "id": "rashi",
+        "label": {
+          "hi": "शुभ राशि-संकेत",
+          "en": "Favourable sign correspondence"
+        },
+        "value": {
+          "hi": "स्वतंत्र स्वामित्व राशि निर्धारित नहीं",
+          "en": "No independent sign ownership assigned"
+        }
+      },
+      {
+        "id": "letters",
+        "label": {
+          "hi": "अंक से जुड़े नाम-अक्षर",
+          "en": "Associated name letters"
+        },
+        "value": {
+          "hi": "D, M, T",
+          "en": "D, M, T"
+        }
+      },
+      {
+        "id": "weekdays",
+        "label": {
+          "hi": "शुभ दिन",
+          "en": "Favourable day"
+        },
+        "value": {
+          "hi": "शनिवार, राहु-उपासना की परम्परा में",
+          "en": "Saturday, as a Rahu observance day"
+        }
+      },
+      {
+        "id": "colors",
+        "label": {
+          "hi": "शुभ रंग",
+          "en": "Favourable colours"
+        },
+        "value": {
+          "hi": "धूसर, नीला",
+          "en": "Grey, blue"
+        }
+      },
+      {
+        "id": "direction",
+        "label": {
+          "hi": "दिशा-संकेत",
+          "en": "Direction correspondence"
+        },
+        "value": {
+          "hi": "नैऋत्य अर्थात दक्षिण-पश्चिम",
+          "en": "South-West"
+        }
+      },
+      {
+        "id": "deity",
+        "label": {
+          "hi": "आराध्य देवता",
+          "en": "Devotional association"
+        },
+        "value": {
+          "hi": "माँ दुर्गा",
+          "en": "Durga"
+        }
+      },
+      {
+        "id": "fast",
+        "label": {
+          "hi": "व्रत-परम्परा का दिन",
+          "en": "Traditional observance day"
+        },
+        "value": {
+          "hi": "शनिवार",
+          "en": "Saturday"
+        }
+      },
+      {
+        "id": "gemstone",
+        "label": {
+          "hi": "पारम्परिक रत्न-संबंध",
+          "en": "Traditional gemstone association"
+        },
+        "value": {
+          "hi": "गोमेद",
+          "en": "Hessonite"
+        }
+      },
+      {
+        "id": "mantra",
+        "label": {
+          "hi": "सरल उपासना मंत्र",
+          "en": "Simple devotional mantra"
+        },
+        "value": {
+          "hi": "ॐ राहवे नमः।",
+          "en": "Om Rahave Namah."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "id": "personality",
+        "title": {
+          "hi": "स्वभाव और व्यवहार",
+          "en": "Nature and behaviour"
+        },
+        "text": {
+          "hi": "मूलांक 4 का सम्बन्ध राहु से माना जाता है। प्रचलित ढंग से अलग सोचने, प्रश्न करने और कठिन काम का नया हल खोजने की प्रवृत्ति इसके प्रमुख विषय हैं। परिवर्तन की इच्छा इस अंक में विशेष मानी जाती है।\n\nहर नया विचार तुरन्त अपनाने के बजाय उसके लाभ और सीमाएँ लिखें। थोड़े काम चुनकर उन्हें पूरा करना तथा अनुभवी व्यक्ति की बात सुनना प्रयास को दिशा दे सकता है।",
+          "en": "Mulank 4 is traditionally associated with Rahu. Unconventional thought, questioning established approaches and finding alternative solutions are its main themes.\n\nWrite down the benefits and limits of an idea before adopting it. Choose a few tasks, finish them and make room for experienced advice so that experimentation has direction."
+        }
+      },
+      {
+        "id": "career",
+        "title": {
+          "hi": "कार्यक्षेत्र और योग्यता",
+          "en": "Work and abilities"
+        },
+        "text": {
+          "hi": "तकनीक, प्रणाली सुधार, अनुसन्धान, विश्लेषण और नई प्रक्रिया बनाने वाले काम इस अंक के विषयों से मेल खाते हैं। प्रयोग के साथ दस्तावेज और जाँच का क्रम रखें। केवल नया होने से कोई व्यवसाय उपयुक्त नहीं हो जाता।",
+          "en": "Technology, process improvement, investigation, analysis and system design reflect this number’s themes. Combine experimentation with documentation and checking; novelty alone does not make a business suitable."
+        }
+      },
+      {
+        "id": "places",
+        "title": {
+          "hi": "अनुकूल दिशा और स्थान",
+          "en": "Direction and surroundings"
+        },
+        "text": {
+          "hi": "राहु के लिए दक्षिण-पश्चिम दिशा का प्रतीक लिया गया है। प्रयोग के लिए स्थान होने के साथ व्यवस्थित और स्थिर कार्यस्थल उपयोगी है। इस संकेत से किसी भवन या शहर का व्यक्तिगत वास्तु-निर्णय नहीं होता।",
+          "en": "South-West is the chosen Rahu correspondence. A stable, orderly workspace with room to experiment fits this reading. It does not assess the Vaastu of a particular building or city."
+        }
+      },
+      {
+        "id": "timing",
+        "title": {
+          "hi": "अनुकूल समय का विचार",
+          "en": "Favourable timing"
+        },
+        "text": {
+          "hi": "ऊपर दिए शुभ दिन तथा मूलांक–भाग्यांक से जुड़ी तिथियाँ नियमित काम की योजना बनाने के लिए परम्परागत संकेत हैं। पढ़ाई, तैयारी या किसी अधूरे काम को पूरा करने का क्रम इन दिनों से आरम्भ कर सकते हैं।\n\nयह मासिक भविष्यवाणी या विवाह, यात्रा और गृहप्रवेश का मुहूर्त नहीं है। जिस महीने में सूची की कोई तारीख न हो, उसे न लें। जरूरी काम को केवल अंक के कारण टालना आवश्यक नहीं है।",
+          "en": "The favourable day and the date series linked to your Mulank and Bhagyank are traditional cues for planning ordinary tasks. You may use them to begin a study routine, preparation or pending work.\n\nThis is not a monthly forecast or a calculated muhurta for marriage, travel or entering a home. Use only dates that exist in the month, and do not postpone necessary work because of a number."
+        }
+      },
+      {
+        "id": "wellbeing",
+        "title": {
+          "hi": "स्वास्थ्य और दिनचर्या",
+          "en": "Wellbeing and routine"
+        },
+        "text": {
+          "hi": "नई योजना और अधिक सूचना के बीच विश्राम का समय निश्चित रखें। देर तक स्क्रीन देखते रहने पर विराम लें और सोने का समय नियमित बनाएँ। मूलांक से किसी मानसिक या शारीरिक रोग का निर्णय नहीं होता।",
+          "en": "Set aside rest when ideas and information compete for attention. Take breaks from screens and keep a regular bedtime. The number does not diagnose a mental or physical condition."
+        }
+      },
+      {
+        "id": "devotion",
+        "title": {
+          "hi": "व्रत और उपासना",
+          "en": "Observance and devotion"
+        },
+        "text": {
+          "hi": "माँ दुर्गा का स्मरण और राहु के सरल मंत्र का पाठ श्रद्धानुसार किया जा सकता है। यहाँ शनिवार राहु-उपासना की परम्परा के लिए लिया गया है; राहु का स्वतंत्र वार नहीं माना गया है। उपवास अनिवार्य नहीं है।",
+          "en": "Remembrance of Durga and simple Rahu mantra recitation may form a voluntary practice. Saturday is used here as a traditional observance day; Rahu has no independent weekday. Fasting is not required."
+        }
+      },
+      {
+        "id": "remedies",
+        "title": {
+          "hi": "सरल आचरण और उपाय",
+          "en": "Everyday practice and remedies"
+        },
+        "text": {
+          "hi": "किसी जरूरी काम का स्पष्ट क्रम बनाकर उसका पालन करें। बिना जाँची सूचना आगे न भेजना, नियमों का सम्मान करना और जरूरतमन्द को उपयोगी वस्तु देना सरल आचरण हो सकता है।",
+          "en": "Write a clear plan for an important task and follow it. Check information before sharing it, respect agreed rules and offer a useful item to someone in need within your means."
+        }
+      },
+      {
+        "id": "gemstone",
+        "title": {
+          "hi": "रत्न-विचार",
+          "en": "Gemstone context"
+        },
+        "text": {
+          "hi": "ऊपर दिया रत्न अंक-स्वामी का पारम्परिक संबंध बताता है। केवल मूलांक देखकर इसे धारण करने का व्यक्तिगत निर्देश नहीं दिया गया है। रत्न का निर्णय जन्मकुण्डली, ग्रह की भूमिका और व्यक्तिगत परिस्थिति का अलग विचार माँगता है। इस भाग से कोई खरीद या धारण-विधि निर्धारित नहीं होती।",
+          "en": "The gemstone above is a traditional correspondence of the number’s planet. It is not an individual recommendation to wear it. A gemstone decision requires separate consideration of the birth chart, planetary role and personal circumstances. This section sets no purchase or wearing instructions."
+        }
+      },
+      {
+        "id": "yantra",
+        "title": {
+          "hi": "अंक-यंत्र का परिचय",
+          "en": "Number yantra"
+        },
+        "text": {
+          "hi": "नीचे अंक-स्वामी से सम्बद्ध नौ-खानों का परम्परागत अंक-यंत्र दिखाया गया है। इसकी हर पंक्ति, स्तम्भ और दोनों विकर्णों का योग समान है। इसे उपासना के प्रतीक के रूप में समझें; यह जन्मतिथि का लो-शू ग्रिड नहीं है।\n\nयहाँ प्राण-प्रतिष्ठा, धारण या निश्चित फल मिलने का दावा नहीं किया गया है। श्रद्धा हो तो स्वच्छ स्थान पर इसका स्मरण कर सकते हैं; विशेष अनुष्ठान अलग मार्गदर्शन का विषय है।",
+          "en": "The nine-cell number yantra below corresponds to the number’s planet. Every row, column and both diagonals have the same sum. It is a devotional symbol, not a Lo Shu birth-date grid.\n\nNo consecration, wearing procedure or guaranteed result is prescribed. It may serve as a voluntary devotional reference; specific rituals require separate guidance."
+        }
+      }
+    ],
+    "yantra": [
+      [
+        13,
+        8,
+        15
+      ],
+      [
+        14,
+        12,
+        10
+      ],
+      [
+        9,
+        16,
+        11
+      ]
+    ]
+  },
+  "5": {
+    "number": 5,
+    "facts": [
+      {
+        "id": "rashi",
+        "label": {
+          "hi": "शुभ राशि-संकेत",
+          "en": "Favourable sign correspondence"
+        },
+        "value": {
+          "hi": "मिथुन, कन्या",
+          "en": "Gemini, Virgo"
+        }
+      },
+      {
+        "id": "letters",
+        "label": {
+          "hi": "अंक से जुड़े नाम-अक्षर",
+          "en": "Associated name letters"
+        },
+        "value": {
+          "hi": "E, H, N, X",
+          "en": "E, H, N, X"
+        }
+      },
+      {
+        "id": "weekdays",
+        "label": {
+          "hi": "शुभ दिन",
+          "en": "Favourable day"
+        },
+        "value": {
+          "hi": "बुधवार",
+          "en": "Wednesday"
+        }
+      },
+      {
+        "id": "colors",
+        "label": {
+          "hi": "शुभ रंग",
+          "en": "Favourable colours"
+        },
+        "value": {
+          "hi": "हरा, हल्का हरा",
+          "en": "Green, light green"
+        }
+      },
+      {
+        "id": "direction",
+        "label": {
+          "hi": "दिशा-संकेत",
+          "en": "Direction correspondence"
+        },
+        "value": {
+          "hi": "उत्तर",
+          "en": "North"
+        }
+      },
+      {
+        "id": "deity",
+        "label": {
+          "hi": "आराध्य देवता",
+          "en": "Devotional association"
+        },
+        "value": {
+          "hi": "भगवान गणेश",
+          "en": "Ganesha"
+        }
+      },
+      {
+        "id": "fast",
+        "label": {
+          "hi": "व्रत-परम्परा का दिन",
+          "en": "Traditional observance day"
+        },
+        "value": {
+          "hi": "बुधवार",
+          "en": "Wednesday"
+        }
+      },
+      {
+        "id": "gemstone",
+        "label": {
+          "hi": "पारम्परिक रत्न-संबंध",
+          "en": "Traditional gemstone association"
+        },
+        "value": {
+          "hi": "पन्ना",
+          "en": "Emerald"
+        }
+      },
+      {
+        "id": "mantra",
+        "label": {
+          "hi": "सरल उपासना मंत्र",
+          "en": "Simple devotional mantra"
+        },
+        "value": {
+          "hi": "ॐ बुधाय नमः।",
+          "en": "Om Budhaya Namah."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "id": "personality",
+        "title": {
+          "hi": "स्वभाव और व्यवहार",
+          "en": "Nature and behaviour"
+        },
+        "text": {
+          "hi": "मूलांक 5 का स्वामी बुध माना जाता है। जिज्ञासा, बातचीत, सीखने की तत्परता और नई परिस्थिति में ढलना इसके प्रमुख विषय हैं। विविध अनुभवों से समझ बढ़ाने की रुचि इस अंक से जोड़ी जाती है।\n\nएक साथ बहुत काम आरम्भ करने के बजाय अपनी प्राथमिकताएँ तय करें। बोलने की कुशलता के साथ ध्यान से सुनने और वचन पूरा करने का अभ्यास उपयोगी है।",
+          "en": "Mercury is the traditional ruler of Mulank 5. Curiosity, communication, readiness to learn and adaptability are its main themes. Varied experience can be an important source of understanding.\n\nSet priorities instead of starting too many tasks. Balance verbal skill with careful listening and follow through on promises."
+        }
+      },
+      {
+        "id": "career",
+        "title": {
+          "hi": "कार्यक्षेत्र और योग्यता",
+          "en": "Work and abilities"
+        },
+        "text": {
+          "hi": "लेखन, भाषा, व्यापार, संचार, विपणन, आँकड़ों के विश्लेषण और तकनीकी सहयोग जैसे काम इस अंक के विषयों से मेल खाते हैं। कौशल को नियमित अभ्यास से गहरा करें और आय या निवेश का निर्णय वास्तविक जानकारी से लें।",
+          "en": "Writing, languages, commerce, communication, marketing, data analysis and technical support reflect this number’s themes. Deepen a skill through practice and use real information for financial decisions."
+        }
+      },
+      {
+        "id": "places",
+        "title": {
+          "hi": "अनुकूल दिशा और स्थान",
+          "en": "Direction and surroundings"
+        },
+        "text": {
+          "hi": "बुध का दिशा-संकेत उत्तर माना गया है। संवाद और सीखने की सुविधा वाला, साफ तथा व्यवस्थित कार्यस्थल इस अंक से मेल खाता है। अधिक आवाज या लगातार व्यवधान होने पर एकाग्रता के लिए अलग स्थान रखें।",
+          "en": "Mercury’s direction correspondence is North. An orderly space that supports learning and communication fits its symbolism. Keep a quieter place available when interruptions make concentration difficult."
+        }
+      },
+      {
+        "id": "timing",
+        "title": {
+          "hi": "अनुकूल समय का विचार",
+          "en": "Favourable timing"
+        },
+        "text": {
+          "hi": "ऊपर दिए शुभ दिन तथा मूलांक–भाग्यांक से जुड़ी तिथियाँ नियमित काम की योजना बनाने के लिए परम्परागत संकेत हैं। पढ़ाई, तैयारी या किसी अधूरे काम को पूरा करने का क्रम इन दिनों से आरम्भ कर सकते हैं।\n\nयह मासिक भविष्यवाणी या विवाह, यात्रा और गृहप्रवेश का मुहूर्त नहीं है। जिस महीने में सूची की कोई तारीख न हो, उसे न लें। जरूरी काम को केवल अंक के कारण टालना आवश्यक नहीं है।",
+          "en": "The favourable day and the date series linked to your Mulank and Bhagyank are traditional cues for planning ordinary tasks. You may use them to begin a study routine, preparation or pending work.\n\nThis is not a monthly forecast or a calculated muhurta for marriage, travel or entering a home. Use only dates that exist in the month, and do not postpone necessary work because of a number."
+        }
+      },
+      {
+        "id": "wellbeing",
+        "title": {
+          "hi": "स्वास्थ्य और दिनचर्या",
+          "en": "Wellbeing and routine"
+        },
+        "text": {
+          "hi": "लगातार बातचीत और कई कामों के बीच मन को विराम दें। नियमित भोजन, नींद और कुछ समय बिना स्क्रीन के बिताना उपयोगी दिनचर्या हो सकती है। स्वास्थ्य का व्यक्तिगत निर्णय मूलांक से नहीं होता।",
+          "en": "Make room for quiet between conversations and changing tasks. Regular meals, sleep and time away from screens can support a balanced routine. The birth number does not assess individual health."
+        }
+      },
+      {
+        "id": "devotion",
+        "title": {
+          "hi": "व्रत और उपासना",
+          "en": "Observance and devotion"
+        },
+        "text": {
+          "hi": "बुधवार को भगवान गणेश का स्मरण और बुध के सरल मंत्र का पाठ श्रद्धानुसार कर सकते हैं। उपासना के साथ वाणी की शुद्धता और सत्य बोलने का अभ्यास रखें। व्रत में निराहार रहने की बाध्यता नहीं है।",
+          "en": "Wednesday remembrance of Ganesha and simple Mercury mantra recitation may be part of a voluntary practice. Pair devotion with truthful and considerate speech. Observance need not involve skipping food."
+        }
+      },
+      {
+        "id": "remedies",
+        "title": {
+          "hi": "सरल आचरण और उपाय",
+          "en": "Everyday practice and remedies"
+        },
+        "text": {
+          "hi": "दैनिक कामों की छोटी सूची बनाएँ और अधूरा काम पूरा करें। किसी को उपयोगी जानकारी समझाकर देना, लिखे हुए काम की दोबारा जाँच करना और वाणी में संयम रखना इस अंक के सरल अभ्यास हैं।",
+          "en": "Keep a short task list and finish something left incomplete. Explain useful information clearly, check written work and exercise care in speech."
+        }
+      },
+      {
+        "id": "gemstone",
+        "title": {
+          "hi": "रत्न-विचार",
+          "en": "Gemstone context"
+        },
+        "text": {
+          "hi": "ऊपर दिया रत्न अंक-स्वामी का पारम्परिक संबंध बताता है। केवल मूलांक देखकर इसे धारण करने का व्यक्तिगत निर्देश नहीं दिया गया है। रत्न का निर्णय जन्मकुण्डली, ग्रह की भूमिका और व्यक्तिगत परिस्थिति का अलग विचार माँगता है। इस भाग से कोई खरीद या धारण-विधि निर्धारित नहीं होती।",
+          "en": "The gemstone above is a traditional correspondence of the number’s planet. It is not an individual recommendation to wear it. A gemstone decision requires separate consideration of the birth chart, planetary role and personal circumstances. This section sets no purchase or wearing instructions."
+        }
+      },
+      {
+        "id": "yantra",
+        "title": {
+          "hi": "अंक-यंत्र का परिचय",
+          "en": "Number yantra"
+        },
+        "text": {
+          "hi": "नीचे अंक-स्वामी से सम्बद्ध नौ-खानों का परम्परागत अंक-यंत्र दिखाया गया है। इसकी हर पंक्ति, स्तम्भ और दोनों विकर्णों का योग समान है। इसे उपासना के प्रतीक के रूप में समझें; यह जन्मतिथि का लो-शू ग्रिड नहीं है।\n\nयहाँ प्राण-प्रतिष्ठा, धारण या निश्चित फल मिलने का दावा नहीं किया गया है। श्रद्धा हो तो स्वच्छ स्थान पर इसका स्मरण कर सकते हैं; विशेष अनुष्ठान अलग मार्गदर्शन का विषय है।",
+          "en": "The nine-cell number yantra below corresponds to the number’s planet. Every row, column and both diagonals have the same sum. It is a devotional symbol, not a Lo Shu birth-date grid.\n\nNo consecration, wearing procedure or guaranteed result is prescribed. It may serve as a voluntary devotional reference; specific rituals require separate guidance."
+        }
+      }
+    ],
+    "yantra": [
+      [
+        9,
+        4,
+        11
+      ],
+      [
+        10,
+        8,
+        6
+      ],
+      [
+        5,
+        12,
+        7
+      ]
+    ]
+  },
+  "6": {
+    "number": 6,
+    "facts": [
+      {
+        "id": "rashi",
+        "label": {
+          "hi": "शुभ राशि-संकेत",
+          "en": "Favourable sign correspondence"
+        },
+        "value": {
+          "hi": "वृषभ, तुला",
+          "en": "Taurus, Libra"
+        }
+      },
+      {
+        "id": "letters",
+        "label": {
+          "hi": "अंक से जुड़े नाम-अक्षर",
+          "en": "Associated name letters"
+        },
+        "value": {
+          "hi": "U, V, W",
+          "en": "U, V, W"
+        }
+      },
+      {
+        "id": "weekdays",
+        "label": {
+          "hi": "शुभ दिन",
+          "en": "Favourable day"
+        },
+        "value": {
+          "hi": "शुक्रवार",
+          "en": "Friday"
+        }
+      },
+      {
+        "id": "colors",
+        "label": {
+          "hi": "शुभ रंग",
+          "en": "Favourable colours"
+        },
+        "value": {
+          "hi": "सफेद, हल्का गुलाबी",
+          "en": "White, soft pink"
+        }
+      },
+      {
+        "id": "direction",
+        "label": {
+          "hi": "दिशा-संकेत",
+          "en": "Direction correspondence"
+        },
+        "value": {
+          "hi": "आग्नेय अर्थात दक्षिण-पूर्व",
+          "en": "South-East"
+        }
+      },
+      {
+        "id": "deity",
+        "label": {
+          "hi": "आराध्य देवता",
+          "en": "Devotional association"
+        },
+        "value": {
+          "hi": "माँ लक्ष्मी",
+          "en": "Lakshmi"
+        }
+      },
+      {
+        "id": "fast",
+        "label": {
+          "hi": "व्रत-परम्परा का दिन",
+          "en": "Traditional observance day"
+        },
+        "value": {
+          "hi": "शुक्रवार",
+          "en": "Friday"
+        }
+      },
+      {
+        "id": "gemstone",
+        "label": {
+          "hi": "पारम्परिक रत्न-संबंध",
+          "en": "Traditional gemstone association"
+        },
+        "value": {
+          "hi": "हीरा",
+          "en": "Diamond"
+        }
+      },
+      {
+        "id": "mantra",
+        "label": {
+          "hi": "सरल उपासना मंत्र",
+          "en": "Simple devotional mantra"
+        },
+        "value": {
+          "hi": "ॐ शुक्राय नमः।",
+          "en": "Om Shukraya Namah."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "id": "personality",
+        "title": {
+          "hi": "स्वभाव और व्यवहार",
+          "en": "Nature and behaviour"
+        },
+        "text": {
+          "hi": "मूलांक 6 का सम्बन्ध शुक्र से है। सौन्दर्यबोध, सौहार्द, कला और अपनों की देखभाल इसके प्रमुख विषय हैं। सुन्दर तथा सहज वातावरण बनाने की इच्छा इस अंक से जोड़ी जाती है।\n\nदूसरों का ध्यान रखते हुए अपनी सीमा और जरूरत भी स्पष्ट रखें। केवल प्रसन्न करने के लिए जिम्मेदारी लेना बाद में कठिन हो सकता है। स्नेह के साथ व्यावहारिकता रखना उपयोगी है।",
+          "en": "Mulank 6 is associated with Venus. Appreciation of beauty, harmony, the arts and care for loved ones are its main themes. Creating welcoming surroundings fits this reading.\n\nKeep your own needs and limits clear while supporting others. Affection is more sustainable when practical responsibilities are shared."
+        }
+      },
+      {
+        "id": "career",
+        "title": {
+          "hi": "कार्यक्षेत्र और योग्यता",
+          "en": "Work and abilities"
+        },
+        "text": {
+          "hi": "कला, डिजाइन, वस्त्र, सौन्दर्य, अतिथि-सेवा, शिक्षण और सम्बन्ध-समन्वय वाले काम इस अंक के विषयों से मेल खाते हैं। रचनात्मक रुचि के साथ प्रशिक्षण, समय और खर्च का व्यावहारिक लेखा रखें।",
+          "en": "Art, design, textiles, beauty, hospitality, teaching and relationship coordination reflect this number’s themes. Pair creative interest with training, scheduling and realistic costs."
+        }
+      },
+      {
+        "id": "places",
+        "title": {
+          "hi": "अनुकूल दिशा और स्थान",
+          "en": "Direction and surroundings"
+        },
+        "text": {
+          "hi": "शुक्र का दिशा-संकेत दक्षिण-पूर्व माना गया है। स्वच्छ, सुसज्जित और पर्याप्त प्रकाश वाला स्थान इस अंक की प्रतीकात्मक प्रकृति से मेल खाता है। सजावट के साथ आराम और उपयोगिता को भी महत्व दें।",
+          "en": "Venus’s direction correspondence is South-East. Clean, welcoming and well-lit spaces fit its symbolism. Balance decoration with comfort and practical use."
+        }
+      },
+      {
+        "id": "timing",
+        "title": {
+          "hi": "अनुकूल समय का विचार",
+          "en": "Favourable timing"
+        },
+        "text": {
+          "hi": "ऊपर दिए शुभ दिन तथा मूलांक–भाग्यांक से जुड़ी तिथियाँ नियमित काम की योजना बनाने के लिए परम्परागत संकेत हैं। पढ़ाई, तैयारी या किसी अधूरे काम को पूरा करने का क्रम इन दिनों से आरम्भ कर सकते हैं।\n\nयह मासिक भविष्यवाणी या विवाह, यात्रा और गृहप्रवेश का मुहूर्त नहीं है। जिस महीने में सूची की कोई तारीख न हो, उसे न लें। जरूरी काम को केवल अंक के कारण टालना आवश्यक नहीं है।",
+          "en": "The favourable day and the date series linked to your Mulank and Bhagyank are traditional cues for planning ordinary tasks. You may use them to begin a study routine, preparation or pending work.\n\nThis is not a monthly forecast or a calculated muhurta for marriage, travel or entering a home. Use only dates that exist in the month, and do not postpone necessary work because of a number."
+        }
+      },
+      {
+        "id": "wellbeing",
+        "title": {
+          "hi": "स्वास्थ्य और दिनचर्या",
+          "en": "Wellbeing and routine"
+        },
+        "text": {
+          "hi": "अपनों की देखभाल में अपनी नींद और विश्राम न टालें। आराम के साथ नियमित गतिविधि और भोजन का संतुलन रखें। अंक के आधार पर किसी रोग या उपचार का निर्णय नहीं दिया जा रहा है।",
+          "en": "Do not postpone your own rest while caring for others. Balance comfort with regular activity and meals. This reading does not identify an illness or prescribe treatment."
+        }
+      },
+      {
+        "id": "devotion",
+        "title": {
+          "hi": "व्रत और उपासना",
+          "en": "Observance and devotion"
+        },
+        "text": {
+          "hi": "शुक्रवार को माँ लक्ष्मी का स्मरण, स्वच्छता और कृतज्ञता इस परम्परा से जुड़े हैं। श्रद्धानुसार शुक्र के सरल मंत्र का पाठ कर सकते हैं। व्रत संयम और सदाचार से भी रखा जा सकता है।",
+          "en": "Friday remembrance of Lakshmi, cleanliness and gratitude belong to this tradition. You may recite the simple Venus mantra. Thoughtful conduct and moderation can be an observance without fasting."
+        }
+      },
+      {
+        "id": "remedies",
+        "title": {
+          "hi": "सरल आचरण और उपाय",
+          "en": "Everyday practice and remedies"
+        },
+        "text": {
+          "hi": "घर या कार्यस्थल की उपयोगी वस्तुओं को व्यवस्थित करें। परिवार की जिम्मेदारी मिलकर बाँटें और दिखावे के खर्च से पहले आवश्यकता देखें। किसी जरूरतमन्द को साफ, उपयोगी वस्तु देना सरल सेवा हो सकती है।",
+          "en": "Organise useful belongings, share family responsibilities and check the need behind a purchase. Giving a clean, useful item within your means can be a simple act of service."
+        }
+      },
+      {
+        "id": "gemstone",
+        "title": {
+          "hi": "रत्न-विचार",
+          "en": "Gemstone context"
+        },
+        "text": {
+          "hi": "ऊपर दिया रत्न अंक-स्वामी का पारम्परिक संबंध बताता है। केवल मूलांक देखकर इसे धारण करने का व्यक्तिगत निर्देश नहीं दिया गया है। रत्न का निर्णय जन्मकुण्डली, ग्रह की भूमिका और व्यक्तिगत परिस्थिति का अलग विचार माँगता है। इस भाग से कोई खरीद या धारण-विधि निर्धारित नहीं होती।",
+          "en": "The gemstone above is a traditional correspondence of the number’s planet. It is not an individual recommendation to wear it. A gemstone decision requires separate consideration of the birth chart, planetary role and personal circumstances. This section sets no purchase or wearing instructions."
+        }
+      },
+      {
+        "id": "yantra",
+        "title": {
+          "hi": "अंक-यंत्र का परिचय",
+          "en": "Number yantra"
+        },
+        "text": {
+          "hi": "नीचे अंक-स्वामी से सम्बद्ध नौ-खानों का परम्परागत अंक-यंत्र दिखाया गया है। इसकी हर पंक्ति, स्तम्भ और दोनों विकर्णों का योग समान है। इसे उपासना के प्रतीक के रूप में समझें; यह जन्मतिथि का लो-शू ग्रिड नहीं है।\n\nयहाँ प्राण-प्रतिष्ठा, धारण या निश्चित फल मिलने का दावा नहीं किया गया है। श्रद्धा हो तो स्वच्छ स्थान पर इसका स्मरण कर सकते हैं; विशेष अनुष्ठान अलग मार्गदर्शन का विषय है।",
+          "en": "The nine-cell number yantra below corresponds to the number’s planet. Every row, column and both diagonals have the same sum. It is a devotional symbol, not a Lo Shu birth-date grid.\n\nNo consecration, wearing procedure or guaranteed result is prescribed. It may serve as a voluntary devotional reference; specific rituals require separate guidance."
+        }
+      }
+    ],
+    "yantra": [
+      [
+        11,
+        6,
+        13
+      ],
+      [
+        12,
+        10,
+        8
+      ],
+      [
+        7,
+        14,
+        9
+      ]
+    ]
+  },
+  "7": {
+    "number": 7,
+    "facts": [
+      {
+        "id": "rashi",
+        "label": {
+          "hi": "शुभ राशि-संकेत",
+          "en": "Favourable sign correspondence"
+        },
+        "value": {
+          "hi": "स्वतंत्र स्वामित्व राशि निर्धारित नहीं",
+          "en": "No independent sign ownership assigned"
+        }
+      },
+      {
+        "id": "letters",
+        "label": {
+          "hi": "अंक से जुड़े नाम-अक्षर",
+          "en": "Associated name letters"
+        },
+        "value": {
+          "hi": "O, Z",
+          "en": "O, Z"
+        }
+      },
+      {
+        "id": "weekdays",
+        "label": {
+          "hi": "शुभ दिन",
+          "en": "Favourable day"
+        },
+        "value": {
+          "hi": "मंगलवार, केतु-उपासना की परम्परा में",
+          "en": "Tuesday, as a Ketu observance day"
+        }
+      },
+      {
+        "id": "colors",
+        "label": {
+          "hi": "शुभ रंग",
+          "en": "Favourable colours"
+        },
+        "value": {
+          "hi": "हल्का पीला, धूम्रवर्ण",
+          "en": "Pale yellow, smoky tones"
+        }
+      },
+      {
+        "id": "direction",
+        "label": {
+          "hi": "दिशा-संकेत",
+          "en": "Direction correspondence"
+        },
+        "value": {
+          "hi": "केन्द्र का प्रतीक",
+          "en": "Centre, as a symbolic correspondence"
+        }
+      },
+      {
+        "id": "deity",
+        "label": {
+          "hi": "आराध्य देवता",
+          "en": "Devotional association"
+        },
+        "value": {
+          "hi": "भगवान गणेश",
+          "en": "Ganesha"
+        }
+      },
+      {
+        "id": "fast",
+        "label": {
+          "hi": "व्रत-परम्परा का दिन",
+          "en": "Traditional observance day"
+        },
+        "value": {
+          "hi": "मंगलवार",
+          "en": "Tuesday"
+        }
+      },
+      {
+        "id": "gemstone",
+        "label": {
+          "hi": "पारम्परिक रत्न-संबंध",
+          "en": "Traditional gemstone association"
+        },
+        "value": {
+          "hi": "लहसुनिया",
+          "en": "Cat’s eye"
+        }
+      },
+      {
+        "id": "mantra",
+        "label": {
+          "hi": "सरल उपासना मंत्र",
+          "en": "Simple devotional mantra"
+        },
+        "value": {
+          "hi": "ॐ केतवे नमः।",
+          "en": "Om Ketave Namah."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "id": "personality",
+        "title": {
+          "hi": "स्वभाव और व्यवहार",
+          "en": "Nature and behaviour"
+        },
+        "text": {
+          "hi": "मूलांक 7 का सम्बन्ध केतु से माना जाता है। गहरा विचार, खोज, आत्मनिरीक्षण और किसी विषय के भीतर तक जाने की इच्छा इसके प्रमुख विषय हैं। एकान्त में अध्ययन की रुचि इस अंक से जोड़ी जाती है।\n\nअपनी समझ को केवल मन में रखने के बजाय भरोसेमन्द लोगों से बाँटें। विचार और व्यवहार के बीच सम्बन्ध बनाए रखना तथा अधूरे निष्कर्ष की जाँच करना उपयोगी है।",
+          "en": "Mulank 7 is traditionally associated with Ketu. Reflection, investigation and a wish to understand matters deeply are its main themes. Quiet study fits this reading.\n\nShare understanding with trusted people rather than keeping every thought private. Connect reflection to daily action and check conclusions before relying on them."
+        }
+      },
+      {
+        "id": "career",
+        "title": {
+          "hi": "कार्यक्षेत्र और योग्यता",
+          "en": "Work and abilities"
+        },
+        "text": {
+          "hi": "शोध, विश्लेषण, लेखन, तकनीकी जाँच, अध्ययन और गहन एकाग्रता वाले काम इस अंक के विषयों से मेल खाते हैं। विशेषज्ञता के साथ अपने निष्कर्ष स्पष्ट भाषा में बताने का अभ्यास भी रखें।",
+          "en": "Research, analysis, writing, technical investigation and work requiring concentration reflect this number’s themes. Develop expertise alongside the ability to explain conclusions clearly."
+        }
+      },
+      {
+        "id": "places",
+        "title": {
+          "hi": "अनुकूल दिशा और स्थान",
+          "en": "Direction and surroundings"
+        },
+        "text": {
+          "hi": "इस पद्धति में केतु के लिए केन्द्र का प्रतीक लिया गया है, कोई अनिवार्य यात्रा-दिशा नहीं। शान्त अध्ययनकक्ष, पुस्तकालय या प्रकृति के समीप व्यवस्थित स्थान इस अंक के विषयों से मेल खा सकते हैं।",
+          "en": "This convention uses the centre as Ketu’s symbol rather than a required travel direction. A quiet study, library or orderly setting near nature may suit the number’s reflective themes."
+        }
+      },
+      {
+        "id": "timing",
+        "title": {
+          "hi": "अनुकूल समय का विचार",
+          "en": "Favourable timing"
+        },
+        "text": {
+          "hi": "ऊपर दिए शुभ दिन तथा मूलांक–भाग्यांक से जुड़ी तिथियाँ नियमित काम की योजना बनाने के लिए परम्परागत संकेत हैं। पढ़ाई, तैयारी या किसी अधूरे काम को पूरा करने का क्रम इन दिनों से आरम्भ कर सकते हैं।\n\nयह मासिक भविष्यवाणी या विवाह, यात्रा और गृहप्रवेश का मुहूर्त नहीं है। जिस महीने में सूची की कोई तारीख न हो, उसे न लें। जरूरी काम को केवल अंक के कारण टालना आवश्यक नहीं है।",
+          "en": "The favourable day and the date series linked to your Mulank and Bhagyank are traditional cues for planning ordinary tasks. You may use them to begin a study routine, preparation or pending work.\n\nThis is not a monthly forecast or a calculated muhurta for marriage, travel or entering a home. Use only dates that exist in the month, and do not postpone necessary work because of a number."
+        }
+      },
+      {
+        "id": "wellbeing",
+        "title": {
+          "hi": "स्वास्थ्य और दिनचर्या",
+          "en": "Wellbeing and routine"
+        },
+        "text": {
+          "hi": "एकान्त अध्ययन के साथ नियमित संवाद, विश्राम और हल्की गतिविधि का संतुलन रखें। देर रात तक विचार या काम में लगे रहने पर सोने का क्रम न बिगाड़ें। स्वास्थ्य की समस्या का कारण अंक से तय नहीं किया जाता।",
+          "en": "Balance solitary study with conversation, rest and suitable activity. Protect your sleep when absorbed in late-night thinking or work. Numerology does not establish the cause of a health concern."
+        }
+      },
+      {
+        "id": "devotion",
+        "title": {
+          "hi": "व्रत और उपासना",
+          "en": "Observance and devotion"
+        },
+        "text": {
+          "hi": "भगवान गणेश का स्मरण और केतु के सरल मंत्र का पाठ श्रद्धानुसार कर सकते हैं। मंगलवार को यहाँ केतु-उपासना का दिन लिया गया है; केतु का स्वतंत्र वार नहीं माना गया है। भोजन त्यागना आवश्यक नहीं है।",
+          "en": "Remembrance of Ganesha and simple Ketu mantra recitation may form a voluntary practice. Tuesday is used as an observance day; Ketu has no independent weekday. Skipping meals is not required."
+        }
+      },
+      {
+        "id": "remedies",
+        "title": {
+          "hi": "सरल आचरण और उपाय",
+          "en": "Everyday practice and remedies"
+        },
+        "text": {
+          "hi": "सीखे हुए विषय का छोटा सार लिखें और उसे किसी के काम आने दें। किसी की बात धैर्य से सुनना, अनावश्यक विवाद से बचना और नियमित स्वाध्याय रखना इस अंक का सरल अभ्यास हो सकता है।",
+          "en": "Write a short account of something you have learned and make it useful to someone else. Listen patiently, avoid needless arguments and keep a regular study practice."
+        }
+      },
+      {
+        "id": "gemstone",
+        "title": {
+          "hi": "रत्न-विचार",
+          "en": "Gemstone context"
+        },
+        "text": {
+          "hi": "ऊपर दिया रत्न अंक-स्वामी का पारम्परिक संबंध बताता है। केवल मूलांक देखकर इसे धारण करने का व्यक्तिगत निर्देश नहीं दिया गया है। रत्न का निर्णय जन्मकुण्डली, ग्रह की भूमिका और व्यक्तिगत परिस्थिति का अलग विचार माँगता है। इस भाग से कोई खरीद या धारण-विधि निर्धारित नहीं होती।",
+          "en": "The gemstone above is a traditional correspondence of the number’s planet. It is not an individual recommendation to wear it. A gemstone decision requires separate consideration of the birth chart, planetary role and personal circumstances. This section sets no purchase or wearing instructions."
+        }
+      },
+      {
+        "id": "yantra",
+        "title": {
+          "hi": "अंक-यंत्र का परिचय",
+          "en": "Number yantra"
+        },
+        "text": {
+          "hi": "नीचे अंक-स्वामी से सम्बद्ध नौ-खानों का परम्परागत अंक-यंत्र दिखाया गया है। इसकी हर पंक्ति, स्तम्भ और दोनों विकर्णों का योग समान है। इसे उपासना के प्रतीक के रूप में समझें; यह जन्मतिथि का लो-शू ग्रिड नहीं है।\n\nयहाँ प्राण-प्रतिष्ठा, धारण या निश्चित फल मिलने का दावा नहीं किया गया है। श्रद्धा हो तो स्वच्छ स्थान पर इसका स्मरण कर सकते हैं; विशेष अनुष्ठान अलग मार्गदर्शन का विषय है।",
+          "en": "The nine-cell number yantra below corresponds to the number’s planet. Every row, column and both diagonals have the same sum. It is a devotional symbol, not a Lo Shu birth-date grid.\n\nNo consecration, wearing procedure or guaranteed result is prescribed. It may serve as a voluntary devotional reference; specific rituals require separate guidance."
+        }
+      }
+    ],
+    "yantra": [
+      [
+        14,
+        9,
+        16
+      ],
+      [
+        15,
+        13,
+        11
+      ],
+      [
+        10,
+        17,
+        12
+      ]
+    ]
+  },
+  "8": {
+    "number": 8,
+    "facts": [
+      {
+        "id": "rashi",
+        "label": {
+          "hi": "शुभ राशि-संकेत",
+          "en": "Favourable sign correspondence"
+        },
+        "value": {
+          "hi": "मकर, कुम्भ",
+          "en": "Capricorn, Aquarius"
+        }
+      },
+      {
+        "id": "letters",
+        "label": {
+          "hi": "अंक से जुड़े नाम-अक्षर",
+          "en": "Associated name letters"
+        },
+        "value": {
+          "hi": "F, P",
+          "en": "F, P"
+        }
+      },
+      {
+        "id": "weekdays",
+        "label": {
+          "hi": "शुभ दिन",
+          "en": "Favourable day"
+        },
+        "value": {
+          "hi": "शनिवार",
+          "en": "Saturday"
+        }
+      },
+      {
+        "id": "colors",
+        "label": {
+          "hi": "शुभ रंग",
+          "en": "Favourable colours"
+        },
+        "value": {
+          "hi": "गहरा नीला, धूसर",
+          "en": "Deep blue, grey"
+        }
+      },
+      {
+        "id": "direction",
+        "label": {
+          "hi": "दिशा-संकेत",
+          "en": "Direction correspondence"
+        },
+        "value": {
+          "hi": "पश्चिम",
+          "en": "West"
+        }
+      },
+      {
+        "id": "deity",
+        "label": {
+          "hi": "आराध्य देवता",
+          "en": "Devotional association"
+        },
+        "value": {
+          "hi": "शनिदेव, भगवान हनुमान",
+          "en": "Shani, Hanuman"
+        }
+      },
+      {
+        "id": "fast",
+        "label": {
+          "hi": "व्रत-परम्परा का दिन",
+          "en": "Traditional observance day"
+        },
+        "value": {
+          "hi": "शनिवार",
+          "en": "Saturday"
+        }
+      },
+      {
+        "id": "gemstone",
+        "label": {
+          "hi": "पारम्परिक रत्न-संबंध",
+          "en": "Traditional gemstone association"
+        },
+        "value": {
+          "hi": "नीलम",
+          "en": "Blue sapphire"
+        }
+      },
+      {
+        "id": "mantra",
+        "label": {
+          "hi": "सरल उपासना मंत्र",
+          "en": "Simple devotional mantra"
+        },
+        "value": {
+          "hi": "ॐ शनैश्चराय नमः।",
+          "en": "Om Shanaishcharaya Namah."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "id": "personality",
+        "title": {
+          "hi": "स्वभाव और व्यवहार",
+          "en": "Nature and behaviour"
+        },
+        "text": {
+          "hi": "मूलांक 8 का स्वामी शनि माना जाता है। धैर्य, अनुशासन, जिम्मेदारी और लम्बे समय तक प्रयास करते रहना इसके प्रमुख विषय हैं। काम की ठोस नींव और परिणाम तक टिके रहने की प्रवृत्ति इस अंक से जुड़ी है।\n\nहर जिम्मेदारी अकेले उठाना आवश्यक नहीं है। प्रगति को छोटे चरणों में देखें और उचित समय पर सहायता स्वीकार करें। कठोरता के साथ सहज संवाद का संतुलन उपयोगी है।",
+          "en": "Saturn is the traditional ruler of Mulank 8. Patience, discipline, responsibility and sustained effort are its main themes. Building firm foundations matters in this reading.\n\nYou need not carry every responsibility alone. Notice progress in smaller stages and accept help when useful. Balance seriousness with open conversation."
+        }
+      },
+      {
+        "id": "career",
+        "title": {
+          "hi": "कार्यक्षेत्र और योग्यता",
+          "en": "Work and abilities"
+        },
+        "text": {
+          "hi": "संचालन, लेखा, प्रशासन, निर्माण, तकनीकी रखरखाव, विधि और दीर्घकालीन परियोजनाएँ इस अंक के विषयों से मेल खाती हैं। समय, नियम और संसाधनों का स्पष्ट लेखा रखना उपयोगी कौशल है।",
+          "en": "Operations, accounting, administration, construction, maintenance, law and long-term projects reflect this number’s themes. Clear records of time, rules and resources are useful practical skills."
+        }
+      },
+      {
+        "id": "places",
+        "title": {
+          "hi": "अनुकूल दिशा और स्थान",
+          "en": "Direction and surroundings"
+        },
+        "text": {
+          "hi": "शनि का दिशा-संकेत पश्चिम माना गया है। स्थिर, व्यवस्थित और आवश्यक सुविधाओं वाला कार्यस्थल इस अंक से मेल खाता है। रहने या काम की जगह चुनते समय आवागमन और वास्तविक सुविधा को प्राथमिकता दें।",
+          "en": "Saturn’s direction correspondence is West. A stable, orderly workspace with essential facilities fits its symbolism. Access and practical convenience should guide actual location choices."
+        }
+      },
+      {
+        "id": "timing",
+        "title": {
+          "hi": "अनुकूल समय का विचार",
+          "en": "Favourable timing"
+        },
+        "text": {
+          "hi": "ऊपर दिए शुभ दिन तथा मूलांक–भाग्यांक से जुड़ी तिथियाँ नियमित काम की योजना बनाने के लिए परम्परागत संकेत हैं। पढ़ाई, तैयारी या किसी अधूरे काम को पूरा करने का क्रम इन दिनों से आरम्भ कर सकते हैं।\n\nयह मासिक भविष्यवाणी या विवाह, यात्रा और गृहप्रवेश का मुहूर्त नहीं है। जिस महीने में सूची की कोई तारीख न हो, उसे न लें। जरूरी काम को केवल अंक के कारण टालना आवश्यक नहीं है।",
+          "en": "The favourable day and the date series linked to your Mulank and Bhagyank are traditional cues for planning ordinary tasks. You may use them to begin a study routine, preparation or pending work.\n\nThis is not a monthly forecast or a calculated muhurta for marriage, travel or entering a home. Use only dates that exist in the month, and do not postpone necessary work because of a number."
+        }
+      },
+      {
+        "id": "wellbeing",
+        "title": {
+          "hi": "स्वास्थ्य और दिनचर्या",
+          "en": "Wellbeing and routine"
+        },
+        "text": {
+          "hi": "लगातार मेहनत में विश्राम को भी काम के क्रम का हिस्सा बनाएँ। अपनी क्षमता के अनुसार नियमित गतिविधि रखें और थकान को अनदेखा न करें। किसी बीमारी या दुर्घटना का अनुमान मूलांक से नहीं लगाया जा रहा है।",
+          "en": "Make rest part of a sustained work routine. Keep activity suited to your capacity and pay attention to fatigue. This number does not predict illness or accidents."
+        }
+      },
+      {
+        "id": "devotion",
+        "title": {
+          "hi": "व्रत और उपासना",
+          "en": "Observance and devotion"
+        },
+        "text": {
+          "hi": "शनिवार को शनिदेव या भगवान हनुमान का स्मरण श्रद्धानुसार कर सकते हैं। शनि के सरल मंत्र का पाठ, न्यायपूर्ण व्यवहार और श्रम का सम्मान इस परम्परा से जुड़े हैं। कठोर उपवास आवश्यक नहीं है।",
+          "en": "Saturday remembrance of Shani or Hanuman may be part of a voluntary practice. Simple Shani mantra recitation, fair conduct and respect for labour belong to this tradition. Strict fasting is not required."
+        }
+      },
+      {
+        "id": "remedies",
+        "title": {
+          "hi": "सरल आचरण और उपाय",
+          "en": "Everyday practice and remedies"
+        },
+        "text": {
+          "hi": "किसी श्रमिक या सहायक को उसका उचित सम्मान और समय पर पारिश्रमिक दें। वचन निभाना, हिसाब स्पष्ट रखना और सामर्थ्य के अनुसार जरूरतमन्द की सहायता करना इस अंक का सार्थक अभ्यास है।",
+          "en": "Treat workers and helpers respectfully and pay agreed compensation on time. Keep promises, maintain clear accounts and offer help within your means."
+        }
+      },
+      {
+        "id": "gemstone",
+        "title": {
+          "hi": "रत्न-विचार",
+          "en": "Gemstone context"
+        },
+        "text": {
+          "hi": "ऊपर दिया रत्न अंक-स्वामी का पारम्परिक संबंध बताता है। केवल मूलांक देखकर इसे धारण करने का व्यक्तिगत निर्देश नहीं दिया गया है। रत्न का निर्णय जन्मकुण्डली, ग्रह की भूमिका और व्यक्तिगत परिस्थिति का अलग विचार माँगता है। इस भाग से कोई खरीद या धारण-विधि निर्धारित नहीं होती।",
+          "en": "The gemstone above is a traditional correspondence of the number’s planet. It is not an individual recommendation to wear it. A gemstone decision requires separate consideration of the birth chart, planetary role and personal circumstances. This section sets no purchase or wearing instructions."
+        }
+      },
+      {
+        "id": "yantra",
+        "title": {
+          "hi": "अंक-यंत्र का परिचय",
+          "en": "Number yantra"
+        },
+        "text": {
+          "hi": "नीचे अंक-स्वामी से सम्बद्ध नौ-खानों का परम्परागत अंक-यंत्र दिखाया गया है। इसकी हर पंक्ति, स्तम्भ और दोनों विकर्णों का योग समान है। इसे उपासना के प्रतीक के रूप में समझें; यह जन्मतिथि का लो-शू ग्रिड नहीं है।\n\nयहाँ प्राण-प्रतिष्ठा, धारण या निश्चित फल मिलने का दावा नहीं किया गया है। श्रद्धा हो तो स्वच्छ स्थान पर इसका स्मरण कर सकते हैं; विशेष अनुष्ठान अलग मार्गदर्शन का विषय है।",
+          "en": "The nine-cell number yantra below corresponds to the number’s planet. Every row, column and both diagonals have the same sum. It is a devotional symbol, not a Lo Shu birth-date grid.\n\nNo consecration, wearing procedure or guaranteed result is prescribed. It may serve as a voluntary devotional reference; specific rituals require separate guidance."
+        }
+      }
+    ],
+    "yantra": [
+      [
+        12,
+        7,
+        14
+      ],
+      [
+        13,
+        11,
+        9
+      ],
+      [
+        8,
+        15,
+        10
+      ]
+    ]
+  },
+  "9": {
+    "number": 9,
+    "facts": [
+      {
+        "id": "rashi",
+        "label": {
+          "hi": "शुभ राशि-संकेत",
+          "en": "Favourable sign correspondence"
+        },
+        "value": {
+          "hi": "मेष, वृश्चिक",
+          "en": "Aries, Scorpio"
+        }
+      },
+      {
+        "id": "letters",
+        "label": {
+          "hi": "अंक से जुड़े नाम-अक्षर",
+          "en": "Associated name letters"
+        },
+        "value": {
+          "hi": "सीधा अक्षर-समूह नहीं; नाम का कुल योग 9 हो सकता है",
+          "en": "No direct letter group; a full name can still total 9"
+        }
+      },
+      {
+        "id": "weekdays",
+        "label": {
+          "hi": "शुभ दिन",
+          "en": "Favourable day"
+        },
+        "value": {
+          "hi": "मंगलवार",
+          "en": "Tuesday"
+        }
+      },
+      {
+        "id": "colors",
+        "label": {
+          "hi": "शुभ रंग",
+          "en": "Favourable colours"
+        },
+        "value": {
+          "hi": "लाल, मूँगा रंग",
+          "en": "Red, coral"
+        }
+      },
+      {
+        "id": "direction",
+        "label": {
+          "hi": "दिशा-संकेत",
+          "en": "Direction correspondence"
+        },
+        "value": {
+          "hi": "दक्षिण",
+          "en": "South"
+        }
+      },
+      {
+        "id": "deity",
+        "label": {
+          "hi": "आराध्य देवता",
+          "en": "Devotional association"
+        },
+        "value": {
+          "hi": "भगवान हनुमान",
+          "en": "Hanuman"
+        }
+      },
+      {
+        "id": "fast",
+        "label": {
+          "hi": "व्रत-परम्परा का दिन",
+          "en": "Traditional observance day"
+        },
+        "value": {
+          "hi": "मंगलवार",
+          "en": "Tuesday"
+        }
+      },
+      {
+        "id": "gemstone",
+        "label": {
+          "hi": "पारम्परिक रत्न-संबंध",
+          "en": "Traditional gemstone association"
+        },
+        "value": {
+          "hi": "लाल मूँगा",
+          "en": "Red coral"
+        }
+      },
+      {
+        "id": "mantra",
+        "label": {
+          "hi": "सरल उपासना मंत्र",
+          "en": "Simple devotional mantra"
+        },
+        "value": {
+          "hi": "ॐ मङ्गलाय नमः।",
+          "en": "Om Mangalaya Namah."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "id": "personality",
+        "title": {
+          "hi": "स्वभाव और व्यवहार",
+          "en": "Nature and behaviour"
+        },
+        "text": {
+          "hi": "मूलांक 9 का सम्बन्ध मंगल से है। साहस, उत्साह, स्पष्टता और जरूरत पड़ने पर आगे आने की प्रवृत्ति इसके प्रमुख विषय हैं। ऊर्जा को किसी सार्थक काम में लगाना इस अंक का उपयोगी पक्ष माना जाता है।\n\nजल्दी प्रतिक्रिया देने के बजाय परिस्थिति समझने का समय लें। असहमति में शब्द संयत रखें और काम आरम्भ करने के साथ उसे पूरा करने की योजना भी बनाएँ।",
+          "en": "Mulank 9 is associated with Mars. Courage, energy, directness and readiness to help are its main themes. Giving that energy a constructive purpose is central to this reading.\n\nTake time to understand a situation before reacting. Use measured words in disagreement and plan how to finish what you begin."
+        }
+      },
+      {
+        "id": "career",
+        "title": {
+          "hi": "कार्यक्षेत्र और योग्यता",
+          "en": "Work and abilities"
+        },
+        "text": {
+          "hi": "तकनीकी काम, अभियान्त्रिकी, खेल, सुरक्षा, संचालन और सेवा के क्षेत्र इस अंक के विषयों से मेल खाते हैं। उत्साह के साथ प्रशिक्षण, सुरक्षा-नियम और दल में काम करने का अभ्यास आवश्यक है।",
+          "en": "Technical work, engineering, sport, safety, operations and service reflect this number’s themes. Enthusiasm needs appropriate training, safety procedures and teamwork."
+        }
+      },
+      {
+        "id": "places",
+        "title": {
+          "hi": "अनुकूल दिशा और स्थान",
+          "en": "Direction and surroundings"
+        },
+        "text": {
+          "hi": "मंगल का दिशा-संकेत दक्षिण माना गया है। काम और गतिविधि के लिए पर्याप्त स्थान वाला सुरक्षित वातावरण इस अंक के विषयों से मेल खाता है। किसी दिशा के कारण जोखिमपूर्ण स्थान चुनने का संकेत नहीं है।",
+          "en": "Mars’s direction correspondence is South. A safe setting with room for practical activity fits its symbolism. A direction correspondence is no reason to choose an unsafe location."
+        }
+      },
+      {
+        "id": "timing",
+        "title": {
+          "hi": "अनुकूल समय का विचार",
+          "en": "Favourable timing"
+        },
+        "text": {
+          "hi": "ऊपर दिए शुभ दिन तथा मूलांक–भाग्यांक से जुड़ी तिथियाँ नियमित काम की योजना बनाने के लिए परम्परागत संकेत हैं। पढ़ाई, तैयारी या किसी अधूरे काम को पूरा करने का क्रम इन दिनों से आरम्भ कर सकते हैं।\n\nयह मासिक भविष्यवाणी या विवाह, यात्रा और गृहप्रवेश का मुहूर्त नहीं है। जिस महीने में सूची की कोई तारीख न हो, उसे न लें। जरूरी काम को केवल अंक के कारण टालना आवश्यक नहीं है।",
+          "en": "The favourable day and the date series linked to your Mulank and Bhagyank are traditional cues for planning ordinary tasks. You may use them to begin a study routine, preparation or pending work.\n\nThis is not a monthly forecast or a calculated muhurta for marriage, travel or entering a home. Use only dates that exist in the month, and do not postpone necessary work because of a number."
+        }
+      },
+      {
+        "id": "wellbeing",
+        "title": {
+          "hi": "स्वास्थ्य और दिनचर्या",
+          "en": "Wellbeing and routine"
+        },
+        "text": {
+          "hi": "ऊर्जा के साथ विश्राम और संयम को भी स्थान दें। अपनी क्षमता के अनुरूप गतिविधि करें तथा जल्दबाजी में काम करने से बचें। स्वास्थ्य या चोट का फलादेश अंक के आधार पर नहीं दिया जा रहा है।",
+          "en": "Balance energy with rest and restraint. Choose activity suited to your capacity and avoid rushing tasks. This reading does not predict health conditions or injury."
+        }
+      },
+      {
+        "id": "devotion",
+        "title": {
+          "hi": "व्रत और उपासना",
+          "en": "Observance and devotion"
+        },
+        "text": {
+          "hi": "मंगलवार को भगवान हनुमान का स्मरण और मंगल के सरल मंत्र का पाठ श्रद्धानुसार किया जा सकता है। साहस के साथ विनम्रता और सेवा का भाव रखें। व्रत स्वैच्छिक है और निराहार रहना आवश्यक नहीं है।",
+          "en": "Tuesday remembrance of Hanuman and simple Mars mantra recitation may form a voluntary practice. Pair courage with humility and service. Observance is optional and need not involve fasting."
+        }
+      },
+      {
+        "id": "remedies",
+        "title": {
+          "hi": "सरल आचरण और उपाय",
+          "en": "Everyday practice and remedies"
+        },
+        "text": {
+          "hi": "अपनी ऊर्जा किसी उपयोगी सेवा या अधूरे काम को पूरा करने में लगाएँ। क्रोध में उत्तर देने से पहले विराम लें और मतभेद में सम्मान बनाए रखें। सामर्थ्य के अनुसार निःस्वार्थ सहायता इस अंक का सरल अभ्यास है।",
+          "en": "Direct energy towards useful service or finishing a pending task. Pause before replying in anger and keep disagreements respectful. Offer practical help within your capacity."
+        }
+      },
+      {
+        "id": "gemstone",
+        "title": {
+          "hi": "रत्न-विचार",
+          "en": "Gemstone context"
+        },
+        "text": {
+          "hi": "ऊपर दिया रत्न अंक-स्वामी का पारम्परिक संबंध बताता है। केवल मूलांक देखकर इसे धारण करने का व्यक्तिगत निर्देश नहीं दिया गया है। रत्न का निर्णय जन्मकुण्डली, ग्रह की भूमिका और व्यक्तिगत परिस्थिति का अलग विचार माँगता है। इस भाग से कोई खरीद या धारण-विधि निर्धारित नहीं होती।",
+          "en": "The gemstone above is a traditional correspondence of the number’s planet. It is not an individual recommendation to wear it. A gemstone decision requires separate consideration of the birth chart, planetary role and personal circumstances. This section sets no purchase or wearing instructions."
+        }
+      },
+      {
+        "id": "yantra",
+        "title": {
+          "hi": "अंक-यंत्र का परिचय",
+          "en": "Number yantra"
+        },
+        "text": {
+          "hi": "नीचे अंक-स्वामी से सम्बद्ध नौ-खानों का परम्परागत अंक-यंत्र दिखाया गया है। इसकी हर पंक्ति, स्तम्भ और दोनों विकर्णों का योग समान है। इसे उपासना के प्रतीक के रूप में समझें; यह जन्मतिथि का लो-शू ग्रिड नहीं है।\n\nयहाँ प्राण-प्रतिष्ठा, धारण या निश्चित फल मिलने का दावा नहीं किया गया है। श्रद्धा हो तो स्वच्छ स्थान पर इसका स्मरण कर सकते हैं; विशेष अनुष्ठान अलग मार्गदर्शन का विषय है।",
+          "en": "The nine-cell number yantra below corresponds to the number’s planet. Every row, column and both diagonals have the same sum. It is a devotional symbol, not a Lo Shu birth-date grid.\n\nNo consecration, wearing procedure or guaranteed result is prescribed. It may serve as a voluntary devotional reference; specific rituals require separate guidance."
+        }
+      }
+    ],
+    "yantra": [
+      [
+        8,
+        3,
+        10
+      ],
+      [
+        9,
+        7,
+        5
+      ],
+      [
+        4,
+        11,
+        6
+      ]
+    ]
+  }
+}

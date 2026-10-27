@@ -20,6 +20,9 @@ import devotional from "./locales/devotional-en.json";
 import puja from "./locales/puja-en.json";
 import vivah from "./locales/vivah-en.json";
 import video from "./locales/video-en.json";
+import kundliWording from "../../internal/platform/data/kundli-copy.json";
+import yogaConclusions from "../../internal/platform/data/yoga-conclusions.json";
+import numerologyWording from "../../internal/platform/data/numerology-copy.json";
 
 export type Language = "en" | "hi";
 const key = "m4y-language";
@@ -57,6 +60,7 @@ const catalog: Record<string, string> = {
 const hindi = Object.fromEntries(
   Object.entries(catalog).map(([hi, en]) => [en, hi]),
 );
+const kundliCopy: Record<string, { hi: string; en: string }> = { ...kundliWording, ...yogaConclusions, ...numerologyWording };
 /** getLanguage returns the language used by non-component formatting and request helpers. */
 export const getLanguage = () => currentLanguage;
 /** t looks up a translated string and interpolates its named variables. */
@@ -65,8 +69,9 @@ export function t(
   variables?: Record<string, string | number>,
 ): string {
   const source = value.trim();
+  const wording = kundliCopy[source] || kundliCopy[catalog[source]];
   const translated =
-    currentLanguage === "en"
+    wording ? wording[currentLanguage] : currentLanguage === "en"
       ? (catalog[source] ?? source)
       : (hindi[source] ?? source);
   const result =

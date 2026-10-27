@@ -1,0 +1,29 @@
+.remedy-pdf-download {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 0;
+}
+
+.remedy-pdf-download label {
+  display: grid;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.remedy-pdf-download select {
+  min-height: 42px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface, #fff);
+  color: inherit;
+}
+
+.remedy-pdf-error {
+  flex-basis: 100%;
+  color: var(--danger, #a02626);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}

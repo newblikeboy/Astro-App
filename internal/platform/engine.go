@@ -1,6 +1,7 @@
 package platform
 
 import (
+	"astroapp/backend/internal/numerology"
 	"astroapp/backend/internal/swisseph"
 	"fmt"
 	"sort"
@@ -109,6 +110,13 @@ func calculateReport(c Config, b Birth, rules map[string]Rule, now time.Time, ex
 		return nil, fmt.Errorf("birth date must not be in the future at the selected birthplace")
 	}
 	r := &Report{ID: id("r"), Birth: b, Place: p, Created: now, Engine: "m4y-kundli-v4", Rules: []Rule{}, Demo: !c.Production, Limitations: []string{"खगोलीय गणना और ज्योतिषीय व्याख्या अलग हैं। व्याख्या सांस्कृतिक चिंतन है, किसी परिणाम की गारंटी नहीं।"}}
+	// An older cached form may still send a separate spelling. New reports derive Naamank only from the main name.
+	r.Birth.NumerologyName = ""
+	numbers, err := numerology.CalculateFull(b.Date, b.Name)
+	if err != nil {
+		return nil, err
+	}
+	r.Numerology = &numbers
 	if b.Unknown {
 		r.Birth.Time = ""
 		r.Limitations = append(r.Limitations, "जन्म समय अज्ञात: लग्न, भाव, ग्रहों की निश्चित स्थिति, नक्षत्र और दशा विश्वसनीय रूप से नहीं दिए जा सकते। कोई काल्पनिक समय नहीं चुना गया है।")

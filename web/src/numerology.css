@@ -1,0 +1,33 @@
+.numerology-panel { min-width: 0; }
+.numerology-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 18px; margin: 20px 0; }
+.numerology-number { min-width: 0; border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+.numerology-number > header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.numerology-number h3 { margin: 0; }
+.numerology-value { font-size: 44px; line-height: 1.2; color: var(--burgundy, #751e30); }
+.numerology-number dl { margin: 18px 0; }
+.numerology-number dl > div { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.numerology-number dt { color: var(--muted); }
+.numerology-number dd { margin: 0; font-weight: 600; }
+.numerology-number p { line-height: 1.85; overflow-wrap: anywhere; }
+.numerology-working { padding-inline-start: 24px; line-height: 2; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.numerology-letter-working { font-variant-numeric: tabular-nums; }
+.numerology-profile { padding: 22px; background: var(--cream, #fcf8f0); border: 1px solid var(--line); border-radius: 12px; margin: 28px 0; }
+.numerology-profile h3 { margin-top: 0; }
+.numerology-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; margin: 18px 0; }
+.numerology-facts > div { padding: 12px 0; border-bottom: 1px solid var(--line); min-width: 0; }
+.numerology-facts dt { color: var(--muted); font-size: .88rem; margin-bottom: 5px; }
+.numerology-facts dd { margin: 0; line-height: 1.8; font-weight: 600; overflow-wrap: anywhere; }
+.numerology-guidance { display: grid; gap: 22px; }
+.numerology-guidance article { border-bottom: 1px solid var(--line); padding-bottom: 18px; min-width: 0; }
+.numerology-guidance h3 { margin: 0 0 12px; }
+.numerology-guidance p { line-height: 1.95; overflow-wrap: anywhere; }
+.numerology-panel .numerology-yantra { width: 210px; min-width: 0; max-width: 100%; table-layout: fixed; border-collapse: collapse; margin: 20px 0; color: var(--burgundy, #751e30); }
+.numerology-yantra caption { text-align: left; color: var(--muted); font-size: .85rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+.numerology-yantra td { border: 1px solid #b48b54; text-align: center; padding: 13px 8px; font-size: 20px; font-variant-numeric: tabular-nums; }
+@media (max-width: 650px) {
+  .numerology-grid { grid-template-columns: 1fr; }
+  .numerology-number { padding: 18px; }
+  .numerology-value { font-size: 38px; }
+  .numerology-facts { grid-template-columns: 1fr; }
+  .numerology-profile { padding: 18px; }
+}

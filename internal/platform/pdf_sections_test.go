@@ -32,13 +32,20 @@ func TestRemediesPDFSnapshotCoverageAndSafeText(t *testing.T) {
 			}
 		}
 	}
-	for _, id := range []string{"birth-details", "charts", "analysis", "ashtakavarga", "yogas", "dasha", "yogini", "transits", "reference"} {
+	for _, id := range []string{"numerology", "birth-details", "charts", "analysis", "ashtakavarga", "yogas", "dasha", "yogini", "transits", "reference"} {
 		if _, ok := byID[id]; !ok {
 			t.Errorf("missing snapshot section %s", id)
 		}
 	}
 	yogaBlocks := byID["yogas"].Blocks
-	if len(yogaBlocks[len(yogaBlocks)-1].Rows) != len(r.Checks) {
+	newBlocks := map[string]int{}
+	for _, block := range yogaBlocks {
+		newBlocks[block.Title] = len(block.Rows)
+	}
+	if newBlocks["कालसर्प दोष"] != 7 || newBlocks["राजयोग · केन्द्र–त्रिकोण सम्बन्ध"] != len(r.Details.YogaChecks.Rajyog.Pairs) {
+		t.Fatal("PDF lost new natal yoga evidence")
+	}
+	if len(yogaBlocks[len(yogaBlocks)-1].Rows) != len(r.Checks)-2 {
 		t.Fatal("lost core placement checks")
 	}
 	// D1 is on its own page. Remaining vargas, Moon and Chalit have actual charts; boundaries have a table only.
@@ -72,12 +79,12 @@ func TestRemediesPDFSnapshotCoverageAndSafeText(t *testing.T) {
 		t.Fatal(err)
 	}
 	var out bytes.Buffer
-	err = tmpl.Execute(&out, map[string]any{"Order": &Order{ID: "qa-order", Snapshot: r, Demo: true}, "Report": r, "Chart": pdfChart(r), "Sections": sections, "Links": pdfLinks("https://example.invalid", r.ID)})
+	err = tmpl.Execute(&out, map[string]any{"Order": &Order{ID: "qa-order", Snapshot: r, Demo: true}, "Report": r, "Chart": pdfChart(r), "Sections": sections, "Book": (pdfLocale{"hi"}).book(r, zone, sections), "Links": pdfLinks("https://example.invalid", r.ID)})
 	if err != nil {
 		t.Fatal(err)
 	}
 	html := out.String()
-	for _, expected := range []string{"पहला अनुच्छेद\nदूसरा अनुच्छेद &lt;script&gt;", r.Rules[0].Mantra, r.Rules[0].Gemstone, "QA approver", pdfDate(approved, zone), "page-frame", "white-space:pre-line", "<title>", "https://example.invalid/account/reports/"} {
+	for _, expected := range []string{"पहला अनुच्छेद\nदूसरा अनुच्छेद &lt;script&gt;", r.Rules[0].Mantra, r.Rules[0].Gemstone, "QA approver", pdfDate(approved, zone), "chapter-heading", "reader-guide", "white-space:pre-line", "<title>", "https://example.invalid/account/reports/"} {
 		if !strings.Contains(html, expected) {
 			t.Errorf("missing text or presentation contract: %s", expected)
 		}
@@ -91,6 +98,14 @@ func TestRemediesPDFSnapshotCoverageAndSafeText(t *testing.T) {
 	}
 }
 
+// TestNatalYogaPDFOlderDetails preserves missing-calculation status for old expanded snapshots.
+func TestNatalYogaPDFOlderDetails(t *testing.T) {
+	blocks := pdfNatalYogaBlocks(nil)
+	if len(blocks) != 1 || len(blocks[0].Rows) != 0 || !strings.Contains(blocks[0].Note, "जाँच उपलब्ध नहीं है") {
+		t.Fatal("old snapshot was given a fabricated assessment")
+	}
+}
+
 // TestRemediesPDFOlderSnapshotAndLinks ensures older reports remain printable and unsafe origins cannot become links.
 func TestRemediesPDFOlderSnapshotAndLinks(t *testing.T) {
 	a := testApp(t)
@@ -98,8 +113,18 @@ func TestRemediesPDFOlderSnapshotAndLinks(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	r.Numerology = nil // This fixture represents a snapshot created before date-based numerology existed.
 	sections := pdfSections(r, time.UTC)
-	if !strings.Contains(sections[0].Intro, "पुराने सुरक्षित संस्करण") {
+	var birthNote, numerologyNote string
+	for _, section := range sections {
+		if section.ID == "birth-details" {
+			birthNote = section.Intro
+		}
+		if section.ID == "numerology" {
+			numerologyNote = section.Intro
+		}
+	}
+	if !strings.Contains(birthNote, "पुराने सुरक्षित संस्करण") || !strings.Contains(numerologyNote, "गणना उपलब्ध नहीं है") {
 		t.Fatal("older snapshot silently implies expanded details exist")
 	}
 	for _, origin := range []string{"", "javascript:alert(1)", "//example.com"} {

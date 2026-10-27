@@ -75,7 +75,31 @@ auditable Vimshopaka weights, BAV/SAV and Prastara Ashtakavarga tables.
 Five-level Vimshottari timelines (Mahadasha, Antardasha, Pratyantar, Sukshma
 and Prana) and Yogini/Antardashas are available. The single-person Kundli
 reuses the audited Lagna/Moon/Venus Mangal assessment and adds eleven yoga
-placement patterns. Transits retain their timestamped snapshot, with an
+placement patterns. New calculations also include a versioned Kaal Sarp
+enclosure check with twelve house-based types and basic Kendra–Trikona Rajyog checks.
+The Numerology section records Mulank (birth day), Bhagyank (full birth date)
+and Chaldean Naamank (Latin name spelling), their reductions and number rulers.
+Naamank uses the main birth name, with no additional spelling field. Unsupported
+name scripts have an availability note. All nine Mulank profiles include original Hindi/English nature,
+work, surroundings, timing, routine, devotional and remedy readings, favourable
+correspondences and a planetary number yantra. Facts and prose are snapshotted;
+gemstone associations are not personal wearing prescriptions.
+It also works when birth time is unknown. The arithmetic and method are stored
+with new reports and printed in remedy PDFs; old snapshots are not backfilled.
+English/Hindi panels and selected-language PDF downloads lead with a personal
+conclusion and a plain-language traditional meaning, followed by the supporting
+positions and lord relationships. Absent, undecided and cancelled indications
+remain distinct; older reports need recreation for missing calculations.
+Purchased remedy PDFs offer an English/Hindi selector in the account. English
+downloads use the purchased English interpretation where supplied; original
+mantras and remedy instructions retain their saved wording. Existing Hindi
+files and purchase snapshots stay intact.
+The PDF opens as an illustrated book with a birth portrait, topic-by-topic
+personal readings, plain-language Yoga/Dosha conclusions, numerology and a Dasha
+reference. Full calculation tables follow in numbered appendices. Original
+Hindi/English chapter writing, linked contents, bookmarks and a restrained
+cream/burgundy design make the reading distinct from the technical evidence.
+Transits retain their timestamped snapshot, with an
 on-demand Sade Sati/Dhaiya timeline including retrograde exits/re-entries and
 labelled clipped edges. Faladesh reads
 applicable Guru Ji-approved content; missing approvals are shown transparently.

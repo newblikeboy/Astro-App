@@ -41,6 +41,7 @@ import type {
 } from "./types";
 import Chart from "./Chart";
 import PaymentView from "./PaymentView";
+import RemedyPDFDownload from "./RemedyPDFDownload";
 import LanguageSelector from "./LanguageSelector";
 import Brand from "./Brand";
 import CartLink from "./CartLink";
@@ -2036,13 +2037,7 @@ function AccountView({
                       </p>
                     </div>
                     {j?.status === "done" && (
-                      <a
-                        className="button secondary"
-                        href={`/api/orders/${o.id}/pdf`}
-                      >
-                        <Download size={17} />
-                        {t("PDF डाउनलोड")}
-                      </a>
+                      <RemedyPDFDownload orderId={o.id} />
                     )}
                   </article>
                 );

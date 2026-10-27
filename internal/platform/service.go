@@ -21,6 +21,7 @@ type App struct {
 	PDF              PDFRenderer
 	MatchingPDF      MatchingPDFRenderer
 	matchingPDFSlots chan struct{}
+	remedyPDFSlots   chan struct{}
 	Now              func() time.Time
 	limits           *limiter
 	daily            dailyCache
@@ -46,6 +47,7 @@ func NewApp(s *Store, c Config) *App {
 	a.PDF = ChromePDF{FontPath: c.FontPath, ChromePath: c.ChromePath, Origin: c.Origin}
 	a.MatchingPDF = ChromePDF{FontPath: c.FontPath, ChromePath: c.ChromePath, Origin: c.Origin}
 	a.matchingPDFSlots = make(chan struct{}, 1)
+	a.remedyPDFSlots = make(chan struct{}, 1)
 	return a
 }
 
