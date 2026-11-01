@@ -1,4 +1,5 @@
 import type { KundliDetails } from "./kundli-details-types";
+import type { GurujiFaladeshSnapshot } from "./guruji-faladesh-types";
 export type Birth = {
   name: string;
   date: string;
@@ -52,6 +53,7 @@ export type Rule = {
   demo: boolean;
 };
 export type Report = {
+  guruji_faladesh?: GurujiFaladeshSnapshot;
   numerology?: Numerology;
   details?: KundliDetails;
   id: string;
@@ -90,6 +92,7 @@ export type Report = {
   };
   checks?: { code: string; matches: boolean; house?: number }[];
   transits?: {
+    assessment?:{method:string;planets:{planet:string;from_moon:number;from_lagna:number;tara:number;tara_favourable:boolean;base_favourable:boolean;vedha_house?:number;blocked_by:string[];status:string}[]};
     as_of: string;
     planets: (Planet & { from_moon: number })[];
     sade_sati: "none" | "rising" | "peak" | "setting";

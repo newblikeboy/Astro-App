@@ -73,7 +73,8 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:11px;line
 <section class="reading-chapter" id="guidance">
 <div class="chapter-heading"><span class="chapter-number">02</span><div><div class="chapter-kicker">{{t "book.main-part"}}</div><h2>{{t "book.guidance"}}</h2></div></div>
 <p class="intro">{{t "book.guidance-intro"}}</p>
-{{range .Book.Topics}}<section class="topic-group" id="{{.ID}}"><div class="topic-heading"><h3>{{.Title}}</h3><p>{{.Intro}}</p></div>
+{{range .Book.Topics}}<section class="topic-group" id="{{.ID}}"><div class="topic-heading"><h3>{{.Title}}</h3>{{if .Intro}}<p>{{.Intro}}</p>{{end}}</div>
+{{range .Paragraphs}}<p class="rule-reading">{{.}}</p>{{end}}
 {{range .Rules}}<article class="rule"><h4>{{.Topic}}</h4><p class="rule-reading">{{ruleText .}}</p>
 {{if and (eq $.Language "en") (not (hasEnglish .))}}<p class="muted">English interpretation was not supplied in this saved version. The original text is retained above.</p>{{end}}
 {{if and (eq $.Language "en") (or .Mantra .Gemstone)}}<p class="muted">Mantras and remedy instructions below retain their original supplied language and wording.</p>{{end}}

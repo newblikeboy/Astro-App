@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import {
-  Check,
-  ChevronDown,
   Flame,
   Info,
   Layers3,
@@ -14,14 +12,10 @@ import {
 import ChartViewer from "./ChartViewer";
 import { hindiPlanets, signs } from "./Chart";
 import { t, useLanguage } from "./i18n";
-import { clockMinutes, minuteTimestamp } from "./time-display";
+import { clockMinutes } from "./time-display";
 import { followRoute, loginPath } from "./routing";
-import {
-  levelLabels,
-  mangalRuleLabels,
-  mangalStatusLabels,
-  referenceLabels,
-} from "./matching-display";
+import { mangalConclusion } from "./yoga-conclusions";
+import { mangalStatusLabels } from "./matching-display";
 import type {
   MangalAssessment,
   MatchingPerson,
@@ -47,18 +41,10 @@ export function MatchingMangal({ result }: { result: MatchingResponse }) {
             <Flame size={20} aria-hidden="true" />
             {t("Mangal analysis")}
           </h3>
-          <p>
-            {t(
-              "Named exceptions are shown separately. They never add points to the 36-point Ashtakoota total.",
-            )}
-          </p>
+
         </div>
       </div>
-      <p className="matching-mangal-convention">
-        {t(
-          "The six-house convention checks 1, 2, 4, 7, 8 and 12 from Lagna, Moon and Venus. One flagged reference is low coverage; two or three are high.",
-        )}
-      </p>
+
       <div className="matching-mangal-people">
         {roles.map((role) => (
           <MangalPerson
@@ -70,28 +56,19 @@ export function MatchingMangal({ result }: { result: MatchingResponse }) {
         ))}
       </div>
       <div className="matching-pair-summary">
-        <h4>{t("Pair-level exceptions")}</h4>
+        <h4>{t("Conclusion")}</h4>
         <strong>{t(mangalStatusLabels[result.mangal.status])}</strong>
-        <ul>
-          {result.mangal.rules
-            .filter((rule) => rule.met)
-            .map((rule) => (
-              <li key={rule.reference + rule.code}>
-                {t(referenceLabels[rule.reference])}:{" "}
-                {t(mangalRuleLabels[rule.code])}
-              </li>
-            ))}
-        </ul>
+
       </div>
-      <p className="matching-mangal-note">
+      {(!result.mangal.bride.strength||!result.mangal.groom.strength)&&<p className="matching-mangal-note">
         {t(
           "Full planetary strength and context-dependent exceptions still require a professional reading. A possible benefic-strength condition is not treated as a confirmed cancellation.",
         )}
-      </p>
+      </p>}
     </section>
   );
 }
-/** MangalPerson renders one participant's Lagna/Moon/Venus Mangal reference details. */
+/** MangalPerson shows the participant's saved Mangal conclusion and its practical meaning. */
 function MangalPerson({
   assessment: a,
   role,
@@ -107,78 +84,15 @@ function MangalPerson({
         {person.birth.name}
         <span>{nameOf(role)}</span>
       </h4>
-      <dl className="matching-mangal-levels">
-        <div>
-          <dt>{t("Raw reference level")}</dt>
-          <dd>
-            {t(levelLabels[a.base_level])}
-            <small>{t("{v0} of 3 references", { v0: a.base_count })}</small>
-          </dd>
-        </div>
-        <div>
-          <dt>{t("After selected exceptions")}</dt>
-          <dd>
-            {t(levelLabels[a.level])}
-            <small>{t("{v0} of 3 references", { v0: a.active_count })}</small>
-          </dd>
-        </div>
-      </dl>
-      {a.references.map((ref) => (
-        <div className="matching-mangal-row" key={ref.reference}>
-          <span>{t(referenceLabels[ref.reference])}</span>
-          <strong>{t("House {v0}", { v0: ref.house })}</strong>
-          <span
-            className={
-              ref.flagged && !ref.cancelled
-                ? "matching-position-flagged"
-                : "matching-position-clear"
-            }
-          >
-            {t(
-              ref.cancelled
-                ? "Exception applies"
-                : ref.flagged
-                  ? "Base placement"
-                  : "Outside the checked houses",
-            )}
-          </span>
-        </div>
-      ))}
+      <p className="natal-yoga-status">{mangalConclusion(a).status}</p>
+      <p>{mangalConclusion(a).meaning}</p>
       {a.review_conditions.length > 0 && (
         <p className="matching-strength-note">
           <Info size={14} aria-hidden="true" />
           {t("Benefic strength requires review")}
         </p>
       )}
-      <details className="matching-checked-rules">
-        <summary>
-          {t("Rules and exceptions checked")}
-          <ChevronDown size={15} aria-hidden="true" />
-        </summary>
-        <ul>
-          {a.rules.map((rule, i) => (
-            <li key={rule.code + rule.reference}>
-              <span>
-                {t(mangalRuleLabels[rule.code])}
-                {rule.reference !== "all" && (
-                  <> · {t(referenceLabels[rule.reference])}</>
-                )}
-              </span>
-              <small>
-                {rule.met ? (
-                  <Check size={13} aria-hidden="true" />
-                ) : (
-                  <X size={13} aria-hidden="true" />
-                )}
-                {t(rule.met ? "Condition met" : "Condition not met")}
-              </small>
-              <span className="sr-only">
-                {t("Source PDF page {v0}", { v0: rule.source_pdf_page })}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </details>
+
     </article>
   );
 }
@@ -261,7 +175,7 @@ export function MatchingCharts({ result }: { result: MatchingResponse }) {
   );
 }
 
-/** MatchingBirthDetails renders the recorded birth inputs and calculation conventions for both participants. */
+/** MatchingBirthDetails shows the participants' birth details and their saved astrological results. */
 export function MatchingBirthDetails({ result }: { result: MatchingResponse }) {
   const { language } = useLanguage();
   /** number formats matching birth-detail numeric values in the selected language. */
@@ -302,7 +216,7 @@ export function MatchingBirthDetails({ result }: { result: MatchingResponse }) {
       <div className="matching-section-heading">
         <div>
           <h3 id="matching-birth-metadata-heading">
-            {t("Verified birth inputs")}
+            {t("Birth details")}
           </h3>
         </div>
       </div>
@@ -316,19 +230,10 @@ export function MatchingBirthDetails({ result }: { result: MatchingResponse }) {
               "Birthplace",
               language === "hi" && p.place.hindi ? p.place.hindi : p.place.name,
             ],
-            ["IANA time zone", p.place.zone],
-            [
-              "Latitude / longitude",
-              `${number(p.place.lat)} / ${number(p.place.lon)}`,
-            ],
-            [
-              "Resolved local birth time",
-              minuteTimestamp(p.chart.birth_time, p.place.zone, language),
-            ],
-            [
-              "Resolved UTC instant",
-              minuteTimestamp(p.chart.utc, "UTC", language),
-            ],
+
+
+
+
             ["Lagna", t(signs[p.lagna.rashi_number - 1])],
             [
               "Lagna lord",
@@ -343,7 +248,7 @@ export function MatchingBirthDetails({ result }: { result: MatchingResponse }) {
             ],
             [
               "Birth Dasha balance",
-              `${t(hindiPlanets[p.dasha.birth_lord])} · ${t("{v0} years ({v1}-day year)", { v0: number(p.dasha.balance_years, 4), v1: p.dasha.year_days })}`,
+              `${t(hindiPlanets[p.dasha.birth_lord])} · ${number(p.dasha.balance_years, 4)} ${t("years remaining")}`,
             ],
           ];
           return (

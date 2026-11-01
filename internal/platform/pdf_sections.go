@@ -63,21 +63,6 @@ func pdfYes(value bool) string {
 	return "नहीं"
 }
 
-// pdfNames localizes a list of calculation labels while preserving its order.
-func pdfNames(values []string) string {
-	out := ""
-	for _, value := range values {
-		if out != "" {
-			out += " · "
-		}
-		out += pdfText(value)
-	}
-	if out == "" {
-		return "—"
-	}
-	return out
-}
-
 // date formats a stored instant with localized month names and minute precision in the birthplace zone.
 func (l pdfLocale) date(value time.Time, zone *time.Location) string {
 	if value.IsZero() {
@@ -130,7 +115,16 @@ func (l pdfLocale) periodBlocks(periods []swisseph.DashaPeriod, zone *time.Locat
 // Older purchases remain unchanged: unavailable expanded fields get an explicit availability note.
 func (l pdfLocale) sections(r *Report, zone *time.Location) []pdfSection {
 	sections := []pdfSection{l.numerologySection(r.Numerology)}
+	if r.GurujiFaladesh != nil {
+		if r.GurujiFaladesh.Analysis != nil {
+			sections = append(sections, l.combinedFaladeshSection(r.GurujiFaladesh.Analysis, zone))
+		}
+		sections = append(sections, l.gurujiSection(r.GurujiFaladesh))
+	}
 	d := r.Details
+	if d != nil && d.Shadbala != nil {
+		sections = append(sections, l.advancedStrengthSection(d.Shadbala, d.Qualifications))
+	}
 	if d == nil {
 		sections = append(sections, pdfSection{ID: "birth-details", Title: l.text("जन्म के विस्तृत विवरण"), Intro: l.text("इस पुराने सुरक्षित संस्करण में विस्तृत जन्म पंचांग, भाव चलित और वर्ग गणनाएँ उपलब्ध नहीं हैं। नए विवरण के लिए वेबसाइट पर नई कुंडली बनाएँ।")})
 	} else {

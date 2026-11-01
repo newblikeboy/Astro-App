@@ -173,7 +173,12 @@ func CalculatePlanetAnalysis(chart Kundali) PlanetAnalysis {
 		}
 		for i, name := range names {
 			matches := []bool{len(before) > 0, len(after) > 0, len(before) > 0 && len(after) > 0}[i]
-			planets := append(append([]string{}, before...), after...)
+			planets := append([]string{}, before...)
+			if i == 1 {
+				planets = append([]string{}, after...)
+			} else if i == 2 {
+				planets = append(planets, after...)
+			}
 			out.Patterns = append(out.Patterns, YogaPattern{Code: ref + "-neighbours-" + name, Name: name, Matches: matches, Planets: planets, Condition: "Classical planets other than the Sun/Moon in adjacent whole signs; presence pattern, not an outcome or strength assessment"})
 		}
 	}

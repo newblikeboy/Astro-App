@@ -12,7 +12,7 @@ export function numerologyWorking(number: NumerologyNumber): string[] {
   });
 }
 
-/** NumberReading explains one saved date number and keeps its arithmetic available below the meaning. */
+/** NumberReading shows a saved number, its ruler and its reader-facing meaning. */
 function NumberReading({ kind, number }: { kind: "mulank" | "bhagyank"; number: NumerologyNumber }) {
   return <article className="numerology-number" data-number-kind={kind}>
     <header>
@@ -21,11 +21,7 @@ function NumberReading({ kind, number }: { kind: "mulank" | "bhagyank"; number: 
     </header>
     <dl><div><dt>{t("Number ruler")}</dt><dd>{t(hindiPlanets[number.planet] || number.planet)}</dd></div></dl>
     <p>{t(`numerology.${kind}.${number.value}`)}</p>
-    <details className="detail-disclosure">
-      <summary>{t("Calculation details")}</summary>
-      <p>{t(`numerology.${kind}-explanation`)}</p>
-      <ol className="numerology-working">{numerologyWorking(number).map((step, i) => <li key={i}>{step}</li>)}</ol>
-    </details>
+
   </article>;
 }
 
@@ -55,11 +51,7 @@ export default function NumerologyPanel({ report }: { report: Report }) {
           {named ? <>
             <dl><div><dt>{t("numerology.name-used")}</dt><dd>{named.spelling}</dd></div><div><dt>{t("Number ruler")}</dt><dd>{t(hindiPlanets[named.number.planet] || named.number.planet)}</dd></div></dl>
             <p>{named.meaning[language]}</p>
-            <details className="detail-disclosure"><summary>{t("Calculation details")}</summary>
-              <p>{t("numerology.name-method")}</p>
-              <p className="numerology-letter-working">{named.letters.map((letter, i) => `${letter} = ${named.number.digits[i]}`).join(" · ")}</p>
-              <ol className="numerology-working">{numerologyWorking(named.number).map((step, i) => <li key={i}>{step}</li>)}</ol>
-            </details>
+
           </> : <p className="notice">{t("numerology.name-missing")}</p>}
         </article>}
       </div>
@@ -85,12 +77,7 @@ export default function NumerologyPanel({ report }: { report: Report }) {
         </div>
       </> : <p className="notice">{t("numerology.extended-missing")}</p>}
       <p className="report-caption">{t("numerology.scope")}</p>
-      <details className="detail-disclosure">
-        <summary>{t("Birth calculation reference")}</summary>
-        <p>{t("Birth date")}: {reading.birth_date.split("-").reverse().join("-")}</p>
-        <p>{t("numerology.method")}</p>
-        {extended && <><p>{t("numerology.name-method")}</p><p>{t("numerology.profile-method")}</p><p>{extended.method}</p></>}
-      </details>
+
     </>}
   </section>;
 }

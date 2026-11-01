@@ -51,7 +51,7 @@ const groups = [
   { id: "lagna", label: "Lagna & Panchaka", Icon: Orbit },
   { id: "directions", label: "Nivas & Shool", Icon: Compass },
 ];
-/** LunarFacts renders lunar-month/year facts and the calculation conventions returned by the native engine. */
+/** LunarFacts shows the saved lunar-month facts and local daily timings. */
 export function LunarFacts({
   details: d,
   stamp,
@@ -262,7 +262,6 @@ export default function PanchangDetails({
               {fact("Tropical Ayana", d.tropical_ayana)}
               {fact("Sidereal Ayana", d.sidereal_ayana)}
               {fact("Local midday", stamp(d.midday))}
-              {fact("Mean Lahiri ayanamsa", `${d.ayanamsa.toFixed(6)}°`)}
             </dl>
             <p className="daily-explainer">
               {t(
@@ -431,7 +430,7 @@ export default function PanchangDetails({
       </div>
       <p className="daily-boundary">
         {t(
-          "These calculations do not yet include regional festival dates or fasting and Parana decisions.",
+          "इस पेज पर त्योहार और व्रत-पारण की तिथियाँ शामिल नहीं हैं।",
         )}
       </p>
     </section>

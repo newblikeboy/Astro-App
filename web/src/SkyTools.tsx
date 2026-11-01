@@ -285,20 +285,15 @@ export default function SkyTools({
       <p className="daily-explainer">
         {isPositions
           ? t(
-              "Positions for the selected date and time, using the Lahiri sidereal zodiac. These are sky positions, independent of a birth chart.",
+              "चुनी हुई तारीख और समय पर ग्रहों की स्थिति।",
             )
-          : isCombustion ? t("Dates when planets enter or leave combustion under the declared Sun-separation limits. This traditional angular rule is not a forecast of naked-eye visibility.")
-          : isRetrograde ? t("Retrograde and direct station dates in the selected year. A motion phase may begin in one year and end in the next.")
+          : isCombustion ? t("चुने हुए वर्ष में ग्रहों की अस्त स्थिति बदलने की तिथियाँ।")
+          : isRetrograde ? t("चुने हुए वर्ष में ग्रहों के वक्री और मार्गी होने की तिथियाँ।")
           : t(
-              "Sign changes and motion changes throughout the selected year, including retrograde returns. Times use India's local clock, including historical timezone changes.",
+              "चुने हुए वर्ष में ग्रहों के राशि परिवर्तन और चाल बदलने की तिथियाँ।",
             )}
       </p>
-      {isRetrograde && <p className="daily-boundary">{t("Sun and Moon have no retrograde stations. Mean Rahu and Ketu remain retrograde and have no stations in this model.")}</p>}
-      {isCombustion && <details className="sky-method">
-        <summary>{t("Combustion calculation rules")}</summary>
-        <p>{t("Shortest geocentric longitude separation from the Sun, with inclusive limits: Moon 12°, Mars 17°, Mercury 14° (12° retrograde), Jupiter 11°, Venus 10° (8° retrograde), Saturn 15°. Sun, Rahu and Ketu are excluded.")}</p>
-        <p>{t("The limits match the Kundli report. A motion-dependent limit change is labelled separately from an angular crossing.")}</p>
-      </details>}
+
       {busy && (
         <p role="status" className="daily-status">
           {t("Calculating sky events…")}
@@ -382,11 +377,6 @@ export default function SkyTools({
               ))}
             </tbody>
           </table>
-          <p className="daily-boundary">
-            {t(
-              "Rahu is the mean lunar node; Ketu is opposite. The lunar nodes are calculated points, not physical planets.",
-            )}
-          </p>
         </>
       )}
       {ready && !isPositions && (
@@ -413,11 +403,6 @@ export default function SkyTools({
                       ) : (
                         <p>{sign(e.to_sign)}</p>
                       )}
-                      {isCombustion && <p className="sky-combustion-evidence">
-                        {t("Sun separation")}: {e.sun_separation?.toLocaleString(locale, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}°
-                        <span>{t("Combustion limit")}: {e.combust_limit}°</span>
-                        {e.boundary === "Motion-dependent limit" && <span>{t("Motion-dependent limit change")}</span>}
-                      </p>}
                     </div>
                     <span
                       className={
@@ -452,11 +437,7 @@ export default function SkyTools({
           )}
         </>
       )}
-      {ready && (
-        <small className="sky-engine">
-          Swiss Ephemeris {data.settings.swiss_version} · {data.settings.engine}
-        </small>
-      )}
+
     </div>
   );
 }

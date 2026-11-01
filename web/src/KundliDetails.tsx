@@ -17,11 +17,6 @@ import TimeRange from "./TimeRange";
 import NatalYogaChecks from "./NatalYogaChecks";
 import { mangalConclusion, placementConclusion } from "./yoga-conclusions";
 import { minuteTimestamp } from "./time-display";
-import {
-  mangalRuleLabels,
-  referenceLabels,
-  levelLabels,
-} from "./matching-display";
 import "./kundli-details.css";
 
 /** planet looks up a localized graha name for supplementary Kundli panels. */
@@ -86,8 +81,6 @@ export function BirthDetailsPanel({ report }: { report: Report }) {
     ["Yoni", t(c.yoni)],
     ["Gana", t(c.gana)],
     ["Nadi", t(c.nadi)],
-    ["Ayanamsa", `${b.ayanamsa.toFixed(6)}° · Lahiri`],
-    ["Julian day UT1", b.julian_day_ut1.toFixed(8)],
   ];
   return (
     <section className="kundli-details birth-details-panel">
@@ -176,11 +169,7 @@ export function BirthDetailsPanel({ report }: { report: Report }) {
           end={b.day_end}
           format={boundaryFormat}
         />
-        <small>
-          {t(
-            "Sunrise uses the solar centre without refraction, at zero elevation.",
-          )}
-        </small>
+
       </details>
       <div className="detail-section-heading">
         <Compass size={20} aria-hidden="true" />
@@ -194,34 +183,7 @@ export function BirthDetailsPanel({ report }: { report: Report }) {
           </div>
         ))}
       </dl>
-      <details className="detail-disclosure">
-        <summary>{t("Birth calculation reference")}</summary>
-        <p>
-          {t(
-            "Panchang boundaries are rounded to the nearest minute, consistently with the daily Panchang. Recorded instants retain their precision.",
-          )}
-        </p>
-        <dl className="fact-list">
-          <div>
-            <dt>{t("Ayanamsa")}</dt>
-            <dd>Lahiri · {b.ayanamsa.toFixed(6)}°</dd>
-          </div>
-          <div>
-            <dt>{t("Julian day UT1")}</dt>
-            <dd>{b.julian_day_ut1.toFixed(8)}</dd>
-          </div>
-          <div>
-            <dt>{t("Coordinates")}</dt>
-            <dd>
-              {report.place.lat.toFixed(5)}, {report.place.lon.toFixed(5)}
-            </dd>
-          </div>
-          <div>
-            <dt>{t("Birthplace time zone")}</dt>
-            <dd>{report.place.zone}</dd>
-          </div>
-        </dl>
-      </details>
+
     </section>
   );
 }
@@ -379,48 +341,10 @@ export function ExpandedKundliCharts({ report }: { report: Report }) {
               </tbody>
             </table>
           </div>
-          <details className="detail-disclosure">
-            <summary>{t("Chart calculation method")}</summary>
-            <p>
-              {chalit
-                ? details.chalit.method
-                : varga?.method || t("Natal signs counted from the Moon sign")}
-            </p>
-          </details>
+
         </section>
       </div>
-      {chalit && (
-        <details className="detail-disclosure">
-          <summary>{t("Bhava boundaries and middles")}</summary>
-          <div
-            className="table-scroll"
-            tabIndex={0}
-            role="region"
-            aria-label={t("Bhava boundaries and middles")}
-          >
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">{t("House")}</th>
-                  <th scope="col">{t("Start longitude")}</th>
-                  <th scope="col">{t("Bhava middle")}</th>
-                  <th scope="col">{t("End longitude")}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {details.chalit.houses.map((h) => (
-                  <tr key={h.house}>
-                    <th scope="row">{h.house}</th>
-                    <td>{h.start_longitude.toFixed(6)}°</td>
-                    <td>{h.middle_longitude.toFixed(6)}°</td>
-                    <td>{h.end_longitude.toFixed(6)}°</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </details>
-      )}
+
     </section>
   );
 }
@@ -464,6 +388,8 @@ export function PlanetAnalysisPanel({ report }: { report: Report }) {
               <h3>{planet(c.name)}</h3>
             </div>
             <strong className="dignity-label">{t(c.dignity)}</strong>
+            {details.shadbala?.planets.filter(row=>row.planet===c.name).map(row=><p key={row.planet}>{t(row.meets_requirement?"ग्रह की क्षमता को सहारा मिलता है।":"इस ग्रह से जुड़े काम में अधिक तैयारी और नियमित कोशिश जरूरी हो सकती है।")}</p>)}
+            {details.qualifications?.neechabhanga.filter(row=>row.planet===c.name&&row.debilitated&&row.cancelled).map(row=><p key={row.planet}>{t("नीच राशि होने के बावजूद कमजोरी को कम करने वाली स्थितियाँ भी हैं। केवल नीच राशि देखकर बुरा फल तय नहीं होता।")}</p>)}
             <dl>
               <div>
                 <dt>{t("Sign lord")}</dt>
@@ -478,9 +404,6 @@ export function PlanetAnalysisPanel({ report }: { report: Report }) {
                   <dt>{t("Combustion")}</dt>
                   <dd>
                     {t(c.combust ? "Combust" : "Not combust")}
-                    <small>
-                      {c.sun_separation.toFixed(2)}° / {c.combust_limit}°
-                    </small>
                   </dd>
                 </div>
               )}
@@ -499,7 +422,7 @@ export function PlanetAnalysisPanel({ report }: { report: Report }) {
       </div>
       <p className="muted">
         {t(
-          "A weighted score out of 20, based on ownership and natal compound friendships across sixteen divisional charts. This is distinct from Shadbala.",
+          "हर ग्रह की अनुकूलता का सार, 20 में से अंक।",
         )}
       </p>
       <div className="varga-strength-list">
@@ -522,54 +445,7 @@ export function PlanetAnalysisPanel({ report }: { report: Report }) {
           </article>
         ))}
       </div>
-      <details className="detail-disclosure">
-        <summary>{t("Varga weights and score breakdown")}</summary>
-        <p>
-          {t(
-            "Own-sign points: 20. Compound friendship points: 18, 15, 10, 7 or 5. Each contribution is weight × points ÷ 20; weights total 20.",
-          )}
-        </p>
-        {analysis.varga_strength.map((row) => (
-          <details key={row.planet} className="prastara-planet">
-            <summary>
-              {planet(row.planet)} · {row.total.toFixed(2)} / 20
-            </summary>
-            <div
-              className="table-scroll"
-              tabIndex={0}
-              role="region"
-              aria-label={
-                planet(row.planet) +
-                " " +
-                t("Varga weights and score breakdown")
-              }
-            >
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col">{t("Chart")}</th>
-                    <th scope="col">{t("Sign")}</th>
-                    <th scope="col">{t("Weight")}</th>
-                    <th scope="col">{t("Relationship")}</th>
-                    <th scope="col">{t("Contribution")}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {row.parts.map((part) => (
-                    <tr key={part.factor}>
-                      <th scope="row">D{part.factor}</th>
-                      <td>{sign(part.sign)}</td>
-                      <td>{part.weight}</td>
-                      <td>{t(part.relationship)}</td>
-                      <td>{part.contribution.toFixed(3)}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </details>
-        ))}
-      </details>
+
       <details className="detail-disclosure">
         <summary>{t("Graha drishti · planetary aspects")}</summary>
         <p>
@@ -655,7 +531,7 @@ export function PlanetAnalysisPanel({ report }: { report: Report }) {
       </div>
       <p className="muted">
         {t(
-          "Sarvashtakavarga points by zodiac sign. The seven planetary tables total 337 points; Lagna contributes to each table.",
+          "हर राशि के लिए अष्टकवर्ग के कुल अंक।",
         )}
       </p>
       <div className="sarva-grid">
@@ -710,51 +586,9 @@ export function PlanetAnalysisPanel({ report }: { report: Report }) {
             </tbody>
           </table>
         </div>
-        <p>
-          {t(
-            "These are unreduced BAV/SAV tables. Trikona and Ekadhipatya reductions are not applied.",
-          )}
-        </p>
+
       </details>
-      <details className="detail-disclosure">
-        <summary>{t("Prastara · contributor tables")}</summary>
-        {av.rows.map((row) => (
-          <details key={row.planet} className="prastara-planet">
-            <summary>{planet(row.planet)}</summary>
-            <div
-              className="table-scroll"
-              tabIndex={0}
-              role="region"
-              aria-label={planet(row.planet) + " " + t("Contributors")}
-            >
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col">{t("Contributors")}</th>
-                    {av.sarva.map((_, i) => (
-                      <th scope="col" key={i}>
-                        {sign(i + 1)}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {row.contributors.map((points, i) => (
-                    <tr key={i}>
-                      <th scope="row">
-                        {i === 7 ? t("Ascendant") : planet(av.sources[i])}
-                      </th>
-                      {points.map((n, j) => (
-                        <td key={j}>{n}</td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </details>
-        ))}
-      </details>
+
     </section>
   );
 }
@@ -777,73 +611,7 @@ export function ExpandedYogaPatterns({ report }: { report: Report }) {
             <p className="natal-yoga-status">{mangal?.status}</p>
             <p>{mangal?.meaning}</p>
           </div>
-          <details className="detail-disclosure">
-            <summary>{t("Calculation details")}</summary>
-          <p className="muted">
-            {t(
-              "The six-house convention checks 1, 2, 4, 7, 8 and 12 from Lagna, Moon and Venus. One flagged reference is low coverage; two or three are high.",
-            )}
-          </p>
-          <div className="birth-record-strip">
-            <span>
-              {t("Raw reference level")}
-              <strong>
-                {t(levelLabels[report.details.mangal.base_level])} ·{" "}
-                {report.details.mangal.base_count}/3
-              </strong>
-            </span>
-            <span>
-              {t("After selected exceptions")}
-              <strong>
-                {t(levelLabels[report.details.mangal.level])} ·{" "}
-                {report.details.mangal.active_count}/3
-              </strong>
-            </span>
-          </div>
-          <div className="mangal-reference-grid">
-            {report.details.mangal.references.map((ref) => (
-              <article key={ref.reference}>
-                <strong>{t(referenceLabels[ref.reference])}</strong>
-                <span>
-                  {t("House")} {ref.house}
-                </span>
-                <small>
-                  {t(
-                    ref.cancelled
-                      ? "Exception applies"
-                      : ref.flagged
-                        ? "Base placement"
-                        : "Outside the checked houses",
-                  )}
-                </small>
-                {ref.exceptions.length > 0 && (
-                  <ul>
-                    {ref.exceptions.map((code) => (
-                      <li key={code}>{t(mangalRuleLabels[code] || code)}</li>
-                    ))}
-                  </ul>
-                )}
-              </article>
-            ))}
-          </div>
-          <details className="detail-disclosure">
-            <summary>{t("Checked Mangal rules")}</summary>
-            <ul>
-              {report.details.mangal.rules.map((rule, i) => (
-                <li key={i}>
-                  {t(mangalRuleLabels[rule.code] || rule.code)} ·{" "}
-                  {t(rule.met ? "Condition met" : "Condition not met")}
-                </li>
-              ))}
-            </ul>
-            <code>{report.details.mangal_method}</code>
-          </details>
-          <p className="report-caption">
-            {t(
-              "Full planetary strength and context-dependent exceptions still require a professional reading. A possible benefic-strength condition is not treated as a confirmed cancellation.",
-            )}
-          </p>
-          </details>
+
         </div>
       )}
       <div className="detail-section-heading">
@@ -863,13 +631,8 @@ export function ExpandedYogaPatterns({ report }: { report: Report }) {
               </span>
             </div>
             <p>{placementConclusion(p.code, p.matches).meaning}</p>
-            <details className="detail-disclosure">
-              <summary>{t("Calculation details")}</summary>
-              <p>{t(p.condition)}</p>
-            {p.planets.length > 0 && (
-              <small>{p.planets.map(planet).join(" · ")}</small>
-            )}
-            </details>
+            {report.details?.qualifications?.yogas.find(y=>y.code===p.code&&y.base_present&&y.status==="qualified")&&<p>{t("यह योग मौजूद है, लेकिन उससे जुड़े ग्रहों की कमजोरी या दूसरी रुकावटों से उसका पूरा फायदा मिलने में मेहनत लग सकती है।")}</p>}
+
           </article>
         ))}
       </div>

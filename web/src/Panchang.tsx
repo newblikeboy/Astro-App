@@ -115,7 +115,7 @@ export default function Panchang({
   const [searchError, setSearchError] = useState(false);
   const [active, setActive] = useState(-1);
   const [date, setDate] = useState(today);
-  const [convention, setConvention] = useState("upper-limb");
+  const convention = "upper-limb";
   const [data, setData] = useState<Daily | null>(null);
   const [busy, setBusy] = useState(true);
   const [error, setError] = useState("");
@@ -705,42 +705,7 @@ export default function Panchang({
                 : "Sky event times use India's local clock, including historical timezone changes.",
             )}
           </p>
-          {isDaily && (
-            <details>
-              <summary>{t("Calculation settings")}</summary>
-              <div className="daily-settings">
-                <label htmlFor="daily-convention">{t("Sunrise method")}</label>
-                <select
-                  id="daily-convention"
-                  value={convention}
-                  onChange={(e) => setConvention(e.target.value)}
-                >
-                  <option value="upper-limb">
-                    {t("Upper limb · with refraction")}
-                  </option>
-                  <option value="hindu">
-                    {t("Hindu · centre, without refraction")}
-                  </option>
-                </select>
-                <p>
-                  {t(
-                    "Lahiri sidereal positions. Sea-level horizon; terrain and actual weather are not modelled. Display times are rounded to the nearest minute.",
-                  )}
-                </p>
-                <p>
-                  {t(
-                    "Moonrise and Moonset use the upper limb with refraction at sea level. Cross-provider Tithi and Karana timing differences remain under review.",
-                  )}
-                </p>
-                {data && (
-                  <small>
-                    Swiss Ephemeris {data.settings.swiss_version} ·{" "}
-                    {data.settings.engine} · {data.zone}
-                  </small>
-                )}
-              </div>
-            </details>
-          )}
+
         </div>
       </div>
     </section>

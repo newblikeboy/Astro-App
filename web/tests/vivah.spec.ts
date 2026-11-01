@@ -18,7 +18,7 @@ test("marriage windows use live calculations, shareable filters and browser hist
   const count = await page.locator(".vivah-day").count();
   expect(count).toBeGreaterThan(0);
   await expect(page.locator(".vivah-lagna dd").first()).toHaveText(/^(Taurus|Gemini|Virgo|Libra|Sagittarius|Pisces)$/);
-  await expect(page.locator(".vivah-method")).toContainText("complete method is still under review");
+  await expect(page.locator(".vivah-method,#vivah-sunrise")).toHaveCount(0);
   await page.screenshot({ path: "../.local/vivah-desktop.png", fullPage: true });
   const audit = await new AxeBuilder({ page }).include(".vivah-main").analyze();
   expect(audit.violations).toEqual([]);
@@ -31,16 +31,16 @@ test("marriage windows use live calculations, shareable filters and browser hist
   await page.goBack();
   await expect(page.locator("#vivah-month")).toHaveValue("2026-11");
   await expect(page.locator(".vivah-day")).toHaveCount(count);
-  await page.locator("#vivah-sunrise").selectOption("hindu");
+  await page.goto("/vivah-muhurat?month=2026-11&place_id=delhi&sunrise=hindu");
   await expect(page).toHaveURL(/sunrise=hindu/);
   await expect(page.locator(".vivah-day").first()).toBeVisible();
   await page.reload();
-  await expect(page.locator("#vivah-sunrise")).toHaveValue("hindu");
+  await expect(page.locator("#vivah-sunrise")).toHaveCount(0);
   await expect(page.locator(".vivah-day").first()).toBeVisible();
   await page.locator(".language-selector select").selectOption("hi");
   await expect(page.getByRole("heading", { name: "विवाह मुहूर्त", exact: true })).toBeVisible();
   await expect(page).toHaveTitle("विवाह मुहूर्त | Mishra 4 You");
-  await expect(page.locator(".vivah-method")).toContainText("गुरु और शुक्र");
+  await expect(page.locator(".vivah-method")).toHaveCount(0);
   await expect(page.locator(".vivah-count")).toContainText("प्रारंभिक समय");
   await expect(page.locator("#vivah-month")).toHaveValue("2026-11");
 });

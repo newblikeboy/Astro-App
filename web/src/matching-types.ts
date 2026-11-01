@@ -38,6 +38,7 @@ export type MangalRule = {
   source_pdf_page: number;
 };
 export type MangalAssessment = {
+  strength?:{method:string;conditions:{planet:string;eligible:boolean;ratio:number;confirmed:boolean;limitations:string[]}[]};
   references: {
     reference: "lagna" | "moon" | "venus";
     house: number;
@@ -62,6 +63,7 @@ export type MatchingProfile = {
 };
 
 export type MatchingResponse = {
+  exceptions?:{method:string;nadi:MatchingDosha;bhakoot:MatchingDosha};
   method: string;
   calculated_at: string;
   total: number;
@@ -80,3 +82,5 @@ export type MatchingResponse = {
   };
   summary: { band: string; review_codes: string[] };
 };
+
+export type MatchingDosha={code:string;status:"absent"|"present"|"cancelled";base_present:boolean;active:boolean;rules:{code:string;met:boolean;source_pdf_page:number}[]};

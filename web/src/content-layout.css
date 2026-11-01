@@ -1,4 +1,43 @@
 /* Content hierarchy and action placement, using the shared Bhagwa identity. */
+/* All public shells share the header's content edges, including lazy-loaded pages. */
+:root {
+  --page-width: 1320px;
+  --page-gutter: 40px;
+  --section-gap: 28px;
+}
+@media (max-width: 1100px) {
+  :root { --page-gutter: 30px; }
+}
+@media (max-width: 650px) {
+  :root { --page-gutter: 20px; --section-gap: 20px; }
+}
+@media (max-width: 370px) {
+  :root { --page-gutter: 12px; }
+  #root .site-header .nav-wrap { gap: 3px; }
+  #root .site-header .language-selector select { width: 44px; padding-inline: 2px; }
+}
+@media screen {
+  #root :is(.container, .nav-wrap, .matching-main, .vivah-main, .devotional-page) {
+    width: min(100%, var(--page-width));
+    max-width: var(--page-width);
+    margin-inline: auto;
+    padding-inline: var(--page-gutter);
+    min-width: 0;
+  }
+  #root .shop-container {
+    width: min(calc(100% - 2 * var(--page-gutter)), calc(var(--page-width) - 2 * var(--page-gutter)));
+    margin-inline: auto;
+    min-width: 0;
+  }
+  #root :is(.portal-header, .shop-header) {
+    padding-inline: max(var(--page-gutter), calc((100% - var(--page-width)) / 2 + var(--page-gutter)));
+  }
+}
+/* Keep the next action separate from every report tab's result surface. */
+#root .report-next {
+  margin-top: var(--section-gap);
+  min-width: 0;
+}
 /* Reserve room for Puja Vidhi beside the longer signed-in account label. */
 #root .site-header nav { gap: 3px; }
 #root .site-header nav button { padding-inline: 9px; }

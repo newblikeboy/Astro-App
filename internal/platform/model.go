@@ -68,22 +68,23 @@ type Rule struct {
 	Demo       bool       `json:"demo"`
 }
 type Report struct {
-	Numerology  *numerology.Reading   `json:"numerology,omitempty"`
-	ID          string                `json:"id"`
-	UserID      string                `json:"user_id"`
-	Birth       Birth                 `json:"birth"`
-	Place       Place                 `json:"place"`
-	Chart       *swisseph.Kundali     `json:"chart"`
-	Details     *KundliExpansion      `json:"details,omitempty"`
-	Navamsa     *swisseph.Navamsa     `json:"navamsa,omitempty"`
-	Dasha       *swisseph.Vimshottari `json:"dasha,omitempty"`
-	Checks      []PlacementCheck      `json:"checks,omitempty"`
-	Transits    *TransitSnapshot      `json:"transits,omitempty"`
-	Rules       []Rule                `json:"rules"`
-	Limitations []string              `json:"limitations"`
-	Created     time.Time             `json:"created"`
-	Engine      string                `json:"engine"`
-	Demo        bool                  `json:"demo"`
+	GurujiFaladesh *GurujiFaladesh       `json:"guruji_faladesh,omitempty"`
+	Numerology     *numerology.Reading   `json:"numerology,omitempty"`
+	ID             string                `json:"id"`
+	UserID         string                `json:"user_id"`
+	Birth          Birth                 `json:"birth"`
+	Place          Place                 `json:"place"`
+	Chart          *swisseph.Kundali     `json:"chart"`
+	Details        *KundliExpansion      `json:"details,omitempty"`
+	Navamsa        *swisseph.Navamsa     `json:"navamsa,omitempty"`
+	Dasha          *swisseph.Vimshottari `json:"dasha,omitempty"`
+	Checks         []PlacementCheck      `json:"checks,omitempty"`
+	Transits       *TransitSnapshot      `json:"transits,omitempty"`
+	Rules          []Rule                `json:"rules"`
+	Limitations    []string              `json:"limitations"`
+	Created        time.Time             `json:"created"`
+	Engine         string                `json:"engine"`
+	Demo           bool                  `json:"demo"`
 }
 type Order struct {
 	Gemstone     *GemstoneSale  `json:"gemstone,omitempty"`

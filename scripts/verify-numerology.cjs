@@ -24,7 +24,7 @@ async function guest(unknown) {
   return report;
 }
 
-/** verify checks bilingual meanings, arithmetic, mobile layout, unknown-time access and old-snapshot messaging. */
+/** verify checks saved arithmetic, reader-facing meanings without derivation panels, mobile access and historical snapshots. */
 async function verify() {
   const known = await guest(false);
   const unknown = await guest(true);
@@ -65,10 +65,7 @@ async function verify() {
       assert.equal(await page.locator("#numerology-heading").innerText(), copy.Numerology[language]);
       assert.equal(await page.locator(".numerology-panel .natal-yoga-status").innerText(), copy["numerology.summary"][language].replace("{v1}", "2").replace("{v2}", "1") + " " + copy["numerology.name-summary"][language].replace("{v1}", "7"));
       assert.deepEqual(await page.locator(".numerology-value").allTextContents(), ["2", "1", "7"]);
-      await page.locator(".numerology-number details").evaluateAll((nodes) => nodes.forEach((node) => { node.open = true; }));
-      assert.deepEqual(await page.locator('[data-number-kind="mulank"] li').allTextContents(), ["2 + 9 = 11", "1 + 1 = 2"]);
-      assert.deepEqual(await page.locator('[data-number-kind="bhagyank"] li').allTextContents(), ["2 + 9 + 1 + 1 + 1 + 9 + 9 + 5 = 37", "3 + 7 = 10", "1 + 0 = 1"]);
-      assert.deepEqual(await page.locator('[data-number-kind="naamank"] li').allTextContents(), ["2 + 1 + 1 + 1 + 2 + 1 + 2 + 6 = 16", "1 + 6 = 7"]);
+      assert.equal(await page.locator('.numerology-panel .detail-disclosure,.numerology-working,.numerology-letter-working').count(),0,'arithmetic/reference panels in reader view');
       assert.equal(await page.locator("[data-numerology-topic]").count(), 9);
       assert.equal(await page.locator(".numerology-facts > div").count(), 11);
       assert.deepEqual(await page.locator(".numerology-yantra td").allTextContents(), ["7", "2", "9", "8", "6", "4", "3", "10", "5"]);

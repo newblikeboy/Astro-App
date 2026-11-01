@@ -103,6 +103,48 @@ Transits retain their timestamped snapshot, with an
 on-demand Sade Sati/Dhaiya timeline including retrograde exits/re-entries and
 labelled clipped edges. Faladesh reads
 applicable Guru Ji-approved content; missing approvals are shown transparently.
+New known-time reports also include the supplied Guruji reference library:
+108 graha/house passages, nine general remedy references, and the whiteboard's
+lagna-specific Karak/Marak and uchcha/neecha evidence. The consultation view
+leads with readable subject paragraphs. General has its own personal-direction,
+strength, balance and priority reading; career, money and relationship detail
+stays in the corresponding tabs. Technical source disclosures are not part of
+the public reader. Original evidence remains inside retained report data.
+Dasha dates in that retained layout appear only in the Dasha topic. Repeated cards, extra topic links
+and general-practice blocks have been removed. House lords remain included
+even in empty houses. Teacher-role and dignity categories
+are kept separate from a final outcome judgement. Source v2 corrects a missed
+Mercury entry in the Pisces whiteboard transcription. New summaries are
+versioned inside the report; old snapshots retain their wording. See the
+[source and method notes](references/guruji/README.md) and
+[shastra comparison and remaining gaps](references/guruji/SHASTRA-REVIEW-2026-11-01.md).
+New expanded reports also retain a versioned cross-factor analysis: house
+lords, occupants, significators, conjunctions/aspects, dignity/combustion,
+dispositor and relevant divisional context are considered together. Each
+category shows connected conclusions, practical detail and a next step; period
+dates stay on the Dasha topic. New classifications separately retain the board
+role, sign number, primary sign status, independent exalted/debilitated/own-sign
+flags and D1 whole-sign house. Karak capacity is qualified by sign condition;
+Marak or neutral planets do not become automatically favourable when exalted.
+Mercury in Virgo retains both exalted and own-sign flags, even in house 12.
+See the [board role/sign/house rules and examples](references/guruji/ROLE-SIGN-HOUSE-METHOD.md).
+Supporting factors do not become compulsory remedies. Existing reports keep
+their previous reading. See the [combined method and limits](references/guruji/COMBINED-FALADESH-METHOD.md).
+The [1 November calculation audit](docs/FINAL-CALCULATION-AUDIT-2026-11-01.md)
+separates verified numerical features from the remaining interpretation,
+browser/PDF consistency and personalised Vivah gaps.
+The subsequent [advanced-assessment update](references/guruji/ADVANCED-ASSESSMENT-METHOD.md)
+adds six-component Shadbala, four explicit Neechabhanga conditions, strength
+qualifications for the supported yoga catalog, personal lunar Gochar/Vedha and
+separate Nadi/Bhakoot cancellation assessments. New v5 Faladesh freezes one
+bilingual paragraph contract for the website and PDF, resolves opposing subject
+evidence and selects optional source-linked practices only for an actual
+connected obstacle. Base matching scores, original planetary positions, board
+roles and purchased snapshots remain intact. These are declared conventions,
+not a claim to implement every traditional rule or guarantee personal events.
+The personalised Vivah gap is intentionally outside this update.
+See the [follow-up audit and verification record](references/guruji/ADVANCED-AUDIT-2026-11-01.md)
+for completed checks and the remaining convention boundaries.
 Admin rules support life-topic categories and compound chart conditions. See
 [calculation methods and supported limits](docs/CALCULATIONS.md). New remedy
 PDFs now print the available expanded snapshot, including birth Panchang,

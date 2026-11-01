@@ -26,12 +26,6 @@ func (l pdfLocale) chart(r *Report) template.HTML {
 	return l.placementChart(signs, placements)
 }
 
-// pdfPlacementChart draws whole-sign or Chalit houses using only numeric placements and owned glyphs.
-// Three labels per line keep crowded conjunctions inside their house rather than overflowing one text line.
-func pdfPlacementChart(signs [12]int, planets []swisseph.DivisionalPlacement) template.HTML {
-	return (pdfLocale{"hi"}).placementChart(signs, planets)
-}
-
 // placementChart renders the same saved placements with localized owned planet abbreviations.
 func (l pdfLocale) placementChart(signs [12]int, planets []swisseph.DivisionalPlacement) template.HTML {
 	centers := [][2]int{{150, 82}, {77, 30}, {28, 82}, {75, 152}, {28, 225}, {77, 275}, {150, 229}, {223, 275}, {272, 225}, {225, 152}, {272, 82}, {223, 30}}

@@ -15,9 +15,10 @@ type TransitPosition struct {
 	FromMoon int `json:"from_moon"`
 }
 type TransitSnapshot struct {
-	AsOf     time.Time         `json:"as_of"`
-	Planets  []TransitPosition `json:"planets"`
-	SadeSati string            `json:"sade_sati"`
+	Assessment *swisseph.TransitAssessment `json:"assessment,omitempty"`
+	AsOf       time.Time                   `json:"as_of"`
+	Planets    []TransitPosition           `json:"planets"`
+	SadeSati   string                      `json:"sade_sati"`
 }
 
 // placementChecks derives the report's labelled placement patterns from complete, validated chart references.
@@ -61,6 +62,9 @@ func transitSnapshot(natal, current swisseph.Kundali, at time.Time) TransitSnaps
 		}
 	}
 	out := TransitSnapshot{AsOf: at.UTC(), Planets: []TransitPosition{}, SadeSati: "none"}
+	if assessment, err := swisseph.CalculateTransitAssessment(natal, current); err == nil {
+		out.Assessment = &assessment
+	}
 	for _, p := range current.Planets {
 		if p.RashiNumber < 1 || p.RashiNumber > 12 {
 			continue

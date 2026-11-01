@@ -220,21 +220,20 @@ func CalculatePanchang(ctx context.Context, epheDir, date, zone, convention stri
 			return normalizeDegrees(v[1] + v[0]), nil
 		}
 	}
-	widths := [...]float64{12, 360.0 / 27, 360.0 / 27, 6}
 	counts := [...]int{30, 27, 27, 60}
 	lists := []*[]PanchangPeriod{&out.Tithi, &out.Nakshatra, &out.Yoga, &out.Karana}
-	for kind, width := range widths {
+	for kind, count := range counts {
 		start := rise
 		angle, err := value(kind, start)
 		if err != nil {
 			return Panchang{}, err
 		}
-		n := int(math.Floor(angle/width)) % counts[kind]
+		n := zodiacSegment(angle, count)
 		for steps := 0; steps < 6; steps++ {
 			// Use the same guarded solver as conjunction/sign searches. In
 			// particular, a target just ahead must not be skipped by an epsilon
 			// shortcut, and cancellation must also interrupt bisection.
-			end, err := monotoneCross(ctx, start, float64(n+1)*width, 1, 3,
+			end, err := monotoneCross(ctx, start, float64(n+1)*360/float64(count), 1, 3,
 				func(jd float64) (float64, error) { return value(kind, jd) })
 			if err != nil {
 				return Panchang{}, err

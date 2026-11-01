@@ -2,10 +2,8 @@ import { t } from "./i18n";
 import { useEffect, useRef, useState } from "react";
 import type { FormEvent } from "react";
 import {
-  ArrowRight,
   Check,
   Download,
-  FileText,
   IndianRupee,
   Info,
   RefreshCw,

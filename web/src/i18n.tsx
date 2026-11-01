@@ -20,6 +20,7 @@ import devotional from "./locales/devotional-en.json";
 import puja from "./locales/puja-en.json";
 import vivah from "./locales/vivah-en.json";
 import video from "./locales/video-en.json";
+import reader from "./locales/reader-en.json";
 import kundliWording from "../../internal/platform/data/kundli-copy.json";
 import yogaConclusions from "../../internal/platform/data/yoga-conclusions.json";
 import numerologyWording from "../../internal/platform/data/numerology-copy.json";
@@ -56,6 +57,7 @@ const catalog: Record<string, string> = {
   ...puja,
   ...vivah,
   ...video,
+  ...reader,
 };
 const hindi = Object.fromEntries(
   Object.entries(catalog).map(([hi, en]) => [en, hi]),

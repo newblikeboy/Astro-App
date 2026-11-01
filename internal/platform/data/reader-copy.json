@@ -1,0 +1,933 @@
+{
+  "version": "m4y-reader-copy-v1",
+  "headlines": {
+    "personality": [
+      {
+        "hi": "आप अपने फैसले खुद लेना और उनकी जिम्मेदारी उठाना अहम मानते हैं।",
+        "en": "Independence and taking responsibility for your decisions are central themes in your outlook."
+      },
+      {
+        "hi": "फैसले लेते समय आपके लिए परिवार का सुकून, अपनी बात की अहमियत और पैसों का भरोसा मायने रखता है।",
+        "en": "Family stability, the value of your words and material security strongly frame your decisions."
+      },
+      {
+        "hi": "आप अपनी मेहनत, बातचीत और करके सीखने से अपनी पहचान बनाना चाहते हैं।",
+        "en": "Your sense of identity is closely connected with initiative, communication and learning through practice."
+      },
+      {
+        "hi": "आपके लिए बाहर की सफलता के साथ घर में सुकून और अपनापन भी जरूरी है।",
+        "en": "A sense of belonging and peace at home matters alongside outside achievement."
+      },
+      {
+        "hi": "आप अपनी समझ से कुछ नया करना और अपने विचारों से पहचान बनाना चाहते हैं।",
+        "en": "Developing your own ideas and being recognised for how you think are central personal themes."
+      },
+      {
+        "hi": "मुश्किल काम सुलझाना और जिम्मेदारियाँ सँभालना आपके लिए अपनी पहचान का हिस्सा है।",
+        "en": "Solving practical problems and handling responsibilities are important parts of how you define yourself."
+      },
+      {
+        "hi": "फैसले लेते समय आप दूसरे व्यक्ति की राय और साथ को अहमियत देते हैं।",
+        "en": "Other people's responses and cooperation play a central part in how you make decisions."
+      },
+      {
+        "hi": "आप बात की तह तक जाना और बदलते हालात में अपना रास्ता समझना चाहते हैं।",
+        "en": "Looking beneath the surface and finding direction through change are central personal themes."
+      },
+      {
+        "hi": "आप अपने फैसले को किसी मकसद, विश्वास या सीख से जोड़कर देखना चाहते हैं।",
+        "en": "You tend to connect decisions with a clear purpose, conviction or lesson."
+      },
+      {
+        "hi": "आप अपने काम और जिम्मेदारी निभाने के तरीके से पहचान बनाना चाहते हैं।",
+        "en": "Being useful and responsible in your work is an important source of identity."
+      },
+      {
+        "hi": "लंबे समय के लक्ष्य, लोगों से जुड़ाव और अपनी मेहनत के नतीजे आपके लिए अहम हैं।",
+        "en": "Longer-term aims, connections and the results of your efforts strongly shape your direction."
+      },
+      {
+        "hi": "आपके लिए शांत जगह में अपने ढंग से तैयारी करना और मन की बात समझना अहम है।",
+        "en": "Private preparation, quiet space and inner clarity are important parts of your outlook."
+      }
+    ],
+    "education": [
+      {
+        "hi": "पढ़ाई में अपनी रुचि और खुद से कोशिश करना आपके लिए आगे बढ़ने का रास्ता है।",
+        "en": "Personal interest and independent initiative are the main route into learning for you."
+      },
+      {
+        "hi": "सीखी हुई बात को साफ समझाने और इस्तेमाल करने से आपकी पढ़ाई को रास्ता मिलता है।",
+        "en": "Learning gains direction when you turn it into clear expression and usable skills."
+      },
+      {
+        "hi": "आपके लिए रोज अभ्यास करना और छोटी चीजें करके सीखना पढ़ाई में मददगार है।",
+        "en": "Regular practice and small practical experiments are central to your learning."
+      },
+      {
+        "hi": "आपकी पढ़ाई में घर का माहौल और शुरू की बातें अच्छी तरह समझना अहम है।",
+        "en": "A supportive home setting and strong foundations matter to continuity in your studies."
+      },
+      {
+        "hi": "पढ़ाई में रुचि, समझ और सीखी हुई बात को नए तरीके से इस्तेमाल करना आपके लिए मददगार है।",
+        "en": "Interest, understanding and creative application are central learning themes."
+      },
+      {
+        "hi": "पढ़ाई में रुचि के साथ रोज का अभ्यास और मुकाबले की तैयारी भी जरूरी रहेगी।",
+        "en": "Interest needs to be matched by disciplined practice and preparation for competitive demands."
+      },
+      {
+        "hi": "शिक्षक या साथ पढ़ने वाले से सवाल-जवाब करके समझना आपके लिए मददगार है।",
+        "en": "Discussion with teachers or study partners is an important route to understanding."
+      },
+      {
+        "hi": "आप विषय को गहराई से समझना चाहते हैं; कठिन हिस्सों को छोटे भागों में बाँटना मदद करेगा।",
+        "en": "Depth of understanding matters; complex material needs to be broken into manageable stages."
+      },
+      {
+        "hi": "आगे की पढ़ाई, सही सलाह और पढ़ने का साफ मकसद आपको रास्ता देते हैं।",
+        "en": "Further study, suitable guidance and a clear purpose give direction to your education."
+      },
+      {
+        "hi": "पढ़ाई को असली काम और काम आने वाले हुनर से जोड़ना आपके लिए अहम है।",
+        "en": "Connecting study with practical work and professional skills is a central direction."
+      },
+      {
+        "hi": "पढ़ाई में साथ पढ़ने वाले लोग, जान-पहचान और आगे के लक्ष्य आपके लिए अहम हैं।",
+        "en": "Networks, fellow learners and longer-term aims play an important role in your education."
+      },
+      {
+        "hi": "पढ़ाई में अपने ढंग से तैयारी, दूर से सीखना और समय व साधन जुटाना आपके लिए अहम है।",
+        "en": "Independent preparation, distance and the investment of time or resources are central learning themes."
+      }
+    ],
+    "career": [
+      {
+        "hi": "करियर में खुद आगे बढ़ना और अपने फैसले की जिम्मेदारी लेना आपके लिए अहम है।",
+        "en": "Initiative and responsibility for decisions are central to your career direction."
+      },
+      {
+        "hi": "काम में आपकी बातचीत, जानकारी और साधन सँभालने की समझ अहम है।",
+        "en": "Communication, knowledge and handling resources are central to your work direction."
+      },
+      {
+        "hi": "आपके करियर में अपनी मेहनत, बातचीत और लगातार हुनर बढ़ाना अहम है।",
+        "en": "Your career direction is closely connected with initiative, communication and developing skills."
+      },
+      {
+        "hi": "काम में अच्छी व्यवस्था बनाना और लोगों या साधनों को सँभालना आपके लिए अहम है।",
+        "en": "Building a stable base and organising people or resources are central work themes."
+      },
+      {
+        "hi": "आप अपने विचार, समझ या नए समाधान देकर काम में अपनी पहचान बनाना चाहते हैं।",
+        "en": "Ideas, analysis and creative solutions are central ways of contributing at work."
+      },
+      {
+        "hi": "आपके करियर में रोज की जिम्मेदारियाँ, सेवा और मुश्किल काम सुलझाना अहम है।",
+        "en": "Regular responsibilities, service and solving practical problems are central career themes."
+      },
+      {
+        "hi": "आपके करियर में ग्राहकों, साझेदारी और लोगों के साथ सीधे काम करने की जगह अहम है।",
+        "en": "Clients, partnerships and working directly with people are central career themes."
+      },
+      {
+        "hi": "आपके काम में कठिन बातों को गहराई से समझना और बदलाव के बीच जिम्मेदारी सँभालना अहम है।",
+        "en": "Investigating complex problems and handling work through change are central career themes."
+      },
+      {
+        "hi": "करियर में किसी काम की अच्छी समझ, उसे सीखना और सही सलाह आपके लिए रास्ता बनाते हैं।",
+        "en": "Expertise, training and suitable guidance are central to your career direction."
+      },
+      {
+        "hi": "करियर में जिम्मेदारी, काम की गुणवत्ता और उससे बनी पहचान आपके लिए अहम हैं।",
+        "en": "Responsibility, work quality and professional identity are central career themes."
+      },
+      {
+        "hi": "अपने हुनर को सही लोगों तक पहुँचाना और उससे फायदा लेना आपके करियर में अहम है।",
+        "en": "Connecting your skills with suitable people and opportunities for return is central to your career."
+      },
+      {
+        "hi": "करियर में आपकी तैयारी और पर्दे के पीछे की मेहनत की पहचान होना अहम है। उसके सही पैसे मिलना भी आपके लिए जरूरी है।",
+        "en": "A central career theme is turning preparation and less visible work into recognition and an appropriate return."
+      }
+    ],
+    "finance": [
+      {
+        "hi": "पैसों के मामले में खुद कोशिश करना और कमाई के फैसलों की जिम्मेदारी लेना आपके लिए अहम है।",
+        "en": "Personal initiative and responsibility for earning decisions are central financial themes."
+      },
+      {
+        "hi": "पैसा जुटाना, उसे बचाना और परिवार की जरूरतों में लगाना आपके लिए अहम है।",
+        "en": "Building reserves and using them for family needs are central financial themes."
+      },
+      {
+        "hi": "आपकी कमाई में अपना हुनर, बातचीत और लगातार मेहनत अहम हैं।",
+        "en": "Skills, communication and sustained personal effort are central to your earning pattern."
+      },
+      {
+        "hi": "आपके पैसों के फैसले घर के सुकून और घरेलू जरूरतों से जुड़े हैं।",
+        "en": "Financial decisions are closely connected with home stability and domestic resources."
+      },
+      {
+        "hi": "आपकी कमाई में ज्ञान, विचार और कुछ नया करने की क्षमता अहम है।",
+        "en": "Knowledge, ideas and creative ability are central to your earning direction."
+      },
+      {
+        "hi": "पैसों के मामले में नियमित काम, मिलने वाली रकम और चुकाने वाले पैसों का हिसाब अहम है।",
+        "en": "Balancing regular work, payments and obligations is a central financial theme."
+      },
+      {
+        "hi": "आपकी कमाई में ग्राहकों, साझेदारी और दूसरे व्यक्ति के साथ तय शर्तों की जगह अहम है।",
+        "en": "Clients, partnerships and agreements with another person are central to your earning pattern."
+      },
+      {
+        "hi": "पैसों के मामले में साझा रकम और बदलती जरूरतों के लिए तैयार रहना अहम है।",
+        "en": "Shared resources and preparation for changing or uncertain needs are central financial themes."
+      },
+      {
+        "hi": "पैसों के मामले में आगे बढ़ने के लिए ज्ञान, सही सलाह और लंबे समय की योजना अहम हैं।",
+        "en": "Knowledge, guidance and longer-term direction are central to financial progress."
+      },
+      {
+        "hi": "आपकी कमाई काम की जिम्मेदारी, काम से बनी पहचान और मिलने वाले पैसों से जुड़ी है।",
+        "en": "Your financial direction is closely tied to professional responsibilities, reputation and payment."
+      },
+      {
+        "hi": "पैसों के मामले में लोगों से जुड़ाव, कमाई के मौके और अपनी मेहनत का फायदा लेना अहम है।",
+        "en": "Connections, earning opportunities and receiving a return for your efforts are central financial themes."
+      },
+      {
+        "hi": "कमाई में से बचत करना और पैसा कहाँ खर्च हो रहा है, यह समझना आपके लिए अहम है।",
+        "en": "Turning earnings into savings and identifying where resources are spent are central financial themes."
+      }
+    ],
+    "relationships": [
+      {
+        "hi": "रिश्ते में पास रहना और अपनी अलग पहचान बनाए रखना, दोनों आपके लिए जरूरी हैं।",
+        "en": "Maintaining your own identity alongside closeness is a central relationship need."
+      },
+      {
+        "hi": "रिश्ते में बातचीत, परिवार की उम्मीदें और पैसों का भरोसा आपके लिए अहम हैं।",
+        "en": "Communication, family expectations and material security meet in your relationship pattern."
+      },
+      {
+        "hi": "रिश्ते में नियमित बातचीत और दोनों ओर से कोशिश आपके लिए जरूरी हैं।",
+        "en": "Regular communication and effort from both people are central relationship needs."
+      },
+      {
+        "hi": "रिश्ते में भरोसा, अपनापन और मन का सुकून आपके लिए जरूरी हैं।",
+        "en": "Trust, belonging and emotional ease are central relationship needs."
+      },
+      {
+        "hi": "रिश्ते में प्यार, साथ का आनंद और मन की बात कहना आपके लिए अहम हैं।",
+        "en": "Affection, enjoyment together and sharing feelings are central relationship themes."
+      },
+      {
+        "hi": "रिश्ते में रोज की जिम्मेदारियाँ और मतभेद कैसे सँभलते हैं, यह आपके लिए अहम है।",
+        "en": "How everyday responsibilities and disagreements are handled is central to your relationship pattern."
+      },
+      {
+        "hi": "रिश्ते में बराबरी का साथ और मिलकर फैसले लेना आपके लिए जरूरी है।",
+        "en": "An equal partnership and shared decisions are central relationship needs."
+      },
+      {
+        "hi": "रिश्ते में भरोसा बढ़ाना और मन की चिंताएँ कहना आपके लिए जरूरी है।",
+        "en": "Deepening trust and expressing private concerns are central relationship needs."
+      },
+      {
+        "hi": "रिश्ते में मिलती-जुलती सोच, भरोसा और आगे की जिंदगी पर सहमति आपके लिए अहम हैं।",
+        "en": "Shared values, trust and agreement about the future are central relationship needs."
+      },
+      {
+        "hi": "रिश्ते में काम की जिम्मेदारियों के बीच साथ के लिए समय निकालना अहम है।",
+        "en": "Making room for togetherness alongside professional duties is a central relationship need."
+      },
+      {
+        "hi": "रिश्ते में दोस्ती, मिलते-जुलते लक्ष्य और एक-दूसरे की उम्मीद समझना अहम है।",
+        "en": "Friendship, shared aims and understanding each other's hopes are central relationship needs."
+      },
+      {
+        "hi": "रिश्ते में दूरी या अलग समय की जरूरत के बीच मन से जुड़े रहना अहम है।",
+        "en": "Maintaining emotional connection through distance or private time is a central relationship need."
+      }
+    ],
+    "family": [
+      {
+        "hi": "परिवार की जरूरतें और अपने फैसले साथ सँभालना आपके लिए अहम है।",
+        "en": "Balancing family needs with personal decisions is a central home theme."
+      },
+      {
+        "hi": "घर के सुकून में बातचीत, परिवार की सोच और पैसों की जिम्मेदारी अहम हैं।",
+        "en": "Communication, family values and financial responsibilities are central to stability at home."
+      },
+      {
+        "hi": "परिवार में रोज के काम बाँटना और समय पर बात करना अहम है।",
+        "en": "Sharing everyday tasks and keeping in touch are central family themes."
+      },
+      {
+        "hi": "घर में भरोसा, सुरक्षा और अपनापन आपके लिए अहम हैं।",
+        "en": "Creating a secure base and a sense of belonging are central home themes."
+      },
+      {
+        "hi": "परिवार में प्यार और बच्चों या पढ़ाई से जुड़े मिलकर लिए गए फैसले अहम हैं।",
+        "en": "Affection and shared decisions about children or learning are central family themes."
+      },
+      {
+        "hi": "परिवार में रोज की देखभाल और जिम्मेदारियाँ बाँटना अहम है।",
+        "en": "Everyday care and the division of responsibilities are central family themes."
+      },
+      {
+        "hi": "घर के फैसलों में जीवनसाथी या दूसरे व्यक्ति की राय के साथ तालमेल अहम है।",
+        "en": "Coordinating with a partner or another person's views is central to home decisions."
+      },
+      {
+        "hi": "परिवार में बदलते हालात और अनकही चिंताएँ सँभालना अहम है।",
+        "en": "Handling changing circumstances and unspoken concerns is central to your family pattern."
+      },
+      {
+        "hi": "परिवार की सीख, बड़ों की राय और आगे की योजना आपके लिए अहम हैं।",
+        "en": "Family values, elders' views and future direction meet in your home pattern."
+      },
+      {
+        "hi": "काम की जिम्मेदारी के साथ घर को समय देना आपके लिए अहम है।",
+        "en": "Balancing work responsibilities with time at home is a central family theme."
+      },
+      {
+        "hi": "परिवार में मदद, साझा लक्ष्य और उपलब्ध साधनों का सही इस्तेमाल अहम है।",
+        "en": "Cooperation, shared aims and the use of resources are central family themes."
+      },
+      {
+        "hi": "घर की जरूरतों के साथ दूरी, अपने समय या खर्च को सँभालना अहम है।",
+        "en": "Balancing distance, private time or spending with home needs is a central family theme."
+      }
+    ],
+    "wellbeing": [
+      {
+        "hi": "अपनी जरूरतों को समझना और उसी हिसाब से रोज की भागदौड़ सँभालना आपके लिए अहम है।",
+        "en": "Recognising your own needs and setting a manageable pace are central routine themes."
+      },
+      {
+        "hi": "रोज की जिंदगी में भोजन, नियमित आदतें और पैसों के भरोसे से मिलने वाला सुकून अहम है।",
+        "en": "Meals, familiar routines and a sense of material security are central everyday themes."
+      },
+      {
+        "hi": "व्यस्त दिन में छोटे विराम लेना और अपनी गति सँभालना अहम है।",
+        "en": "Short breaks and a manageable pace of daily effort are central routine themes."
+      },
+      {
+        "hi": "आराम के लिए घर का माहौल और मन का सुकून अहम हैं।",
+        "en": "The home environment and emotional ease are central to rest."
+      },
+      {
+        "hi": "रुचि के कामों के बीच दिमाग को आराम देना भी आपके लिए अहम है।",
+        "en": "Balancing absorbing interests with mental downtime is a central routine theme."
+      },
+      {
+        "hi": "रोज की जिम्मेदारियों के साथ आराम का समय तय रखना अहम है।",
+        "en": "Making regular room for rest alongside duties is a central routine theme."
+      },
+      {
+        "hi": "दूसरों की जरूरतों के साथ अपने समय की सीमा तय करना आपके लिए अहम है।",
+        "en": "Setting boundaries around other people's needs is central to managing your time."
+      },
+      {
+        "hi": "हालात बदलें तब भी रोज की कुछ अच्छी आदतें बनाए रखना अहम है।",
+        "en": "Maintaining a steady routine through changing circumstances is a central everyday theme."
+      },
+      {
+        "hi": "रोज के कामों को किसी मकसद और सीख से जोड़ना आपके लिए अहम है।",
+        "en": "Connecting your routine with purpose and learning is a central everyday theme."
+      },
+      {
+        "hi": "काम की जिम्मेदारी के साथ अपने लिए समय रखना आपके लिए अहम है।",
+        "en": "Balancing professional responsibilities with personal time is central to your routine."
+      },
+      {
+        "hi": "लक्ष्यों और लोगों को समय देते हुए अपनी ऊर्जा का ध्यान रखना अहम है।",
+        "en": "Protecting your energy while making time for aims and people is a central routine theme."
+      },
+      {
+        "hi": "आपके लिए शांत समय, पूरा आराम और अपनी जगह होना जरूरी है।",
+        "en": "Quiet time, adequate rest and personal space are central routine needs."
+      }
+    ]
+  },
+  "activities": [
+    {
+      "hi": "अपने रास्ते और निजी फैसलों",
+      "en": "personal direction and decisions"
+    },
+    {
+      "hi": "परिवार की जरूरतों और पास में मौजूद पैसों",
+      "en": "family needs and available resources"
+    },
+    {
+      "hi": "अपनी मेहनत, बातचीत और नए हुनर",
+      "en": "initiative, communication and new skills"
+    },
+    {
+      "hi": "घर की व्यवस्था और मन के सुकून",
+      "en": "home arrangements and emotional stability"
+    },
+    {
+      "hi": "पढ़ाई, विचारों और नए काम",
+      "en": "study, ideas and creative work"
+    },
+    {
+      "hi": "काम की उलझनें सुलझाने और रोज की जिम्मेदारियों",
+      "en": "work problems and everyday responsibilities"
+    },
+    {
+      "hi": "साझेदारी और मिलकर लिए जाने वाले फैसलों",
+      "en": "partnerships and shared decisions"
+    },
+    {
+      "hi": "पुराने कठिन मामलों और बदलते हालात",
+      "en": "complex unresolved matters and changing circumstances"
+    },
+    {
+      "hi": "आगे की योजना, नई चीजें सीखने और सही सलाह",
+      "en": "future direction, training and guidance"
+    },
+    {
+      "hi": "करियर की जिम्मेदारी और काम से बनी पहचान",
+      "en": "career responsibilities and professional identity"
+    },
+    {
+      "hi": "लोगों से जुड़ाव, कमाई के मौकों और आगे के लक्ष्यों",
+      "en": "connections, earning opportunities and longer-term aims"
+    },
+    {
+      "hi": "खर्च, अपनी तैयारी और आराम",
+      "en": "spending, private preparation and rest"
+    }
+  ],
+  "capacity": {
+    "care": {
+      "personality": {
+        "hi": "अपनी बात समझना और उसे दूसरे को समझा पाना अलग बातें हैं। दबाव में बात अधूरी रह जाए तो अपनी जरूरत किसी उदाहरण से समझाकर देखें। इसे हमेशा की कमजोरी न मानें।",
+        "en": "Understanding your own view and communicating it are separate tasks. Under pressure, explaining your needs with an example may help; this does not establish a permanent personal weakness."
+      },
+      "education": {
+        "hi": "विषय अच्छा लगने पर भी लगातार अच्छा करने के लिए ज्यादा अभ्यास लग सकता है। छोटे लक्ष्य बनाएँ, लिखकर अभ्यास करें और बीच-बीच में तैयारी जाँचें। बात समझ आ गई है, इसका मतलब तैयारी पूरी हो गई है, ऐसा न मानें।",
+        "en": "Interest may still need extra practice before it becomes consistent performance. Use small goals, written practice and regular review rather than treating understanding alone as complete preparation."
+      },
+      "career": {
+        "hi": "काम समझना और अपनी मेहनत की पहचान मिलना अलग बातें हैं। आपकी मेहनत दूसरों को साफ न दिख रही हो तो किए गए काम का रिकॉर्ड रखें। पहले तय करें कि आपको क्या करना है और उसका क्या नतीजा चाहिए।",
+        "en": "Understanding a task and having your contribution recognised are separate stages. If your work is not being communicated clearly, document your contribution and agree responsibilities and expected outcomes."
+      },
+      "finance": {
+        "hi": "कमाई का मौका मिलना और उसमें से नियमित बचत करना अलग बातें हैं। जो पैसा अभी मिलना बाकी है, उसे मिल चुका मानकर योजना न बनाएँ। पहले साफ करें कि कितनी रकम आई है और कितना खर्च हुआ है।",
+        "en": "Turning earning potential into steady savings needs separate discipline. Keep expected income distinct from money already received and clarify actual receipts and expenses."
+      },
+      "relationships": {
+        "hi": "पास रहना चाहने पर भी अपनी बात और उम्मीदें समझाने में ज्यादा कोशिश लग सकती है। दूसरे व्यक्ति के अपने-आप समझ लेने का इंतजार न करें। एक बात पर पूरी बातचीत करें; इस संकेत का मतलब रिश्ता टूटना नहीं है।",
+        "en": "Wanting closeness may still require extra effort to express needs and expectations. Discuss one issue fully rather than expecting your partner to infer it; this does not establish a separation."
+      },
+      "family": {
+        "hi": "घर की जिम्मेदारी निभाना और अपनी जरूरत समझाना अलग बातें हैं। सब कुछ चुपचाप सँभाल रहे हों तो बात करें कि काम कैसे बाँटेंगे और आप कितना समय दे सकते हैं। इससे मदद की जरूरत अनकही नहीं रहेगी।",
+        "en": "Handling home duties and expressing your own needs are separate tasks. If too much is being carried silently, clarify responsibilities and availability so the need for support is not left unspoken."
+      },
+      "wellbeing": {
+        "hi": "रोज की आदतें सुधारने की इच्छा को निभाने के लिए छोटे बदलाव जरूरी होंगे। काम के कारण अपना समय कम पड़ता हो तो आराम का समय पहले तय करें। आराम को सारे कामों के बाद बचा हुआ समय न मानें।",
+        "en": "Good intentions about routine need small, practical changes. If responsibilities keep displacing personal time, give rest a planned place rather than relying on whatever time remains."
+      }
+    },
+    "strength": {
+      "personality": {
+        "hi": "अपने विचार पर आगे बढ़ने में मदद करने वाले संकेत भी हैं। किसी एक चुने हुए काम को पूरा करने पर ध्यान दें। एक साथ बहुत-सी बातों में बँटने से इस मौके का पूरा फायदा नहीं मिल पाएगा।",
+        "en": "There is also support for giving direction to your ideas. Use the room for initiative by completing a chosen task rather than splitting attention across too many priorities."
+      },
+      "education": {
+        "hi": "समझ बढ़ाने और सही सलाह का इस्तेमाल करने में मदद करने वाले संकेत भी हैं। सीखी हुई बात को अभ्यास, किसी काम या पढ़ाई के साफ लक्ष्य में इस्तेमाल करें। इससे पढ़ाई का फायदा ज्यादा साफ दिखेगा।",
+        "en": "There is support for developing understanding and using guidance. Turn that support into practice, a project or a clear learning goal."
+      },
+      "career": {
+        "hi": "जिम्मेदारी सँभालने में मदद करने वाले संकेत भी हैं। इसका मतलब अपने-आप पद या सफलता मिलना नहीं है। सही काम चुनना और अपनी मेहनत का साफ सबूत दिखाना भी जरूरी होगा।",
+        "en": "There is also support for handling responsibility. This does not automatically confer a position or success; a suitable role and clear evidence of your work matter."
+      },
+      "finance": {
+        "hi": "पैसे और साधन सँभालने में मदद करने वाले संकेत भी हैं। कमाई बढ़ाने के साथ मिले हुए पैसों में से नियमित बचत अलग रखें। इससे इस क्षमता का बेहतर इस्तेमाल होगा।",
+        "en": "There is also support for managing resources. Use it by setting aside regular savings from actual receipts as well as considering earning opportunities."
+      },
+      "relationships": {
+        "hi": "साथ निभाने और एक-दूसरे को समझने में मदद करने वाले संकेत भी हैं। इससे दूसरे व्यक्ति के व्यवहार की गारंटी नहीं मिलती। भरोसा बढ़ाने के लिए समय, बातचीत और दोनों की कोशिश जरूरी होगी।",
+        "en": "There is also support for cooperation and shared understanding. This cannot guarantee another person's behaviour; trust still needs time, communication and participation from both people."
+      },
+      "family": {
+        "hi": "घर सँभालने और मदद करने में सहारा देने वाले संकेत भी हैं। जिम्मेदारियाँ बाँटकर इसका अच्छा इस्तेमाल करें। इससे परिवार का पूरा बोझ किसी एक व्यक्ति पर नहीं रहेगा।",
+        "en": "There is also support for organisation and contribution at home. Use it to share duties so family support does not become one person's entire burden."
+      },
+      "wellbeing": {
+        "hi": "रोज की अच्छी आदतें बनाने में मदद करने वाले संकेत भी हैं। अपनी ऊर्जा के हिसाब से छोटा और निभ सकने वाला क्रम चुनें। इससे किसी बीमारी के होने या न होने की पुष्टि नहीं होती।",
+        "en": "There is support for establishing a routine. Choose small, sustainable steps suited to your energy; this is not evidence of a health condition."
+      }
+    }
+  },
+  "general": {
+    "direction": [
+      {
+        "hi": "आपके लिए अपने फैसले खुद लेना और उनकी जिम्मेदारी उठाना अहम है। कोई रास्ता तभी अपनाना आसान होगा जब वह आपको खुद सही लगे। खुद पर भरोसा रखें और जरूरत पड़ने पर दूसरों की मदद भी लें, ताकि हर बात अकेले न सँभालनी पड़े।",
+        "en": "Personal initiative and responsibility for decisions are central to your life direction. A direction needs to feel personally meaningful for you to sustain it. Keep room for suitable support alongside self-reliance so that every step need not be managed alone."
+      },
+      {
+        "hi": "आपके लिए जीवन में भरोसा और ठहराव बनाए रखना अहम है। आगे बढ़ने के साथ यह भी मायने रखता है कि जो हासिल किया है, वह लंबे समय तक बना रहे। ऐसे फैसले लें जिनसे नई चीजें करने का मौका मिले और जरूरी चीजें भी संभली रहें।",
+        "en": "Building and gradually strengthening a stable foundation is central to your life direction. The value of a goal lies partly in the continuity it creates, alongside new achievement. Decisions that allow development while preserving an essential base are especially relevant."
+      },
+      {
+        "hi": "आप अपने प्रयास और अनुभव से रास्ता बनाना पसंद करते हैं। हर बात पहले से साफ होने का इंतजार करने की जगह छोटी शुरुआत करना मददगार हो सकता है। हर कोशिश से जो सीख मिले, उसे अगली बार इस्तेमाल करें।",
+        "en": "Your life direction connects with creating a path through effort and refining it through experience. A small beginning may be more useful than waiting for complete certainty. Learning from each attempt is central to deciding the next step."
+      },
+      {
+        "hi": "आपके लिए सुकून और भरोसे वाली जगह होना अहम है। आगे की सफलता तभी अच्छी लगेगी जब रोज की जिंदगी में उसे सँभालने की जगह भी हो। कोई रास्ता चुनते समय यह भी देखें कि उसे निभाने के लिए आपके पास कितना समय और सहारा है।",
+        "en": "Creating a dependable base and a sense of ease is central to your life direction. Achievement may feel more meaningful when there is enough stability to sustain it. Consider your actual room to follow a direction alongside outside expectations."
+      },
+      {
+        "hi": "आप अपनी सोच के अनुसार कुछ करना चाहते हैं। जिस काम में आपकी रुचि हो और अपनी बात जोड़ने की जगह मिले, उसमें आगे बढ़ना आपके लिए ज्यादा मायने रखता है। कोई लक्ष्य चुनें तो पहले समझें कि उससे आप खुद क्या सीखना या बनाना चाहते हैं।",
+        "en": "Giving shape to your ideas and making room for an individual contribution are central to your life direction. A direction is more meaningful when it includes both interest and personal input. Clarify what you want to develop in a goal before committing to it."
+      },
+      {
+        "hi": "आपके लिए मुश्किलें सुलझाते हुए धीरे-धीरे आगे बढ़ना अहम है। नियमित मेहनत और अधूरे काम एक-एक करके पूरे करना इसमें मदद करेगा। नई जिम्मेदारी लेने से पहले देखें कि उसके लिए समय कैसे निकालेंगे।",
+        "en": "Strengthening your position by working through difficulties is central to your life direction. Regular effort and addressing unfinished matters in sequence are important parts of progress. Make room to sustain a responsibility before accepting another one."
+      },
+      {
+        "hi": "आपके लिए खुद आगे बढ़ना और दूसरों का साथ लेना, दोनों अहम हैं। हर फैसला अकेले लेना जरूरी नहीं है। किसी के साथ मिलकर आगे बढ़ें तो यह साफ रखें कि आप क्या चाहते हैं और कितना कर सकते हैं।",
+        "en": "Combining personal initiative with cooperation is central to your life direction. Not every decision needs to be made alone, while leaving your direction entirely to someone else's expectations can create difficulty. Keep your own purpose and boundaries clear within shared efforts."
+      },
+      {
+        "hi": "हालात बदलें तो आप उन्हें समझकर अपना रास्ता फिर तय करना चाहेंगे। किसी दौर से मिली सीख भी आगे काम आती है, भले वह दौर लंबे समय तक न चला हो। ऐसा समय आए तो यह अलग करके देखें कि आपकी मंजिल क्या है और वहाँ पहुँचने का तरीका क्या हो सकता है।",
+        "en": "Understanding changing circumstances and reorganising a path are central to your life direction. A phase has value through what it teaches as well as through continuity. Distinguish the underlying purpose from the way of pursuing it when circumstances change."
+      },
+      {
+        "hi": "आपके लिए यह समझना जरूरी है कि आप कोई रास्ता क्यों चुन रहे हैं। सिर्फ आगे बढ़ने के साथ उस रास्ते का मतलब भी मायने रखता है। नई बातें सीखते रहें और जो रास्ता सही लगे, उसे कुछ समय देकर देखें।",
+        "en": "Connecting decisions with a clear purpose and understanding is central to your life direction. Moving forward alone may not feel sufficient; the meaning and reason behind a path also matter. Use growing understanding to sustain a suitable direction."
+      },
+      {
+        "hi": "आप जिम्मेदारी लेकर अपनी जगह बनाना चाहते हैं। इसके लिए यह साफ होना जरूरी है कि आपको क्या करना है और उसे करने के लिए क्या मदद मिल सकती है। ज्यादा जिम्मेदारियाँ लेने के साथ चुने हुए काम को लगातार निभाने पर भी ध्यान दें।",
+        "en": "Building your place through responsibility is central to your life direction. Clarity about your role and the means to sustain it matter alongside progress. Develop your direction through continuity rather than measuring your identity by the number of duties accepted."
+      },
+      {
+        "hi": "आपके लिए लंबे समय के लक्ष्य और सही लोगों का साथ अहम हैं। अपने लक्ष्य से जुड़े लोगों और मौके पहचानना मददगार रहेगा। कई मौके मिलें तो पहले तय करें कि किसे समय देने से आपका सबसे जरूरी काम आगे बढ़ेगा।",
+        "en": "Longer-term aims and the support that helps advance them are central to your life direction. Connect your purpose with suitable people and real opportunities. When several possibilities appear, choose the one that advances the underlying priority."
+      },
+      {
+        "hi": "आपके लिए पहले अपने ढंग से तैयारी करना और फिर सही समय पर आगे बढ़ना अहम है। तैयारी का हर हिस्सा तुरंत दूसरों को दिखाई नहीं देता। सीखने के लिए समय लें और फिर उसे आजमाकर भी देखें, ताकि बात केवल सोचने तक न रुके।",
+        "en": "Private preparation followed by a suitable step forward is central to your life direction. Not every stage has an immediately visible contribution; some understanding develops in preparation. Balance that preparation with action so the direction does not remain an idea alone."
+      }
+    ],
+    "axes": [
+      "initiative",
+      "stability",
+      "initiative",
+      "stability",
+      "exploration",
+      "responsibility",
+      "cooperation",
+      "adaptation",
+      "exploration",
+      "responsibility",
+      "cooperation",
+      "adaptation"
+    ],
+    "needs": {
+      "initiative": {
+        "hi": "अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना",
+        "en": "independent decisions and initiative"
+      },
+      "stability": {
+        "hi": "भरोसा और रोज की जिंदगी में ठहराव बनाए रखना",
+        "en": "a dependable foundation and continuity"
+      },
+      "exploration": {
+        "hi": "अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना",
+        "en": "developing ideas and understanding the purpose of a direction"
+      },
+      "responsibility": {
+        "hi": "जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना",
+        "en": "handling responsibilities and seeing them through"
+      },
+      "cooperation": {
+        "hi": "सही लोगों का साथ लेना और मिलकर आगे बढ़ना",
+        "en": "suitable support and shared effort"
+      },
+      "adaptation": {
+        "hi": "बदलते हालात में खुद को समय देना और तैयारी करना",
+        "en": "room to prepare and adapt through change"
+      }
+    },
+    "strength": {
+      "initiative": {
+        "hi": "खुद शुरुआत करना और अनुभव से सीखना आपके लिए आगे बढ़ने का एक सहारा है। कोई लक्ष्य अपना लगे तो उसके लिए एक छोटा और साफ कदम चुनें। इससे शुरुआत के लिए हर हालात के ठीक होने का इंतजार नहीं करना पड़ेगा।",
+        "en": "The practical resource in this direction is room to begin and choose the next step through experience. Turn a meaningful purpose into a small, clear effort. This makes progress less dependent on waiting for ideal circumstances."
+      },
+      "stability": {
+        "hi": "किसी चीज को समय देकर मजबूत करना आपके लिए मददगार है। शुरुआत धीमी हो तो जो कर सकते हैं, उसे लगातार करते रहें। एक बार में बड़ा बदलाव करने की जगह छोटे कदम रोज निभाना ज्यादा काम आ सकता है।",
+        "en": "The resource in this direction lies in developing a foundation over time. Strengthen what can be sustained even when the beginning is gradual. Connected small steps can provide more continuity than one large change."
+      },
+      "exploration": {
+        "hi": "बात को समझना और अपनी सोच को इस्तेमाल में लाना आपके लिए मददगार है। कोई विचार अच्छा लगे तो उसे छोटे स्तर पर करके देखें। फिर जो सीख मिले, उससे अपना तरीका सुधारें; हर नई बात पर पूरी योजना बदलना जरूरी नहीं है।",
+        "en": "The resource in this direction lies in developing understanding and giving ideas a useful form. Test a possibility in a small experiment rather than leaving it in thought alone. Refine the approach through experience without abandoning the underlying direction with every new lesson."
+      },
+      "responsibility": {
+        "hi": "नियमित मेहनत और शुरू की हुई बात को पूरा करना आपके लिए मददगार है। बड़ा लक्ष्य हो तो उसके छोटे काम तय करें और समझें कि उनमें आपको क्या करना है। ऐसी योजना बनाएँ जिसे रोज की जिम्मेदारियों के साथ निभा सकें।",
+        "en": "The resource in this direction is sustained effort and following matters through. A larger aim becomes manageable when the next steps and your role are clear. Build an arrangement that allows both progress and sustainable responsibilities."
+      },
+      "cooperation": {
+        "hi": "आप जो करना चाहते हैं, उसके लिए सही मदद पहचानना आपके लिए काम आएगा। मदद लेते हुए भी अपने फैसले में अपनी राय रख सकते हैं। साथ मिलकर कुछ करें तो पहले साफ करें कि कौन क्या करेगा और उससे लक्ष्य कैसे आगे बढ़ेगा।",
+        "en": "The resource in this direction is matching your purpose with suitable support. Receiving help need not mean giving up direction; shared effort is more meaningful when contributions are clear. Use experience to identify which support advances the purpose."
+      },
+      "adaptation": {
+        "hi": "हालात को फिर से समझना और जरूरत पर तरीका बदलना आपके लिए मददगार है। अब तक जो सीखा है, उसे अगले कदम में इस्तेमाल करें। मंजिल वही हो तो उस तक पहुँचने का रास्ता बदलना भी आगे बढ़ने का तरीका हो सकता है।",
+        "en": "The resource in this direction is reassessing circumstances and adjusting an approach when needed. Carry forward what has already been learned. With the underlying purpose intact, an adjustment in the path can also be part of progress."
+      }
+    },
+    "priority": {
+      "initiative": {
+        "hi": "कुछ शुरू करने से पहले तय करें कि आप उससे क्या चाहते हैं और कितना कर सकते हैं। कौन-सा हिस्सा आप सँभालेंगे और कहाँ मदद लेंगे, यह साफ होने से आगे बढ़ना आसान होगा।",
+        "en": "Clarify the purpose and limits of the next initiative. Decide which part is your responsibility and where support is needed so you can move forward while retaining direction."
+      },
+      "stability": {
+        "hi": "जो चीजें रोज ठीक चलनी जरूरी हैं, उन्हें सँभालते हुए एक छोटा बदलाव चुनें। पहले उस कदम को लगातार निभाकर देखें। उसके बाद अगला कदम बढ़ाएँ।",
+        "en": "Keep essential continuity while choosing one manageable area for change. Establish a step that can actually be sustained before extending it further."
+      },
+      "exploration": {
+        "hi": "अगला फैसला लेने से पहले तीन बातें सोचें: आप क्या चाहते हैं, अभी क्या चीजें ठीक चल रही हैं और किस जरूरत को छोड़ नहीं सकते। इससे अपनी रुचि पर आगे बढ़ते हुए जरूरी चीजें भी संभली रहेंगी।",
+        "en": "Before the next decision, clarify the purpose, the foundation to preserve and the need that should not be compromised. This lets personal interest move forward while keeping essential continuity within the decision."
+      },
+      "responsibility": {
+        "hi": "देखें कि कौन-सी जिम्मेदारी आपको अपने लक्ष्य के करीब ले जाती है और कौन-सी सिर्फ आपका समय ले रही है। नई जिम्मेदारी तभी लें जब उसके लिए समय हो। इससे लगातार आगे बढ़ने की कोशिश आपके लिए बढ़ता हुआ बोझ नहीं बनेगी।",
+        "en": "Distinguish responsibilities that advance the purpose from those that only occupy time. Make room for the next step before taking on another duty so continuity does not turn into an increasing burden."
+      },
+      "cooperation": {
+        "hi": "पहले साफ करें कि आप क्या करना चाहते हैं, फिर उसी काम की मदद लें। मिलकर कुछ करें तो तय करें कि आप कितना करेंगे और दूसरा व्यक्ति क्या करेगा। इससे साथ भी मिलेगा और आपकी अपनी बात भी साफ रहेगी।",
+        "en": "Clarify the purpose and choose support suited to it. Set out boundaries and contributions within a shared effort so cooperation does not obscure direction."
+      },
+      "adaptation": {
+        "hi": "आप जो करना चाहते हैं, उसे लिखें और उसके लिए अगला छोटा काम तय करें। तैयारी के लिए समय रखें और फिर कुछ करके भी देखें। इससे समझ आएगा कि आपकी योजना आगे बढ़ रही है या उसमें बदलाव चाहिए।",
+        "en": "Write down the purpose to carry forward and choose a suitable way to take the next step. Preserve room for preparation while making one real move that shows whether the direction is progressing."
+      }
+    },
+    "balances": {
+      "initiative/initiative": {
+        "hi": "आप जो करना चाहते हैं और मन से जो जरूरी लगता है, दोनों में अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना की अहमियत दिखती है। इससे चुने हुए रास्ते पर बने रहने में मदद मिल सकती है। हालात बदलें तो अपना तरीका फिर देखें, ताकि उसी रास्ते पर बने रहने के कारण कोई दूसरा अच्छा मौका न छूट जाए।",
+        "en": "Your direction and underlying needs share a priority around independent decisions and initiative. This can support continuity in a chosen direction. Review the approach when circumstances change so staying with a path does not mean overlooking other suitable possibilities."
+      },
+      "initiative/stability": {
+        "hi": "आपके लिए अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना अहम है। साथ ही, भरोसा और रोज की जिंदगी में ठहराव बनाए रखना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on independent decisions and initiative, while a dependable foundation and continuity also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "initiative/exploration": {
+        "hi": "आपके लिए अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना अहम है। साथ ही, अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on independent decisions and initiative, while developing ideas and understanding the purpose of a direction also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "initiative/responsibility": {
+        "hi": "आपके लिए अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना अहम है। साथ ही, जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on independent decisions and initiative, while handling responsibilities and seeing them through also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "initiative/cooperation": {
+        "hi": "आपके लिए अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना अहम है। साथ ही, सही लोगों का साथ लेना और मिलकर आगे बढ़ना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on independent decisions and initiative, while suitable support and shared effort also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "initiative/adaptation": {
+        "hi": "आपके लिए अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना अहम है। साथ ही, बदलते हालात में खुद को समय देना और तैयारी करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on independent decisions and initiative, while room to prepare and adapt through change also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "stability/initiative": {
+        "hi": "आपके लिए भरोसा और रोज की जिंदगी में ठहराव बनाए रखना अहम है। साथ ही, अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on a dependable foundation and continuity, while independent decisions and initiative also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "stability/stability": {
+        "hi": "आप जो करना चाहते हैं और मन से जो जरूरी लगता है, दोनों में भरोसा और रोज की जिंदगी में ठहराव बनाए रखना की अहमियत दिखती है। इससे चुने हुए रास्ते पर बने रहने में मदद मिल सकती है। हालात बदलें तो अपना तरीका फिर देखें, ताकि उसी रास्ते पर बने रहने के कारण कोई दूसरा अच्छा मौका न छूट जाए।",
+        "en": "Your direction and underlying needs share a priority around a dependable foundation and continuity. This can support continuity in a chosen direction. Review the approach when circumstances change so staying with a path does not mean overlooking other suitable possibilities."
+      },
+      "stability/exploration": {
+        "hi": "आपके लिए भरोसा और रोज की जिंदगी में ठहराव बनाए रखना अहम है। साथ ही, अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on a dependable foundation and continuity, while developing ideas and understanding the purpose of a direction also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "stability/responsibility": {
+        "hi": "आपके लिए भरोसा और रोज की जिंदगी में ठहराव बनाए रखना अहम है। साथ ही, जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on a dependable foundation and continuity, while handling responsibilities and seeing them through also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "stability/cooperation": {
+        "hi": "आपके लिए भरोसा और रोज की जिंदगी में ठहराव बनाए रखना अहम है। साथ ही, सही लोगों का साथ लेना और मिलकर आगे बढ़ना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on a dependable foundation and continuity, while suitable support and shared effort also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "stability/adaptation": {
+        "hi": "आपके लिए भरोसा और रोज की जिंदगी में ठहराव बनाए रखना अहम है। साथ ही, बदलते हालात में खुद को समय देना और तैयारी करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on a dependable foundation and continuity, while room to prepare and adapt through change also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "exploration/initiative": {
+        "hi": "आपके लिए अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना अहम है। साथ ही, अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on developing ideas and understanding the purpose of a direction, while independent decisions and initiative also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "exploration/stability": {
+        "hi": "आपके लिए अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना अहम है। साथ ही, भरोसा और रोज की जिंदगी में ठहराव बनाए रखना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on developing ideas and understanding the purpose of a direction, while a dependable foundation and continuity also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "exploration/exploration": {
+        "hi": "आप जो करना चाहते हैं और मन से जो जरूरी लगता है, दोनों में अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना की अहमियत दिखती है। इससे चुने हुए रास्ते पर बने रहने में मदद मिल सकती है। हालात बदलें तो अपना तरीका फिर देखें, ताकि उसी रास्ते पर बने रहने के कारण कोई दूसरा अच्छा मौका न छूट जाए।",
+        "en": "Your direction and underlying needs share a priority around developing ideas and understanding the purpose of a direction. This can support continuity in a chosen direction. Review the approach when circumstances change so staying with a path does not mean overlooking other suitable possibilities."
+      },
+      "exploration/responsibility": {
+        "hi": "आपके लिए अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना अहम है। साथ ही, जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on developing ideas and understanding the purpose of a direction, while handling responsibilities and seeing them through also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "exploration/cooperation": {
+        "hi": "आपके लिए अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना अहम है। साथ ही, सही लोगों का साथ लेना और मिलकर आगे बढ़ना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on developing ideas and understanding the purpose of a direction, while suitable support and shared effort also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "exploration/adaptation": {
+        "hi": "आपके लिए अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना अहम है। साथ ही, बदलते हालात में खुद को समय देना और तैयारी करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on developing ideas and understanding the purpose of a direction, while room to prepare and adapt through change also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "responsibility/initiative": {
+        "hi": "आपके लिए जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना अहम है। साथ ही, अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on handling responsibilities and seeing them through, while independent decisions and initiative also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "responsibility/stability": {
+        "hi": "आपके लिए जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना अहम है। साथ ही, भरोसा और रोज की जिंदगी में ठहराव बनाए रखना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on handling responsibilities and seeing them through, while a dependable foundation and continuity also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "responsibility/exploration": {
+        "hi": "आपके लिए जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना अहम है। साथ ही, अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on handling responsibilities and seeing them through, while developing ideas and understanding the purpose of a direction also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "responsibility/responsibility": {
+        "hi": "आप जो करना चाहते हैं और मन से जो जरूरी लगता है, दोनों में जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना की अहमियत दिखती है। इससे चुने हुए रास्ते पर बने रहने में मदद मिल सकती है। हालात बदलें तो अपना तरीका फिर देखें, ताकि उसी रास्ते पर बने रहने के कारण कोई दूसरा अच्छा मौका न छूट जाए।",
+        "en": "Your direction and underlying needs share a priority around handling responsibilities and seeing them through. This can support continuity in a chosen direction. Review the approach when circumstances change so staying with a path does not mean overlooking other suitable possibilities."
+      },
+      "responsibility/cooperation": {
+        "hi": "आपके लिए जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना अहम है। साथ ही, सही लोगों का साथ लेना और मिलकर आगे बढ़ना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on handling responsibilities and seeing them through, while suitable support and shared effort also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "responsibility/adaptation": {
+        "hi": "आपके लिए जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना अहम है। साथ ही, बदलते हालात में खुद को समय देना और तैयारी करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on handling responsibilities and seeing them through, while room to prepare and adapt through change also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "cooperation/initiative": {
+        "hi": "आपके लिए सही लोगों का साथ लेना और मिलकर आगे बढ़ना अहम है। साथ ही, अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on suitable support and shared effort, while independent decisions and initiative also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "cooperation/stability": {
+        "hi": "आपके लिए सही लोगों का साथ लेना और मिलकर आगे बढ़ना अहम है। साथ ही, भरोसा और रोज की जिंदगी में ठहराव बनाए रखना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on suitable support and shared effort, while a dependable foundation and continuity also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "cooperation/exploration": {
+        "hi": "आपके लिए सही लोगों का साथ लेना और मिलकर आगे बढ़ना अहम है। साथ ही, अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on suitable support and shared effort, while developing ideas and understanding the purpose of a direction also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "cooperation/responsibility": {
+        "hi": "आपके लिए सही लोगों का साथ लेना और मिलकर आगे बढ़ना अहम है। साथ ही, जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on suitable support and shared effort, while handling responsibilities and seeing them through also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "cooperation/cooperation": {
+        "hi": "आप जो करना चाहते हैं और मन से जो जरूरी लगता है, दोनों में सही लोगों का साथ लेना और मिलकर आगे बढ़ना की अहमियत दिखती है। इससे चुने हुए रास्ते पर बने रहने में मदद मिल सकती है। हालात बदलें तो अपना तरीका फिर देखें, ताकि उसी रास्ते पर बने रहने के कारण कोई दूसरा अच्छा मौका न छूट जाए।",
+        "en": "Your direction and underlying needs share a priority around suitable support and shared effort. This can support continuity in a chosen direction. Review the approach when circumstances change so staying with a path does not mean overlooking other suitable possibilities."
+      },
+      "cooperation/adaptation": {
+        "hi": "आपके लिए सही लोगों का साथ लेना और मिलकर आगे बढ़ना अहम है। साथ ही, बदलते हालात में खुद को समय देना और तैयारी करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on suitable support and shared effort, while room to prepare and adapt through change also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "adaptation/initiative": {
+        "hi": "आपके लिए बदलते हालात में खुद को समय देना और तैयारी करना अहम है। साथ ही, अपने फैसले खुद लेना और अपनी ओर से शुरुआत करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on room to prepare and adapt through change, while independent decisions and initiative also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "adaptation/stability": {
+        "hi": "आपके लिए बदलते हालात में खुद को समय देना और तैयारी करना अहम है। साथ ही, भरोसा और रोज की जिंदगी में ठहराव बनाए रखना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on room to prepare and adapt through change, while a dependable foundation and continuity also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "adaptation/exploration": {
+        "hi": "आपके लिए बदलते हालात में खुद को समय देना और तैयारी करना अहम है। साथ ही, अपनी सोच के अनुसार कुछ करना और नए रास्ते को समझना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on room to prepare and adapt through change, while developing ideas and understanding the purpose of a direction also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "adaptation/responsibility": {
+        "hi": "आपके लिए बदलते हालात में खुद को समय देना और तैयारी करना अहम है। साथ ही, जरूरी जिम्मेदारियाँ निभाना और उन्हें पूरा करना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on room to prepare and adapt through change, while handling responsibilities and seeing them through also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "adaptation/cooperation": {
+        "hi": "आपके लिए बदलते हालात में खुद को समय देना और तैयारी करना अहम है। साथ ही, सही लोगों का साथ लेना और मिलकर आगे बढ़ना भी जरूरी है। फैसला लेने में उलझन हो तो सोचें कि इन दोनों में से किस जरूरत को जगह नहीं मिल रही। ऐसा रास्ता ढूँढ़ें जिसमें दोनों का ध्यान रखा जा सके।",
+        "en": "Your direction draws on room to prepare and adapt through change, while suitable support and shared effort also matters. If a decision feels conflicted, identify these as separate needs. Look for a next step that makes appropriate room for both."
+      },
+      "adaptation/adaptation": {
+        "hi": "आप जो करना चाहते हैं और मन से जो जरूरी लगता है, दोनों में बदलते हालात में खुद को समय देना और तैयारी करना की अहमियत दिखती है। इससे चुने हुए रास्ते पर बने रहने में मदद मिल सकती है। हालात बदलें तो अपना तरीका फिर देखें, ताकि उसी रास्ते पर बने रहने के कारण कोई दूसरा अच्छा मौका न छूट जाए।",
+        "en": "Your direction and underlying needs share a priority around room to prepare and adapt through change. This can support continuity in a chosen direction. Review the approach when circumstances change so staying with a path does not mean overlooking other suitable possibilities."
+      }
+    },
+    "saturn_balance": {
+      "hi": "आप अपने लिए कुछ करना चाहते हैं और जिम्मेदारियाँ भी निभाना चाहते हैं। कोई रुकावट आए तो उसे अपनी काबिलियत का फैसला न मान लें। देखें कि किस जिम्मेदारी में कितना समय लगेगा और कहाँ मदद चाहिए, ताकि अपने लक्ष्य के लिए भी समय बचे।",
+      "en": "The central balance is between moving your direction forward and preserving room for yourself among responsibilities. Continuity is useful, while treating every setback as a final judgement of your ability can narrow the path. Clarify the time and support each responsibility needs so there is room for your purpose."
+    },
+    "saturn_priority": {
+      "hi": "ऐसा अगला काम चुनें जिसे अभी की जिम्मेदारियों के साथ पूरा कर सकें। पहले तय करें कि आप कितना समय दे सकते हैं और कहाँ मदद चाहिए। इससे अपने लक्ष्य पर बने रहने के लिए सिर्फ खुद पर दबाव नहीं बढ़ाना पड़ेगा।",
+      "en": "Choose a next step that can be sustained alongside existing responsibilities. Clarify availability and support needs first so staying with the direction does not depend solely on placing more pressure on yourself."
+    },
+    "capacity_care": {
+      "hi": " इसे लगातार निभाने के लिए कुछ ज्यादा तैयारी और साफ योजना की जरूरत पड़ सकती है। इसलिए ऐसा कदम चुनें जिसे अपनी गति से पूरा कर सकें।",
+      "en": " Turning this tendency into consistent effort may need extra preparation and clarity. Choose a step that can be sustained at a manageable pace."
+    }
+  },
+  "simple_hindi": {
+    "आप किसी बात को तभी अपनाना पसंद कर सकते हैं जब उसकी उपयोगिता खुद समझ लें; हर फैसले में दूसरों पर निर्भर रहना सहज नहीं लगेगा।": "किसी बात को अपनाने से पहले आप खुद समझना चाह सकते हैं कि वह किस काम आएगी। हर फैसले के लिए दूसरों पर निर्भर रहना आपको सहज नहीं लगेगा।",
+    "निर्णय लेते समय आप केवल अपनी इच्छा नहीं, बल्कि उससे परिवार और स्थिरता पर पड़ने वाला असर भी देख सकते हैं।": "फैसला लेते समय आप अपनी इच्छा के साथ यह भी देख सकते हैं कि उससे परिवार और रोज की जिंदगी पर क्या असर होगा।",
+    "केवल सलाह सुनने के बजाय अभ्यास, बातचीत या छोटे प्रयोग से विश्वास बनता है; अवसर मिलने पर अपनी पहल से रास्ता बनाने की प्रवृत्ति रह सकती है।": "सलाह सुनने के साथ खुद करके देखने और बातचीत करने से आपका भरोसा बढ़ता है। मौका मिले तो आप अपनी कोशिश से रास्ता बनाना चाह सकते हैं।",
+    "बाहर की सफलता के बावजूद घर का तनाव आपको प्रभावित कर सकता है; शांत और भरोसेमंद जगह मिलने पर अपनी क्षमता अधिक सहजता से व्यक्त कर सकते हैं।": "बाहर सफलता मिलने पर भी घर का तनाव आप पर असर डाल सकता है। शांत और भरोसे वाली जगह मिले तो अपनी काबिलियत दिखाना आसान हो सकता है।",
+    "किसी विषय में गहरी रुचि हो तो उसमें अपनी पहचान बनाना चाहेंगे; केवल निर्देश मानने के बजाय तर्क, रचनात्मकता या अपने समाधान के लिए जगह उपयोगी रहेगी।": "किसी बात में गहरी रुचि हो तो आप उसमें अपनी पहचान बनाना चाहेंगे। सिर्फ निर्देश मानने के साथ अपनी समझ, नए विचार और समाधान देने की जगह भी आपके काम आएगी।",
+    "किसी काम में कमी दिखे तो उसे ठीक करने की इच्छा रहती है; लेकिन हर जिम्मेदारी स्वयं लेने से अपने मूल्य को केवल काम के नतीजों से आँकने की आदत बन सकती है।": "काम में कमी दिखे तो आप उसे ठीक करना चाह सकते हैं। हर जिम्मेदारी खुद लेने पर अपनी कीमत सिर्फ काम के नतीजे से आँकने की आदत पड़ सकती है।",
+    "सहयोग और निकट संबंध आपकी दिशा को प्रभावित कर सकते हैं; अपने विचार और सामने वाले की अपेक्षा के बीच स्पष्ट सीमा रखना उपयोगी रहेगा।": "लोगों का साथ और करीबी रिश्ते आपके फैसलों पर असर डाल सकते हैं। अपनी राय और दूसरे की उम्मीद में फर्क साफ रखना मदद करेगा।",
+    "निजी बातें जल्दी साझा न करना और निर्णय से पहले कई पहलुओं को परखना आपकी प्रवृत्ति हो सकती है; अनिश्चितता बढ़े तो विचारों में अधिक समय लग सकता है।": "आप निजी बात जल्दी न बताना चाहें और फैसले से पहले कई बातें जाँच सकते हैं। बात साफ न हो तो उस पर सोचने में ज्यादा समय लग सकता है।",
+    "जिस बात को अर्थपूर्ण मानते हैं उसमें अधिक मन लगता है; विचार बदलने के लिए केवल दबाव के बजाय समझने योग्य कारण चाहिए हो सकते हैं।": "जिस बात का मतलब आपको समझ आए, उसमें ज्यादा मन लग सकता है। अपनी राय बदलने के लिए आपको सिर्फ दबाव नहीं, समझ आने वाला कारण चाहिए हो सकता है।",
+    "काम की प्रशंसा आपको प्रेरित कर सकती है और भूमिका अस्पष्ट हो तो अपने बारे में भी असमंजस हो सकता है; निजी जीवन में काम से अलग अपनी जरूरतें पहचानना उपयोगी रहेगा।": "काम की तारीफ से हौसला बढ़ सकता है। क्या करना है, यही साफ न हो तो अपने बारे में भी उलझन हो सकती है। काम के अलावा अपनी जरूरतों को भी पहचानें।",
+    "साथ काम करने वाले लोगों से प्रेरणा मिल सकती है, लेकिन दूसरों की उपलब्धियों से लगातार तुलना करने पर अपने प्रयास का संतोष कम पड़ सकता है।": "साथ काम करने वालों से हौसला मिल सकता है। दूसरों की सफलता से बार-बार तुलना करें तो अपनी मेहनत से मिलने वाला संतोष कम हो सकता है।",
+    "आप बहुत कुछ समझते हुए भी उसे तुरंत सामने न रखें; अकेले तैयारी करना उपयोगी हो सकता है, पर अपनी मेहनत और जरूरतों को व्यक्त करना भी महत्वपूर्ण रहेगा।": "बहुत कुछ समझने के बाद भी आप उसे तुरंत कहना न चाहें। अकेले तैयारी करना मददगार हो सकता है, पर अपनी मेहनत और जरूरतों के बारे में बताना भी जरूरी है।",
+    "विषय का अर्थ समझ में आए तो आप स्वयं तैयारी आगे बढ़ा सकते हैं; केवल दूसरों की अपेक्षा के आधार पर चुने गए विषय में उतना मन लगना जरूरी नहीं है।": "विषय समझ में आए तो आप खुद अपनी तैयारी आगे बढ़ा सकते हैं। केवल दूसरों की उम्मीद पर चुने हुए विषय में उतना मन लगना जरूरी नहीं है।",
+    "बोलकर समझाना, अपने नोट्स बनाना या सीखी हुई बात को व्यवस्थित शब्दों में रखना विषय पर पकड़ बढ़ाने का उपयोगी तरीका हो सकता है।": "बोलकर समझाना, अपने नोट्स बनाना और सीखी हुई बात को साफ शब्दों में लिखना विषय पर पकड़ बढ़ाने में मदद कर सकता है।",
+    "लिखने, संवाद करने या व्यावहारिक अभ्यास वाले विषय आपके सीखने के तरीके से मेल खा सकते हैं; केवल पढ़ लेने और वास्तव में कर सकने के अंतर पर ध्यान देना उपयोगी रहेगा।": "लिखना, बातचीत करना और करके सीखना आपके पढ़ने के तरीके से मेल खा सकता है। सिर्फ पढ़ लेने और सच में कर पाने का फर्क ध्यान में रखें।",
+    "घर में शांत जगह, नियमित समय और बुनियादी अवधारणाओं को समझने की सुविधा मिले तो तैयारी बेहतर व्यवस्थित हो सकती है; वातावरण बदलने का असर भी ध्यान देने योग्य रहेगा।": "घर में शांत जगह, तय समय और शुरू की बातें अच्छी तरह समझने का मौका मिले तो तैयारी बेहतर हो सकती है। माहौल बदलने का असर भी देखें।",
+    "विश्लेषण, रचनात्मक समाधान और विचारों को जोड़ना आपकी तैयारी का उपयोगी हिस्सा बन सकता है; केवल याद कर लेने के बजाय प्रश्न हल करके समझ जाँचना बेहतर रहेगा।": "बातों को समझना, नए समाधान ढूँढ़ना और विचारों को जोड़ना तैयारी में मदद कर सकता है। केवल याद करने के साथ सवाल हल करके भी अपनी समझ जाँचें।",
+    "प्रतियोगी तैयारी या कठिन विषय में नियमित दोहराव उपयोगी हो सकता है; किसी भाग में अटकने पर अपनी क्षमता पर निष्कर्ष निकालने के बजाय तैयारी की कमी पहचानना जरूरी रहेगा।": "किसी प्रतियोगिता या कठिन विषय की तैयारी में बार-बार अभ्यास मदद कर सकता है। कहीं अटकें तो पहले देखें कि तैयारी में क्या छूटा है; उससे अपनी पूरी काबिलियत का फैसला न करें।",
+    "शिक्षक, अध्ययन-साथी या समूह में सवाल-जवाब से समझ स्पष्ट हो सकती है; दूसरे की गति से तुलना करने के बजाय अपना अभ्यास भी बनाए रखना होगा।": "शिक्षक, साथ पढ़ने वाले या समूह में सवाल-जवाब करने से बात साफ हो सकती है। दूसरों की गति से तुलना करने के साथ अपना अभ्यास भी जारी रखें।",
+    "जल्दी पूरा करने की अपेक्षा मूल बात पकड़ने में समय लग सकता है; कठिन विषय को छोटे हिस्सों में बाँटकर सीखना उपयोगी रहेगा।": "विषय की असली बात समझने में थोड़ा समय लग सकता है। कठिन विषय को छोटे हिस्सों में बाँटकर पढ़ें।",
+    "उच्च अध्ययन या किसी विषय में विशेषज्ञता की रुचि बन सकती है; सही शिक्षक और विषय चुनने से तैयारी का बिखराव कम किया जा सकता है।": "आगे की पढ़ाई या किसी एक विषय में अच्छी पकड़ बनाने की रुचि हो सकती है। सही शिक्षक और विषय चुनने से तैयारी को एक जगह लगाने में मदद मिलेगी।",
+    "ऐसा कौशल सीखना जिसका प्रयोग किसी जिम्मेदारी में हो सके अधिक अर्थपूर्ण लग सकता है; अनुभव आधारित परियोजना या प्रशिक्षण से पढ़ी हुई बात को मजबूत कर सकते हैं।": "ऐसा हुनर सीखना ज्यादा अच्छा लग सकता है जो किसी असली काम में इस्तेमाल हो। किसी प्रोजेक्ट या अभ्यास से पढ़ी हुई बात को और अच्छी तरह समझ सकते हैं।",
+    "समूह, अनुभवी लोगों या समान रुचि वाले साथियों से दिशा मिल सकती है; अवसरों की संख्या से अधिक चुने हुए लक्ष्य की तैयारी पर ध्यान उपयोगी रहेगा।": "समूह, अनुभवी लोगों या समान रुचि वाले साथियों से रास्ता मिल सकता है। कितने मौके हैं, इसके साथ यह भी देखें कि चुने हुए लक्ष्य की तैयारी कितनी है।",
+    "स्वतंत्र तैयारी और दूर से सीखने के तरीके उपयोगी हो सकते हैं; समय, खर्च और अपनी प्रगति का स्पष्ट हिसाब रखने से तैयारी अधिक ठोस बनेगी।": "खुद से तैयारी और दूर से सीखना आपके काम आ सकता है। कितने समय और पैसों में कितना सीखा, इसका साफ हिसाब रखें।",
+    "केवल निर्देश पूरे करने से अधिक, अपने कौशल की जिम्मेदारी लेकर पहचान बनाना अर्थपूर्ण लग सकता है; भूमिका और अधिकार का तालमेल आपकी संतुष्टि को प्रभावित करेगा।": "केवल निर्देश पूरे करने के साथ अपने हुनर से पहचान बनाना आपको अच्छा लग सकता है। क्या जिम्मेदारी है और उसे निभाने के लिए कितनी छूट है, इसका मेल जरूरी रहेगा।",
+    "भाषा, जानकारी, हिसाब या संचित अनुभव को उपयोगी बनाने वाली भूमिका पर ध्यान जा सकता है; पेशेवर फैसले लेते समय आय की स्थिरता और अपने कौशल की वास्तविक कीमत समझना महत्वपूर्ण रहेगा।": "भाषा, जानकारी, हिसाब या पुराने अनुभव का इस्तेमाल करने वाला काम आपका ध्यान खींच सकता है। फैसला लेते समय नियमित कमाई और अपने हुनर की सही कीमत समझें।",
+    "केवल तैयार अवसर की प्रतीक्षा से अधिक, काम का नमूना दिखाना और लोगों तक अपनी बात पहुँचाना उपयोगी हो सकता है; छोटे प्रयासों को लगातार आगे बढ़ाना महत्वपूर्ण रहेगा।": "सिर्फ मौके का इंतजार न करें। अपने काम का नमूना दिखाना और लोगों तक अपनी बात पहुँचाना मदद कर सकता है। छोटे प्रयास लगातार करते रहना जरूरी रहेगा।",
+    "भूमिका चुनते समय केवल पद नहीं, काम करने की जगह और निजी सुविधा भी महत्वपूर्ण हो सकती है; घरेलू जिम्मेदारियों तथा पेशेवर लक्ष्यों में तालमेल उपयोगी रहेगा।": "काम चुनते समय पद के साथ काम करने की जगह और अपनी सुविधा भी अहम हो सकती है। घर की जिम्मेदारियों और करियर के लक्ष्यों को साथ देखें।",
+    "केवल दोहराव वाले काम से अधिक ऐसे कार्य अर्थपूर्ण लग सकते हैं जिनमें विचार या समाधान देना पड़े; चुने हुए कौशल में गहराई पहचान बनाने में मदद कर सकती है।": "रोज एक जैसा काम करने के साथ विचार या समाधान देने वाला काम आपको अच्छा लग सकता है। चुने हुए हुनर में अच्छी पकड़ बनाने से पहचान बनाने में मदद मिल सकती है।",
+    "व्यवस्थित संस्था, तय प्रक्रिया या प्रतिस्पर्धा वाले वातावरण से संबंध बन सकता है; काम की मात्रा और अपने अधिकार के बीच संतुलन देखना महत्वपूर्ण रहेगा।": "आप किसी ऐसी जगह से जुड़ सकते हैं जहाँ तय नियम, व्यवस्था या मुकाबला हो। कितना काम है और उसे करने का कितना अधिकार है, दोनों साथ देखें।",
+    "पेशेवर परिणाम केवल आपकी तैयारी नहीं, सामने वाले से बने भरोसे पर भी निर्भर कर सकते हैं; साझा काम में शर्तें और जिम्मेदारियाँ स्पष्ट रखना उपयोगी रहेगा।": "काम का नतीजा आपकी तैयारी के साथ सामने वाले के भरोसे पर भी निर्भर कर सकता है। साझा काम में शर्तें और जिम्मेदारियाँ पहले साफ करें।",
+    "प्रगति हमेशा सीधी रेखा में महसूस न हो; किसी परिवर्तन से पहले अपने कौशल, काम की शर्तों और उपलब्ध विकल्पों की ठोस समीक्षा उपयोगी रहेगी।": "करियर में आगे बढ़ना हमेशा एक जैसा महसूस नहीं होगा। बदलाव से पहले अपना हुनर, काम की शर्तें और दूसरे मौके अच्छी तरह देखें।",
+    "सीखते रहना या अनुभव को दूसरों के काम लाना अर्थपूर्ण लग सकता है; सही मार्गदर्शक और काम की दिशा का चयन मेहनत को उपयोगी अवसरों से जोड़ सकता है।": "नई बातें सीखना या अपना अनुभव दूसरों के काम लाना आपको अच्छा लग सकता है। सही सलाह और सही काम चुनने से मेहनत को अच्छे मौके से जोड़ने में मदद मिल सकती है।",
+    "भूमिका में अनुभव जमा करना, जिम्मेदारी लेना और अपने काम का स्पष्ट परिणाम दिखाना महत्वपूर्ण हो सकता है; केवल पदनाम से अधिक काम में वास्तविक दक्षता आपकी दिशा को आकार दे सकती है।": "अनुभव बढ़ाना, जिम्मेदारी लेना और काम का साफ नतीजा दिखाना अहम हो सकता है। पद के नाम के साथ यह भी मायने रखेगा कि काम कितना अच्छी तरह आता है।",
+    "अपने कौशल को सही लोगों और अवसरों तक पहुँचाना प्रगति में महत्वपूर्ण हो सकता है; केवल काम पूरा करने के साथ उसका मूल्य और उससे मिलने वाला लाभ भी स्पष्ट करना उपयोगी रहेगा।": "अपने हुनर को सही लोगों और मौकों तक पहुँचाना आगे बढ़ने में मदद कर सकता है। काम पूरा करने के साथ उसकी कीमत और उससे मिलने वाला फायदा भी साफ करें।",
+    "मेहनत का हर हिस्सा तुरंत दिखाई न दे; अपनी जिम्मेदारी, भुगतान और काम के परिणाम स्पष्ट रखना उपयोगी होगा, ताकि प्रयास और लाभ का संबंध समझ में आए।": "आपकी सारी मेहनत तुरंत दूसरों को दिखाई न दे। पहले साफ करें कि आपका काम क्या है, उसके कितने पैसे मिलेंगे और क्या नतीजा चाहिए। इससे मेहनत और मिलने वाले फायदे का हिसाब समझ आएगा।",
+    "अपने कौशल का मूल्य समझना तथा आर्थिक फैसलों की जिम्मेदारी लेना महत्वपूर्ण हो सकता है; दूसरों की परिस्थितियों से तुलना के बजाय अपनी आय और जरूरतों का आधार स्पष्ट रखें।": "अपने हुनर की कीमत समझना और पैसों के फैसले की जिम्मेदारी लेना अहम हो सकता है। दूसरों से तुलना में उलझने की जगह अपनी कमाई और जरूरतों का साफ हिसाब रखें।",
+    "परिवार की जरूरतें, संचित साधन और खर्च की आदतें साथ देखनी होंगी; आय का अवसर मिलने और धन टिकने को एक ही बात मानना उचित नहीं होगा।": "परिवार की जरूरतें, बचाकर रखे पैसे और खर्च की आदतें साथ देखें। कमाई का मौका मिलना और पैसे अपने पास बचना अलग बातें हैं।",
+    "छोटी पहल या किसी उपयोगी दक्षता को आगे बढ़ाना अर्थपूर्ण हो सकता है; समय और संसाधन लगाने से पहले उस प्रयास का व्यावहारिक मूल्य समझना उपयोगी रहेगा।": "छोटी शुरुआत या काम आने वाले हुनर को आगे बढ़ाना आपको अच्छा लग सकता है। समय और पैसे लगाने से पहले समझें कि उससे क्या काम बनेगा।",
+    "परिवार की सुविधा पर किया जाने वाला खर्च प्रमुख हो सकता है; स्थिरता की इच्छा और वास्तव में उपलब्ध साधनों के बीच संतुलन स्पष्ट रखना उपयोगी रहेगा।": "परिवार की सुविधा पर खर्च अहम हो सकता है। आप जो सुविधा चाहते हैं और उसके लिए अभी जो साधन हैं, दोनों साथ देखें।",
+    "किसी अच्छे विचार को उपयोगी काम में बदलना अर्थपूर्ण हो सकता है; विचार पर विश्वास होने और उसका आर्थिक परिणाम निश्चित होने के अंतर को ध्यान में रखें।": "अच्छे विचार को काम में बदलना आपके लिए अहम हो सकता है। विचार पर भरोसा होना और उससे पैसे मिलने का पक्का होना अलग बातें हैं।",
+    "कमाई का पूरा लाभ महसूस करने के लिए इन मदों को अलग समझना होगा; केवल आय बढ़ने से आर्थिक दबाव अपने-आप कम हो जाए, यह जरूरी नहीं है।": "कमाई का पूरा फायदा समझने के लिए इन खर्चों और जिम्मेदारियों का अलग हिसाब रखें। केवल कमाई बढ़ने से पैसों का दबाव अपने-आप कम होना जरूरी नहीं है।",
+    "भरोसा महत्वपूर्ण रहेगा, साथ ही कौन कितना योगदान देगा और किसकी क्या जिम्मेदारी होगी यह स्पष्ट करना उपयोगी होगा।": "भरोसा जरूरी रहेगा। साथ ही पहले साफ करें कि कौन कितना देगा और किसे क्या जिम्मेदारी निभानी है।",
+    "जो रकम अपनी है और जो किसी शर्त या दूसरे व्यक्ति से जुड़ी है उसे अलग समझें; अनिश्चितता में पहले पूरा विवरण लेना उपयोगी रहेगा।": "अपने पैसे और किसी शर्त या दूसरे व्यक्ति से जुड़ी रकम को अलग समझें। कोई बात साफ न हो तो पहले पूरी जानकारी लें।",
+    "उपयोगी ज्ञान या सिद्धांतों के आधार पर फैसले लेना अर्थपूर्ण हो सकता है; किसी व्यक्ति के आश्वासन से अधिक उसकी जानकारी और अपनी वास्तविक स्थिति को साथ परखें।": "सही जानकारी और अपने उसूलों के आधार पर फैसला लेना आपको अच्छा लग सकता है। किसी के भरोसा दिलाने के साथ उसकी जानकारी और अपनी असली स्थिति भी जाँचें।",
+    "कमाई के रास्ते समझते समय अपनी भूमिका, कौशल और उसके भुगतान पर ध्यान देना उपयोगी रहेगा; आर्थिक प्रगति को पेशेवर दिशा से अलग करके देखना अधूरा होगा।": "कमाई के बारे में सोचें तो अपना काम, हुनर और उसके बदले मिलने वाले पैसे साथ देखें। पैसों की तरक्की को अपने काम से अलग करके देखने से पूरी बात समझ नहीं आएगी।",
+    "अवसरों का उपयोग महत्वपूर्ण हो सकता है, लेकिन नियमित आय, अपेक्षित रकम और वास्तव में मिली रकम को अलग रखना बचत की स्थिति स्पष्ट करेगा।": "मौकों का फायदा लेना अहम हो सकता है। नियमित कमाई, आने की उम्मीद वाली रकम और सच में मिली रकम का अलग हिसाब रखने से बचत साफ समझ आएगी।",
+    "कमाई के बावजूद उपलब्ध रकम कम महसूस हो सकती है यदि कई मदों में साधन लगे हों; खर्च का उद्देश्य और सीमा स्पष्ट करना उपयोगी रहेगा।": "कई जरूरतों में पैसे लग रहे हों तो कमाई आने पर भी हाथ में कम रकम बच सकती है। देखें कि खर्च क्यों हो रहा है और उसकी सीमा क्या रखनी है।",
+    "आप साथ निभाते हुए भी अपनी स्वतंत्र राय के लिए जगह चाह सकते हैं; अपनी इच्छा और संबंध की साझा जरूरत दोनों स्पष्ट करने से एक-दूसरे को समझना आसान होगा।": "साथ निभाते हुए भी आप अपनी अलग राय के लिए जगह चाह सकते हैं। अपनी इच्छा और रिश्ते में दोनों की जरूरत साफ कहने से एक-दूसरे को समझना आसान होगा।",
+    "अपनापन केवल भावना से नहीं, रोजमर्रा की बात और जिम्मेदारी से भी व्यक्त होगा; आर्थिक या पारिवारिक अपेक्षाएँ पहले स्पष्ट करना उपयोगी रहेगा।": "अपनापन केवल महसूस करने से नहीं, रोज की बातचीत और जिम्मेदारी निभाने से भी दिखेगा। पैसों या परिवार से जुड़ी उम्मीदों पर पहले बात करें।",
+    "केवल मन में समझे जाने की अपेक्षा रखने के बजाय बातचीत शुरू करना उपयोगी रहेगा; साथ में कोई काम या रुचि साझा करने से निकटता का आधार बन सकता है।": "दूसरा व्यक्ति अपने-आप समझ लेगा, यह मानकर न रुकें। खुद बातचीत शुरू करें। कोई काम या रुचि साथ निभाने से नजदीकी बढ़ सकती है।",
+    "साथ होते हुए मन को सहज जगह मिलना जरूरी लग सकता है; रहने की व्यवस्था और निजी समय के बारे में स्पष्ट बातचीत से अपेक्षाएँ समझी जा सकती हैं।": "साथ रहते हुए मन का सुकून आपके लिए जरूरी लग सकता है। रहने की व्यवस्था और अपने लिए समय के बारे में साफ बात करें। इससे दोनों की उम्मीद समझ आएगी।",
+    "समझे जाने और साथ में अच्छा समय बिताने की इच्छा प्रमुख रह सकती है; भावना के साथ लंबे समय की जिम्मेदारियों पर बात करना भी उपयोगी रहेगा।": "आप चाह सकते हैं कि सामने वाला आपको समझे और साथ अच्छा समय बीते। प्यार के साथ आगे की जिम्मेदारियों पर भी बात करें।",
+    "छोटी बातों को सही-गलत की बहस में बदलने के बजाय काम और अपेक्षाएँ स्पष्ट बाँटना उपयोगी रहेगा; इससे अकेले संबंध टूटने का निष्कर्ष नहीं निकलता।": "छोटी बात पर सही-गलत की बहस होने लगे तो पहले काम और उम्मीदें साफ बाँटें। इस संकेत से अकेले रिश्ता टूटने का मतलब नहीं निकलता।",
+    "दोनों की राय को उचित जगह देना महत्वपूर्ण रहेगा; संबंध का नाम या औपचारिकता होने के साथ वास्तविक सहयोग और भरोसा भी देखना होगा।": "दोनों की राय को जगह देना जरूरी रहेगा। रिश्ते का नाम होने के साथ असली मदद और भरोसा भी देखना होगा।",
+    "कोई बात अस्पष्ट हो तो उसका असर मन पर अधिक रह सकता है; कठिन विषयों को बिना आरोप के स्पष्ट करना उपयोगी रहेगा, बजाय सामने वाले की नीयत का अनुमान लगाने के।": "कोई बात साफ न हो तो वह मन पर ज्यादा असर डाल सकती है। दूसरे की नीयत का अंदाजा लगाने की जगह बिना आरोप के अपनी उलझन पर बात करें।",
+    "केवल पसंद पर्याप्त न लगे यदि भविष्य को लेकर सोच अलग हो; परंपरा, परिवार या आगे के लक्ष्यों पर खुली चर्चा समझ बनाने में मदद कर सकती है।": "आगे की जिंदगी को लेकर सोच अलग हो तो केवल पसंद काफी न लगे। परिवार, परंपरा और आगे के लक्ष्यों पर खुलकर बात करने से समझ बढ़ सकती है।",
+    "पेशेवर लक्ष्य महत्वपूर्ण होने पर साथ के लिए समय और सहयोग की अपेक्षा स्पष्ट करनी होगी; व्यस्तता को अपने-आप भावनात्मक दूरी मानने से पहले वास्तविक परिस्थिति समझना उपयोगी रहेगा।": "काम के लक्ष्य अहम हों तो साथ के लिए समय और मदद की जरूरत साफ कहनी होगी। व्यस्त होने का मतलब मन से दूर होना है, ऐसा मानने से पहले असली हालात समझें।",
+    "भविष्य को लेकर मिलती-जुलती उम्मीदें निकटता बढ़ा सकती हैं; उपलब्धि और व्यस्त सामाजिक जीवन के बीच निजी साथ के लिए समय भी जरूरी रहेगा।": "आगे की जिंदगी से मिलती-जुलती उम्मीदें पास ला सकती हैं। उपलब्धियों और लोगों के बीच व्यस्त रहने के साथ एक-दूसरे के लिए अलग समय भी रखें।",
+    "कुछ भावनाएँ बिना कहे रह सकती हैं; समय, निकटता और साझा खर्च पर बातचीत उपयोगी रहेगी, लेकिन इससे अलगाव निश्चित नहीं होता।": "कुछ भावनाएँ बिना कहे रह सकती हैं। समय, पास रहने की जरूरत और साझा खर्च पर बात करें। इससे अलग होना पक्का नहीं होता।",
+    "आप घरेलू फैसलों में स्वयं भूमिका लेना चाह सकते हैं; दूसरों का ध्यान रखते हुए अपनी जरूरतों और उपलब्ध समय को भी स्पष्ट करना उपयोगी रहेगा।": "आप घर के फैसलों में खुद हिस्सा लेना चाह सकते हैं। दूसरों का ध्यान रखते हुए अपनी जरूरत और उपलब्ध समय भी साफ बताएँ।",
+    "छोटे फैसलों में भी पुराने नियम या अपेक्षाएँ प्रभाव डाल सकते हैं; बिना मान लिए कि सभी एक जैसा सोचते हैं, जरूरतों पर स्पष्ट बातचीत उपयोगी रहेगी।": "छोटे फैसलों पर भी पुराने नियम या उम्मीदें असर डाल सकते हैं। यह न मानें कि सभी एक जैसा सोचते हैं। जरूरतों पर साफ बातचीत करें।",
+    "किसी बात को भीतर रखने के बजाय समय पर चर्चा करना उपयोगी रहेगा; काम बाँटने में स्पष्टता छोटी गलतफहमियाँ बढ़ने से रोक सकती है।": "बात मन में दबाए न रखें, सही समय पर उस पर चर्चा करें। काम साफ बाँटने से छोटी गलतफहमियाँ बढ़ने से रुक सकती हैं।",
+    "आप रहने की व्यवस्था और घरेलू फैसलों को गंभीरता से ले सकते हैं; सुविधा के साथ परिवार के सदस्यों की अलग जरूरतों के लिए जगह रखना उपयोगी रहेगा।": "आप रहने की व्यवस्था और घर के फैसलों को गंभीरता से ले सकते हैं। सुविधा के साथ घर के हर व्यक्ति की अलग जरूरत का भी ध्यान रखें।",
+    "परिवार के लिए अपनी समझ से अच्छे फैसले लेने की इच्छा रहेगी; अपनी उम्मीदों और दूसरे व्यक्ति की वास्तविक रुचि में अंतर समझना उपयोगी रहेगा।": "आप अपनी समझ से परिवार के लिए अच्छे फैसले लेना चाहेंगे। अपनी उम्मीद और दूसरे की असली रुचि में फर्क समझना मदद करेगा।",
+    "किसी एक व्यक्ति पर काम का बोझ बढ़े तो असंतोष बन सकता है; हर मतभेद को स्वभाव की समस्या मानने से पहले व्यवस्था और सहयोग देखना उपयोगी रहेगा।": "एक व्यक्ति पर ज्यादा काम आ जाए तो मन में नाराजगी हो सकती है। हर मतभेद को स्वभाव की कमी मानने से पहले देखें कि काम की व्यवस्था और मदद कैसी है।",
+    "सहयोग मिलने से घरेलू जिम्मेदारियाँ सहज लग सकती हैं; अपने और दूसरे परिवार की अपेक्षाओं के बीच स्पष्ट समझ बनाना उपयोगी रहेगा।": "मदद मिले तो घर की जिम्मेदारियाँ आसान लग सकती हैं। अपने और दूसरे परिवार की उम्मीदों पर साफ समझ बनाएँ।",
+    "परिस्थिति बदलने पर पुरानी व्यवस्था पर्याप्त न लगे; बदलाव का कारण समझकर काम और अपेक्षाएँ दोबारा स्पष्ट करना उपयोगी रहेगा।": "हालात बदलें तो पुरानी व्यवस्था काफी न लगे। बदलाव का कारण समझें, फिर काम और उम्मीदों पर दोबारा साफ बात करें।",
+    "बड़े लोगों की सलाह घरेलू फैसलों को प्रभावित कर सकती है; सम्मान रखते हुए अलग पीढ़ियों की जरूरतों और विचारों पर बातचीत उपयोगी रहेगी।": "बड़ों की सलाह घर के फैसलों पर असर डाल सकती है। सम्मान रखते हुए अलग उम्र के लोगों की जरूरत और सोच पर भी बात करें।",
+    "काम के लिए लिया गया फैसला रहने की व्यवस्था या परिवार के समय को प्रभावित कर सकता है; केवल कमाई नहीं, घर में आपकी उपलब्धता और सहयोग की जरूरत भी साथ देखनी होगी।": "काम का फैसला रहने की जगह या परिवार को मिलने वाले समय पर असर डाल सकता है। कमाई के साथ यह भी देखें कि घर में आप कितना समय दे सकेंगे और कहाँ मदद चाहिए।",
+    "साझा योजना और सहयोग घरेलू स्थिरता को सहारा दे सकते हैं; भविष्य की उम्मीदों के साथ आज की जिम्मेदारियाँ भी स्पष्ट रखना उपयोगी रहेगा।": "मिलकर योजना बनाना और मदद लेना घर की व्यवस्था को सहारा दे सकता है। आगे की उम्मीदों के साथ आज की जिम्मेदारियाँ भी साफ रखें।",
+    "परिवार का साथ निभाने का तरीका बदल सकता है; दूरी को उदासीनता मानने के बजाय संपर्क और जिम्मेदारी की व्यवस्था स्पष्ट करना उपयोगी रहेगा।": "परिवार का साथ देने का तरीका बदल सकता है। दूरी का मतलब परवाह न करना मानने से पहले बात करने और जिम्मेदारियाँ निभाने का तरीका तय करें।",
+    "जिम्मेदारी निभाने की क्षमता के साथ यह भी देखना उपयोगी रहेगा कि आप अपने शरीर और आराम की जरूरत समय पर पहचानते हैं या उन्हें लगातार पीछे रखते हैं।": "जिम्मेदारी निभाने के साथ यह भी देखें कि शरीर और आराम की जरूरत समय पर समझते हैं या हर बार उसे बाद के लिए छोड़ देते हैं।",
+    "घर में चलने वाली व्यवस्था अपने लिए भी उपयुक्त है या नहीं, इसे देखना उपयोगी रहेगा; यह किसी स्वास्थ्य समस्या का निदान नहीं है।": "देखें कि घर में चल रही दिनचर्या आपके लिए भी ठीक है या नहीं। यह किसी बीमारी की पहचान करने वाला निष्कर्ष नहीं है।",
+    "व्यस्तता के बीच समय बाँटना और अपनी क्षमता के अनुसार दैनिक गतिविधि बनाए रखना महत्वपूर्ण रहेगा; दूसरे की गति अपनाने के बजाय अपना व्यवहारिक क्रम चुनें।": "व्यस्त दिन में समय बाँटना और अपनी क्षमता के हिसाब से काम करना जरूरी रहेगा। दूसरे की गति पकड़ने की जगह अपना निभ सकने वाला क्रम चुनें।",
+    "शांत जगह और घरेलू जिम्मेदारियों में स्पष्टता मिलने से विश्राम के लिए जगह बन सकती है; बाहर की व्यस्तता के बाद भी घर में तनाव बना रहे तो उसे अलग पहचानना उपयोगी रहेगा।": "शांत जगह मिले और घर की जिम्मेदारियाँ साफ हों तो आराम के लिए समय निकल सकता है। बाहर की व्यस्तता के बाद घर में भी तनाव रहे तो उसे अलग से समझें।",
+    "हर काम को उपलब्धि या परिणाम से जोड़ने के बजाय ऐसी रुचि के लिए भी जगह रखना उपयोगी रहेगा जिसमें मन सहज लगे; यह किसी शारीरिक स्थिति का आकलन नहीं है।": "हर काम को उपलब्धि से जोड़ने के साथ ऐसी रुचि के लिए भी समय रखें जिसमें मन अच्छा लगे। इससे शरीर की किसी स्थिति की जाँच नहीं की गई है।",
+    "काम चलता रहे इसलिए अपनी जरूरत टाल देना आसान पड़ सकता है; जिम्मेदारी के साथ आराम का तय समय बनाए रखना उपयोगी रहेगा, बिना किसी रोग का अनुमान लगाए।": "काम चलता रहे, इसलिए अपनी जरूरत टाल देना आसान हो सकता है। जिम्मेदारी के साथ आराम का समय तय रखें। यहाँ किसी बीमारी का अंदाजा नहीं लगाया गया है।",
+    "किसी और की जरूरत के अनुसार पूरा समय बदलने से अपने लिए जगह कम पड़ सकती है; सहयोग और निजी समय दोनों स्पष्ट रखना उपयोगी रहेगा।": "पूरा समय किसी और की जरूरत के हिसाब से बदलें तो अपने लिए समय कम पड़ सकता है। मदद करने के साथ अपना समय भी साफ तय करें।",
+    "ऐसे समय में हर चीज तुरंत नियंत्रित करने की कोशिश के बजाय अपनी दिनचर्या के कुछ स्थिर हिस्से बनाए रखना उपयोगी रहेगा; इससे किसी बीमारी की भविष्यवाणी नहीं की गई है।": "ऐसे समय में हर चीज तुरंत काबू करने पर जोर न दें। रोज की कुछ अच्छी आदतें बनाए रखें। इससे किसी बीमारी के होने की बात नहीं कही गई है।",
+    "दूसरों की मान्यताओं के बजाय अपने लिए उपयोगी क्रम पहचानना महत्वपूर्ण रहेगा; किसी अभ्यास से विशेष स्वास्थ्य-लाभ की गारंटी नहीं दी गई है।": "केवल दूसरों की मान्यताओं पर चलने की जगह पहचानें कि आपके लिए कौन-सी आदत निभाना ठीक रहेगा। किसी अभ्यास से सेहत को खास फायदा होने की गारंटी नहीं दी गई है।",
+    "उपलब्ध रहने और अपने लिए समय रखने के बीच सीमा बनाना महत्वपूर्ण होगा; केवल काम पूरा हो जाने को पर्याप्त आराम मिल जाने के बराबर न मानें।": "दूसरों के लिए उपलब्ध रहने के साथ अपने लिए भी समय तय करें। काम पूरा होने का मतलब पूरा आराम मिल जाना नहीं है।",
+    "हर निमंत्रण या काम स्वीकार करने के बजाय समय की वास्तविक क्षमता देखना उपयोगी रहेगा; अपने आराम के लिए भी पहले से जगह तय करें।": "हर बुलावा या काम स्वीकार करने से पहले देखें कि आपके पास सच में कितना समय है। अपने आराम के लिए भी समय पहले से तय करें।",
+    "शांत तैयारी उपयोगी हो सकती है, लेकिन दिनचर्या से पूरी तरह कट जाना और नियमित आराम मिलना अलग बातें हैं; अपने लिए स्थिर समय तय करना उपयोगी रहेगा।": "शांत होकर तैयारी करना मदद कर सकता है। रोज की जिंदगी से पूरी तरह कट जाना और नियमित आराम मिलना अलग बातें हैं। अपने लिए एक तय समय रखें।",
+    "इससे अपनी बात रखने और निर्णय लेने के तरीके में एक से अधिक जरूरतें साथ उभर सकती हैं।": "इसलिए अपनी बात कहते या फैसला लेते समय आपकी एक से ज्यादा जरूरतें साथ आ सकती हैं।",
+    "किसी प्रतिक्रिया को समझते समय परिस्थिति और अपनी वास्तविक जरूरत दोनों देखें।": "अपनी प्रतिक्रिया समझें तो उस समय के हालात और अपनी असली जरूरत दोनों देखें।",
+    "महत्वपूर्ण निर्णय से पहले अपना उद्देश्य और जरूरी जानकारी लिख लें।": "बड़ा फैसला लेने से पहले लिखें कि आप क्या चाहते हैं और उसके लिए क्या जानकारी चाहिए।",
+    "समझने, अभ्यास करने और मार्गदर्शन लेने के तरीके को इन जरूरतों के अनुसार ढालना उपयोगी हो सकता है।": "समझने, अभ्यास करने और सलाह लेने का तरीका इन जरूरतों के हिसाब से चुनें।",
+    "पढ़ाई में किस तरीके से वास्तविक सुधार आता है, इसे अभ्यास के परिणाम से परखें।": "कौन-सा पढ़ने का तरीका सच में मदद करता है, यह अपने अभ्यास के नतीजे से जाँचें।",
+    "अपने वर्तमान लक्ष्य के अनुसार समय-सारणी और मार्गदर्शन चुनें।": "अभी के लक्ष्य के हिसाब से पढ़ने का समय तय करें और सही सलाह लें।",
+    "एक ही पदनाम से अधिक, काम की वास्तविक जिम्मेदारी और उसमें आपके योगदान का तरीका महत्वपूर्ण रहेगा।": "पद के नाम के साथ यह समझना जरूरी होगा कि काम में क्या करना है और आप उसमें क्या करेंगे।",
+    "भूमिका चुनते समय देखें कि इन क्षमताओं का उपयोग कहाँ होता है।": "काम चुनते समय देखें कि आपकी इन खूबियों का इस्तेमाल कहाँ होगा।",
+    "अपनी जिम्मेदारी, लगाए गए समय और बदले में मिलने वाले परिणाम का स्पष्ट हिसाब रखें।": "अपने काम, लगाए गए समय और बदले में मिले नतीजे का साफ हिसाब रखें।",
+    "काम का कितना हिस्सा दिखाई नहीं दे रहा और उसे कैसे व्यक्त किया जाए, यह पहले समझें।": "पहले समझें कि आपके काम का कौन-सा हिस्सा दूसरों को नहीं दिख रहा और उसके बारे में कैसे बताएँगे।",
+    "कमाई की संभावना, धन को सँभालने का तरीका और खर्च की प्राथमिकता अलग प्रश्न हैं।": "कमाई के मौके, पैसा सँभालना और किस चीज पर पहले खर्च करना है, ये अलग बातें हैं।",
+    "इनका अलग हिसाब रखने से आर्थिक स्थिति अधिक साफ समझ आएगी।": "इनका अलग हिसाब रखने से पैसों की स्थिति साफ समझ आएगी।",
+    "आपसी अपेक्षाएँ और उन्हें व्यक्त करने का तरीका समझना महत्वपूर्ण रहेगा।": "दोनों क्या उम्मीद रखते हैं और उसे कैसे बताते हैं, यह समझना जरूरी होगा।",
+    "किसी एक मतभेद से पूरे संबंध का निष्कर्ष निकालने के बजाय बार-बार सामने आने वाली जरूरत पहचानें।": "एक मतभेद से पूरे रिश्ते का फैसला न करें। देखें कि कौन-सी जरूरत बार-बार सामने आ रही है।",
+    "व्यक्तिगत उपाय तय करने से पहले दोनों पक्षों की वास्तविक परिस्थिति समझें।": "अपने लिए उपाय चुनने से पहले दोनों लोगों के असली हालात समझें।",
+    "घर में भावनात्मक जरूरत और व्यावहारिक जिम्मेदारी हमेशा एक जैसी नहीं होती।": "घर में मन की जरूरत और रोज की जिम्मेदारी अलग हो सकती हैं।",
+    "किसे किस प्रकार के सहयोग की जरूरत है, यह स्पष्ट करना तालमेल में मदद कर सकता है।": "किसे कैसी मदद चाहिए, यह साफ करने से साथ निभाना आसान हो सकता है।",
+    "परिवार में किसी एक बार-बार आने वाली समस्या पर शांत बातचीत से शुरुआत करें।": "परिवार में जो परेशानी बार-बार आती है, उस पर पहले शांति से बात करें।",
+    "व्यस्तता के बीच विश्राम, नियमित भोजन और अपनी ऊर्जा का ध्यान रखने की जरूरत को देखें।": "व्यस्त दिन में आराम, समय पर भोजन और अपनी ऊर्जा का भी ध्यान रखें।",
+    "यह दिनचर्या की पढ़त है, किसी बीमारी का निदान नहीं।": "यह रोज की आदतों के बारे में फलादेश है। इससे किसी बीमारी का पता नहीं लगाया गया है।",
+    "वास्तविक स्वास्थ्य-संबंधी समस्या के लिए योग्य चिकित्सक की सलाह लें।": "सेहत की कोई परेशानी हो तो योग्य डॉक्टर की सलाह लें।",
+    "भावनात्मक प्रतिक्रिया और अपने ऊपर नियंत्रण रखने की जरूरत साथ रह सकती हैं।": "मन पर किसी बात का असर हो, तब भी आप खुद को सँभालकर रखना चाह सकते हैं।",
+    "भीतर किसी बात का असर होने पर भी आप पहले उसे सँभालकर फिर व्यक्त करना चाह सकते हैं।": "किसी बात को कहने से पहले आप खुद उसे समझना और सँभालना चाह सकते हैं।",
+    "इसे हमेशा समझ लिया जाना कठिन हो सकता है; अपनी जरूरत सीधे बताना और हर जिम्मेदारी अकेले न उठाना उपयोगी रहेगा।": "दूसरे इसे हर बार समझ लें, यह जरूरी नहीं है। अपनी जरूरत सीधे बताएँ और हर जिम्मेदारी अकेले न उठाएँ।",
+    "पढ़ाई के लक्ष्य को किसी वास्तविक कौशल या परियोजना से जोड़ें।": "पढ़ाई के लक्ष्य को किसी काम आने वाले हुनर या प्रोजेक्ट से जोड़ें।",
+    "सीखी हुई बात को लागू करके देखें और जहाँ कमी मिले वहाँ शिक्षक या उपयुक्त प्रशिक्षण से मदद लें।": "जो सीखा है, उसे करके देखें। कहीं कमी मिले तो शिक्षक या सही अभ्यास से मदद लें।",
+    "आपके काम में जिम्मेदारी लेना, जानकारी समझना और उसे दूसरों के लिए उपयोगी बनाना—इन तीनों का मेल महत्वपूर्ण हो सकता है।": "आपके काम में जिम्मेदारी लेना, जानकारी समझना और उसे दूसरों के काम लाना, ये तीनों साथ अहम हो सकते हैं।",
+    "विश्लेषण, प्रशिक्षण, प्रशासन या सलाह जैसे कार्य इस दिशा के उदाहरण हैं।": "बातों को जाँचना, दूसरों को सिखाना, व्यवस्था सँभालना या सलाह देना, ऐसे काम इसके उदाहरण हैं।",
+    "अपना काम सही लोगों तक पहुँचाने, कौशल का प्रमाण दिखाने और उसके बदले अपेक्षित लाभ स्पष्ट करने पर ध्यान दें।": "अपना काम सही लोगों को दिखाएँ। अपने हुनर का सबूत दें और पहले साफ करें कि उसके बदले क्या फायदा चाहते हैं।",
+    "किसी बदलाव से पहले मौजूदा अवसर और वास्तविक जरूरत साथ देखें।": "बदलाव से पहले अभी के मौके और अपनी असली जरूरत साथ देखें।",
+    "अपनी आय को भूमिका, कौशल और भुगतान की शर्तों से जोड़कर देखें।": "अपनी कमाई को काम, हुनर और पैसे मिलने की शर्तों के साथ देखें।",
+    "कमाई के अवसर और वास्तव में उपलब्ध बचत का अलग हिसाब बनाएं; किसी बड़े आर्थिक फैसले का आधार वास्तविक जानकारी हो।": "कमाई के मौके और सच में बचाए हुए पैसों का अलग हिसाब रखें। पैसों का बड़ा फैसला पूरी और सही जानकारी लेकर करें।",
+    "अपने साझा काम में ग्राहक, जिम्मेदारी और भुगतान की शर्तें स्पष्ट करें।": "मिलकर काम करें तो ग्राहक, काम की जिम्मेदारी और पैसे मिलने की शर्तें पहले साफ करें।",
+    "किस तरह की भूमिका आपको उपयुक्त है, इसे अपने अनुभव के उदाहरणों से परखें।": "किस तरह का काम आपके लिए ठीक है, इसे अपने अनुभव से जाँचें।",
+    "अपनी जिम्मेदारी, कौशल और मौजूदा परिस्थितियों को साथ देखकर अगला कदम चुनें।": "अपना काम, हुनर और अभी के हालात साथ देखकर अगला कदम चुनें।",
+    "भावनात्मक प्रतिक्रिया और अपनापन": "मन पर पड़ने वाला असर और अपनापन",
+    "विचार, सवाल और संवाद": "सोच, सवाल और बातचीत",
+    "समझ, सिद्धांत और सलाह": "समझ, उसूल और सलाह",
+    "मेलजोल और सहज अभिव्यक्ति": "लोगों से मिलना और अपनी बात आसानी से कहना",
+    "जिम्मेदारी और अपने ऊपर नियंत्रण": "जिम्मेदारी और खुद को सँभालना",
+    "स्वतंत्र सोच और निजी दूरी": "अपनी अलग सोच और अपने लिए जगह",
+    "अध्ययन में रुचि और ध्यान": "पढ़ाई में रुचि और ध्यान",
+    "अभ्यास और चुनौतीपूर्ण प्रश्न": "अभ्यास और कठिन सवाल",
+    "तर्क, लेखन और गणना": "कारण समझना, लिखना और हिसाब करना",
+    "विषय की गहरी समझ और मार्गदर्शन": "विषय की अच्छी समझ और सही सलाह",
+    "रचनात्मक ढंग से सीखना": "नए तरीकों से सीखना",
+    "नियमित दोहराव और धैर्य": "बार-बार अभ्यास और धीरज",
+    "स्वतंत्र अध्ययन और गहराई": "खुद से पढ़ना और गहराई से समझना",
+    "विश्लेषण, हिसाब और संवाद": "बातों को जाँचना, हिसाब और बातचीत",
+    "अनुभव, सलाह और मार्गदर्शन": "अनुभव और सही सलाह",
+    "प्रस्तुति, संबंध और रचनात्मकता": "अपनी बात रखना, लोगों से जुड़ना और कुछ नया करना",
+    "प्रक्रिया, निरंतरता और जिम्मेदारी": "काम का तरीका, लगातार मेहनत और जिम्मेदारी",
+    "नई तकनीक और अपरिचित कार्यक्षेत्र": "नई तकनीक और नए तरह के काम",
+    "विशेषज्ञता और स्वतंत्र जाँच": "किसी काम की अच्छी समझ और खुद जाँच करना",
+    "अपनी जिम्मेदारी के बदले मिलने वाला मूल्य": "अपने काम के बदले मिलने वाला फायदा",
+    "हिसाब और आर्थिक समझौते": "हिसाब और पैसों से जुड़े समझौते",
+    "अनुभव और लंबी अवधि की योजना": "अनुभव और आगे की योजना",
+    "सुविधा, पसंद और खर्च की प्राथमिकता": "सुविधा, पसंद और किस चीज पर पहले खर्च करें",
+    "संचय और नियमित दायित्व": "बचत और रोज की जिम्मेदारियाँ",
+    "अपरिचित आर्थिक अवसर": "पैसे कमाने के नए मौके",
+    "धन के उपयोग पर अपनी स्वतंत्र राय": "पैसे इस्तेमाल करने पर अपनी अलग राय",
+    "भावनात्मक साथ और आश्वासन": "मन का साथ और भरोसा दिलाना",
+    "विश्वास और साझा मूल्य": "भरोसा और मिलती-जुलती सोच",
+    "स्नेह और निकटता": "प्यार और पास रहना",
+    "जिम्मेदारी और संबंध में समय देना": "जिम्मेदारी और रिश्ते को समय देना",
+    "अलग अपेक्षा या अपरिचित अनुभव": "अलग उम्मीदें या नए अनुभव",
+    "निजी जगह और कम व्यक्त की गई भावनाएँ": "अपने लिए जगह और अनकही भावनाएँ",
+    "घरेलू फैसलों में अपनी भूमिका": "घर के फैसलों में अपना हिस्सा",
+    "अपनापन और भावनात्मक सुविधा": "अपनापन और मन का सुकून",
+    "परिवार में मार्गदर्शन और मूल्य": "परिवार में सही सलाह और सीख",
+    "स्थायी जिम्मेदारी और काम का बँटवारा": "लंबे समय की जिम्मेदारी और काम का बँटवारा",
+    "निजी जरूरत और जिम्मेदारी का संतुलन": "अपनी जरूरत और जिम्मेदारी साथ सँभालना",
+    "मन के आराम और परिचित क्रम की जरूरत": "मन के आराम और रोज की आदतों की जरूरत",
+    "मानसिक व्यस्तता से विराम": "दिमाग को काम से कुछ देर आराम देना",
+    "अपनी दिनचर्या का बड़ा उद्देश्य": "रोज के कामों का मकसद",
+    "नियमितता और लंबे काम के बीच विश्राम": "रोज की आदतें और लंबे काम के बीच आराम",
+    "बिखरी प्राथमिकताओं को व्यवस्थित करना": "जरूरी कामों को क्रम से रखना",
+    "निजी समय और शांत वातावरण": "अपने लिए समय और शांत माहौल"
+  }
+}

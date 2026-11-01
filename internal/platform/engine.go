@@ -146,6 +146,9 @@ func calculateReport(c Config, b Birth, rules map[string]Rule, now time.Time, ex
 	chart.Settings["vimshottari"] = "Moon nakshatra; 365.25-day Julian year; start-inclusive/end-exclusive"
 	chart.Settings["transits"] = "Report-creation snapshot; houses from natal Lagna / Moon"
 	r.Chart = &chart
+	if expanded {
+		r.GurujiFaladesh = suppliedGurujiFaladesh(&chart)
+	}
 	navamsa := swisseph.CalculateNavamsa(chart)
 	r.Navamsa = &navamsa
 	if expanded {
@@ -168,6 +171,9 @@ func calculateReport(c Config, b Birth, rules map[string]Rule, now time.Time, ex
 		r.Transits = &snapshot
 	}
 	r.Rules = matchRules(r, rules, !c.Production)
+	if r.GurujiFaladesh != nil {
+		r.GurujiFaladesh.Analysis = buildIntegratedFaladesh(r)
+	}
 	if len(r.Rules) == 0 {
 		r.Limitations = append(r.Limitations, "इस कुंडली के लिए गुरुजी की स्वीकृत व्याख्या अभी उपलब्ध नहीं है। ग्रह-सारणी वास्तविक खगोलीय गणना है।")
 	}

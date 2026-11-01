@@ -8,6 +8,7 @@ import (
 	"go/ast"
 	"go/parser"
 	"go/token"
+	htmlstd "html"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -80,6 +81,14 @@ func TestRemedyPDFLanguagesPreservePurchasedText(t *testing.T) {
 		}
 		if language == "en" {
 			ownedHTML := strings.NewReplacer(r.Birth.Name, "", r.Rules[0].Mantra, "", r.Rules[0].Gemstone, "").Replace(string(html))
+			// Source originals, like purchased remedies, retain the language of the supplied document.
+			for _, reading := range r.GurujiFaladesh.Readings {
+				ownedHTML = strings.ReplaceAll(ownedHTML, htmlstd.EscapeString(reading.HindiExcerpt), "")
+				ownedHTML = strings.ReplaceAll(ownedHTML, htmlstd.EscapeString(reading.Remedy.HindiExcerpt), "")
+			}
+			for _, source := range r.GurujiFaladesh.Sources {
+				ownedHTML = strings.ReplaceAll(ownedHTML, htmlstd.EscapeString(source.Filename), "")
+			}
 			if found := regexp.MustCompile(`[\x{0900}-\x{097f}]+`).FindString(ownedHTML); found != "" {
 				t.Fatalf("untranslated English PDF label: %s", found)
 			}
@@ -91,7 +100,13 @@ func TestRemedyPDFLanguagesPreservePurchasedText(t *testing.T) {
 			if bytes.Contains(html, []byte(r.Rules[0].Hindi)) || bytes.Contains(html, []byte("<script>unsafe()")) {
 				t.Fatal("wrong interpretation language or unescaped content")
 			}
-			sections, _ := json.Marshal((pdfLocale{"en"}).sections(r, time.UTC))
+			ownedSections := []pdfSection{}
+			for _, section := range (pdfLocale{"en"}).sections(r, time.UTC) {
+				if section.ID != "guruji-references" {
+					ownedSections = append(ownedSections, section)
+				}
+			}
+			sections, _ := json.Marshal(ownedSections)
 			if found := regexp.MustCompile(`[\x{0900}-\x{097f}]+`).Find(sections); len(found) > 0 {
 				t.Fatalf("untranslated calculation evidence: %s", found)
 			}

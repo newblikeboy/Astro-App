@@ -1,4 +1,5 @@
 import { t, useLanguage } from "./i18n";
+import { currentFaladeshVersion } from "./guruji-faladesh-types";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import type { FormEvent, ReactNode } from "react";
 import {
@@ -12,7 +13,6 @@ import {
   FileText,
   Flower2,
   Globe2,
-  IndianRupee,
   Info,
   LoaderCircle,
   LockKeyhole,
@@ -230,7 +230,8 @@ export default function App() {
 }
 /** CustomerApp coordinates guest Kundli creation, customer sessions, offers, payments and the public landing page. */
 function CustomerApp() {
-  const { language } = useLanguage();
+  // Subscribe even without reading the value: t() uses the selected language.
+  useLanguage();
   const [config, setConfig] = useState<Config | null>(null),
     [bootError, setBootError] = useState("");
   const route = useAppLocation();
@@ -622,6 +623,14 @@ function CustomerApp() {
       setLoading(false);
     }
   }
+  /** refreshGuestReading recalculates a superseded unsaved reading from its own birth input, without saving or altering historical purchases. */
+  async function refreshGuestReading() {
+    if (!report || report.user_id || savedReportID) return;
+    const previousID = report.id;
+    const result = await api<Report>("/kundli", "POST", report.birth);
+    if (result.guruji_faladesh?.analysis?.version !== currentFaladeshVersion) throw new Error("Reading update unavailable");
+    setReport(current => current?.id === previousID && !current.user_id ? result : current);
+  }
   /** checkout creates a server-priced PDF/consultation order using the selected offer and optional time slot. */
   async function checkout(slot: string) {
     if (!account || !offer) return;
@@ -865,7 +874,7 @@ function CustomerApp() {
                       </li>
                       <li>
                         <CheckCircle2 size={16} />
-                        {t("Clear calculations, in your language")}
+                        {t("आपकी भाषा में स्पष्ट फलादेश")}
                       </li>
                     </ul>
                   </div>
@@ -1082,6 +1091,7 @@ function CustomerApp() {
                 buy={buy}
               /> : <KundliReport
                 report={report}
+                onRefreshReading={!savedReportID && !report.user_id ? refreshGuestReading : undefined}
                 onBack={() =>
                   savedReportID ? navigate("/account") : home("kundli")
                 }
@@ -1352,7 +1362,7 @@ function CustomerApp() {
           <h3>{t("रिपोर्ट में क्या मिलेगा?")}</h3>
           <p>
             {t(
-              "जन्म विवरण, गणना संदर्भ, कुंडली और ग्रह-सारणी। लागू स्वीकृत व्याख्या, मंत्र और रत्न संबंधी मार्गदर्शन खरीद के समय सुरक्षित किया जाएगा।",
+              "जन्म विवरण, कुंडली, ग्रहों की स्थिति और उपलब्ध फलादेश।",
             )}
           </p>
           <p className="muted">

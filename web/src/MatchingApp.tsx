@@ -625,16 +625,6 @@ export default function MatchingApp() {
     new Intl.NumberFormat(language === "hi" ? "hi-IN" : "en-IN", {
       maximumFractionDigits: 2,
     }).format(value);
-  const calculatedAt = result
-    ? new Intl.DateTimeFormat(language === "hi" ? "hi-IN" : "en-IN", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-        timeZoneName: "short",
-      }).format(new Date(result.calculated_at))
-    : "";
   useEffect(
     () => () => {
       requestEpoch.current++;
@@ -1177,6 +1167,7 @@ export default function MatchingApp() {
                         </summary>
                         <p>{factorExplanation(factor)}</p>
                       </details>
+                      {(factor.code==="nadi"||factor.code==="bhakoot")&&result.exceptions&&<p className="matching-factor-note">{t(result.exceptions[factor.code].status==="cancelled"?"A checked exception cancels this indication. The base points remain unchanged.":result.exceptions[factor.code].active?"This indication remains after the checked exceptions. Consider it with both charts.":"This indication is absent.")}</p>}
                     </article>
                   );
                 })}
@@ -1191,8 +1182,8 @@ export default function MatchingApp() {
                       {result.cautions.map((code) => (
                         <li key={code}>
                           {t(
-                            cautionCopy[code] ||
-                              "A traditional factor needs contextual review. No cancellation adjustments are included.",
+                            result.exceptions&&code==="nadi_same"?"This indication remains after the checked exceptions. Consider it with both charts.":cautionCopy[code] ||
+                              "These indications need to be considered together.",
                           )}
                         </li>
                       ))}
@@ -1249,86 +1240,8 @@ export default function MatchingApp() {
                 </a>
               </div>
             </div>
-            <details className="matching-method">
-              <summary>
-                <Compass size={18} aria-hidden="true" />
-                {t("Calculation method and limits")}
-                <ChevronDown size={17} aria-hidden="true" />
-              </summary>
-              <dl>
-                <div>
-                  <dt>{t("Zodiac")}</dt>
-                  <dd>{t("Lahiri sidereal zodiac")}</dd>
-                </div>
-                <div>
-                  <dt>{t("Rule set")}</dt>
-                  <dd>{t("Eight-factor Ashtakoota base calculation")}</dd>
-                </div>
-                <div>
-                  <dt>{t("Adjustments")}</dt>
-                  <dd>
-                    {t("Raw base points; no cancellation or exception bonuses")}
-                  </dd>
-                </div>
-                <div>
-                  <dt>{t("Calculation time")}</dt>
-                  <dd>{calculatedAt}</dd>
-                </div>
-                <div>
-                  <dt>{t("Method version")}</dt>
-                  <dd>
-                    <code>{result.method}</code>
-                  </dd>
-                </div>
-              </dl>
-              <p>
-                {t(
-                  "This method uses the AIFAS Horoscope Matching (2021) base tables. The Cow–Tiger Yoni pairing receives 0 in both directions, following the reciprocal enemy table and correcting an inconsistent printed cell.",
-                )}
-              </p>
-              <div className="matching-sources">
-                <a
-                  href="https://www.futuresamachar.com/download/horoscope-matching-325.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("AIFAS reference tables (PDF)")}
-                </a>
-                <a
-                  href="https://saravali.github.io/astrology/koota_yoni.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("Maitreya Yoni table reference")}
-                </a>
-              </div>
-              <p>
-                {t(
-                  "Bride and groom identify the traditional calculation roles. Some factors depend on that order; changing the roles can change the points. Different regional tables and cancellation rules can produce different scores.",
-                )}
-              </p>
-            </details>
-            <aside className="matching-print-reference">
-              <h3>{t("Calculation method and limits")}</h3>
-              <p>
-                <strong>{t("Method version")}: </strong>
-                <code>{result.method}</code>
-              </p>
-              <p>
-                {t(
-                  "AIFAS Horoscope Matching (2021) base tables. Lahiri sidereal zodiac. Raw base points; no cancellation or exception bonuses.",
-                )}
-              </p>
-              <p>
-                {t(
-                  "The Cow–Tiger Yoni pairing is scored 0 in both directions in this version.",
-                )}
-              </p>
-              <p>
-                <strong>{t("Calculation time")}: </strong>
-                {calculatedAt}
-              </p>
-            </aside>
+
+
           </section>
         )}
         {!result && (

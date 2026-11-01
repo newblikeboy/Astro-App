@@ -165,11 +165,12 @@ func CalculateVimshottari(moonLongitude float64, birth, asOf time.Time) Vimshott
 	if !finite(moonLongitude) {
 		return Vimshottari{AsOf: asOf.UTC(), YearDays: DashaYearDays, Periods: []DashaPeriod{}}
 	}
-	starPosition := normalizeDegrees(moonLongitude) * 27 / 360
-	star := int(math.Floor(starPosition))
-	fraction := starPosition - float64(star)
+	lon := normalizeDegrees(moonLongitude)
+	star := zodiacSegment(lon, 27)
+	left, right := float64(star)*360/27, float64(star+1)*360/27
+	fraction := (lon - left) / (right - left)
 	first := star % 9
-	out := Vimshottari{Method: VimshottariMethod, MaxDepth: 5, CurrentPath: []DashaStep{}, AsOf: asOf.UTC(), YearDays: DashaYearDays, BirthLord: dashaLords[first], BalanceYears: (1 - fraction) * dashaYears[first], Periods: []DashaPeriod{}}
+	out := Vimshottari{Method: VimshottariMethod, MaxDepth: 5, CurrentPath: []DashaStep{}, AsOf: asOf.UTC(), YearDays: DashaYearDays, BirthLord: dashaLords[first], BalanceYears: (right - lon) / (right - left) * dashaYears[first], Periods: []DashaPeriod{}}
 	// Compute subperiods from the FULL mahadasha beginning before birth.
 	// Scaling the remaining balance would produce incorrect antardashas.
 	start := addDashaYears(birth.UTC(), -fraction*dashaYears[first])

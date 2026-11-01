@@ -11,6 +11,7 @@ import (
 	"math"
 	"os"
 	"path/filepath"
+	"sort"
 	"time"
 	"unsafe"
 )
@@ -82,13 +83,21 @@ func normalizeDegrees(value float64) float64 {
 	return value
 }
 
+// zodiacSegment classifies a normalized longitude into equal half-open sectors
+// by comparing boundaries directly; scaling the angle can round an edge early.
+func zodiacSegment(longitude float64, count int) int {
+	return min(count-1, sort.Search(count, func(i int) bool {
+		return longitude < float64(i+1)*360/float64(count)
+	}))
+}
+
 // zodiacPosition classifies unrounded longitude into Rashi, Nakshatra and Pada, adding rounded display degrees.
 func zodiacPosition(value float64) ZodiacPosition {
 	lon := normalizeDegrees(value)
 	sign := int(lon / 30)
 	degree := lon - float64(sign*30)
-	nak := min(26, int(lon*27/360))
-	pada := min(107, int(lon*108/360))%4 + 1
+	nak := zodiacSegment(lon, 27)
+	pada := zodiacSegment(lon, 108)%4 + 1
 	// Truncate only display seconds; keep full precision for classification.
 	seconds := int(math.Floor(degree * 3600))
 	return ZodiacPosition{

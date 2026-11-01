@@ -13,6 +13,9 @@ export type Varga = {
   }[];
 };
 export type KundliDetails = {
+  rajyog_reading?: {method:string;summary:{hi:string;en:string};paragraphs:{hi:string;en:string}[]};
+  shadbala?:{method:string;at:string;planets:{planet:string;sthana:number;dig:number;kala:number;cheshta:number;naisargika:number;drik:number;total_virupas:number;rupas:number;required_virupas:number;ratio:number;meets_requirement:boolean;sthana_parts:{code:string;virupas:number}[];kala_parts:{code:string;virupas:number}[];aspects:{from:string;virupas:number;contribution:number}[]}[];wars:{first:string;second:string;separation:number;winner?:string;transfer:number;status:string}[];settings:Record<string,string>};
+  qualifications?:{method:string;neechabhanga:{planet:string;debilitated:boolean;cancelled:boolean;rules:{code:string;met:boolean;planets:string[];reference:string}[]}[];yogas:{code:string;base_present:boolean;status:string;dominant_planet?:string;planets:string[];limitations:string[]}[]};
   yoga_checks?: NatalYogaChecks;
   mangal: MangalAssessment;
   mangal_method: string;

@@ -1,8 +1,7 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowLeft,
   ArrowRight,
-  ChevronDown,
   CalendarDays,
   Clock,
   FileText,
@@ -12,13 +11,13 @@ import {
   UserRound,
   GraduationCap,
   BriefcaseBusiness,
+  Wallet,
   Heart,
   UsersRound,
   HeartPulse,
   LayoutDashboard,
   Grid2X2,
   Orbit,
-  Settings2,
   Compass,
   Moon,
   Hash,
@@ -33,13 +32,15 @@ import {
   ExpandedYogaPatterns,
 } from "./KundliDetails";
 import { SaturnTimeline, YoginiPanel } from "./KundliPeriods";
-import { clockMinutes, minuteTimestamp } from "./time-display";
+import { clockMinutes } from "./time-display";
 import ZodiacMark from "./ZodiacMark";
 import AstroSymbol from "./AstroSymbol";
 import { t, useLanguage } from "./i18n";
-import type { DashaPeriod, Report, Rule } from "./types";
+import type { Report, Rule } from "./types";
 import { placementConclusion } from "./yoga-conclusions";
 import NumerologyPanel from "./NumerologyPanel";
+import GurujiFaladesh from "./GurujiFaladesh";
+import { normalizeReadingCategory } from "./faladesh-reading";
 
 /** planetName returns the localized name for a report graha. */
 const planetName = (name: string) => t(hindiPlanets[name] || name);
@@ -50,6 +51,7 @@ const categories = [
   { name: "Personality", Icon: UserRound },
   { name: "Education", Icon: GraduationCap },
   { name: "Career", Icon: BriefcaseBusiness },
+  { name: "Finance", Icon: Wallet },
   { name: "Relationships", Icon: Heart },
   { name: "Family", Icon: UsersRound },
   { name: "Wellbeing", Icon: HeartPulse },
@@ -65,7 +67,6 @@ const tabs = [
   ["planets", "Planet analysis"],
   ["checks", "Yogas & Doshas"],
   ["transits", "Transits"],
-  ["settings", "Calculation reference"],
 ];
 const tabIcons = [
   LayoutDashboard,
@@ -77,16 +78,7 @@ const tabIcons = [
   Orbit,
   Compass,
   Orbit,
-  Settings2,
 ];
-const housesByCategory: Record<string, number[]> = {
-  personality: [1, 5],
-  education: [4, 5, 9],
-  career: [2, 6, 10, 11],
-  relationships: [5, 7],
-  family: [2, 4],
-  wellbeing: [1, 6, 8, 12],
-};
 const checkCopy: Record<string, [string, string]> = {
   "mangal-lagna": [
     "Mangal placement · Lagna",
@@ -112,8 +104,7 @@ function RuleReading({ rule }: { rule: Rule }) {
   return (
     <article className="faladesh-reading">
       <span className="pill">
-        {rule.demo ? t("Demo reading") : t("Approved reading")} · {t("Version")}{" "}
-        {rule.version}
+        {rule.demo ? t("Demo reading") : t("Approved reading")}
       </span>
       <h3>{t(rule.topic)}</h3>
       <p
@@ -147,6 +138,7 @@ export default function KundliReport({
   backLabel,
   onEditBirth,
   onSave,
+  onRefreshReading,
   saving,
   buy,
 }: {
@@ -155,6 +147,7 @@ export default function KundliReport({
   backLabel?: string;
   onEditBirth?: () => void;
   onSave: () => void;
+  onRefreshReading?: () => Promise<void>;
   saving: boolean;
   buy: (p: "pdf" | "consultation") => void;
 }) {
@@ -163,11 +156,28 @@ export default function KundliReport({
   const [chartMode, setChartMode] = useState("d1");
   const [dashaSystem, setDashaSystem] = useState("vimshottari");
   const [category, setCategory] = useState("general");
+  const [readingRefreshing, setReadingRefreshing] = useState(false);
+  const [readingError, setReadingError] = useState("");
+  const refreshedReadings = useRef(new Set<string>());
+  const version = report.guruji_faladesh?.analysis?.version;
+  const staleGuest = !report.user_id && ["m4y-cross-factor-faladesh-v1", "m4y-cross-factor-faladesh-v2", "m4y-cross-factor-faladesh-v3", "m4y-cross-factor-faladesh-v4"].includes(version || "") && !!onRefreshReading;
+  const staleYogaGuest = !report.user_id && !!onRefreshReading && report.details?.qualifications?.method === "m4y-phaladeepika7-neechabhanga-strength-v1";
+  // Refresh only this superseded unsaved guest reading. Saved reports and historical PDF snapshots remain immutable.
+  useEffect(() => {
+    if (!onRefreshReading || !(tab === "reading" && (staleGuest || staleYogaGuest) || tab === "checks" && staleYogaGuest)) return;
+    const birthKey = JSON.stringify(report.birth);
+    if (refreshedReadings.current.has(birthKey)) return;
+    refreshedReadings.current.add(birthKey);
+    setReadingRefreshing(true);
+    setReadingError("");
+    void onRefreshReading().catch(() => {
+      setReadingError(language === "hi" ? "फलादेश अपडेट नहीं हो सका। पेज दोबारा खोलकर प्रयास करें।" : "The reading could not be updated. Reopen the page to try again.");
+    }).finally(() => setReadingRefreshing(false));
+  }, [tab, staleGuest, staleYogaGuest, onRefreshReading, version, report.birth, language]);
   const nav = useRef<HTMLDivElement>(null);
   const topicNav = useRef<HTMLDivElement>(null);
   const chart = report.chart;
   const moon = chart?.planets.find((p) => p.name === "Moon");
-  const sun = chart?.planets.find((p) => p.name === "Sun");
   const asOf = report.dasha?.as_of || report.created;
   /** date formats a report date/time in the birthplace timezone to minute precision. */
   const date = (value: string, withTime = false) =>
@@ -184,13 +194,8 @@ export default function KundliReport({
           } as const)
         : {}),
     }).format(new Date(value));
-  /** isActive checks whether the report instant belongs to the displayed Dasha interval. */
-  const isActive = (period: DashaPeriod) =>
-    new Date(asOf) >= new Date(period.start) &&
-    new Date(asOf) < new Date(period.end);
-  const activePeriod = report.dasha?.periods.find(isActive);
   const rules = report.rules.filter(
-    (r) => (r.category || "general") === category,
+    (r) => normalizeReadingCategory(r.category) === category,
   );
   const displayChart =
     chartMode === "d9" && report.navamsa
@@ -213,9 +218,7 @@ export default function KundliReport({
     return (
       <section className="planet-panel">
         <h2>{t("आपकी ग्रह-सारणी")}</h2>
-        <p className="muted">
-          {t("लाहिड़ी अयनांश · राशि आधारित भाव · औसत राहु")}
-        </p>
+
         <div
           className="table-scroll"
           tabIndex={0}
@@ -361,7 +364,7 @@ export default function KundliReport({
           <Info size={18} />
           <span>
             {t(
-              "ग्रह स्थिति Swiss Ephemeris से गणना की गई है। डेमो व्याख्या व्यक्तिगत सलाह नहीं है; स्वीकृत सामग्री आने तक लाइव बिक्री बंद है।",
+              "यह प्रारंभिक पढ़त है; व्यक्तिगत सलाह के लिए गुरुजी से परामर्श लें। अभी ऑनलाइन खरीद उपलब्ध नहीं है।",
             )}
           </span>
         </div>
@@ -648,11 +651,6 @@ export default function KundliReport({
                 <div className="report-section-heading">
                   <div>
                     <h2>{t("Faladesh")}</h2>
-                    <p>
-                      {t(
-                        "Explore the chart factors behind each area of life and read the interpretations available for your chart.",
-                      )}
-                    </p>
                   </div>
                 </div>
                 <p className="faladesh-topic-label" id="faladesh-topic-label">
@@ -664,7 +662,7 @@ export default function KundliReport({
                   aria-labelledby="faladesh-topic-label"
                   ref={topicNav}
                 >
-                  {categories.map(({ name, Icon }, index) => {
+                  {categories.map(({ name }, index) => {
                     const value = name.toLowerCase();
                     return (
                       <button
@@ -706,10 +704,7 @@ export default function KundliReport({
                             [next]?.focus();
                         }}
                       >
-                        <span className="faladesh-topic-icon">
-                          <Icon size={20} aria-hidden="true" />
-                        </span>
-                        <span>{t(name)}</span>
+                        <span>{name === "General" ? (language === "hi" ? "सामान्य" : "General") : name === "Finance" ? (language === "hi" ? "धन" : "Money") : t(name)}</span>
                       </button>
                     );
                   })}
@@ -721,68 +716,12 @@ export default function KundliReport({
                   aria-labelledby={`faladesh-topic-${category}`}
                   tabIndex={0}
                 >
-                  <div className="chart-facts">
-                    <h3>{t("Chart factors")}</h3>
-                    {category === "general" ? (
-                      <dl className="fact-list">
-                        <div>
-                          <dt>{t("Ascendant")}</dt>
-                          <dd>{signName(chart.lagna.rashi_number)}</dd>
-                        </div>
-                        <div>
-                          <dt>{t("चंद्र राशि")}</dt>
-                          <dd>{moon && signName(moon.rashi_number)}</dd>
-                        </div>
-                        <div>
-                          <dt>{t("Sun sign")}</dt>
-                          <dd>{sun && signName(sun.rashi_number)}</dd>
-                        </div>
-                      </dl>
-                    ) : category === "dasha" ? (
-                      <p>
-                        {activePeriod ? (
-                          <>
-                            {planetName(activePeriod.lord)} {t("Mahadasha")} ·{" "}
-                            {date(activePeriod.start)} –{" "}
-                            {date(activePeriod.end)}
-                          </>
-                        ) : (
-                          t(
-                            "Dasha calculations are not available in this saved report.",
-                          )
-                        )}
-                      </p>
-                    ) : (
-                      <dl className="fact-list">
-                        {(housesByCategory[category] || []).map((house) => (
-                          <div key={house}>
-                            <dt>
-                              {t("House")} {house} ·{" "}
-                              {signName(
-                                ((chart.lagna.rashi_number + house - 2) % 12) +
-                                  1,
-                              )}
-                            </dt>
-                            <dd>
-                              {chart.planets
-                                .filter((p) => p.house === house)
-                                .map((p) => planetName(p.name))
-                                .join(", ") || t("No natal planets")}
-                            </dd>
-                          </div>
-                        ))}
-                      </dl>
-                    )}
-                    <p className="report-caption">
-                      {t(
-                        "These are calculated chart factors, not predictions. An unoccupied house does not mean an area of life is absent.",
-                      )}
-                    </p>
-                  </div>
-                  {rules.map((rule) => (
+                  {readingRefreshing ? <p role="status">{language === "hi" ? "फलादेश अपडेट हो रहा है…" : "Updating your reading…"}</p> : readingError ? <p role="alert">{readingError}</p> : <GurujiFaladesh data={report.guruji_faladesh} category={category} report={report} />}
+                  {rules.filter(rule => !report.guruji_faladesh || !rule.demo).map((rule) => (
                     <RuleReading key={rule.id + rule.version} rule={rule} />
                   ))}
-                  {!rules.some((r) => !r.demo) && (
+
+                  {!report.guruji_faladesh && !rules.some((r) => !r.demo) && (
                     <div className="reading-status">
                       <Info size={19} />
                       <p>
@@ -819,8 +758,10 @@ export default function KundliReport({
             {tab === "checks" && (
               <section className="placement-panel">
                 <h2>{t("Yogas & Doshas")}</h2>
+                {readingRefreshing && <p role="status">{language === "hi" ? "फलादेश अपडेट हो रहा है…" : "Updating your reading…"}</p>}
+                {readingError && <p role="alert">{readingError}</p>}
                 <p className="muted">
-                  {t("yoga.intro")}
+                  {t("आपकी कुंडली में मिलने वाले योग-दोष और उनका सामान्य अर्थ।")}
                 </p>
                 <ExpandedYogaPatterns report={report} />
                 {report.checks?.length ? (
@@ -837,15 +778,7 @@ export default function KundliReport({
                               </span>
                             </div>
                             <p>{placementConclusion(check.code, check.matches).meaning}</p>
-                            <details className="detail-disclosure">
-                              <summary>{t("Calculation details")}</summary>
-                              <p>{t(copy[1])}</p>
-                            {check.house && (
-                              <small>
-                                {t("Calculated house")} {check.house}
-                              </small>
-                            )}
-                            </details>
+
                           </article>
                         )
                       );
@@ -945,42 +878,11 @@ export default function KundliReport({
                 )}
               </section>
             )}
-            {tab === "settings" && (
-              <section className="reading-panel">
-                <h2>{t("पारदर्शी गणना संदर्भ")}</h2>
-                <p>
-                  {report.place.lat}, {report.place.lon} · {report.place.zone}
-                </p>
-                <p>
-                  UTC: {minuteTimestamp(chart.utc, "UTC", language)} · Swiss
-                  Ephemeris {chart.swiss_version}
-                </p>
-                <dl className="settings-list">
-                  {Object.entries(chart.settings).map(([key, value]) => (
-                    <div key={key}>
-                      <dt>{key}</dt>
-                      <dd>{value}</dd>
-                    </div>
-                  ))}
-                </dl>
-                <p>
-                  {t("इंजन ")}
-                  {report.engine} · {t("रिपोर्ट ")}
-                  {report.id}
-                </p>
-              </section>
-            )}
+
           </>
         )}
       </div>
-      <div className="limitations">
-        {report.limitations.map((text, index) => (
-          <p key={index}>
-            <Info size={15} />
-            {t(text)}
-          </p>
-        ))}
-      </div>
+
       <div className="report-next">
         <div>
           <h2>{t("अपने अगले कदम को समझें।")}</h2>

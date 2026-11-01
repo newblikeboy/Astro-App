@@ -1,0 +1,23 @@
+.guruji-faladesh{width:100%;min-width:0;color:var(--ink);margin-top:12px}
+.guruji-faladesh *{min-width:0}
+.guruji-faladesh p{margin:0;line-height:1.95;font-size:15px}
+.guruji-conclusion{padding:24px 26px;border-left:3px solid var(--maroon);background:#fffdf9}
+.kundli-panel .guruji-conclusion h3{margin:0 0 16px;font-size:24px;font-weight:600;line-height:1.5;color:var(--maroon)}
+.guruji-faladesh .guruji-conclusion-text{font-size:18px;line-height:2;color:#3f2c26}
+.guruji-faladesh .guruji-conclusion-caution{font-size:14px;line-height:1.9;margin-top:18px;color:#665148}
+.guruji-conclusion-caution strong{font-weight:600;color:#4d352c}
+.guruji-faladesh .guruji-fine{font-size:12px;line-height:1.9;color:var(--muted);margin-top:12px}
+.guruji-period-context{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.guruji-faladesh .guruji-reference-date{font-size:12px;color:var(--muted)}
+.guruji-period-ranges{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:14px 0 0}
+.guruji-period-ranges dt{font-size:14px;font-weight:600;line-height:1.8}
+.guruji-period-ranges dd{margin:5px 0 0;font-size:12px;line-height:1.9;color:var(--muted)}
+.faladesh-topic-panel{scroll-margin-top:120px}
+.faladesh-topic-tabs button{min-height:42px;padding:10px 8px;font-size:12px}
+.guruji-reading-prose{width:100%}
+.guruji-faladesh .guruji-reading-paragraph{font-size:16px;line-height:2;color:#3f2c26;overflow-wrap:anywhere}
+.guruji-faladesh .guruji-reading-paragraph+.guruji-reading-paragraph{margin-top:18px}
+.guruji-reading-date{font-size:12px;color:var(--muted)}
+@media(max-width:600px){.guruji-faladesh .guruji-reading-paragraph{font-size:15px;line-height:2}.guruji-faladesh .guruji-reading-paragraph+.guruji-reading-paragraph{margin-top:16px}}
+.guruji-faladesh .guruji-next-period{margin-top:14px;padding-left:15px;border-left:2px solid var(--line);font-size:13px;color:var(--muted)}
+@media(max-width:600px){.guruji-conclusion{padding:20px 18px}.kundli-panel .guruji-conclusion h3{font-size:21px}.guruji-faladesh .guruji-conclusion-text{font-size:17px}.guruji-faladesh p{font-size:14px}.guruji-period-ranges{grid-template-columns:minmax(0,1fr);gap:16px}}

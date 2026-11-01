@@ -25,6 +25,7 @@ type MangalReference struct {
 	Exceptions []string `json:"exceptions"`
 }
 type MangalAssessment struct {
+	Strength         *MangalStrength   `json:"strength,omitempty"`
 	References       []MangalReference `json:"references"`
 	BaseCount        int               `json:"base_count"`
 	ActiveCount      int               `json:"active_count"`
@@ -179,6 +180,29 @@ func CalculateMangalPair(bride, groom Kundali) (MangalPair, error) {
 	if err != nil {
 		return MangalPair{}, fmt.Errorf("groom: %w", err)
 	}
+	return mangalPairAssessments(bride, groom, b, g), nil
+}
+
+// MangalPairWithStrength rebuilds pair-level exceptions after both individual
+// strength-qualified assessments, preventing stale raw-level pair conclusions.
+func MangalPairWithStrength(bride, groom Kundali, b, g MangalAssessment) (MangalPair, error) {
+	if _, err := mangalPositions(bride); err != nil {
+		return MangalPair{}, err
+	}
+	if _, err := mangalPositions(groom); err != nil {
+		return MangalPair{}, err
+	}
+	if b.Strength == nil || g.Strength == nil || b.Strength.Method != MangalStrengthMethod || g.Strength.Method != MangalStrengthMethod {
+		return MangalPair{}, fmt.Errorf("qualified individual assessments required")
+	}
+	out := mangalPairAssessments(bride, groom, b, g)
+	out.Method = MangalStrengthMethod
+	return out, nil
+}
+
+// mangalPairAssessments combines supplied individual evidence without
+// recomputing it or losing a resolved strength exception.
+func mangalPairAssessments(bride, groom Kundali, b, g MangalAssessment) MangalPair {
 	out := MangalPair{Method: MangalMethod, Bride: b, Groom: g, Rules: []MangalRule{}}
 	for _, pair := range []struct {
 		role         string
@@ -217,5 +241,5 @@ func CalculateMangalPair(bride, groom Kundali) (MangalPair, error) {
 			}
 		}
 	}
-	return out, nil
+	return out
 }

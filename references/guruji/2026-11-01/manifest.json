@@ -1,0 +1,35 @@
+{
+  "received": "2026-11-01",
+  "sources": [
+    {
+      "id": "bhav-upay",
+      "filename": "भावफल और उपाय.pdf",
+      "archive": "references/guruji/2026-11-01/bhavphal-aur-upay.pdf",
+      "sha256": "5ef9ffba64729d9c3e57506b0a8086219ac44adb2cbd63972ac9634789008d3a"
+    },
+    {
+      "id": "house-outcomes",
+      "filename": "ग्रहों का फला देश.pdf",
+      "archive": "references/guruji/2026-11-01/grahon-ka-faladesh.pdf",
+      "sha256": "dee6da565c9af7a1158af80b8d2fe0feb60fe8d8202c17b2ef476823b5fe9fe2"
+    },
+    {
+      "id": "rashi-letters",
+      "filename": "WhatsApp Image 2026-10-30 at 10.17.21 PM.jpeg",
+      "archive": "references/guruji/2026-11-01/rashi-letters.jpeg",
+      "sha256": "a5af91f62973c773ad46f9cf1125a609202eed74affad80fdda1726d1cff74d3"
+    },
+    {
+      "id": "house-significations",
+      "filename": "WhatsApp Image 2026-10-30 at 10.16.40 PM.jpeg",
+      "archive": "references/guruji/2026-11-01/house-significations.jpeg",
+      "sha256": "22ee5594aed6b56213835a95204683de746c12ba5badbbb86d19a7314edf16a9"
+    },
+    {
+      "id": "lagna-whiteboard",
+      "filename": "WhatsApp Image 2026-10-30 at 10.15.32 PM.jpeg",
+      "archive": "references/guruji/2026-11-01/lagna-whiteboard.jpeg",
+      "sha256": "a3fe21599fbf623cfd6ab2bfa5e9c413f2005f50f37bfe4223013a79805d6a99"
+    }
+  ]
+}

@@ -54,6 +54,8 @@ export function factorExplanation(f: MatchingFactor) {
   });
 }
 export const mangalRuleLabels: Record<string, string> = {
+  strong_benefic_Jupiter:"Strength-qualified Jupiter in own or exalted sign in house 1 or 7",
+  strong_benefic_Venus:"Strength-qualified Venus in own or exalted sign in house 1 or 7",
   mars_own_or_exalted: "Mars in its own or exalted sign",
   mars_debilitated: "Mars in Cancer (selected cancellation tradition)",
   mars_retrograde: "Retrograde Mars",

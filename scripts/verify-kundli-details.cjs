@@ -205,14 +205,9 @@ const results = {
         report.details.analysis.varga_strength.map((p) => p.total),
       );
       await inspect("planets", language, { shot: true });
-      // Open every detailed calculation panel, including a contributor table.
-      await page
-        .locator(".planet-analysis-panel > details")
-        .evaluateAll((nodes) => nodes.forEach((n) => (n.open = true)));
-      await page
-        .locator(".prastara-planet")
-        .first()
-        .evaluate((n) => (n.open = true));
+      // End-result tables stay available; contribution formulas are no longer reader-facing.
+      await page.locator('.planet-analysis-panel > details').evaluateAll(nodes=>nodes.forEach(n=>n.open=true));
+      assert.equal(await page.locator('.prastara-planet').count(),0);
       await inspect("analysis-tables", language);
       await tab("checks");
       assert.equal(

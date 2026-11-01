@@ -426,30 +426,7 @@ export default function DashaPanel({ report }: { report: Report }) {
           {t("Loading Dasha periods…")}
         </span>
       )}
-      {root && (
-        <details className="dasha-method">
-          <summary>{t("Dasha calculation reference")}</summary>
-          <p>
-            {t(
-              "Subperiod duration = full parent duration × the subperiod lord’s Vimshottari years ÷ 120. Each sequence starts with the parent lord.",
-            )}
-          </p>
-          <p>
-            {t(
-              "The first period begins before birth. Subperiods use its full duration, not the remaining birth balance.",
-            )}
-          </p>
-          <p>
-            {root.year_days} {t("days per year")} ·{" "}
-            {t("Start inclusive; end exclusive")}
-          </p>
-          <p>
-            {t("At birth")}: {planetName(root.birth_lord)} ·{" "}
-            {root.balance_years.toFixed(3)} {t("years remaining")}
-          </p>
-          <code>{root.method}</code>
-        </details>
-      )}
+
     </section>
   );
 }

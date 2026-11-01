@@ -250,6 +250,40 @@ func TestPlanetConditionsAndVimshopakaIndependentMaximum(t *testing.T) {
 	}
 }
 
+// TestNeighbourYogaContributors excludes planets on the opposite side from each
+// one-sided yoga's evidence, while retaining both sides for the combined yoga.
+func TestNeighbourYogaContributors(t *testing.T) {
+	chart := expansionChart()
+	for i := range chart.Planets {
+		longitude := 100.0
+		switch chart.Planets[i].Name {
+		case "Sun", "Moon":
+			longitude = 10
+		case "Mars":
+			longitude = 340
+		case "Jupiter":
+			longitude = 40
+		}
+		chart.Planets[i].ZodiacPosition = zodiacPosition(longitude)
+	}
+	for _, pattern := range CalculatePlanetAnalysis(chart).Patterns {
+		var want []string
+		switch pattern.Name {
+		case "Vasi", "Anapha":
+			want = []string{"Mars"}
+		case "Vesi", "Sunapha":
+			want = []string{"Jupiter"}
+		case "Ubhayachari", "Durudhara":
+			want = []string{"Mars", "Jupiter"}
+		default:
+			continue
+		}
+		if !pattern.Matches || !reflect.DeepEqual(pattern.Planets, want) {
+			t.Errorf("%s: contributors %v, want %v", pattern.Name, pattern.Planets, want)
+		}
+	}
+}
+
 // TestYoginiFullParentBalanceAndRepeatedCycles checks Yogini birth balance, full parent intervals and repeated cycles.
 func TestYoginiFullParentBalanceAndRepeatedCycles(t *testing.T) {
 	birth := time.Date(2000, 1, 1, 12, 0, 0, 0, time.UTC)

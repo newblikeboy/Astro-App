@@ -1,0 +1,14 @@
+[
+  {"lagna":1,"marak":["Venus","Mercury"],"karak":["Mars","Moon","Sun","Jupiter"],"neutral":["Saturn"]},
+  {"lagna":2,"marak":["Moon","Mars","Jupiter"],"karak":["Venus","Mercury","Saturn"],"neutral":["Sun"]},
+  {"lagna":3,"marak":["Moon","Sun","Mars"],"karak":["Mercury","Venus","Saturn","Jupiter"],"neutral":[]},
+  {"lagna":4,"marak":["Sun","Mercury","Saturn"],"karak":["Mars","Jupiter","Moon"],"neutral":["Venus"]},
+  {"lagna":5,"marak":["Saturn","Moon"],"karak":["Sun","Mercury","Mars","Jupiter"],"neutral":["Venus"]},
+  {"lagna":6,"marak":["Mars","Moon"],"karak":["Mercury","Venus","Jupiter","Saturn","Sun"],"neutral":[]},
+  {"lagna":7,"marak":["Mars","Jupiter","Mercury","Sun"],"karak":["Saturn","Venus"],"neutral":["Moon"]},
+  {"lagna":8,"marak":["Venus","Mercury"],"karak":["Jupiter","Moon","Sun","Mars"],"neutral":["Saturn"]},
+  {"lagna":9,"marak":["Saturn","Venus","Moon"],"karak":["Jupiter","Mars","Mercury","Sun"],"neutral":[]},
+  {"lagna":10,"marak":["Jupiter","Moon","Sun"],"karak":["Saturn","Venus","Mercury"],"neutral":["Mars"]},
+  {"lagna":11,"marak":["Moon","Sun"],"karak":["Saturn","Jupiter","Venus","Mercury"],"neutral":["Mars"]},
+  {"lagna":12,"marak":["Venus","Saturn","Sun"],"karak":["Jupiter","Mars","Mercury","Moon"],"neutral":[]}
+]

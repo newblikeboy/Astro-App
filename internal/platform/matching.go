@@ -41,12 +41,13 @@ type MatchingSummary struct {
 
 type MatchingResponse struct {
 	swisseph.Matching
-	CalculatedAt time.Time           `json:"calculated_at"`
-	Bride        MatchingParticipant `json:"bride"`
-	Groom        MatchingParticipant `json:"groom"`
-	Settings     map[string]string   `json:"settings"`
-	Mangal       swisseph.MangalPair `json:"mangal"`
-	Summary      MatchingSummary     `json:"summary"`
+	Exceptions   *swisseph.MatchingExceptions `json:"exceptions,omitempty"`
+	CalculatedAt time.Time                    `json:"calculated_at"`
+	Bride        MatchingParticipant          `json:"bride"`
+	Groom        MatchingParticipant          `json:"groom"`
+	Settings     map[string]string            `json:"settings"`
+	Mangal       swisseph.MangalPair          `json:"mangal"`
+	Summary      MatchingSummary              `json:"summary"`
 }
 
 // matchingParticipant validates one matching participant and resolves their actual birth instant and native chart.
@@ -177,7 +178,36 @@ func (a *App) calculateMatching(ctx context.Context, in MatchingRequest) (*Match
 	if err != nil {
 		return nil, &matchingFailure{503, "", "Matching calculations are unavailable right now. Please try again."}
 	}
+	exceptions, err := swisseph.CalculateMatchingExceptions(*bride.Chart, *groom.Chart)
+	if err != nil {
+		return nil, &matchingFailure{503, "", "Matching calculations are unavailable right now. Please try again."}
+	}
+	// Raw point totals remain unchanged; only the assessment's active caution
+	// list suppresses the doshas cancelled by independently retained rules.
+	activeCautions := []string{}
+	for _, code := range score.Cautions {
+		if code == "nadi_same" && !exceptions.Nadi.Active || code == "bhakoot_adverse" && !exceptions.Bhakoot.Active {
+			continue
+		}
+		activeCautions = append(activeCautions, code)
+	}
+	score.Cautions = activeCautions
 	mangal, err := swisseph.CalculateMangalPair(*bride.Chart, *groom.Chart)
+	if err != nil {
+		return nil, &matchingFailure{503, "", "Matching calculations are unavailable right now. Please try again."}
+	}
+	for i, person := range []MatchingParticipant{bride, groom} {
+		qualified, err := matchingMangalStrength(ctx, a.Config, person)
+		if err != nil {
+			return nil, &matchingFailure{503, "", "Matching calculations are unavailable right now. Please try again."}
+		}
+		if i == 0 {
+			mangal.Bride = qualified
+		} else {
+			mangal.Groom = qualified
+		}
+	}
+	mangal, err = swisseph.MangalPairWithStrength(*bride.Chart, *groom.Chart, mangal.Bride, mangal.Groom)
 	if err != nil {
 		return nil, &matchingFailure{503, "", "Matching calculations are unavailable right now. Please try again."}
 	}
@@ -194,7 +224,7 @@ func (a *App) calculateMatching(ctx context.Context, in MatchingRequest) (*Match
 		review = append(review, "mangal_pair_review")
 	}
 	return &MatchingResponse{
-		Matching: score, CalculatedAt: now.UTC(), Bride: bride, Groom: groom,
+		Matching: score, Exceptions: &exceptions, CalculatedAt: now.UTC(), Bride: bride, Groom: groom,
 		Mangal: mangal, Summary: MatchingSummary{Band: band, ReviewCodes: review},
 		Settings: map[string]string{
 			"calculation_engine": reports[0].Engine,
@@ -204,11 +234,33 @@ func (a *App) calculateMatching(ctx context.Context, in MatchingRequest) (*Match
 			"bride_timezone":     bride.Place.Zone,
 			"groom_timezone":     groom.Place.Zone,
 			"score_basis":        "AIFAS 2021 North Indian base Ashtakoota; no cancellation bonuses",
-			"mangal_method":      swisseph.MangalMethod,
+			"mangal_method":      swisseph.MangalStrengthMethod,
 			"mangal_level":       "Reference coverage: 0 none, 1 low, 2 or 3 high; raw and selected exceptions shown separately",
 			"clock":              "UTC via Swiss; before 1972 Swiss uses its documented UT1 convention",
 		},
 	}, nil
+}
+
+// matchingMangalStrength resolves only the native inputs required for the
+// source's strong-benefic cancellation; it does not expand or persist a report.
+func matchingMangalStrength(ctx context.Context, c Config, person MatchingParticipant) (swisseph.MangalAssessment, error) {
+	at, err := time.Parse(time.RFC3339Nano, person.Chart.UTC)
+	if err != nil {
+		return swisseph.MangalAssessment{}, err
+	}
+	birth, chalit, err := swisseph.CalculateBirthDetails(ctx, c.EpheDir, person.Place.Zone, at, *person.Chart)
+	if err != nil {
+		return swisseph.MangalAssessment{}, err
+	}
+	bala, err := swisseph.CalculateShadbala(ctx, c.EpheDir, person.Place.Zone, at, *person.Chart, birth, chalit)
+	if err != nil {
+		return swisseph.MangalAssessment{}, err
+	}
+	base, err := swisseph.CalculateMangal(*person.Chart)
+	if err != nil {
+		return swisseph.MangalAssessment{}, err
+	}
+	return swisseph.QualifyMangalStrength(*person.Chart, base, bala, swisseph.CalculatePlanetAnalysis(*person.Chart))
 }
 
 type MatchingProfile struct {

@@ -22,6 +22,35 @@ func TestZodiacBoundaries(t *testing.T) {
 	}
 }
 
+// TestNakshatraAndPadaAdjacentFloats keeps both sides of every exact angular
+// boundary distinct and checks that the birth Dasha agrees with the Moon's star.
+func TestNakshatraAndPadaAdjacentFloats(t *testing.T) {
+	birth := time.Date(2000, 1, 1, 0, 0, 0, 0, time.UTC)
+	for part := 1; part < 108; part++ {
+		edge := float64(part) * 360 / 108
+		for _, sample := range []struct {
+			longitude float64
+			index     int
+		}{{math.Nextafter(edge, 0), part - 1}, {edge, part}, {math.Nextafter(edge, 360), part}} {
+			p := zodiacPosition(sample.longitude)
+			if p.NakshatraNumber != sample.index/4+1 || p.Pada != sample.index%4+1 {
+				t.Errorf("boundary %d at %.18g: star/pada %d/%d, want %d/%d", part, sample.longitude, p.NakshatraNumber, p.Pada, sample.index/4+1, sample.index%4+1)
+			}
+			if part%4 != 0 {
+				continue
+			}
+			d := CalculateVimshottari(sample.longitude, birth, birth)
+			if d.BirthLord != dashaLords[(sample.index/4)%9] || d.BalanceYears <= 0 || d.BalanceYears > dashaYears[(sample.index/4)%9] {
+				t.Errorf("boundary %d: incorrect Vimshottari birth balance/lord: %s %.18g", part, d.BirthLord, d.BalanceYears)
+			}
+			y, err := CalculateYogini(sample.longitude, birth, birth)
+			if err != nil || y.BirthLord != yoginiLords[(sample.index/4+3)%8].Lord || y.BalanceYears <= 0 {
+				t.Errorf("boundary %d: incorrect Yogini birth balance/lord: %s %.18g %v", part, y.BirthLord, y.BalanceYears, err)
+			}
+		}
+	}
+}
+
 // TestNormalizedZodiacHalfOpenRangeAndDisplay checks normalized zodiac coordinates and display at half-open sign boundaries.
 func TestNormalizedZodiacHalfOpenRangeAndDisplay(t *testing.T) {
 	// The negative sub-ULP case previously rounded to 360 and indexed sign 13.

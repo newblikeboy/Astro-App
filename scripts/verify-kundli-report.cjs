@@ -71,7 +71,6 @@ const assert = require("node:assert/strict");
           "dasha",
           "checks",
           "transits",
-          "settings",
         ]) {
           if (process.env.KUNDLI_QA_PROGRESS === "1")
             console.log(`${lang}/${width}/${tab}`);
@@ -309,7 +308,7 @@ const assert = require("node:assert/strict");
     );
     await page.keyboard.press("End");
     assert.equal(
-      await page.locator("#kundli-tab-settings").getAttribute("aria-selected"),
+      await page.locator("#kundli-tab-transits").getAttribute("aria-selected"),
       "true",
     );
     await page.keyboard.press("Home");

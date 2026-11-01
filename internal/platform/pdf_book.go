@@ -10,7 +10,9 @@ type pdfFact struct{ Label, Value, Meaning string }
 type pdfReadingCard struct{ Title, Conclusion, Meaning string }
 type pdfTopic struct {
 	ID, Title, Intro string
+	Category         string
 	Rules            []Rule
+	Paragraphs       []string
 }
 type pdfBookAppendix struct {
 	pdfSection
@@ -31,6 +33,26 @@ type pdfBook struct {
 // It performs no astronomy, database lookup or replacement of approved personal prose.
 func (l pdfLocale) book(r *Report, zone *time.Location, sections []pdfSection) pdfBook {
 	book := pdfBook{Numerology: l.numerologySection(r.Numerology), Topics: l.bookTopics(r.Rules), YogaReference: "sources", Periods: pdfSection{ID: "time-reading", Title: l.text("book.periods"), Intro: l.text("book.periods-intro")}}
+	if r.GurujiFaladesh != nil && r.GurujiFaladesh.Analysis != nil && r.GurujiFaladesh.Analysis.ReaderVersion == readerContractVersion {
+		canonical := []pdfTopic{}
+		for _, topic := range r.GurujiFaladesh.Analysis.Topics {
+			canonical = append(canonical, pdfTopic{ID: "reading-" + topic.Category, Category: topic.Category, Title: l.readerTopicTitle(topic.Category), Paragraphs: l.faladeshParagraphs(topic)})
+		}
+		for _, retained := range book.Topics {
+			merged := false
+			for i := range canonical {
+				if canonical[i].Category == retained.Category {
+					canonical[i].Rules = append(canonical[i].Rules, retained.Rules...)
+					merged = true
+					break
+				}
+			}
+			if !merged {
+				canonical = append(canonical, retained)
+			}
+		}
+		book.Topics = canonical
+	}
 	if r.Chart != nil {
 		book.Portrait = append(book.Portrait, pdfFact{l.text("Ascendant"), l.sign(r.Chart.Lagna.RashiNumber), l.text("book.lagna-meaning")})
 		for _, p := range r.Chart.Planets {
@@ -52,7 +74,18 @@ func (l pdfLocale) book(r *Report, zone *time.Location, sections []pdfSection) p
 			if checks.Rajyog.Matches {
 				status, meaning = "rajyog.present", "rajyog.meaning"
 			}
-			book.Yogas = append(book.Yogas, pdfReadingCard{l.text("Rajyog · Kendra–Trikona relationships"), l.text(status), l.text(meaning)})
+			rajStatus, rajMeaning := l.text(status), l.text(meaning)
+			if d.RajyogReading != nil {
+				rajStatus = l.gurujiWording(d.RajyogReading.Summary)
+				paragraphs := []string{}
+				for _, p := range d.RajyogReading.Paragraphs {
+					paragraphs = append(paragraphs, l.gurujiWording(p))
+				}
+				rajMeaning = strings.Join(paragraphs, "\n\n")
+			} else if checks.Rajyog.Matches {
+				rajMeaning = l.text("rajyog.reading-unavailable")
+			}
+			book.Yogas = append(book.Yogas, pdfReadingCard{l.text("Rajyog · Kendra–Trikona relationships"), rajStatus, rajMeaning})
 			for _, lord := range checks.Rajyog.Yogakarakas {
 				book.Yogas = append(book.Yogas, pdfReadingCard{l.text("Yogakaraka lordship"), l.conclusion("yogakaraka.present", l.text(lord.Planet)), l.text("yogakaraka.meaning")})
 			}
@@ -67,7 +100,7 @@ func (l pdfLocale) book(r *Report, zone *time.Location, sections []pdfSection) p
 				continue
 			}
 			status, meaning := l.placementReading(p.Code, true)
-			book.Yogas = append(book.Yogas, pdfReadingCard{l.text("yoga.name." + p.Code), status, meaning})
+			book.Yogas = append(book.Yogas, pdfReadingCard{l.text("yoga.name." + p.Code), status, strings.TrimSpace(meaning + "\n\n" + l.yogaQualificationNote(d, p.Code))})
 		}
 	} else {
 		book.Yogas = append(book.Yogas, pdfReadingCard{l.text("Kaal Sarp Dosha & Rajyog"), l.text("Recreate this Kundli from its birth details to include Kaal Sarp Dosha and Rajyog checks. This saved report has not been assessed for them."), ""})
@@ -81,7 +114,7 @@ func (l pdfLocale) book(r *Report, zone *time.Location, sections []pdfSection) p
 			continue
 		}
 		status, meaning := l.placementReading(p.Code, true)
-		book.Yogas = append(book.Yogas, pdfReadingCard{l.text("yoga.name." + p.Code), status, meaning})
+		book.Yogas = append(book.Yogas, pdfReadingCard{l.text("yoga.name." + p.Code), status, strings.TrimSpace(meaning + "\n\n" + l.yogaQualificationNote(r.Details, p.Code))})
 	}
 	if r.Dasha == nil {
 		book.Periods.Intro = l.text("book.periods-unavailable")
@@ -100,6 +133,9 @@ func (l pdfLocale) book(r *Report, zone *time.Location, sections []pdfSection) p
 		book.Periods.Blocks = append(book.Periods.Blocks, pdfBlock{Title: l.text("गणना का संदर्भ:"), Note: l.date(d.AsOf, zone) + "\n" + l.text("book.snapshot-note"), KeepTogether: true})
 	}
 	for _, section := range sections {
+		if section.ID == "combined-faladesh" && r.GurujiFaladesh != nil && r.GurujiFaladesh.Analysis != nil && r.GurujiFaladesh.Analysis.ReaderVersion == readerContractVersion {
+			continue
+		}
 		if section.ID == "yogas" || section.ID == "checks" {
 			book.YogaReference = section.ID
 		}
@@ -144,7 +180,7 @@ func (l pdfLocale) bookTopics(rules []Rule) []pdfTopic {
 		if title == "book.topic."+category {
 			title, intro = l.text(pdfCategory(category)), l.text("book.context.general")
 		}
-		topics = append(topics, pdfTopic{ID: fmt.Sprintf("topic-%02d", len(topics)+1), Title: title, Intro: intro, Rules: grouped[category]})
+		topics = append(topics, pdfTopic{ID: fmt.Sprintf("topic-%02d", len(topics)+1), Category: category, Title: title, Intro: intro, Rules: grouped[category]})
 	}
 	return topics
 }

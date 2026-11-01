@@ -7,16 +7,19 @@ import (
 )
 
 type KundliExpansion struct {
-	Method       string                    `json:"method"`
-	Birth        swisseph.BirthDetails     `json:"birth"`
-	Chalit       swisseph.Chalit           `json:"chalit"`
-	Vargas       []swisseph.Varga          `json:"vargas"`
-	Analysis     swisseph.PlanetAnalysis   `json:"analysis"`
-	Ashtakavarga swisseph.Ashtakavarga     `json:"ashtakavarga"`
-	Yogini       swisseph.Yogini           `json:"yogini"`
-	Mangal       swisseph.MangalAssessment `json:"mangal"`
-	MangalMethod string                    `json:"mangal_method"`
-	YogaChecks   *swisseph.NatalYogaChecks `json:"yoga_checks,omitempty"`
+	RajyogReading  *RajyogReading               `json:"rajyog_reading,omitempty"`
+	Qualifications *swisseph.YogaQualifications `json:"qualifications,omitempty"`
+	Shadbala       *swisseph.Shadbala           `json:"shadbala,omitempty"`
+	Method         string                       `json:"method"`
+	Birth          swisseph.BirthDetails        `json:"birth"`
+	Chalit         swisseph.Chalit              `json:"chalit"`
+	Vargas         []swisseph.Varga             `json:"vargas"`
+	Analysis       swisseph.PlanetAnalysis      `json:"analysis"`
+	Ashtakavarga   swisseph.Ashtakavarga        `json:"ashtakavarga"`
+	Yogini         swisseph.Yogini              `json:"yogini"`
+	Mangal         swisseph.MangalAssessment    `json:"mangal"`
+	MangalMethod   string                       `json:"mangal_method"`
+	YogaChecks     *swisseph.NatalYogaChecks    `json:"yoga_checks,omitempty"`
 }
 
 // expandKundli assembles the report's birth Panchang, vargas, planetary analysis and supplementary timelines.
@@ -49,7 +52,15 @@ func expandKundli(c Config, chart swisseph.Kundali, at, asOf time.Time, zone str
 		return nil, err
 	}
 	analysis.VargaStrength = strength
+	bala, err := swisseph.CalculateShadbala(context.Background(), c.EpheDir, zone, at, chart, birth, chalit)
+	if err != nil {
+		return nil, err
+	}
 	mangal, err := swisseph.CalculateMangal(chart)
+	if err != nil {
+		return nil, err
+	}
+	mangal, err = swisseph.QualifyMangalStrength(chart, mangal, bala, analysis)
 	if err != nil {
 		return nil, err
 	}
@@ -57,5 +68,9 @@ func expandKundli(c Config, chart swisseph.Kundali, at, asOf time.Time, zone str
 	if err != nil {
 		return nil, err
 	}
-	return &KundliExpansion{Method: "m4y-kundli-details-v2", Birth: birth, Chalit: chalit, Vargas: vargas, Analysis: analysis, Ashtakavarga: ashtaka, Yogini: yogini, Mangal: mangal, MangalMethod: swisseph.MangalMethod, YogaChecks: &yogaChecks}, nil
+	qualifications, err := swisseph.CalculateYogaQualifications(chart, analysis, bala, yogaChecks)
+	if err != nil {
+		return nil, err
+	}
+	return &KundliExpansion{RajyogReading: buildRajyogReading(&yogaChecks, &qualifications), Qualifications: &qualifications, Shadbala: &bala, Method: "m4y-kundli-details-v2", Birth: birth, Chalit: chalit, Vargas: vargas, Analysis: analysis, Ashtakavarga: ashtaka, Yogini: yogini, Mangal: mangal, MangalMethod: swisseph.MangalStrengthMethod, YogaChecks: &yogaChecks}, nil
 }

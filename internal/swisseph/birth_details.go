@@ -93,10 +93,11 @@ func CalculateBirthDetails(ctx context.Context, epheDir, zone string, at time.Ti
 		if elongation >= 180 {
 			out.Paksha = "Krishna"
 		}
-		widths := []float64{12, 360.0 / 27, 360.0 / 27, 6}
+		counts := []int{30, 27, 27, 60}
 		values := []float64{elongation, moon.Longitude, normalizeDegrees(moon.Longitude + sun.Longitude), elongation}
-		for kind, width := range widths {
-			index := int(math.Floor(values[kind] / width))
+		for kind, count := range counts {
+			index := zodiacSegment(values[kind], count)
+			left, right := float64(index)*360/float64(count), float64(index+1)*360/float64(count)
 			// value evaluates the selected birth Panchang angle for native interval-boundary searches.
 			value := func(point float64) (float64, error) {
 				m, e := s.position(point, 1)
@@ -116,13 +117,13 @@ func CalculateBirthDetails(ctx context.Context, epheDir, zone string, at time.Ti
 				return normalizeDegrees(m.Longitude - a.Longitude), nil
 			}
 			start := jd
-			if values[kind] != float64(index)*width {
-				start, err = monotoneCross(ctx, jd, float64(index)*width, -1, 4, value)
+			if values[kind] != left {
+				start, err = monotoneCross(ctx, jd, left, -1, 4, value)
 				if err != nil {
 					return err
 				}
 			}
-			end, e := monotoneCross(ctx, jd, float64(index+1)*width, 1, 4, value)
+			end, e := monotoneCross(ctx, jd, right, 1, 4, value)
 			if e != nil {
 				return e
 			}

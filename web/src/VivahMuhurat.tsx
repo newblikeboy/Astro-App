@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { CalendarDays, ChevronLeft, ChevronRight, Heart, Info, LoaderCircle, MapPin, Search, Sparkles } from "lucide-react";
 import { PortalFooter, PortalHeader } from "./PortalShell";
 import { t, useLanguage } from "./i18n";
-import { followRoute, navigate, useAppLocation } from "./routing";
+import { navigate, useAppLocation } from "./routing";
 import { MIN_CALCULATION_DATE, MAX_CALCULATION_DATE, indiaTimeZoneLabel } from "./calculation-dates";
 import { minuteTimestamp } from "./time-display";
 import TimeRange from "./TimeRange";
@@ -176,10 +176,7 @@ export default function VivahMuhurat() {
         <div><label htmlFor="vivah-month"><CalendarDays size={15} aria-hidden="true" />{t("Wedding month")}</label>
           <input id="vivah-month" type="month" min={minMonth} max={maxMonth} value={month}
             onChange={(event) => { if (validMonth(event.target.value)) update({ month: event.target.value }); }} /></div>
-        <div><label htmlFor="vivah-sunrise">{t("Sunrise method")}</label>
-          <select id="vivah-sunrise" value={convention} onChange={(event) => update({ sunrise: event.target.value })}>
-            <option value="upper-limb">{t("Upper limb · with refraction")}</option><option value="hindu">{t("Hindu · centre, without refraction")}</option>
-          </select></div>
+
       </div>
       <aside className="vivah-note"><Info size={19} aria-hidden="true" /><p>{t("These are preliminary windows. Confirm the final ceremony time with your priest using both birth charts, a suitable Lagna and your family tradition.")}</p></aside>
       <section className="vivah-results" aria-labelledby="vivah-results-heading" aria-busy={busy || (!currentData && !error)}>
@@ -214,15 +211,7 @@ export default function VivahMuhurat() {
             {month === maxMonth && <p className="vivah-range-note">{t("Calculations are available through 30 December 2099. The final day of this month is outside the supported range.")}</p>}
           </>}
       </section>
-      <section className="vivah-method" aria-labelledby="vivah-method-heading"><h2 id="vivah-method-heading">{t("How these dates are shortlisted")}</h2>
-        <div className="vivah-method-grid"><div><h3>{t("Guruji's supplied rules")}</h3><p>{t("Uses the fourteen Nakshatras in Guruji's supplied list. Saturdays are excluded. Each window stays within Taurus, Gemini, Virgo, Libra, Sagittarius or Pisces Lagna.")}</p></div>
-          <div><h3>{t("Additional Panchang safeguards")}</h3><p>{t("Existing safeguards remain: Magha/Mula first quarters, Rikta Tithis, Amavasya, adverse Yogas and prohibited Karanas; selected solar signs, Chaturmas, Adhika/Kshaya Masa, Holashtak, Rahu Kaal, Dur Muhurtam and Varjyam.")}</p></div>
-          <div><h3>{t("Guru and Shukra")}</h3><p>{t("Uses angular combustion: Jupiter within 11°, Venus within 10° direct or 8° retrograde. Heliacal Asta and the days before and after it need separate review.")}</p></div></div>
-        <p className="vivah-method-foot">{t("Guruji's complete method is still under review: Tuesday, Tithis, month conventions, Panchashalaka Vedha, planetary house conditions, exceptions and Trijyeshtha need confirmation. Other weekdays retain their current behavior.")}</p>
-        <p className="vivah-method-foot">{t("Each day runs from sunrise to the next sunrise. Times after midnight carry the next date. Lagna signs are checked; full Lagna/Navamsha Shuddhi, personal Tara/Chandra bala, Lattadi and eclipse or Sankranti buffers require separate review.")}</p>
-        <div className="vivah-method-links"><a href="https://www.drikpanchang.com/shubh-dates/info/choosing-auspicious-marriage-date.html" target="_blank" rel="noreferrer">{t("Marriage rule reference")}</a>
-          <a href="/kundli-matching" onClick={(event) => followRoute(event, "/kundli-matching")}>{t("Kundli matching")} →</a></div>
-      </section>
+
     </main><PortalFooter />
   </div>;
 }

@@ -31,18 +31,18 @@ func TestPDFBookPreservesTopicsAndEvidence(t *testing.T) {
 		l := pdfLocale{language}
 		sections := l.sections(r, time.UTC)
 		book := l.book(r, time.UTC, sections)
-		if len(book.Portrait) != 4 || len(book.Appendices) != len(sections)-1 || len(book.Topics) != 4 || book.Numerology.ID != "numerology" || len(book.Periods.Blocks) < 2 {
+		if len(book.Portrait) != 4 || len(book.Appendices) != len(sections)-2 || len(book.Topics) != 10 || book.Numerology.ID != "numerology" || len(book.Periods.Blocks) < 2 {
 			t.Fatal("book lost a reading or calculation section")
 		}
-		if book.Topics[0].Rules[0].ID != "education" || book.Topics[1].Rules[0].ID != "career" || len(book.Topics[2].Rules) != 2 || book.Topics[2].Rules[0].ID != "marriage-first" || book.Topics[2].Rules[1].ID != "relationship-second" {
+		if book.Topics[2].Rules[0].ID != "education" || book.Topics[3].Rules[0].ID != "career" || len(book.Topics[5].Rules) != 2 || book.Topics[5].Rules[0].ID != "marriage-first" || book.Topics[5].Rules[1].ID != "relationship-second" || book.Topics[9].Rules[0].ID != "unknown" {
 			t.Fatal("topic grouping lost or reordered personal readings")
 		}
-		if book.Topics[2].Rules[0].Hindi != r.Rules[0].Hindi || book.Topics[2].Rules[0].Mantra != r.Rules[0].Mantra {
+		if book.Topics[5].Rules[0].Hindi != r.Rules[0].Hindi || book.Topics[5].Rules[0].Mantra != r.Rules[0].Mantra {
 			t.Fatal("personal wording was replaced")
 		}
 		index := 0
 		for _, section := range sections {
-			if section.ID == "numerology" {
+			if section.ID == "numerology" || section.ID == "combined-faladesh" {
 				continue
 			}
 			if !reflect.DeepEqual(section, book.Appendices[index].pdfSection) {
@@ -52,6 +52,14 @@ func TestPDFBookPreservesTopicsAndEvidence(t *testing.T) {
 		}
 		if language == "en" {
 			book.Topics = nil // Stored personal words intentionally keep their supplied language.
+			// Imported Hindi source passages are explicitly labelled originals, not application-owned labels.
+			ownedAppendices := []pdfBookAppendix{}
+			for _, appendix := range book.Appendices {
+				if appendix.ID != "guruji-references" {
+					ownedAppendices = append(ownedAppendices, appendix)
+				}
+			}
+			book.Appendices = ownedAppendices
 			owned, _ := json.Marshal(book)
 			if regexp.MustCompile(`[\x{0900}-\x{097f}]`).Match(owned) || strings.Contains(string(owned), "book.") || strings.Contains(string(owned), "{v") {
 				t.Fatal("untranslated book wording")

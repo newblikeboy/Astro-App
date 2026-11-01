@@ -31,11 +31,12 @@ func CalculateYogini(moonLongitude float64, birth, asOf time.Time) (Yogini, erro
 	if !finite(moonLongitude) || moonLongitude < 0 || moonLongitude >= 360 || asOf.Before(birth) {
 		return out, fmt.Errorf("invalid Yogini inputs")
 	}
-	star := int(moonLongitude * 27 / 360)
+	star := zodiacSegment(moonLongitude, 27)
 	first := (star + 3) % 8 // zero-based lord; Ashwini -> Bhramari
-	fraction := moonLongitude*27/360 - float64(star)
+	left, right := float64(star)*360/27, float64(star+1)*360/27
+	fraction := (moonLongitude - left) / (right - left)
 	out.BirthLord = yoginiLords[first].Lord
-	out.BalanceYears = (1 - fraction) * float64(yoginiLords[first].Years)
+	out.BalanceYears = (right - moonLongitude) / (right - left) * float64(yoginiLords[first].Years)
 	start := addDashaYears(birth, -fraction*float64(yoginiLords[first].Years))
 	for i := 0; i < 48; i++ {
 		index := (first + i) % 8

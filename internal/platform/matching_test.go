@@ -113,7 +113,7 @@ func TestMatchingHTTPStatelessNativeResult(t *testing.T) {
 	if strings.Contains(w.Body.String(), "user_id") || root["rules"] != nil || strings.Contains(w.Body.String(), "payment_key") {
 		t.Fatal("unnecessary account/content/provider data exposed")
 	}
-	if got.Bride.Chart == nil || got.Groom.Navamsa == nil || got.Bride.Dasha == nil || len(got.Bride.Chart.Planets) != 9 || got.Mangal.Method != swisseph.MangalMethod || len(got.Mangal.Bride.References) != 3 || got.Summary.Band == "" {
+	if got.Bride.Chart == nil || got.Groom.Navamsa == nil || got.Bride.Dasha == nil || len(got.Bride.Chart.Planets) != 9 || got.Mangal.Method != swisseph.MangalStrengthMethod || got.Mangal.Bride.Strength == nil || len(got.Mangal.Bride.References) != 3 || got.Summary.Band == "" {
 		t.Fatal("expanded native comparison incomplete")
 	}
 }

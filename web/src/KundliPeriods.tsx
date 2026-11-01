@@ -119,14 +119,9 @@ export function YoginiPanel({ report }: { report: Report }) {
       </div>
       <p className="report-caption">
         {t("Birth Dasha balance")}: {yoginiName(yogini.birth_lord)} ·{" "}
-        {yogini.balance_years.toFixed(3)} {t("years remaining")}.{" "}
-        {yogini.year_days} {t("days per year")}. {t("Birthplace time zone")}:{" "}
-        {report.place.zone}.
+        {yogini.balance_years.toFixed(3)} {t("years remaining")}.
       </p>
-      <details className="detail-disclosure">
-        <summary>{t("Dasha calculation reference")}</summary>
-        <p>{yogini.method}</p>
-      </details>
+
     </section>
   );
 }
