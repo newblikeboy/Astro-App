@@ -3,6 +3,7 @@ package platform
 import (
 	"fmt"
 	"github.com/joho/godotenv"
+	"net/mail"
 	"os"
 	"strings"
 )
@@ -13,7 +14,7 @@ type Config struct {
 	PaymentMode, KeyID, KeySecret, WebhookSecret                                  string
 	ZoomMode, ZoomAccount, ZoomClient, ZoomSecret, ZoomUser                       string
 	OTPMode, OTPURL, OTPToken, NotificationURL, NotificationToken                 string
-	AdminPassword, AdminTOTP                                                      string
+	AdminEmail, AdminPassword                                                     string
 }
 
 // LoadConfig loads the selected environment file and validates storage, provider and production settings.
@@ -27,7 +28,7 @@ func LoadConfig() (Config, error) {
 	if mode != "development" && mode != "test" && mode != "production" {
 		return Config{}, fmt.Errorf("APP_ENV must be development, test or production")
 	}
-	c := Config{Production: os.Getenv("APP_ENV") == "production", Origin: env("APP_ORIGIN", "http://localhost:5173"), Addr: env("HTTP_ADDR", "127.0.0.1:8080"), MongoURI: os.Getenv("MONGODB_URI"), MongoDatabase: env("MONGODB_DATABASE", "mishra4you_development"), DataDir: env("DATA_DIR", ".local"), EpheDir: env("EPHE_DIR", "ephe"), FontPath: env("FONT_PATH", "assets/NotoSansDevanagari-Regular.ttf"), ChromePath: os.Getenv("CHROME_PATH"), PaymentMode: env("PAYMENT_MODE", "simulation"), KeyID: os.Getenv("RAZORPAY_KEY_ID"), KeySecret: os.Getenv("RAZORPAY_KEY_SECRET"), WebhookSecret: os.Getenv("RAZORPAY_WEBHOOK_SECRET"), ZoomMode: env("ZOOM_MODE", "simulation"), ZoomAccount: os.Getenv("ZOOM_ACCOUNT_ID"), ZoomClient: os.Getenv("ZOOM_CLIENT_ID"), ZoomSecret: os.Getenv("ZOOM_CLIENT_SECRET"), ZoomUser: env("ZOOM_USER_ID", "me"), OTPMode: env("OTP_MODE", "simulation"), OTPURL: os.Getenv("OTP_GATEWAY_URL"), OTPToken: os.Getenv("OTP_GATEWAY_TOKEN"), NotificationURL: os.Getenv("NOTIFICATION_URL"), NotificationToken: os.Getenv("NOTIFICATION_TOKEN"), AdminPassword: env("ADMIN_PASSWORD", "local-admin-change-me"), AdminTOTP: os.Getenv("ADMIN_TOTP_SECRET")}
+	c := Config{Production: os.Getenv("APP_ENV") == "production", Origin: env("APP_ORIGIN", "http://localhost:5173"), Addr: env("HTTP_ADDR", "127.0.0.1:8080"), MongoURI: os.Getenv("MONGODB_URI"), MongoDatabase: env("MONGODB_DATABASE", "mishra4you_development"), DataDir: env("DATA_DIR", ".local"), EpheDir: env("EPHE_DIR", "ephe"), FontPath: env("FONT_PATH", "assets/NotoSansDevanagari-Regular.ttf"), ChromePath: os.Getenv("CHROME_PATH"), PaymentMode: env("PAYMENT_MODE", "simulation"), KeyID: os.Getenv("RAZORPAY_KEY_ID"), KeySecret: os.Getenv("RAZORPAY_KEY_SECRET"), WebhookSecret: os.Getenv("RAZORPAY_WEBHOOK_SECRET"), ZoomMode: env("ZOOM_MODE", "simulation"), ZoomAccount: os.Getenv("ZOOM_ACCOUNT_ID"), ZoomClient: os.Getenv("ZOOM_CLIENT_ID"), ZoomSecret: os.Getenv("ZOOM_CLIENT_SECRET"), ZoomUser: env("ZOOM_USER_ID", "me"), OTPMode: env("OTP_MODE", "simulation"), OTPURL: os.Getenv("OTP_GATEWAY_URL"), OTPToken: os.Getenv("OTP_GATEWAY_TOKEN"), NotificationURL: os.Getenv("NOTIFICATION_URL"), NotificationToken: os.Getenv("NOTIFICATION_TOKEN"), AdminEmail: strings.ToLower(strings.TrimSpace(env("ADMIN_EMAIL", "local-admin@example.test"))), AdminPassword: env("ADMIN_PASSWORD", "local-admin-change-me")}
 	if c.PaymentMode != "simulation" && c.PaymentMode != "razorpay" {
 		return c, fmt.Errorf("invalid PAYMENT_MODE")
 	}
@@ -50,8 +51,12 @@ func LoadConfig() (Config, error) {
 		return c, fmt.Errorf("HTTPS OTP gateway and token required")
 	}
 	if c.Production {
-		if c.MongoURI == "" || !strings.HasPrefix(c.Origin, "https://") || len(c.AdminPassword) < 20 || c.AdminPassword == "local-admin-change-me" || c.AdminTOTP == "" {
-			return c, fmt.Errorf("production requires MongoDB Atlas, HTTPS origin, strong admin password and TOTP")
+		if c.MongoURI == "" || !strings.HasPrefix(c.Origin, "https://") {
+			return c, fmt.Errorf("production requires MongoDB Atlas and an HTTPS origin")
+		}
+		address, err := mail.ParseAddress(c.AdminEmail)
+		if err != nil || address.Address != c.AdminEmail || c.AdminEmail == "local-admin@example.test" || len(c.AdminPassword) < 8 || c.AdminPassword == "local-admin-change-me" {
+			return c, fmt.Errorf("production requires a configured admin email and a password of at least 8 characters")
 		}
 		if c.OTPMode == "simulation" || c.PaymentMode == "simulation" || c.ZoomMode == "simulation" {
 			return c, fmt.Errorf("simulations are forbidden in production")

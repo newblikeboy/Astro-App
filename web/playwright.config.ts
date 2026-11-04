@@ -36,7 +36,7 @@ export default defineConfig({
       APP_ORIGIN: baseURL,
       DATA_DIR: `.local/e2e-${Date.now()}`,
       ADMIN_PASSWORD: "local-admin-change-me",
-      ADMIN_TOTP_SECRET: "",
+      ADMIN_EMAIL: "local-admin@example.test",
       PAYMENT_MODE: "simulation",
       OTP_MODE: "simulation",
       ZOOM_MODE: "simulation",

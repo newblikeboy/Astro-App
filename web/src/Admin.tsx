@@ -66,8 +66,8 @@ export default function Admin({
     [error, setError] = useState(""),
     [notice, setNotice] = useState(""),
     [busy, setBusy] = useState(false),
+    [email, setEmail] = useState(""),
     [password, setPassword] = useState(""),
-    [totp, setTotp] = useState(""),
     [month, setMonth] = useState(() =>
       businessDate(config.settings.zone).slice(0, 7),
     ),
@@ -153,13 +153,12 @@ export default function Admin({
       setBusy(false);
     }
   }
-  /** login submits administrator password/TOTP credentials and reloads the protected workspace. */
+  /** login submits administrator email/password credentials and reloads the protected workspace. */
   async function login(e: FormEvent) {
     e.preventDefault();
     await run(async () => {
-      await api("/admin/login", "POST", { password, totp });
+      await api("/admin/login", "POST", { email, password });
       setPassword("");
-      setTotp("");
     }, t("सुरक्षित प्रशासन सत्र सक्रिय है।"));
   }
   /** saveSettings submits the edited merchant, scheduling and content settings with administrator CSRF protection. */
@@ -195,8 +194,8 @@ export default function Admin({
     );
   if (!data)
     return (
-      <AdminLogin development={config.development} password={password} totp={totp}
-        busy={busy} error={error} onPassword={setPassword} onTotp={setTotp} onSubmit={login} />
+      <AdminLogin development={config.development} email={email} password={password}
+        busy={busy} error={error} onEmail={setEmail} onPassword={setPassword} onSubmit={login} />
     );
   /** action dispatches the selected protected administrator action through the shared operation wrapper. */
   const action = (path: string, body: unknown, message?: string) =>

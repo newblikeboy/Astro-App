@@ -72,8 +72,8 @@ async function verify() {
     await page.locator('#admin-password').fill('fictional-qa-password');
     await page.getByRole('button',{name:'Show password',exact:true}).click();assert.equal(await page.locator('#admin-password').getAttribute('type'),'text');
     await page.getByRole('button',{name:'Hide password',exact:true}).click();assert.equal(await page.locator('#admin-password').getAttribute('type'),'password');
-    await page.locator('#admin-totp').fill('123');await page.getByRole('button',{name:'Open admin',exact:true}).click();assert.equal(signedIn,false);
-    await page.locator('#admin-totp').fill('');await page.getByRole('button',{name:'Open admin',exact:true}).click();await page.locator('.business-metrics').waitFor();
+    await page.locator('#admin-email').fill('invalid-email');await page.getByRole('button',{name:'Open admin',exact:true}).click();assert.equal(signedIn,false);
+    await page.locator('#admin-email').fill('local-admin@example.test');await page.getByRole('button',{name:'Open admin',exact:true}).click();await page.locator('.business-metrics').waitFor();
     await page.locator('.attention-row').filter({hasText:'Low-stock products'}).waitFor();
     assert.equal(await page.locator('.business-metric strong').allTextContents().then(values=>values.slice(1).join(',')),'1,1,1');
     assert.match(await page.locator('.business-metric').first().innerText(),/1,250/);

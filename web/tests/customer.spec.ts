@@ -102,7 +102,7 @@ test("guest Kundli, OTP, private save, paid demo PDF and independent booking", a
   await expect(
     page.getByRole("heading", { name: "सहेजी गई कुंडलियाँ" }),
   ).toBeVisible();
-  const downloadButton = page.getByRole("link", { name: "PDF डाउनलोड" });
+  const downloadButton = page.getByRole("button", { name: "PDF डाउनलोड", exact: true });
   await expect(downloadButton).toBeVisible({ timeout: 80000 });
   const d = page.waitForEvent("download");
   await downloadButton.click();
@@ -170,6 +170,7 @@ test("admin settings, rule editing and accounting load behind separate authentic
   await expect(
     page.getByRole("heading", { name: "संचालक लॉग इन" }),
   ).toBeVisible();
+  await page.locator("#admin-email").fill("local-admin@example.test");
   await page.locator("#admin-password").fill("local-admin-change-me");
   await page.getByRole("button", { name: "व्यवस्थापन खोलें" }).click();
   await expect(

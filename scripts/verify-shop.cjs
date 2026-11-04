@@ -14,7 +14,7 @@ const results={passed:false,layouts:[],audits:0,checks:[],errors:[]};
     const conf=await (await context.request.get(base+'/api/config')).json();assert.equal(conf.storage,'local development file');assert(conf.simulation&&conf.otp_simulation);
     /** call sends an authenticated request to the isolated shop QA server and requires successful JSON. */
     const call=async(path,method='GET',body,csrf)=>{const res=await context.request.fetch(base+'/api'+path,{method,headers:{Origin:base,...(csrf?{'X-CSRF-Token':csrf}:{})},data:body});assert(res.ok(),path+': '+await res.text());return res.json()};
-    await call('/admin/login','POST',{password:'shop-qa-local-only',totp:''});
+    await call('/admin/login','POST',{email:'local-admin@example.test',password:'shop-qa-local-only'});
     const initialAdmin=await call('/admin');
     const existing=await call('/admin/shop');
     for(const p of existing.products.filter(p=>p.status==='published'))await call('/admin/shop/products','POST',{...p,status:'archived'},initialAdmin.csrf);
@@ -23,7 +23,7 @@ const results={passed:false,layouts:[],audits:0,checks:[],errors:[]};
     assert.equal(await page.locator('.gem-card').count(),6);
     assert.equal(await page.getByText('Collection preview',{exact:true}).count(),6);
     // All setup mutations below target the isolated file store after that assertion.
-    await call('/admin/login','POST',{password:'shop-qa-local-only',totp:''});
+    await call('/admin/login','POST',{email:'local-admin@example.test',password:'shop-qa-local-only'});
     const admin=await call('/admin');
     const prefix='qa-'+Date.now();
     const productTemplate={id:'',slug:'',name:'',hindi_name:'',kind:'precious',description:'Isolated QA product description. This is not real merchandise.',hindi_description:'',price:123456,weight_milli_carat:4250,stock:3,available:0,origin:'Seller supplied',material:'not-specified',treatment:'Not assessed',shape:'Oval',dimensions:'10 x 8 mm',image:'',certificate_lab:'',certificate_no:'',certificate_url:'',status:'published',version:0,updated:'0001-01-01T00:00:00Z',preview:false};

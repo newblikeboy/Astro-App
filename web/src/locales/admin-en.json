@@ -1,4 +1,7 @@
 {
+  "ईमेल पता": "Email address",
+  "व्यवस्थापक ईमेल और पासवर्ड सर्वर की निजी सेटिंग में हैं। स्थानीय डेमो की जानकारी README में है।": "Administrator email and password are configured privately on the server. Local demo details are in the README.",
+  "अमान्य व्यवस्थापक ईमेल या पासवर्ड": "invalid admin credentials",
   "व्यवसाय कार्यक्षेत्र": "Business workspace",
   "आपका व्यवसाय।\nएक स्पष्ट नज़र।": "Your business.\nOne clear view.",
   "अपने ग्राहकों की देखभाल और Mishra 4 You को आगे बढ़ाने के लिए ज़रूरी सुविधाएँ।": "Everything you need to look after your customers and grow Mishra 4 You.",

@@ -23,7 +23,7 @@ func testApp(t *testing.T) *App {
 	if e != nil {
 		t.Fatal(e)
 	}
-	a := NewApp(s, Config{Origin: "http://localhost:5173", DataDir: t.TempDir(), EpheDir: "../../ephe", FontPath: "../../assets/NotoSansDevanagari-Regular.ttf", PaymentMode: "simulation", ZoomMode: "simulation", OTPMode: "simulation", AdminPassword: "test-admin"})
+	a := NewApp(s, Config{Origin: "http://localhost:5173", DataDir: t.TempDir(), EpheDir: "../../ephe", FontPath: "../../assets/NotoSansDevanagari-Regular.ttf", PaymentMode: "simulation", ZoomMode: "simulation", OTPMode: "simulation", AdminEmail: "local-admin@example.test", AdminPassword: "test-admin"})
 	now := time.Date(2026, 10, 18, 6, 0, 0, 0, time.UTC)
 	a.Now = func() time.Time { return now }
 	return a

@@ -38,7 +38,7 @@ layouts. The public header links to customer login and does not expose admin nav
 | `/shop/bag` | Cart, Indian delivery address, order review and payment |
 | `/shop/orders` | Customer gemstone purchases and delivery tracking |
 | `/account/reports/:id` | Protected, reloadable saved report |
-| `/admin/login` | Separate administrator password/TOTP login |
+| `/admin/login` | Separate administrator email/password login |
 | `/admin` | Protected administration console |
 
 The main-page Gemstones menu opens `/#gemstones`, an embedded collection of up
@@ -301,7 +301,7 @@ With `MONGODB_URI` blank, the app uses `.local/development-state.json`. This is 
 - Save it using mobile OTP. In local simulation, the dialog displays a randomly generated development code; no SMS is sent. The form survives authentication and tab refresh.
 - Choose the ₹99 PDF. The server snapshots the calculation/rules and creates a 9,900-paise order. Explicitly confirm the **local payment simulation**. The private Hindi PDF becomes available in the account; the worker retries failures without another purchase.
 - Book the ₹3,501 consultation independently. The order is 350,100 paise. Choose an available time, obtain a ten-minute hold and confirm the simulated payment. Simulated Zoom does not invent an attendee link. Reschedule/cancel in the account.
-- Open **http://localhost:5173/admin**. Local-only default admin password: `local-admin-change-me`. Set `ADMIN_PASSWORD` to change it. Production requires a password of at least 20 characters and an authenticator TOTP secret; the default password is refused.
+- Open **http://localhost:5173/admin**. Local-only demo email: `local-admin@example.test`; password: `local-admin-change-me`. Set `ADMIN_EMAIL` and `ADMIN_PASSWORD` privately on the server. Production requires a configured email and a password of at least 8 characters; local demo credentials are refused. Administrator sign-in uses email and password without an authenticator code. Login rate limits, separate administrator cookies and CSRF protection remain enforced.
 - Admin opens a business overview with monthly gross collections, paid stone orders awaiting dispatch, upcoming consultations, stock attention and delivery retries. Grouped sidebar navigation (a section selector on phones/tablets) reaches products/prices, payments, consultations, customers, finances, content, interpretations, jobs, settings and audit history. Product/customer/order search and payment-status filters help find records. Operational order/booking summaries exclude tests; finance uses server totals for the selected month.
 - Admin manages settings, availability, blocked dates, versioned content, jobs, orders/refunds, expenses with private receipt uploads, monthly reconciliation, recorded distributions and CSV exports. Customer phones are masked in lists. There are only two roles in this release: customer and owner/admin; there are no delegated staff accounts.
 

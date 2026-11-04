@@ -10,7 +10,7 @@ test("starter catalogue supports cart estimates, responsive detail pages and man
   const headers = { Origin: baseURL! };
   const login = await context.request.post("/api/admin/login", {
     headers,
-    data: { password: "local-admin-change-me" },
+    data: { email: "local-admin@example.test", password: "local-admin-change-me" },
   });
   expect(login.ok()).toBeTruthy();
   const { csrf } = await login.json();

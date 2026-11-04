@@ -94,6 +94,7 @@ test("customer and administrator sessions do not grant or revoke each other's ac
   const admin = await context.newPage();
   await admin.goto("/admin");
   await expect(admin).toHaveURL(/\/admin\/login$/);
+  await admin.locator("#admin-email").fill("local-admin@example.test");
   await admin.locator("#admin-password").fill("local-admin-change-me");
   await admin.getByRole("button", { name: "Open admin", exact: true }).click();
   await expect(admin).toHaveURL(/\/admin$/);

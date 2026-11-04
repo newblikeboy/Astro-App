@@ -36,6 +36,7 @@ test("admin publishes a topic link; a visitor gets only matching guidance and ca
   });
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/admin/login");
+  await page.locator("#admin-email").fill("local-admin@example.test");
   await page.locator("#admin-password").fill("local-admin-change-me");
   await page.getByRole("button", { name: "Open admin", exact: true }).click();
   await expect(page.locator(".admin-workspace")).toBeVisible();
@@ -128,7 +129,7 @@ test("admin publishes a topic link; a visitor gets only matching guidance and ca
 
 test("zodiac mismatch and unknown-time visitors receive no invented topic reading", async ({ page, context }) => {
   await context.addInitScript(() => { localStorage.setItem("m4y-language", "en"); localStorage.setItem("m4y-analytics", "no"); });
-  const auth = await (await context.request.post("/api/admin/login", { data: { password: "local-admin-change-me", totp: "" } })).json();
+  const auth = await (await context.request.post("/api/admin/login", { data: { email: "local-admin@example.test", password: "local-admin-change-me" } })).json();
   const suffix = String(Date.now());
   const sample = await (await context.request.post("/api/kundli", { data: { name: "Fixture", date: "1995-08-15", time: "10:30", place_id: "varanasi", unknown_time: false } })).json();
   const moon = sample.chart.planets.find((planet: { name: string }) => planet.name === "Moon").rashi_number;

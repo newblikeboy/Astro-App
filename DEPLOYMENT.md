@@ -127,16 +127,27 @@ droplet's IP in Atlas. The database user needs read/write and index-creation
 permissions for that database; startup applies embedded migrations.
 The database must support replica-set or sharded transactions.
 
-Generate ADMIN_PASSWORD with `openssl rand -hex 24`. Generate the base32
-ADMIN_TOTP_SECRET with:
+Set ADMIN_EMAIL to the administrator's email address and ADMIN_PASSWORD to the
+chosen private password (at least 8 characters). `openssl rand -hex 24` can
+generate a random password. Keep both settings in /etc/mishra4you/app.env;
+never place the password in frontend code or commit it to Git. Sign-in uses
+email and password; no authenticator code is required. Legacy ADMIN_TOTP_SECRET
+settings can be removed. Production also requires MongoDB, an HTTPS origin
+and the provider settings below.
+
+To set or change those credentials without putting the password in shell
+history or Git, use the included helper. It prompts for the password twice,
+retains other environment settings and writes the file with mode 0600:
 
 ```bash
-python3 -c 'import base64,secrets; print(base64.b32encode(secrets.token_bytes(20)).decode())'
+python3 deploy/set-admin-login.py --email admin@your-domain.example
+systemctl restart mishra4you
 ```
 
-Keep both private and enrol the secret as a time-based authenticator account
-(SHA-1, six digits, 30-second period). Production requires a password of at
-least 20 characters, TOTP, MongoDB, HTTPS origin, and all provider settings.
+For an existing deployment migrating from password/TOTP login, pull the updated
+source and build the updated frontend and backend first. Then run the helper,
+install the new backend binary and restart the service. Supply your own
+administrator email in place of the example.
 
 - **Razorpay:** PAYMENT_MODE=razorpay and all three RAZORPAY_* values. Start
   with test keys; ALLOW_LIVE_PAYMENTS=false keeps live keys disabled. Webhook:

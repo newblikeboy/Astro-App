@@ -89,7 +89,7 @@ func TestProductionRefusesSimulationAndInvalidEnvironment(t *testing.T) {
 	t.Setenv("MONGODB_URI", "mongodb://fixture.invalid")
 	t.Setenv("APP_ORIGIN", "https://fixture.invalid")
 	t.Setenv("ADMIN_PASSWORD", "long-unique-password-for-test")
-	t.Setenv("ADMIN_TOTP_SECRET", "GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ")
+	t.Setenv("ADMIN_EMAIL", "owner@example.test")
 	t.Setenv("OTP_MODE", "simulation")
 	t.Setenv("PAYMENT_MODE", "simulation")
 	t.Setenv("ZOOM_MODE", "simulation")

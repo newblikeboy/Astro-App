@@ -985,33 +985,20 @@ func (a *App) event(w http.ResponseWriter, r *http.Request) {
 	jsonOut(w, map[string]bool{"ok": true})
 }
 
-// adminLogin checks administrator credentials and TOTP before creating a separate administrator session.
+// adminLogin verifies the configured email and password before creating a separate administrator session.
 func (a *App) adminLogin(w http.ResponseWriter, r *http.Request) {
 	var in struct {
+		Email    string `json:"email"`
 		Password string `json:"password"`
-		TOTP     string `json:"totp"`
 	}
 	if !decode(w, r, &in) {
 		return
 	}
-	if !same(in.Password, a.Config.AdminPassword) || a.Config.Production && !totp(a.Config.AdminTOTP, in.TOTP, a.Now()) {
+	emailOK := a.Config.AdminEmail != "" && same(strings.ToLower(strings.TrimSpace(in.Email)), strings.ToLower(strings.TrimSpace(a.Config.AdminEmail)))
+	passwordOK := a.Config.AdminPassword != "" && same(in.Password, a.Config.AdminPassword)
+	if !emailOK || !passwordOK {
 		fail(w, 401, fmt.Errorf("invalid admin credentials"))
 		return
-	}
-	if a.Config.Production {
-		key := "admin-totp:" + hash(in.TOTP)
-		var reused bool
-		e := a.Store.Update(r.Context(), func(s *State) error {
-			reused = s.OTPs[key] != nil && s.OTPs[key].Expires.After(a.Now())
-			if !reused {
-				s.OTPs[key] = &OTP{Used: true, Expires: a.Now().Add(90 * time.Second)}
-			}
-			return nil
-		})
-		if e != nil || reused {
-			fail(w, 401, fmt.Errorf("TOTP already used; wait for a new code"))
-			return
-		}
 	}
 	if e := a.setSession(w, r, "admin", "admin"); e != nil {
 		fail(w, 503, e)
