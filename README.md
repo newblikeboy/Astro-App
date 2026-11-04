@@ -229,13 +229,36 @@ daily tools support 1 January 1940–30 December 2099 and annual tools support 1
 all displayed dates/times use IST. Festival
 calendars and event-specific Muhurat are outside this daily-tools increment.
 
+## License and source code
+
+The original Mishra4You application code is licensed under the
+**GNU Affero General Public License, version 3 only (AGPL-3.0-only)**.
+See [LICENSE](LICENSE) for the full terms and warranty disclaimer, and
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) for preserved third-party
+copyrights, licences and data/font attribution. Swiss Ephemeris is used under
+its AGPL option. The project licence does not replace third-party terms.
+
+Source: <https://github.com/newblikeboy/Astro-App>. Website footers offer
+source, licence and notice links for the exact Git commit used to build the
+frontend. Publish and retain the source of each deployed version, including
+modifications and build/install scripts. Keep private credentials and customer
+data outside the repository.
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for reproducible setup, production provider
+contracts, source-archive builds and updates. Local and production environment
+templates are [.env.example](.env.example) and
+[deploy/app.env.example](deploy/app.env.example). Selecting AGPL does not
+automatically change the operator's production licence-confirmation setting.
+
 ## Run locally
 
-Requirements: Go 1.26.5+, a C compiler for CGO, Node 22.12+ (tested with 22.17), and Chrome/Chromium for PDF rendering. Windows GCC is supported. The bundled ephemeris files and Noto Devanagari fonts are required.
+Requirements: Go 1.26.5 (`GOTOOLCHAIN=go1.26.5`, `GOEXPERIMENT=nojsonv2`), a C compiler for CGO, Node 22.12+ (tested with 22.17), and Chrome/Chromium for PDF rendering. The pinned experimental JSON dependency does not compile with Go 1.27.3's JSON v2 API; use the documented toolchain until that dependency is updated and verified. Windows GCC is supported. The bundled ephemeris files and Noto Devanagari fonts are required.
 
 From the repository root:
 
 ```powershell
+$env:GOTOOLCHAIN='go1.26.5'
+$env:GOEXPERIMENT='nojsonv2'
 Copy-Item .env.example .env
 # Edit .env privately. Put your Atlas URI in MONGODB_URI.
 go mod download

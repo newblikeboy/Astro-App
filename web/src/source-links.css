@@ -1,0 +1,36 @@
+.source-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 9px;
+  max-width: 100%;
+  font-size: 11px;
+}
+.source-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.source-links a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+.source-warranty {
+  flex-basis: 100%;
+}
+.portal-footer .source-links {
+  display: flex;
+  margin-top: 8px;
+}
+.site-footer .source-links {
+  color: #e0c8b7;
+  margin-bottom: 14px;
+}
+.shop-footer small .source-links {
+  display: flex;
+  margin-top: 8px;
+}

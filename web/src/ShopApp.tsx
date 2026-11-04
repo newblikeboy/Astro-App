@@ -23,6 +23,7 @@ import { api, APIError, money } from "./api";
 import { t, useLanguage } from "./i18n";
 import LanguageSelector from "./LanguageSelector";
 import Brand from "./Brand";
+import SourceLinks from "./SourceLinks";
 import PaymentView from "./PaymentView";
 import ShopOrders from "./ShopOrders";
 import GemstoneArt from "./GemstoneArt";
@@ -1079,7 +1080,10 @@ export default function ShopApp() {
             <Link to="/shop/orders">{t("My stone orders")}</Link>
             <Link to="/">{t("Back to website")}</Link>
           </div>
-          <small>© {new Date().getFullYear()} Mishra 4 You</small>
+          <small>
+            © {new Date().getFullYear()} Mishra 4 You
+            <SourceLinks />
+          </small>
         </div>
       </footer>
     </div>

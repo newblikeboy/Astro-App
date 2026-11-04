@@ -61,6 +61,7 @@ import {
   followRoute,
 } from "./routing";
 import { PortalHeader, PortalFooter } from "./PortalShell";
+import SourceLinks from "./SourceLinks";
 import { MIN_CALCULATION_DATE } from "./calculation-dates";
 import channelVideoCatalog from "../../internal/platform/data/channel-videos.json";
 
@@ -1239,6 +1240,7 @@ function CustomerApp() {
                 </button>
               </div>
             </div>
+            <SourceLinks />
             <p className="footer-note">
               {t(
                 "ज्योतिषीय मार्गदर्शन व्यक्तिगत चिंतन के लिए है। यह चिकित्सा, कानूनी या वित्तीय सलाह नहीं है। किसी परिणाम की गारंटी नहीं है।",

@@ -2,6 +2,7 @@ import { ArrowLeft, ShieldCheck } from "lucide-react";
 import LanguageSelector from "./LanguageSelector";
 import Brand from "./Brand";
 import CartLink from "./CartLink";
+import SourceLinks from "./SourceLinks";
 import { t } from "./i18n";
 import { followRoute } from "./routing";
 import "./portal.css";
@@ -43,6 +44,7 @@ export function PortalFooter() {
   return (
     <footer className="portal-footer">
       © {new Date().getFullYear()} Mishra 4 You
+      <SourceLinks />
     </footer>
   );
 }
