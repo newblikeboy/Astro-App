@@ -95,6 +95,8 @@ type Report struct {
 	Demo           bool                   `json:"demo"`
 }
 type Order struct {
+	Complimentary bool `json:"complimentary,omitempty"`
+
 	Gemstone     *GemstoneSale  `json:"gemstone,omitempty"`
 	ID           string         `json:"id"`
 	UserID       string         `json:"user_id"`

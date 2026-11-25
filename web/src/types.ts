@@ -143,6 +143,7 @@ export type DashaPeriod = {
 };
 export type DashaStep = DashaPeriod & { level: number; path: number[] };
 export type Order = {
+  complimentary?: boolean;
   gemstone?: import("./shop-types").GemstoneSale;
   id: string;
   product: string;
@@ -231,6 +232,8 @@ export type ChannelVideo = {
   published_at: string;
 };
 export type Account = {
+  free_reports?: boolean;
+  pdf_blockers?: string[];
   user: { id: string; phone: string; email?: string; marketing: boolean };
   csrf: string;
   reports: Report[];

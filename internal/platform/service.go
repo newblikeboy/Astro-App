@@ -59,11 +59,21 @@ func duration(s Settings, production bool) int {
 
 // blockers lists unresolved production requirements that prevent the requested paid product from being sold.
 func blockers(s Settings, c Config, product string) []string {
+	return checkoutBlockers(s, c, product, false)
+}
+
+// freeReports grants complimentary reports only from the authenticated account's stored email.
+func freeReports(u *User) bool {
+	return u != nil && !u.Deleted && strings.EqualFold(strings.TrimSpace(u.Email), "newblikeboy@gmail.com")
+}
+
+// checkoutBlockers preserves publication and licence requirements for complimentary reports.
+func checkoutBlockers(s Settings, c Config, product string, complimentary bool) []string {
 	out := []string{}
 	if !c.Production {
 		return out
 	}
-	if !paymentConfigured(c) {
+	if !complimentary && !paymentConfigured(c) {
 		out = append(out, "Payment provider credentials require configuration")
 	}
 	if !s.LicenceConfirmed {
@@ -72,10 +82,10 @@ func blockers(s Settings, c Config, product string) []string {
 	if !s.Content.Approved {
 		out = append(out, "Homepage and legal policies require approval")
 	}
-	if s.TaxMode == "unconfigured" {
+	if !complimentary && s.TaxMode == "unconfigured" {
 		out = append(out, "Tax treatment must be configured")
 	}
-	if product == "pdf" && !s.PDFEnabled {
+	if product == "pdf" && !complimentary && !s.PDFEnabled {
 		out = append(out, "PDF sales disabled")
 	}
 	if product == "consultation" {
@@ -179,16 +189,21 @@ func (a *App) Checkout(ctx context.Context, user string, in CheckoutRequest) (*O
 	}
 	var order *Order
 	e := a.Store.Update(ctx, func(s *State) error {
+		u := s.Users[user]
+		if u == nil || u.Deleted {
+			return fmt.Errorf("verified account required")
+		}
+		complimentary := in.Product == "pdf" && freeReports(u)
 		for _, o := range s.Orders {
 			if o.UserID == user && o.RequestKey == in.Key {
+				if complimentary && o.Status != "paid" {
+					continue
+				}
 				order = o
 				return nil
 			}
 		}
-		if u := s.Users[user]; u == nil || u.Deleted {
-			return fmt.Errorf("verified account required")
-		}
-		if bs := blockers(s.Settings, a.Config, in.Product); len(bs) > 0 {
+		if bs := checkoutBlockers(s.Settings, a.Config, in.Product, complimentary); len(bs) > 0 {
 			return fmt.Errorf("checkout blocked: %s", bs[0])
 		}
 		o := &Order{ID: id("o"), UserID: user, Product: in.Product, Currency: "INR", Status: "creating", Created: a.Now(), Demo: a.Config.PaymentMode == "simulation" || strings.HasPrefix(a.Config.KeyID, "rzp_test_"), RequestKey: in.Key, TaxMode: s.Settings.TaxMode, TaxBPS: s.Settings.TaxBPS}
@@ -201,6 +216,9 @@ func (a *App) Checkout(ctx context.Context, user string, in CheckoutRequest) (*O
 				return fmt.Errorf("व्यक्तिगत उपाय PDF के लिए सही जन्म समय आवश्यक है")
 			}
 			for _, existing := range s.Orders {
+				if complimentary && existing.Status != "paid" {
+					continue
+				}
 				if a.Config.Production && existing.Demo {
 					continue
 				}
@@ -238,10 +256,19 @@ func (a *App) Checkout(ctx context.Context, user string, in CheckoutRequest) (*O
 			o.Amount = s.Settings.ConsultationPrice
 			o.Title = "गुरुजी से व्यक्तिगत परामर्श"
 		}
-		var amountErr error
-		o.Amount, o.Tax, amountErr = orderAmounts(o.Amount, s.Settings.TaxBPS, s.Settings.TaxMode)
-		if amountErr != nil {
-			return amountErr
+		if complimentary {
+			now := a.Now()
+			o.Complimentary, o.Demo = true, false
+			o.Amount, o.Tax, o.TaxBPS, o.TaxMode = 0, 0, 0, "exempt"
+			o.Status, o.PaidAt = "paid", &now
+			enqueue(s, "pdf", o.ID, 1, "")
+			audit(s, user, "report.complimentary", o.ID)
+		} else {
+			var amountErr error
+			o.Amount, o.Tax, amountErr = orderAmounts(o.Amount, s.Settings.TaxBPS, s.Settings.TaxMode)
+			if amountErr != nil {
+				return amountErr
+			}
 		}
 		s.Orders[o.ID] = o
 		order = o

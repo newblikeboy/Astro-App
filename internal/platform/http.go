@@ -427,7 +427,8 @@ func (a *App) me(w http.ResponseWriter, r *http.Request) {
 		}
 		sort.Slice(reports, func(i, j int) bool { return reports[i].Created.After(reports[j].Created) })
 		sort.Slice(orders, func(i, j int) bool { return orders[i].Created.After(orders[j].Created) })
-		jsonOut(w, map[string]any{"user": s.Users[sess.UserID], "csrf": sess.CSRF, "reports": reports, "orders": orders, "bookings": bookings, "pdf_jobs": jobs})
+		complimentary := freeReports(s.Users[sess.UserID])
+		jsonOut(w, map[string]any{"user": s.Users[sess.UserID], "csrf": sess.CSRF, "reports": reports, "orders": orders, "bookings": bookings, "pdf_jobs": jobs, "free_reports": complimentary, "pdf_blockers": checkoutBlockers(s.Settings, a.Config, "pdf", complimentary)})
 		return nil
 	})
 }

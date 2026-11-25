@@ -1300,6 +1300,7 @@ function CustomerApp() {
           <OfferCheckout
             product={offer}
             config={config}
+            account={account}
             checkout={checkout}
             onSample={() => setSample(true)}
           />
@@ -1703,11 +1704,13 @@ function BirthForm({
 function OfferCheckout({
   product,
   config,
+  account,
   checkout,
   onSample,
 }: {
   product: "pdf" | "consultation";
   config: Config;
+  account: Account | null;
   checkout: (slot: string) => Promise<void>;
   onSample: () => void;
 }) {
@@ -1733,7 +1736,10 @@ function OfferCheckout({
           setLoaded(true);
         });
   }, [product]);
-  const bs = product === "pdf" ? config.pdf_blockers : config.booking_blockers;
+  const complimentary = product === "pdf" && !!account?.free_reports;
+  const bs = product === "pdf"
+    ? account?.pdf_blockers ?? config.pdf_blockers
+    : config.booking_blockers;
   /** submit runs the selected offer checkout while displaying its pending and failure states. */
   async function submit(e: FormEvent) {
     e.preventDefault();
@@ -1779,12 +1785,15 @@ function OfferCheckout({
         <strong>
           {money(
             product === "pdf"
-              ? config.settings.pdf_price
+              ? (complimentary ? 0 : config.settings.pdf_price)
               : config.settings.consultation_price,
           )}
         </strong>
       </div>
-      {config.simulation && (
+      {complimentary && (
+        <p className="notice">{t("इस खाते के लिए सभी रिपोर्ट निःशुल्क हैं।")}</p>
+      )}
+      {config.simulation && !complimentary && (
         <div className="notice">
           <Info size={18} />
           <span>
@@ -1856,7 +1865,7 @@ function OfferCheckout({
           </button>
         </>
       )}
-      <p className="field-note">
+      <p className="field-note" hidden={complimentary}>
         {t("कर व्यवस्था:")}{" "}
         {config.settings.tax_mode === "unconfigured"
           ? t("निर्णय बाकी; केवल स्थानीय डेमो")
@@ -1874,7 +1883,7 @@ function OfferCheckout({
         busy={busy}
         disabled={!!bs.length || (product === "consultation" && !slot)}
       >
-        {t("ऑर्डर बनाएँ और भुगतान देखें ")}
+        {complimentary ? t("निःशुल्क रिपोर्ट पाएँ") : t("ऑर्डर बनाएँ और भुगतान देखें ")}
         <ArrowRight size={17} />
       </Button>
     </form>
