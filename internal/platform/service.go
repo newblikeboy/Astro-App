@@ -67,7 +67,7 @@ func freeReports(u *User) bool {
 	return u != nil && !u.Deleted && strings.EqualFold(strings.TrimSpace(u.Email), "newblikeboy@gmail.com")
 }
 
-// checkoutBlockers preserves publication and licence requirements for complimentary reports.
+// checkoutBlockers keeps the licence gate while waiving sales setup for complimentary reports.
 func checkoutBlockers(s Settings, c Config, product string, complimentary bool) []string {
 	out := []string{}
 	if !c.Production {
@@ -79,7 +79,7 @@ func checkoutBlockers(s Settings, c Config, product string, complimentary bool) 
 	if !s.LicenceConfirmed {
 		out = append(out, "Swiss Ephemeris licence decision required")
 	}
-	if !s.Content.Approved {
+	if !complimentary && !s.Content.Approved {
 		out = append(out, "Homepage and legal policies require approval")
 	}
 	if !complimentary && s.TaxMode == "unconfigured" {

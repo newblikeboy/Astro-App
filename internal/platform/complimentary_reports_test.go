@@ -22,7 +22,7 @@ func TestComplimentaryReports(t *testing.T) {
 		s.Users["owner"].Email = "newblikeboy@gmail.com"
 		s.Users["other"].Email = "someone@example.com"
 		s.Settings.LicenceConfirmed = true
-		s.Settings.Content.Approved = true
+		s.Settings.Content.Approved = false
 		s.Settings.PDFEnabled = false
 		s.Settings.TaxMode = "unconfigured"
 		// A previous unpaid checkout must not stop the free report grant.
@@ -88,18 +88,22 @@ func TestComplimentaryReports(t *testing.T) {
 	}
 }
 
-// TestComplimentaryReportRequirements preserves licence and publication gates for every new report.
+// TestComplimentaryReportRequirements preserves licence checks and paid-product approval gates.
 func TestComplimentaryReportRequirements(t *testing.T) {
 	a := testApp(t)
 	putUser(t, a, "owner")
 	r := saveTestReport(t, a, "owner")
 	a.Config.Production = true
 	a.Store.state.Users["owner"].Email = "newblikeboy@gmail.com"
-	for _, licence := range []bool{false, true} {
-		a.Store.state.Settings.LicenceConfirmed = licence
-		a.Store.state.Settings.Content.Approved = false
-		if _, err := a.Checkout(context.Background(), "owner", CheckoutRequest{Product: "pdf", ReportID: r.ID, Key: "blocked-free-key"}); err == nil {
-			t.Fatal("unpublished or unlicensed report granted")
+	a.Store.state.Settings.LicenceConfirmed = false
+	a.Store.state.Settings.Content.Approved = false
+	if _, err := a.Checkout(context.Background(), "owner", CheckoutRequest{Product: "pdf", ReportID: r.ID, Key: "blocked-free-key"}); err == nil || !strings.Contains(err.Error(), "licence") {
+		t.Fatalf("unlicensed report was not rejected: %v", err)
+	}
+	for _, product := range []string{"pdf", "consultation"} {
+		bs := blockers(a.Store.state.Settings, a.Config, product)
+		if !strings.Contains(strings.Join(bs, "; "), "Homepage and legal policies require approval") {
+			t.Fatalf("paid %s lost its approval requirement: %v", product, bs)
 		}
 	}
 	if freeReports(&User{Email: "newblikeboy+alias@gmail.com"}) || freeReports(&User{Email: "newblikeboy@gmail.com", Deleted: true}) || freeReports(nil) {
