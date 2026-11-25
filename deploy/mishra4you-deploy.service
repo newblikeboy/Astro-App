@@ -1,0 +1,17 @@
+[Unit]
+Description=Check GitHub and deploy a new Mishra 4 You release
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/local/sbin/mishra4you-auto-deploy
+TimeoutStartSec=30min
+TimeoutStopSec=90
+KillMode=control-group
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+PrivateTmp=true
+UMask=0022

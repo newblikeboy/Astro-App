@@ -211,6 +211,11 @@ templates are [.env.example](.env.example) and
 [deploy/app.env.example](deploy/app.env.example). Selecting AGPL does not
 automatically change the operator's production licence-confirmation setting.
 
+An optional [five-minute deployment timer](DEPLOYMENT.md#automatic-deployment-check-github-every-five-minutes)
+can fetch `main` on an existing droplet, test/build an isolated release and switch
+the app with health-checked rollback. Install it once with
+`sudo bash deploy/install-auto-deploy.sh`; later pushes need no manual SSH update.
+
 ## Run locally
 
 Requirements: Go 1.26.5 (`GOTOOLCHAIN=go1.26.5`, `GOEXPERIMENT=nojsonv2`), a C compiler for CGO, Node 22.12+ (tested with 22.17), and Chrome/Chromium for PDF rendering. The pinned experimental JSON dependency does not compile with Go 1.27.3's JSON v2 API; use the documented toolchain until that dependency is updated and verified. Windows GCC is supported. The bundled ephemeris files and Noto Devanagari fonts are required.

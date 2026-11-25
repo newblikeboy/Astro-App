@@ -270,6 +270,88 @@ URL in web/src/SourceLinks.tsx to the public corresponding-source repository.
 The in-place update has a brief window where frontend/backend versions differ;
 use a maintenance window or versioned release directories when this matters.
 
+## Automatic deployment: check GitHub every five minutes
+
+For an already running Ubuntu/systemd deployment, install the timer once from
+the original Git checkout. No GitHub Actions, webhook, GitHub secret or inbound
+deployment port is needed. The droplet must already be able to fetch `origin`.
+
+```bash
+cd /opt/mishra4you
+git pull --ff-only origin main
+sudo bash deploy/install-auto-deploy.sh
+```
+
+The installer discovers the original checkout path, retains
+`/etc/mishra4you/app.env` and all private data, creates an unprivileged
+`mishra4you-build` account, installs the two systemd units and queues the first
+build. The existing `mishra4you.service` gets a working-directory/launcher
+override; its service user, production environment and sandbox stay in place.
+This assumes the existing service, binary and frontend from the setup above.
+
+After installation, only `git push origin main` is needed from your development
+machine. `mishra4you-deploy.timer` checks `origin/main` every five minutes and
+after boot. A changed commit starts a build; build time is additional to the
+polling interval. The first check builds the current remote commit to establish
+the initial verified release. No-change checks do not build or restart the app.
+Overlapping runs are prevented by systemd and an additional file lock.
+
+The deployment script fetches Git objects without changing the original
+checkout's local branch or resetting files. A dirty checkout or backward/
+divergent deployed history stops automatic deployment. Each candidate is an
+isolated archive of the published commit: Go tests, native Go build and frontend
+build run as the build account, without loading production credentials. Build
+caches are reused. The frontend's source links embed that exact commit SHA.
+
+Only a successful build can switch `/opt/mishra4you-current` and restart the
+app. A failed restart or health check restores the previous release. A pending
+marker allows the next check to recover interrupted promotion. The three newest
+managed releases, plus any required rollback target, are retained under
+`/opt/mishra4you-releases`. This reverts application files, not database writes
+or schema changes; future irreversible migrations need a separate rollout plan.
+
+The app now runs from the selected release. The launcher redirects ephemeris/
+font paths that referred to the original checkout into that release; explicitly
+configured external asset paths are preserved. The production environment file,
+Atlas and `/var/lib/mishra4you` stay external to releases. Source availability is
+the same published repository/commit used by manual deployment.
+
+Inspect progress and the next check:
+
+```bash
+sudo systemctl list-timers mishra4you-deploy.timer
+sudo journalctl -u mishra4you-deploy.service -f
+sudo cat /var/lib/mishra4you-deploy/revision
+readlink -f /opt/mishra4you-current
+```
+
+Run a check immediately, or disable automatic updates:
+
+```bash
+sudo systemctl start mishra4you-deploy.service
+# Disable future polling; an active build can be stopped with the next command.
+sudo systemctl disable --now mishra4you-deploy.timer
+sudo systemctl stop mishra4you-deploy.service
+```
+
+`/etc/default/mishra4you-deploy` contains the non-secret checkout/branch settings.
+The health endpoint defaults to `http://127.0.0.1:8080/api/health`; add a
+`HEALTH_URL=...` entry there if the existing app uses another port. Keep this
+root-owned file free of passwords and tokens. Re-run the installer from the
+original checkout when changing the installed deployment helpers. After this
+setup, use the timer/service instead of the earlier in-place binary replacement
+commands, which would update the bootstrap checkout rather than the live release.
+
+The timer syntax and non-overlapping activation follow
+[systemd.timer](https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html).
+
+Maintainers can run `bash scripts/verify-auto-deploy.sh` to exercise the actual
+orchestrator and launcher in disposable local Git repositories. Build tools,
+health responses, account switching and service restarts are mocked; the checks
+cover promotion, no-change polling, failure rollback, interruption recovery,
+checkout preservation and asset paths. They do not install or run systemd. In
+Windows Git Bash, set `MSYS=winsymlinks:sys` for Bash-compatible test symlinks.
+
 ## Verification, backups and maintenance
 
 For code changes use `ENV_FILE=none go test ./...`, `go vet ./...` and

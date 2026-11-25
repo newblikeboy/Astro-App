@@ -1,0 +1,12 @@
+[Unit]
+Description=Check for Mishra 4 You updates every five minutes
+
+[Timer]
+OnBootSec=1min
+OnCalendar=*-*-* *:0/5:00
+AccuracySec=15s
+Persistent=true
+Unit=mishra4you-deploy.service
+
+[Install]
+WantedBy=timers.target
