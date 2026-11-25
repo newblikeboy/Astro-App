@@ -15,9 +15,15 @@
 .faladesh-topic-panel{scroll-margin-top:120px}
 .faladesh-topic-tabs button{min-height:42px;padding:10px 8px;font-size:12px}
 .guruji-reading-prose{width:100%}
+.guruji-reading-prose .source-format-marker{display:none}
+.guruji-reading-prose .guruji-reading-paragraph{text-align:justify;white-space:normal}
+.guruji-topic-excerpt+.guruji-topic-excerpt{margin-top:28px}
+.kundli-panel .guruji-reading-source-heading{margin:20px 0 12px;font-size:17px;line-height:1.8;font-weight:600;color:var(--maroon)}
 .guruji-faladesh .guruji-reading-paragraph{font-size:16px;line-height:2;color:#3f2c26;overflow-wrap:anywhere}
 .guruji-faladesh .guruji-reading-paragraph+.guruji-reading-paragraph{margin-top:18px}
 .guruji-reading-date{font-size:12px;color:var(--muted)}
 @media(max-width:600px){.guruji-faladesh .guruji-reading-paragraph{font-size:15px;line-height:2}.guruji-faladesh .guruji-reading-paragraph+.guruji-reading-paragraph{margin-top:16px}}
 .guruji-faladesh .guruji-next-period{margin-top:14px;padding-left:15px;border-left:2px solid var(--line);font-size:13px;color:var(--muted)}
 @media(max-width:600px){.guruji-conclusion{padding:20px 18px}.kundli-panel .guruji-conclusion h3{font-size:21px}.guruji-faladesh .guruji-conclusion-text{font-size:17px}.guruji-faladesh p{font-size:14px}.guruji-period-ranges{grid-template-columns:minmax(0,1fr);gap:16px}}
+
+.guruji-source-passage{border-bottom:1px solid var(--border,#e5d6c9);padding:1rem 0}.guruji-source-passage summary{cursor:pointer;font-weight:700;line-height:1.6}.guruji-source-text{white-space:pre-wrap;line-height:1.9;overflow-wrap:anywhere}.guruji-source-location{font-size:.8rem;opacity:.7;overflow-wrap:anywhere}

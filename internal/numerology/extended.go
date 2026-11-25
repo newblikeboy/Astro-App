@@ -1,14 +1,12 @@
 package numerology
 
 import (
-	_ "embed"
-	"encoding/json"
 	"fmt"
 	"strconv"
 	"strings"
 )
 
-const ExtendedMethod = "m4y-numerology-chaldean-mulank-profile-v1"
+const ExtendedMethod = "m4y-numerology-name-arithmetic-only-v2"
 
 // Bilingual preserves original authored wording in both supported report languages.
 type Bilingual struct {
@@ -51,38 +49,13 @@ type ExtendedReading struct {
 	Profile      Profile      `json:"profile"`
 }
 
-//go:embed data/profiles.json
-var profileJSON []byte
-
-//go:embed data/name-meanings.json
-var nameMeaningJSON []byte
-
-// CalculateFull adds Chaldean name evidence and an explicitly declared Mulank profile to date numbers.
-// Unsupported name scripts leave Naamank unavailable; no letters are silently transliterated or discarded.
+// CalculateFull retains date and name arithmetic without authored profiles, lucky dates or guidance.
 func CalculateFull(date, name string) (Reading, error) {
 	r, err := Calculate(date)
 	if err != nil {
 		return r, err
 	}
-	var profiles map[string]Profile
-	if err := json.Unmarshal(profileJSON, &profiles); err != nil {
-		return r, fmt.Errorf("invalid numerology profiles: %w", err)
-	}
-	p, ok := profiles[strconv.Itoa(r.Mulank.Value)]
-	if !ok {
-		return r, fmt.Errorf("missing numerology profile")
-	}
-	ext := &ExtendedReading{Method: ExtendedMethod, NameStatus: "needs_latin_spelling", Profile: p, LuckyNumbers: []int{r.Mulank.Value}, LuckyDates: []int{}}
-	if r.Bhagyank.Value != r.Mulank.Value {
-		ext.LuckyNumbers = append(ext.LuckyNumbers, r.Bhagyank.Value)
-	}
-	// Dates are the union of the two recorded single-digit number series, in calendar order.
-	for day := 1; day <= 31; day++ {
-		n := (day-1)%9 + 1
-		if n == r.Mulank.Value || n == r.Bhagyank.Value {
-			ext.LuckyDates = append(ext.LuckyDates, day)
-		}
-	}
+	ext := &ExtendedReading{Method: ExtendedMethod, NameStatus: "needs_latin_spelling"}
 	if named, err := CalculateName(name); err == nil {
 		ext.Naamank, ext.NameStatus = &named, "available"
 	}
@@ -125,9 +98,5 @@ func CalculateName(name string) (NameReading, error) {
 		return NameReading{}, fmt.Errorf("name spelling requires at least two letters")
 	}
 	n := reduce(digits)
-	var meanings map[string]Bilingual
-	if err := json.Unmarshal(nameMeaningJSON, &meanings); err != nil {
-		return NameReading{}, fmt.Errorf("invalid name meanings: %w", err)
-	}
-	return NameReading{Spelling: spelling, Letters: letters, Number: n, Meaning: meanings[strconv.Itoa(n.Value)]}, nil
+	return NameReading{Spelling: spelling, Letters: letters, Number: n}, nil
 }

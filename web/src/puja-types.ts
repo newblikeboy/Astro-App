@@ -13,6 +13,22 @@ export type PujaGuide = PujaSummary & {
   steps: { en: string[]; hi: string[] };
   note: PujaText;
   sources: string[];
+  mantra_readings: string[];
+  mantra_note: PujaText;
+  step_mantras: string[][];
+};
+export type PujaMantraSection = {
+  id: string;
+  title: PujaText;
+  text: string;
+  meaning: PujaText;
+  origin: "source-text" | "image-transcription";
+  note?: PujaText;
+};
+export type PujaMantraReading = {
+  title: PujaText;
+  source: string;
+  sections: PujaMantraSection[];
 };
 export const pujaKinds: { id: PujaKind; label: string }[] = [
   { id: "festival", label: "Festival pujas" },

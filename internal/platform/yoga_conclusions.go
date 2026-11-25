@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-// conclusion formats the shared application-owned summary without modifying stored interpretations.
+// conclusion formats shared calculation status labels without writing an outcome interpretation.
 func (l pdfLocale) conclusion(key string, values ...string) string {
 	text := l.text(key)
 	for i, value := range values {
@@ -15,22 +15,22 @@ func (l pdfLocale) conclusion(key string, values ...string) string {
 	return text
 }
 
-// placementConclusion describes a saved base configuration; absence never implies an adverse result.
+// placementConclusion reports only whether the recorded configuration is present.
 func (l pdfLocale) placementConclusion(code string, matches bool) string {
 	status, meaning := l.placementReading(code, matches)
 	return status + " " + meaning
 }
 
-// placementReading separates the recorded decision from its meaning for readable chapter cards.
+// placementReading returns the recorded configuration state without an authored outcome.
 func (l pdfLocale) placementReading(code string, matches bool) (string, string) {
-	status, meaning := "placement.absent", "placement.absent-meaning"
+	status := "placement.absent"
 	if matches {
-		status, meaning = "placement.present", "yoga.meaning."+code
+		status = "placement.present"
 	}
 	if strings.HasSuffix(code, "-base") || strings.HasPrefix(code, "mangal-") {
 		status = strings.Replace(status, "placement.", "placement.base-", 1)
 	}
-	return l.conclusion(status, l.text("yoga.name."+code)), l.text(meaning)
+	return l.conclusion(status, l.text("yoga.name."+code)), ""
 }
 
 // mangalConclusion keeps absent placement, cancellation and remaining indications distinct.
@@ -39,37 +39,38 @@ func (l pdfLocale) mangalConclusion(m swisseph.MangalAssessment) string {
 	return status + " " + meaning
 }
 
-// mangalReading separates the assessed state and explanation without changing cancellation rules.
+// mangalReading returns the recorded assessment state without a forecast.
 func (l pdfLocale) mangalReading(m swisseph.MangalAssessment) (string, string) {
-	status, meaning := "mangal.absent", "mangal.absent-meaning"
-	if m.ActiveCount > 0 {
-		status, meaning = "mangal.present", "mangal.meaning"
-	} else if m.BaseCount > 0 {
-		status, meaning = "mangal.cancelled", "mangal.cancelled-meaning"
+	if m.Classification == "mangal" || m.Classification == "partial" || m.Classification == "none" {
+		return l.text("mangal.guruji." + m.Classification), ""
 	}
-	return l.text(status), l.text(meaning)
+	status := "mangal.absent"
+	if m.ActiveCount > 0 {
+		status = "mangal.present"
+	} else if m.BaseCount > 0 {
+		status = "mangal.cancelled"
+	}
+	return l.text(status), ""
 }
 
-// kaalSarpConclusion names only confirmed enclosures, using recorded whole-sign houses for older snapshots too.
+// kaalSarpConclusion names only confirmed geometric enclosures from recorded houses.
 func (l pdfLocale) kaalSarpConclusion(k swisseph.KaalSarpAssessment) string {
 	status, meaning := l.kaalSarpReading(k)
 	return status + " " + meaning
 }
 
-// kaalSarpReading separates the confirmed/absent/undecided conclusion from general traditional meaning.
+// kaalSarpReading returns only the confirmed, absent or boundary calculation state.
 func (l pdfLocale) kaalSarpReading(k swisseph.KaalSarpAssessment) (string, string) {
 	switch k.Status {
 	case "present":
 		status := l.text("kaal-sarp.present-unnamed")
-		theme := ""
 		if k.RahuHouse >= 1 && k.RahuHouse <= 12 && k.KetuHouse == (k.RahuHouse+5)%12+1 {
 			status = l.conclusion("kaal-sarp.present", l.text(fmt.Sprintf("kaal-sarp.type.%d", k.RahuHouse)))
-			theme = " " + l.text(fmt.Sprintf("kaal-sarp.theme.%d", k.RahuHouse))
 		}
-		return status, l.text("kaal-sarp.meaning") + theme
+		return status, ""
 	case "absent":
-		return l.text("kaal-sarp.absent"), l.text("kaal-sarp.absent-meaning")
+		return l.text("kaal-sarp.absent"), ""
 	default:
-		return l.text("kaal-sarp.boundary"), l.text("kaal-sarp.boundary-meaning")
+		return l.text("kaal-sarp.boundary"), ""
 	}
 }

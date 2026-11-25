@@ -85,17 +85,7 @@ func matchingExplanation(language string, f swisseph.MatchingFactor) string {
 	return matchingText(language, matchingFactorWhy[f.Code], f.Score, f.Max, b, g, f.Evidence["bride_class"], f.Evidence["groom_class"])
 }
 
-var matchingMangalRuleText = map[string]string{
-	"strong_benefic_Jupiter": "Strength-qualified Jupiter in own or exalted sign in house 1 or 7",
-	"strong_benefic_Venus":   "Strength-qualified Venus in own or exalted sign in house 1 or 7",
-	"mars_own_or_exalted":    "Mars in its own or exalted sign",
-	"mars_debilitated":       "Mars in Cancer (selected cancellation tradition)",
-	"mars_retrograde":        "Retrograde Mars", "mars_combust": "Mars within 17 degrees of the Sun",
-	"mars_conjunct_jupiter": "Mars and Jupiter in the same sign", "mars_conjunct_moon": "Mars and Moon in the same sign", "mars_conjunct_rahu": "Mars and Rahu in the same sign",
-	"jupiter_aspects_seventh_mars": "Jupiter aspects seventh-house Mars", "sign_house_exception": "Published sign-and-house exception",
-	"other_saturn_or_rahu_same_house": "Partner Saturn or Rahu in the same house number", "other_saturn_in_mangal_house": "Partner Saturn in a specified Mangal house", "other_malefic_in_upachaya": "Partner Mars, Saturn or Rahu in house 3, 6 or 11",
-}
-var matchingMangalStatusText = map[string]string{"no_active_flags": "No remaining flags under the selected rules", "similar_active_levels": "Similar Mangal levels", "different_active_levels": "Different Mangal levels need review", "pair_exception_found": "A traditional pair exception was found"}
+var matchingMangalStatusText = map[string]string{"no_active_flags": "No remaining flags under the selected rules", "similar_active_levels": "Same Manglik classification", "different_active_levels": "Different Manglik classifications", "pair_exception_found": "A traditional pair exception was found"}
 var matchingBandText = map[string]string{"below_18": "Below 18 base points", "18_to_24": "18 to below 24 base points", "24_to_32": "24 to below 32 base points", "32_to_36": "32 to 36 base points"}
 
 type MatchingPDFRenderer interface {
@@ -239,12 +229,9 @@ func (p ChromePDF) RenderMatching(ctx context.Context, report *MatchingResponse,
 		"reference": func(v string) string {
 			return text(map[string]string{"lagna": "Lagna", "moon": "Moon", "venus": "Venus", "all": "All references", "bride": "Bride", "groom": "Groom"}[v])
 		},
-		"rule": func(v string) string { return text(matchingMangalRuleText[v]) },
-		"level": func(v string) string {
-			return text(map[string]string{"none": "No flagged references", "low": "Low Mangal level", "high": "High Mangal level"}[v])
-		},
-		"chart": func(p MatchingParticipant, mode string) template.HTML { return matchingChartSVG(p, mode, language) },
-		"band":  func(v string) string { return text(matchingBandText[v]) }, "mstatus": func(v string) string { return text(matchingMangalStatusText[v]) },
+		"mconclusion": func(m swisseph.MangalAssessment) string { return (pdfLocale{language}).mangalConclusion(m) },
+		"chart":       func(p MatchingParticipant, mode string) template.HTML { return matchingChartSVG(p, mode, language) },
+		"band":        func(v string) string { return text(matchingBandText[v]) }, "mstatus": func(v string) string { return text(matchingMangalStatusText[v]) },
 		"fixed": func(v float64) string { return strconv.FormatFloat(v, 'f', 3, 64) },
 	}
 	tpl, err := template.New("matching").Funcs(funcs).Parse(matchingPDFTemplate)
@@ -297,10 +284,10 @@ const matchingPDFTemplate = `<!doctype html><html lang="{{.Language}}"><head><me
 <h2>{{t "Verified birth inputs"}}</h2><div class="people">{{range .People}}<article class="person"><h3>{{t .Role}} · {{.Person.Birth.Name}}</h3><dl><dt>{{t "Birth date"}} / {{t "Birth time"}}</dt><dd>{{.Person.Birth.Date}} · {{clock .Person.Birth.Time}}</dd><dt>{{t "Birthplace"}}</dt><dd>{{if eq $.Language "hi"}}{{.Person.Place.Hindi}}{{else}}{{.Person.Place.Name}}{{end}}</dd><dt>{{t "IANA time zone"}}</dt><dd>{{.Person.Place.Zone}}</dd><dt>{{t "Latitude / longitude"}}</dt><dd>{{.Person.Place.Lat}} / {{.Person.Place.Lon}}</dd><dt>{{t "Resolved local birth time"}}</dt><dd>{{instant .Person.Chart.BirthTime .Person.Place.Zone}}</dd><dt>{{t "Resolved UTC instant"}}</dt><dd>{{instant .Person.Chart.UTC "UTC"}}</dd><dt>{{t "Lagna"}} / {{t "Moon sign"}}</dt><dd>{{sign .Person.Lagna.RashiNumber}} / {{sign .Person.Moon.RashiNumber}}</dd><dt>{{t "Birth star"}} / {{t "Pada"}}</dt><dd>{{t .Person.Moon.Nakshatra}} / {{.Person.Moon.Pada}}</dd>{{if .Person.Dasha}}<dt>{{t "Birth Dasha balance"}}</dt><dd>{{t .Person.Dasha.BirthLord}} · {{fixed .Person.Dasha.BalanceYears}} {{t "years"}}</dd>{{end}}</dl></article>{{end}}</div>
 <h2>{{t "Guna Milan"}}</h2><table><thead><tr><th>{{t "Reference"}}</th><th>{{t "Bride"}}</th><th>{{t "Groom"}}</th><th>{{t "Points"}}</th></tr></thead><tbody>{{range .Report.Factors}}<tr><td>{{t .Name}}</td><td>{{fv . .BrideValue}}</td><td>{{fv . .GroomValue}}</td><td>{{.Score}} / {{.Max}}</td></tr>{{end}}</tbody></table>
 <h2 class="newpage">{{t "Why these points"}}</h2>{{range .Report.Factors}}<article class="factor"><h3>{{t .Name}} · {{.Score}} / {{.Max}}</h3><p>{{why .}}</p>{{if exception .}}<p>{{exception .}}</p>{{end}}</article>{{end}}
-<section class="method"><h3>{{t "Method reference"}}</h3><p>{{t "Lahiri sidereal zodiac"}} · Swiss {{.Report.Bride.Chart.SwissVersion}}<br>{{.Report.Method}}<br>{{.Report.Mangal.Method}}</p><p>{{t "No cancellation points are added. The Mangal method is separate from the base score."}}</p><p>{{t "The Cow–Tiger Yoni pairing is scored 0 in both directions in this version."}}</p><p>{{t "AIFAS 2021: selected six-house, three-reference method; whole-sign conjunctions and aspects."}}</p><p>{{t "Calculated placements and traditional rules; no personalised predictions are generated or approved by this report."}}</p><p>{{t "Calculation time"}}: {{.Timestamp}}</p><p class="ref">AIFAS: https://www.futuresamachar.com/download/horoscope-matching-325.pdf<br>Mars combustion: https://www.futuresamachar.com/download/astrological-assessment-of-timing-of-childbirth-487.pdf</p></section>
-<h2 class="newpage">{{t "Mangal analysis"}}</h2><p class="note">{{t "The six-house convention checks 1, 2, 4, 7, 8 and 12 from Lagna, Moon and Venus. One flagged reference is low coverage; two or three are high."}}</p>
-{{range .People}}<article class="mangal-person"><h3>{{t .Role}} · {{.Person.Birth.Name}}</h3><p>{{t "Raw reference level"}}: {{level .Mangal.BaseLevel}} ({{.Mangal.BaseCount}}/3)<br>{{t "After selected exceptions"}}: {{level .Mangal.Level}} ({{.Mangal.ActiveCount}}/3)</p><table><thead><tr><th>{{t "Reference"}}</th><th>{{t "House"}}</th><th>{{t "Result"}}</th></tr></thead><tbody>{{range .Mangal.References}}<tr><td>{{reference .Reference}}</td><td>{{.House}}</td><td>{{if .Cancelled}}{{t "Exception applies"}}{{else if .Flagged}}{{t "Base placement"}}{{else}}{{t "Outside the checked houses"}}{{end}}</td></tr>{{end}}</tbody></table><ul class="rules">{{range .Mangal.Rules}}{{if .Met}}<li>{{rule .Code}} · {{reference .Reference}} · {{t "Source PDF page {v0}" .SourcePage}}</li>{{end}}{{end}}</ul>{{if .Mangal.ReviewConditions}}<p class="muted">{{t "Benefic strength requires review"}}</p>{{end}}</article>{{end}}
-<h3>{{t "Pair-level exceptions"}}</h3><p>{{mstatus .Report.Mangal.Status}}</p><ul class="rules">{{range .Report.Mangal.Rules}}{{if .Met}}<li>{{reference .Reference}}: {{rule .Code}}</li>{{end}}{{end}}</ul>{{if and .Report.Mangal.Bride.Strength .Report.Mangal.Groom.Strength}}{{else}}<p class="muted">{{t "Full planetary strength and context-dependent exceptions still require a professional reading. A possible benefic-strength condition is not treated as a confirmed cancellation."}}</p>{{end}}
+<section class="method"><h3>{{t "Method reference"}}</h3><p>{{t "Lahiri sidereal zodiac"}} · Swiss {{.Report.Bride.Chart.SwissVersion}}<br>{{.Report.Method}}<br>{{.Report.Mangal.Method}}</p><p>{{t "No cancellation points are added. The Mangal method is separate from the base score."}}</p><p>{{t "The Cow–Tiger Yoni pairing is scored 0 in both directions in this version."}}</p><p>{{t "Guruji audio: houses 1, 4, 7, 8 and 12 from Lagna and Moon; Moon-only indication is partial Manglik."}}</p><p>{{t "Calculated placements and traditional rules; no personalised predictions are generated or approved by this report."}}</p><p>{{t "Calculation time"}}: {{.Timestamp}}</p><p class="ref">AIFAS: https://www.futuresamachar.com/download/horoscope-matching-325.pdf</p></section>
+<h2 class="newpage">{{t "Mangal analysis"}}</h2><p class="note">{{t "Guruji audio: houses 1, 4, 7, 8 and 12 from Lagna and Moon; Moon-only indication is partial Manglik."}}</p>
+{{range .People}}<article class="mangal-person"><h3>{{t .Role}} &middot; {{.Person.Birth.Name}}</h3><p>{{mconclusion .Mangal}}</p><table><thead><tr><th>{{t "Reference"}}</th><th>{{t "House"}}</th><th>{{t "Result"}}</th></tr></thead><tbody>{{range .Mangal.References}}<tr><td>{{reference .Reference}}</td><td>{{.House}}</td><td>{{if .Flagged}}{{t "Base placement"}}{{else}}{{t "Outside the checked houses"}}{{end}}</td></tr>{{end}}</tbody></table></article>{{end}}
+<h3>{{t "Result"}}</h3><p>{{mstatus .Report.Mangal.Status}}</p>
 <h2 class="newpage">{{t "Birth chart comparison"}}</h2>
 <div class="chart-pair">{{range .People}}<div><h3>{{t .Role}} · {{t "D1 birth chart"}}</h3>{{chart .Person "d1"}}</div>{{end}}</div><div class="chart-pair">{{range .People}}<div><h3>{{t .Role}} · {{t "Navamsha D9"}}</h3>{{chart .Person "d9"}}</div>{{end}}</div><div class="chart-pair">{{range .People}}<div><h3>{{t .Role}} · {{t "Moon chart"}}</h3>{{chart .Person "moon"}}</div>{{end}}</div>
 <p class="muted">{{t "These are calculated chart placements. A D9 strength or complete marriage assessment is not inferred from the chart view."}}</p>

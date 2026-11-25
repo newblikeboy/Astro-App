@@ -1,0 +1,4121 @@
+{
+  "catalog_sha256": "ef3bef5ae9f264785fa990a84600a05bba05c5d7579e9ffc1ca56204046c5cbd",
+  "source_count": 7,
+  "passages": 246,
+  "word_changes": 0,
+  "records": [
+    {
+      "category": "मूलांक",
+      "key": "1",
+      "pages": [
+        1,
+        11
+      ],
+      "fingerprint": "d03d13c0",
+      "parts": 93,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "मूलांक",
+      "key": "2",
+      "pages": [
+        11,
+        23
+      ],
+      "fingerprint": "536f1405",
+      "parts": 128,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "मूलांक",
+      "key": "3",
+      "pages": [
+        24,
+        44
+      ],
+      "fingerprint": "1d53d085",
+      "parts": 258,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "मूलांक",
+      "key": "4",
+      "pages": [
+        44,
+        56
+      ],
+      "fingerprint": "38e4890a",
+      "parts": 137,
+      "topics": [
+        "general",
+        "personality",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "मूलांक",
+      "key": "5",
+      "pages": [
+        56,
+        69
+      ],
+      "fingerprint": "ee9be055",
+      "parts": 148,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "मूलांक",
+      "key": "6",
+      "pages": [
+        69,
+        81
+      ],
+      "fingerprint": "9d2a46cd",
+      "parts": 140,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "मूलांक",
+      "key": "7",
+      "pages": [
+        81,
+        94
+      ],
+      "fingerprint": "44fc7ef8",
+      "parts": 139,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "मूलांक",
+      "key": "8",
+      "pages": [
+        94,
+        105
+      ],
+      "fingerprint": "b71e8ee2",
+      "parts": 112,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "मूलांक",
+      "key": "9",
+      "pages": [
+        105,
+        117
+      ],
+      "fingerprint": "e7ff5bc1",
+      "parts": 126,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भाग्यांक",
+      "key": "1",
+      "pages": [
+        117,
+        129
+      ],
+      "fingerprint": "b0477029",
+      "parts": 137,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भाग्यांक",
+      "key": "2",
+      "pages": [
+        129,
+        141
+      ],
+      "fingerprint": "f53d72dc",
+      "parts": 138,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भाग्यांक",
+      "key": "4",
+      "pages": [
+        141,
+        153
+      ],
+      "fingerprint": "8b28bcf6",
+      "parts": 128,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भाग्यांक",
+      "key": "5",
+      "pages": [
+        153,
+        165
+      ],
+      "fingerprint": "0c08a098",
+      "parts": 139,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भाग्यांक",
+      "key": "6",
+      "pages": [
+        165,
+        176
+      ],
+      "fingerprint": "1486ac29",
+      "parts": 104,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भाग्यांक",
+      "key": "7",
+      "pages": [
+        176,
+        188
+      ],
+      "fingerprint": "796234c5",
+      "parts": 127,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भाग्यांक",
+      "key": "8",
+      "pages": [
+        188,
+        200
+      ],
+      "fingerprint": "2cb71a41",
+      "parts": 132,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भाग्यांक",
+      "key": "9",
+      "pages": [
+        200,
+        213
+      ],
+      "fingerprint": "fca343f6",
+      "parts": 139,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "मेष",
+      "pages": [
+        1,
+        10
+      ],
+      "fingerprint": "179098c9",
+      "parts": 125,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "वृषभ",
+      "pages": [
+        10,
+        21
+      ],
+      "fingerprint": "a02e3d51",
+      "parts": 131,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "मिथुन",
+      "pages": [
+        21,
+        28
+      ],
+      "fingerprint": "3a8430b5",
+      "parts": 69,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "कर्क",
+      "pages": [
+        28,
+        36
+      ],
+      "fingerprint": "f4006bec",
+      "parts": 77,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "सिंह",
+      "pages": [
+        36,
+        42
+      ],
+      "fingerprint": "89019e0f",
+      "parts": 65,
+      "topics": [
+        "general",
+        "personality",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "कन्या",
+      "pages": [
+        43,
+        50
+      ],
+      "fingerprint": "c0327ca4",
+      "parts": 77,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "relationships",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "तुला",
+      "pages": [
+        50,
+        57
+      ],
+      "fingerprint": "7a4b70c9",
+      "parts": 65,
+      "topics": [
+        "general",
+        "personality",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "वृश्चिक",
+      "pages": [
+        57,
+        64
+      ],
+      "fingerprint": "ec809666",
+      "parts": 76,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "धनु",
+      "pages": [
+        64,
+        70
+      ],
+      "fingerprint": "f97db4d1",
+      "parts": 58,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "मकर",
+      "pages": [
+        70,
+        78
+      ],
+      "fingerprint": "ff0d7504",
+      "parts": 77,
+      "topics": [
+        "general",
+        "personality",
+        "finance",
+        "relationships",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "कुंभ",
+      "pages": [
+        78,
+        84
+      ],
+      "fingerprint": "7b21f114",
+      "parts": 59,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "राशिफल",
+      "key": "मीन",
+      "pages": [
+        84,
+        92
+      ],
+      "fingerprint": "d1f35b64",
+      "parts": 80,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "मेष",
+      "pages": [
+        1,
+        12
+      ],
+      "fingerprint": "c25c6e15",
+      "parts": 112,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "वृष",
+      "pages": [
+        12,
+        24
+      ],
+      "fingerprint": "912774ef",
+      "parts": 117,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "मिथुन",
+      "pages": [
+        24,
+        35
+      ],
+      "fingerprint": "eb0255e4",
+      "parts": 100,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "कर्क",
+      "pages": [
+        35,
+        44
+      ],
+      "fingerprint": "24379375",
+      "parts": 89,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "सिंह",
+      "pages": [
+        44,
+        55
+      ],
+      "fingerprint": "b42aff82",
+      "parts": 115,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "कन्या",
+      "pages": [
+        55,
+        66
+      ],
+      "fingerprint": "a438ad80",
+      "parts": 102,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "तुला",
+      "pages": [
+        66,
+        78
+      ],
+      "fingerprint": "11f57a3c",
+      "parts": 125,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "वृश्चिक",
+      "pages": [
+        78,
+        91
+      ],
+      "fingerprint": "ae1f7b9f",
+      "parts": 136,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "धनु",
+      "pages": [
+        91,
+        105
+      ],
+      "fingerprint": "0389ad81",
+      "parts": 142,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "मकर",
+      "pages": [
+        105,
+        118
+      ],
+      "fingerprint": "16414fcf",
+      "parts": 146,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "कुंभ",
+      "pages": [
+        118,
+        130
+      ],
+      "fingerprint": "0789fbd6",
+      "parts": 124,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "लग्न",
+      "key": "मीन",
+      "pages": [
+        130,
+        143
+      ],
+      "fingerprint": "c2857b06",
+      "parts": 138,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "वारफल",
+      "key": "सोमवार",
+      "pages": [
+        1,
+        8
+      ],
+      "fingerprint": "1d4b73af",
+      "parts": 64,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "वारफल",
+      "key": "मंगलवार",
+      "pages": [
+        8,
+        14
+      ],
+      "fingerprint": "675dff68",
+      "parts": 56,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "वारफल",
+      "key": "बुधवार",
+      "pages": [
+        14,
+        22
+      ],
+      "fingerprint": "05ebe54c",
+      "parts": 80,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "finance",
+        "relationships",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "वारफल",
+      "key": "गुरुवार",
+      "pages": [
+        22,
+        29
+      ],
+      "fingerprint": "db74850a",
+      "parts": 84,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "वारफल",
+      "key": "शुक्रवार",
+      "pages": [
+        29,
+        38
+      ],
+      "fingerprint": "9078df32",
+      "parts": 91,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "वारफल",
+      "key": "शनिवार",
+      "pages": [
+        38,
+        46
+      ],
+      "fingerprint": "2353f871",
+      "parts": 91,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "वारफल",
+      "key": "रविवार",
+      "pages": [
+        46,
+        52
+      ],
+      "fingerprint": "0858d875",
+      "parts": 61,
+      "topics": [
+        "general",
+        "personality",
+        "finance",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "प्रतिपदा",
+      "pages": [
+        53,
+        61
+      ],
+      "fingerprint": "d6ea9c23",
+      "parts": 88,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "द्वितीया",
+      "pages": [
+        61,
+        71
+      ],
+      "fingerprint": "adb051aa",
+      "parts": 114,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "तृतीया",
+      "pages": [
+        72,
+        83
+      ],
+      "fingerprint": "59baf3ca",
+      "parts": 140,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "चतुर्थी",
+      "pages": [
+        84,
+        97
+      ],
+      "fingerprint": "92a4bf74",
+      "parts": 162,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "पंचमी",
+      "pages": [
+        97,
+        111
+      ],
+      "fingerprint": "99d90a31",
+      "parts": 169,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "षष्ठी",
+      "pages": [
+        111,
+        119
+      ],
+      "fingerprint": "bfe32125",
+      "parts": 83,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "सप्तमी",
+      "pages": [
+        119,
+        130
+      ],
+      "fingerprint": "d7bff76c",
+      "parts": 124,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "अष्टमी",
+      "pages": [
+        130,
+        143
+      ],
+      "fingerprint": "af2a2c91",
+      "parts": 149,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "नवमी",
+      "pages": [
+        143,
+        156
+      ],
+      "fingerprint": "0edfe8f6",
+      "parts": 141,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "दशमी",
+      "pages": [
+        156,
+        171
+      ],
+      "fingerprint": "dfb28ee1",
+      "parts": 197,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "एकादशी",
+      "pages": [
+        171,
+        181
+      ],
+      "fingerprint": "9d9a56a6",
+      "parts": 114,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "द्वादशी",
+      "pages": [
+        181,
+        195
+      ],
+      "fingerprint": "292b827e",
+      "parts": 192,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "त्रयोदशी",
+      "pages": [
+        195,
+        211
+      ],
+      "fingerprint": "4d36b902",
+      "parts": 217,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "चतुर्दशी",
+      "pages": [
+        211,
+        225
+      ],
+      "fingerprint": "a4271e68",
+      "parts": 183,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "चतुर्दशी",
+      "pages": [
+        225,
+        239
+      ],
+      "fingerprint": "a4271e68",
+      "parts": 183,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "पूर्णिमा",
+      "pages": [
+        239,
+        256
+      ],
+      "fingerprint": "c999d49e",
+      "parts": 245,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "तिथिफल",
+      "key": "अमावस्या",
+      "pages": [
+        256,
+        266
+      ],
+      "fingerprint": "331ae02a",
+      "parts": 147,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "अश्विनी",
+      "pages": [
+        1,
+        7
+      ],
+      "fingerprint": "96198d07",
+      "parts": 90,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "भरणी",
+      "pages": [
+        7,
+        16
+      ],
+      "fingerprint": "405d460d",
+      "parts": 124,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "कृत्तिका",
+      "pages": [
+        16,
+        24
+      ],
+      "fingerprint": "d0882388",
+      "parts": 113,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "रोहिणी",
+      "pages": [
+        24,
+        32
+      ],
+      "fingerprint": "84f72313",
+      "parts": 128,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "मृगशिरा",
+      "pages": [
+        32,
+        41
+      ],
+      "fingerprint": "36072886",
+      "parts": 147,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "आर्द्रा",
+      "pages": [
+        41,
+        50
+      ],
+      "fingerprint": "2eae8278",
+      "parts": 142,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "पुनर्वसु",
+      "pages": [
+        50,
+        58
+      ],
+      "fingerprint": "11a30368",
+      "parts": 124,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "पुष्य",
+      "pages": [
+        58,
+        67
+      ],
+      "fingerprint": "e87ec489",
+      "parts": 135,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "आश्लेषा",
+      "pages": [
+        67,
+        77
+      ],
+      "fingerprint": "cc89a07c",
+      "parts": 170,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "मघा",
+      "pages": [
+        77,
+        88
+      ],
+      "fingerprint": "83974b1c",
+      "parts": 169,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "पूर्वाफाल्गुनी",
+      "pages": [
+        88,
+        98
+      ],
+      "fingerprint": "94a24ffb",
+      "parts": 173,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "उत्तराफाल्गुनी",
+      "pages": [
+        98,
+        110
+      ],
+      "fingerprint": "1a8589d2",
+      "parts": 196,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "हस्त",
+      "pages": [
+        110,
+        122
+      ],
+      "fingerprint": "10d72a67",
+      "parts": 207,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "चित्रा",
+      "pages": [
+        122,
+        131
+      ],
+      "fingerprint": "3e1e8b7e",
+      "parts": 141,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "स्वाती",
+      "pages": [
+        131,
+        141
+      ],
+      "fingerprint": "88d170c9",
+      "parts": 161,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "विशाखा",
+      "pages": [
+        141,
+        151
+      ],
+      "fingerprint": "2fe6b1b6",
+      "parts": 170,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "अनुराधा",
+      "pages": [
+        152,
+        161
+      ],
+      "fingerprint": "4440bad2",
+      "parts": 166,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "ज्येष्ठा",
+      "pages": [
+        162,
+        172
+      ],
+      "fingerprint": "1770f27d",
+      "parts": 178,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "मूल",
+      "pages": [
+        172,
+        183
+      ],
+      "fingerprint": "b7b6f0fc",
+      "parts": 173,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "पूर्वाषाढ़ा",
+      "pages": [
+        183,
+        193
+      ],
+      "fingerprint": "99a1df9e",
+      "parts": 158,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "उत्तराषाढ़ा",
+      "pages": [
+        193,
+        203
+      ],
+      "fingerprint": "ec109202",
+      "parts": 164,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "श्रवण",
+      "pages": [
+        203,
+        214
+      ],
+      "fingerprint": "0b4624d8",
+      "parts": 185,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "धनिष्ठा",
+      "pages": [
+        214,
+        225
+      ],
+      "fingerprint": "7a27a54f",
+      "parts": 190,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "शतभिषा",
+      "pages": [
+        225,
+        236
+      ],
+      "fingerprint": "22edba91",
+      "parts": 185,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "पूर्वाभाद्रपद",
+      "pages": [
+        236,
+        247
+      ],
+      "fingerprint": "7a59bd7f",
+      "parts": 190,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "उत्तराभाद्रपद",
+      "pages": [
+        247,
+        256
+      ],
+      "fingerprint": "0abc90e4",
+      "parts": 134,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "नक्षत्र",
+      "key": "रेवती",
+      "pages": [
+        256,
+        266
+      ],
+      "fingerprint": "f67e5f2b",
+      "parts": 173,
+      "topics": [
+        "general",
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "1",
+      "pages": [
+        1,
+        1
+      ],
+      "fingerprint": "a1933a4d",
+      "parts": 2,
+      "topics": [
+        "personality",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "1",
+      "pages": [
+        1,
+        1
+      ],
+      "fingerprint": "9b780578",
+      "parts": 2,
+      "topics": [
+        "personality",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "2",
+      "pages": [
+        1,
+        2
+      ],
+      "fingerprint": "1bf650c5",
+      "parts": 2,
+      "topics": [
+        "finance",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "2",
+      "pages": [
+        2,
+        2
+      ],
+      "fingerprint": "1eb9099b",
+      "parts": 2,
+      "topics": [
+        "finance",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "3",
+      "pages": [
+        2,
+        2
+      ],
+      "fingerprint": "44dc62ce",
+      "parts": 2,
+      "topics": [
+        "personality",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "3",
+      "pages": [
+        2,
+        3
+      ],
+      "fingerprint": "564f21bc",
+      "parts": 2,
+      "topics": [
+        "personality",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "4",
+      "pages": [
+        3,
+        3
+      ],
+      "fingerprint": "745a4a5d",
+      "parts": 2,
+      "topics": [
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "4",
+      "pages": [
+        3,
+        4
+      ],
+      "fingerprint": "8ec050f7",
+      "parts": 2,
+      "topics": [
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "5",
+      "pages": [
+        4,
+        4
+      ],
+      "fingerprint": "15a11e01",
+      "parts": 2,
+      "topics": [
+        "personality",
+        "education",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "5",
+      "pages": [
+        4,
+        5
+      ],
+      "fingerprint": "9fc766d8",
+      "parts": 2,
+      "topics": [
+        "personality",
+        "education",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "6",
+      "pages": [
+        5,
+        5
+      ],
+      "fingerprint": "57237ae5",
+      "parts": 2,
+      "topics": [
+        "career",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "6",
+      "pages": [
+        5,
+        6
+      ],
+      "fingerprint": "1d880a38",
+      "parts": 2,
+      "topics": [
+        "career",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "7",
+      "pages": [
+        6,
+        6
+      ],
+      "fingerprint": "3a1513a0",
+      "parts": 2,
+      "topics": [
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "7",
+      "pages": [
+        6,
+        7
+      ],
+      "fingerprint": "7356ec24",
+      "parts": 2,
+      "topics": [
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "8",
+      "pages": [
+        7,
+        7
+      ],
+      "fingerprint": "12f26548",
+      "parts": 2,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "8",
+      "pages": [
+        7,
+        8
+      ],
+      "fingerprint": "ff76d174",
+      "parts": 2,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "9",
+      "pages": [
+        8,
+        8
+      ],
+      "fingerprint": "d0f15b09",
+      "parts": 2,
+      "topics": [
+        "education"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "9",
+      "pages": [
+        8,
+        9
+      ],
+      "fingerprint": "2b93e15b",
+      "parts": 2,
+      "topics": [
+        "education"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "10",
+      "pages": [
+        9,
+        9
+      ],
+      "fingerprint": "1ce8f46f",
+      "parts": 2,
+      "topics": [
+        "career"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "10",
+      "pages": [
+        9,
+        10
+      ],
+      "fingerprint": "d1e10d74",
+      "parts": 2,
+      "topics": [
+        "career"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "11",
+      "pages": [
+        10,
+        11
+      ],
+      "fingerprint": "a9ba85d2",
+      "parts": 2,
+      "topics": [
+        "finance"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "11",
+      "pages": [
+        11,
+        11
+      ],
+      "fingerprint": "58e9d50c",
+      "parts": 2,
+      "topics": [
+        "finance"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "12",
+      "pages": [
+        11,
+        12
+      ],
+      "fingerprint": "bb4d0ac4",
+      "parts": 2,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "ग्रहों का फला देश",
+      "key": "12",
+      "pages": [
+        12,
+        12
+      ],
+      "fingerprint": "579fb0bc",
+      "parts": 2,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        1,
+        1
+      ],
+      "fingerprint": "37b115b7",
+      "parts": 3,
+      "topics": [
+        "general",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        1,
+        2
+      ],
+      "fingerprint": "20e076fa",
+      "parts": 18,
+      "topics": [
+        "general",
+        "personality",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        2,
+        4
+      ],
+      "fingerprint": "924292ff",
+      "parts": 17,
+      "topics": [
+        "general",
+        "finance",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        4,
+        5
+      ],
+      "fingerprint": "13b44110",
+      "parts": 18,
+      "topics": [
+        "general",
+        "personality",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        5,
+        7
+      ],
+      "fingerprint": "22c96448",
+      "parts": 18,
+      "topics": [
+        "general",
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        7,
+        8
+      ],
+      "fingerprint": "6dc984d0",
+      "parts": 18,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        8,
+        10
+      ],
+      "fingerprint": "d74de01a",
+      "parts": 18,
+      "topics": [
+        "general",
+        "career",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        10,
+        11
+      ],
+      "fingerprint": "9017bdb0",
+      "parts": 17,
+      "topics": [
+        "general",
+        "relationships",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        11,
+        13
+      ],
+      "fingerprint": "d80604d0",
+      "parts": 17,
+      "topics": [
+        "general",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        13,
+        14
+      ],
+      "fingerprint": "e47674ed",
+      "parts": 18,
+      "topics": [
+        "general",
+        "education"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        14,
+        16
+      ],
+      "fingerprint": "02f09826",
+      "parts": 18,
+      "topics": [
+        "general",
+        "career"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        16,
+        18
+      ],
+      "fingerprint": "e1ab0f3c",
+      "parts": 18,
+      "topics": [
+        "general",
+        "finance",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        18,
+        19
+      ],
+      "fingerprint": "e52cde2e",
+      "parts": 18,
+      "topics": [
+        "general",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "सूर्य",
+      "pages": [
+        19,
+        20
+      ],
+      "fingerprint": "b509fc8b",
+      "parts": 16,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        20,
+        20
+      ],
+      "fingerprint": "75a3bfcf",
+      "parts": 2,
+      "topics": [
+        "general"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        20,
+        22
+      ],
+      "fingerprint": "61369a6e",
+      "parts": 12,
+      "topics": [
+        "personality",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        22,
+        23
+      ],
+      "fingerprint": "89db69bf",
+      "parts": 12,
+      "topics": [
+        "finance",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        23,
+        25
+      ],
+      "fingerprint": "d0b818a5",
+      "parts": 11,
+      "topics": [
+        "personality",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        25,
+        26
+      ],
+      "fingerprint": "45e9b058",
+      "parts": 12,
+      "topics": [
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        26,
+        28
+      ],
+      "fingerprint": "abf03462",
+      "parts": 12,
+      "topics": [
+        "personality",
+        "education",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        28,
+        29
+      ],
+      "fingerprint": "fa2b2ee0",
+      "parts": 13,
+      "topics": [
+        "career",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        29,
+        30
+      ],
+      "fingerprint": "8a757bc7",
+      "parts": 12,
+      "topics": [
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        30,
+        32
+      ],
+      "fingerprint": "0015aed1",
+      "parts": 11,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        32,
+        33
+      ],
+      "fingerprint": "7adc03f6",
+      "parts": 10,
+      "topics": [
+        "education"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        33,
+        34
+      ],
+      "fingerprint": "481c8f85",
+      "parts": 11,
+      "topics": [
+        "career"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        34,
+        35
+      ],
+      "fingerprint": "ef8927a3",
+      "parts": 11,
+      "topics": [
+        "finance"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "चंद्रमा",
+      "pages": [
+        35,
+        36
+      ],
+      "fingerprint": "4550b548",
+      "parts": 11,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        36,
+        36
+      ],
+      "fingerprint": "72394bfe",
+      "parts": 4,
+      "topics": [
+        "general"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        37,
+        38
+      ],
+      "fingerprint": "7f0861c3",
+      "parts": 15,
+      "topics": [
+        "personality",
+        "career",
+        "finance",
+        "relationships",
+        "family",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        38,
+        40
+      ],
+      "fingerprint": "97b12fc5",
+      "parts": 13,
+      "topics": [
+        "finance",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        40,
+        42
+      ],
+      "fingerprint": "db50c825",
+      "parts": 15,
+      "topics": [
+        "personality",
+        "career",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        42,
+        43
+      ],
+      "fingerprint": "eaba69d5",
+      "parts": 15,
+      "topics": [
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        43,
+        45
+      ],
+      "fingerprint": "df4921e1",
+      "parts": 15,
+      "topics": [
+        "personality",
+        "education",
+        "relationships",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        45,
+        46
+      ],
+      "fingerprint": "7b53b1f4",
+      "parts": 14,
+      "topics": [
+        "career",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        46,
+        48
+      ],
+      "fingerprint": "86fd2af3",
+      "parts": 18,
+      "topics": [
+        "career",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        48,
+        49
+      ],
+      "fingerprint": "74b3de23",
+      "parts": 15,
+      "topics": [
+        "family",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        49,
+        51
+      ],
+      "fingerprint": "c81d9a47",
+      "parts": 13,
+      "topics": [
+        "education",
+        "career"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        51,
+        52
+      ],
+      "fingerprint": "db41ba50",
+      "parts": 13,
+      "topics": [
+        "career",
+        "finance",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        52,
+        53
+      ],
+      "fingerprint": "b294ab32",
+      "parts": 13,
+      "topics": [
+        "finance"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "मंगल",
+      "pages": [
+        53,
+        55
+      ],
+      "fingerprint": "23b6f110",
+      "parts": 15,
+      "topics": [
+        "general",
+        "wellbeing",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        55,
+        55
+      ],
+      "fingerprint": "c010b875",
+      "parts": 3,
+      "topics": [
+        "general"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        55,
+        56
+      ],
+      "fingerprint": "74c2faf2",
+      "parts": 5,
+      "topics": [
+        "personality",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        56,
+        57
+      ],
+      "fingerprint": "56c445fa",
+      "parts": 5,
+      "topics": [
+        "finance",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        57,
+        57
+      ],
+      "fingerprint": "ef252966",
+      "parts": 5,
+      "topics": [
+        "personality",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        58,
+        58
+      ],
+      "fingerprint": "916f6043",
+      "parts": 5,
+      "topics": [
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        58,
+        59
+      ],
+      "fingerprint": "33decdd1",
+      "parts": 5,
+      "topics": [
+        "personality",
+        "education",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        59,
+        60
+      ],
+      "fingerprint": "dc47720a",
+      "parts": 5,
+      "topics": [
+        "career",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        60,
+        61
+      ],
+      "fingerprint": "e82a7314",
+      "parts": 6,
+      "topics": [
+        "personality",
+        "relationships",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        61,
+        62
+      ],
+      "fingerprint": "1fa5e098",
+      "parts": 6,
+      "topics": [
+        "education",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        62,
+        62
+      ],
+      "fingerprint": "ac40bfa5",
+      "parts": 5,
+      "topics": [
+        "education",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        62,
+        63
+      ],
+      "fingerprint": "6b731d14",
+      "parts": 5,
+      "topics": [
+        "career",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        63,
+        64
+      ],
+      "fingerprint": "6bb2310b",
+      "parts": 5,
+      "topics": [
+        "finance"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "बुध",
+      "pages": [
+        64,
+        65
+      ],
+      "fingerprint": "95ac8e58",
+      "parts": 7,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        65,
+        65
+      ],
+      "fingerprint": "06a3907c",
+      "parts": 1,
+      "topics": [
+        "general"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        65,
+        66
+      ],
+      "fingerprint": "34cedbc0",
+      "parts": 6,
+      "topics": [
+        "general",
+        "personality",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        66,
+        67
+      ],
+      "fingerprint": "8dfb345a",
+      "parts": 6,
+      "topics": [
+        "finance",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        67,
+        68
+      ],
+      "fingerprint": "0b0d8835",
+      "parts": 6,
+      "topics": [
+        "personality",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        68,
+        68
+      ],
+      "fingerprint": "4053fb7c",
+      "parts": 5,
+      "topics": [
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        69,
+        69
+      ],
+      "fingerprint": "4ac1b1c8",
+      "parts": 5,
+      "topics": [
+        "personality",
+        "education",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        69,
+        70
+      ],
+      "fingerprint": "7073ecfd",
+      "parts": 6,
+      "topics": [
+        "career",
+        "finance",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        70,
+        71
+      ],
+      "fingerprint": "e747a2e2",
+      "parts": 5,
+      "topics": [
+        "relationships",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        71,
+        72
+      ],
+      "fingerprint": "643dd2dd",
+      "parts": 6,
+      "topics": [
+        "finance",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        72,
+        73
+      ],
+      "fingerprint": "91571e22",
+      "parts": 6,
+      "topics": [
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        73,
+        73
+      ],
+      "fingerprint": "6273936d",
+      "parts": 5,
+      "topics": [
+        "career",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        73,
+        74
+      ],
+      "fingerprint": "b51f69f6",
+      "parts": 5,
+      "topics": [
+        "finance"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "गुरु",
+      "pages": [
+        74,
+        75
+      ],
+      "fingerprint": "9ec70e22",
+      "parts": 11,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        76,
+        76
+      ],
+      "fingerprint": "11bff2f9",
+      "parts": 3,
+      "topics": [
+        "general"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        76,
+        76
+      ],
+      "fingerprint": "f21e13f1",
+      "parts": 5,
+      "topics": [
+        "personality",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        77,
+        77
+      ],
+      "fingerprint": "2beb43e3",
+      "parts": 5,
+      "topics": [
+        "finance",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        77,
+        78
+      ],
+      "fingerprint": "9ae5ae2b",
+      "parts": 5,
+      "topics": [
+        "personality",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        78,
+        79
+      ],
+      "fingerprint": "85ff1135",
+      "parts": 5,
+      "topics": [
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        79,
+        80
+      ],
+      "fingerprint": "2dae2e2a",
+      "parts": 5,
+      "topics": [
+        "personality",
+        "education",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        80,
+        80
+      ],
+      "fingerprint": "090305dc",
+      "parts": 5,
+      "topics": [
+        "career",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        81,
+        81
+      ],
+      "fingerprint": "3d56d8fa",
+      "parts": 5,
+      "topics": [
+        "relationships",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        81,
+        82
+      ],
+      "fingerprint": "89eeeba3",
+      "parts": 5,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        82,
+        83
+      ],
+      "fingerprint": "9bca5a04",
+      "parts": 5,
+      "topics": [
+        "education"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        83,
+        84
+      ],
+      "fingerprint": "1ed93d23",
+      "parts": 5,
+      "topics": [
+        "career",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        84,
+        85
+      ],
+      "fingerprint": "9adb1505",
+      "parts": 7,
+      "topics": [
+        "finance"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शुक्र",
+      "pages": [
+        85,
+        86
+      ],
+      "fingerprint": "f45e3277",
+      "parts": 9,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        86,
+        86
+      ],
+      "fingerprint": "7bdb07c4",
+      "parts": 1,
+      "topics": [
+        "general"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        86,
+        87
+      ],
+      "fingerprint": "3c31e71a",
+      "parts": 5,
+      "topics": [
+        "personality",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        87,
+        87
+      ],
+      "fingerprint": "9d355b8d",
+      "parts": 5,
+      "topics": [
+        "finance",
+        "family",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        88,
+        88
+      ],
+      "fingerprint": "8026873d",
+      "parts": 5,
+      "topics": [
+        "personality",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        88,
+        89
+      ],
+      "fingerprint": "e58c1db9",
+      "parts": 5,
+      "topics": [
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        89,
+        90
+      ],
+      "fingerprint": "980ed729",
+      "parts": 5,
+      "topics": [
+        "personality",
+        "education",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        90,
+        91
+      ],
+      "fingerprint": "b4a83c76",
+      "parts": 5,
+      "topics": [
+        "career",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        91,
+        92
+      ],
+      "fingerprint": "8d6f4757",
+      "parts": 6,
+      "topics": [
+        "relationships",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        92,
+        92
+      ],
+      "fingerprint": "66de71ba",
+      "parts": 5,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        92,
+        93
+      ],
+      "fingerprint": "88d726f7",
+      "parts": 6,
+      "topics": [
+        "education"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        93,
+        94
+      ],
+      "fingerprint": "7bc17446",
+      "parts": 5,
+      "topics": [
+        "career",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        94,
+        95
+      ],
+      "fingerprint": "e45a1755",
+      "parts": 5,
+      "topics": [
+        "finance",
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "शनि",
+      "pages": [
+        95,
+        96
+      ],
+      "fingerprint": "80ac4656",
+      "parts": 7,
+      "topics": [
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        96,
+        96
+      ],
+      "fingerprint": "7496255f",
+      "parts": 1,
+      "topics": [
+        "general"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        96,
+        97
+      ],
+      "fingerprint": "7b748f87",
+      "parts": 15,
+      "topics": [
+        "general",
+        "personality",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        97,
+        98
+      ],
+      "fingerprint": "37743a72",
+      "parts": 14,
+      "topics": [
+        "general",
+        "finance",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        98,
+        99
+      ],
+      "fingerprint": "f0dc5877",
+      "parts": 15,
+      "topics": [
+        "general",
+        "personality",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        100,
+        101
+      ],
+      "fingerprint": "4e33abed",
+      "parts": 13,
+      "topics": [
+        "general",
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        101,
+        102
+      ],
+      "fingerprint": "3234be1d",
+      "parts": 15,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        102,
+        103
+      ],
+      "fingerprint": "2347f692",
+      "parts": 15,
+      "topics": [
+        "general",
+        "career",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        103,
+        104
+      ],
+      "fingerprint": "950a90e0",
+      "parts": 15,
+      "topics": [
+        "general",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        104,
+        106
+      ],
+      "fingerprint": "b821d109",
+      "parts": 14,
+      "topics": [
+        "general",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        106,
+        107
+      ],
+      "fingerprint": "d5044b56",
+      "parts": 15,
+      "topics": [
+        "general",
+        "education"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        107,
+        108
+      ],
+      "fingerprint": "1adf0627",
+      "parts": 15,
+      "topics": [
+        "general",
+        "career"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        108,
+        109
+      ],
+      "fingerprint": "a2e6624c",
+      "parts": 15,
+      "topics": [
+        "general",
+        "finance"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "राहु",
+      "pages": [
+        109,
+        111
+      ],
+      "fingerprint": "9fc665a6",
+      "parts": 17,
+      "topics": [
+        "general",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        111,
+        111
+      ],
+      "fingerprint": "139f3b9b",
+      "parts": 1,
+      "topics": [
+        "general"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        111,
+        112
+      ],
+      "fingerprint": "c99023ec",
+      "parts": 14,
+      "topics": [
+        "general",
+        "personality",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        112,
+        113
+      ],
+      "fingerprint": "14a42130",
+      "parts": 14,
+      "topics": [
+        "general",
+        "finance",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        113,
+        114
+      ],
+      "fingerprint": "e5cbe302",
+      "parts": 15,
+      "topics": [
+        "general",
+        "personality",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        114,
+        115
+      ],
+      "fingerprint": "fea6acb4",
+      "parts": 14,
+      "topics": [
+        "general",
+        "education",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        116,
+        117
+      ],
+      "fingerprint": "4f628689",
+      "parts": 16,
+      "topics": [
+        "general",
+        "personality",
+        "education",
+        "relationships",
+        "family"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        117,
+        118
+      ],
+      "fingerprint": "b89f4aa0",
+      "parts": 15,
+      "topics": [
+        "general",
+        "career",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        118,
+        119
+      ],
+      "fingerprint": "f1ea1c1b",
+      "parts": 14,
+      "topics": [
+        "general",
+        "relationships"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        119,
+        120
+      ],
+      "fingerprint": "c34e2522",
+      "parts": 15,
+      "topics": [
+        "general",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        120,
+        121
+      ],
+      "fingerprint": "51b22366",
+      "parts": 15,
+      "topics": [
+        "general",
+        "education"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        121,
+        123
+      ],
+      "fingerprint": "a46bb1e7",
+      "parts": 14,
+      "topics": [
+        "general",
+        "career"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        123,
+        124
+      ],
+      "fingerprint": "89d7cbde",
+      "parts": 15,
+      "topics": [
+        "general",
+        "finance"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "भावफल",
+      "key": "केतु",
+      "pages": [
+        124,
+        125
+      ],
+      "fingerprint": "9383c6f6",
+      "parts": 14,
+      "topics": [
+        "general",
+        "wellbeing"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "केतु",
+      "pages": [
+        125,
+        126
+      ],
+      "fingerprint": "409147de",
+      "parts": 10,
+      "topics": [],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "केतु",
+      "pages": [
+        137,
+        139
+      ],
+      "fingerprint": "21a9ab75",
+      "parts": 18,
+      "topics": [],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "नवग्रह",
+      "pages": [
+        126,
+        127
+      ],
+      "fingerprint": "575beeaf",
+      "parts": 5,
+      "topics": [
+        "dasha"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "नवग्रह",
+      "pages": [
+        139,
+        139
+      ],
+      "fingerprint": "9692478d",
+      "parts": 13,
+      "topics": [],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "सूर्य",
+      "pages": [
+        127,
+        128
+      ],
+      "fingerprint": "588322c1",
+      "parts": 20,
+      "topics": [],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "चंद्रमा",
+      "pages": [
+        128,
+        130
+      ],
+      "fingerprint": "c8b75383",
+      "parts": 18,
+      "topics": [],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "मंगल",
+      "pages": [
+        130,
+        131
+      ],
+      "fingerprint": "e29da3eb",
+      "parts": 19,
+      "topics": [],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "बुध",
+      "pages": [
+        131,
+        132
+      ],
+      "fingerprint": "98c8dc07",
+      "parts": 19,
+      "topics": [],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "गुरु",
+      "pages": [
+        132,
+        133
+      ],
+      "fingerprint": "ab0c88fe",
+      "parts": 19,
+      "topics": [],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "शुक्र",
+      "pages": [
+        133,
+        135
+      ],
+      "fingerprint": "fff053cb",
+      "parts": 19,
+      "topics": [],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "शनि",
+      "pages": [
+        135,
+        136
+      ],
+      "fingerprint": "9b053990",
+      "parts": 19,
+      "topics": [],
+      "exact_reconstruction": true
+    },
+    {
+      "category": "उपाय",
+      "key": "राहु",
+      "pages": [
+        136,
+        137
+      ],
+      "fingerprint": "f85e2961",
+      "parts": 19,
+      "topics": [],
+      "exact_reconstruction": true
+    }
+  ]
+}

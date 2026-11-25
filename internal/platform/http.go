@@ -1,6 +1,7 @@
 package platform
 
 import (
+	"astroapp/backend/internal/swisseph"
 	"context"
 	"crypto/rand"
 	"encoding/csv"
@@ -499,7 +500,7 @@ func (a *App) me(w http.ResponseWriter, r *http.Request) {
 		jobs := []Job{}
 		for _, v := range s.Reports {
 			if v.UserID == sess.UserID {
-				reports = append(reports, v)
+				reports = append(reports, sourceOnlyReport(v))
 			}
 		}
 		for _, v := range s.Orders {
@@ -602,7 +603,7 @@ func (a *App) getReport(w http.ResponseWriter, r *http.Request) {
 		if v == nil || v.UserID != sess.UserID {
 			return fmt.Errorf("report not found")
 		}
-		jsonOut(w, v)
+		jsonOut(w, sourceOnlyReport(v))
 		return nil
 	})
 	if e != nil {
@@ -816,7 +817,7 @@ func (a *App) simulateHTTP(w http.ResponseWriter, r *http.Request) {
 	jsonOut(w, copy)
 }
 
-// downloadPDF serves the original file for legacy links, or the selected-language presentation of the paid snapshot.
+// downloadPDF serves source-only files; pre-policy purchases are rendered again without changing their stored snapshots.
 func (a *App) downloadPDF(w http.ResponseWriter, r *http.Request) {
 	sess, ok := a.guard(w, r, false)
 	if !ok {
@@ -825,7 +826,7 @@ func (a *App) downloadPDF(w http.ResponseWriter, r *http.Request) {
 	selectedLanguage := r.URL.Query().Get("language")
 	language := selectedLanguage
 	if language == "" {
-		language = "hi" // Preserve the original download URL and existing Hindi file.
+		language = "hi" // Default to Hindi; legacy authored files are regenerated from source passages.
 	}
 	if language != "en" && language != "hi" {
 		fail(w, 400, fmt.Errorf("Choose English or Hindi for the remedy PDF."))
@@ -848,7 +849,7 @@ func (a *App) downloadPDF(w http.ResponseWriter, r *http.Request) {
 		fail(w, 404, e)
 		return
 	}
-	if selectedLanguage != "" {
+	if selectedLanguage != "" || purchased.Snapshot == nil || len(purchased.Snapshot.SourceReadings) == 0 || (purchased.Snapshot.Details != nil && purchased.Snapshot.Details.MangalMethod != swisseph.MangalMethod) {
 		a.downloadRemedyPDF(w, r, purchased, sess.UserID, language)
 		return
 	}

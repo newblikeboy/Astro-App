@@ -75,12 +75,7 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:11px;line
 <p class="intro">{{t "book.guidance-intro"}}</p>
 {{range .Book.Topics}}<section class="topic-group" id="{{.ID}}"><div class="topic-heading"><h3>{{.Title}}</h3>{{if .Intro}}<p>{{.Intro}}</p>{{end}}</div>
 {{range .Paragraphs}}<p class="rule-reading">{{.}}</p>{{end}}
-{{range .Rules}}<article class="rule"><h4>{{.Topic}}</h4><p class="rule-reading">{{ruleText .}}</p>
-{{if and (eq $.Language "en") (not (hasEnglish .))}}<p class="muted">English interpretation was not supplied in this saved version. The original text is retained above.</p>{{end}}
-{{if and (eq $.Language "en") (or .Mantra .Gemstone)}}<p class="muted">Mantras and remedy instructions below retain their original supplied language and wording.</p>{{end}}
-{{if .Mantra}}<div class="remedy"><h4>{{t "मंत्र और संबंधित निर्देश"}}</h4><p class="remedy-text">{{.Mantra}}</p></div>{{end}}
-{{if .Gemstone}}<div class="remedy"><h4>{{t "रत्न संबंधी मार्गदर्शन"}}</h4><p class="remedy-text">{{.Gemstone}}</p><p class="muted">{{t "इस PDF की खरीद में रत्न शामिल नहीं है।"}}</p></div>{{end}}
-</article>{{end}}</section>
+</section>
 {{else}}<div class="notice">{{t "इस सुरक्षित संस्करण में व्यक्तिगत व्याख्या और उपाय उपलब्ध नहीं हैं।"}}</div>{{end}}
 {{if .Links}}<div class="follow-up"><b>{{t "अगला कदम"}}</b><p><a href="{{.Links.Report}}">{{t "वेबसाइट पर अपनी पूरी कुंडली देखें"}}</a> · <a href="{{.Links.Consultation}}">{{t "गुरुजी से परामर्श देखें"}}</a></p><p class="muted">{{t "अपने खाते में प्रवेश आवश्यक हो सकता है। उपलब्ध सेवा और कीमत वेबसाइट पर देखें।"}}</p></div>{{end}}
 </section>
@@ -117,7 +112,7 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:11px;line
 
 <section class="reference-close" id="sources"><div class="chapter-heading"><span class="chapter-number">REF</span><div><div class="chapter-kicker">{{t "book.appendix-part"}}</div><h2>{{t "book.sources"}}</h2></div></div>
 <p class="intro">{{t "book.sources-intro"}}</p>
-{{range .Report.Rules}}<div class="source-record"><strong>{{.Topic}}</strong><br>{{t "सामग्री संदर्भ:"}} {{.ID}} {{t "· संस्करण"}} {{.Version}}{{if eq .Status "approved"}} {{t "· स्वीकृत"}}{{else}} · {{label .Status}}{{end}}{{if .Approver}} · {{.Approver}}{{end}}{{if .ApprovedAt}} · {{date .ApprovedAt}}{{end}}</div>{{end}}
+
 <div class="reference-note">{{range .Report.Limitations}}<p>{{t .}}</p>{{end}}<p>{{t "ज्योतिषीय व्याख्या और खगोलीय गणना अलग हैं। परिणाम की गारंटी नहीं है। दशा की तारीखें घोषित पद्धति पर निर्भर हैं। गोचर सुरक्षित संदर्भ समय का है।"}}</p></div>
 <div class="follow-up"><h3>{{t "book.close"}}</h3><p>{{t "book.close-note"}}</p>{{if .Links}}<a href="{{.Links.Account}}">{{t "अपने खाते और सेवा की स्थिति देखें"}} →</a>{{end}}</div>
 <footer><p class="ref">{{t "रिपोर्ट और व्यक्तिगत सामग्री का संस्करण खरीद के समय सुरक्षित किया गया है।"}}<br>{{t "रिपोर्ट:"}} {{.Report.ID}}<br>{{t "ऑर्डर:"}} {{.Order.ID}} {{t "· राशि:"}} {{money .Order.Amount}}{{if and .Order.TaxMode (ne .Order.TaxMode "unconfigured")}} {{t "· कर व्यवस्था:"}} {{.Order.TaxMode}}{{end}}</p><p class="muted">{{t "Mishra 4 You · पं. राजा मिश्रा"}}</p></footer>

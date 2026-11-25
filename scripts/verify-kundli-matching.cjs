@@ -156,8 +156,9 @@ process.chdir(require("node:path").resolve(__dirname, ".."));
     );
     await page.locator(".matching-results").waitFor();
     assert.equal(await page.locator(".matching-factor").count(), 8);
-    assert.equal(await page.locator(".matching-mangal-row").count(), 6);
-    assert.equal(fixture.mangal.bride.references.length, 3);
+    assert.equal(fixture.mangal.bride.references.length, 2);
+    assert.deepEqual(fixture.mangal.bride.references.map(ref => ref.reference), ["lagna", "moon"]);
+    assert(["mangal", "partial", "none"].includes(fixture.mangal.bride.classification));
     assert.equal(fixture.bride.navamsa.planets.length, 9);
     assert.equal(
       await page.locator(".matching-score strong").textContent(),
@@ -201,7 +202,7 @@ process.chdir(require("node:path").resolve(__dirname, ".."));
         .getAttribute("open"),
       "",
     );
-    await inspect("Mangal triad and exception evidence", "en");
+    await inspect("Guruji Lagna/Moon Manglik classifications", "en");
     await page.screenshot({
       path: ".local/matching-mangal-desktop.png",
       fullPage: true,

@@ -1,10 +1,9 @@
 import type { Report } from "./types";
-import { t, useLanguage } from "./i18n";
+import { t } from "./i18n";
 import { hindiPlanets } from "./Chart";
 
 /** NatalYogaChecks renders saved server evidence for Kaal Sarp and basic Rajyog, with an explicit older-snapshot state. */
 export default function NatalYogaChecks({ report }: { report: Report }) {
-  const { language } = useLanguage();
   const checks = report.details?.yoga_checks;
   if (!checks) return <section className="natal-yoga-checks">
     <h3>{t("Kaal Sarp Dosha & Rajyog")}</h3>
@@ -12,7 +11,6 @@ export default function NatalYogaChecks({ report }: { report: Report }) {
   </section>;
   const kaal = checks.kaal_sarp;
   const raj = checks.rajyog;
-  const reading = report.details?.rajyog_reading;
   // A stored present assessment can be named from its recorded houses even on older snapshots.
   const typed = kaal.status === "present" && Number.isInteger(kaal.rahu_house) && kaal.rahu_house >= 1 && kaal.rahu_house <= 12 && kaal.ketu_house === (kaal.rahu_house + 5) % 12 + 1;
   const kaalStatus = kaal.status === "present"
@@ -24,8 +22,6 @@ export default function NatalYogaChecks({ report }: { report: Report }) {
       <div className="yoga-conclusion" data-status={kaal.status}>
         <span className="detail-card-label">{t("Conclusion")}</span>
         <p className="natal-yoga-status">{kaalStatus}</p>
-        <p>{t(kaal.status === "present" ? "kaal-sarp.meaning" : `kaal-sarp.${kaal.status}-meaning`)}</p>
-        {typed && <p>{t(`kaal-sarp.theme.${kaal.rahu_house}`)}</p>}
       </div>
       <h4>{t("What this means")}</h4>
       <p>{t("kaal-sarp.definition")}</p>
@@ -36,14 +32,12 @@ export default function NatalYogaChecks({ report }: { report: Report }) {
       <h3 id="rajyog-heading">{t("Rajyog · Kendra–Trikona relationships")}</h3>
       <div className="yoga-conclusion" data-status={raj.matches ? "present" : "absent"}>
         <span className="detail-card-label">{t("Conclusion")}</span>
-        <p className="natal-yoga-status">{reading ? reading.summary[language] : t(raj.matches ? "rajyog.present" : "rajyog.absent")}</p>
-        {reading ? reading.paragraphs.map((paragraph, index) => <p key={index}>{paragraph[language]}</p>) : <p>{t(raj.matches ? "rajyog.reading-unavailable" : "rajyog.absent-meaning")}</p>}
+        <p className="natal-yoga-status">{t(raj.matches ? "rajyog.present" : "rajyog.absent")}</p>
       </div>
 
       <h4>{t("Yogakaraka lordship")}</h4>
       {raj.yogakarakas.length ? <>
         {raj.yogakarakas.map((lord) => <p key={lord.planet}>{t("yogakaraka.present", { v1: t(hindiPlanets[lord.planet] || lord.planet) })}</p>)}
-        <p>{t("yogakaraka.meaning")}</p>
       </> : <p>{t("yogakaraka.absent")}</p>}
       <p className="report-caption">{t("yoga.scope")}</p>
     </section>

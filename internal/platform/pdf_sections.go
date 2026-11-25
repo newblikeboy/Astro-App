@@ -115,12 +115,7 @@ func (l pdfLocale) periodBlocks(periods []swisseph.DashaPeriod, zone *time.Locat
 // Older purchases remain unchanged: unavailable expanded fields get an explicit availability note.
 func (l pdfLocale) sections(r *Report, zone *time.Location) []pdfSection {
 	sections := []pdfSection{l.numerologySection(r.Numerology)}
-	if r.GurujiFaladesh != nil {
-		if r.GurujiFaladesh.Analysis != nil {
-			sections = append(sections, l.combinedFaladeshSection(r.GurujiFaladesh.Analysis, zone))
-		}
-		sections = append(sections, l.gurujiSection(r.GurujiFaladesh))
-	}
+
 	d := r.Details
 	if d != nil && d.Shadbala != nil {
 		sections = append(sections, l.advancedStrengthSection(d.Shadbala, d.Qualifications))
@@ -249,26 +244,11 @@ func (l pdfLocale) sections(r *Report, zone *time.Location) []pdfSection {
 			patterns = append(patterns, pdfBlock{Title: l.text("yoga.name." + p.Code), Note: l.text("Conclusion") + ": " + l.placementConclusion(p.Code, p.Matches), KeepTogether: true, Headers: []string{l.text("ग्रह"), l.text("गणना का आधार")}, Rows: [][]string{{l.names(p.Planets), l.text(p.Condition)}}})
 		}
 		m := d.Mangal
-		mangal := pdfBlock{Title: l.text("मंगल आकलन"), Note: l.text("Conclusion") + ": " + l.mangalConclusion(m) + "\n\n" + l.text("Calculation details") + ": " + fmt.Sprintf(l.text("प्रारंभिक स्तर: %s · अपवाद के बाद: %s · सक्रिय संदर्भ: %d / %d · सूर्य से अंतर %.3f°"), l.text(m.BaseLevel), l.text(m.Level), m.ActiveCount, m.BaseCount, m.SunSeparation), Headers: []string{l.text("संदर्भ"), l.text("मंगल का भाव"), l.text("संकेत"), l.text("अपवाद से निरस्त"), l.text("अपवाद")}}
+		mangal := pdfBlock{Title: l.text("मंगल आकलन"), Note: l.text("Conclusion") + ": " + l.mangalConclusion(m), Headers: []string{l.text("संदर्भ"), l.text("मंगल का भाव"), l.text("संकेत")}}
 		for _, p := range m.References {
-			exceptions := []string{}
-			for _, code := range p.Exceptions {
-				exceptions = append(exceptions, l.mangalRule(code))
-			}
-			mangal.Rows = append(mangal.Rows, []string{l.text(p.Reference), fmt.Sprint(p.House), l.yes(p.Flagged), l.yes(p.Cancelled), l.names(exceptions)})
+			mangal.Rows = append(mangal.Rows, []string{l.text(p.Reference), fmt.Sprint(p.House), l.yes(p.Flagged)})
 		}
 		yogas.Blocks = append(yogas.Blocks, mangal)
-		rules := pdfBlock{Title: l.text("मंगल नियम और समीक्षा"), Headers: []string{l.text("नियम"), l.text("मिला"), l.text("संदर्भ / स्रोत पृष्ठ")}}
-		for _, p := range m.Rules {
-			rules.Rows = append(rules.Rows, []string{l.mangalRule(p.Code), l.yes(p.Met), l.text(p.Reference) + fmt.Sprintf(" / %d", p.SourcePage)})
-		}
-		for _, p := range m.ReviewConditions {
-			rules.Rows = append(rules.Rows, []string{l.mangalRule(p), l.text("समीक्षा"), "—"})
-		}
-		for _, p := range m.NotEvaluated {
-			rules.Rows = append(rules.Rows, []string{l.text(p), l.text("गणना नहीं हुई"), "—"})
-		}
-		yogas.Blocks = append(yogas.Blocks, rules)
 		yogas.Blocks = append(yogas.Blocks, patterns...)
 		sections = append(sections, yogas)
 	}
@@ -352,14 +332,6 @@ func (l pdfLocale) sections(r *Report, zone *time.Location) []pdfSection {
 	}
 	sections = append(sections, pdfSection{ID: "reference", Title: l.text("गणना संदर्भ और सीमाएँ"), Intro: "Swiss Ephemeris " + r.Chart.SwissVersion + " · " + r.Engine, Blocks: []pdfBlock{reference}})
 	return sections
-}
-
-// mangalRule localizes the shared factual descriptions of implemented Mangal rules.
-func (l pdfLocale) mangalRule(code string) string {
-	if label, ok := matchingMangalRuleText[code]; ok {
-		return l.text(label)
-	}
-	return l.text(code)
 }
 
 // pdfSortedKeys keeps reference tables stable across renders of the same purchased snapshot.

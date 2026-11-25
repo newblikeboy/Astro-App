@@ -271,6 +271,7 @@ export function ExpandedKundliCharts({ report }: { report: Report }) {
           <ChartViewer
             key={mode}
             chart={selected}
+            natalLagna={chart.lagna.rashi_number}
             referenceLabel={
               lunar ? "Moon sign" : chalit ? "Bhava middle" : "Ascendant"
             }
@@ -631,7 +632,6 @@ export function ExpandedYogaPatterns({ report }: { report: Report }) {
               </span>
             </div>
             <p>{placementConclusion(p.code, p.matches).meaning}</p>
-            {report.details?.qualifications?.yogas.find(y=>y.code===p.code&&y.base_present&&y.status==="qualified")&&<p>{t("यह योग मौजूद है, लेकिन उससे जुड़े ग्रहों की कमजोरी या दूसरी रुकावटों से उसका पूरा फायदा मिलने में मेहनत लग सकती है।")}</p>}
 
           </article>
         ))}

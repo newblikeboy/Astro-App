@@ -1,5 +1,4 @@
 import { t, useLanguage } from "./i18n";
-import { currentFaladeshVersion } from "./guruji-faladesh-types";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import type { FormEvent, ReactNode } from "react";
 import {
@@ -629,7 +628,7 @@ function CustomerApp() {
     if (!report || report.user_id || savedReportID) return;
     const previousID = report.id;
     const result = await api<Report>("/kundli", "POST", report.birth);
-    if (result.guruji_faladesh?.analysis?.version !== currentFaladeshVersion) throw new Error("Reading update unavailable");
+    if (!result.source_readings?.length) throw new Error("Reading update unavailable");
     setReport(current => current?.id === previousID && !current.user_id ? result : current);
   }
   /** checkout creates a server-priced PDF/consultation order using the selected offer and optional time slot. */

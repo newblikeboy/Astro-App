@@ -202,21 +202,11 @@ func (a *App) Checkout(ctx context.Context, user string, in CheckoutRequest) (*O
 					return nil
 				}
 			}
-			snap := *r
-			snap.Rules = matchRules(r, s.Rules, !a.Config.Production)
-			if a.Config.Production {
-				interpretation, remedy := false, false
-				for _, rule := range snap.Rules {
-					if !rule.Demo && rule.Status == "approved" {
-						interpretation = interpretation || rule.Hindi != ""
-						remedy = remedy || rule.Mantra != "" || rule.Gemstone != ""
-					}
-				}
-				if !interpretation || !remedy {
-					return fmt.Errorf("इस कुंडली के लिए स्वीकृत व्याख्या और उपाय अधूरे हैं; PDF बिक्री बंद है")
-				}
+			snap := sourceOnlyReport(r)
+			if len(snap.SourceReadings) == 0 {
+				return fmt.Errorf("इस कुंडली के लिए PDF का मूल फलादेश उपलब्ध नहीं है")
 			}
-			o.Snapshot = &snap
+			o.Snapshot = snap
 			o.ReportID = r.ID
 			o.Amount = s.Settings.PDFPrice
 			o.Title = "व्यक्तिगत उपाय PDF"

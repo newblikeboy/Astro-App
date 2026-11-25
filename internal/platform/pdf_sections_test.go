@@ -84,7 +84,7 @@ func TestRemediesPDFSnapshotCoverageAndSafeText(t *testing.T) {
 		t.Fatal(err)
 	}
 	html := out.String()
-	for _, expected := range []string{"पहला अनुच्छेद\nदूसरा अनुच्छेद &lt;script&gt;", r.Rules[0].Mantra, r.Rules[0].Gemstone, "QA approver", pdfDate(approved, zone), "chapter-heading", "reader-guide", "white-space:pre-line", "<title>", "https://example.invalid/account/reports/"} {
+	for _, expected := range []string{"chapter-heading", "reader-guide", "white-space:pre-line", "<title>", "https://example.invalid/account/reports/", r.SourceReadings[0].File} {
 		if !strings.Contains(html, expected) {
 			t.Errorf("missing text or presentation contract: %s", expected)
 		}

@@ -2,7 +2,9 @@
 package numerology
 
 import (
+	"astroapp/backend/internal/gurujitext"
 	"fmt"
+	"strconv"
 	"time"
 )
 
@@ -16,11 +18,12 @@ type Number struct {
 }
 
 type Reading struct {
-	Method    string           `json:"method"`
-	BirthDate string           `json:"birth_date"`
-	Mulank    Number           `json:"mulank"`
-	Bhagyank  Number           `json:"bhagyank"`
-	Extended  *ExtendedReading `json:"extended,omitempty"`
+	SourceReadings []gurujitext.Reference `json:"source_readings,omitempty"`
+	Method         string                 `json:"method"`
+	BirthDate      string                 `json:"birth_date"`
+	Mulank         Number                 `json:"mulank"`
+	Bhagyank       Number                 `json:"bhagyank"`
+	Extended       *ExtendedReading       `json:"extended,omitempty"`
 }
 
 // Calculate uses the recorded Gregorian civil date, not its UTC date or sunrise.
@@ -31,7 +34,9 @@ func Calculate(date string) (Reading, error) {
 	if err != nil || at.Year() < 1 || at.Format("2006-01-02") != date {
 		return Reading{}, fmt.Errorf("numerology requires a valid YYYY-MM-DD birth date")
 	}
-	return Reading{Method: Method, BirthDate: date, Mulank: reduce(fmt.Sprint(at.Day())), Bhagyank: reduce(at.Format("02012006"))}, nil
+	out := Reading{Method: Method, BirthDate: date, Mulank: reduce(fmt.Sprint(at.Day())), Bhagyank: reduce(at.Format("02012006"))}
+	out.SourceReadings = append(gurujitext.Lookup("मूलांक", strconv.Itoa(out.Mulank.Value)), gurujitext.Lookup("भाग्यांक", strconv.Itoa(out.Bhagyank.Value))...)
+	return out, nil
 }
 
 // reduce records each addition and its single-digit result; planet names denote traditional number associations only.

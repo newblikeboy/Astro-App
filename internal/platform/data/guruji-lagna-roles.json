@@ -1,14 +1,1 @@
-[
-  {"lagna":1,"marak":["Venus","Mercury"],"karak":["Mars","Moon","Sun","Jupiter"],"neutral":["Saturn"]},
-  {"lagna":2,"marak":["Moon","Mars","Jupiter"],"karak":["Venus","Mercury","Saturn"],"neutral":["Sun"]},
-  {"lagna":3,"marak":["Moon","Sun","Mars"],"karak":["Mercury","Venus","Saturn","Jupiter"],"neutral":[]},
-  {"lagna":4,"marak":["Sun","Mercury","Saturn"],"karak":["Mars","Jupiter","Moon"],"neutral":["Venus"]},
-  {"lagna":5,"marak":["Saturn","Moon"],"karak":["Sun","Mercury","Mars","Jupiter"],"neutral":["Venus"]},
-  {"lagna":6,"marak":["Mars","Moon"],"karak":["Mercury","Venus","Jupiter","Saturn","Sun"],"neutral":[]},
-  {"lagna":7,"marak":["Mars","Jupiter","Mercury","Sun"],"karak":["Saturn","Venus"],"neutral":["Moon"]},
-  {"lagna":8,"marak":["Venus","Mercury"],"karak":["Jupiter","Moon","Sun","Mars"],"neutral":["Saturn"]},
-  {"lagna":9,"marak":["Saturn","Venus","Moon"],"karak":["Jupiter","Mars","Mercury","Sun"],"neutral":[]},
-  {"lagna":10,"marak":["Jupiter","Moon","Sun"],"karak":["Saturn","Venus","Mercury"],"neutral":["Mars"]},
-  {"lagna":11,"marak":["Moon","Sun"],"karak":["Saturn","Jupiter","Venus","Mercury"],"neutral":["Mars"]},
-  {"lagna":12,"marak":["Venus","Saturn","Sun"],"karak":["Jupiter","Mars","Mercury","Moon"],"neutral":[]}
-]
+{"source":{"file":"references/guruji/2026-11-01/lagna-whiteboard.jpeg","sha256":"a3fe21599fbf623cfd6ab2bfa5e9c413f2005f50f37bfe4223013a79805d6a99"},"records":[{"lagna":1,"title":"मेष लग्न","marak":["शुक्र","बुध"],"karak_label":"कारक","karak":["मंगल","चन्द्र","सूर्य","गुरु"],"sam":["शनि"]},{"lagna":2,"title":"वृष लग्न","marak":["चन्द्र","मंगल","गुरु"],"karak_label":"कारक","karak":["शुक्र","बुध","शनि"],"sam":["सूर्य"]},{"lagna":3,"title":"मिथुन लग्न","marak":["चन्द्र","सूर्य","मंगल"],"karak_label":"कारक","karak":["बुध","शुक्र","शनि","गुरु"],"sam":[]},{"lagna":4,"title":"कर्क लग्न","marak":["सूर्य","बुध","शनि"],"karak_label":"कारक","karak":["मंगल","गुरु","चन्द्र"],"sam":["शुक्र"]},{"lagna":5,"title":"सिंह लग्न","marak":["शनि","चन्द्र"],"karak_label":"कारक","karak":["सूर्य","बुध","मंगल","गुरु"],"sam":["शुक्र"]},{"lagna":6,"title":"कन्या लग्न","marak":["मंगल","चन्द्र"],"karak_label":"कारक","karak":["बुध","शुक्र","गुरु","शनि","सूर्य"],"sam":[]},{"lagna":7,"title":"तुला लग्न","marak":["मंगल","गुरु","बुध","सूर्य"],"karak_label":"कारक","karak":["शनि","शुक्र"],"sam":["चन्द्र"]},{"lagna":8,"title":"वृश्चिक लग्न","marak":["शुक्र","बुध"],"karak_label":"कारक","karak":["गुरु","चन्द्र","सूर्य","मंगल"],"sam":["शनि"]},{"lagna":9,"title":"धनु लग्न","marak":["शनि","शुक्र","चन्द्र"],"karak_label":"कारक","karak":["गुरु","मंगल","बुध","सूर्य"],"sam":[]},{"lagna":10,"title":"मकर लग्न","marak":["गुरु","चन्द्र","सूर्य"],"karak_label":"कारक","karak":["शनि","शुक्र","बुध"],"sam":["मंगल"]},{"lagna":11,"title":"कुम्भ लग्न","marak":["चन्द्र","सूर्य"],"karak_label":"कारक","karak":["शनि","गुरु","शुक्र","बुध"],"sam":["मंगल"]},{"lagna":12,"title":"मीन लग्न","marak":["शुक्र","शनि","सूर्य"],"karak_label":"योगकारक","karak":["गुरु","मंगल","बुध","चन्द्र"],"sam":[]}]}

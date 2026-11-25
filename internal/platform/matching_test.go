@@ -17,7 +17,7 @@ func TestMatchingParticipantMangalGeometry(t *testing.T) {
 	position := func(sign int) swisseph.ZodiacPosition {
 		return swisseph.ZodiacPosition{Longitude: float64(sign-1)*30 + 10, RashiNumber: sign}
 	}
-	flagged := map[int]bool{1: true, 2: true, 4: true, 7: true, 8: true, 12: true}
+	flagged := map[int]bool{1: true, 4: true, 7: true, 8: true, 12: true}
 	for mars := 1; mars <= 12; mars++ {
 		report := &Report{Chart: &swisseph.Kundali{Lagna: position(12), Planets: []swisseph.Graha{
 			{Name: "Moon", ZodiacPosition: position(1)}, {Name: "Mars", ZodiacPosition: position(mars)},
@@ -113,7 +113,7 @@ func TestMatchingHTTPStatelessNativeResult(t *testing.T) {
 	if strings.Contains(w.Body.String(), "user_id") || root["rules"] != nil || strings.Contains(w.Body.String(), "payment_key") {
 		t.Fatal("unnecessary account/content/provider data exposed")
 	}
-	if got.Bride.Chart == nil || got.Groom.Navamsa == nil || got.Bride.Dasha == nil || len(got.Bride.Chart.Planets) != 9 || got.Mangal.Method != swisseph.MangalStrengthMethod || got.Mangal.Bride.Strength == nil || len(got.Mangal.Bride.References) != 3 || got.Summary.Band == "" {
+	if got.Bride.Chart == nil || got.Groom.Navamsa == nil || got.Bride.Dasha == nil || len(got.Bride.Chart.Planets) != 9 || got.Mangal.Method != swisseph.MangalMethod || got.Mangal.Bride.Strength != nil || got.Mangal.Bride.Classification == "" || len(got.Mangal.Bride.References) != 2 || got.Summary.Band == "" {
 		t.Fatal("expanded native comparison incomplete")
 	}
 }

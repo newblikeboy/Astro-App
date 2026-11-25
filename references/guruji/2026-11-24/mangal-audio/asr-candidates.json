@@ -1,0 +1,36 @@
+[
+  {
+    "file": "WhatsApp Ptt 2026-11-24 at 8.41.16 PM.ogg",
+    "sha256": "c92b234341154846331d5b6304f3d8fdf3e56529f72bd4dc88b8742403038c06",
+    "duration_seconds": 14.2935,
+    "model": ".local/guruji-whisper-small",
+    "status": "asr_candidate_unreviewed",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 14.0,
+        "text": " लग्ने कुन्डली अर चंद्र कुन्डली से प्रत्हम, चाउत्हा, सब्तम, आस्टम, और द्वादस्वावे मंगल हो, तो मंगलिक दोस होता है।",
+        "avg_logprob": -0.37465002042491263,
+        "no_speech_prob": 0.24523788690567017,
+        "words": []
+      }
+    ]
+  },
+  {
+    "file": "WhatsApp Ptt 2026-11-24 at 8.42.34 PM.ogg",
+    "sha256": "9a32842e30a5f67d1a61b0c95d7147ac75ee75b512dc16f764e1c4d821f52c95",
+    "duration_seconds": 7.2735,
+    "model": ".local/guruji-whisper-small",
+    "status": "asr_candidate_unreviewed",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "text": " केबल चंद्र कुन्डली से अगर मांग्लिक होता है, तो आंसिक मांग्लिक कालता.",
+        "avg_logprob": -0.35625639096112316,
+        "no_speech_prob": 0.23662051558494568,
+        "words": []
+      }
+    ]
+  }
+]

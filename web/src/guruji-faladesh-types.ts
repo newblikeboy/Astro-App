@@ -1,5 +1,5 @@
 type Wording = { hi: string; en: string };
-export const currentFaladeshVersion = "m4y-cross-factor-faladesh-v5";
+
 export type FaladeshSynthesisTopic = {
   reader?:{id:string;scope:"natal"|"period"|"action";text:Wording;evidence_ids:string[]}[];
   resolution?:{factor:string;direction:string;evidence_ids:string[];rule:string}[];

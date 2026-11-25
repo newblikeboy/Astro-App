@@ -53,6 +53,7 @@ export type Rule = {
   demo: boolean;
 };
 export type Report = {
+  source_readings?: SourcePassage[];
   guruji_faladesh?: GurujiFaladeshSnapshot;
   numerology?: Numerology;
   details?: KundliDetails;
@@ -109,6 +110,7 @@ export type NumerologyNumber = {
   steps: number[];
 };
 export type Numerology = {
+  source_readings?: SourcePassage[];
   method: string;
   birth_date: string;
   mulank: NumerologyNumber;
@@ -305,3 +307,5 @@ export type AdminData = {
   pdf_blockers: string[];
   booking_blockers: string[];
 };
+
+export type SourcePassage = { title: string; source: number; pages: [number, number]; text: string; category: string; key: string; file: string; sha256: string; house?: number; kind?: string; condition?: string };

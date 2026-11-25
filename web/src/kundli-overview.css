@@ -1,0 +1,71 @@
+.overview-charts { margin-bottom: 24px; }
+.overview-chart-heading { display: flex; justify-content: space-between; align-items: end; gap: 12px; margin-bottom: 18px; }
+.kundli-panel .overview-chart-heading h2 { margin: 4px 0 0; font-size: 24px; letter-spacing: -.025em; }
+.overview-chart-heading .eyebrow { color: #90562f; font-size: 10px; letter-spacing: .12em; }
+.overview-chart-format { font-size: 11px; color: #85674f; padding-bottom: 4px; }
+.overview-chart-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+.overview-chart-card { min-width: 0; background: #fffefb; border: 1px solid #e7d7c5; border-radius: 16px; overflow: hidden; box-shadow: 0 5px 18px #643b1906; }
+.overview-chart-card > header { display: flex; justify-content: space-between; align-items: center; padding: 16px; border-bottom: 1px solid #f0e7db; background: linear-gradient(110deg,#fffaf1,#fffefb); }
+.overview-chart-card > header > div { display: flex; align-items: center; gap: 9px; color: #713f22; }
+.kundli-panel .overview-chart-card h3 { margin: 0; font-size: 15px; font-weight: 650; letter-spacing: -.01em; }
+.overview-chart-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; background: #f9ecd9; color: #9c521e; flex-shrink: 0; }
+.overview-chart-badge { font-size: 9px; font-weight: 650; background: #f8eedf; border: 1px solid #edddc4; color: #8c5a29; border-radius: 5px; padding: 2px 5px; }
+.chart-expand { display: grid; place-items: center; background: #fffdf8; border: 1px solid #e8d9c7; color: #88552c; border-radius: 9px; width: 34px; min-height: 34px; flex-shrink: 0; cursor: pointer; }
+.kundli-panel .overview-chart-card .kundli-chart { max-width: none; width: calc(100% - 24px); margin: 14px 12px; }
+.overview-chart-card footer { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 12px 16px; background: #fcf7ee; border-top: 1px solid #eee3d5; font-size: 11px; color: #806951; }
+.overview-chart-card footer strong { color: #54341f; font-size: 13px; font-weight: 600; }
+.overview-chart-missing { min-height: 260px; padding: 32px 20px; color: #80664f; font-size: 13px; line-height: 1.8; }
+.chart-annotated text { font-family: var(--sans), "Segoe UI Symbol", sans-serif; font-style: normal; }
+#root .kundli-chart.chart-annotated { color: #ad865b; --chart-fill: #fffefb; }
+.chart-annotated .chart-frame { stroke-width: 1; }
+.chart-annotated .chart-lines { stroke-width: .8; stroke-linecap: round; stroke-linejoin: round; }
+#root .chart-annotated .chart-house-ascendant { fill: #fff1da; }
+.chart-sign-badge { fill: #f7eddd; stroke: #e9d7bd; stroke-width: .35; }
+.chart-detail-sign { fill: #89592f; font-weight: 600; }
+.chart-detail-position { fill: #482c1b; font-weight: 500; }
+.chart-planet-name { font-weight: 700; }
+.chart-planet-degree { fill: #5a3d27; font-weight: 500; }
+.chart-planet-status { fill: #ab4c1b; font-family: var(--sans), "Segoe UI Symbol", sans-serif; font-weight: 650; }
+.chart-detail-nakshatra { fill: #79644f; font-weight: 400; }
+.overview-chart-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 20px; margin: 16px 0 7px; padding: 10px 14px; border: 1px solid #eadfce; border-radius: 10px; background: #fffdf8; font-size: 11px; color: #715d4c; }
+.overview-chart-legend span { display: inline-flex; align-items: baseline; gap: 6px; }
+.overview-chart-legend b { font-family: var(--sans), "Segoe UI Symbol", sans-serif; color: #9e4a21; font-size: 14px; font-weight: 600; }
+.overview-chart-note { margin: 4px auto 16px; color: #775f4b; text-align: center; font-size: 11px; line-height: 1.7; }
+.overview-charts .lagna-graha-roles { display: grid; grid-template-columns: 130px minmax(0,1fr); gap: 16px; align-items: center; padding: 18px 20px; background: #f8efe3; border: 1px solid #e8d5bf; border-radius: 12px; margin-top: 14px; }
+.kundli-panel .overview-charts .lagna-graha-roles h3 { font-size: 16px; margin: 0; color: #6a3c22; }
+.overview-charts .lagna-graha-roles dl { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.overview-charts .lagna-graha-roles dl > div { display: block; border-left: 1px solid #e0cdb6; padding-left: 16px; }
+.overview-charts .lagna-graha-roles dt { font-size: 10px; font-weight: 600; color: #765238; margin-bottom: 5px; }
+.overview-charts .lagna-graha-roles dd { font-size: 13px; color: #4f3524; }
+.kundli-panel .overview-details-below .kundli-summary { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.chart-zoom-dialog { width: min(90vw,800px); max-width: none; max-height: 94dvh; padding: 0; border: 1px solid #dfc5a9; border-radius: 18px; background: #fffdf8; color: #533622; }
+.chart-zoom-dialog::backdrop { background: #271a12b8; backdrop-filter: blur(3px); }
+.chart-zoom-content { padding: 20px; }
+.chart-zoom-content > header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.chart-zoom-content > header button { display: grid; place-items: center; background: #f8ebde; border: 0; border-radius: 8px; min-width: 42px; min-height: 42px; color: #805434; cursor: pointer; }
+.kundli-panel .chart-zoom-dialog .kundli-chart { max-width: 720px; margin: 16px auto; }
+.chart-zoom-content > p { font-size: 12px; color: #80674f; text-align: center; line-height: 1.7; }
+.chart-zoom-table { max-width: 100%; overflow-x: auto; }
+.kundli-panel .chart-zoom-table table { font-size: 12px; }
+.kundli-panel .chart-zoom-table th, .kundli-panel .chart-zoom-table td { padding: 10px 8px; }
+.overview-charts button:focus-visible, .chart-zoom-dialog button:focus-visible { outline: 2px solid #a54d20; outline-offset: 3px; }
+@media (max-width: 1050px) and (min-width: 761px) {
+  .overview-chart-grid { gap: 10px; }
+  .overview-chart-card > header { padding: 12px 10px; }
+  .kundli-panel .overview-chart-card h3 { font-size: 12px; }
+  .overview-chart-card > header > div { gap: 5px; }
+  .overview-chart-icon { width: 25px; height: 28px; border-radius: 8px; }
+}
+@media (max-width: 760px) {
+  .overview-chart-heading { align-items: start; flex-direction: column; gap: 5px; }
+  .kundli-panel .overview-chart-heading h2 { font-size: 22px; }
+  .overview-chart-grid { grid-template-columns: minmax(0,1fr); gap: 18px; }
+  .overview-chart-card { max-width: 500px; width: 100%; justify-self: center; }
+  .overview-charts .lagna-graha-roles { grid-template-columns: 1fr; gap: 12px; padding: 16px; }
+  .overview-charts .lagna-graha-roles dl { grid-template-columns: minmax(0,1fr); gap: 10px; }
+  .overview-charts .lagna-graha-roles dl > div { display: grid; grid-template-columns: 55px minmax(0,1fr); border-left: 0; border-top: 1px solid #e0cdb6; padding: 10px 0 0; }
+  .overview-charts .lagna-graha-roles dt { font-size: 12px; margin: 0; }
+  .kundli-panel .overview-details-below .kundli-summary { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .chart-zoom-dialog { width: 96vw; }
+  .chart-zoom-content { padding: 12px; }
+}

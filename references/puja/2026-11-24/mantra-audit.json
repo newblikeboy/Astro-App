@@ -1,0 +1,3124 @@
+{
+  "reviewed_on": "2026-11-24",
+  "reviewed_reference_pages": 43,
+  "traditional_sections": 484,
+  "image_transcriptions": 49,
+  "meanings": "Independent concise Hindi and English bhavarth of traditional Sanskrit, not copied provider translations.",
+  "guides": [
+    {
+      "slug": "diwali",
+      "readings": [
+        "diwali-atma-shodhan",
+        "diwali-sankalpa",
+        "diwali-shanti-patha",
+        "diwali-mangal-patha",
+        "diwali-kalash-sthapana",
+        "diwali-ganapati",
+        "diwali-navagraha",
+        "diwali-matrika",
+        "ganesha",
+        "lakshmi",
+        "kali",
+        "diwali-saraswati-accounts",
+        "kubera",
+        "diwali-deepmalika",
+        "diwali-visarjan"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "lakshmi",
+      "readings": [
+        "lakshmi"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "ganesha",
+      "readings": [
+        "ganesha"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "shiva",
+      "readings": [
+        "shiva"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "maha-shivaratri",
+      "readings": [
+        "maha-shivaratri-mantras"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "kubera",
+      "readings": [
+        "kubera"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "rama-navami",
+      "readings": [
+        "rama-navami"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "krishna-janmashtami",
+      "readings": [
+        "krishna-janmashtami"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "holi",
+      "readings": [
+        "holi"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "saraswati",
+      "readings": [
+        "saraswati"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "karwa-chauth",
+      "readings": [
+        "karwa-chauth-mantras"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "ghatasthapana",
+      "readings": [
+        "diwali-kalash-sthapana"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "ganesha-chaturthi",
+      "readings": [
+        "ganesha-chaturthi"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "raksha-bandhan",
+      "readings": [
+        "raksha-bandhan"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "kali",
+      "readings": [
+        "kali"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "durga",
+      "readings": [
+        "durga"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "hanuman",
+      "readings": [
+        "hanuman"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "hartalika",
+      "readings": [
+        "hartalika-mantras"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "ahoi-ashtami",
+      "readings": [],
+      "status": "not-in-reference"
+    },
+    {
+      "slug": "varalakshmi",
+      "readings": [
+        "varalakshmi"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "dhanvantari",
+      "readings": [
+        "dhanvantari"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "govardhan",
+      "readings": [
+        "govardhan-mantras"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "naraka-chaturdashi",
+      "readings": [
+        "naraka-chaturdashi"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "vat-savitri",
+      "readings": [
+        "vat-savitri"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "satyanarayana",
+      "readings": [
+        "satyanarayana-mantras"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "ganapati-homa",
+      "readings": [
+        "ganapati-homa"
+      ],
+      "status": "available"
+    },
+    {
+      "slug": "durga-homa",
+      "readings": [
+        "durga-homa"
+      ],
+      "status": "available"
+    }
+  ],
+  "references": [
+    {
+      "key": "dhanvantari",
+      "url": "https://www.drikpanchang.com/diwali/dhanvantari-trayodashi/puja-vidhi/dhanvantari-puja-vidhi.html",
+      "source_html_sha256": "ab6b4413bc1fbfd824de7e46a36ef204040b02602adf7c49eb64da8959cfe0c5",
+      "sections": [
+        {
+          "id": "dhanvantari-1",
+          "sha256": "639f1ab0a631901c8a7a5cb71f4df3da2fe346285e00df02750eec558ed69e6a",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-2",
+          "sha256": "f64134a34c5b003addc556212525ef0fcc7e6fce0ebcf989fc9e7598f9717369",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-3",
+          "sha256": "c735afea0544cfec15c7e02e88f2562886a33b3d850a0efbe2760d585acdf3ad",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-4",
+          "sha256": "7de0f953edfb2c7d568417269d73c35b01e2453f1b16edf9ea004bf0b10ef51a",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-5",
+          "sha256": "fa489e9c897eeb18f9733a9754e7d8440a754f07370c668a21a4e97fb3a61d4a",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-6",
+          "sha256": "7aac5aa92d79ebab67e0bbba3d8ee424fa9129d5324d723445bbf271464b3c8c",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-7",
+          "sha256": "ea2cbe405a1d0ef22134a5a7a3b90a6f0e139ed074b60173428bf2bdc9c028d8",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-8",
+          "sha256": "8e43e7c2d16a5a151a6528664cf11e41efe5b619c7e6234d0222debc4030f6b8",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-9",
+          "sha256": "9906c8a0bae171af421cc2709b520ff2af661cbcad6e61c243ce81f9659a093e",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-10",
+          "sha256": "f24381baae30107ab450f8b821accf43687fa90592ad01b7dc3f29f1b6769af4",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-11",
+          "sha256": "ae75104ba3d24c2dea592ee3faa2e89c8b95cdcd399a1121651b69e612944c8e",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-12",
+          "sha256": "f8c541b480c91700a0c10bb618940980d03fe2b73f2a7b18517018071666f01a",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-13",
+          "sha256": "e67c80be36a5a30d98ef6695b226069c03ab6d3f77e9dface85ba180ff1af6c9",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-14",
+          "sha256": "602c6f7359189111a054dc5403713333671758b45870aff5cec558789e65c11f",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-15",
+          "sha256": "37e70bc5ac866fab3285263214e97a2a946119f1168dd9846b4da63ae122724e",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-16",
+          "sha256": "12b65526a24949b50edcca88594c0428fca8162202e0b146bfef5cd12f635804",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-17",
+          "sha256": "909b73f60a7188a52096913d70f2e303ca914ed7d2dc1fb0f1d286f11d783b76",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-18",
+          "sha256": "a7b01220b6b112abee9c71794e01a0b5c61ad293fa65474c291ff863cec860b2",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-19",
+          "sha256": "2283df513eb4e64f15ca61e749b0984a2beaee41a984dff6c3bbf3f7790cdafd",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-20",
+          "sha256": "1325975937f17871186c68c2395824a635d1e44bb6b70d67483244b36dc8ce47",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "dhanvantari-21",
+          "sha256": "8a199727b13631e6a175f206221c9dfc263780c44500bd67443b8ed13724d465",
+          "origin": "image-transcription"
+        }
+      ]
+    },
+    {
+      "key": "diwali-atma-shodhan",
+      "url": "https://www.drikpanchang.com/puja-vidhi/atma-shodhan/atma-shodhan.html",
+      "source_html_sha256": "c1c678e6ef605c234505c1f3d2a92d7f0d2c0986fe1120d82d28be84e2ce4bc0",
+      "sections": [
+        {
+          "id": "diwali-atma-shodhan-1",
+          "sha256": "c735afea0544cfec15c7e02e88f2562886a33b3d850a0efbe2760d585acdf3ad",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-atma-shodhan-2",
+          "sha256": "c5adecda550f4e9662d9c3c48643656423ba36ab2be7d1b12aedaf73f5a9be51",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "diwali-deepmalika",
+      "url": "https://www.drikpanchang.com/diwali/deepmalika-puja/info/deepmalika-puja-vidhi.html",
+      "source_html_sha256": "39fa992780b9d91b2d97811d93029a626738386941f4e3940fdb2a574ed57e6e",
+      "sections": [
+        {
+          "id": "diwali-deepmalika-1",
+          "sha256": "339c56184d8f5285dd3ba0d57531aa5123a78cbb50c3af0d2f3b6d757e40273b",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-deepmalika-2",
+          "sha256": "0bbec633d23945bba02505389ebbb2763a51ccfe28e07db42b1d12f29fbec6ef",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-deepmalika-3",
+          "sha256": "9361ae899ac835524e7701828b356337c39f41ec2c25c6539a31679ebf1da7c7",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "diwali-ganapati",
+      "url": "https://www.drikpanchang.com/puja-vidhi/lord-ganesha/ganesha-puja-vidhi.html",
+      "source_html_sha256": "8d61f6907b9ca416f2d7429c7d054319061b14050928ef52a6c4eab7d721e693",
+      "sections": [
+        {
+          "id": "diwali-ganapati-1",
+          "sha256": "0e7e63588827bee42f39d9d87072e8479f3620377eedfa7fef310a19f5ba2168",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-ganapati-2",
+          "sha256": "ee91a4c0822883177cdd54ddb012795fb2b8121cde3342cbd1d007bfdee45498",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-ganapati-3",
+          "sha256": "e5f06fec615658b218fd62128487d29e0daa04d3da8877ef3e1261524b3d1be9",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-ganapati-4",
+          "sha256": "e72088341795007ffbf86396f9806e7acd7088aed4f61ab5c184deec7b9f1b3d",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-ganapati-5",
+          "sha256": "f1ce767c345923f2ffef1e381ce12e2b19c590fce56c58642265ee4f2b39cced",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "diwali-kalash-sthapana",
+      "url": "https://www.drikpanchang.com/puja-vidhi/kalash-sthapana/kalash-sthapana.html",
+      "source_html_sha256": "595007cddb6fabb73e8ef6cce18e2db953e626ae810108bd65fce3cceb6c4011",
+      "sections": [
+        {
+          "id": "diwali-kalash-sthapana-1",
+          "sha256": "649063b36ed5f5fd47d14919f74afa67e493f6651ecd61323ca5d891bd47a8fa",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-2",
+          "sha256": "052ea0b45bfa6f7a020995ffe5f3920e1cce62a6cec8a2d8550f1c312430a3f3",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-3",
+          "sha256": "bc6241f878d257f12d5a152155aef63ba2b3944c617ffed00cf68b1cac13dc0d",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-4",
+          "sha256": "f32dc65684c37ccce68cab6297330305ed940386c0238a7cbd1b8a8d5dabb31c",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-5",
+          "sha256": "526fead58ff4be990a6b319ba00b5795eba3fd0da9f938616da621c9756f8a7f",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-6",
+          "sha256": "df835b7327ccce44f6ec1f036562ec2a7ca02690d428f50155797f9f02814f9f",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-7",
+          "sha256": "09ede7178d74a44d1c808695f4a26cbdf12d2fd62b132fbc863b74f8cde7bca5",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-8",
+          "sha256": "1187dd59efa2d9018b3609e6c523eb4a855b524ad7c3814581663a65f0b4f4a5",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-9",
+          "sha256": "c6e7c3caaff2a284242e9f649b7011f5fc4fc3a267c2b376be2187854584a9cc",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-10",
+          "sha256": "0eaed37d86cd3d7587e5ca6044a8ef3bf3de93b9c1ab9d1dcec0f148dcb20e52",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-11",
+          "sha256": "1d4fc1af643dda1f50ad694671798e78c7316e72e239e6049f4175fbe86e8c97",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-12",
+          "sha256": "3d8ce08867792a175af74e6759d20e6ebcbbc26846516acacdbe7f927fb54506",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-13",
+          "sha256": "122c8a0085b5856ac22016bd08766f56a6999a4eb1192023fba68f2dc606f483",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-14",
+          "sha256": "8732787761747f36b9783d37a12cf3dccd2fb4d43e042c6cec59a05d195fc237",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-15",
+          "sha256": "068406233cf78e5f2caeb742a0b4c831a841ba4d24e5a51c5cecb4a8684454cc",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-16",
+          "sha256": "bbaba9096f77070c50189d364b6c4f741a39bfc53f4b2e6e2128a6af69bb788a",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-17",
+          "sha256": "028aefe3ec8980d40b665070ee00958b97315960d0686f73faf4ebc3bb62afa6",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-kalash-sthapana-18",
+          "sha256": "073b1d885b51b592bd5e358879b506f75e3003d74042a0b160019cf6a63d0ba0",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "diwali-mangal-patha",
+      "url": "https://www.drikpanchang.com/puja-vidhi/mangal-patha/mangal-patha.html",
+      "source_html_sha256": "bcc8a12cb3c0e2a34ec2b2544f4128d99fc1b2802a65dd8d70eb70c643298e7e",
+      "sections": [
+        {
+          "id": "diwali-mangal-patha-1",
+          "sha256": "3370917b605682f8ec8148635bcd9249bb59b23f6b515cff28adf1bc22f8fe91",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-mangal-patha-2",
+          "sha256": "6efa1d3dc4b410f23d8578036df3b3c042a65e01ad7696b769b61aa388bf8923",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-mangal-patha-3",
+          "sha256": "521611a6ea1c372732bf09602e52c088824e7db893e350bf23131a79a5797bc3",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-mangal-patha-4",
+          "sha256": "e4257bebcaa29e6e6b43afe5b841761bddb700ca6d6705809631759701058a87",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-mangal-patha-5",
+          "sha256": "e4c6c50a7f04d88a410cce5d11acdb1a2c76676f17839b522c5ef90275ae2f35",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-mangal-patha-6",
+          "sha256": "f944de8632af4760e068b6c4545f1a808e4f4a914a1fc5b18716a2f566517a85",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-mangal-patha-7",
+          "sha256": "be8101f98435d3a45ce459b65eec60032d4e45d179f58a9144ff54548cb1d644",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-mangal-patha-8",
+          "sha256": "afe56d4f4be1960df40d6ab04f1ca0a2dd708b28fd6e23a291966ad83d4fc0a3",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-mangal-patha-9",
+          "sha256": "4c37dcfa1240b02e4cb0590c0ef67c7808c76559f30217be632d409627d6d6de",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-mangal-patha-10",
+          "sha256": "b6d00cf28a38a9c58d32b442cd00ca86aab782fc0b10e2388487e572aefa193c",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-mangal-patha-11",
+          "sha256": "dc010c32ed68f74617c176cedb8a838262c01f70e3c45f691ed422b794ce93c1",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "diwali-matrika",
+      "url": "https://www.drikpanchang.com/puja-vidhi/matrika/shodasha-matrika-puja.html",
+      "source_html_sha256": "96cd0c3ff2ad7d9813231a05383f608fe6d1cb169b33c5957287b758ef870757",
+      "sections": [
+        {
+          "id": "diwali-matrika-1",
+          "sha256": "e384b4234adec06ea218ffadb0766a7ef3f93154217d622a6775ee8dacb84e3c",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-matrika-2",
+          "sha256": "37dd66f1b3d6fc35705d947346f1492b3a0dae8403a7714becc0203d6ef9da49",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-matrika-3",
+          "sha256": "cff7fb98e4b4d25f84e11643992cfe66a8b4bc669b1fd3d1b377fabc871448c9",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "diwali-navagraha",
+      "url": "https://www.drikpanchang.com/puja-vidhi/navagraha/navagraha-puja.html",
+      "source_html_sha256": "ddda300496f741240458eda3881bcccc9a6d47e180415c0b1c6b7388ddbf2c47",
+      "sections": [
+        {
+          "id": "diwali-navagraha-1",
+          "sha256": "b4155c2ec33e9b8aa91ad9559a6a3bbd74c5cd6da19c0b6b710cdb1de41f6f22",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-navagraha-2",
+          "sha256": "72332fb5b15bd019095db1a318aa1e21631f09f258322f7f20f3359fa9116823",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-navagraha-3",
+          "sha256": "c88bb119dc29f10f986fafa70b8e9de978ebc8210a0d8778c5c5049dad912a2e",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "diwali-sankalpa",
+      "url": "https://www.drikpanchang.com/puja-vidhi/sankalpa/deepavali/deepavali-lakshmi-puja-sankalpa.html",
+      "source_html_sha256": "99e9b2737a0fb484933681e2b495beefc85558385c7ddf1e1ecca41caf4783a2",
+      "sections": [
+        {
+          "id": "diwali-sankalpa-1",
+          "sha256": "3ac1333c3ca43cd26b6c4891b8485349a8fffe070e678c72a5aaa6b5222ece96",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "diwali-saraswati-accounts",
+      "url": "https://www.drikpanchang.com/hindu-goddesses/saraswati/info/saraswati-puja-vidhi.html",
+      "source_html_sha256": "dc90e7a28c8c482a4a3b4a6b3ff69fad1828a4bac63c0282258c61874e3f487e",
+      "sections": [
+        {
+          "id": "diwali-saraswati-accounts-1",
+          "sha256": "8c9c36ba18221be7a84de3e1aef86747d7c478965bf63ad0b5fc0f7b24a803de",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-saraswati-accounts-2",
+          "sha256": "84d2e888900323e8cad454c3a6ea27dac0fab65cf3ca42835581721ef653962d",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-saraswati-accounts-3",
+          "sha256": "6e573d1ad50aecb2a556c732234019142126a9e2e77a4dd203302b58a5914753",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-saraswati-accounts-4",
+          "sha256": "ec9dd7ef9dd7170c31beade103ac9b9c13eb1dac2934a3d3102faa07dc3dc193",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-saraswati-accounts-5",
+          "sha256": "8cfac5efc9f4070782feafdf23e95c408214012beaa5220394b5769165af0cc8",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "diwali-shanti-patha",
+      "url": "https://www.drikpanchang.com/puja-vidhi/shanti-patha/shanti-patha.html",
+      "source_html_sha256": "e1347c1cdb62703ad74cda9913d4d2dc56283301f73d5a8fcd1dc00149130b4e",
+      "sections": [
+        {
+          "id": "diwali-shanti-patha-1",
+          "sha256": "9fe614a734d6cb0a365865a186e8e670d2358b33830886f544b80a5ce6eb2001",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-shanti-patha-2",
+          "sha256": "18679c8d25428b0aacb13578db4b5439a96aec09fb1717651d173d0ec2037862",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-shanti-patha-3",
+          "sha256": "c4b071772cb3d8d0c5e9fe991ab92e77bd121387c3b9987e6ae10315decca078",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-shanti-patha-4",
+          "sha256": "78409ca500f9003cb1a8e2c55c20f7b80a711bfd2b22df068159ba2123588303",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-shanti-patha-5",
+          "sha256": "47a45de01234dd3730452f9a36c9b3ed318998ccce3a274d8684445e112c2558",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-shanti-patha-6",
+          "sha256": "dc8b3ecabc163454ca4a4ed4a9bcd2b4a4a33f8612d5e00082d8909c6a7ee87e",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-shanti-patha-7",
+          "sha256": "85bb817da5bb4f0c95ec19fdd233d00050010826ef6bd0869ac3b9c6d5f6a726",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-shanti-patha-8",
+          "sha256": "d2d9116e42adad15f94577002f41602892609a818a81da8ab476a26cfea567db",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-shanti-patha-9",
+          "sha256": "3e845192afffc230b77de28ff181808fc04d2caa9a7e7b03f250beda4b69c3e3",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-shanti-patha-10",
+          "sha256": "2fe7b90a7e2e381ab7d995951821dc502e32a2882fcb9ffc0cd899998899eda6",
+          "origin": "source-text"
+        },
+        {
+          "id": "diwali-shanti-patha-11",
+          "sha256": "46b88716868cd6b2f9904cabcbb5863e72de50e629d09106ffe8184fc2b88f70",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "diwali-visarjan",
+      "url": "https://www.drikpanchang.com/puja-vidhi/visarjan/visarjan.html",
+      "source_html_sha256": "399195fdcc0baeb40bc8304ab834ac0a491a4abf719643f2809737a5075e845a",
+      "sections": [
+        {
+          "id": "diwali-visarjan-1",
+          "sha256": "74ae2cae0ac2c6649586a6fe0f7c2734e33dc14981a210dc6932a31263dbd6a2",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "durga-homa",
+      "url": "https://www.drikpanchang.com/puja-vidhi/homa/goddesses/durga/durga-homa/durga-homa-vidhi.html",
+      "source_html_sha256": "6ca1005c187b47b4ae2d8383fa6a5c1dd74ddc889a7b0917c774cf5ae7f7376a",
+      "sections": [
+        {
+          "id": "durga-homa-1",
+          "sha256": "0a7d7e12204d7fa00cf9a4c0442510c87ce99e1100196f97debde7299f3574db",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-homa-2",
+          "sha256": "1730e73e5fde25a7cf8c35f97a8f21cacbb093109b45879ba26bdc594e92490f",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-homa-3",
+          "sha256": "482d865579207477131aa5454744af92955e57c7e4b841d00fb40df805b08a1d",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-homa-4",
+          "sha256": "e6dcfd0b35a6190a8f5d864c10495af1e268982738a8f8015e693a2531236f1b",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-homa-5",
+          "sha256": "897a8e890deb8061c27f4f3e8527153762bebf890d16c247c887b27ec673c1f8",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-homa-6",
+          "sha256": "d51827bfd5ae1e3084319322350a6fab894c44d3293876e978a92249a1dd5036",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "durga",
+      "url": "https://www.drikpanchang.com/navratri/durga-puja/puja-vidhi/durga-puja-vidhi.html",
+      "source_html_sha256": "fcc8c8653f6c48a2c1642f19ef2c6f8dfb16955b48d1f9a2fa9ec3ddbab2fa5d",
+      "sections": [
+        {
+          "id": "durga-1",
+          "sha256": "e84f5975a495cb6c5898d360e3fd05525534dc6ed5127cf3997e567f0057dd36",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-2",
+          "sha256": "57324878d448f450914c68eeb98fefb61b0490f06c8e494d1da88cc5d65354ea",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-3",
+          "sha256": "23e9762f2df0737d4be3975255e87273053d2adb5d5308f19d36dc9973f16e9a",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-4",
+          "sha256": "da3b3ae780200bbe63637c661cef26a0ca7dbbcb6fea0063b08ac2ab3829d6bf",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-5",
+          "sha256": "5b8cd5e51dab0aa410236a7083d5035533cbf09f8aef56632265eacdb98fe685",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-6",
+          "sha256": "7092b22196af56f717c28c8d89e8f3af8af9501aabcb289260486718a6a4d7fa",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-7",
+          "sha256": "a758ef04c0e805dee93ad3bbddcc53c598453668c83bb269cd85d501acf7768b",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-8",
+          "sha256": "f03ec301c8a9456109e1d308082aba9431cc6207f7de795bcb76ba066ad90c8d",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-9",
+          "sha256": "5523fb28674f5431aaf986240551c6e31f2483321341113cb7ca142af62f5722",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-10",
+          "sha256": "3cd91d20a9f428441723275682c53e0f59652dc46e036c8b268e5f8a521b7ccf",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-11",
+          "sha256": "a669fb94cd349ef4b240aff09a1257e0a3bd857abdde5bceb89144c666b6b4ea",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-12",
+          "sha256": "93416cc5479aaca31cc844e9e8929c52c45c933ca9f3ff4f6358d2a7bc89c9b0",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-13",
+          "sha256": "9d6086d4a379a0398931ed554d025ec86f43fc825b019057d7094b96e0db0e88",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-14",
+          "sha256": "47cd10942f2bb2e17704be0755839bdddd99f1b421c0fdd1696e5c70f149f497",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-15",
+          "sha256": "0d2fce6f6d1a25f4e080c0ea24e8fcb520be1b074371834892771b452a523c9c",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-16",
+          "sha256": "68fb35dcb6780df9dfc3c8ec68a8e54f5534c526b845c865d2af74de038dfc6b",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-17",
+          "sha256": "3920bb12a8cb3413d282de86b289af6c75e6dd271084bd9d3a33775f36c3e5c4",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-18",
+          "sha256": "434e5ba1423062cbfed5c4c0a56f771a57540b9a8ef2f7fa31e63a6ba385a098",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-19",
+          "sha256": "1d1205a2bb408a8b35385ba9c52812174f60778fbf83ee49e7bce382ef488ade",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-20",
+          "sha256": "05dbf5e02e77f7fb94f25d99600cd7f02ecd1307d38670dad8205069244eb80b",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-21",
+          "sha256": "60dd538724a2a4ebb9a5c728c2d212886bf14f83e800084d59d69e55bd5c019a",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-22",
+          "sha256": "ad0302d619e4949c1e30c216b1c0bc4c92451c0d7d60ccc8b4367ae2b554000b",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-23",
+          "sha256": "0d29f43290edc6679d2238aa4624dc5359953258ad392fa2f99ae0bb601351e0",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-24",
+          "sha256": "3a885839d9ae204a9db2a6c0aa163e63d7cc53424f5572a7777e9bf276b41167",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-25",
+          "sha256": "1e81858c0b496653d053bad1f8aeda32f56e604d4faee269aa9195ef5a68ec9e",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-26",
+          "sha256": "436177ba8689a34418b7428b0b26d03a3988040fed9a6cb25016fa49559fee53",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-27",
+          "sha256": "8d92ec0ece2f1679a219305b56d1952f9fc812f7b6e42f55bceaf09782f6678f",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-28",
+          "sha256": "608f2f35bb4988ffd236e550bb540c51d3798bb9bae323680e0dbf6c8c9f67f3",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-29",
+          "sha256": "98ce2803772c1988e31c16c43840e3b08a1e57b9d70e82db5aa51d31e5ee2ec0",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-30",
+          "sha256": "80cf18d34d2e5c43038a20b24053a35356a954fa5357b08b2c98d62f04171c5d",
+          "origin": "source-text"
+        },
+        {
+          "id": "durga-31",
+          "sha256": "7ac4f0fc188c6d7199d234584f7c55e6f6bc9c440c4040215cb5b05148189881",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "ganapati-homa",
+      "url": "https://www.drikpanchang.com/puja-vidhi/homa/ganapati-homa/ganapati-homa-vidhi.html",
+      "source_html_sha256": "e2166dfa9e4cd35b9ee048ba20e7ca0b4df0c9455b685e2fce6b2a4407b1f21d",
+      "sections": [
+        {
+          "id": "ganapati-homa-1",
+          "sha256": "ae9217d7bc6bdcba58e9b2e1e150ffb46e9b06d75fa75768021d0bc0f3983a55",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganapati-homa-2",
+          "sha256": "02297eda0d6e812d7dbcb7d9570bddf2f5196e9bfa4c56e160bb0e1b93465834",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganapati-homa-3",
+          "sha256": "47e760b8e88037989f09add51b868e310b8fca93172ddd9c50f9be2f5d540209",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganapati-homa-4",
+          "sha256": "4ae3670693871394af355b1fa16765674315c8b4c2d5f65c9646255297392d15",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganapati-homa-5",
+          "sha256": "98694dbf955984debd9c82659bbd3225ade95284d7087de16cec591a53f5691f",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganapati-homa-6",
+          "sha256": "3268ad54b239e0420ff5cb3a6652aaa17470aa0adb5d94b4c6343a45a9586638",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "ganesha-chaturthi",
+      "url": "https://www.drikpanchang.com/festivals/ganesh-chaturthi/ganesha-chaturthi-puja-vidhi.html",
+      "source_html_sha256": "23490f4bb12810e70dc15ebc8bf80887b15f73907ea5f730eb298584de971ed9",
+      "sections": [
+        {
+          "id": "ganesha-chaturthi-1",
+          "sha256": "dd5ffcf21bea74da4ec387dc8e94c84f89d9753225709f53b0eb4a5263968a8c",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-2",
+          "sha256": "59ab39b1683cebb7206954eb1a3ff47683385a4522d32aed501c489909bd81a8",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-3",
+          "sha256": "81fb86cba0b28b114a4645ed2da72f1d607437cc96a84af0aabdbbae2cad1e26",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-4",
+          "sha256": "97b1fde952c525b075cf8549d8744b0656bb4fc5883548db163dcc2f331224be",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-5",
+          "sha256": "9acb3a9b0a2f4d69f2e6fbce73b033c01b088ee28312bd8a82eb1eacd30ba1f1",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-6",
+          "sha256": "46b134f8703332d58f03d49cf6df1388c4abacd33697be38801c750ab97dad5c",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-7",
+          "sha256": "68e25607f7293e45e65b3af8b0882ed36ba3bb2517f1753cc237394493fe2749",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-8",
+          "sha256": "25c2415b58b61f76029899c4d31184fbdfaad367dace06d2356e89f23a4df389",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-9",
+          "sha256": "f64f49fdc30c9615fd6d1458fbd27cfaf22ec87acbe136e7b019ce62712a120c",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-10",
+          "sha256": "830f0c206ddcc679d6c9a8717f0cc9cac4dec392103455ba74ddb6512bd23d6e",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-11",
+          "sha256": "397b10da2dcc5248906fe5f9793c76164d5f85cf8ea709f94ce1d3d3cc0e9428",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-12",
+          "sha256": "28b8fd4a7a5f216ccb9f354c1ced644859355e5d54bf7e61ba58163f8b2a8ee1",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-13",
+          "sha256": "c300dacf5eb2119686a6f37f7618ca2b6a7f8231fc7e98fd0718b5a3a4321a50",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-14",
+          "sha256": "1f1864026398c8c19134450ff8d9416cef382dfec8a21f213200bd8aee7d5ad1",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-15",
+          "sha256": "688d82dfee587397b5f0adce5a58ef06fce9163bab1d633e0ee25116efc8b745",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-16",
+          "sha256": "1c4974f453f3c026d4eab504351509b3c2125b3cdf53de0bc67265877b2e7806",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-17",
+          "sha256": "094b112c48bbea8f136b02a2296f22720f1984f52886d447ac3b7867b99de02a",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-18",
+          "sha256": "35e9aab78d7176cd91c00a1c5d1c7b9c72514f49c56960c29904b9d7c0723b9d",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-19",
+          "sha256": "ec2f06663438872db9c7aff8d36fe7a6900c0cdae604eaaebf6b3979d3786645",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-20",
+          "sha256": "bf7e73c7d8d13e07f422e4a61e0de528a1c0cb2c006b8051a4ef641cbcdce340",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-21",
+          "sha256": "0ec7118725dcf15c54d7f400d92c74bdbc3d7a4d07c0369ed5efa2a70b8ff4b6",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-22",
+          "sha256": "6dfe7d7d7e7886e1f801d46ea96cc75a2b39f3f1bdca8657af70f66fa33401dd",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-23",
+          "sha256": "bbd38440733d8c15a48b49f0560aa90bcc62367f46c525d1c953483155d96cc3",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-24",
+          "sha256": "568974511fe8d1073ec5e6cc1ca0a0a87763e0cd6c170c3eaa030c709c1d13a8",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-25",
+          "sha256": "790f08ee71592fd7eec7bea4e13faf96ced8bc15669806b9901f355ed6fe482b",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-26",
+          "sha256": "89cac221907a3c8953a2b546238b6495758db25301401a9a24b2ddfe1e98a690",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-27",
+          "sha256": "ddfefc4810f142a3975e968fe2caf86885d148989f26b2368305ceee848f7c30",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-28",
+          "sha256": "9c6e73eb8295d86311017276d69af7d4f18cb26942525e42cc72cdac5c87fb74",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-29",
+          "sha256": "ad68a46f2697f96e1ce690751b76e0d4e1fca1eac88c8f3e329f951879da8b97",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-30",
+          "sha256": "3c7080c8f9f8775bd26b5cfd1968b7afe4772f4858fb334d40f6fdaab40cbbe9",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-31",
+          "sha256": "82229d4fd58440705bdb7bc9c82ae74b3fbe41e3f8c76e6dfab87ab23bd5f6e5",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-32",
+          "sha256": "e9c388f1f3d1f95a695e538e736b0721585686f8f2f0e43bb4dc81f0eff32b15",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-33",
+          "sha256": "e0d199195e6e49d0d48869ce6beda656ef58d150476abaf65eaacf82af443729",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-34",
+          "sha256": "925e9468e9fff73ddb81ce8ec8825002ecf8bc9230c120a7c94531390e3995ea",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-chaturthi-35",
+          "sha256": "0cbcfca1430466f6dfd43d2c5fb7fef2ca0e6be0fafee11a9b721b5502ca4687",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "ganesha",
+      "url": "https://www.drikpanchang.com/hindu-gods/ganesha/puja-vidhi/lord-ganesha-puja-vidhi.html",
+      "source_html_sha256": "01be24277254f569047ab343c842028138ce9ce23875699cb02f9b8ae1ff8fa2",
+      "sections": [
+        {
+          "id": "ganesha-1",
+          "sha256": "1b70f3d7f66c286d6b66e730eb0e9ba2ade92ed9a8885c505d64af7b550fb10c",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-2",
+          "sha256": "abd7f610d890cfc5046151631ebbc07b55b7b6d8c3c0caed840cf557c26c31b0",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-3",
+          "sha256": "3d81719c36a0c6ab697bc06fd722b12e1f7f10959045412660ebcf0f9174e424",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-4",
+          "sha256": "59a5172e85cbb072770fbdb8bf748f8acd1f9c9d7b8760f481f00693cd0fcbd8",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-5",
+          "sha256": "00afe53b85968af43a2d824d899f7f345bb8335fa7295309b793dbe388f8203e",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-6",
+          "sha256": "f746828c91921dcbbedfdd16e29dcd3c1c362cc07e08afdf2556cc5d5fc318e5",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-7",
+          "sha256": "ea5b24c53fb95f0621646e57374790b71aa6717ab682aefe26bdcf539ace2665",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-8",
+          "sha256": "517377b9fca8a84d77c0e9c75ae2fd0230bc0dc68c9c201024fbf837c9ab543e",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-9",
+          "sha256": "e831ee0e32e3705e2d006e86d7eb0d2146ad8428ec7b8557896c7c3c1f7b6b69",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-10",
+          "sha256": "2a652026a11c2912d533dfb4ddb9a1adfef188e6bfb903fa585060c1ec323c9b",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-11",
+          "sha256": "0567c0c2fa07cd0f25706cb8103fd290c344803dbcba72c1a87ad21d70df4540",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-12",
+          "sha256": "55ff94b46432310fd15190847a35607309dd0ba11c8145d7fd02d42bba9b8e50",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-13",
+          "sha256": "021abed286636a266922dda1615f4ce6e5c870a2f3d23526aa66bcc26c814e9a",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-14",
+          "sha256": "ce7f394b2040efe110ada26415f199b0afbffe8b0b518c865c0f6dcba76afe1a",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-15",
+          "sha256": "cbb9bc1649088c5556b1150e5f7bdc22d63d1bf1269659cc6960a0c86ed39c17",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-16",
+          "sha256": "919c46b5587d51b100f34b15d817cdc6cef3cf10e8d2683c08cd0874159e5953",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-17",
+          "sha256": "325252356c3bed14e8a58d2c33795b0b62c85ebcde59de327f85ec870ac8814a",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-18",
+          "sha256": "39089ba5979f11a1b2d9380a9beadf7fe66eb439e2413e756c2f1012a95e6acc",
+          "origin": "source-text"
+        },
+        {
+          "id": "ganesha-19",
+          "sha256": "9c1d44f25a1710cf4ee548c8828834f441fe8418df8ff77c04d0783d530246da",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "govardhan-mantras",
+      "url": "https://www.drikpanchang.com/vedic-mantra/festivals/diwali/diwali-mantras.html",
+      "source_html_sha256": "8d796b580a7b947afc46b6abe240cb438d06595eddd8d30dd1ad4b61ed2e2fed",
+      "sections": [
+        {
+          "id": "govardhan-mantras-1",
+          "sha256": "27dc8737348266b74c2f6b25c7df1f831638d8f01520d711a72b78ddd46749b3",
+          "origin": "source-text"
+        },
+        {
+          "id": "govardhan-mantras-2",
+          "sha256": "df6a03aee6da1e660614ee8d1ec0c1b11af8d5ff15c001ba5b0b9362f21f2188",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "hanuman",
+      "url": "https://www.drikpanchang.com/hindu-gods/hanuman/puja-vidhi/hanuman-puja-vidhi.html",
+      "source_html_sha256": "20efd569e3432a407e7caa08673ec43a3e1c8d7e7de4a8ed6ad7bd54975614b3",
+      "sections": [
+        {
+          "id": "hanuman-1",
+          "sha256": "49d2644ed17e15862272638c8a09ed430f3d7f78d1f4421f4e0abe06f80e33c1",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-2",
+          "sha256": "68001777ba421cfc475b161c681a8e25c7a2c7e825f2608d8be2c4e605014a44",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-3",
+          "sha256": "7f27ac674f3370aa14814d60cc304a4a3210d8be8ecc2e73700b3b035a3f50a7",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-4",
+          "sha256": "8f7de54da32e24f3dc5cb693899e60208757a20432b57080a935a91820315161",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-5",
+          "sha256": "3904d2b137ba94dcf82e2b18532031288ddb6499bd23ecbd26f9d6f9ebdf27f0",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-6",
+          "sha256": "db7a99f5336b7e094f6c4c7f14fbc45dd92a4823977b3f2f79c830bb9a1144b2",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-7",
+          "sha256": "dd24b8c177e8279b8af94a9fc34a25574e991f68baf56f3994772f65ec35925e",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-8",
+          "sha256": "d587f5239e9ab020bd344e6026da033ccfd3185ef7b708d104553c71a0260b3e",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-9",
+          "sha256": "100abdaf980b6f5cc0a4d046a60cf5a03d1fa5ed2ff81c122ec6633f2d027afd",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-10",
+          "sha256": "0924c620227888306ca2a3d2e219e1775eaf73a8fee215f67592fd5a38c75e1d",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-11",
+          "sha256": "d48a61d07dcafbce6620196cb55a6d08a4e8c8fbf27c1aab66a76ba10a673089",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-12",
+          "sha256": "b514e3ba5a62ee7be3b8a94c9117c9c40ac9deee54ca60e501f6fa3ab1d4f26c",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-13",
+          "sha256": "1651ec466a0610ec09de49a3ddd319d0a7733ff07aebd8c37dfbb2b73906267e",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-14",
+          "sha256": "f9d763ddb9b52866d7378897cb6d4c23b4d889f369ce44207a3f91003a978005",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-15",
+          "sha256": "19985a3284d0e39f1a36361bd8a8e10cbfa6a5e8c72961a12a85937b76e951bb",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-16",
+          "sha256": "e21864860319acd584777d9754a1690549c7a5d0c0f6fb0331be645566007c41",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-17",
+          "sha256": "e83f02724ec5656b9921f342463bf9b5e2d29c386976625cd9a946eafb0cec9d",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-18",
+          "sha256": "59f4cd942248453e148d7a0d0a266c75615878c89533b687cefff961982fac01",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-19",
+          "sha256": "7d7b428959bc40ddb0cca9547c23955f25e7ee84a19ab115d8d0a863ef34b38f",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-20",
+          "sha256": "3340af34a267967b4b1698dcd6040d70741006644a364897e05f0aa8d91840cc",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-21",
+          "sha256": "fbe5dc96d3479f628c12aeb5dd644c502ea24f2af81944169b77cce8aa515b1f",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-22",
+          "sha256": "d14f93adb3058278846430f7b74827fb5eceef0b70ebcf73b6fb3045346c3213",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-23",
+          "sha256": "32e939bc9d726ab84e2204bea2d7150ff9e4d46c02a2213080ee4d121be0675b",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-24",
+          "sha256": "0ca8964a5c809e491a9f414ea9b8ffe49f4c5f46aecd3497696878e901eccf31",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-25",
+          "sha256": "7ffaa8dabca7a9911b746cdf5aee656a8278d65f096f5bf6a6d188941be6378b",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-26",
+          "sha256": "182df76edf3ef69f9211454df8837c6103c5ebc1c2c838131c042684b28be644",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-27",
+          "sha256": "cfe6dd235666f9fde0d5f156f60220621e347f724e590c1fbf52a5d0b44f750d",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-28",
+          "sha256": "fe11c09e013dbdaa914cc76253a7f88078abba7e54e651059ac9321a9dc07da3",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-29",
+          "sha256": "b981e24cefa81be90918193c362f7b5b0442fbb0ea718b306cc363da764e4e64",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-30",
+          "sha256": "9c77b5acb829c617b0fcba849d50068bb18e25d6482075785a556d42a06c6c79",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-31",
+          "sha256": "5c41014e513f55d54d73943c1b62aeddf1ee9168bcdacb1dd212ec47c8121b28",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-32",
+          "sha256": "4e327b15e7205344379b8f815ae68926446c2b46e89a511d63dd1cc500d71409",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-33",
+          "sha256": "e05183a63b70b028dfaf6eeae30348261ad24eb802471bd9c7657d603453201b",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-34",
+          "sha256": "01628b0c02c4509c3f540a9a8a29d1600918f89f0184483368f437a60fdfe58e",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-35",
+          "sha256": "37ef6a8ab52bf572c29e6e79d59852b3d9d01ad343a5a49dc59db809dd4dda8d",
+          "origin": "source-text"
+        },
+        {
+          "id": "hanuman-36",
+          "sha256": "d62ce1139c60ecacce924083987c8bfb1d26295986acfd424008b14d4c018bc8",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "hartalika-mantras",
+      "url": "https://www.drikpanchang.com/vrat-katha/hartalika-teej/hartalika-teej-vrat-katha.html",
+      "source_html_sha256": "f8dc6df611f1d59cad1041284fc06a2d6a343b5df9b81727042390bd70c3b9b7",
+      "sections": [
+        {
+          "id": "hartalika-mantras-1",
+          "sha256": "cb3984c2d0f7c636f1a35ac980cbd1ecea5c4099b90c237fa0747411d5d29cb4",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "holi",
+      "url": "https://www.drikpanchang.com/festivals/holi/holi-puja-vidhi.html",
+      "source_html_sha256": "51a02167e36e6aab0f7f1c9c17109ec80cd03864224d2fbff435c1af6abcd504",
+      "sections": [
+        {
+          "id": "holi-1",
+          "sha256": "2b2f914fa6606b43af855d46f4e71224d3b9804eb5e3e9bcc3c769efa52d9770",
+          "origin": "source-text"
+        },
+        {
+          "id": "holi-2",
+          "sha256": "3311ebfc2a13529bec1622df8dbeffa8b5d2ea34b3c6026d6283968aad8f75e3",
+          "origin": "source-text"
+        },
+        {
+          "id": "holi-3",
+          "sha256": "39412316ea23098788b1681d17e72c2868a958522601257f1ac882c246f64fba",
+          "origin": "source-text"
+        },
+        {
+          "id": "holi-4",
+          "sha256": "8875742cdb65d5948f39dd39e7b65560fbe89c9cc14f310f9c6ab1fb3565f5a4",
+          "origin": "source-text"
+        },
+        {
+          "id": "holi-5",
+          "sha256": "25a5c75713e266dfec21952e185ef576e80de8d39ed69a803da8daae643840fb",
+          "origin": "source-text"
+        },
+        {
+          "id": "holi-6",
+          "sha256": "77066c31a8d202cb050ac8aad60f6caecc2c44cb3a78f1efd956545582609001",
+          "origin": "source-text"
+        },
+        {
+          "id": "holi-7",
+          "sha256": "227ff31ce89b32ed2a37e36da9c1d19b6434d137b8e7ea373139fa644a170a37",
+          "origin": "source-text"
+        },
+        {
+          "id": "holi-8",
+          "sha256": "d433a4d2f40267901a08c1dd96b44eec598a8b558015a816d43f2efc081a411b",
+          "origin": "source-text"
+        },
+        {
+          "id": "holi-9",
+          "sha256": "0b0b4c2a046dbfefaed3b0dd1fe24ea5526c38b3b928eea62bea593329721a4c",
+          "origin": "source-text"
+        },
+        {
+          "id": "holi-10",
+          "sha256": "3210c5639894f13e945493409b978fed3db4a86d681e95b47d36484b69438453",
+          "origin": "source-text"
+        },
+        {
+          "id": "holi-11",
+          "sha256": "47d2faccc9ca01d30e34f78f055414f563df50acb4b9fb1ee040e0ef9dd30aed",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "kali",
+      "url": "https://www.drikpanchang.com/diwali/kali-puja/info/kali-puja-vidhi.html",
+      "source_html_sha256": "0fc03aa1e5ebe7720f39bee7673ea9ace01b7759bd73af5f3ab6436988b530e0",
+      "sections": [
+        {
+          "id": "kali-1",
+          "sha256": "4aef2f3dc3e6b8059f3c926bd84b8af5faacaca14300ff397f4ef1f1411e3ec2",
+          "origin": "source-text"
+        },
+        {
+          "id": "kali-2",
+          "sha256": "2f53a7b6098035a7a49adbc6a7a07c156119fba2b378af15844f3f1aec56fd80",
+          "origin": "source-text"
+        },
+        {
+          "id": "kali-3",
+          "sha256": "8320715aa9168ace6f23beb39216570625a08ee031f9408ee7a65e87d5abb222",
+          "origin": "source-text"
+        },
+        {
+          "id": "kali-4",
+          "sha256": "2fdfb82a84f99c676018c47d850a41e4aea5b439ff388329c90df7cb95cffd74",
+          "origin": "source-text"
+        },
+        {
+          "id": "kali-5",
+          "sha256": "ca5512a2bc38d1fdd1bcc12c376ea25b75499794ef29b2dbf44eff7b655066ae",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "karwa-chauth-mantras",
+      "url": "https://www.drikpanchang.com/festivals/karwa-chauth/info/karwa-chauth-puja-vidhi.html",
+      "source_html_sha256": "a574b0adb93675b89dbb9c16a8b046a2e2f07f5d0d96a04aacf74531aa5b1101",
+      "sections": [
+        {
+          "id": "karwa-chauth-mantras-1",
+          "sha256": "dfd24d3853fc03b5574b5e4d237f97d148c04152f6f5fdb26594a65933d9e71d",
+          "origin": "source-text"
+        },
+        {
+          "id": "karwa-chauth-mantras-2",
+          "sha256": "8eb2cb1040b55dccbfa0510e61ecf3c47bd166b97f6a4760654754110fa0b51a",
+          "origin": "source-text"
+        },
+        {
+          "id": "karwa-chauth-mantras-3",
+          "sha256": "470224e06b59c81f9cd246a88999975b9bfca1090b0c830d36b4e24575789d3e",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "krishna-janmashtami",
+      "url": "https://www.drikpanchang.com/dashavatara/lord-krishna/janmashtami/puja-vidhi/krishna-janmashtami-puja-vidhi.html",
+      "source_html_sha256": "201cdf1979108f8f42b69b0dfc493acfb408f539dbaa9690ecbb8f6874c8b323",
+      "sections": [
+        {
+          "id": "krishna-janmashtami-1",
+          "sha256": "991d265f5585dba32a8fea74b1d22c1d278dd47a19fa8125e30b816ec8dd13f6",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-2",
+          "sha256": "263fc2cbf707c66f2aed1e517438b87cff8eddf026b70a2903cc16a61b4badf2",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-3",
+          "sha256": "19ae17301e75f46fa1f3df2c257c6bf417d04b999758421cd4f56b0ba6e57d9a",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-4",
+          "sha256": "86bf292e44c521969bb69709869124801129e0331ea01a3d7f8558147516b116",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-5",
+          "sha256": "b501c3297ff0d8cc4717e73b245587996adf5621017d0407ccf4ed12137ccd87",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-6",
+          "sha256": "764e6796aa0a0329de35851f9156954d381cac2abed37ee17f7ba5eb936325e5",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-7",
+          "sha256": "8f5ea6d8afbd96eabe56330b7a43e1addd5dd6778f54e57c4ff09cea10459fe1",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-8",
+          "sha256": "aacae286d1002990517173c4663543d42edcea79b169dade5473fc21939d2843",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-9",
+          "sha256": "51377f74d38b60464f0646dcf936aeea3f21bf896df14bd6f8cf5f5ba05f570a",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-10",
+          "sha256": "a486cc88874713c0df6ae8337f5988d81d69caebd1f0569aab9f99f0b5d14d44",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-11",
+          "sha256": "a37e6b31dfb63dc911b9f1fa9a75cab1624e5f6f1f9e5740215e52a95264d97c",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-12",
+          "sha256": "52cfe67f855c70b8d377043d3dabb5c210400a6934b24c766b37b9f58fb1fe6b",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-13",
+          "sha256": "2848413cbf18dd2a6bb4d1b7b8901919ec733180f77c24ef0fa5b81e0db76a9e",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-14",
+          "sha256": "8b5eff09fffa8f986ea69ef8483ba78f924a490c39070006603599bb5f399b72",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-15",
+          "sha256": "280dcf73b35f3efd31ef54adfab27fcef3620629c172eb95a5b8ae686b9a556e",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-16",
+          "sha256": "41a776fc51d31b2b23ee2bd4df3bb0be853e81acb679fc21e2056628b820c52d",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-17",
+          "sha256": "8afa5acfe306dd37ac1479f1a59fbf8b7ff03b8f6151eda8be87289e5234c678",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-18",
+          "sha256": "863f30219fc1204bebf6522f3533b3e9748c496dd18cbe4e8c9f4c11592431ad",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-19",
+          "sha256": "87a3992d3a834b921ac307b6accf026d59fb791a4f583400df381b3f71f01265",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-20",
+          "sha256": "ea3f8b7315ce62c287d32c8e50d9725acb33176492ba6c5fae4ce4daa92f4184",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-21",
+          "sha256": "a218c549e252e7f32a2b1b5f4ce7e433879248f52dcace0dc4a6e78ad14b9f43",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-22",
+          "sha256": "6576170c408eeed71da6df1d518376632c047caad6664b365754ea4e73449fa3",
+          "origin": "source-text"
+        },
+        {
+          "id": "krishna-janmashtami-23",
+          "sha256": "d08e4d2fe01a17080cc4c19a15dd964a8d6c60fa63de67f7ffc65010113d61b2",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "kubera",
+      "url": "https://www.drikpanchang.com/festivals/dhanteras/info/kuber-puja-vidhi.html",
+      "source_html_sha256": "04afd4b4aeca8a35035114577aa032174baa54c363d7255930aec0fa7563fe37",
+      "sections": [
+        {
+          "id": "kubera-1",
+          "sha256": "8eaac9cafb0df6031e39c80c3c3d061a5a8e27d828351ed4da4175e813e7a6a9",
+          "origin": "source-text"
+        },
+        {
+          "id": "kubera-2",
+          "sha256": "a8e12463205926efeb6e35c66805e792a6c5bc5a596721b58f73de414e9b3033",
+          "origin": "source-text"
+        },
+        {
+          "id": "kubera-3",
+          "sha256": "d5edddad397683d56a47e1c1b662b2bacc945379a375afcf16b913ea9cd10e63",
+          "origin": "source-text"
+        },
+        {
+          "id": "kubera-4",
+          "sha256": "90d1aab2e8f1b65b417fc41ad2c8f64e5ff0395d21a3810c7dad62413f3f6d69",
+          "origin": "source-text"
+        },
+        {
+          "id": "kubera-5",
+          "sha256": "7fa58210992c640044f3544ba361801441182b1514fcf4447e52e5a8e23a19bc",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "lakshmi",
+      "url": "https://www.drikpanchang.com/festivals/lakshmipuja/info/lakshmi-puja-vidhi.html",
+      "source_html_sha256": "7e81dcae58815ace07cccc46c28bfa21ba307d6ece2248c3c95894e0a594ad4a",
+      "sections": [
+        {
+          "id": "lakshmi-1",
+          "sha256": "430c4d9d18b7871825f03a6b5e45843b041d6ff11fd5cf9cf901b64b13d8d35a",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-2",
+          "sha256": "d9d3d6be95b9f6d51aa5b0ddebf50ada19166d15ca4840c259f8845b9980533a",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-3",
+          "sha256": "1770d324c76e8e1360c9f8d1d886ffa56317d76f1c7aa9e658ecc9c97967c59b",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-4",
+          "sha256": "307f4e0a1c45a8ee68f672e99a0a543e5542b89393a4f88afdef869c924198a2",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-5",
+          "sha256": "76caff23463aea1f382744e9d3c15c523a9dd082f4f8daf0e5d71119fe525c4d",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-6",
+          "sha256": "0f08329fe16cce81b859945ed65582dc64869b89b1ce2df2f8213c3d8bba3c11",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-7",
+          "sha256": "55d969faee420a473db965865e669b9b493cebcf4cd87f778a9fe54af63e6521",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-8",
+          "sha256": "9b03ef365170babcc39a47200454e2f750f34a89205c13b3375ba7938e302cf4",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-9",
+          "sha256": "f6978acf284c0bd2b58758f067731f3941e4d27494de0c752107edf27d7611e5",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-10",
+          "sha256": "fbcf4a321bac21ad6a37cc9490d9d4936e81ddde308cd839f2bafc9e709f1392",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-11",
+          "sha256": "a3f0b42d3fa8ea6766d0e85062f7dbc221376747646fac932d572d7243b5f8ea",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-12",
+          "sha256": "f3b077b2528d57651bc1a49261509fd3afffdad32a519c065343f687b8da5f04",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-13",
+          "sha256": "df3b1cd542890c79eb588c358da019dc71b346e165553014597b5074ba72028e",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-14",
+          "sha256": "e37157aebd59202eaaf5411863e763d25ba071f9038931cc6e954ac9d8ebf434",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-15",
+          "sha256": "20b6d3bbf8c63e783794ede7bc42a39a673bcd4b92302cd11c99a8c883f1dc5d",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-16",
+          "sha256": "f9206f59d3bcc62e03c1ac05195b79c43a80af40e66166d308c8e60a727e99fc",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-17",
+          "sha256": "096734693654b6d3e2c3b1bf1a59972149f3683de202cf4acc3b317467f8070f",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-18",
+          "sha256": "e6b49503fcf858f29a4bcbad8bbdd9d68aab571c8659757cf32aef53556e2e1f",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-19",
+          "sha256": "0ade9d3d80c765fbc6551429dc5abaa0c3800d91ee785d9181a2e2d32f3d1eed",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-20",
+          "sha256": "2dd63dc8b3946cec344cd1355e79843785822e42b3e576d507616f9a29b8ec0b",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-21",
+          "sha256": "16c7f7a21591786f5a8c0476a38310e2c53de1a549df7501eeb1e144feebeefd",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-22",
+          "sha256": "cddf3435a072c639ba754bcfc43788fad9b433e4f364043aa60b1dfda795bc3d",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-23",
+          "sha256": "898653b686530b432108a311a2bdb97048a8cd22cc6cd8e529583b3024dd1607",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-24",
+          "sha256": "a856ca9f463357ba5534e74a47ec6fd463761c0ff8e11811a4650f2936cff866",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-25",
+          "sha256": "c8a27c800de76128fb681683e21b6449a7badd25f785180ee2812d8d1180f952",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-26",
+          "sha256": "9b7b6bde60ce3d52aa5997ac38e2c418e544a89a3109781665f4981991224f0b",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-27",
+          "sha256": "0591a1d8280fedd897e57b18c4588de0e9f1e244846d3f47eb58413a1da9c4be",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-28",
+          "sha256": "af67e058a4e7cbe6ad1c39f8bd125e1104ba819be5d5a83c0c07efda1e7dbbc6",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-29",
+          "sha256": "f19c545f385e0e648dbd11c836c56ed2751c339721469af5d8c29d00d4ae4a21",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-30",
+          "sha256": "f0e157e6b1168fec629dc46d99e638c2746cde522b0b5897cb5a253b3ba94232",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-31",
+          "sha256": "f2ef01d0219a9f260f8435657e5e78e73e58ca28b228f22a80bb97778c84f58d",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-32",
+          "sha256": "31312fd52d16f733e4a74cff5dfc9a8ad6e38e223ab685cc2014d79c5e44d3c5",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-33",
+          "sha256": "1f6795b7505e8272ca3b14f2438c8e26a85f0ecf0076dbc18e9dafde9d819452",
+          "origin": "source-text"
+        },
+        {
+          "id": "lakshmi-34",
+          "sha256": "827b0e319666422238b1649404cd3934b6a5a2edef0f69a61632756c52020cd5",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "maha-shivaratri-mantras",
+      "url": "https://www.drikpanchang.com/puja-vidhi/maha-shivaratri/maha-shivaratri-puja-vidhi.html",
+      "source_html_sha256": "13908443b814e213192c17e8947ac95bf4f5b9c21ef646b8efe8a3b5b168637c",
+      "sections": [
+        {
+          "id": "maha-shivaratri-mantras-1",
+          "sha256": "69d1b278a1f11dadc23b4ecd16b65fb15c6da4ad93cbe6eef1ed83fbb03a7bd9",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-2",
+          "sha256": "efa14762243909a78653a5d3cdd97eb9c7f90d35a5069c4cd6385e186cd19fbe",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-3",
+          "sha256": "045f7e0fa29e0b59a7ecd7c04a7bdc0d780ba5d0fb1b69e56d462a7f9dcde952",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-4",
+          "sha256": "08fd8d48d10901888b61dfc61d77413847df4baf245141c9f1247a4a636fc4b7",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-5",
+          "sha256": "dfbcc09488b0c4ff3b7be8ed307443358754d9e59f2b1f7d40a1970c98148c38",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-6",
+          "sha256": "c16102d242d05b4d1dbc619e9012751356fca3901fd4c3719f04053684f6f6fe",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-7",
+          "sha256": "4585853101ffeb8986a2d2d342f65a03ede08bd1a839223d1ba89334f98eb10f",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-8",
+          "sha256": "b127f3100d04f8d55135bc4f9f1dd0e1a684bbc5ef81c0b0d03185143d6112da",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-9",
+          "sha256": "761dd66f6011e385287d6849b454f156e09f71ecdfedc582867ecb4124eb1a01",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-10",
+          "sha256": "d55aad65b701ee221ee0266e68c26c9f56a1dca1c6e0b1f93a1334ab61bed42c",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-11",
+          "sha256": "8a9808a26c5e97bbd692c3a91cf6d24acdbbadee2c4f54bd9739940ed6d8f84c",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-12",
+          "sha256": "dbc3dce5a1923d612998d6cfa6efc65bdd6c482a88151d41cda06ff10075b1ac",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-13",
+          "sha256": "ba1167551a7eaa60450335d1d1cc630d00e69c92d8ecacfa1822e3e635a513d0",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-14",
+          "sha256": "a73c6b6c6336ee330f23d8b2f5c55b948354d1c41ec9fcbcfbe6d13f63d5f68c",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-15",
+          "sha256": "3c3090ede6dfddfd4ca0da7e66be19d9b893f69be177c7fefb30cf175f5633eb",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-16",
+          "sha256": "83b1e78eee0a811793a42c62918045182c9cfa33987b16739aa3f14ad489f59d",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-17",
+          "sha256": "7185042e906cc4450ff4f17391039dde0b25674ce7f232b61a65dd144ad39eb1",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-18",
+          "sha256": "e0456e5897eec72ec43e3b89d852e85e037bce00c1c9a83ba9dec934fec0a878",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-19",
+          "sha256": "d5590704dc3004401cb1b71b28fd582c80ac2d0955d683b4d0bd9fe6e088ab75",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-20",
+          "sha256": "59c27567effd07ea8cb7575afd925c886901625c6a81a1ce80eaa8fb5734879d",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-21",
+          "sha256": "86f03235e2a7a92426381af68f8a8580a122b1f156b2a2317601e7b798e8682c",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-22",
+          "sha256": "0956d7d6f3ef9e72bfc19a2a8f18301defbad64a8291a8bfe8e869f7ae1fc692",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-23",
+          "sha256": "67ac3d6434e3eb3250725b3f08ea136022db511c53dfaab89a8311c2fdd5a35e",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-24",
+          "sha256": "d06a3b026d36a568b9b3cfbec09f0210fe36cb0df0ded618975203a3283713c0",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-25",
+          "sha256": "bbeaa5cf13e9f884c55e151cd6b55ddd72099bcf60834088e97c3e5095fb2a87",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-26",
+          "sha256": "f40f38838fddefeed8741e40d8fa2f710d78e83655c4bc4ed40abf79de155561",
+          "origin": "source-text"
+        },
+        {
+          "id": "maha-shivaratri-mantras-27",
+          "sha256": "b25355bd280e96d5b4723a637c1316222238e3f3ce381e2e7d630dd4771ea2c3",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "naraka-chaturdashi",
+      "url": "https://www.drikpanchang.com/festivals/abhyangsnan/puja-vidhi/naraka-chaturdashi-puja-vidhi.html",
+      "source_html_sha256": "205a6ca305295cfca03092a6aeb37c00369252a931e442a34d9e351b4d6f9107",
+      "sections": [
+        {
+          "id": "naraka-chaturdashi-1",
+          "sha256": "73fe66a56eab66106f6d6652863a49f559df178eea67e0a82a998aff5a83026c",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "naraka-chaturdashi-2",
+          "sha256": "514ee613164460570947d5b8becb2bf5d8c159d9ded5e772ee11f1a93d147d73",
+          "origin": "image-transcription"
+        }
+      ]
+    },
+    {
+      "key": "raksha-bandhan",
+      "url": "https://www.drikpanchang.com/festivals/raksha-bandhan/info/raksha-bandhan-puja-vidhi.html",
+      "source_html_sha256": "06a0e56f140b007c6893b0b5379efee2751208c2cff73fbc5e0b5d08409ffe38",
+      "sections": [
+        {
+          "id": "raksha-bandhan-1",
+          "sha256": "eca5cc52805bd37687103b34e8bc5a0c88047c04b333b02419b12a6989ef29a0",
+          "origin": "image-transcription"
+        }
+      ]
+    },
+    {
+      "key": "rama-navami",
+      "url": "https://www.drikpanchang.com/dashavatara/rama-navami/puja-vidhi/rama-navami-puja-vidhi.html",
+      "source_html_sha256": "b6430771fb316bb9e9e0b1d24de7d3beb6d16c8359b6073c0aeb1afce0e0cc0f",
+      "sections": [
+        {
+          "id": "rama-navami-1",
+          "sha256": "21b3ac47fb7765f6da1a7f8a2d93f06bdfe5476071de93166db0f229bb3f23c0",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-2",
+          "sha256": "65a016c8f439ffe58cfac8243ac76cb5f7c73096585296b33f6024a376752f04",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-3",
+          "sha256": "c53f87f0438cf94b8caf95dcdbe74332554b0d88e4c009a93214e2102459faf2",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-4",
+          "sha256": "a365286c558ecb356151c54c358dac3880f8117c347f095ddb75440cc64ac0b8",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-5",
+          "sha256": "5fbc201d68b57e611e6609cd1f096e1089f8957b18d43f008538ca596352d8cc",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-6",
+          "sha256": "fc425892287d859dfaedb2ccc50353858e0fab672f714d95b22d5e3e5e92cef3",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-7",
+          "sha256": "54a58435e80b0ad855008144947b25bf518c067dbcbe07cde7d29c770464d8d1",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-8",
+          "sha256": "ac05308e8d2dc92e71d357dabc8ec38f0928e0a570292b5cd0ea40415be9d65c",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-9",
+          "sha256": "3475bfafbcc0b49638c6e01d347ec4d78cc808732bb2f75890231fce172af19e",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-10",
+          "sha256": "571260e8c4f7ab42f2b61d616c3ca7b861d78433f3d96b90d271e3f7b033eaf6",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-11",
+          "sha256": "5862053350115a92f19342a59f49be8cfc6d851c6f23f4dc4bd542ab08ae20e0",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-12",
+          "sha256": "fe6700c964379f49964b2fd72c77340eaa8804d0de2fd5c29fab575495f97431",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-13",
+          "sha256": "5d5332df4e22defe4b7c47c56b91b779dbd159fa8265f094ed07d2faaf25762b",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-14",
+          "sha256": "770bf202253f9082f8a3f6134d06c5d980346bf39f2bcbb8355aa055ba5d0936",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-15",
+          "sha256": "94b28a28ad74489eb657790eec3fb4797e8fe99800a12b3465eb142c00543135",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-16",
+          "sha256": "1ebb520cfe346b476517134142aad1e9ab6ae85394e390fdd7a4663417be2597",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-17",
+          "sha256": "0fff03b7528cab3280b796d7864b83a27b806deb2e0487ac2f550423d70df9bd",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-18",
+          "sha256": "3b60ef8e62eaa3a77e67d0ec6c91031bb340dac283bba47ea452a870d8548e8a",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-19",
+          "sha256": "7998a585d5c464a7014944a97a1e879276d98748b5cd419ae374baf396a85208",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-20",
+          "sha256": "cc4f689bece2d69ff5b7632ed85585f07f4c2460390ce3f17c1e728440852243",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-21",
+          "sha256": "a4df4b3a77bfb086114119ed645b5abf3c1e5ee08bb6c30a0b3f53934abb03a3",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-22",
+          "sha256": "2c9a0011763403f93dda2abfcbd483d1e97df177051e0b85fe0444ace81b9b40",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-23",
+          "sha256": "f52dff563bfe57d4427ff34d508d24ded48d918720edde55df45df9592aaca13",
+          "origin": "source-text"
+        },
+        {
+          "id": "rama-navami-24",
+          "sha256": "002538705dff65a43c4450973972025432202172d4a491174db6660f9bd78375",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "saraswati",
+      "url": "https://www.drikpanchang.com/hindu-goddesses/saraswati/puja-vidhi/shodashopachara/saraswati-puja-vidhi.html",
+      "source_html_sha256": "050677118dacc412f455c23596274836420cad05ad5c89f97863d844e61bae46",
+      "sections": [
+        {
+          "id": "saraswati-1",
+          "sha256": "9d353fcf6f6ca5f17af7e6d0fcf940dc55db4ba1e7dbdbd71481482f678cd241",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-2",
+          "sha256": "1ffe3744362884c709619eb6a917822e552d522967d3df18111148877f6559a2",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-3",
+          "sha256": "11cc5134fe4ecbb576428c34be46cb8c2c52746aa6a8dedaa60604f172e7e1f4",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-4",
+          "sha256": "0ad53bb213d7318de57d0ade397a97c384cbd63dc45b0b7b84dfcf41bfde27f3",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-5",
+          "sha256": "a7de250d9c53d79dc5598469c72ab4707248a2926f5729777c40c3eaab17754f",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-6",
+          "sha256": "f8df0a33b8d3dfc8a79bfba592f79a8f76a117c1ef1fd8466be265f85f3caa5e",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-7",
+          "sha256": "c4cc45a5061aba760268f8ec68ab942e9052fce5f0edf026ed8188fc13aefbd0",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-8",
+          "sha256": "b6d9613fe636f005f24c66ac08ef8c40c59a1c32c241fbced18ee7c8ba0826f6",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-9",
+          "sha256": "0372ed4beb1f043c42227ce51abf6993d52d28a9e0125e69cdc0085c22ee0b30",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-10",
+          "sha256": "4fb80e4c2969c1cb16f1dd9c47e72bdb410f5826cad39d5c7d13809311a39ddc",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-11",
+          "sha256": "6622d2ec87f3bd873695db5170f243b8bceef2ea8c5f25d1285661fc35594ed1",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-12",
+          "sha256": "34f11e80139760686d5b80a936792364601d815b8ff2708bfa9889ef6b1878dc",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-13",
+          "sha256": "34d6c4792e1e4e136502972d28ee2de8a5dcde914a081df05e00f71bf29a7fa0",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-14",
+          "sha256": "2b3b7bfad092ad90f1b562245b752cb8f60eba53ec07b94476bf0197e47949a3",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-15",
+          "sha256": "8ba6234f6f06b04c38c6ce3f6de350fbe527c6ab3c72721ea262a09d04eac307",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-16",
+          "sha256": "195ee2d9a80ff15f382fac42004e7fc9eff662a48069a56eb9bc4b4a073acac3",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-17",
+          "sha256": "a9d4dd6238207b91143e01ec4dcf59164efadf2dd1c1d0dca8509374ed93fadc",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-18",
+          "sha256": "fb5ea7c5934e2960b05f2bf1f0f0111f5d697622635596635d74b010c3596b9a",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-19",
+          "sha256": "e76001da93c8d48948c7aefcfde51ba51cad7867ae21e3ea677d56f2fa0e9865",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-20",
+          "sha256": "d6f008571cbcab02f0624703741d70c8e4ab43d0818cecd5292b6da82c6a0383",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-21",
+          "sha256": "ff957de1fd3eead9a3d875b9c6a7246b81bc622e0b1f4e5d0d9376dc0b545e58",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-22",
+          "sha256": "214cc7900a78f9bfa5786ffa1877ee635bd50873195614d4a66f9f8c890d5ae0",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-23",
+          "sha256": "f083f4bda665734f01e2e33b6e0516dab04c30e78b2018e861adbf0c958a4b6e",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-24",
+          "sha256": "4ac2ce4d8309f590759007d97b333e1586642fdb37237d15804911f9b159c2c7",
+          "origin": "source-text"
+        },
+        {
+          "id": "saraswati-25",
+          "sha256": "1d65707b13a6dacd8bc4a990326f263334a27b9065b7afa4b14df843be21ebd9",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "satyanarayana-mantras",
+      "url": "https://www.drikpanchang.com/hindu-gods/trimurti/lord-vishnu/puja-vidhi/satyanarayan-puja-vidhi.html",
+      "source_html_sha256": "8111783c0543e78e156a1d9c661a13aee1aba9325f62f9e25e9902ccc0951546",
+      "sections": [
+        {
+          "id": "satyanarayana-mantras-1",
+          "sha256": "b3e399ec6f66511276d94ff9ac17bf305331fa42a145d4af1afacebf8fce5616",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-2",
+          "sha256": "27a81dfe09f906e7932165bd9fd1ee7aa3d95cc272945690beacf9cd67610ce9",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-3",
+          "sha256": "43687a15ef5f59f30df14191e10a34e82279cfd356c6466e473b2e0d4bb92b57",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-4",
+          "sha256": "a0887b2c6b96ff4cabdd49301427000819d67ea7ac0f70c1c6f7a11bccbb6b62",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-5",
+          "sha256": "76267f8701ff80dcf7134b9cbc2d58f2134613e02abf2c76e58050c41e829f1d",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-6",
+          "sha256": "8ff083f0da50b4a2432715bb79012c6e8c65442985ac8e9cdc157236057c685b",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-7",
+          "sha256": "f2fa3714c87aba22bb6856960342a4b237c011c848792a18880ed0eb3681dadd",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-8",
+          "sha256": "31ef7529e1dea0401ab98f23db81a801428e47494f8a064dfe14b96fcf878737",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-9",
+          "sha256": "400dcb5a86c74d6b3ed13e7a81aea2b1ddc68a31dded1108a86ed2a874d1d973",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-10",
+          "sha256": "bc6a3a78e462bfadc711635e5d6771ffc88748ca27bb71567b757f0813051300",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-11",
+          "sha256": "5d301806a631ba59299baedd273c0de77f903203d0a8748e6518fa1bc1139362",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-12",
+          "sha256": "fdd1e3fc2c2b8b8bd13806bb321d57ca98c794197c6bfdbdcf91e557f300b464",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-13",
+          "sha256": "53c2330f3910e6704ea0075c13a6eea6841e268d2cef464aa7f1510764278d11",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-14",
+          "sha256": "dd2a8c8e2aad939cc6550d36044ca5afe051e31504731357a18e9fe1b9186f1c",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-15",
+          "sha256": "a18c0ac50d7063b15e552d03122a9fcef5e1b2f379879a11acb2e83f59eba2ed",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-16",
+          "sha256": "ed27679bd364724f83d955074e783c7ca17545ccc399e4d48be687776bfb064b",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-17",
+          "sha256": "9ef81350f91125af10b421f94906fce94b77af8e3afcdf481a9ba9e710b66d39",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-18",
+          "sha256": "6ddfaaca0a9f35c52dc4b127a7d17cc6b63a80b78797bc0538db8b29dfd52ad6",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-19",
+          "sha256": "d9898a800ef0912a41a270557451de8924d1fc5ac6e6936957d2868298087793",
+          "origin": "source-text"
+        },
+        {
+          "id": "satyanarayana-mantras-20",
+          "sha256": "743e1d078e879b211b6e03db27d21d2f095d14a8aa1aebfed726404365da9a4a",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "shiva",
+      "url": "https://www.drikpanchang.com/hindu-gods/trimurti/lord-shiva/info/puja-vidhi/lord-shiva-puja-vidhi.html",
+      "source_html_sha256": "3aa53e095a23e4ae3ee8d1e6dffbfe5fc6cde22d0aec45ad1879d47394f5c538",
+      "sections": [
+        {
+          "id": "shiva-1",
+          "sha256": "cbfdb76d2fbc38d28322df3852e3658f0ca30f6abf79c0202d9791003b341070",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-2",
+          "sha256": "310e27feb7ea8f8ae055c560429a73313fd692e2271f81dd34f1f53a928e9910",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-3",
+          "sha256": "c702a01e79fafec9a39011a367eeaa3249218cc588b2173dc998a72b83e07f0b",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-4",
+          "sha256": "76eff25e83b28dfab541bee1722731ae8f6fa3bc7a91a62104f85d30cfa5eee5",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-5",
+          "sha256": "5ff687dc9e953e28a35b7b610ec31e12de8bb6d8bd15d645218dfc4ba7b3e1d0",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-6",
+          "sha256": "d6eceef265957d968792288f8a4e8e730bd49b5724fcc3efc3fad1579ae2303d",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-7",
+          "sha256": "1a6a4128ac847f7e7d2826747d84fb79c23bc05bf0069cd80122a8ffc6df78fa",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-8",
+          "sha256": "3efc3aa845742184aa3d0cbde6b3737fe9cf4748958effe35192ef606d4cc55b",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-9",
+          "sha256": "2ede15ea6fa0b90d6e220a9acda122033f0ec21dddc4a92b5b86ad2a100cf3a0",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-10",
+          "sha256": "0e2e4df9edebdce40d665fd10d563e8f75cf1c87c5a6964fddfbe4f4d79b6782",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-11",
+          "sha256": "9e5c99808936f8893fe2d74327bb41cc85b651a6329ec8b39a10cfcebb3b817b",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-12",
+          "sha256": "e0cbd801063093bfa425aaa9aeaa244694ba7c49dae4c8ac4ac51c71ee8b5930",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-13",
+          "sha256": "0699960018a298a6689def8fb5664aaa8f3b012d24a5159a54a501b0b38a49f9",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-14",
+          "sha256": "825fb3d47deeda1b4fbfe5ad77fb3d564c1bb19843b038b53ca313da33adeeca",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-15",
+          "sha256": "55555858e8d55233c19c963580dbf66d3c05b62e387edeccab345890a3ea2bb4",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-16",
+          "sha256": "d692256cf399595a9d99817ded2f89f1132b39d86503df021c7a1e0b66172322",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-17",
+          "sha256": "2bb110be798071a4bf2254605ba07373d7eef737a6b095478592f67d49e47010",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-18",
+          "sha256": "701727b8f9f5fd6568b7ac589ab94429d2e9d7dab23793a1268a0cb86e1f87ec",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-19",
+          "sha256": "53984aab34cb4bbaf4b775de48e242806336ca78f6d28a8e424e7c93e2b4c099",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-20",
+          "sha256": "96f4951adaf1f81b38408ec5ef1371e2857c23e7adf590a24721070f2048e79e",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-21",
+          "sha256": "cee5ca837cce68d8845ee036e2dbd6c3409eb2640a3f36b28d01a141b2191638",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-22",
+          "sha256": "59c27567effd07ea8cb7575afd925c886901625c6a81a1ce80eaa8fb5734879d",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-23",
+          "sha256": "86f03235e2a7a92426381af68f8a8580a122b1f156b2a2317601e7b798e8682c",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-24",
+          "sha256": "8e86c256123001c85d54424c4d47e3a902174d225110025c57088bcad426e830",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-25",
+          "sha256": "b9a366b92c325c7418951fe7575d1e68883bb861e9d84ff7079477bb42bbe4f1",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-26",
+          "sha256": "370c2d71382706e6725fd7f6eca30481b691846dc13930414b0c757e866d926d",
+          "origin": "source-text"
+        },
+        {
+          "id": "shiva-27",
+          "sha256": "de097a0f0f8c78fe6a7590236d3c67a1871ecf7809012b079a569c066696f8e4",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "varalakshmi",
+      "url": "https://www.drikpanchang.com/vrats/varalakshmi/puja-vidhi/varalakshmi-puja-vidhi.html",
+      "source_html_sha256": "3267e9c9e54075cf55e1b47c95be8269120b3d65551e6a8b8171c9e9eaf00c61",
+      "sections": [
+        {
+          "id": "varalakshmi-1",
+          "sha256": "fb52ecbbd36003bf5b30aaaa5cd45c3ae2e7c292ebf60650386ffb1bd1bc5ad6",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-2",
+          "sha256": "418fbcff1dab765cab4b751e125a371b209058f45139c3dad773317f91e6cf5e",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-3",
+          "sha256": "375c511aeff842adf662221554492a42992ac8b0fd5406d9c7c4e5750705d50d",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-4",
+          "sha256": "569fea31ca3339ad3ad0438e8806a4952d5c7c5cca9d72fd99c35c07d431d907",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-5",
+          "sha256": "637c8f123074be2d575237585b08adccc45853aeb5aaaa92fba9a8bbc2f36ffa",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-6",
+          "sha256": "0985677ebcbe24286563323d250794a4d707c677146a3d42536efaad1c44bc6d",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-7",
+          "sha256": "463c70c95e23330a249307c62416bc57cdde3a884285260c1cb189403c0537d1",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-8",
+          "sha256": "837b5bc193884f4363421401f3ca7c9babc93ba522aaa48f065cadd55e149d12",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-9",
+          "sha256": "bb3308dcc7515279ee8556d12f2b494aafe494715d20fe7c44e37a50dd6daa0e",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-10",
+          "sha256": "9096eb84e72d0865c3e10f4e06b7db1f14332e03714c854a8548850500a4c671",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-11",
+          "sha256": "3d7c83ca09f1c07a454e7a19458e5c44b6d3fbc02876cd123d20fe1ab83c9057",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-12",
+          "sha256": "e9185e129f8018728496a7163b814ab26213139425b15c3e1769ef597d82fdfb",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-13",
+          "sha256": "f3e35c52f97f6a4c88a4a8762f98dd034c2df9939a7f52ea520f6157df0ea263",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-14",
+          "sha256": "8498e232106687e49f783646c0e2e92bca957c52308c657715e9dbb88b3b3ae3",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-15",
+          "sha256": "7efe43313c7984c159876ca3566773415bf4310cd7e87d27f0e91870ef9dd2b2",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-16",
+          "sha256": "eb530081832762decb5f5dfa688439c7269640459ad3721c9e9731976a8b2852",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-17",
+          "sha256": "300337620a96df926a586c9ea881971dfa3645ccfdc7f125ba6b3ff0d6d21a87",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-18",
+          "sha256": "834998b93712862a49409c249bc6e3ddfa7d47c3cf794873a7c8ab615a8150fb",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-19",
+          "sha256": "07a72429b8a66036b756246aaf425c27abee34c73044797253c4f0d7dde654da",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-20",
+          "sha256": "70a90adb65e9f58685d5195cb58c2073147bfd0954d1fcc0381dbe5855d458f8",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-21",
+          "sha256": "88f4386aeb3ec12843fc4d5ce0ac07c40efff265cc92e4a39b73d963b8392db1",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-22",
+          "sha256": "a12b866e43328b5a13fac92d02ceff11a9dcc6ed93ece0f13c3c6e5cdd0a03c8",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-23",
+          "sha256": "cd8e03c934723151429b819dac58b5c2bda0cff34e8a23c6d5ea7a86ee0d86af",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-24",
+          "sha256": "ca45c19aadc4d28c524a06824ad898c5738fcec6d727b0cf65b52b55babc9b84",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-25",
+          "sha256": "0e8039f9fef5de994bb274e6047b0faefe6d84a0553d9106df77ba0602181f51",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-26",
+          "sha256": "6046c6fc7f437144a3ef0b320d4a26d42a62746687e65207ccf07beb063fb6ef",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-27",
+          "sha256": "e7aed90cea5e6c9d31b927e70e345966792ed6c31851bcdad05c29cd42aed440",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-28",
+          "sha256": "87d4929f094e9df48670cbdbf25b694abd11d8a56486f39dfe53d21223798b6b",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-29",
+          "sha256": "e0366050aba95141a1a09e653a00acba2023c77cd29d54002da517d5aae5f906",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-30",
+          "sha256": "696dbcc6463809fc5e13291e4ee7c484f7c6ec0db016b8ae705666327a8177df",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-31",
+          "sha256": "c33a84b783c0870ea81d827929192e2d98596a2f18853b0ed707488bd27718cb",
+          "origin": "source-text"
+        },
+        {
+          "id": "varalakshmi-32",
+          "sha256": "879ef976021246533cc1d1dae179749196c980310fcb4a6f6b114abe7a74c590",
+          "origin": "source-text"
+        }
+      ]
+    },
+    {
+      "key": "vat-savitri",
+      "url": "https://www.drikpanchang.com/festivals/savitri/puja-vidhi/vat-savitri-puja-vidhi.html",
+      "source_html_sha256": "fe63843f7fc34a35d74e392a3f21552d1ee1ed053afe26bbc29adaf1f83c6118",
+      "sections": [
+        {
+          "id": "vat-savitri-1",
+          "sha256": "addcb9161a1c29adfb8d615629b866b20ee973b2e99343c165bbb37ee32e3912",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-2",
+          "sha256": "d1d3774d2c1a9cbadfe13bd91e1f8bce04c2c1d1bc757ca63205902c99063063",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-3",
+          "sha256": "3fb74e98cac64b0c270b420ec771c6aff30a28f5834d1f241efc1e32b10bb478",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-4",
+          "sha256": "42f17071ee13efb43623e328135d69d825afef1aacd36aa38cb480b93789a018",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-5",
+          "sha256": "36b194a467f40b342dc86b6f04043be5e1ca4db376a830b70ee1ad74fc83f9aa",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-6",
+          "sha256": "dcd2a41dcb9d09d0f32c4f6235b5197d609836579adaf26b687b011977a4ddf5",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-7",
+          "sha256": "adb0500e5791c3eb16df3e8754cbf9579f8ee249f3fe23b4c89ee9ac9a4f711b",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-8",
+          "sha256": "4bd9d9035ec07f7579ed24d602e8278527bb744f997f9679b22aa84feb0126d2",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-9",
+          "sha256": "256ba1ba64cf38c69392d7a2fe36f63cbd9a56e21eb0ded6a839dd49ed054df2",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-10",
+          "sha256": "179a4eb4e36f3ce3736326dc3922b519650cc262bad81e3d98e12c6884377d5d",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-11",
+          "sha256": "bddb07cba4ac44bae9831e597d66d4186b586b2128a6fcad3a7c9a8a1b6d00f0",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-12",
+          "sha256": "139d19e83f60d2603bc0446b10dbeaba768db3cce98faf955e308e5c22872842",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-13",
+          "sha256": "c522f6edc1a1a40dc13de9b9067c97ca614ec8c51d4e7a0d91b8b92908e6adfb",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-14",
+          "sha256": "c373c6fc06b0f0d5e009069c9f179dc2639d32f8eeadb4b21e5d7e59d4e79797",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-15",
+          "sha256": "2575730cda5a8691f3015683a2c5291e4023d32e3eb044f991d3feade32479f3",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-16",
+          "sha256": "295ccbe73869465700d31ea7af423357e43b4d21ceae8e9406a96cdbb660fd80",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-17",
+          "sha256": "c668adfad6728a0ff4338747dea743c80b6df89d7564a4b0c36b792013ce28ab",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-18",
+          "sha256": "e065e8131f6e2ae84a1cae0de512a6093175c6c520668491fd83e4b3cb848433",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-19",
+          "sha256": "b3d2173eed66f294a847da577cdb4e84a82e9a13c961f2135688dc66628a42da",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-20",
+          "sha256": "d6a2e5d533e84eb497cc607b92f4ad34e4fbf4f779e2a5c64c3748bbd2f7154a",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-21",
+          "sha256": "936ffb46a85b8934845d5a063e805f2758403f6fa282dbb0f7842f004c238eed",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-22",
+          "sha256": "4eae0b566a155e7ed9764394a26b5f729f4fa92d3cf4603ce8f61164af54c334",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-23",
+          "sha256": "c83ef0cf7501d24a118643586f57c6f897186e6e47c82e50e7bd6620aa1016bc",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-24",
+          "sha256": "68eb5fd784d02688d44b449b6d6669f155e26cf5b1f5e467728e21c93ff71e3c",
+          "origin": "image-transcription"
+        },
+        {
+          "id": "vat-savitri-25",
+          "sha256": "6b46e0a11c554c5b20791983ae3f96d5da04751c3d50aa9b13007efc411ae12b",
+          "origin": "image-transcription"
+        }
+      ]
+    }
+  ],
+  "image_sources": [
+    {
+      "file": "dhanvantari-000.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/achamana_mantra.png.webp",
+      "sha256": "81529c4874e05f09578f5b24746de153c1a16781ca99c20dc78be6a14a79385b"
+    },
+    {
+      "file": "dhanvantari-001.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/sankalpa_mantra.png.webp",
+      "sha256": "e70bc1222efa8bc4ac931e37644ea8b8f645668c71184798dc28778ad60d0345"
+    },
+    {
+      "file": "dhanvantari-002.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/atma_shodhan_mantra.png.webp",
+      "sha256": "c98dad52f7c24812dd00f3324305048b04274217779982c9fd2746ecdad8c499"
+    },
+    {
+      "file": "dhanvantari-003.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/dhyana_mantra.png.webp",
+      "sha256": "104a1142e2e8041acfa9328dad1ad7e3da6750d8213c6caa521c176e8bc3fc2f"
+    },
+    {
+      "file": "dhanvantari-004.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/avahana_mantra.png.webp",
+      "sha256": "4d36347dea75389faa40e777bbaaa7dec5e1221921b976ae2377f3b8737e2d22"
+    },
+    {
+      "file": "dhanvantari-005.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/pushpanjali_mantra.png.webp",
+      "sha256": "9d56073637580d190bbd7fb75345bb0134f2738c260f225aefa8c362f64704e5"
+    },
+    {
+      "file": "dhanvantari-006.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/swagat_mantra.png.webp",
+      "sha256": "fc6146fd3084ec2c19d8b62d1f6fd276a5448d2b12eb697d24d076270aa4d1dd"
+    },
+    {
+      "file": "dhanvantari-007.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/padya_samarpan_mantra.png.webp",
+      "sha256": "401603b8fb6a2efa95535be1ca8c6fc7add86230183a15e3e46d66c74aaa034a"
+    },
+    {
+      "file": "dhanvantari-008.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/arghya_samarpan_mantra.png.webp",
+      "sha256": "7f1ed374b26f2dac15454fa0dbe326053a0041a140953e16b0b560d10906535c"
+    },
+    {
+      "file": "dhanvantari-009.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/gandha_samarpan_mantra.png.webp",
+      "sha256": "5e0f759fded20f5ae934ae9302f85fbdfa0c3a0f56cb70aad5a3ab7ee6383b75"
+    },
+    {
+      "file": "dhanvantari-010.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/pushpa_samarpan_mantra.png.webp",
+      "sha256": "dfe45ece109b7d1e1c58831169cc6d69c3c818afd44f4221ae0973fc2fcf250d"
+    },
+    {
+      "file": "dhanvantari-011.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/dhoop_samarpan_mantra.png.webp",
+      "sha256": "0be88eca762e99898930cb9ecad362cbcfeaf9ef7a385e3bad478b7e1160e1f4"
+    },
+    {
+      "file": "dhanvantari-012.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/deep_samarpan_mantra.png.webp",
+      "sha256": "25ee6cccb3f3d457b505f2de58a387d248cc87c762119b812dcb11c9d95572a2"
+    },
+    {
+      "file": "dhanvantari-013.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/naivedya_samarpan_mantra.png.webp",
+      "sha256": "a1f430b4dfa3eed4032517f8f91b98dd9d3c3c53e34bcc0a171594abe070d52d"
+    },
+    {
+      "file": "dhanvantari-014.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/achamana_samarpan_mantra.png.webp",
+      "sha256": "c4cda3c64571e67d82ca46a1edcfa42bc4d2b4999822cfcf22051f5ca957b205"
+    },
+    {
+      "file": "dhanvantari-015.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/tambula_samarpan_mantra.png.webp",
+      "sha256": "6d9fce5590a53fc3da5d75e27045a5daeb86f19075d303122a95ffcc9b72f8a4"
+    },
+    {
+      "file": "dhanvantari-016.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/dakshina_mantra.png.webp",
+      "sha256": "e47fd19b09131a26378f5e840a12d60dbc08c80cba24bf96155c2751f9cc365f"
+    },
+    {
+      "file": "dhanvantari-017.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/pradakshina_mantra.png.webp",
+      "sha256": "077d3f43f7b8f6caec195ab641e7e0d359088431ac2987cef787981108762e5a"
+    },
+    {
+      "file": "dhanvantari-018.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/vandana_sahita_pushpanjali_mantra.png.webp",
+      "sha256": "926cfa083f1ccc836fb71ee556d8fe17ea2e449bda1a75381bb88a3381fb5ce8"
+    },
+    {
+      "file": "dhanvantari-019.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/sashtanga_pranam_mantra.png.webp",
+      "sha256": "bacad5fc9664d879f14826e9ea9e588b030014fdce93c280bb76b0ec542e2448"
+    },
+    {
+      "file": "dhanvantari-020.webp",
+      "url": "https://static.drikp.com/images/mantra/dhanvantari/puja-vidhi/hi/kshama_prarthana_mantra.png.webp",
+      "sha256": "de50d6fb94e72a5e6bec3784b8426da36069714f20e4dd97b4e3dbdf60c1f7a4"
+    },
+    {
+      "file": "naraka-chaturdashi-021.webp",
+      "url": "https://static.drikp.com/images/mantra/naraka-chaturdashi/puja-vidhi/hi/prarthana_mantra.png.webp",
+      "sha256": "d7867868a918635a5a3ac950e20eb9b0d0614dde66597bb20e0d16d377226362"
+    },
+    {
+      "file": "naraka-chaturdashi-022.webp",
+      "url": "https://static.drikp.com/images/mantra/naraka-chaturdashi/puja-vidhi/hi/tarpana_mantra.png.webp",
+      "sha256": "b9bcfd9b53aacf3ebe9d4ba7128e190b53fa13e8cba2e8c8615ebfbcf5df93b9"
+    },
+    {
+      "file": "raksha-bandhan-023.webp",
+      "url": "https://static.drikp.com/images/mantra/raksha-bandhan/puja-vidhi/hi/rakhi_mantra.png.webp",
+      "sha256": "7016a8f23ece0adf2ddf56ff37c3d6aaafdefd7e186bc7cc55d5da860b40ee6e"
+    },
+    {
+      "file": "vat-savitri-024.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/dhyana_mantra.png.webp",
+      "sha256": "8b6b207ef000b8617892fbc9ae0f6c45c37fefad94daa9f078ef891b996417de"
+    },
+    {
+      "file": "vat-savitri-025.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/avahana_mantra.png.webp",
+      "sha256": "bf822918dc1cee0189b3a20b6adb6bdd8fda42f4d49d7b42843534038b4710d2"
+    },
+    {
+      "file": "vat-savitri-026.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/asana_mantra.png.webp",
+      "sha256": "e7726bd6c86b422fe92955a3df00e26cd6951c800cf2d5623178e97baeb90ff3"
+    },
+    {
+      "file": "vat-savitri-027.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/padya_mantra.png.webp",
+      "sha256": "6748f74111477d6db296e72c34848f297d1faabdb91b7c7387ab0234cd668440"
+    },
+    {
+      "file": "vat-savitri-028.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/arghya_mantra.png.webp",
+      "sha256": "1a6758c7309818d8f3b1eed8b798cd11a182ea33da5938f4bff269ea551899aa"
+    },
+    {
+      "file": "vat-savitri-029.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/achamaniya_mantra.png.webp",
+      "sha256": "76c4599dff9ee477fcb845e8a96c43a48d5403054ecd53587081a36f9b7660dd"
+    },
+    {
+      "file": "vat-savitri-030.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/panchamrita_snana_mantra.png.webp",
+      "sha256": "95f2a9bff1e7ffa0de9d7ea8b704d5f1e117cb7523d3488eb8af0d8012ab284f"
+    },
+    {
+      "file": "vat-savitri-031.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/snana_mantra.png.webp",
+      "sha256": "7865069b5a95e7d021e71967834fbf7722fbd0af247c8dd70e7bfaea9e0ecb7e"
+    },
+    {
+      "file": "vat-savitri-032.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/vastra_mantra.png.webp",
+      "sha256": "f36460fcae98519f59c7a114430e847886f4af186d4789152cba1249f2d2747b"
+    },
+    {
+      "file": "vat-savitri-033.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/upavita_mantra.png.webp",
+      "sha256": "3537141639e43c2fca6e5e0b59fb0874f2f784fb2dd191bebabbe7d080ce9571"
+    },
+    {
+      "file": "vat-savitri-034.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/bhushana_mantra.png.webp",
+      "sha256": "28b5c20f2d74963355ca65f6cebd7b2feb4482ea423db8bf2558f4f100af2a9e"
+    },
+    {
+      "file": "vat-savitri-035.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/chandana_mantra.png.webp",
+      "sha256": "0da0823fa983b383108d4eb82d85a0ec14394cf127b0cdfca314760e6b592cb7"
+    },
+    {
+      "file": "vat-savitri-036.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/akshata_mantra.png.webp",
+      "sha256": "6e50e227d637a9e940a654bbfa56502dc471fd027e9a147be4802d4ff4feadd1"
+    },
+    {
+      "file": "vat-savitri-037.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/saubhagyadravya_mantra.png.webp",
+      "sha256": "609a952a857038c67619abedba6be729c5015db6442a123da46df571097784e2"
+    },
+    {
+      "file": "vat-savitri-038.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/pushpa_mantra.png.webp",
+      "sha256": "dec16d486e984f1f9c4dede02a399c81f046fa96b414555700ae7c8aa4f7e22b"
+    },
+    {
+      "file": "vat-savitri-039.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/anga_puja_mantra.png.webp",
+      "sha256": "19f1fcaa5c5dbbc720eb007ac41a8a89ecbb1dbb1a29699d7fd24046abdf97a9"
+    },
+    {
+      "file": "vat-savitri-040.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/brahmasatya_puja_mantra.png.webp",
+      "sha256": "364fd376cdda4b79651d265bbb8f1ce216b99bf6a20a14a1d93f6646be734460"
+    },
+    {
+      "file": "vat-savitri-041.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/dhupa_mantra.png.webp",
+      "sha256": "d91dda7b3e1e4b13316faa7208311467bdae10a59c9e38fcd2597898b4dd4b17"
+    },
+    {
+      "file": "vat-savitri-042.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/deepa_mantra.png.webp",
+      "sha256": "7cfd2db503e0eab45088e0f10bc98d177dd54d5b2d100400e8015e916517e785"
+    },
+    {
+      "file": "vat-savitri-043.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/naivedya_mantra.png.webp",
+      "sha256": "d981e30fcce3ca950ed32df0a6288413c513442686acf11743e8a7d8334fd9bc"
+    },
+    {
+      "file": "vat-savitri-044.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/phala_mantra.png.webp",
+      "sha256": "0b0b5a53275c51befc954261c7e9377df94ff57dd95d5c8ed3da5d732c1fb364"
+    },
+    {
+      "file": "vat-savitri-045.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/tambula_mantra.png.webp",
+      "sha256": "dab3002f72985cdd0677b8e9a69faf9caa2570f093c875904c696317951fc46c"
+    },
+    {
+      "file": "vat-savitri-046.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/dakshina_mantra.png.webp",
+      "sha256": "3a0bcababae76563eb0eb755dc10fd6d52e6b0459b642ea919e15204ebc7f8ba"
+    },
+    {
+      "file": "vat-savitri-047.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/pushpanjali_mantra.png.webp",
+      "sha256": "8cfcdc462d8915547a5f5021fbe5f80fd817f82b4fd1e157c519cb02596b077e"
+    },
+    {
+      "file": "vat-savitri-048.webp",
+      "url": "https://static.drikp.com/images/mantra/savitri-puja/puja-vidhi/hi/prarthana_mantra.png.webp",
+      "sha256": "2f8b762ceb243ca32565a238e693f61d5b9e663b6b58d500540cea1f2323e793"
+    }
+  ]
+}

@@ -38,8 +38,8 @@ func placementChecks(chart swisseph.Kundali) []PlacementCheck {
 	}
 	// angular identifies the four angular houses used by the placement-pattern rules.
 	angular := func(h int) bool { return h == 1 || h == 4 || h == 7 || h == 10 }
-	// mangal identifies the declared Mars-sensitive houses used by the placement checks.
-	mangal := func(h int) bool { return h == 1 || h == 2 || h == 4 || h == 7 || h == 8 || h == 12 }
+	// All Mangal placement views use the same source-defined five houses.
+	mangal := swisseph.MangalSensitiveHouse
 	mars := 0
 	if p, ok := byName["Mars"]; ok && p.RashiNumber >= 1 && p.RashiNumber <= 12 && chart.Lagna.RashiNumber >= 1 && chart.Lagna.RashiNumber <= 12 {
 		mars = (p.RashiNumber-chart.Lagna.RashiNumber+12)%12 + 1

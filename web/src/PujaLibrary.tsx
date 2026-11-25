@@ -7,10 +7,13 @@ import DevotionalMotif from "./DevotionalMotif";
 import { devotionalSubjectArtwork } from "./devotional-art";
 import { devotionalPage } from "./devotional-navigation";
 import { pujaKinds } from "./puja-types";
-import type { PujaGuide, PujaSummary } from "./puja-types";
+import type { PujaGuide, PujaSummary, PujaMantraReading } from "./puja-types";
+import PujaMantras from "./PujaMantras";
+import { pujaStepReadings } from "./puja-step-mantras";
 import { pujaListPath, pujaPageSize } from "./puja-navigation";
 import collection from "./data/puja-index.json";
 import guideAsset from "./data/puja-guides.json?url";
+import mantraAsset from "./data/puja-mantras.json?url";
 import "./devotional.css";
 import "./puja.css";
 
@@ -60,7 +63,7 @@ export default function PujaLibrary() {
   const heading = useRef<HTMLHeadingElement>(null);
   const resultsHeading = useRef<HTMLHeadingElement>(null);
   const previousListing = useRef({ page, query, kind: kind?.id });
-  const [reading, setReading] = useState<PujaGuide | null>(null);
+  const [reading, setReading] = useState<(PujaGuide & { mantraSteps: PujaMantraReading[][] }) | null>(null);
   const [loadError, setLoadError] = useState(false);
   const [attempt, setAttempt] = useState(0);
   const [fontSize, setFontSize] = useState(18);
@@ -82,13 +85,15 @@ export default function PujaLibrary() {
     let active = true;
     const controller = new AbortController();
     setLoadError(false);
-    if (selected) fetch(guideAsset, { signal: controller.signal }).then(response => {
+    if (selected) Promise.all([guideAsset, mantraAsset].map(asset => fetch(asset, { signal: controller.signal }).then(response => {
       if (!response.ok) throw new Error("Guide asset unavailable");
       return response.json();
-    }).then((collection: PujaGuide[]) => {
+    }))).then(assets => {
+      const [collection, mantras] = assets as [PujaGuide[], Record<string, PujaMantraReading>];
       const guide = collection.find(item => item.slug === selected.slug);
-      if (!guide?.steps.en.length || !guide.steps.hi.length) throw new Error("Guide missing from collection");
-      if (active) setReading(guide);
+      if (!guide?.steps.en.length || !guide.steps.hi.length || !Array.isArray(guide.mantra_readings)) throw new Error("Guide missing from collection");
+      const mantraSteps = pujaStepReadings(guide, mantras);
+      if (active) setReading({ ...guide, mantraSteps });
     }).catch(() => { if (active) setLoadError(true); });
     return () => { active = false; controller.abort(); };
   }, [selected, attempt]);
@@ -127,19 +132,20 @@ export default function PujaLibrary() {
             <button type="button" aria-label={`A+, ${t("अक्षर बड़े करें")}`} disabled={fontSize >= 28} onClick={() => setFontSize(size => Math.min(28, size + 2))}>A+</button>
           </div>
           {reading?.slug === selected.slug ? <div className="puja-reading" lang={language} style={{ fontSize: `${fontSize}px` }}>
-            <div className="puja-reading-grid">
-              <section className="puja-panel puja-materials" aria-labelledby="puja-materials-title">
+            <div className="puja-reading-card">
+              <section className="puja-materials" aria-labelledby="puja-materials-title">
                 <h2 id="puja-materials-title">{t("Materials")}</h2>
-                <ul>{reading.materials[language].map(item => <li key={item}>{item}</li>)}</ul>
+                <p>{reading.materials[language].map((item, index) => <span key={item}><span className="puja-material-item">{item}</span>{index < reading.materials[language].length - 1 ? ", " : ""}</span>)}</p>
               </section>
-              <section className="puja-panel puja-steps" aria-labelledby="puja-steps-title">
-                <h2 id="puja-steps-title">{t("Worship steps")}</h2>
-                <ol>{reading.steps[language].map((step, index) => <li key={index}><p>{step}</p></li>)}</ol>
+              <section className="puja-steps" aria-labelledby="puja-steps-title">
+                <h2 id="puja-steps-title">{t("पूजन का संक्षिप्त क्रम")}</h2>
+                <p className="puja-mantra-guidance">{reading.mantra_note[language]}</p>
+                {reading.steps[language].map((step, index) => <div className="puja-step" key={index} data-puja-step={index + 1}><p className="puja-step-heading"><span className="puja-step-number">{index + 1}.</span> <span className="puja-step-instruction">{step}</span></p><PujaMantras readings={reading.mantraSteps[index]} /></div>)}
+              </section>
+              <section className="puja-notes" aria-labelledby="puja-notes-title"><h2 id="puja-notes-title">{t("Tradition & details")}</h2><p>{reading.note[language]}</p>
+                <p>{t("Rituals vary by family and region. Follow your tradition and your priest's guidance for elaborate ceremonies.")}</p>
               </section>
             </div>
-            <section className="puja-notes" aria-labelledby="puja-notes-title"><h2 id="puja-notes-title">{t("Tradition & details")}</h2><p>{reading.note[language]}</p>
-              <p>{t("Rituals vary by family and region. Follow your tradition and your priest's guidance for elaborate ceremonies.")}</p>
-            </section>
             <nav className="puja-related" aria-label={t("Related Aarti & readings")}>
               <a href={selected.related} onClick={event => followRoute(event, selected.related)}><BookOpen size={17} aria-hidden="true" />{t("Related Aarti & readings")}<ArrowRight size={16} aria-hidden="true" /></a>
               <a href="/#panchang" onClick={event => followRoute(event, "/#panchang")}><CalendarDays size={17} aria-hidden="true" />{t("View the date and local timings")}<ArrowRight size={16} aria-hidden="true" /></a>

@@ -15,7 +15,6 @@ import (
 	"strconv"
 	"strings"
 	"testing"
-	"time"
 )
 
 // TestRemedyPDFLanguageVocabularyCoverage prevents authored template and calculation labels from leaking untranslated into English PDFs.
@@ -58,79 +57,41 @@ func TestRemedyPDFLanguageVocabularyCoverage(t *testing.T) {
 	}
 }
 
-// TestRemedyPDFLanguagesPreservePurchasedText checks both complete localized documents, fallback text, unchanged snapshots and older-field availability.
+// TestRemedyPDFLanguagesPreservePurchasedText verifies original Hindi in both interfaces, excludes arbitrary prose and preserves stored snapshots.
 func TestRemedyPDFLanguagesPreservePurchasedText(t *testing.T) {
 	a := testApp(t)
 	r, err := calculate(a.Config, testBirth(), nil, a.Now())
 	if err != nil {
 		t.Fatal(err)
 	}
-	r.Rules = []Rule{{ID: "saved-rule", Category: "career", Topic: "Saved topic", Hindi: "सुरक्षित हिंदी व्याख्या", English: "Saved English interpretation <script>unsafe()</script>", Mantra: "मूल मंत्र का पाठ", Gemstone: "मूल रत्न निर्देश"}}
+	r.Rules = []Rule{{Hindi: "EXCLUDED-HINDI-RULE", English: "EXCLUDED-ENGLISH-RULE", Mantra: "EXCLUDED-MANTRA", Gemstone: "EXCLUDED-GEMSTONE"}}
 	order := &Order{ID: "saved-purchase", Snapshot: r, ReportID: r.ID, Amount: 9900}
 	before, _ := json.Marshal(order)
 	renderer := ChromePDF{FontPath: a.Config.FontPath, Origin: a.Config.Origin}
 	for _, language := range []string{"en", "hi"} {
-		html, err := renderer.documentLanguage(order, language)
+		markup, err := renderer.documentLanguage(order, language)
 		if err != nil {
 			t.Fatal(err)
 		}
-		for _, expected := range []string{`lang="` + language + `"`, r.Rules[0].Mantra, r.Rules[0].Gemstone} {
-			if !bytes.Contains(html, []byte(expected)) {
-				t.Errorf("%s missing %s", language, expected)
-			}
+		if !bytes.Contains(markup, []byte(`lang="`+language+`"`)) || bytes.Contains(markup, []byte("EXCLUDED-")) {
+			t.Fatal("incorrect source-only presentation", language)
 		}
-		if language == "en" {
-			ownedHTML := strings.NewReplacer(r.Birth.Name, "", r.Rules[0].Mantra, "", r.Rules[0].Gemstone, "").Replace(string(html))
-			// Source originals, like purchased remedies, retain the language of the supplied document.
-			for _, reading := range r.GurujiFaladesh.Readings {
-				ownedHTML = strings.ReplaceAll(ownedHTML, htmlstd.EscapeString(reading.HindiExcerpt), "")
-				ownedHTML = strings.ReplaceAll(ownedHTML, htmlstd.EscapeString(reading.Remedy.HindiExcerpt), "")
+		for _, entry := range r.SourceReadings {
+			if !strings.Contains(htmlstd.UnescapeString(string(markup)), entry.Text) {
+				t.Fatal("missing original Hindi", entry.Title)
 			}
-			for _, source := range r.GurujiFaladesh.Sources {
-				ownedHTML = strings.ReplaceAll(ownedHTML, htmlstd.EscapeString(source.Filename), "")
-			}
-			if found := regexp.MustCompile(`[\x{0900}-\x{097f}]+`).FindString(ownedHTML); found != "" {
-				t.Fatalf("untranslated English PDF label: %s", found)
-			}
-			for _, expected := range []string{"Janma Kundli", "Birth date:", "Kaal Sarp Dosha", "Rajyog", "Saved English interpretation &lt;script&gt;", "Mantras and remedy instructions below retain"} {
-				if !bytes.Contains(html, []byte(expected)) {
-					t.Errorf("English PDF missing %s", expected)
-				}
-			}
-			if bytes.Contains(html, []byte(r.Rules[0].Hindi)) || bytes.Contains(html, []byte("<script>unsafe()")) {
-				t.Fatal("wrong interpretation language or unescaped content")
-			}
-			ownedSections := []pdfSection{}
-			for _, section := range (pdfLocale{"en"}).sections(r, time.UTC) {
-				if section.ID != "guruji-references" {
-					ownedSections = append(ownedSections, section)
-				}
-			}
-			sections, _ := json.Marshal(ownedSections)
-			if found := regexp.MustCompile(`[\x{0900}-\x{097f}]+`).Find(sections); len(found) > 0 {
-				t.Fatalf("untranslated calculation evidence: %s", found)
-			}
-		} else if !bytes.Contains(html, []byte(r.Rules[0].Hindi)) || bytes.Contains(html, []byte(r.Rules[0].English)) {
-			t.Fatal("Hindi did not retain original interpretation")
 		}
 	}
 	after, _ := json.Marshal(order)
 	if !bytes.Equal(before, after) {
-		t.Fatal("language selection changed purchased snapshot")
-	}
-	r.Rules[0].English = ""
-	r.Details.YogaChecks = nil
-	html, err := renderer.documentLanguage(order, "en")
-	if err != nil || !bytes.Contains(html, []byte(r.Rules[0].Hindi)) || !bytes.Contains(html, []byte("English interpretation was not supplied")) || !bytes.Contains(html, []byte("no Kaal Sarp Dosha or Rajyog assessment")) {
-		t.Fatal("missing translation or older snapshot was silently replaced", err)
+		t.Fatal("rendering changed purchase")
 	}
 	if _, err := renderer.documentLanguage(order, "fr"); err == nil {
-		t.Fatal("accepted unsupported language")
+		t.Fatal("unsupported language")
 	}
 	r.Details = nil
-	html, err = renderer.documentLanguage(order, "en")
-	if err != nil || !bytes.Contains(html, []byte("This older saved version has no expanded")) {
-		t.Fatal("older purchase unavailable in English", err)
+	if _, err := renderer.documentLanguage(order, "en"); err != nil {
+		t.Fatal("old calculation snapshot unavailable", err)
 	}
 }
 
@@ -201,6 +162,13 @@ func TestRemedyPDFLanguageDownloadOwnershipAndRecovery(t *testing.T) {
 	}
 	if len(f.languages) != 2 || f.languages[0] != "hi" || f.languages[1] != "en" || f.seenSnapshot.ID != r.ID {
 		t.Fatal("wrong language or live report used")
+	}
+	// A pre-policy cached file must not expose authored prose through the legacy URL.
+	if err := a.Store.Update(context.Background(), func(s *State) error { s.Orders[o.ID].Snapshot.SourceReadings = nil; return nil }); err != nil {
+		t.Fatal(err)
+	}
+	if w := request(t, a, "GET", path, nil, alice, ""); w.Code != 200 || !strings.Contains(w.Body.String(), "localized-hi") {
+		t.Fatal("legacy URL served its old authored file")
 	}
 	a.remedyPDFSlots <- struct{}{}
 	busy := request(t, a, "GET", path+"?language=en", nil, alice, "")

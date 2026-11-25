@@ -1,0 +1,4 @@
+# Preserve reference documents, audio and compressed catalogs byte for byte.
+*.pdf binary
+*.ogg binary
+*.gz binary

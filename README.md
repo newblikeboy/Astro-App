@@ -74,98 +74,41 @@ dignity, combustion, Baladi states, classical aspects, three friendship tables,
 auditable Vimshopaka weights, BAV/SAV and Prastara Ashtakavarga tables.
 Five-level Vimshottari timelines (Mahadasha, Antardasha, Pratyantar, Sukshma
 and Prana) and Yogini/Antardashas are available. The single-person Kundli
-reuses the audited Lagna/Moon/Venus Mangal assessment and adds eleven yoga
+uses Guruji's recorded five-house Lagna/Moon Mangal rule and adds eleven yoga
 placement patterns. New calculations also include a versioned Kaal Sarp
 enclosure check with twelve house-based types and basic Kendra–Trikona Rajyog checks.
-The Numerology section records Mulank (birth day), Bhagyank (full birth date)
-and Chaldean Naamank (Latin name spelling), their reductions and number rulers.
-Naamank uses the main birth name, with no additional spelling field. Unsupported
-name scripts have an availability note. All nine Mulank profiles include original Hindi/English nature,
-work, surroundings, timing, routine, devotional and remedy readings, favourable
-correspondences and a planetary number yantra. Facts and prose are snapshotted;
-gemstone associations are not personal wearing prescriptions.
-It also works when birth time is unknown. The arithmetic and method are stored
-with new reports and printed in remedy PDFs; old snapshots are not backfilled.
-English/Hindi panels and selected-language PDF downloads lead with a personal
-conclusion and a plain-language traditional meaning, followed by the supporting
-positions and lord relationships. Absent, undecided and cancelled indications
-remain distinct; older reports need recreation for missing calculations.
-Purchased remedy PDFs offer an English/Hindi selector in the account. English
-downloads use the purchased English interpretation where supplied; original
-mantras and remedy instructions retain their saved wording. Existing Hindi
-files and purchase snapshots stay intact.
-The PDF opens as an illustrated book with a birth portrait, topic-by-topic
-personal readings, plain-language Yoga/Dosha conclusions, numerology and a Dasha
-reference. Full calculation tables follow in numbered appendices. Original
-Hindi/English chapter writing, linked contents, bookmarks and a restrained
-cream/burgundy design make the reading distinct from the technical evidence.
-Transits retain their timestamped snapshot, with an
-on-demand Sade Sati/Dhaiya timeline including retrograde exits/re-entries and
-labelled clipped edges. Faladesh reads
-applicable Guru Ji-approved content; missing approvals are shown transparently.
-New known-time reports also include the supplied Guruji reference library:
-108 graha/house passages, nine general remedy references, and the whiteboard's
-lagna-specific Karak/Marak and uchcha/neecha evidence. The consultation view
-leads with readable subject paragraphs. General has its own personal-direction,
-strength, balance and priority reading; career, money and relationship detail
-stays in the corresponding tabs. Technical source disclosures are not part of
-the public reader. Original evidence remains inside retained report data.
-Dasha dates in that retained layout appear only in the Dasha topic. Repeated cards, extra topic links
-and general-practice blocks have been removed. House lords remain included
-even in empty houses. Teacher-role and dignity categories
-are kept separate from a final outcome judgement. Source v2 corrects a missed
-Mercury entry in the Pisces whiteboard transcription. New summaries are
-versioned inside the report; old snapshots retain their wording. See the
-[source and method notes](references/guruji/README.md) and
-[shastra comparison and remaining gaps](references/guruji/SHASTRA-REVIEW-2026-11-01.md).
-New expanded reports also retain a versioned cross-factor analysis: house
-lords, occupants, significators, conjunctions/aspects, dignity/combustion,
-dispositor and relevant divisional context are considered together. Each
-category shows connected conclusions, practical detail and a next step; period
-dates stay on the Dasha topic. New classifications separately retain the board
-role, sign number, primary sign status, independent exalted/debilitated/own-sign
-flags and D1 whole-sign house. Karak capacity is qualified by sign condition;
-Marak or neutral planets do not become automatically favourable when exalted.
-Mercury in Virgo retains both exalted and own-sign flags, even in house 12.
-See the [board role/sign/house rules and examples](references/guruji/ROLE-SIGN-HOUSE-METHOD.md).
-Supporting factors do not become compulsory remedies. Existing reports keep
-their previous reading. See the [combined method and limits](references/guruji/COMBINED-FALADESH-METHOD.md).
-The [1 November calculation audit](docs/FINAL-CALCULATION-AUDIT-2026-11-01.md)
-separates verified numerical features from the remaining interpretation,
-browser/PDF consistency and personalised Vivah gaps.
-The subsequent [advanced-assessment update](references/guruji/ADVANCED-ASSESSMENT-METHOD.md)
-adds six-component Shadbala, four explicit Neechabhanga conditions, strength
-qualifications for the supported yoga catalog, personal lunar Gochar/Vedha and
-separate Nadi/Bhakoot cancellation assessments. New v5 Faladesh freezes one
-bilingual paragraph contract for the website and PDF, resolves opposing subject
-evidence and selects optional source-linked practices only for an actual
-connected obstacle. Base matching scores, original planetary positions, board
-roles and purchased snapshots remain intact. These are declared conventions,
-not a claim to implement every traditional rule or guarantee personal events.
-The personalised Vivah gap is intentionally outside this update.
-See the [follow-up audit and verification record](references/guruji/ADVANCED-AUDIT-2026-11-01.md)
-for completed checks and the remaining convention boundaries.
-Admin rules support life-topic categories and compound chart conditions. See
-[calculation methods and supported limits](docs/CALCULATIONS.md). New remedy
-PDFs now print the available expanded snapshot, including birth Panchang,
-Moon/Chalit/varga charts, planet analysis, Ashtakavarga, yoga/Mangal evidence,
-all retained Vimshottari/Yogini parents and Antardashas, the running five-level
-sequence and timestamped transits. Guidance and supplied remedies appear first,
-with repeating decorative borders, page numbers and linked contents. Older
-purchases keep their original snapshots; interactive date-window Saturn timelines
-and arbitrary deeper Dasha branches remain on the website. See
-[PDF scope and verification](docs/REMEDIES-PDF.md). The Kundli Dasha explorer shows both
-clearly labelled start and end dates/times to the minute in the birthplace's timezone, a
-running five-level sequence and inline, expandable planet rows. Open a planet
-to reveal nine subperiods beneath it, retaining the full sequence (such as
-Saturn–Saturn–Saturn) and every parent's start/end time through Prana.
-Birth forms display hours/minutes. Stored/API instants retain their precision;
-date/time accuracy depends on the recorded inputs and documented year convention.
+Faladesh and numerology interpretations now use only Guruji's seven supplied
+PDFs. The canonical compressed Hindi catalog is in
+`internal/gurujitext/data/catalog.json.gz`; complete source passages retain
+their PDF filename and page range. The reader retains its original nine
+life-area tabs and unified reading layout: General, Personality, Education,
+Career, Finance, Relationships, Family, Wellbeing and Dasha. Original Hindi
+paragraphs from the matched PDFs are organized under these subjects without
+generating summaries or replacing the tabs with PDF names.
+Numerology keeps birth-date and name arithmetic; only supplied Mulank and
+Bhagyank articles provide interpretation. Missing Bhagyank 3 has no fallback.
+Generated profiles, summaries, cross-factor narratives, translations and
+remedy recommendations have been removed.
+
+The separately supplied handwritten board also provides the twelve ascendant
+कारक/मारक/सम lists in `internal/platform/data/guruji-lagna-roles.json`.
+These original Hindi lists appear beneath charts using the natal D1 ascendant;
+switching to a divisional or Moon chart does not change that reference.
+The overview shows D1, Moon and D9 together, with natal degrees, nakshatra/pada
+and recorded motion/condition symbols. Each chart expands into an accessible
+dialog with a full position table. The D9 labels explicitly retain natal
+degrees and nakshatras; no divisional longitude is invented for saved reports.
+
+Yoga/Dosha checks and astronomical calculations remain numerical evidence,
+without separately authored life-outcome prose. Existing report and purchase
+records remain intact; current browser/PDF presentation excludes their old
+authored narratives. Legacy cached downloads are rendered again from the
+source catalog. See the [source policy and inventory](references/guruji/README.md).
 
 Kundli matching is available at **/kundli-matching** in English/Hindi. Enter
 both known birth times and select trusted birthplaces, with birth dates from
 1940 through today at each birthplace. `POST /api/kundli/match` calculates the
-eight base Ashtakoota factors out of 36 and separate three-reference Mangal analysis.
+eight base Ashtakoota factors out of 36 and separate Guruji Lagna/Moon Mangal analysis; Moon-only is partial.
 It requires no account, saves neither partner nor result, and calls no paid
 provider. The page holds the comparison only during the current visit and
 has Guna Milan, Mangal, D1/D9/Moon chart and birth-detail tabs, with factual
@@ -192,8 +135,12 @@ The refreshed visual design uses a burgundy opening with custom SVG celestial or
 
 The public **Puja Vidhi** menu opens `/puja-vidhi` with 27 brief English/Hindi
 Puja, Vrat and Homa guides, twelve-card paging, category/name search, local PNG
-artwork, materials, numbered worship steps and related Aarti links. Guide bodies
-load from the site's own JSON asset only when opened; references and image
+artwork, materials, paragraph-style worship overviews and related Aarti links. The
+mantra reader adds 484 referenced Sanskrit sections with concise Hindi/English
+meanings; Ahoi Ashtami explicitly records that its reference supplies no mantra.
+Materials and numbered worship instructions share one reader card. Mantras and meanings
+remain visible directly beneath their matching instructions without expand/collapse controls.
+Guide and mantra bodies load from the site's own JSON assets only when opened; references and image
 licences remain available. [Guide notes](docs/PUJA-VIDHI.md) describe the original
 editorial scope and maintenance commands. No video or sign-in is required.
 

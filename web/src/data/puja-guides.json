@@ -9,7 +9,22 @@
     "art": "lakshmi",
     "related": "/bhakti/aarti/lakshmi-mata-aarti",
     "sources": [
-      "https://www.drikpanchang.com/diwali/info/diwali-puja-vidhi.html"
+      "https://www.drikpanchang.com/diwali/info/diwali-puja-vidhi.html",
+      "https://www.drikpanchang.com/puja-vidhi/atma-shodhan/atma-shodhan.html",
+      "https://www.drikpanchang.com/puja-vidhi/sankalpa/deepavali/deepavali-lakshmi-puja-sankalpa.html",
+      "https://www.drikpanchang.com/puja-vidhi/shanti-patha/shanti-patha.html",
+      "https://www.drikpanchang.com/puja-vidhi/mangal-patha/mangal-patha.html",
+      "https://www.drikpanchang.com/puja-vidhi/kalash-sthapana/kalash-sthapana.html",
+      "https://www.drikpanchang.com/puja-vidhi/lord-ganesha/ganesha-puja-vidhi.html",
+      "https://www.drikpanchang.com/puja-vidhi/navagraha/navagraha-puja.html",
+      "https://www.drikpanchang.com/puja-vidhi/matrika/shodasha-matrika-puja.html",
+      "https://www.drikpanchang.com/hindu-gods/ganesha/puja-vidhi/lord-ganesha-puja-vidhi.html",
+      "https://www.drikpanchang.com/festivals/lakshmipuja/info/lakshmi-puja-vidhi.html",
+      "https://www.drikpanchang.com/diwali/kali-puja/info/kali-puja-vidhi.html",
+      "https://www.drikpanchang.com/hindu-goddesses/saraswati/info/saraswati-puja-vidhi.html",
+      "https://www.drikpanchang.com/festivals/dhanteras/info/kuber-puja-vidhi.html",
+      "https://www.drikpanchang.com/diwali/deepmalika-puja/info/deepmalika-puja-vidhi.html",
+      "https://www.drikpanchang.com/puja-vidhi/visarjan/visarjan.html"
     ],
     "description": {
       "en": "A household sequence for the festival of lights.",
@@ -50,7 +65,166 @@
     "note": {
       "en": "Check the city-specific Lakshmi Puja window separately.",
       "hi": "लक्ष्मी पूजन का समय अपने नगर के अनुसार अलग से देखें।"
-    }
+    },
+    "mantra_readings": [
+      "diwali-atma-shodhan",
+      "diwali-sankalpa",
+      "diwali-shanti-patha",
+      "diwali-mangal-patha",
+      "diwali-kalash-sthapana",
+      "diwali-ganapati",
+      "diwali-navagraha",
+      "diwali-matrika",
+      "ganesha",
+      "lakshmi",
+      "kali",
+      "diwali-saraswati-accounts",
+      "kubera",
+      "diwali-deepmalika",
+      "diwali-visarjan"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [
+        "diwali-atma-shodhan-1",
+        "diwali-atma-shodhan-2"
+      ],
+      [
+        "diwali-sankalpa-1",
+        "diwali-shanti-patha-1",
+        "diwali-shanti-patha-2",
+        "diwali-shanti-patha-3",
+        "diwali-shanti-patha-4",
+        "diwali-shanti-patha-5",
+        "diwali-shanti-patha-6",
+        "diwali-shanti-patha-7",
+        "diwali-shanti-patha-8",
+        "diwali-shanti-patha-9",
+        "diwali-shanti-patha-10",
+        "diwali-shanti-patha-11",
+        "diwali-mangal-patha-1",
+        "diwali-mangal-patha-2",
+        "diwali-mangal-patha-3",
+        "diwali-mangal-patha-4",
+        "diwali-mangal-patha-5",
+        "diwali-mangal-patha-6",
+        "diwali-mangal-patha-7",
+        "diwali-mangal-patha-8",
+        "diwali-mangal-patha-9",
+        "diwali-mangal-patha-10",
+        "diwali-mangal-patha-11",
+        "diwali-kalash-sthapana-1",
+        "diwali-kalash-sthapana-2",
+        "diwali-kalash-sthapana-3",
+        "diwali-kalash-sthapana-4",
+        "diwali-kalash-sthapana-5",
+        "diwali-kalash-sthapana-6",
+        "diwali-kalash-sthapana-7",
+        "diwali-kalash-sthapana-8",
+        "diwali-kalash-sthapana-9",
+        "diwali-kalash-sthapana-10",
+        "diwali-kalash-sthapana-11",
+        "diwali-kalash-sthapana-12",
+        "diwali-kalash-sthapana-13",
+        "diwali-kalash-sthapana-14",
+        "diwali-kalash-sthapana-15",
+        "diwali-kalash-sthapana-16",
+        "diwali-kalash-sthapana-17",
+        "diwali-kalash-sthapana-18",
+        "diwali-ganapati-1",
+        "diwali-ganapati-2",
+        "diwali-ganapati-3",
+        "diwali-ganapati-4",
+        "diwali-ganapati-5",
+        "diwali-navagraha-1",
+        "diwali-navagraha-2",
+        "diwali-navagraha-3",
+        "diwali-matrika-1",
+        "diwali-matrika-2",
+        "diwali-matrika-3",
+        "ganesha-1",
+        "ganesha-2",
+        "ganesha-3",
+        "ganesha-4"
+      ],
+      [
+        "ganesha-5",
+        "ganesha-6",
+        "ganesha-7",
+        "ganesha-8",
+        "ganesha-9",
+        "ganesha-10",
+        "lakshmi-1",
+        "lakshmi-2",
+        "lakshmi-3",
+        "lakshmi-4",
+        "lakshmi-5",
+        "lakshmi-6",
+        "lakshmi-7",
+        "lakshmi-8",
+        "lakshmi-9",
+        "lakshmi-10",
+        "lakshmi-11",
+        "lakshmi-12",
+        "lakshmi-13",
+        "lakshmi-14",
+        "lakshmi-15",
+        "lakshmi-16",
+        "lakshmi-17",
+        "lakshmi-18",
+        "lakshmi-19",
+        "lakshmi-20",
+        "lakshmi-21",
+        "lakshmi-22",
+        "lakshmi-23",
+        "lakshmi-24",
+        "lakshmi-25",
+        "lakshmi-26"
+      ],
+      [
+        "kali-1",
+        "kali-2",
+        "kali-3",
+        "kali-4",
+        "kali-5",
+        "diwali-saraswati-accounts-1",
+        "diwali-saraswati-accounts-2",
+        "diwali-saraswati-accounts-3",
+        "diwali-saraswati-accounts-4",
+        "diwali-saraswati-accounts-5",
+        "kubera-1",
+        "kubera-2",
+        "kubera-3",
+        "kubera-4",
+        "kubera-5"
+      ],
+      [
+        "ganesha-11",
+        "ganesha-12",
+        "ganesha-13",
+        "ganesha-14",
+        "ganesha-15",
+        "ganesha-16",
+        "ganesha-17",
+        "ganesha-18",
+        "ganesha-19",
+        "lakshmi-27",
+        "lakshmi-28",
+        "lakshmi-29",
+        "lakshmi-30",
+        "lakshmi-31",
+        "lakshmi-32",
+        "lakshmi-33",
+        "lakshmi-34",
+        "diwali-deepmalika-1",
+        "diwali-deepmalika-2",
+        "diwali-deepmalika-3",
+        "diwali-visarjan-1"
+      ]
+    ]
   },
   {
     "slug": "lakshmi",
@@ -101,7 +275,59 @@
     "note": {
       "en": "For a picture, offer bathing water symbolically nearby.",
       "hi": "चित्र के लिए स्नान का जल पास के पात्र में प्रतीकात्मक अर्पित करें।"
-    }
+    },
+    "mantra_readings": [
+      "lakshmi"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [
+        "lakshmi-1",
+        "lakshmi-2",
+        "lakshmi-3",
+        "lakshmi-4"
+      ],
+      [
+        "lakshmi-5",
+        "lakshmi-6",
+        "lakshmi-7",
+        "lakshmi-8",
+        "lakshmi-9",
+        "lakshmi-10",
+        "lakshmi-11",
+        "lakshmi-12",
+        "lakshmi-13",
+        "lakshmi-14",
+        "lakshmi-15",
+        "lakshmi-16",
+        "lakshmi-17",
+        "lakshmi-18",
+        "lakshmi-19",
+        "lakshmi-20"
+      ],
+      [
+        "lakshmi-21",
+        "lakshmi-22",
+        "lakshmi-23",
+        "lakshmi-24",
+        "lakshmi-25",
+        "lakshmi-26",
+        "lakshmi-27"
+      ],
+      [
+        "lakshmi-28",
+        "lakshmi-29",
+        "lakshmi-30",
+        "lakshmi-31",
+        "lakshmi-32",
+        "lakshmi-33",
+        "lakshmi-34"
+      ]
+    ]
   },
   {
     "slug": "ganesha",
@@ -152,7 +378,44 @@
     "note": {
       "en": "Daily worship does not require a new installation ceremony.",
       "hi": "नित्य पूजन में हर दिन नई स्थापना का अनुष्ठान आवश्यक नहीं है।"
-    }
+    },
+    "mantra_readings": [
+      "ganesha"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [
+        "ganesha-1",
+        "ganesha-2",
+        "ganesha-3",
+        "ganesha-4"
+      ],
+      [
+        "ganesha-5",
+        "ganesha-6",
+        "ganesha-7",
+        "ganesha-8"
+      ],
+      [
+        "ganesha-9",
+        "ganesha-10",
+        "ganesha-11",
+        "ganesha-12",
+        "ganesha-13",
+        "ganesha-14"
+      ],
+      [
+        "ganesha-15",
+        "ganesha-16",
+        "ganesha-17",
+        "ganesha-18",
+        "ganesha-19"
+      ]
+    ]
   },
   {
     "slug": "shiva",
@@ -205,7 +468,52 @@
     "note": {
       "en": "Use symbolic offerings when worshipping a picture.",
       "hi": "चित्र के पूजन में अर्पण प्रतीकात्मक रूप से करें।"
-    }
+    },
+    "mantra_readings": [
+      "shiva"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [
+        "shiva-1",
+        "shiva-2",
+        "shiva-3",
+        "shiva-4",
+        "shiva-5"
+      ],
+      [
+        "shiva-6",
+        "shiva-7",
+        "shiva-8",
+        "shiva-9",
+        "shiva-10",
+        "shiva-11"
+      ],
+      [
+        "shiva-12",
+        "shiva-13",
+        "shiva-14",
+        "shiva-15",
+        "shiva-16",
+        "shiva-17",
+        "shiva-18",
+        "shiva-19"
+      ],
+      [
+        "shiva-20",
+        "shiva-21",
+        "shiva-22",
+        "shiva-23",
+        "shiva-24",
+        "shiva-25",
+        "shiva-26",
+        "shiva-27"
+      ]
+    ]
   },
   {
     "slug": "maha-shivaratri",
@@ -217,7 +525,8 @@
     "art": "shiva",
     "related": "/bhakti/chalisa/shiva-chalisa",
     "sources": [
-      "https://www.drikpanchang.com/festivals/maha-shivaratri/maha-shivaratri-puja-vidhi.html"
+      "https://www.drikpanchang.com/festivals/maha-shivaratri/maha-shivaratri-puja-vidhi.html",
+      "https://www.drikpanchang.com/puja-vidhi/maha-shivaratri/maha-shivaratri-puja-vidhi.html"
     ],
     "description": {
       "en": "Night worship and remembrance of Shiva.",
@@ -256,7 +565,53 @@
     "note": {
       "en": "Single-night worship and four-Prahara worship are distinct practices.",
       "hi": "एक बार रात्रि पूजन और चार-प्रहर पूजन अलग प्रचलित विधियाँ हैं।"
-    }
+    },
+    "mantra_readings": [
+      "maha-shivaratri-mantras"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [
+        "maha-shivaratri-mantras-2"
+      ],
+      [
+        "maha-shivaratri-mantras-1",
+        "maha-shivaratri-mantras-3",
+        "maha-shivaratri-mantras-4"
+      ],
+      [
+        "maha-shivaratri-mantras-5",
+        "maha-shivaratri-mantras-6",
+        "maha-shivaratri-mantras-11",
+        "maha-shivaratri-mantras-12",
+        "maha-shivaratri-mantras-13",
+        "maha-shivaratri-mantras-14",
+        "maha-shivaratri-mantras-15",
+        "maha-shivaratri-mantras-16",
+        "maha-shivaratri-mantras-17",
+        "maha-shivaratri-mantras-18"
+      ],
+      [
+        "maha-shivaratri-mantras-7",
+        "maha-shivaratri-mantras-8",
+        "maha-shivaratri-mantras-9",
+        "maha-shivaratri-mantras-10",
+        "maha-shivaratri-mantras-27"
+      ],
+      [
+        "maha-shivaratri-mantras-19",
+        "maha-shivaratri-mantras-20",
+        "maha-shivaratri-mantras-21",
+        "maha-shivaratri-mantras-22",
+        "maha-shivaratri-mantras-23",
+        "maha-shivaratri-mantras-24",
+        "maha-shivaratri-mantras-25",
+        "maha-shivaratri-mantras-26"
+      ]
+    ]
   },
   {
     "slug": "kubera",
@@ -307,7 +662,29 @@
     "note": {
       "en": "A chest is a traditional symbolic alternative to a Kubera idol.",
       "hi": "कुबेर की मूर्ति न हो तो तिजोरी का प्रतीकात्मक पूजन प्रचलित है।"
-    }
+    },
+    "mantra_readings": [
+      "kubera"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [],
+      [
+        "kubera-1",
+        "kubera-2",
+        "kubera-3"
+      ],
+      [
+        "kubera-4"
+      ],
+      [
+        "kubera-5"
+      ]
+    ]
   },
   {
     "slug": "rama-navami",
@@ -358,7 +735,49 @@
     "note": {
       "en": "The birth celebration traditionally relates to Madhyahna; verify local timing.",
       "hi": "जन्मोत्सव का संबंध मध्याह्न से है; स्थानीय समय अलग से जाँचें।"
-    }
+    },
+    "mantra_readings": [
+      "rama-navami"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [
+        "rama-navami-1",
+        "rama-navami-2",
+        "rama-navami-3"
+      ],
+      [
+        "rama-navami-4",
+        "rama-navami-5",
+        "rama-navami-6",
+        "rama-navami-7",
+        "rama-navami-8",
+        "rama-navami-9",
+        "rama-navami-10",
+        "rama-navami-11",
+        "rama-navami-12",
+        "rama-navami-13",
+        "rama-navami-14",
+        "rama-navami-15"
+      ],
+      [
+        "rama-navami-16",
+        "rama-navami-17",
+        "rama-navami-18",
+        "rama-navami-19",
+        "rama-navami-20"
+      ],
+      [
+        "rama-navami-21",
+        "rama-navami-22",
+        "rama-navami-23",
+        "rama-navami-24"
+      ]
+    ]
   },
   {
     "slug": "krishna-janmashtami",
@@ -409,7 +828,48 @@
     "note": {
       "en": "Smarta and Vaishnava observance dates may differ.",
       "hi": "स्मार्त और वैष्णव परंपराओं की तिथि अलग हो सकती है।"
-    }
+    },
+    "mantra_readings": [
+      "krishna-janmashtami"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [
+        "krishna-janmashtami-1",
+        "krishna-janmashtami-2",
+        "krishna-janmashtami-3"
+      ],
+      [
+        "krishna-janmashtami-4",
+        "krishna-janmashtami-5",
+        "krishna-janmashtami-6",
+        "krishna-janmashtami-7",
+        "krishna-janmashtami-8",
+        "krishna-janmashtami-9",
+        "krishna-janmashtami-10",
+        "krishna-janmashtami-11",
+        "krishna-janmashtami-12",
+        "krishna-janmashtami-13",
+        "krishna-janmashtami-14",
+        "krishna-janmashtami-15",
+        "krishna-janmashtami-16"
+      ],
+      [
+        "krishna-janmashtami-17",
+        "krishna-janmashtami-18",
+        "krishna-janmashtami-19"
+      ],
+      [
+        "krishna-janmashtami-20",
+        "krishna-janmashtami-21",
+        "krishna-janmashtami-22",
+        "krishna-janmashtami-23"
+      ]
+    ]
   },
   {
     "slug": "holi",
@@ -460,7 +920,36 @@
     "note": {
       "en": "Keep a respectful distance once the bonfire is lit.",
       "hi": "होलिका की अग्नि प्रज्वलित होने पर सुरक्षित दूरी बनाए रखें।"
-    }
+    },
+    "mantra_readings": [
+      "holi"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [
+        "holi-1"
+      ],
+      [
+        "holi-2",
+        "holi-3",
+        "holi-5",
+        "holi-7",
+        "holi-9"
+      ],
+      [
+        "holi-4",
+        "holi-6",
+        "holi-8",
+        "holi-10"
+      ],
+      [
+        "holi-11"
+      ],
+      []
+    ]
   },
   {
     "slug": "saraswati",
@@ -511,7 +1000,49 @@
     "note": {
       "en": "Books and instruments are honoured as companions in learning.",
       "hi": "पुस्तकों और वाद्यों का सम्मान विद्या-साधना के अंग के रूप में करें।"
-    }
+    },
+    "mantra_readings": [
+      "saraswati"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [],
+      [
+        "saraswati-1",
+        "saraswati-2",
+        "saraswati-3",
+        "saraswati-4",
+        "saraswati-5",
+        "saraswati-6",
+        "saraswati-7",
+        "saraswati-8",
+        "saraswati-9",
+        "saraswati-10",
+        "saraswati-11",
+        "saraswati-12",
+        "saraswati-13",
+        "saraswati-14"
+      ],
+      [
+        "saraswati-15",
+        "saraswati-16",
+        "saraswati-17",
+        "saraswati-18",
+        "saraswati-19",
+        "saraswati-20",
+        "saraswati-21"
+      ],
+      [
+        "saraswati-22",
+        "saraswati-23",
+        "saraswati-24",
+        "saraswati-25"
+      ]
+    ]
   },
   {
     "slug": "karwa-chauth",
@@ -523,7 +1054,8 @@
     "art": "parvati",
     "related": "/bhakti/aarti/parvati-mata-aarti",
     "sources": [
-      "https://www.drikpanchang.com/festivals/karwa-chauth/info/karwa-chauth.html"
+      "https://www.drikpanchang.com/festivals/karwa-chauth/info/karwa-chauth.html",
+      "https://www.drikpanchang.com/festivals/karwa-chauth/info/karwa-chauth-puja-vidhi.html"
     ],
     "description": {
       "en": "Evening worship, Katha and the Moon offering.",
@@ -562,7 +1094,27 @@
     "note": {
       "en": "A predicted moonrise is not the same as visible Moon sighting.",
       "hi": "गणना का चंद्रोदय समय वास्तविक चंद्रदर्शन से भिन्न हो सकता है।"
-    }
+    },
+    "mantra_readings": [
+      "karwa-chauth-mantras"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [
+        "karwa-chauth-mantras-1"
+      ],
+      [],
+      [
+        "karwa-chauth-mantras-2"
+      ],
+      [
+        "karwa-chauth-mantras-3"
+      ],
+      []
+    ]
   },
   {
     "slug": "ghatasthapana",
@@ -574,7 +1126,8 @@
     "art": "durga",
     "related": "/bhakti/aarti/durga-mata-aarti",
     "sources": [
-      "https://www.drikpanchang.com/navratri/info/ghatasthapana-puja-vidhi.html"
+      "https://www.drikpanchang.com/navratri/info/ghatasthapana-puja-vidhi.html",
+      "https://www.drikpanchang.com/puja-vidhi/kalash-sthapana/kalash-sthapana.html"
     ],
     "description": {
       "en": "Prepare the Kalash at the beginning of Navratri.",
@@ -615,7 +1168,43 @@
     "note": {
       "en": "This begins the Navratri observance; care for the altar daily.",
       "hi": "यह नवरात्रि पूजन का आरंभ है; प्रतिदिन वेदी की देखभाल करें।"
-    }
+    },
+    "mantra_readings": [
+      "diwali-kalash-sthapana"
+    ],
+    "mantra_note": {
+      "hi": "नवरात्रि घटस्थापना का क्रम ऊपर है। नीचे अलग कलश-स्थापन संदर्भ के मंत्र और उनके भावार्थ हैं।",
+      "en": "The Navratri installation sequence is above. The mantras below come from the separately cited Kalasha Sthapana reference."
+    },
+    "step_mantras": [
+      [],
+      [
+        "diwali-kalash-sthapana-1",
+        "diwali-kalash-sthapana-2",
+        "diwali-kalash-sthapana-10"
+      ],
+      [
+        "diwali-kalash-sthapana-3",
+        "diwali-kalash-sthapana-4",
+        "diwali-kalash-sthapana-5",
+        "diwali-kalash-sthapana-6",
+        "diwali-kalash-sthapana-7",
+        "diwali-kalash-sthapana-8",
+        "diwali-kalash-sthapana-9",
+        "diwali-kalash-sthapana-11"
+      ],
+      [
+        "diwali-kalash-sthapana-12",
+        "diwali-kalash-sthapana-13",
+        "diwali-kalash-sthapana-14",
+        "diwali-kalash-sthapana-15"
+      ],
+      [
+        "diwali-kalash-sthapana-16",
+        "diwali-kalash-sthapana-17",
+        "diwali-kalash-sthapana-18"
+      ]
+    ]
   },
   {
     "slug": "ganesha-chaturthi",
@@ -666,7 +1255,60 @@
     "note": {
       "en": "Use an authorised immersion arrangement and follow local rules.",
       "hi": "विसर्जन के लिए अधिकृत व्यवस्था और स्थानीय नियमों का पालन करें।"
-    }
+    },
+    "mantra_readings": [
+      "ganesha-chaturthi"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [
+        "ganesha-chaturthi-1",
+        "ganesha-chaturthi-2",
+        "ganesha-chaturthi-3"
+      ],
+      [
+        "ganesha-chaturthi-4",
+        "ganesha-chaturthi-5",
+        "ganesha-chaturthi-6",
+        "ganesha-chaturthi-7",
+        "ganesha-chaturthi-8",
+        "ganesha-chaturthi-9",
+        "ganesha-chaturthi-10",
+        "ganesha-chaturthi-11",
+        "ganesha-chaturthi-12",
+        "ganesha-chaturthi-13",
+        "ganesha-chaturthi-14",
+        "ganesha-chaturthi-15",
+        "ganesha-chaturthi-16",
+        "ganesha-chaturthi-17",
+        "ganesha-chaturthi-18",
+        "ganesha-chaturthi-19",
+        "ganesha-chaturthi-20",
+        "ganesha-chaturthi-21",
+        "ganesha-chaturthi-22",
+        "ganesha-chaturthi-23",
+        "ganesha-chaturthi-24"
+      ],
+      [
+        "ganesha-chaturthi-25",
+        "ganesha-chaturthi-26",
+        "ganesha-chaturthi-27",
+        "ganesha-chaturthi-28",
+        "ganesha-chaturthi-29",
+        "ganesha-chaturthi-30",
+        "ganesha-chaturthi-31",
+        "ganesha-chaturthi-32",
+        "ganesha-chaturthi-33",
+        "ganesha-chaturthi-34"
+      ],
+      [
+        "ganesha-chaturthi-35"
+      ]
+    ]
   },
   {
     "slug": "raksha-bandhan",
@@ -715,7 +1357,23 @@
     "note": {
       "en": "Family Rakhi and the priest-led Raksha rite have different customs.",
       "hi": "पारिवारिक राखी और पुरोहित द्वारा रक्षाबंधन की परंपराएँ अलग हो सकती हैं।"
-    }
+    },
+    "mantra_readings": [
+      "raksha-bandhan"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [],
+      [],
+      [
+        "raksha-bandhan-1"
+      ],
+      []
+    ]
   },
   {
     "slug": "kali",
@@ -766,7 +1424,30 @@
     "note": {
       "en": "Diwali pen-and-inkpot worship differs from elaborate Bengali Kali rituals.",
       "hi": "दीपावली का लेखनी-दवात पूजन विस्तृत बंगाली काली पूजा से अलग है।"
-    }
+    },
+    "mantra_readings": [
+      "kali"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [
+        "kali-1",
+        "kali-2"
+      ],
+      [
+        "kali-3"
+      ],
+      [
+        "kali-4"
+      ],
+      [
+        "kali-5"
+      ]
+    ]
   },
   {
     "slug": "durga",
@@ -817,7 +1498,56 @@
     "note": {
       "en": "Sandhi Puja and large festival installations follow additional procedures.",
       "hi": "संधि पूजा और बड़े उत्सव की स्थापना में अतिरिक्त विधियाँ होती हैं।"
-    }
+    },
+    "mantra_readings": [
+      "durga"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [
+        "durga-1",
+        "durga-2"
+      ],
+      [
+        "durga-3",
+        "durga-4",
+        "durga-5",
+        "durga-6",
+        "durga-7",
+        "durga-8",
+        "durga-9",
+        "durga-10",
+        "durga-11",
+        "durga-12",
+        "durga-13",
+        "durga-14",
+        "durga-15",
+        "durga-16",
+        "durga-17"
+      ],
+      [
+        "durga-18",
+        "durga-19",
+        "durga-20",
+        "durga-21",
+        "durga-22",
+        "durga-23",
+        "durga-24",
+        "durga-25",
+        "durga-26",
+        "durga-27",
+        "durga-28"
+      ],
+      [
+        "durga-29",
+        "durga-30",
+        "durga-31"
+      ]
+    ]
   },
   {
     "slug": "hanuman",
@@ -868,7 +1598,62 @@
     "note": {
       "en": "Do not apply oil or colour to temple images without permission.",
       "hi": "अनुमति के बिना मंदिर की मूर्ति पर तेल या रंग न लगाएँ।"
-    }
+    },
+    "mantra_readings": [
+      "hanuman"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [
+        "hanuman-1"
+      ],
+      [
+        "hanuman-2",
+        "hanuman-3"
+      ],
+      [
+        "hanuman-4",
+        "hanuman-5",
+        "hanuman-6",
+        "hanuman-7",
+        "hanuman-8",
+        "hanuman-9",
+        "hanuman-10",
+        "hanuman-11",
+        "hanuman-12",
+        "hanuman-13",
+        "hanuman-14",
+        "hanuman-15",
+        "hanuman-16",
+        "hanuman-17",
+        "hanuman-18"
+      ],
+      [
+        "hanuman-19",
+        "hanuman-20",
+        "hanuman-21",
+        "hanuman-22",
+        "hanuman-23",
+        "hanuman-24",
+        "hanuman-25",
+        "hanuman-26",
+        "hanuman-27"
+      ],
+      [
+        "hanuman-28",
+        "hanuman-29",
+        "hanuman-30",
+        "hanuman-31",
+        "hanuman-32",
+        "hanuman-33",
+        "hanuman-34",
+        "hanuman-35",
+        "hanuman-36"
+      ]
+    ]
   },
   {
     "slug": "hartalika",
@@ -880,7 +1665,8 @@
     "art": "parvati",
     "related": "/bhakti/aarti/parvati-mata-aarti",
     "sources": [
-      "https://www.drikpanchang.com/festivals/teej/info/hartalika-puja-vidhi.html"
+      "https://www.drikpanchang.com/festivals/teej/info/hartalika-puja-vidhi.html",
+      "https://www.drikpanchang.com/vrat-katha/hartalika-teej/hartalika-teej-vrat-katha.html"
     ],
     "description": {
       "en": "Worship Uma–Maheshwara with devotion.",
@@ -919,7 +1705,23 @@
     "note": {
       "en": "Sand or clay forms are customary; practices differ by region.",
       "hi": "रेत या मिट्टी के स्वरूप प्रचलित हैं; क्षेत्रीय विधि अलग हो सकती है।"
-    }
+    },
+    "mantra_readings": [
+      "hartalika-mantras"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [],
+      [
+        "hartalika-mantras-1"
+      ],
+      [],
+      []
+    ]
   },
   {
     "slug": "ahoi-ashtami",
@@ -970,7 +1772,19 @@
     "note": {
       "en": "Star sighting and Moon sighting are different regional practices.",
       "hi": "तारादर्शन और चंद्रदर्शन अलग क्षेत्रीय परंपराएँ हैं।"
-    }
+    },
+    "mantra_readings": [],
+    "mantra_note": {
+      "hi": "इस संदर्भ में अहोई अष्टमी की विधि दी गई है, पर कोई निश्चित मंत्रपाठ नहीं दिया गया है। संबंधित आरती और पाठ नीचे खोल सकते हैं।",
+      "en": "This reference describes the Ahoi Ashtami observance but does not supply a prescribed mantra text. Related prayers and readings are linked below."
+    },
+    "step_mantras": [
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
   },
   {
     "slug": "varalakshmi",
@@ -1021,7 +1835,57 @@
     "note": {
       "en": "The full sixteen- or thirty-two-offering ritual is more elaborate.",
       "hi": "पूर्ण षोडशोपचार या बत्तीस-उपचार पूजन की विधि अधिक विस्तृत है।"
-    }
+    },
+    "mantra_readings": [
+      "varalakshmi"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [
+        "varalakshmi-1",
+        "varalakshmi-2"
+      ],
+      [
+        "varalakshmi-3",
+        "varalakshmi-4",
+        "varalakshmi-5",
+        "varalakshmi-6",
+        "varalakshmi-7",
+        "varalakshmi-8",
+        "varalakshmi-9",
+        "varalakshmi-10",
+        "varalakshmi-11",
+        "varalakshmi-12",
+        "varalakshmi-13",
+        "varalakshmi-14",
+        "varalakshmi-15"
+      ],
+      [
+        "varalakshmi-16",
+        "varalakshmi-17",
+        "varalakshmi-18",
+        "varalakshmi-19",
+        "varalakshmi-20"
+      ],
+      [
+        "varalakshmi-21",
+        "varalakshmi-22",
+        "varalakshmi-23",
+        "varalakshmi-24",
+        "varalakshmi-25",
+        "varalakshmi-26",
+        "varalakshmi-27",
+        "varalakshmi-28",
+        "varalakshmi-29",
+        "varalakshmi-30",
+        "varalakshmi-31",
+        "varalakshmi-32"
+      ]
+    ]
   },
   {
     "slug": "dhanvantari",
@@ -1072,7 +1936,47 @@
     "note": {
       "en": "Dhanvantari worship and Lakshmi–Kubera worship are separate observances.",
       "hi": "धन्वन्तरि पूजन और लक्ष्मी–कुबेर पूजन अलग उपासनाएँ हैं।"
-    }
+    },
+    "mantra_readings": [
+      "dhanvantari"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [
+        "dhanvantari-1",
+        "dhanvantari-3"
+      ],
+      [
+        "dhanvantari-2"
+      ],
+      [
+        "dhanvantari-4",
+        "dhanvantari-5",
+        "dhanvantari-6",
+        "dhanvantari-7",
+        "dhanvantari-8",
+        "dhanvantari-9"
+      ],
+      [
+        "dhanvantari-10",
+        "dhanvantari-11",
+        "dhanvantari-12",
+        "dhanvantari-13",
+        "dhanvantari-14",
+        "dhanvantari-15",
+        "dhanvantari-16",
+        "dhanvantari-17"
+      ],
+      [
+        "dhanvantari-18",
+        "dhanvantari-19",
+        "dhanvantari-20",
+        "dhanvantari-21"
+      ]
+    ]
   },
   {
     "slug": "govardhan",
@@ -1084,7 +1988,8 @@
     "art": "govardhan",
     "related": "/bhakti/aarti/shri-govardhan-aarti",
     "sources": [
-      "https://www.drikpanchang.com/festivals/govardhan-puja/puja-vidhi/govardhan-puja-vidhi.html"
+      "https://www.drikpanchang.com/festivals/govardhan-puja/puja-vidhi/govardhan-puja-vidhi.html",
+      "https://www.drikpanchang.com/vedic-mantra/festivals/diwali/diwali-mantras.html"
     ],
     "description": {
       "en": "Honour Govardhan, Shri Krishna and the gift of food.",
@@ -1123,7 +2028,25 @@
     "note": {
       "en": "Many families also honour cows and calves on this day.",
       "hi": "कई परिवार इस दिन गौमाता और बछड़ों का भी सम्मान करते हैं।"
-    }
+    },
+    "mantra_readings": [
+      "govardhan-mantras"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [],
+      [
+        "govardhan-mantras-2"
+      ],
+      [
+        "govardhan-mantras-1"
+      ],
+      []
+    ]
   },
   {
     "slug": "naraka-chaturdashi",
@@ -1174,7 +2097,25 @@
     "note": {
       "en": "Bathing and evening lamp rites can fall on different civil dates.",
       "hi": "प्रातः स्नान और संध्या दीपदान की नागरिक तिथि अलग हो सकती है।"
-    }
+    },
+    "mantra_readings": [
+      "naraka-chaturdashi"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [
+        "naraka-chaturdashi-1"
+      ],
+      [
+        "naraka-chaturdashi-2"
+      ],
+      [],
+      []
+    ]
   },
   {
     "slug": "vat-savitri",
@@ -1225,7 +2166,49 @@
     "note": {
       "en": "Vat Amavasya and Vat Purnima traditions differ across regions.",
       "hi": "वट अमावस्या और वट पूर्णिमा की क्षेत्रीय परंपराएँ भिन्न हैं।"
-    }
+    },
+    "mantra_readings": [
+      "vat-savitri"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [
+        "vat-savitri-1",
+        "vat-savitri-2"
+      ],
+      [
+        "vat-savitri-3",
+        "vat-savitri-4",
+        "vat-savitri-5",
+        "vat-savitri-6",
+        "vat-savitri-7",
+        "vat-savitri-8",
+        "vat-savitri-9",
+        "vat-savitri-10",
+        "vat-savitri-11",
+        "vat-savitri-12",
+        "vat-savitri-13",
+        "vat-savitri-14",
+        "vat-savitri-15",
+        "vat-savitri-16",
+        "vat-savitri-17",
+        "vat-savitri-18",
+        "vat-savitri-19",
+        "vat-savitri-20",
+        "vat-savitri-21",
+        "vat-savitri-22",
+        "vat-savitri-23"
+      ],
+      [],
+      [
+        "vat-savitri-24",
+        "vat-savitri-25"
+      ]
+    ]
   },
   {
     "slug": "satyanarayana",
@@ -1237,7 +2220,8 @@
     "art": "vishnu",
     "related": "/bhakti/aarti/lord-satyanarayana-aarti",
     "sources": [
-      "https://www.drikpanchang.com/vrat-katha/satyanarayana/pujan-vidhi/satyanarayana-vrat-pujan-vidhi.html"
+      "https://www.drikpanchang.com/vrat-katha/satyanarayana/pujan-vidhi/satyanarayana-vrat-pujan-vidhi.html",
+      "https://www.drikpanchang.com/hindu-gods/trimurti/lord-vishnu/puja-vidhi/satyanarayan-puja-vidhi.html"
     ],
     "description": {
       "en": "Shri Satyanarayana worship, Katha and Prasad.",
@@ -1276,7 +2260,44 @@
     "note": {
       "en": "This guide gives the worship sequence; it does not replace the Katha.",
       "hi": "यह पूजन का क्रम है; संपूर्ण कथा का विकल्प नहीं है।"
-    }
+    },
+    "mantra_readings": [
+      "satyanarayana-mantras"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [],
+      [
+        "satyanarayana-mantras-1",
+        "satyanarayana-mantras-2",
+        "satyanarayana-mantras-3",
+        "satyanarayana-mantras-4",
+        "satyanarayana-mantras-5",
+        "satyanarayana-mantras-6",
+        "satyanarayana-mantras-7",
+        "satyanarayana-mantras-8",
+        "satyanarayana-mantras-9",
+        "satyanarayana-mantras-10",
+        "satyanarayana-mantras-11",
+        "satyanarayana-mantras-12",
+        "satyanarayana-mantras-13",
+        "satyanarayana-mantras-14"
+      ],
+      [
+        "satyanarayana-mantras-15",
+        "satyanarayana-mantras-16",
+        "satyanarayana-mantras-17"
+      ],
+      [
+        "satyanarayana-mantras-18",
+        "satyanarayana-mantras-19",
+        "satyanarayana-mantras-20"
+      ]
+    ]
   },
   {
     "slug": "ganapati-homa",
@@ -1327,7 +2348,30 @@
     "note": {
       "en": "Keep flammable objects away; attend the Kunda until it is fully safe.",
       "hi": "ज्वलनशील वस्तुएँ दूर रखें; अग्निकुंड सुरक्षित होने तक उसे अकेला न छोड़ें।"
-    }
+    },
+    "mantra_readings": [
+      "ganapati-homa"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [],
+      [
+        "ganapati-homa-1",
+        "ganapati-homa-2"
+      ],
+      [
+        "ganapati-homa-3"
+      ],
+      [
+        "ganapati-homa-4",
+        "ganapati-homa-5",
+        "ganapati-homa-6"
+      ]
+    ]
   },
   {
     "slug": "durga-homa",
@@ -1378,6 +2422,29 @@
     "note": {
       "en": "Saptashati Homa requires its own recitation and ritual guidance.",
       "hi": "सप्तशती हवन का पाठ और अनुष्ठान अलग मार्गदर्शन में किया जाता है।"
-    }
+    },
+    "mantra_readings": [
+      "durga-homa"
+    ],
+    "mantra_note": {
+      "hi": "मंत्र के साथ सरल भावार्थ पढ़ें। संकल्प में ‘अमुक’ वाले स्थान पर अपना नाम, गोत्र, स्थान और संबंधित तिथि का विवरण लें।",
+      "en": "Read each mantra with its concise meaning. In a Sankalpa, replace “amuka” with the appropriate name, gotra, place and ritual date."
+    },
+    "step_mantras": [
+      [],
+      [],
+      [
+        "durga-homa-1",
+        "durga-homa-2"
+      ],
+      [
+        "durga-homa-3"
+      ],
+      [
+        "durga-homa-4",
+        "durga-homa-5",
+        "durga-homa-6"
+      ]
+    ]
   }
 ]

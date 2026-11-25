@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Compass } from "lucide-react";
 import Chart, { hindiPlanets, signs, shortNames } from "./Chart";
 import AstroSymbol from "./AstroSymbol";
+import LagnaGrahaRoles from "./LagnaGrahaRoles";
 import { t, useLanguage } from "./i18n";
 
 type ChartData = {
@@ -10,13 +11,15 @@ type ChartData = {
   houses?: { house: number; rashi_number: number }[];
 };
 
-/** ChartViewer provides the chart-style controls and delegates the selected layout to the shared chart renderer. */
+/** ChartViewer renders chart controls and optional handwritten roles; natalLagna stays fixed when the displayed chart changes. */
 export default function ChartViewer({
   chart,
+  natalLagna,
   label,
   referenceLabel = "Ascendant",
 }: {
   chart: ChartData;
+  natalLagna?: number;
   label?: string;
   referenceLabel?: string;
 }) {
@@ -73,6 +76,7 @@ export default function ChartViewer({
             : t("No planets in this house")}
         </span>
       </div>
+      {natalLagna !== undefined && <LagnaGrahaRoles natalLagna={natalLagna} />}
     </div>
   );
 }

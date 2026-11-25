@@ -196,21 +196,6 @@ func (a *App) calculateMatching(ctx context.Context, in MatchingRequest) (*Match
 	if err != nil {
 		return nil, &matchingFailure{503, "", "Matching calculations are unavailable right now. Please try again."}
 	}
-	for i, person := range []MatchingParticipant{bride, groom} {
-		qualified, err := matchingMangalStrength(ctx, a.Config, person)
-		if err != nil {
-			return nil, &matchingFailure{503, "", "Matching calculations are unavailable right now. Please try again."}
-		}
-		if i == 0 {
-			mangal.Bride = qualified
-		} else {
-			mangal.Groom = qualified
-		}
-	}
-	mangal, err = swisseph.MangalPairWithStrength(*bride.Chart, *groom.Chart, mangal.Bride, mangal.Groom)
-	if err != nil {
-		return nil, &matchingFailure{503, "", "Matching calculations are unavailable right now. Please try again."}
-	}
 	band := "32_to_36"
 	if score.Total < 18 {
 		band = "below_18"
@@ -230,37 +215,15 @@ func (a *App) calculateMatching(ctx context.Context, in MatchingRequest) (*Match
 			"calculation_engine": reports[0].Engine,
 			"swiss_version":      reports[0].Chart.SwissVersion,
 			"zodiac":             "Lahiri sidereal; geocentric apparent",
-			"houses":             "Whole sign; Mangal from Lagna, Moon and Venus",
+			"houses":             "Whole sign; Guruji Mangal from Lagna and Moon only",
 			"bride_timezone":     bride.Place.Zone,
 			"groom_timezone":     groom.Place.Zone,
 			"score_basis":        "AIFAS 2021 North Indian base Ashtakoota; no cancellation bonuses",
-			"mangal_method":      swisseph.MangalStrengthMethod,
-			"mangal_level":       "Reference coverage: 0 none, 1 low, 2 or 3 high; raw and selected exceptions shown separately",
+			"mangal_method":      swisseph.MangalMethod,
+			"mangal_level":       "Guruji: Lagna indication is Manglik; Moon-only indication is partial; houses 1,4,7,8,12; no supplied cancellation rules",
 			"clock":              "UTC via Swiss; before 1972 Swiss uses its documented UT1 convention",
 		},
 	}, nil
-}
-
-// matchingMangalStrength resolves only the native inputs required for the
-// source's strong-benefic cancellation; it does not expand or persist a report.
-func matchingMangalStrength(ctx context.Context, c Config, person MatchingParticipant) (swisseph.MangalAssessment, error) {
-	at, err := time.Parse(time.RFC3339Nano, person.Chart.UTC)
-	if err != nil {
-		return swisseph.MangalAssessment{}, err
-	}
-	birth, chalit, err := swisseph.CalculateBirthDetails(ctx, c.EpheDir, person.Place.Zone, at, *person.Chart)
-	if err != nil {
-		return swisseph.MangalAssessment{}, err
-	}
-	bala, err := swisseph.CalculateShadbala(ctx, c.EpheDir, person.Place.Zone, at, *person.Chart, birth, chalit)
-	if err != nil {
-		return swisseph.MangalAssessment{}, err
-	}
-	base, err := swisseph.CalculateMangal(*person.Chart)
-	if err != nil {
-		return swisseph.MangalAssessment{}, err
-	}
-	return swisseph.QualifyMangalStrength(*person.Chart, base, bala, swisseph.CalculatePlanetAnalysis(*person.Chart))
 }
 
 type MatchingProfile struct {

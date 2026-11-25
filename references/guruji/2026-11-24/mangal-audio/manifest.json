@@ -1,0 +1,17 @@
+{
+  "source_type": "user_supplied_guruji_audio",
+  "received_date": "2026-11-24",
+  "language": "hi",
+  "sources": [
+    {
+      "file": "WhatsApp Ptt 2026-11-24 at 8.41.16 PM.ogg",
+      "bytes": 34015,
+      "sha256": "c92b234341154846331d5b6304f3d8fdf3e56529f72bd4dc88b8742403038c06"
+    },
+    {
+      "file": "WhatsApp Ptt 2026-11-24 at 8.42.34 PM.ogg",
+      "bytes": 18199,
+      "sha256": "9a32842e30a5f67d1a61b0c95d7147ac75ee75b512dc16f764e1c4d821f52c95"
+    }
+  ]
+}

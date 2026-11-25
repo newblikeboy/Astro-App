@@ -38,6 +38,7 @@ export type MangalRule = {
   source_pdf_page: number;
 };
 export type MangalAssessment = {
+  classification?: "mangal" | "partial" | "none";
   strength?:{method:string;conditions:{planet:string;eligible:boolean;ratio:number;confirmed:boolean;limitations:string[]}[]};
   references: {
     reference: "lagna" | "moon" | "venus";

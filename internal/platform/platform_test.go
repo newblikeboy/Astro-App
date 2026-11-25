@@ -216,7 +216,7 @@ func TestOTPAttemptsExpiryOneTimeAndCookies(t *testing.T) {
 	}
 }
 
-// TestServerPricesAndProductionPDFContentBlocker checks authoritative prices and required approved content before production PDF purchase.
+// TestServerPricesAndProductionPDFContentBlocker checks authoritative prices and source-only production snapshots.
 func TestServerPricesAndProductionPDFContentBlocker(t *testing.T) {
 	a := testApp(t)
 	putUser(t, a, "alice")
@@ -238,9 +238,9 @@ func TestServerPricesAndProductionPDFContentBlocker(t *testing.T) {
 		s.Settings.TaxMode = "none"
 		return nil
 	})
-	_, e = a.Checkout(context.Background(), "alice", CheckoutRequest{Product: "pdf", ReportID: r.ID, Key: "test-key-3"})
-	if e == nil {
-		t.Fatal("sold unapproved demo remedies in production")
+	sourceOrder, err := a.Checkout(context.Background(), "alice", CheckoutRequest{Product: "pdf", ReportID: r.ID, Key: "test-key-3"})
+	if err != nil || sourceOrder == nil || len(sourceOrder.Snapshot.SourceReadings) == 0 || len(sourceOrder.Snapshot.Rules) != 0 {
+		t.Fatal("production purchase did not use PDF sources exclusively", err)
 	}
 }
 
@@ -418,6 +418,7 @@ func TestPDFRetryIdempotencyAndImmutableSnapshot(t *testing.T) {
 		}
 		j.Next = a.Now()
 		s.Rules["demo-reflection:1"] = Rule{ID: "replacement", Hindi: "changed"}
+		s.Reports[r.ID].SourceReadings[0].Text = "changed"
 		return nil
 	})
 	pdf.fail = false
@@ -429,7 +430,7 @@ func TestPDFRetryIdempotencyAndImmutableSnapshot(t *testing.T) {
 		t.Fatal(e)
 	}
 	_ = a.Store.View(context.Background(), func(s *State) error {
-		if s.Orders[o.ID].Snapshot.Rules[0].ID != "demo-reflection" {
+		if len(s.Orders[o.ID].Snapshot.Rules) != 0 || len(s.Orders[o.ID].Snapshot.SourceReadings) == 0 || s.Orders[o.ID].Snapshot.SourceReadings[0].Text == "changed" {
 			t.Fatal("purchase snapshot mutated")
 		}
 		return nil

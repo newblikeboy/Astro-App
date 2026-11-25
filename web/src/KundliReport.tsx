@@ -8,13 +8,6 @@ import {
   Info,
   LockKeyhole,
   Sparkles,
-  UserRound,
-  GraduationCap,
-  BriefcaseBusiness,
-  Wallet,
-  Heart,
-  UsersRound,
-  HeartPulse,
   LayoutDashboard,
   Grid2X2,
   Orbit,
@@ -24,6 +17,8 @@ import {
 } from "lucide-react";
 import { hindiPlanets, signs } from "./Chart";
 import ChartViewer from "./ChartViewer";
+import KundliOverviewCharts from "./KundliOverviewCharts";
+import GurujiGrahaStatus from "./GurujiGrahaStatus";
 import DashaPanel from "./DashaPanel";
 import {
   BirthDetailsPanel,
@@ -36,27 +31,17 @@ import { clockMinutes } from "./time-display";
 import ZodiacMark from "./ZodiacMark";
 import AstroSymbol from "./AstroSymbol";
 import { t, useLanguage } from "./i18n";
-import type { Report, Rule } from "./types";
+import type { Report } from "./types";
 import { placementConclusion } from "./yoga-conclusions";
 import NumerologyPanel from "./NumerologyPanel";
 import GurujiFaladesh from "./GurujiFaladesh";
-import { normalizeReadingCategory } from "./faladesh-reading";
+import { readingTopics } from "./source-topics";
 
 /** planetName returns the localized name for a report graha. */
 const planetName = (name: string) => t(hindiPlanets[name] || name);
 /** signName returns the localized zodiac-sign name for a report placement. */
 const signName = (sign: number) => t(signs[sign - 1]);
-const categories = [
-  { name: "General", Icon: Sparkles },
-  { name: "Personality", Icon: UserRound },
-  { name: "Education", Icon: GraduationCap },
-  { name: "Career", Icon: BriefcaseBusiness },
-  { name: "Finance", Icon: Wallet },
-  { name: "Relationships", Icon: Heart },
-  { name: "Family", Icon: UsersRound },
-  { name: "Wellbeing", Icon: HeartPulse },
-  { name: "Dasha", Icon: Clock },
-];
+const categories = readingTopics;
 const tabs = [
   ["overview", "Overview"],
   ["birth", "Birth details"],
@@ -82,11 +67,11 @@ const tabIcons = [
 const checkCopy: Record<string, [string, string]> = {
   "mangal-lagna": [
     "Mangal placement · Lagna",
-    "Mars in houses 1, 2, 4, 7, 8 or 12 from the ascendant. Cancellation rules are not applied.",
+    "Mars in houses 1, 4, 7, 8 or 12 from Lagna, according to Guruji's audio.",
   ],
   "mangal-moon": [
     "Mangal placement · Moon",
-    "The same six-house check, counted from the natal Moon sign. Traditions use different reference points.",
+    "Guruji's Moon check uses houses 1, 4, 7, 8 or 12; a Moon-only indication is partial Manglik.",
   ],
   "gajakesari-base": [
     "Gajakesari · base placement",
@@ -97,39 +82,6 @@ const checkCopy: Record<string, [string, string]> = {
     "Sun and Mercury in the same natal sign. Combustion, separation and strength are not evaluated by this placement check.",
   ],
 };
-
-/** RuleReading renders one applicable approved interpretation with its supplied language content. */
-function RuleReading({ rule }: { rule: Rule }) {
-  const { language } = useLanguage();
-  return (
-    <article className="faladesh-reading">
-      <span className="pill">
-        {rule.demo ? t("Demo reading") : t("Approved reading")}
-      </span>
-      <h3>{t(rule.topic)}</h3>
-      <p
-        lang={
-          language === "en" && rule.english ? "en" : rule.demo ? language : "hi"
-        }
-      >
-        {language === "en" && rule.english ? rule.english : t(rule.hindi)}
-      </p>
-      {rule.mantra && (
-        <p>
-          <strong>{t("मंत्र: ")}</strong>
-          {rule.mantra}
-        </p>
-      )}
-      {rule.gemstone && (
-        <p>
-          <strong>{t("रत्न संबंधी मार्गदर्शन: ")}</strong>
-          {rule.gemstone}
-          {t(" · रत्न खरीद में शामिल नहीं।")}
-        </p>
-      )}
-    </article>
-  );
-}
 
 /** KundliReport organizes the calculated Kundli, Faladesh, charts, planetary details and timing explorers. */
 export default function KundliReport({
@@ -159,8 +111,8 @@ export default function KundliReport({
   const [readingRefreshing, setReadingRefreshing] = useState(false);
   const [readingError, setReadingError] = useState("");
   const refreshedReadings = useRef(new Set<string>());
-  const version = report.guruji_faladesh?.analysis?.version;
-  const staleGuest = !report.user_id && ["m4y-cross-factor-faladesh-v1", "m4y-cross-factor-faladesh-v2", "m4y-cross-factor-faladesh-v3", "m4y-cross-factor-faladesh-v4"].includes(version || "") && !!onRefreshReading;
+  const version = report.source_readings?.length;
+  const staleGuest = !report.user_id && !version && !!onRefreshReading;
   const staleYogaGuest = !report.user_id && !!onRefreshReading && report.details?.qualifications?.method === "m4y-phaladeepika7-neechabhanga-strength-v1";
   // Refresh only this superseded unsaved guest reading. Saved reports and historical PDF snapshots remain immutable.
   useEffect(() => {
@@ -194,9 +146,6 @@ export default function KundliReport({
           } as const)
         : {}),
     }).format(new Date(value));
-  const rules = report.rules.filter(
-    (r) => normalizeReadingCategory(r.category) === category,
-  );
   const displayChart =
     chartMode === "d9" && report.navamsa
       ? {
@@ -213,11 +162,12 @@ export default function KundliReport({
           }
         : chart;
 
-  /** natalTable renders the natal graha table from the supplied calculated placements. */
+  /** natalTable renders calculated natal placements and the handwritten board's sign-based exaltation/debilitation labels. */
   function natalTable() {
     return (
       <section className="planet-panel">
         <h2>{t("आपकी ग्रह-सारणी")}</h2>
+        <p className="graha-table-source">{t("उच्च/नीच स्थिति गुरु जी की हस्तलिखित सूची के अनुसार है।")}</p>
 
         <div
           className="table-scroll"
@@ -225,21 +175,22 @@ export default function KundliReport({
           role="region"
           aria-label={t("आपकी ग्रह-सारणी")}
         >
-          <table className="natal-table">
+          <table className="natal-table natal-table-with-status">
             <caption className="sr-only">
-              {t("ग्रह, राशि, अंश, नक्षत्र, पद और भाव")}
+              {t("ग्रह, राशि, अंश, नक्षत्र, पद, उच्च/नीच स्थिति और भाव")}
             </caption>
             <thead>
               <tr>
                 <th scope="col">{t("ग्रह")}</th>
                 <th scope="col">{t("राशि / अंश")}</th>
                 <th scope="col">{t("नक्षत्र / पद")}</th>
+                <th scope="col">{t("उच्च / नीच")}</th>
                 <th scope="col">{t("भाव")}</th>
               </tr>
             </thead>
             <tbody>
               {chart?.planets.map((p) => (
-                <tr key={p.name}>
+                <tr key={p.name} data-planet={p.name}>
                   <th scope="row">
                     <span className="planet-identity">
                       <AstroSymbol name={p.name} />
@@ -264,6 +215,9 @@ export default function KundliReport({
                       {t("पद ")}
                       {p.pada}
                     </small>
+                  </td>
+                  <td data-label={t("उच्च / नीच")}>
+                    <GurujiGrahaStatus planet={p.name} sign={p.rashi_number} />
                   </td>
                   <td data-label={t("भाव")}>
                     <span className="house-badge">{p.house}</span>
@@ -451,31 +405,14 @@ export default function KundliReport({
           <>
             {tab === "overview" && (
               <>
-                <div className="report-layout">
-                  <section className="report-chart">
-                    <h2>{t("जन्म कुंडली")} · D1</h2>
-                    <ChartViewer chart={chart} />
-                    <p className="muted">
-                      {t(
-                        "खानों में राशि संख्या (1–12) है। भाव लग्न से वामावर्त चलते हैं।",
-                      )}
-                    </p>
-                    <button
-                      className="text-button"
-                      onClick={() => setTab("charts")}
-                    >
-                      {t("Explore D9 and Moon charts")}
-                      <ArrowRight size={16} />
-                    </button>
-                  </section>
-                  <div className="overview-details">
+                <KundliOverviewCharts report={report} />
+                <div className="overview-details overview-details-below">
                     {summary}
                     <p className="report-caption">
                       {t("Timing and transits calculated for")}{" "}
                       {date(asOf, true)}.
                     </p>
                     {natalTable()}
-                  </div>
                 </div>
               </>
             )}
@@ -527,6 +464,7 @@ export default function KundliReport({
                         <ChartViewer
                           key={chartMode}
                           chart={displayChart}
+                          natalLagna={chart.lagna.rashi_number}
                           referenceLabel={
                             chartMode === "moon" ? "Moon sign" : "Ascendant"
                           }
@@ -662,8 +600,8 @@ export default function KundliReport({
                   aria-labelledby="faladesh-topic-label"
                   ref={topicNav}
                 >
-                  {categories.map(({ name }, index) => {
-                    const value = name.toLowerCase();
+                  {categories.map(({ name, id }, index) => {
+                    const value = id;
                     return (
                       <button
                         key={value}
@@ -698,7 +636,7 @@ export default function KundliReport({
                             next = categories.length - 1;
                           else return;
                           event.preventDefault();
-                          setCategory(categories[next].name.toLowerCase());
+                          setCategory(categories[next].id);
                           topicNav.current
                             ?.querySelectorAll<HTMLButtonElement>("[role=tab]")
                             [next]?.focus();
@@ -717,20 +655,7 @@ export default function KundliReport({
                   tabIndex={0}
                 >
                   {readingRefreshing ? <p role="status">{language === "hi" ? "फलादेश अपडेट हो रहा है…" : "Updating your reading…"}</p> : readingError ? <p role="alert">{readingError}</p> : <GurujiFaladesh data={report.guruji_faladesh} category={category} report={report} />}
-                  {rules.filter(rule => !report.guruji_faladesh || !rule.demo).map((rule) => (
-                    <RuleReading key={rule.id + rule.version} rule={rule} />
-                  ))}
 
-                  {!report.guruji_faladesh && !rules.some((r) => !r.demo) && (
-                    <div className="reading-status">
-                      <Info size={19} />
-                      <p>
-                        {t(
-                          "Guru Ji-approved Faladesh for this topic is not yet available. Personal outcomes and remedies will appear only when an applicable reading is approved.",
-                        )}
-                      </p>
-                    </div>
-                  )}
                 </div>
               </section>
             )}

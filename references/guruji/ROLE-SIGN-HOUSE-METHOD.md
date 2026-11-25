@@ -1,5 +1,10 @@
 # Board role, sign condition and D1 house
 
+Historical implementation note: the synthesis described below was retired by
+the PDF-only cleanup. The user's later handwritten-table request restores only
+the twelve Hindi role lists and their chart display. No role/sign narratives,
+scores or synthesis engine described here are active.
+
 Classification version: `m4y-board-role-sign-v1`; synthesis version:
 `m4y-cross-factor-faladesh-v4` (role/sign rules retained from v3).
 

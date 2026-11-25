@@ -18,9 +18,9 @@ func (l pdfLocale) natalYogaBlocks(checks *swisseph.NatalYogaChecks) []pdfBlock 
 	for _, p := range k.Planets {
 		kaal.Rows = append(kaal.Rows, []string{l.text(p.Planet), fmt.Sprintf("%.6f°", p.Longitude), fmt.Sprintf("%.6f°", p.FromRahu), sideLabels[p.Side]})
 	}
-	status := l.text("rajyog.absent") + " " + l.text("rajyog.absent-meaning")
+	status := l.text("rajyog.absent")
 	if checks.Rajyog.Matches {
-		status = l.text("rajyog.present") + " " + l.text("rajyog.meaning")
+		status = l.text("rajyog.present")
 	}
 	raj := pdfBlock{Title: l.text("राजयोग · केंद्र–त्रिकोण संबंध"), Note: l.text("Conclusion") + ": " + status + "\n\n" + l.text("Calculation details") + l.text("। केंद्र 1/4/7/10 और त्रिकोण 1/5/9 के अलग स्वामियों में युति, परस्पर पूर्ण ग्रह-दृष्टि या राशि परिवर्तन की जाँच। अंतिम योग-बल, भंग और दशा में सक्रियता का आकलन नहीं है।"), Headers: []string{l.text("केंद्र भाव / स्वामी"), l.text("त्रिकोण भाव / स्वामी"), l.text("स्वामियों की राशियाँ"), l.text("संबंध")}}
 	linkLabels := map[string]string{"conjunction": l.text("एक राशि में युति"), "mutual_aspect": l.text("परस्पर पूर्ण दृष्टि"), "sign_exchange": l.text("राशि परिवर्तन")}
@@ -42,8 +42,7 @@ func (l pdfLocale) natalYogaBlocks(checks *swisseph.NatalYogaChecks) []pdfBlock 
 	}
 	if len(yogakaraka.Rows) == 0 {
 		yogakaraka.Note = l.text("yogakaraka.absent")
-	} else {
-		yogakaraka.Note += l.text("yogakaraka.meaning")
+
 	}
 	types := pdfBlock{Title: l.text("Twelve Kaal Sarp types"), KeepTogether: true, Headers: []string{l.text("Kaal Sarp type"), l.text("Rahu") + " / " + l.text("House"), l.text("Ketu") + " / " + l.text("House")}}
 	for house := 1; house <= 12; house++ {

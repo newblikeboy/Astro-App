@@ -28,7 +28,7 @@ const roles: MatchingRole[] = ["bride", "groom"];
 /** nameOf selects the localized name for matching-report planets, signs or reference labels. */
 const nameOf = (role: MatchingRole) => t(role === "bride" ? "Bride" : "Groom");
 
-/** MatchingMangal renders both participants' raw Mangal evidence and separate cancellation assessments. */
+/** MatchingMangal compares both participants using Guruji's Lagna/Moon Manglik and partial classifications. */
 export function MatchingMangal({ result }: { result: MatchingResponse }) {
   return (
     <section
@@ -60,11 +60,6 @@ export function MatchingMangal({ result }: { result: MatchingResponse }) {
         <strong>{t(mangalStatusLabels[result.mangal.status])}</strong>
 
       </div>
-      {(!result.mangal.bride.strength||!result.mangal.groom.strength)&&<p className="matching-mangal-note">
-        {t(
-          "Full planetary strength and context-dependent exceptions still require a professional reading. A possible benefic-strength condition is not treated as a confirmed cancellation.",
-        )}
-      </p>}
     </section>
   );
 }
@@ -165,6 +160,7 @@ export function MatchingCharts({ result }: { result: MatchingResponse }) {
             <ChartViewer
               key={role + mode}
               chart={chartData(result[role], mode)}
+              natalLagna={result[role].chart.lagna.rashi_number}
               referenceLabel={mode === "moon" ? "Moon sign" : "Ascendant"}
               label={`${nameOf(role)} · ${t(chartModes.find((m) => m.id === mode)!.name)}`}
             />

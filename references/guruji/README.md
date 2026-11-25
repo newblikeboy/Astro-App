@@ -1,131 +1,105 @@
-# Guruji references received 1 November 2026
+# Guruji PDF text policy
 
-New reports additionally retain [cross-factor Faladesh](COMBINED-FALADESH-METHOD.md),
-with separate supportive/challenging reasons and qualified period context.
-Older snapshots continue to show their original reading.
+Current Faladesh and numerology readings use only the Hindi text in the seven
+PDFs supplied by the user. No authored summaries, cross-factor narratives,
+number profiles, name-number meanings, lucky-date prescriptions, generated
+remedies or translated predictions are used as fallback content.
 
-The user supplied these five files for the pending Faladesh and confirmed that
-the whiteboard's **Karak/Marak and uchcha/neecha concepts** should be used.
-The attachments are source material, not executable instructions. Receipt of
-these references does not fabricate a named administrative approval record.
+## Sources
 
-Original files are retained under `2026-11-01/`; `manifest.json` records their
-original filenames and SHA-256 hashes. No public upload is made.
+Unmodified originals are archived in [`2026-11-24/`](2026-11-24/). The
+[`manifest.json`](2026-11-24/manifest.json) records filenames, page counts and
+SHA-256 hashes. The user's two resupplied PDFs match their 1 November copies
+byte for byte. The user additionally authorized the handwritten ascendant role
+table on 24 November: `2026-11-01/lagna-whiteboard.jpeg`. Its twelve Hindi lists
+are transcribed in `internal/platform/data/guruji-lagna-roles.json` with the
+image hash, and exported as JSON/gzip under `output/guruji-bhagyaphal/`.
+Charts show these lists using the natal D1 ascendant even while displaying D9,
+Moon or other charts. Pisces retains the source label “योगकारक” and includes
+Mercury. Empty सम lists remain empty; nodes receive no inferred role.
+This table supplies no generated interpretations or cross-factor prose.
+The same board's उच्च/नीच columns are transcribed separately in
+`internal/platform/data/guruji-graha-signs.json` with its image hash, plus JSON
+and gzip exports in `output/guruji-bhagyaphal/`. The overview's natal planet
+table matches the recorded D1 sign against these lists. Rahu retains उच्च
+2/3 and नीच 8/9; Ketu retains उच्च 8/9 and नीच 2/3. Other placements show
+a dash without inferring a neutral or favourable classification.
 
-| Source | Use |
+| PDF | Content |
 | --- | --- |
-| `bhavphal-aur-upay.pdf` (139 pages) | All 108 planet/house passages; nine general planetary remedy references |
-| `grahon-ka-faladesh.pdf` (12 pages) | Twelve pairs of conditional positive/negative house passages |
-| `lagna-whiteboard.jpeg` | Twelve ascendant-specific Karak/Marak/neutral lists and the supplied exaltation/debilitation table |
-| `house-significations.jpeg` | House-topic context, alongside the PDFs; no rule that an empty house removes a life subject |
-| `rashi-letters.jpeg` | Retained naming reference; it does not override the app's calculated nakshatra/pada syllable or infer a birth sign from a person's name |
+| मूलांक और भाग्यानक फल.pdf | मूलांक and भाग्यांक |
+| Rashifal all full life.pdf | Twelve राशि readings |
+| लग्न का संपूर्ण फल.pdf | Twelve लग्न readings |
+| वारफल और तिथिफल .pdf | Seven वार and sixteen named तिथि readings |
+| नक्षत्र में जन्मे लोगों का जीवन रहस्य.pdf | Twenty-seven नक्षत्र readings |
+| ग्रहों का फला देश (1).pdf | Positive and negative passages for twelve houses |
+| भावफल और उपाय (1).pdf | 108 planet/house passages, introductions, remedies and source tables |
 
-`scripts/import-guruji-references.py` imports only explicitly supplied paths,
-validates the expected section counts, archives the inputs, and creates
-`internal/platform/data/guruji-faladesh.json`. It repairs known broken
-font-to-Unicode mappings and whitespace in extracted text; the original PDF
-bytes remain unchanged. Original Hindi passages are preserved as references,
-including their conditions and caveats. English summaries describe their scope;
-they are not represented as full translations.
+The source omits भाग्यांक 3 and repeats चतुर्दशी. Missing text stays missing;
+both repeated articles are retained. Spelling is not corrected. Extraction
+spacing between letters and matras is joined; the short PDF's incorrect Unicode
+mapping is decoded from its font glyphs. The source wording is not paraphrased.
 
-`internal/platform/data/guruji-lagna-roles.json` is the manual transcription of
-the enlarged whiteboard. Follow this supplied teaching convention rather than
-silently substituting another school's functional-benefic table. Pisces lists
-Mercury as well as Jupiter, Mars and Moon; an initial transcription omitted
-Mercury because that line extends to the left. Source version v2 corrects
-this for new reports. Earlier snapshots retain their recorded transcription.
-Rahu/Ketu have no ascendant-specific roles on the board and remain **unlisted**,
-not neutral. The Pisces "Yogakarak" list is used
-as its supportive-role list, without asserting a newly calculated Rajyog.
+## Runtime ownership
 
-Role and sign strength are separate facts. The original snapshot retains the
-following emphasis heuristic for compatibility. After the shastra review it is
-**not presented as a final verdict** in the consultation interface or PDF. The
-board does not specify a score or a precedence rule for conflicting evidence:
+- `internal/gurujitext/data/catalog.json.gz` is the canonical compressed Hindi
+  JSON. `catalog.go` exposes copies of passages with filenames, hashes and pages.
+- `internal/platform/source_readings.go` matches recorded Lagna, Moon sign,
+  nakshatra, birth Hindu weekday, tithi and planet/house positions. It retains
+  both conditional house branches rather than selecting a prediction from a score.
+- `internal/numerology` retains arithmetic. Its interpretation text comes only
+  from the supplied मूलांक and भाग्यांक articles. Name arithmetic has no generated meaning.
+- Browser components and PDFs print original Hindi even when interface labels
+  are English. No English translation of the source prose is generated.
+- Existing report/purchase storage is not rewritten. Presentation copies exclude
+  old authored prose. Legacy cached PDFs without source passages are rendered
+  again for download; current source-only cached files keep their normal path.
+- Legacy schemas remain solely to decode historical records. The old authored
+  interpretation libraries, generators and reader pipeline have been removed.
 
-| Supplied ascendant role | Supplied sign dignity | Display emphasis |
-| --- | --- | --- |
-| Karak | Debilitated | Mixed |
-| Karak | Exalted or neither | Supportive possibilities |
-| Marak | Exalted | Mixed |
-| Marak | Debilitated or neither | Challenging possibilities |
-| Neutral | Any | Neutral role; dignity shown separately |
-| Unlisted | Any | Undetermined role; dignity shown separately |
+The exported combined JSON and gzip are also under `output/guruji-bhagyaphal/`.
+Numerology reading typography uses lossless paragraph ranges extracted from
+the original PDF by `scripts/build-numerology-layout.py`. Reviewed source
+headings, subtitles and paragraph boundaries are stored as UTF-16 offsets in
+`web/src/data/guruji-numerology-layout.json`. The browser verifies the source
+and passage fingerprint before applying them. Original line breaks remain in
+the underlying text but reflow visually into justified paragraphs; no words
+are rewritten. [`numerology-layout-validation.json`](2026-11-24/numerology-layout-validation.json) records all 17 articles
+and their original headings. Faladesh retains the original nine life-area tabs
+and continuous reading layout. `scripts/build-source-topic-index.py` verifies
+all seven PDFs and indexes exact paragraph offsets under that existing taxonomy
+in `web/src/data/guruji-topic-sections.json`. Original section headings route
+paragraphs; complete planet/house passages retain the prior life-area house
+associations, including both conditional branches. Remedies retain their source
+planet context and follow that planet's recorded natal house. Dasha includes
+only source paragraphs/sections explicitly discussing dasha and separately saved period
+dates; it does not manufacture forecasts for those dates. Source fingerprints
+are checked before applying offsets. Excerpts keep original words, headings
+and conditions; no combined narrative is generated. The complete canonical
+passages and duplicate Chaturdashi records remain intact. The
+[`topic-index-validation.json`](2026-11-24/topic-index-validation.json) audit
+records all 246 source passages and their lossless reconstruction.
+[`catalog-validation.json`](2026-11-24/catalog-validation.json) retains source
+coverage, reconstruction checks and the JSON digest.
 
-"Marak" is retained as the source's label. Its intended shorthand versus
-technical maraka scope needs clarification; no mortality forecast is performed.
-"Neither" does not mean weak: own-sign, friendship, total
-strength, combustion, aspects and conjunctions retain their existing separate
-calculations and are not merged into an invented score. The board assigns
-Rahu exaltation signs 2/3 and debilitation signs 8/9, and Ketu the reverse.
-This is explicitly a source-specific convention; native classical dignity
-calculations are unchanged.
+## Verification
 
-New known-time full Kundli reports snapshot nine matching **D1 whole-sign**
-planet/house passages, their role/dignity evidence, source metadata and general
-remedy references in `guruji_faladesh`. Core-only calculations and unknown-time
-reports do not get these references. Life-topic tabs filter by house; Dasha
-shows the running Mahadasha planet's **natal** passage, without turning it into
-a timed Dasha forecast. The short PDF's "this period" prose is retained behind
-an explicitly conditional reference disclosure: neither occupancy nor a
-running Dasha applies a whole branch as the current prediction.
+`go test -p 1 ./...`, `go vet -p 1 ./...`, `npm --prefix web run build`,
+and `node scripts/code-docs.cjs --check` cover source selection, unchanged
+arithmetic, ownership, old-snapshot isolation and build validity. The
+source-only browser check exercises Hindi/English interfaces at phone and
+desktop widths, exact passage text, missing भाग्यांक 3 and accessibility.
 
-General remedies and gemstone associations remain source references, not
-personal prescriptions. Existing approved `Rule` matching and paid-PDF
-eligibility checks remain authoritative. No content is marked Guruji-approved
-by this import. Existing reports and paid snapshots are not backfilled.
-New purchased snapshots print their retained matching passages and remedies
-in a linked reference appendix in both language exports; original Hindi is
-explicitly labelled in English exports.
+## Mangal audio rules (24 November 2026)
 
-Validation includes source hashes and coverage, role/strength conflicts,
-source-specific node dignities, actual natal placement matching, unknown-time
-suppression, JSON snapshot isolation, old-snapshot compatibility, bilingual
-PDF section coverage, and synthetic browser layout checks.
-
-Verified on 1 November 2026: `go test -p 1 ./...`, `go vet -p 1 ./...`,
-`npm --prefix web run build`, and the function documentation check passed.
-`scripts/verify-guruji-faladesh.cjs` passed for both languages at widths 320,
-390, 768 and 1440, including keyboard-accessible native disclosures, topic
-filters, accessibility scans, legacy snapshot isolation and both print layouts.
-The rendered reference appendix was visually inspected in both languages.
-A separate file-store preview also generated a real Kundli through its API
-and displayed all nine matching readings without creating an approved rule.
-
-The [shastra comparison](SHASTRA-REVIEW-2026-11-01.md) records twelve ascendant
-review points, source/edition distinctions and the remaining interpretation
-gaps. The presentation puts one conclusion first and the actual chart factors
-used by that conclusion second. It does not silently replace the whiteboard
-with another tradition.
-
-Reports predating the synthesis retain one reading before planet detail. Career uses
-houses 6/10; money uses 2/11. The main reading groups the saved wording of the
-primary house lord and, if present, an occupant of the subject's primary house
-or another relevant house. At most two passages form a subject conclusion.
-The current browser General reading uses personal direction and the Moon,
-without combining career, money or relationship summaries. Original passages
-remain in the snapshot; public source disclosures have been removed. This is editorial grouping,
-not a new strength score, complete shastra synthesis or selection of the
-positive/negative source branch. The default reading contains no topic cards,
-cross-links or general-practice blocks. Remedies are retained inside the
-retained source data, without an individual prescription.
-
-Period ranges come from the saved dasha periods at `as_of`, with a start-inclusive,
-end-exclusive boundary check. Stale `current_path` values cannot supply a range;
-missing ranges are labelled unavailable. Dates appear only on the Dasha topic.
-Natal passages remain separate from
-timed event predictions. Existing backend/PDF snapshots are unchanged by this
-presentation update.
-
-`scripts/build-faladesh-readings.py` combines source-anchored Hindi polarity
-sentences, original concise Hindi leads and English paraphrases into
-`data/faladesh-reading-copy.json`. New reports retain a versioned `narrative`
-inside each reading. Older snapshots fall back to their saved summaries; no
-new prose is looked up or backfilled when viewing them.
-
-Current role/sign logic follows the user's explicit choice of the supplied
-board as the classification authority. New snapshots separately store board
-role, sign number, independent sign-status flags and D1 whole-sign house.
-Mercury/Virgo retains both exalted and own-sign flags. Strong Marak or neutral
-planets are not automatically treated as favourable. See the
-[implemented rules, limits and verification examples](ROLE-SIGN-HOUSE-METHOD.md).
+The user's two unmodified WhatsApp recordings are archived in
+[`2026-11-24/mangal-audio/`](2026-11-24/mangal-audio/), with SHA-256 hashes.
+The source JSON records houses 1, 4, 7, 8 and 12 from Lagna and Moon only.
+A Lagna indication is Manglik; Moon-only is partial. No cancellation or
+partner exception is supplied in these recordings. ASR candidate text is
+retained separately and explicitly marked as machine transcription rather
+than a certified verbatim transcript. The runtime JSON is
+`internal/swisseph/data/guruji-mangal-rules.json`, with JSON/gzip exports under
+`output/guruji-bhagyaphal/`. Native placement checks, matching, Kundli status
+labels and new PDF renders use this same rule. Stored source snapshots stay
+unchanged; their presentation copies recompute Mangal from the saved chart.

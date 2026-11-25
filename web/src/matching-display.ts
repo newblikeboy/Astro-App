@@ -53,27 +53,10 @@ export function factorExplanation(f: MatchingFactor) {
     v5: f.evidence?.groom_class ?? "",
   });
 }
-export const mangalRuleLabels: Record<string, string> = {
-  strong_benefic_Jupiter:"Strength-qualified Jupiter in own or exalted sign in house 1 or 7",
-  strong_benefic_Venus:"Strength-qualified Venus in own or exalted sign in house 1 or 7",
-  mars_own_or_exalted: "Mars in its own or exalted sign",
-  mars_debilitated: "Mars in Cancer (selected cancellation tradition)",
-  mars_retrograde: "Retrograde Mars",
-  mars_combust: "Mars within 17 degrees of the Sun",
-  mars_conjunct_jupiter: "Mars and Jupiter in the same sign",
-  mars_conjunct_moon: "Mars and Moon in the same sign",
-  mars_conjunct_rahu: "Mars and Rahu in the same sign",
-  jupiter_aspects_seventh_mars: "Jupiter aspects seventh-house Mars",
-  sign_house_exception: "Published sign-and-house exception",
-  other_saturn_or_rahu_same_house:
-    "Partner Saturn or Rahu in the same house number",
-  other_saturn_in_mangal_house: "Partner Saturn in a specified Mangal house",
-  other_malefic_in_upachaya: "Partner Mars, Saturn or Rahu in house 3, 6 or 11",
-};
 export const mangalStatusLabels: Record<string, string> = {
   no_active_flags: "No remaining flags under the selected rules",
-  similar_active_levels: "Similar Mangal levels",
-  different_active_levels: "Different Mangal levels need review",
+  similar_active_levels: "Same Manglik classification",
+  different_active_levels: "Different Manglik classifications",
   pair_exception_found: "A traditional pair exception was found",
 };
 export const scoreBandLabels: Record<string, string> = {

@@ -759,3 +759,35 @@
     margin-bottom: 5px;
   }
 }
+.lagna-graha-roles {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border, #e6d8ca);
+  border-radius: 12px;
+  background: var(--surface, #fffaf3);
+}
+.lagna-graha-roles h3 {
+  margin: 0 0 .65rem;
+  font-size: 1rem;
+}
+.lagna-graha-roles dl {
+  display: grid;
+  gap: .6rem;
+  margin: 0;
+}
+.lagna-graha-roles dl > div {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: .5rem;
+  align-items: baseline;
+}
+.lagna-graha-roles dt { font-weight: 600; }
+.lagna-graha-roles dd { margin: 0; line-height: 1.7; overflow-wrap: anywhere; }
+.graha-table-source { margin: -4px 0 16px; font-size: 12px; line-height: 1.7; color: #795d48; }
+.graha-sign-status { display: inline-block; font-size: 11px; line-height: 1.6; color: #795d48; }
+.graha-sign-status[data-status="exalted"] { color: #355b2b; background: #eff6e9; border: 1px solid #d1e2c7; border-radius: 6px; padding: 3px 8px; }
+.graha-sign-status[data-status="debilitated"] { color: #973a23; background: #fff0e8; border: 1px solid #efd3c5; border-radius: 6px; padding: 3px 8px; }
+@media (max-width: 650px) {
+  .kundli-panel .natal-table-with-status td:last-child { grid-column: auto; border-top: 0; display: block; }
+  .kundli-panel .natal-table-with-status td:last-child::before { margin-bottom: 5px; }
+}

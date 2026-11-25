@@ -1,0 +1,55 @@
+{
+  "received": "2026-11-24",
+  "sources": [
+    {
+      "filename": "मूलांक और भाग्यानक फल.pdf",
+      "archive": "references/guruji/2026-11-24/मूलांक और भाग्यानक फल.pdf",
+      "sha256": "f47cc640d386eb2b62f397c52ce8d1164889b92e128a76a0a57a7d7358a475f5",
+      "pages": 213
+    },
+    {
+      "filename": "Rashifal all full life.pdf",
+      "archive": "references/guruji/2026-11-24/Rashifal all full life.pdf",
+      "sha256": "44d4f3696d2078ccc62a07affa8ee7b4d5811cd061b40e95e5f78636fb9f11e8",
+      "pages": 92
+    },
+    {
+      "filename": "लग्न का संपूर्ण फल.pdf",
+      "archive": "references/guruji/2026-11-24/लग्न का संपूर्ण फल.pdf",
+      "sha256": "b3d1438d0f05aaf73d547332dfdcac73b20d74a555b3612c584899cef0436151",
+      "pages": 143
+    },
+    {
+      "filename": "वारफल और तिथिफल .pdf",
+      "archive": "references/guruji/2026-11-24/वारफल और तिथिफल .pdf",
+      "sha256": "52f087bc7186e94a31277c2eb13adb959cd3b96fb4524fe6ee57792aa781d5fd",
+      "pages": 266
+    },
+    {
+      "filename": "नक्षत्र में जन्मे लोगों का जीवन रहस्य.pdf",
+      "archive": "references/guruji/2026-11-24/नक्षत्र में जन्मे लोगों का जीवन रहस्य.pdf",
+      "sha256": "345d792bb3b3d1a740e8d3cd6e119d06737fb42cc534f3d3df7d86b2538d0f92",
+      "pages": 266
+    },
+    {
+      "filename": "ग्रहों का फला देश (1).pdf",
+      "archive": "references/guruji/2026-11-24/ग्रहों का फला देश (1).pdf",
+      "sha256": "dee6da565c9af7a1158af80b8d2fe0feb60fe8d8202c17b2ef476823b5fe9fe2",
+      "pages": 12
+    },
+    {
+      "filename": "भावफल और उपाय (1).pdf",
+      "archive": "references/guruji/2026-11-24/भावफल और उपाय (1).pdf",
+      "sha256": "5ef9ffba64729d9c3e57506b0a8086219ac44adb2cbd63972ac9634789008d3a",
+      "pages": 139
+    }
+  ],
+  "combined_hindi_json": "output/guruji-bhagyaphal/guruji-bhagyaphal-hi.min.json",
+  "combined_hindi_gzip": "output/guruji-bhagyaphal/guruji-bhagyaphal-hi.min.json.gz",
+  "combined_hindi_source_indexes": {
+    "house-outcomes": 5,
+    "bhav-upay": 6
+  },
+  "runtime_catalog": "internal/gurujitext/data/catalog.json.gz",
+  "runtime_catalog_sha256": "16b69fcaa613d91af71ec526cef24420e3b7ea8966c6d98326464056173ccc47"
+}

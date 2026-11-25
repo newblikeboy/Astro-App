@@ -6,12 +6,13 @@ export function placementConclusion(code: string, matches: boolean) {
   const base = code.endsWith("-base") || code.startsWith("mangal-");
   return {
     status: t(`placement.${base ? "base-" : ""}${matches ? "present" : "absent"}`, { v1: t(`yoga.name.${code}`) }),
-    meaning: t(matches ? `yoga.meaning.${code}` : "placement.absent-meaning"),
+    meaning: "",
   };
 }
 
 /** mangalConclusion distinguishes an absent base placement from cancellation and a remaining indication. */
 export function mangalConclusion(assessment: MangalAssessment) {
+  if (assessment.classification) return { status: t(`mangal.guruji.${assessment.classification}`), meaning: "" };
   const state = assessment.active_count > 0 ? "present" : assessment.base_count > 0 ? "cancelled" : "absent";
-  return { status: t(`mangal.${state}`), meaning: t(state === "present" ? "mangal.meaning" : `mangal.${state}-meaning`) };
+  return { status: t(`mangal.${state}`), meaning: "" };
 }

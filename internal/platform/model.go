@@ -1,6 +1,7 @@
 package platform
 
 import (
+	"astroapp/backend/internal/gurujitext"
 	"astroapp/backend/internal/numerology"
 	"astroapp/backend/internal/swisseph"
 	"time"
@@ -68,23 +69,24 @@ type Rule struct {
 	Demo       bool       `json:"demo"`
 }
 type Report struct {
-	GurujiFaladesh *GurujiFaladesh       `json:"guruji_faladesh,omitempty"`
-	Numerology     *numerology.Reading   `json:"numerology,omitempty"`
-	ID             string                `json:"id"`
-	UserID         string                `json:"user_id"`
-	Birth          Birth                 `json:"birth"`
-	Place          Place                 `json:"place"`
-	Chart          *swisseph.Kundali     `json:"chart"`
-	Details        *KundliExpansion      `json:"details,omitempty"`
-	Navamsa        *swisseph.Navamsa     `json:"navamsa,omitempty"`
-	Dasha          *swisseph.Vimshottari `json:"dasha,omitempty"`
-	Checks         []PlacementCheck      `json:"checks,omitempty"`
-	Transits       *TransitSnapshot      `json:"transits,omitempty"`
-	Rules          []Rule                `json:"rules"`
-	Limitations    []string              `json:"limitations"`
-	Created        time.Time             `json:"created"`
-	Engine         string                `json:"engine"`
-	Demo           bool                  `json:"demo"`
+	SourceReadings []gurujitext.Reference `json:"source_readings,omitempty"`
+	GurujiFaladesh *GurujiFaladesh        `json:"guruji_faladesh,omitempty"`
+	Numerology     *numerology.Reading    `json:"numerology,omitempty"`
+	ID             string                 `json:"id"`
+	UserID         string                 `json:"user_id"`
+	Birth          Birth                  `json:"birth"`
+	Place          Place                  `json:"place"`
+	Chart          *swisseph.Kundali      `json:"chart"`
+	Details        *KundliExpansion       `json:"details,omitempty"`
+	Navamsa        *swisseph.Navamsa      `json:"navamsa,omitempty"`
+	Dasha          *swisseph.Vimshottari  `json:"dasha,omitempty"`
+	Checks         []PlacementCheck       `json:"checks,omitempty"`
+	Transits       *TransitSnapshot       `json:"transits,omitempty"`
+	Rules          []Rule                 `json:"rules"`
+	Limitations    []string               `json:"limitations"`
+	Created        time.Time              `json:"created"`
+	Engine         string                 `json:"engine"`
+	Demo           bool                   `json:"demo"`
 }
 type Order struct {
 	Gemstone     *GemstoneSale  `json:"gemstone,omitempty"`
@@ -249,7 +251,6 @@ func seed() *State {
 	// Additive collections stay empty until the merchant adds real inventory.
 	s := &State{Users: map[string]*User{}, Sessions: map[string]*Session{}, OTPs: map[string]*OTP{}, Reports: map[string]*Report{}, Orders: map[string]*Order{}, Bookings: map[string]*Booking{}, Meetings: map[string]Meeting{}, Rules: map[string]Rule{}, Jobs: map[string]*Job{}, Webhooks: map[string]bool{}, Expenses: map[string]*Expense{}, Distributions: map[string]*Distribution{}, Reconciliations: map[string]Reconciliation{}, Events: []Event{}, Audits: []Audit{}}
 	s.Settings = Settings{PDFPrice: 9900, ConsultationPrice: 350100, Buffer: 15, LeadHours: 24, HorizonDays: 30, ChangeHours: 24, Zone: "Asia/Kolkata", TaxMode: "unconfigured", Availability: []Window{{1, "10:00", "13:00"}, {3, "15:00", "18:00"}, {6, "10:00", "13:00"}}, Blocked: []string{}, Content: Content{Intro: "अपनी कुंडली को समझने और सोच-समझकर आगे बढ़ने की एक सहज शुरुआत। पं. राजा मिश्रा का स्वीकृत परिचय यहाँ जोड़ा जाएगा।", Videos: FeaturedVideoIDs(), Support: "संपर्क विवरण जल्द उपलब्ध होंगे।", FAQ: []FAQ{{"जन्म समय नहीं पता हो तो?", "आप विवरण दर्ज कर सकते हैं। सही समय के बिना लग्न, भाव और ग्रहों की निश्चित स्थिति नहीं दिखाई जाएगी।"}, {"उपाय PDF कैसे मिलेगा?", "सत्यापित भुगतान के बाद PDF आपके खाते में मिलेगा। आप उसे सुरक्षित रूप से डाउनलोड कर सकेंगे।"}, {"परामर्श कैसे होगा?", "उपलब्ध समय चुनने और भुगतान के बाद आपके खाते में निजी Zoom लिंक उपलब्ध होगा। अवधि की पुष्टि बुकिंग शुरू होने से पहले की जाएगी।"}, {"बुकिंग बदल या रद्द कर सकते हैं?", "खाते से अनुरोध करें। लागू समय-सीमा और स्वीकृत रद्दीकरण नीति बुकिंग से पहले दिखाई जाएगी।"}}, Policies: map[string]string{"privacy": "समीक्षा हेतु प्रारूप: जन्म विवरण और संपर्क जानकारी केवल रिपोर्ट, खाते और बुकिंग के लिए सुरक्षित रखी जाती है। अपने खाते से मिटाने का अनुरोध करें। भुगतान अभिलेखों की कानूनी अवधि संचालक द्वारा तय की जानी है।", "terms": "समीक्षा हेतु प्रारूप: ज्योतिषीय व्याख्या सांस्कृतिक और व्यक्तिगत चिंतन के लिए है। यह चिकित्सा, कानूनी या वित्तीय सलाह नहीं है। किसी परिणाम की गारंटी नहीं है।", "refund": "समीक्षा हेतु प्रारूप: PDF और परामर्श की रद्दीकरण, पुनर्निर्धारण और धनवापसी शर्तों को व्यवसाय की स्वीकृति के बाद यहाँ प्रकाशित किया जाएगा। लाइव बिक्री अभी बंद है।", "contact": "स्वीकृत संपर्क विवरण अभी उपलब्ध नहीं हैं। कृपया लाइव सेवा शुरू होने पर यहाँ दी गई सहायता जानकारी का उपयोग करें।"}}}
-	s.Rules["demo-reflection:1"] = Rule{ID: "demo-reflection", Version: 1, Topic: "चिंतन", Hindi: "यह केवल डेमो सामग्री है: अपनी प्राथमिकताओं को लिखने और नियमित आत्मचिंतन के लिए समय निकालें। व्यक्तिगत व्याख्या गुरुजी की स्वीकृति के बाद उपलब्ध होगी।", Status: "draft", Priority: 1, Demo: true}
 	s.Gemstones = map[string]*Gemstone{}
 	s.VideoLinks = map[string]VideoLink{}
 	s.Settings.Shop = ShopSettings{TaxMode: "unconfigured"}

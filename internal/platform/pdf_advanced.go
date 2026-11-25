@@ -5,20 +5,6 @@ import (
 	"fmt"
 )
 
-// yogaQualificationNote reads only retained participant qualifications; old
-// purchases receive no newly calculated caveat or changed yoga judgement.
-func (l pdfLocale) yogaQualificationNote(details *KundliExpansion, code string) string {
-	if details == nil || details.Qualifications == nil {
-		return ""
-	}
-	for _, y := range details.Qualifications.Yogas {
-		if y.Code == code && y.BasePresent && y.Status == "qualified" {
-			return l.gurujiWording(GurujiWording{"यह योग मौजूद है, लेकिन उससे जुड़े ग्रहों की कमजोरी या दूसरी रुकावटों से उसका पूरा फायदा मिलने में मेहनत लग सकती है।", "This yoga is present, but weaknesses or other obstacles affecting its participants may limit how fully its potential is realised."})
-		}
-	}
-	return ""
-}
-
 // advancedStrengthSection prints retained strength results in the existing
 // appendix, keeping detailed calculation evidence outside the reader chapters.
 func (l pdfLocale) advancedStrengthSection(b *swisseph.Shadbala, q *swisseph.YogaQualifications) pdfSection {

@@ -33,7 +33,7 @@ func TestMatchingSharedTranslations(t *testing.T) {
 		}
 		seen[en] = true
 	}
-	for _, values := range []map[string]string{matchingFactorWhy, matchingMangalRuleText, matchingMangalStatusText, matchingBandText} {
+	for _, values := range []map[string]string{matchingFactorWhy, matchingMangalStatusText, matchingBandText} {
 		for _, en := range values {
 			if matchingText("hi", en) == en {
 				t.Fatalf("missing Hindi matching explanation: %s", en)

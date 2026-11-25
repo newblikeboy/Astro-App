@@ -1,12 +1,34 @@
 package swisseph
 
 import (
+	"crypto/sha256"
 	"encoding/json"
+	"fmt"
 	"math"
 	"os"
+	"path/filepath"
 	"testing"
 	"time"
 )
+
+// TestGurujiMangalAudioProvenance pins the runtime configuration to both unmodified user-supplied recordings.
+func TestGurujiMangalAudioProvenance(t *testing.T) {
+	var source struct {
+		Sources []struct {
+			File   string `json:"file"`
+			SHA256 string `json:"sha256"`
+		} `json:"sources"`
+	}
+	if err := json.Unmarshal(gurujiMangalJSON, &source); err != nil || len(source.Sources) != 2 {
+		t.Fatal("two audio sources required", err)
+	}
+	for _, item := range source.Sources {
+		data, err := os.ReadFile(filepath.Join("../../references/guruji/2026-11-24/mangal-audio", item.File))
+		if err != nil || fmt.Sprintf("%x", sha256.Sum256(data)) != item.SHA256 {
+			t.Fatal("changed source recording", item.File, err)
+		}
+	}
+}
 
 // mangalFixture creates a deterministic chart for checking the separate Mangal reference frames.
 func mangalFixture() Kundali {
@@ -29,140 +51,99 @@ func setMangalFixture(chart *Kundali, name string, lon float64) {
 	}
 }
 
-// TestMangalTriadRawAndCancellationEvidence checks raw Mangal results and cancellation evidence for the three reference frames.
-func TestMangalTriadRawAndCancellationEvidence(t *testing.T) {
-	base := mangalFixture()
-	got, err := CalculateMangal(base)
-	if err != nil || got.BaseCount != 2 || got.ActiveCount != 2 || got.BaseLevel != "high" || got.Level != "high" {
-		t.Fatalf("base %+v %v", got, err)
-	}
-	for i, h := range []int{1, 7, 3} {
-		if got.References[i].House != h {
-			t.Fatal("reference houses mixed")
-		}
-	}
-	for _, tc := range []struct {
-		code, planet string
-		lon          float64
-	}{
-		{"mars_own_or_exalted", "Mars", 10}, {"mars_own_or_exalted", "Mars", 225}, {"mars_own_or_exalted", "Mars", 280},
-		{"mars_debilitated", "Mars", 100}, {"mars_combust", "Sun", 177},
-		{"mars_conjunct_jupiter", "Jupiter", 170}, {"mars_conjunct_moon", "Moon", 170}, {"mars_conjunct_rahu", "Rahu", 170},
-	} {
-		chart := mangalFixture()
-		setMangalFixture(&chart, tc.planet, tc.lon)
-		v, e := CalculateMangal(chart)
-		if e != nil {
-			t.Fatal(e)
-		}
-		met := false
-		for _, r := range v.Rules {
-			if r.Code == tc.code {
-				met = r.Met
-			}
-		}
-		if !met || v.ActiveCount != 0 {
-			t.Fatalf("%s not applied: %+v", tc.code, v)
-		}
-		for _, ref := range v.References {
-			if ref.Flagged && (!ref.Cancelled || len(ref.Exceptions) == 0) {
-				t.Fatal("cancellation hides raw evidence")
-			}
-		}
-	}
-	chart := mangalFixture()
-	chart.Planets[2].Speed = -0.001
-	if v, _ := CalculateMangal(chart); v.ActiveCount != 0 || !v.Rules[2].Met {
-		t.Fatal("retrograde cancellation not derived from speed")
-	}
-	chart = mangalFixture()
-	setMangalFixture(&chart, "Sun", math.Nextafter(177, 360))
-	if v, _ := CalculateMangal(chart); v.Rules[3].Met || v.ActiveCount != 2 {
-		t.Fatal("combustion boundary was rounded")
-	}
-	chart = mangalFixture()
-	chart.Lagna = zodiacPosition(340)
-	setMangalFixture(&chart, "Jupiter", 40)
-	if v, _ := CalculateMangal(chart); !v.Rules[7].Met || v.ActiveCount != 0 {
-		t.Fatal("Jupiter fifth aspect on seventh-house Mars not applied")
-	}
-	chart = mangalFixture()
-	setMangalFixture(&chart, "Jupiter", 340)
-	v, _ := CalculateMangal(chart)
-	if len(v.ReviewConditions) == 0 || v.ActiveCount == 0 {
-		t.Fatal("uncomputed benefic strength was treated as established")
-	}
-}
-
-// TestMangalHouseExceptionsAndCoverage checks house-specific Mangal exceptions and coverage.
-func TestMangalHouseExceptionsAndCoverage(t *testing.T) {
-	expected := map[int][]int{1: {1, 10}, 4: {1, 4, 8}, 7: {1, 2, 4, 10}, 8: {11, 12}, 12: {1, 2, 3, 6, 7, 8, 9}}
-	for house := 1; house <= 12; house++ {
-		for sign := 1; sign <= 12; sign++ {
-			want := false
-			for _, v := range expected[house] {
-				want = want || sign == v
-			}
-			if mangalHouseException(sign, house) != want {
-				t.Fatalf("sign/house %d/%d", sign, house)
-			}
-		}
-	}
-	// Every possible three-frame house combination, including the regional2nd
-	// house, has a bounded and fully accounted raw/active count.
-	for lagna := 1; lagna <= 12; lagna++ {
-		for moon := 1; moon <= 12; moon++ {
-			for venus := 1; venus <= 12; venus++ {
+// TestGurujiMangalAllSignsAndReferences checks every sign and every Lagna/Moon house against the recorded five-house rule.
+func TestGurujiMangalAllSignsAndReferences(t *testing.T) {
+	flagged := map[int]bool{1: true, 4: true, 7: true, 8: true, 12: true}
+	for sign := 1; sign <= 12; sign++ {
+		for lagnaHouse := 1; lagnaHouse <= 12; lagnaHouse++ {
+			for moonHouse := 1; moonHouse <= 12; moonHouse++ {
 				c := mangalFixture()
-				c.Lagna = zodiacPosition(float64((lagna-1)*30 + 10))
-				setMangalFixture(&c, "Moon", float64((moon-1)*30+10))
-				setMangalFixture(&c, "Venus", float64((venus-1)*30+10))
-				v, err := CalculateMangal(c)
+				c.Lagna = zodiacPosition(float64((sign-lagnaHouse+12)%12)*30 + 10)
+				setMangalFixture(&c, "Moon", float64((sign-moonHouse+12)%12)*30+10)
+				setMangalFixture(&c, "Mars", float64(sign-1)*30+10)
+				setMangalFixture(&c, "Sun", float64(sign-1)*30+11)
+				setMangalFixture(&c, "Jupiter", float64(sign-1)*30+12)
+				setMangalFixture(&c, "Rahu", float64(sign-1)*30+13)
+				c.Planets[2].Speed = -.2
+				got, err := CalculateMangal(c)
 				if err != nil {
 					t.Fatal(err)
 				}
-				raw, active := 0, 0
-				for _, ref := range v.References {
-					if ref.Flagged {
-						raw++
-					}
-					if ref.Flagged && !ref.Cancelled {
-						active++
-					}
-					if ref.Cancelled && !ref.Flagged {
-						t.Fatal("unflagged house canceled")
+				class, level := "none", "none"
+				if flagged[lagnaHouse] {
+					class, level = "mangal", "high"
+				} else if flagged[moonHouse] {
+					class, level = "partial", "low"
+				}
+				count := 0
+				for _, h := range []int{lagnaHouse, moonHouse} {
+					if flagged[h] {
+						count++
 					}
 				}
-				if raw != v.BaseCount || active != v.ActiveCount || v.BaseLevel != mangalLevel(raw) || v.Level != mangalLevel(active) {
-					t.Fatal("coverage not conserved")
+				if got.Classification != class || got.Level != level || got.BaseLevel != level || got.BaseCount != count || got.ActiveCount != count || len(got.References) != 2 || got.Strength != nil || len(got.Rules) != 0 {
+					t.Fatalf("%d/%d/%d: %+v", sign, lagnaHouse, moonHouse, got)
+				}
+				for i, h := range []int{lagnaHouse, moonHouse} {
+					ref := got.References[i]
+					if ref.House != h || ref.Flagged != flagged[h] || ref.Cancelled || len(ref.Exceptions) != 0 {
+						t.Fatalf("incorrect reference: %+v", ref)
+					}
+				}
+				// Venus cannot create a flag or change partial into full Manglik.
+				setMangalFixture(&c, "Venus", float64(sign-1)*30+14)
+				changed, _ := CalculateMangal(c)
+				if changed.Classification != got.Classification || changed.ActiveCount != got.ActiveCount {
+					t.Fatal("Venus changed Guruji assessment")
 				}
 			}
 		}
 	}
 }
 
-// TestMangalPairAndInvalidCharts checks paired Mangal assessment and rejection of invalid charts.
-func TestMangalPairAndInvalidCharts(t *testing.T) {
-	bride, groom := mangalFixture(), mangalFixture()
-	if p, e := CalculateMangalPair(bride, groom); e != nil || p.Status != "similar_active_levels" || p.Method != MangalMethod {
-		t.Fatalf("pair %+v %v", p, e)
+// TestGurujiMangalBoundariesAndPair keeps sign boundaries, partial/full precedence and pair comparisons independent of old exceptions.
+func TestGurujiMangalBoundariesAndPair(t *testing.T) {
+	c := mangalFixture()
+	c.Lagna = zodiacPosition(10)
+	setMangalFixture(&c, "Moon", 10)
+	setMangalFixture(&c, "Mars", math.Nextafter(30, 0))
+	if got, e := CalculateMangal(c); e != nil || got.Classification != "mangal" {
+		t.Fatal("end of first house", got, e)
 	}
-	setMangalFixture(&groom, "Mars", 280)
-	p, e := CalculateMangalPair(bride, groom)
-	if e != nil || p.Groom.Level != "none" || p.Bride.Level != "high" {
-		t.Fatal("raw cancellation and pair balance mixed")
+	setMangalFixture(&c, "Mars", 30)
+	if got, e := CalculateMangal(c); e != nil || got.Classification != "none" {
+		t.Fatal("second house must not be flagged", got, e)
+	}
+	// Mars in Virgo: Lagna Cancer gives house 3; Moon Pisces gives house 7.
+	partial := mangalFixture()
+	partial.Lagna = zodiacPosition(100)
+	full := mangalFixture()
+	pair, e := CalculateMangalPair(full, partial)
+	if e != nil || pair.Method != MangalMethod || pair.Bride.Classification != "mangal" || pair.Groom.Classification != "partial" || pair.Status != "different_active_levels" || len(pair.Rules) != 0 {
+		t.Fatal("full and partial must differ", pair, e)
+	}
+	same, e := CalculateMangalPair(partial, partial)
+	if e != nil || same.Status != "similar_active_levels" {
+		t.Fatal(same, e)
+	}
+	none := partial
+	none.Planets = append([]Graha{}, partial.Planets...)
+	setMangalFixture(&none, "Moon", 100)
+	pair, e = CalculateMangalPair(none, none)
+	if e != nil || pair.Status != "no_active_flags" {
+		t.Fatal(pair, e)
 	}
 	for _, mutate := range []func(*Kundali){
-		func(c *Kundali) { c.Planets = c.Planets[1:] },
+		func(c *Kundali) { c.Planets = append(c.Planets[:1], c.Planets[2:]...) },
 		func(c *Kundali) { c.Planets = append(c.Planets, c.Planets[2]) },
 		func(c *Kundali) { c.Planets[2].Longitude = math.NaN() },
 		func(c *Kundali) { c.Planets[2].Speed = math.Inf(1) },
 		func(c *Kundali) { c.Lagna.Longitude = 360 },
 	} {
-		c := mangalFixture()
-		mutate(&c)
-		if _, e := CalculateMangal(c); e == nil {
-			t.Fatal("incomplete assessment returned")
+		invalid := mangalFixture()
+		mutate(&invalid)
+		if _, e := CalculateMangal(invalid); e == nil {
+			t.Fatal("invalid chart accepted")
 		}
 	}
 }

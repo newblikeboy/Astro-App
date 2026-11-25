@@ -1,0 +1,143 @@
+{
+  "sources": [
+    {
+      "file": "मूलांक और भाग्यानक फल.pdf",
+      "pages": 213,
+      "articles": 17,
+      "raw_characters": 132759,
+      "exported_characters": 132100,
+      "removed_matra_spaces": 659,
+      "all_non_whitespace_characters_preserved": true,
+      "full_source_reconstruction_verified": true,
+      "sha256": "f47cc640d386eb2b62f397c52ce8d1164889b92e128a76a0a57a7d7358a475f5"
+    },
+    {
+      "file": "Rashifal all full life.pdf",
+      "pages": 92,
+      "articles": 12,
+      "raw_characters": 115641,
+      "exported_characters": 115313,
+      "removed_matra_spaces": 328,
+      "all_non_whitespace_characters_preserved": true,
+      "full_source_reconstruction_verified": true,
+      "sha256": "44d4f3696d2078ccc62a07affa8ee7b4d5811cd061b40e95e5f78636fb9f11e8"
+    },
+    {
+      "file": "लग्न का संपूर्ण फल.pdf",
+      "pages": 143,
+      "articles": 12,
+      "raw_characters": 148597,
+      "exported_characters": 148083,
+      "removed_matra_spaces": 514,
+      "all_non_whitespace_characters_preserved": true,
+      "full_source_reconstruction_verified": true,
+      "sha256": "b3d1438d0f05aaf73d547332dfdcac73b20d74a555b3612c584899cef0436151"
+    },
+    {
+      "file": "वारफल और तिथिफल .pdf",
+      "pages": 266,
+      "articles": 24,
+      "raw_characters": 230863,
+      "exported_characters": 230377,
+      "removed_matra_spaces": 486,
+      "all_non_whitespace_characters_preserved": true,
+      "full_source_reconstruction_verified": true,
+      "sha256": "52f087bc7186e94a31277c2eb13adb959cd3b96fb4524fe6ee57792aa781d5fd"
+    },
+    {
+      "file": "नक्षत्र में जन्मे लोगों का जीवन रहस्य.pdf",
+      "pages": 266,
+      "articles": 27,
+      "raw_characters": 239297,
+      "exported_characters": 238856,
+      "removed_matra_spaces": 441,
+      "all_non_whitespace_characters_preserved": true,
+      "full_source_reconstruction_verified": true,
+      "sha256": "345d792bb3b3d1a740e8d3cd6e119d06737fb42cc534f3d3df7d86b2538d0f92"
+    },
+    {
+      "file": "ग्रहों का फला देश (1).pdf",
+      "pages": 12,
+      "articles": 24,
+      "sha256": "dee6da565c9af7a1158af80b8d2fe0feb60fe8d8202c17b2ef476823b5fe9fe2",
+      "full_decoded_source_reconstruction_verified": true,
+      "raw_extraction_sequence_verified": true,
+      "font_glyph_decoding_verified": true,
+      "word_replacements": 0,
+      "exported_text_sha256": "43996526179bd3fae127ebe727fdcd6f803922be203983254784da5fb18357f1"
+    },
+    {
+      "file": "भावफल और उपाय (1).pdf",
+      "pages": 139,
+      "articles": 130,
+      "sha256": "5ef9ffba64729d9c3e57506b0a8086219ac44adb2cbd63972ac9634789008d3a",
+      "full_source_reconstruction_verified": true,
+      "all_non_whitespace_characters_preserved": true,
+      "raw_characters": 149160,
+      "exported_characters": 148758,
+      "removed_matra_spaces": 402
+    }
+  ],
+  "categories": {
+    "मूलांक": {
+      "keys": 9,
+      "articles": 9
+    },
+    "भाग्यांक": {
+      "keys": 8,
+      "articles": 8
+    },
+    "राशिफल": {
+      "keys": 12,
+      "articles": 12
+    },
+    "लग्न": {
+      "keys": 12,
+      "articles": 12
+    },
+    "वारफल": {
+      "keys": 7,
+      "articles": 7
+    },
+    "तिथिफल": {
+      "keys": 16,
+      "articles": 17
+    },
+    "नक्षत्र": {
+      "keys": 27,
+      "articles": 27
+    },
+    "ग्रहों का फला देश": {
+      "keys": 12,
+      "articles": 24
+    },
+    "भावफल": {
+      "keys": 9,
+      "articles": 118
+    },
+    "उपाय": {
+      "keys": 10,
+      "articles": 12
+    }
+  },
+  "missing": {
+    "भाग्यांक": [
+      "3"
+    ]
+  },
+  "repeated": {
+    "तिथिफल": {
+      "चतुर्दशी": 2
+    }
+  },
+  "json_bytes": 2656905,
+  "gzip_bytes": 390488,
+  "json_sha256": "ef3bef5ae9f264785fa990a84600a05bba05c5d7579e9ffc1ca56204046c5cbd",
+  "gzip_roundtrip_verified": true,
+  "article_count": 246,
+  "source_pages": 1131,
+  "source_count": 7,
+  "previous_five_source_categories_unchanged": true,
+  "added_planet_house_passages": 108,
+  "added_conditional_house_passages": 24
+}

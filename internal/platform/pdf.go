@@ -96,8 +96,9 @@ func (p ChromePDF) documentLanguage(o *Order, language string) ([]byte, error) {
 		return nil, e
 	}
 	var html bytes.Buffer
-	sections := l.sections(o.Snapshot, reportZone)
-	e = t.Execute(&html, map[string]any{"Language": language, "Order": o, "Report": o.Snapshot, "Font": base64.StdEncoding.EncodeToString(font), "Bold": base64.StdEncoding.EncodeToString(bold), "Chart": l.chart(o.Snapshot), "Sections": sections, "Book": l.book(o.Snapshot, reportZone, sections), "Links": pdfLinks(p.Origin, o.ReportID)})
+	report := sourceOnlyReport(o.Snapshot)
+	sections := l.sections(report, reportZone)
+	e = t.Execute(&html, map[string]any{"Language": language, "Order": o, "Report": report, "Font": base64.StdEncoding.EncodeToString(font), "Bold": base64.StdEncoding.EncodeToString(bold), "Chart": l.chart(o.Snapshot), "Sections": sections, "Book": l.book(report, reportZone, sections), "Links": pdfLinks(p.Origin, o.ReportID)})
 	if e != nil {
 		return nil, e
 	}
