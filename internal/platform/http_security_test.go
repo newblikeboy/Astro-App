@@ -3,6 +3,7 @@ package platform
 import (
 	"bytes"
 	"context"
+	"encoding/json"
 	"net/http"
 	"net/http/httptest"
 	"os"
@@ -10,6 +11,37 @@ import (
 	"strings"
 	"testing"
 )
+
+// TestWebhookRejectsPublishedSecrets prevents a publicly known template HMAC key from marking an isolated order paid.
+func TestWebhookRejectsPublishedSecrets(t *testing.T) {
+	for _, secret := range []string{"REPLACE_ME", "", "CHANGE_ME"} {
+		t.Run(secret, func(t *testing.T) {
+			a := testApp(t)
+			a.Config.Production = true
+			a.Config.PaymentMode = "razorpay"
+			a.Config.WebhookSecret = secret
+			order := &Order{ID: "isolated-security-order", Product: "pdf", Status: "pending", Amount: 9900, Currency: "INR", ProviderID: "isolated-provider-order"}
+			if err := a.Store.Update(context.Background(), func(s *State) error {
+				s.Orders[order.ID] = order
+				return nil
+			}); err != nil {
+				t.Fatal(err)
+			}
+			body, err := json.Marshal(map[string]any{"event": "payment.captured", "payload": map[string]any{"payment": map[string]any{"entity": Payment{ID: "isolated-forged-payment", OrderID: order.ProviderID, Amount: order.Amount, Currency: "INR", Status: "captured"}}}})
+			if err != nil {
+				t.Fatal(err)
+			}
+			r := httptest.NewRequest("POST", "/api/payments/webhook", bytes.NewReader(body))
+			r.Header.Set("X-Razorpay-Event-Id", "isolated-forged-event")
+			r.Header.Set("X-Razorpay-Signature", signature(secret, string(body)))
+			w := httptest.NewRecorder()
+			a.Handler().ServeHTTP(w, r)
+			if w.Code != http.StatusServiceUnavailable || a.Store.state.Orders[order.ID].PaidAt != nil || len(a.Store.state.Jobs) != 0 || len(a.Store.state.Webhooks) != 0 {
+				t.Fatalf("public webhook secret was not rejected before mutation: HTTP %d, status %s", w.Code, a.Store.state.Orders[order.ID].Status)
+			}
+		})
+	}
+}
 
 // TestPublishedProviderTemplatesCannotEnableSales rejects every example payment secret before creating reservations.
 func TestPublishedProviderTemplatesCannotEnableSales(t *testing.T) {

@@ -405,7 +405,10 @@ Production rejects the published example administrator password. Replace it
 privately if the checker reports `admin_password_not_template=false`; use a
 unique randomly generated password of at least 16 characters. Template payment
 credentials block both digital and shop checkout even if sales are enabled;
-template Zoom credentials also block consultation checkout. Disabled sales can
+template Zoom credentials also block consultation checkout. Payment webhooks
+reject empty or published template signing secrets before any order, job or
+event record can change; disabled checkout alone does not protect that route.
+Disabled sales can
 remain disabled while real provider accounts are being configured. These checks
 detect examples, not provider validity; verify providers in their test mode.
 

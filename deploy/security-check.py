@@ -55,6 +55,7 @@ def configuration_checks(values):
         "mongo_credentials_not_template": configured(values.get("MONGODB_URI", "")),
         "mongo_tls_enabled_without_insecure_overrides": (uri.scheme == "mongodb+srv" or "true" in options.get("tls", []) or "true" in options.get("ssl", [])) and not insecure_tls,
         "payment_credentials_configured": all(configured(values.get(k, "")) for k in ("RAZORPAY_KEY_ID", "RAZORPAY_KEY_SECRET", "RAZORPAY_WEBHOOK_SECRET")),
+        "payment_webhook_secret_configured": configured(values.get("RAZORPAY_WEBHOOK_SECRET", "")),
         "meeting_credentials_configured": all(configured(values.get(k, "")) for k in ("ZOOM_ACCOUNT_ID", "ZOOM_CLIENT_ID", "ZOOM_CLIENT_SECRET")),
         "notification_credentials_configured": all(configured(values.get(k, "")) for k in ("NOTIFICATION_URL", "NOTIFICATION_TOKEN")),
         "simulations_disabled": values.get("PAYMENT_MODE") == "razorpay" and values.get("ZOOM_MODE") == "zoom",

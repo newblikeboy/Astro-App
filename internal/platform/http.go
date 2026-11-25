@@ -789,10 +789,15 @@ func (a *App) changeBookingHTTP(w http.ResponseWriter, r *http.Request) {
 	jsonOut(w, map[string]bool{"ok": true})
 }
 
-// webhook verifies Razorpay webhook authenticity and applies payment updates with replay protection.
+// webhook requires a private configured secret, verifies Razorpay authenticity and applies payment updates with replay protection.
 func (a *App) webhook(w http.ResponseWriter, r *http.Request) {
 	if a.Config.PaymentMode != "razorpay" {
 		fail(w, 404, fmt.Errorf("not configured"))
+		return
+	}
+	// Published example secrets let anyone compute a valid HMAC, even while checkout is disabled.
+	if strings.TrimSpace(a.Config.WebhookSecret) == "" || templateCredential(a.Config.WebhookSecret) {
+		fail(w, 503, fmt.Errorf("payment webhook credentials require configuration"))
 		return
 	}
 	body, e := io.ReadAll(http.MaxBytesReader(w, r.Body, 1<<20))

@@ -47,6 +47,9 @@ class SecurityToolTests(unittest.TestCase):
             flags = check.configuration_checks({"MONGODB_URI": "mongodb+srv://fixture.invalid/?" + option, "ADMIN_PASSWORD": "REPLACE_WITH_PRIVATE_PASSWORD_AT_LEAST_8_CHARACTERS"})
             self.assertFalse(flags["mongo_tls_enabled_without_insecure_overrides"])
             self.assertFalse(flags["admin_password_not_template"])
+            self.assertFalse(flags["payment_webhook_secret_configured"])
+        self.assertFalse(check.configuration_checks({"RAZORPAY_WEBHOOK_SECRET": "REPLACE_ME"})["payment_webhook_secret_configured"])
+        self.assertTrue(check.configuration_checks({"RAZORPAY_WEBHOOK_SECRET": "isolated-private-fixture"})["payment_webhook_secret_configured"])
 
     def test_proxy_transformation_preserves_tls_and_is_idempotent(self):
         """Keep existing HTTPS directives while overwriting visitor-supplied addresses in every known proxy location."""
