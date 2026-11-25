@@ -23,8 +23,7 @@ git -C "$qa_dir/publisher" add .
 git -C "$qa_dir/publisher" commit --quiet -m initial
 git -C "$qa_dir/publisher" remote add origin "$qa_dir/origin.git"
 git -C "$qa_dir/publisher" push --quiet origin main
-git clone --quiet --branch main "$qa_dir/origin.git" "$qa_dir/app"
-git -C "$qa_dir/app" config core.autocrlf false
+git clone --quiet --config core.autocrlf=false --branch main "$qa_dir/origin.git" "$qa_dir/app"
 mkdir -p "$qa_dir/app/bin" "$qa_dir/app/web/dist"
 printf 'original binary\n' > "$qa_dir/app/bin/mishra4you"
 printf 'original frontend\n' > "$qa_dir/app/web/dist/index.html"
@@ -49,7 +48,15 @@ printf 'exit 0\n' >> "$qa_dir/mock-bin/chown"
 mock_header flock
 printf '[[ ! -f "$qa_dir/locked" ]]\n' >> "$qa_dir/mock-bin/flock"
 mock_header runuser
-printf 'shift 3\nexec "$@"\n' >> "$qa_dir/mock-bin/runuser"
+cat >> "$qa_dir/mock-bin/runuser" <<'MOCK'
+# Reproduce a systemd environment whose inherited/build PATH omits administration directories.
+for directory in /usr/local/sbin /usr/sbin /sbin; do
+  [[ ":$PATH:" == *":$directory:"* ]] || { printf 'Missing administration search path: %s\n' "$directory" >&2; exit 1; }
+done
+printf '%s\n' "$PATH" > "$qa_dir/admin-path"
+shift 3
+exec "$@"
+MOCK
 mock_header systemctl
 cat >> "$qa_dir/mock-bin/systemctl" <<'MOCK'
 printf '%s\n' "$*" >> "$qa_dir/restarts"
@@ -62,6 +69,7 @@ MOCK
 mock_header go
 cat >> "$qa_dir/mock-bin/go" <<'MOCK'
 [[ "$ENV_FILE" == none && -n "$SOURCE_REVISION" && -z "${QA_PRIVATE_SECRET:-}" ]]
+printf '%s\n' "$PATH" > "$qa_dir/build-path"
 printf 'go %s\n' "$1" >> "$qa_dir/builds"
 if [[ "$1" == test ]]; then [[ ! -f BUILD_FAIL ]]; exit; fi
 mkdir -p bin
@@ -79,7 +87,7 @@ MOCK
 chmod +x "$qa_dir/mock-bin/"*
 {
   printf 'APP_DIR=%q\nSTATE_DIR=%q\nRELEASE_ROOT=%q\nCURRENT_LINK=%q\nBUILD_CACHE=%q\n' "$qa_dir/app" "$qa_dir/state" "$qa_dir/releases" "$qa_dir/current" "$qa_dir/cache"
-  printf 'BUILD_SCRIPT=%q\nBUILD_PATH=%q\nBUILD_USER=qa-builder\n' "$project_dir/deploy/build-release.sh" "$qa_dir/mock-bin:$PATH"
+  printf 'BUILD_SCRIPT=%q\nBUILD_PATH=%q\nBUILD_USER=qa-builder\n' "$project_dir/deploy/build-release.sh" "$qa_dir/mock-bin:/usr/bin:/bin:/mingw64/bin"
 } > "$qa_dir/config"
 export M4Y_DEPLOY_CONFIG="$qa_dir/config" QA_PRIVATE_SECRET=must-not-reach-builds
 checks=0
@@ -111,6 +119,8 @@ initial=$(git -C "$qa_dir/publisher" rev-parse HEAD)
 [[ "$(git -C "$qa_dir/app" rev-parse HEAD)" == "$initial" ]]
 good_target=$(readlink -f "$qa_dir/current")
 passed 'first deployment tests/builds the published commit and promotes matching frontend/backend'
+[[ "$(cat "$qa_dir/admin-path")" == *:/usr/sbin:* && "$(cat "$qa_dir/build-path")" == "$qa_dir/mock-bin:/usr/bin:/bin:/mingw64/bin" ]]
+passed 'restricted build PATH still permits administration tools without changing the build account environment'
 before=$(wc -l < "$qa_dir/restarts")
 builds_before=$(wc -l < "$qa_dir/builds")
 poll success

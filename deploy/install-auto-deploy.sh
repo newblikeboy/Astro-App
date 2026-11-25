@@ -2,7 +2,7 @@
 # Install polling deployment for the existing systemd app without replacing production secrets or private data.
 set -euo pipefail
 [[ $EUID -eq 0 ]] || { printf 'Run with sudo: sudo bash deploy/install-auto-deploy.sh\n' >&2; exit 1; }
-export PATH="/usr/local/go/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+export PATH="/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
 source_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd -P)
 app_dir=${APP_DIR:-$source_dir}
 app_dir=$(readlink -f -- "$app_dir")

@@ -347,6 +347,14 @@ original checkout when changing the installed deployment helpers. After this
 setup, use the timer/service instead of the earlier in-place binary replacement
 commands, which would update the bootstrap checkout rather than the live release.
 
+If an older installed helper reports `runuser: command not found`, update the
+bootstrap checkout and re-run the installer commands above once. Ubuntu keeps
+`runuser` in `/usr/sbin`; the deployment helper includes system administration
+directories in its own PATH while preserving the configured BUILD_PATH for the
+unprivileged build. Required deployment commands are checked before any build.
+The installer queues an immediate deployment, so no timer interval needs to be
+waited out. A push alone cannot replace an already installed broken helper.
+
 The timer syntax and non-overlapping activation follow
 [systemd.timer](https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html).
 

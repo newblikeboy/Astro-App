@@ -14,7 +14,8 @@ BUILD_CACHE=${BUILD_CACHE:-/var/cache/mishra4you-build}
 BUILD_SCRIPT=${BUILD_SCRIPT:-/usr/local/lib/mishra4you/build-release.sh}
 BUILD_PATH=${BUILD_PATH:-/usr/local/go/bin:/usr/local/bin:/usr/bin:/bin}
 HEALTH_URL=${HEALTH_URL:-http://127.0.0.1:8080/api/health}
-export PATH="$BUILD_PATH"
+# Administrative commands such as Ubuntu's runuser live outside the build tool PATH.
+export PATH="$BUILD_PATH:/usr/local/sbin:/usr/sbin:/sbin"
 export GIT_TERMINAL_PROMPT=0
 workspace= candidate= link_temp=
 promoted=0
@@ -95,6 +96,9 @@ prune_releases() {
   done < <(find "$RELEASE_ROOT" -mindepth 1 -maxdepth 1 -type d -printf '%T@ %p\0' | sort -zrn)
 }
 
+for tool in git tar chown runuser systemctl curl flock; do
+  command -v "$tool" >/dev/null || { log "Missing deployment tool: $tool. Check the system PATH and installed packages."; exit 1; }
+done
 [[ -d "$STATE_DIR" && -d "$RELEASE_ROOT" && -d "$BUILD_CACHE" && -L "$CURRENT_LINK" ]] || { log 'Run the one-time installer first.'; exit 1; }
 STATE_DIR=$(readlink -f -- "$STATE_DIR")
 RELEASE_ROOT=$(readlink -f -- "$RELEASE_ROOT")
