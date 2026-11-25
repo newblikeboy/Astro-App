@@ -272,7 +272,7 @@ func (a *App) ShopCheckout(ctx context.Context, user string, in ShopCheckoutRequ
 			}
 		}
 		settings := s.Settings.Shop
-		if !shopReady(settings) {
+		if !shopReady(settings) || !paymentConfigured(a.Config) {
 			return fmt.Errorf("Online gemstone checkout is not available yet.")
 		}
 		items := []ShopLine{}

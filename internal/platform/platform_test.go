@@ -185,6 +185,7 @@ func TestServerPricesAndProductionPDFContentBlocker(t *testing.T) {
 		t.Fatalf("wrong price: %+v %v", o, e)
 	}
 	a.Config.Production = true
+	a.Config.PaymentMode, a.Config.KeyID, a.Config.KeySecret, a.Config.WebhookSecret = "razorpay", "rzp_test_fixture", "fixture", "fixture"
 	_ = a.Store.Update(context.Background(), func(s *State) error {
 		s.Settings.PDFEnabled = true
 		s.Settings.LicenceConfirmed = true

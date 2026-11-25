@@ -63,6 +63,9 @@ func blockers(s Settings, c Config, product string) []string {
 	if !c.Production {
 		return out
 	}
+	if !paymentConfigured(c) {
+		out = append(out, "Payment provider credentials require configuration")
+	}
 	if !s.LicenceConfirmed {
 		out = append(out, "Swiss Ephemeris licence decision required")
 	}
@@ -76,6 +79,12 @@ func blockers(s Settings, c Config, product string) []string {
 		out = append(out, "PDF sales disabled")
 	}
 	if product == "consultation" {
+		for _, value := range []string{c.ZoomAccount, c.ZoomClient, c.ZoomSecret} {
+			if c.ZoomMode == "zoom" && (strings.TrimSpace(value) == "" || templateCredential(value)) {
+				out = append(out, "Meeting provider credentials require configuration")
+				break
+			}
+		}
 		if !s.BookingsEnabled {
 			out = append(out, "Live bookings disabled")
 		}

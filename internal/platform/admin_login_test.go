@@ -83,7 +83,7 @@ func TestProductionAdminConfiguration(t *testing.T) {
 		}
 	}
 	t.Setenv("ADMIN_EMAIL", "owner@example.test")
-	for _, password := range []string{"", "short", "local-admin-change-me"} {
+	for _, password := range []string{"", "short", "local-admin-change-me", "REPLACE_WITH_PRIVATE_PASSWORD_AT_LEAST_8_CHARACTERS"} {
 		t.Setenv("ADMIN_PASSWORD", password)
 		if _, err := LoadConfig(); err == nil {
 			t.Fatal("unusable production admin password accepted")

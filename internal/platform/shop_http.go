@@ -25,7 +25,7 @@ func (a *App) shopCatalog(w http.ResponseWriter, r *http.Request) {
 		if preview {
 			products = previewGemstones()
 		}
-		jsonOut(w, map[string]any{"products": products, "settings": s.Settings.Shop, "checkout_available": shopReady(s.Settings.Shop), "preview": preview})
+		jsonOut(w, map[string]any{"products": products, "settings": s.Settings.Shop, "checkout_available": shopReady(s.Settings.Shop) && paymentConfigured(a.Config), "preview": preview})
 		return nil
 	})
 	if err != nil {

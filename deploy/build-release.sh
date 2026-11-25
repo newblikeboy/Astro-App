@@ -3,7 +3,7 @@
 set -euo pipefail
 cd -- "$1"
 export ENV_FILE=none
-export GOTOOLCHAIN=go1.26.5
+export GOTOOLCHAIN=go1.26.11
 export GOEXPERIMENT=nojsonv2
 export CGO_ENABLED=1
 export GOMAXPROCS=1

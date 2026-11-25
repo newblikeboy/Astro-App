@@ -7,7 +7,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"net"
 	"net/http"
 	"net/url"
 	"os"
@@ -254,6 +253,15 @@ func (a *App) Handler() http.Handler {
 			fail(w, 404, fmt.Errorf("endpoint not found"))
 			return
 		}
+		if privateStaticPath(r.URL.Path) {
+			fail(w, 404, fmt.Errorf("not found"))
+			return
+		}
+		if r.Method != "GET" && r.Method != "HEAD" {
+			w.Header().Set("Allow", "GET, HEAD")
+			fail(w, 405, fmt.Errorf("method not allowed"))
+			return
+		}
 		p := filepath.Join("web", "dist", filepath.Clean("/"+r.URL.Path))
 		if stat, e := os.Stat(p); e == nil && !stat.IsDir() {
 			http.ServeFile(w, r, p)
@@ -281,10 +289,7 @@ func (a *App) Handler() http.Handler {
 				return
 			}
 		}
-		ip, _, e := net.SplitHostPort(r.RemoteAddr)
-		if e != nil {
-			ip = r.RemoteAddr
-		}
+		ip := a.clientIP(r)
 		if !a.limits.allow("all:"+ip, 600, time.Minute) {
 			fail(w, 429, fmt.Errorf("too many requests"))
 			return

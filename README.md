@@ -218,12 +218,12 @@ the app with health-checked rollback. Install it once with
 
 ## Run locally
 
-Requirements: Go 1.26.5 (`GOTOOLCHAIN=go1.26.5`, `GOEXPERIMENT=nojsonv2`), a C compiler for CGO, Node 22.12+ (tested with 22.17), and Chrome/Chromium for PDF rendering. The pinned experimental JSON dependency does not compile with Go 1.27.3's JSON v2 API; use the documented toolchain until that dependency is updated and verified. Windows GCC is supported. The bundled ephemeris files and Noto Devanagari fonts are required.
+Requirements: Go 1.26.11 (`GOTOOLCHAIN=go1.26.11`, `GOEXPERIMENT=nojsonv2`), a C compiler for CGO, Node 22.12+ (tested with 22.17), and Chrome/Chromium for PDF rendering. The pinned experimental JSON dependency does not compile with Go 1.27.3's JSON v2 API; use the documented toolchain until that dependency is updated and verified. Windows GCC is supported. The bundled ephemeris files and Noto Devanagari fonts are required.
 
 From the repository root:
 
 ```powershell
-$env:GOTOOLCHAIN='go1.26.5'
+$env:GOTOOLCHAIN='go1.26.11'
 $env:GOEXPERIMENT='nojsonv2'
 Copy-Item .env.example .env
 # Edit .env privately. Put your Atlas URI in MONGODB_URI.

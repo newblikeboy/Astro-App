@@ -6,7 +6,7 @@ interfaces. All commands below use public source and placeholder credentials.
 
 ## Requirements and source versions
 
-- Go **1.26.5** with `GOTOOLCHAIN=go1.26.5` and `GOEXPERIMENT=nojsonv2`.
+- Go **1.26.11** with `GOTOOLCHAIN=go1.26.11` and `GOEXPERIMENT=nojsonv2`.
   The pinned go-json-experiment dependency fails against Go 1.27.3's JSON v2
   API. Do not substitute the latest Go release without testing dependencies.
 - A C compiler and CGO enabled; Swiss Ephemeris C sources are bundled in
@@ -34,7 +34,7 @@ new revision and rebuilding both from that revision.
 From a cloned checkout, on Linux/macOS:
 
 ```bash
-export GOTOOLCHAIN=go1.26.5
+export GOTOOLCHAIN=go1.26.11
 export GOEXPERIMENT=nojsonv2
 cp .env.example .env
 go mod download
@@ -55,7 +55,7 @@ this storage mode. The .env.example defaults to simulated integrations that
 make no real payment or Zoom call. Customer login uses email/password in both
 development and production. Never expose development configuration publicly.
 
-On PowerShell set `$env:GOTOOLCHAIN='go1.26.5'` and
+On PowerShell set `$env:GOTOOLCHAIN='go1.26.11'` and
 `$env:GOEXPERIMENT='nojsonv2'`, and use `Copy-Item .env.example .env`.
 
 ## Fresh Ubuntu 24.04 x64 server
@@ -79,11 +79,11 @@ if [ ! -e /swapfile ]; then
 fi
 
 # Install into /usr/local on a fresh server without an existing Go installation.
-curl -fL https://go.dev/dl/go1.26.5.linux-amd64.tar.gz -o /tmp/go.tar.gz
+curl -fL https://go.dev/dl/go1.26.11.linux-amd64.tar.gz -o /tmp/go.tar.gz
 tar -C /usr/local -xzf /tmp/go.tar.gz
 export PATH="/usr/local/go/bin:$PATH"
 echo 'export PATH=/usr/local/go/bin:$PATH' > /etc/profile.d/golang.sh
-export GOTOOLCHAIN=go1.26.5
+export GOTOOLCHAIN=go1.26.11
 export GOEXPERIMENT=nojsonv2
 
 curl -fsSL https://deb.nodesource.com/setup_22.x -o /tmp/nodesource.sh
@@ -250,7 +250,7 @@ checkout (keep the build settings in every deployment session):
 (
   set -e
   export PATH="/usr/local/go/bin:$PATH"
-  export GOTOOLCHAIN=go1.26.5
+  export GOTOOLCHAIN=go1.26.11
   export GOEXPERIMENT=nojsonv2
   cd /opt/mishra4you
   test -z "$(git status --porcelain)"
@@ -366,6 +366,52 @@ checkout preservation and asset paths. They do not install or run systemd. In
 Windows Git Bash, set `MSYS=winsymlinks:sys` for Bash-compatible test symlinks.
 
 ## Verification, backups and maintenance
+
+### November 2026 security update
+
+The build helper and module require Go 1.26.11. After pulling this update into
+the original checkout, re-run `sudo bash deploy/install-auto-deploy.sh` once:
+the installed root/build helpers cannot be replaced by a Git push alone. The
+installer queues a build and retains the existing health-check rollback.
+
+Run this read-only diagnostic from the original checkout on the droplet:
+
+```bash
+sudo python3 deploy/security-check.py
+```
+
+It prints configuration flags without passwords, connection strings or provider
+secrets. A false flag needs review; the report does not establish that the host
+has never been compromised. Check Atlas network access/least-privilege users,
+off-host restore-tested backups, SSH/cloud firewall rules, access logs and OS/
+Chrome updates separately. Do not paste the actual environment file into chat.
+
+For deployments using the documented Nginx site and loopback backend, apply:
+
+```bash
+sudo python3 deploy/harden-proxy.py
+sudo bash deploy/install-auto-deploy.sh
+```
+
+The proxy helper preserves certificate settings, keeps private backups under
+`/root`, validates Nginx and rolls back on validation/reload failure. It overwrites
+`X-Real-IP` with the socket peer in each supported proxy location before setting
+`TRUST_LOOPBACK_PROXY=true` for the next app restart. Unsupported custom layouts
+are rejected for manual review. Never enable that flag without overwriting the
+header in every app proxy location, and keep port 8080 bound to loopback.
+The app ignores `X-Forwarded-For` and headers received from non-loopback peers.
+
+Production rejects the published example administrator password. Replace it
+privately if the checker reports `admin_password_not_template=false`; use a
+unique randomly generated password of at least 16 characters. Template payment
+credentials block both digital and shop checkout even if sales are enabled;
+template Zoom credentials also block consultation checkout. Disabled sales can
+remain disabled while real provider accounts are being configured. These checks
+detect examples, not provider validity; verify providers in their test mode.
+
+Maintainers: `python scripts/test_security_tools.py` covers sanitized diagnostics,
+configuration transformations and rollback with isolated fixtures. It never
+reloads a real service or accesses customer data.
 
 For code changes use `ENV_FILE=none go test ./...`, `go vet ./...` and
 `npm --prefix web run build` with the documented toolchain. Existing Playwright
