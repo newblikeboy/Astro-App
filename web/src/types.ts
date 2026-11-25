@@ -213,6 +213,7 @@ export type Config = {
   simulation: boolean;
   development: boolean;
   otp_simulation: boolean;
+  auth_method?: "email_password";
   duration: number;
   duration_demo: boolean;
   settings: Settings;
@@ -230,7 +231,7 @@ export type ChannelVideo = {
   published_at: string;
 };
 export type Account = {
-  user: { id: string; phone: string; marketing: boolean };
+  user: { id: string; phone: string; email?: string; marketing: boolean };
   csrf: string;
   reports: Report[];
   orders: Order[];
@@ -265,6 +266,7 @@ export type AdminData = {
   users: {
     id: string;
     phone: string;
+    email?: string;
     created: string;
     marketing: boolean;
     deleted: boolean;

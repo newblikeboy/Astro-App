@@ -1,3 +1,4 @@
+import { createCustomer } from "./customer-auth";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import fs from "node:fs";
@@ -46,9 +47,11 @@ test("responsive landing, keyboard and accessibility", async ({ page }) => {
   }
   expect(errors).toEqual([]);
 });
-test("guest Kundli, OTP, private save, paid demo PDF and independent booking", async ({
+test("guest Kundli, email/password, private save, paid demo PDF and independent booking", async ({
   page,
 }) => {
+  // The worker creates the purchased PDF, and the selected-language download renders it again (up to 75 seconds each).
+  test.setTimeout(240_000);
   await page.goto("/");
   await page.getByRole("button", { name: "केवल आवश्यक" }).click();
   await page.locator("#name").fill("आरव शर्मा");
@@ -82,13 +85,7 @@ test("guest Kundli, OTP, private save, paid demo PDF and independent booking", a
   await page.getByRole("button", { name: "खाते में सहेजें" }).click();
   await expect(page).toHaveURL(/\/login\?next=/);
   await page.reload();
-  await page.locator("#phone").fill("+9198" + String(Date.now()).slice(-8));
-  await page.getByRole("button", { name: "OTP पाएँ", exact: true }).click();
-  const text = await page.locator(".auth-card .notice b").textContent();
-  await page.locator("#otp").fill(text!);
-  await page
-    .getByRole("button", { name: "सत्यापित करें", exact: true })
-    .click();
+  await createCustomer(page);
   await expect(
     page.getByRole("button", { name: "खाते में सहेजी गई" }),
   ).toBeVisible();
@@ -104,7 +101,7 @@ test("guest Kundli, OTP, private save, paid demo PDF and independent booking", a
   ).toBeVisible();
   const downloadButton = page.getByRole("button", { name: "PDF डाउनलोड", exact: true });
   await expect(downloadButton).toBeVisible({ timeout: 80000 });
-  const d = page.waitForEvent("download");
+  const d = page.waitForEvent("download", { timeout: 90_000 });
   await downloadButton.click();
   const download = await d;
   await download.saveAs("../.local/verified-hindi-report.pdf");
@@ -115,6 +112,8 @@ test("guest Kundli, OTP, private save, paid demo PDF and independent booking", a
     .getByRole("button", { name: "ऑर्डर बनाएँ और भुगतान देखें" })
     .click();
   await page.getByRole("button", { name: "डेमो भुगतान सफल करें" }).click();
+  // Payment refresh finishes on the account overview before another tab can be selected reliably.
+  await expect(page).toHaveURL(/\/account$/);
   await page.getByRole("tab", { name: "मेरे परामर्श" }).click();
   await expect(page.locator(".status-confirmed").first()).toBeVisible({
     timeout: 20000,

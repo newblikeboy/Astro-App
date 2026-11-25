@@ -3,13 +3,10 @@ package platform
 import (
 	"astroapp/backend/internal/swisseph"
 	"context"
-	"crypto/rand"
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
-	"golang.org/x/crypto/bcrypt"
 	"io"
-	"math/big"
 	"net"
 	"net/http"
 	"net/url"
@@ -144,6 +141,11 @@ func (a *App) setSession(w http.ResponseWriter, r *http.Request, user, role stri
 	}
 	sess := &Session{user, role, id("csrf"), expires}
 	e := a.Store.Update(r.Context(), func(s *State) error {
+		if role == "customer" {
+			if u := s.Users[user]; u == nil || u.Deleted {
+				return fmt.Errorf("account unavailable")
+			}
+		}
 		if old, e := r.Cookie(name); e == nil {
 			delete(s.Sessions, hash(old.Value))
 		}
@@ -200,8 +202,9 @@ func (a *App) Handler() http.Handler {
 	mux.HandleFunc("POST /api/kundli/match", a.matching)
 	mux.HandleFunc("POST /api/kundli/match/pdf", a.matchingPDF)
 	mux.HandleFunc("GET /api/kundli/match/profiles", a.matchingProfiles)
-	mux.HandleFunc("POST /api/auth/request", a.requestOTP)
-	mux.HandleFunc("POST /api/auth/verify", a.verifyOTP)
+	mux.HandleFunc("POST /api/auth/register", a.registerCustomer)
+	mux.HandleFunc("POST /api/auth/login", a.loginCustomer)
+	mux.HandleFunc("PUT /api/auth/credentials", a.setCustomerCredentials)
 	mux.HandleFunc("GET /api/me", a.me)
 	mux.HandleFunc("POST /api/logout", a.logout)
 	mux.HandleFunc("POST /api/reports", a.saveReport)
@@ -350,7 +353,7 @@ func (a *App) publicConfig(w http.ResponseWriter, r *http.Request) {
 	ctx, cancel := context.WithTimeout(r.Context(), 5*time.Second)
 	defer cancel()
 	err := a.Store.ViewKinds(ctx, []string{"settings"}, func(s *State) error {
-		jsonOut(w, map[string]any{"simulation": a.Config.PaymentMode == "simulation", "development": !a.Config.Production, "otp_simulation": a.Config.OTPMode == "simulation", "settings": s.Settings, "video_catalog": FeaturedVideoCatalog(), "pdf_blockers": blockers(s.Settings, a.Config, "pdf"), "booking_blockers": blockers(s.Settings, a.Config, "consultation"), "duration": duration(s.Settings, a.Config.Production), "duration_demo": s.Settings.Duration == 0, "payment_key": a.Config.KeyID, "storage": map[bool]string{true: "MongoDB Atlas", false: "local development file"}[a.Store.client != nil]})
+		jsonOut(w, map[string]any{"simulation": a.Config.PaymentMode == "simulation", "development": !a.Config.Production, "auth_method": "email_password", "otp_simulation": false, "settings": s.Settings, "video_catalog": FeaturedVideoCatalog(), "pdf_blockers": blockers(s.Settings, a.Config, "pdf"), "booking_blockers": blockers(s.Settings, a.Config, "consultation"), "duration": duration(s.Settings, a.Config.Production), "duration_demo": s.Settings.Duration == 0, "payment_key": a.Config.KeyID, "storage": map[bool]string{true: "MongoDB Atlas", false: "local development file"}[a.Store.client != nil]})
 		return nil
 	})
 	if err != nil {
@@ -381,110 +384,6 @@ func (a *App) guestReport(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	jsonOut(w, out)
-}
-
-// requestOTP creates a rate-limited phone verification challenge and sends it through the configured gateway.
-func (a *App) requestOTP(w http.ResponseWriter, r *http.Request) {
-	var in struct {
-		Phone string `json:"phone"`
-	}
-	if !decode(w, r, &in) {
-		return
-	}
-	phone, e := normalizePhone(in.Phone)
-	if e != nil {
-		fail(w, 422, e)
-		return
-	}
-	n, e := rand.Int(rand.Reader, big.NewInt(1000000))
-	if e != nil {
-		fail(w, 503, fmt.Errorf("secure random unavailable"))
-		return
-	}
-	code := fmt.Sprintf("%06d", n.Int64())
-	key := id("otp")
-	digest, e := bcrypt.GenerateFromPassword([]byte(code), bcrypt.DefaultCost)
-	if e != nil {
-		fail(w, 503, fmt.Errorf("OTP unavailable"))
-		return
-	}
-	e = a.Store.Update(r.Context(), func(s *State) error {
-		count := 0
-		for _, o := range s.OTPs {
-			if o.Phone == phone && o.Expires.After(a.Now().Add(-10*time.Minute)) {
-				count++
-			}
-		}
-		if count >= 5 {
-			return fmt.Errorf("इस नंबर के लिए अधिक OTP माँगे गए हैं; 15 मिनट बाद आएँ")
-		}
-		s.OTPs[key] = &OTP{Phone: phone, Hash: string(digest), Expires: a.Now().Add(5 * time.Minute)}
-		return nil
-	})
-	if e != nil {
-		fail(w, 429, e)
-		return
-	}
-	if e = a.OTP.Send(r.Context(), phone, code); e != nil {
-		_ = a.Store.Update(r.Context(), func(s *State) error { delete(s.OTPs, key); return nil })
-		fail(w, 503, e)
-		return
-	}
-	out := map[string]any{"challenge": key, "expires_in": 300}
-	if !a.Config.Production && a.Config.OTPMode == "simulation" {
-		out["demo_code"] = code
-	}
-	jsonOut(w, out)
-}
-
-// verifyOTP consumes a valid, unexpired OTP challenge and creates a customer session.
-func (a *App) verifyOTP(w http.ResponseWriter, r *http.Request) {
-	var in struct {
-		Challenge string `json:"challenge"`
-		Code      string `json:"code"`
-	}
-	if !decode(w, r, &in) {
-		return
-	}
-	var user string
-	var denial error
-	e := a.Store.Update(r.Context(), func(s *State) error {
-		o := s.OTPs[in.Challenge]
-		if o == nil || o.Used || !o.Expires.After(a.Now()) || o.Attempts >= 5 {
-			denial = fmt.Errorf("OTP समाप्त या पहले उपयोग हुआ है")
-			return nil
-		}
-		o.Attempts++
-		if bcrypt.CompareHashAndPassword([]byte(o.Hash), []byte(in.Code)) != nil {
-			denial = fmt.Errorf("OTP सही नहीं है")
-			return nil
-		}
-		o.Used = true
-		for _, u := range s.Users {
-			if u.Phone == o.Phone && !u.Deleted {
-				user = u.ID
-				break
-			}
-		}
-		if user == "" {
-			u := &User{ID: id("u"), Phone: o.Phone, Created: a.Now()}
-			s.Users[u.ID] = u
-			user = u.ID
-		}
-		audit(s, user, "auth.verified", user)
-		return nil
-	})
-	if e != nil {
-		fail(w, 503, fmt.Errorf("login storage unavailable"))
-		return
-	}
-	if denial != nil {
-		fail(w, 401, denial)
-		return
-	}
-	if e = a.setSession(w, r, user, "customer"); e != nil {
-		fail(w, 503, fmt.Errorf("session could not be created"))
-	}
 }
 
 // me returns the signed-in customer's profile, owned reports, orders and bookings.
@@ -686,6 +585,8 @@ func (a *App) deleteAccount(w http.ResponseWriter, r *http.Request) {
 			}
 		}
 		u.Phone = ""
+		u.Email = ""
+		delete(s.PasswordCredentials, u.ID)
 		u.Marketing = false
 		u.Deleted = true
 		for k, v := range s.Reports {
@@ -1025,11 +926,18 @@ func (a *App) adminOverview(w http.ResponseWriter, r *http.Request) {
 		demo := !a.Config.Production && r.URL.Query().Get("demo") == "true"
 		users := []map[string]any{}
 		for _, u := range s.Users {
-			phone := "deleted"
+			phone := ""
+			if u.Deleted {
+				phone = "deleted"
+			}
 			if len(u.Phone) > 4 {
 				phone = "••••••" + u.Phone[len(u.Phone)-4:]
 			}
-			users = append(users, map[string]any{"id": u.ID, "phone": phone, "created": u.Created, "marketing": u.Marketing, "deleted": u.Deleted})
+			email := ""
+			if local, domain, ok := strings.Cut(u.Email, "@"); ok && local != "" && !u.Deleted {
+				email = string([]rune(local)[:1]) + "••••@" + domain
+			}
+			users = append(users, map[string]any{"id": u.ID, "phone": phone, "email": email, "created": u.Created, "marketing": u.Marketing, "deleted": u.Deleted})
 		}
 		orders := []Order{}
 		for _, o := range s.Orders {

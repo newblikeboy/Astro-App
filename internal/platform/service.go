@@ -16,7 +16,6 @@ type App struct {
 	Config           Config
 	Pay              PaymentProvider
 	Zoom             MeetingProvider
-	OTP              OTPProvider
 	Notify           NotificationProvider
 	PDF              PDFRenderer
 	MatchingPDF      MatchingPDFRenderer
@@ -42,7 +41,6 @@ func NewApp(s *Store, c Config) *App {
 	} else {
 		a.Zoom = SimMeeting{}
 	}
-	a.OTP = OTPGateway{Gateway{c.OTPURL, c.OTPToken, client, c.OTPMode == "simulation"}}
 	a.Notify = NotificationGateway{Gateway{c.NotificationURL, c.NotificationToken, client, !c.Production && c.NotificationURL == ""}}
 	a.PDF = ChromePDF{FontPath: c.FontPath, ChromePath: c.ChromePath, Origin: c.Origin}
 	a.MatchingPDF = ChromePDF{FontPath: c.FontPath, ChromePath: c.ChromePath, Origin: c.Origin}

@@ -149,7 +149,7 @@ const assert = require("node:assert/strict");
     );
     await page.locator(".account-button").click();
     await page.locator(".auth-card").waitFor();
-    await page.locator("#phone").fill("9876543210");
+    await page.locator("#customer-email").fill("design-qa@example.test");
     const modalAxe = await new AxeBuilder({ page }).analyze();
     assert.deepEqual(
       modalAxe.violations.map((v) => v.id),

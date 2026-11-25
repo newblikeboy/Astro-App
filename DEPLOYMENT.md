@@ -52,8 +52,8 @@ npm run dev
 Open http://localhost:5173. The API listens on 127.0.0.1:8080. With no
 MONGODB_URI the development-only file store uses DATA_DIR; production refuses
 this storage mode. The .env.example defaults to simulated integrations that
-make no real payment, SMS or Zoom call. An OTP shown in development is not a
-production SMS service. Never expose this development configuration publicly.
+make no real payment or Zoom call. Customer login uses email/password in both
+development and production. Never expose development configuration publicly.
 
 On PowerShell set `$env:GOTOOLCHAIN='go1.26.5'` and
 `$env:GOEXPERIMENT='nojsonv2'`, and use `Copy-Item .env.example .env`.
@@ -153,11 +153,16 @@ administrator email in place of the example.
   with test keys; ALLOW_LIVE_PAYMENTS=false keeps live keys disabled. Webhook:
   POST /api/payments/webhook. Preserve its body for signature verification.
   Configure captured/failed payment and refund events in the provider account.
-- **OTP:** OTP_MODE=http, HTTPS OTP_GATEWAY_URL and OTP_GATEWAY_TOKEN.
-  The gateway receives an application/json POST with bearer authentication:
-  `{"phone":"+91...","code":"123456","purpose":"authentication","expires_in":"300"}`.
-  A 2xx response means the gateway accepted the SMS request. A provider-specific
-  adapter may be needed; a vendor's API URL is not automatically compatible.
+- **Customer login:** email and password; no SMS gateway is required. Legacy
+  OTP_MODE and OTP_GATEWAY_* settings are ignored and can be removed. New
+  customers create their own account at /login. Passwords use bcrypt hashes in
+  private credential records, never profile responses or account exports.
+  Existing signed-in phone-only customers can set email/password on /account
+  without changing ownership of their saved reports and purchases. Signed-out
+  phone-only accounts need a separately verified operator-assisted migration;
+  entering a phone number or a new email cannot claim their existing records.
+  Email verification and self-service password recovery are not enabled by
+  this change; no "forgot password" link is offered without a delivery flow.
 - **Zoom:** ZOOM_MODE=zoom, ZOOM_ACCOUNT_ID, ZOOM_CLIENT_ID, ZOOM_CLIENT_SECRET
   and ZOOM_USER_ID for the configured host. Use Server-to-Server OAuth with
   meeting create/read/delete permissions appropriate to that host. Provider

@@ -1,177 +1,87 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
-import {
-  ArrowRight,
-  Info,
-  ShieldCheck,
-  BookOpen,
-  CalendarDays,
-  Sun,
-} from "lucide-react";
+import { ArrowRight, ShieldCheck, BookOpen, CalendarDays, Sun, Eye, EyeOff } from "lucide-react";
 import { api } from "./api";
 import { t } from "./i18n";
-import type { Config } from "./types";
 import { Button, ErrorBox } from "./UI";
 
-/** LoginPage renders the standalone customer authentication page with a safe local return destination. */
-export default function LoginPage({
-  config,
-  onSuccess,
-  onPolicy,
-}: {
-  config: Config;
-  onSuccess: () => Promise<void>;
-  onPolicy: (value: string) => void;
+/** PasswordFields renders labelled credentials with password-manager hints and an accessible visibility control. */
+export function PasswordFields({ email, password, confirmation, creating, busy, onEmail, onPassword, onConfirmation }: {
+  email: string; password: string; confirmation: string; creating: boolean; busy: boolean;
+  onEmail: (value: string) => void; onPassword: (value: string) => void; onConfirmation: (value: string) => void;
 }) {
-  return (
-    <div className="auth-layout">
-      <aside className="auth-story" aria-labelledby="auth-story-heading">
-        <Sun size={40} strokeWidth={1} aria-hidden="true" />
-        <h2 id="auth-story-heading">{t("Your Kundli, always with you.")}</h2>
-        <p>{t("Keep your reports and consultations in one place.")}</p>
-        <ul>
-          <li>
-            <BookOpen size={19} aria-hidden="true" />
-            {t("Saved Kundlis & reports")}
-          </li>
-          <li>
-            <CalendarDays size={19} aria-hidden="true" />
-            {t("Your consultation bookings")}
-          </li>
-          <li>
-            <ShieldCheck size={19} aria-hidden="true" />
-            {t("Private access with mobile verification")}
-          </li>
-        </ul>
-      </aside>
-      <section className="auth-card" aria-labelledby="customer-login-heading">
-        <span className="auth-card-icon">
-          <ShieldCheck size={25} aria-hidden="true" />
-        </span>
-        <h1 id="customer-login-heading">{t("Log in to your account")}</h1>
-        <LoginForm config={config} onSuccess={onSuccess} />
-        <div className="auth-legal">
-          <button onClick={() => onPolicy("privacy")}>{t("Privacy")}</button>
-          <span aria-hidden="true">·</span>
-          <button onClick={() => onPolicy("terms")}>
-            {t("Terms & conditions")}
-          </button>
-        </div>
-      </section>
+  const [visible, setVisible] = useState(false);
+  return <fieldset className="customer-credentials" disabled={busy}>
+    <label htmlFor="customer-email">{t("ईमेल पता")}</label>
+    <input id="customer-email" name="email" type="email" autoComplete="username" inputMode="email"
+      autoCapitalize="none" spellCheck={false} maxLength={254} required value={email} onChange={e => onEmail(e.target.value)} />
+    <label htmlFor="customer-password">{t("पासवर्ड")}</label>
+    <div className="customer-password-field">
+      <input id="customer-password" name="password" type={visible ? "text" : "password"}
+        autoComplete={creating ? "new-password" : "current-password"} minLength={creating ? 8 : undefined}
+        required value={password} onChange={e => onPassword(e.target.value)} aria-describedby={creating ? "customer-password-note" : undefined} />
+      <button type="button" className="icon-button" aria-label={t(visible ? "Hide password" : "Show password")}
+        aria-pressed={visible} onClick={() => setVisible(!visible)}>{visible ? <EyeOff size={19} /> : <Eye size={19} />}</button>
     </div>
-  );
+    {creating && <>
+      <p id="customer-password-note" className="field-note">{t("कम से कम 8 अक्षर का पासवर्ड रखें।")}</p>
+      <label htmlFor="customer-confirm-password">{t("पासवर्ड दोबारा लिखें")}</label>
+      <input id="customer-confirm-password" name="confirm-password" type={visible ? "text" : "password"}
+        autoComplete="new-password" required value={confirmation} onChange={e => onConfirmation(e.target.value)} />
+    </>}
+  </fieldset>;
 }
-/** LoginForm manages phone/OTP entry, challenge expiry and the successful-login callback. */
-function LoginForm({
-  config,
-  onSuccess,
-}: {
-  config: Config;
-  onSuccess: () => Promise<void>;
+
+/** LoginPage offers email/password sign-in or registration while preserving the caller's pending action. */
+export default function LoginPage({ onSuccess, onPolicy }: {
+  onSuccess: () => Promise<void>; onPolicy: (value: string) => void;
 }) {
-  const [phone, setPhone] = useState(""),
-    [challenge, setChallenge] = useState(""),
-    [code, setCode] = useState(""),
-    [demo, setDemo] = useState(""),
-    [error, setError] = useState(""),
-    [busy, setBusy] = useState(false);
-  /** submit requests or verifies the OTP according to the current login step. */
-  async function submit(e: FormEvent) {
-    e.preventDefault();
-    setBusy(true);
+  const [creating, setCreating] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmation, setConfirmation] = useState("");
+  const [error, setError] = useState("");
+  const [busy, setBusy] = useState(false);
+  /** submit creates or verifies credentials before continuing the original login intent. */
+  async function submit(event: FormEvent) {
+    event.preventDefault();
     setError("");
+    if (creating && password !== confirmation) { setError("दोनों पासवर्ड एक जैसे होने चाहिए।"); return; }
+    if (new TextEncoder().encode(password).length > 72) { setError("पासवर्ड बहुत लंबा है। कृपया छोटा पासवर्ड रखें।"); return; }
+    setBusy(true);
     try {
-      if (!challenge) {
-        const v = await api<{
-          challenge: string;
-          demo_code?: string;
-        }>("/auth/request", "POST", { phone });
-        setChallenge(v.challenge);
-        setDemo(v.demo_code || "");
-      } else {
-        await api("/auth/verify", "POST", { challenge, code });
-        await onSuccess();
-      }
-    } catch (e) {
-      setError((e as Error).message);
-    } finally {
-      setBusy(false);
-    }
+      await api(creating ? "/auth/register" : "/auth/login", "POST", { email: email.trim(), password });
+      setPassword(""); setConfirmation("");
+      await onSuccess();
+    } catch (cause) { setError((cause as Error).message); }
+    finally { setBusy(false); }
   }
-  return (
-    <form onSubmit={submit}>
-      <p className="modal-intro">
-        {t("आपकी कुंडली, रिपोर्ट और परामर्श एक सुरक्षित जगह पर।")}
-      </p>
-      {!challenge ? (
-        <>
-          <label htmlFor="phone">{t("मोबाइल नंबर")}</label>
-          <input
-            id="phone"
-            type="tel"
-            autoComplete="tel"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            placeholder="+91 98765 43210"
-            required
-            autoFocus
-          />
-          <p className="field-note">
-            {t("भारत के लिए 10 अंक, या देश कोड सहित नंबर लिखें।")}
-          </p>
-        </>
-      ) : (
-        <>
-          <p>
-            {phone}
-            {t(" के लिए सत्यापन कोड")}{" "}
-            <button
-              className="small-link"
-              type="button"
-              onClick={() => {
-                setChallenge("");
-                setDemo("");
-                setCode("");
-              }}
-            >
-              {t("नंबर बदलें")}
-            </button>
-          </p>
-          <label htmlFor="otp">{t("6 अंकों का OTP")}</label>
-          <input
-            id="otp"
-            inputMode="numeric"
-            pattern="[0-9]{6}"
-            maxLength={6}
-            autoComplete="one-time-code"
-            value={code}
-            onChange={(e) => setCode(e.target.value)}
-            required
-            autoFocus
-          />
-          {demo && (
-            <div className="notice">
-              <Info size={18} />
-              <span>
-                {t("केवल स्थानीय डेमो \u00B7 OTP: ")}
-                <b>{demo}</b> <br />
-                {t("यह SMS नहीं भेजता। कोड 5 मिनट में समाप्त होगा।")}
-              </span>
-            </div>
-          )}
-        </>
-      )}
-      <ErrorBox error={t(error)} />
-      <Button className="full" busy={busy}>
-        {challenge ? t("सत्यापित करें") : t("OTP पाएँ")}{" "}
-        <ArrowRight size={17} />
-      </Button>
-      <p className="field-note">
-        {t("मोबाइल सत्यापन आपको WhatsApp प्रचार में शामिल नहीं करता।")}
-      </p>
-      {config.otp_simulation && !challenge && (
-        <p className="muted">{t("अभी OTP का स्थानीय सिमुलेशन चालू है।")}</p>
-      )}
-    </form>
-  );
+  return <div className="auth-layout">
+    <aside className="auth-story" aria-labelledby="auth-story-heading">
+      <Sun size={40} strokeWidth={1} aria-hidden="true" />
+      <h2 id="auth-story-heading">{t("Your Kundli, always with you.")}</h2>
+      <p>{t("Keep your reports and consultations in one place.")}</p>
+      <ul>
+        <li><BookOpen size={19} aria-hidden="true" />{t("Saved Kundlis & reports")}</li>
+        <li><CalendarDays size={19} aria-hidden="true" />{t("Your consultation bookings")}</li>
+        <li><ShieldCheck size={19} aria-hidden="true" />{t("ईमेल और पासवर्ड से सुरक्षित लॉग इन")}</li>
+      </ul>
+    </aside>
+    <section className="auth-card" aria-labelledby="customer-login-heading">
+      <span className="auth-card-icon"><ShieldCheck size={25} aria-hidden="true" /></span>
+      <h1 id="customer-login-heading">{t(creating ? "नया खाता बनाएँ" : "Log in to your account")}</h1>
+      <form onSubmit={submit} aria-busy={busy}>
+        <p className="modal-intro">{t("आपकी कुंडली, रिपोर्ट और परामर्श एक सुरक्षित जगह पर।")}</p>
+        <PasswordFields email={email} password={password} confirmation={confirmation} creating={creating} busy={busy}
+          onEmail={setEmail} onPassword={setPassword} onConfirmation={setConfirmation} />
+        <ErrorBox error={error} />
+        <Button className="full" type="submit" busy={busy}>{t(creating ? "खाता बनाएँ" : "लॉग इन")} <ArrowRight size={17} /></Button>
+      </form>
+      <p className="auth-switch">{t(creating ? "पहले से खाता है?" : "पहली बार आए हैं?")} <button type="button" className="text-button" disabled={busy}
+        onClick={() => { setCreating(!creating); setPassword(""); setConfirmation(""); setError(""); }}>
+        {t(creating ? "लॉग इन करें" : "नया खाता बनाएँ")}</button></p>
+      <div className="auth-legal"><button onClick={() => onPolicy("privacy")}>{t("Privacy")}</button><span aria-hidden="true">·</span>
+        <button onClick={() => onPolicy("terms")}>{t("Terms & conditions")}</button></div>
+    </section>
+  </div>;
 }

@@ -1,13 +1,10 @@
+import { createCustomer } from "./customer-auth";
 import { test, expect } from "@playwright/test";
 import type { Page } from "@playwright/test";
 
-/** login verifies an isolated development customer with the server's simulated OTP. */
+/** login creates an isolated email/password customer through the public sign-up form. */
 async function login(page: Page) {
-  await page.locator("#phone").fill("+9197" + String(Date.now()).slice(-8));
-  await page.getByRole("button", { name: "Get OTP", exact: true }).click();
-  const code = await page.locator(".auth-card .notice b").textContent();
-  await page.locator("#otp").fill(code!);
-  await page.getByRole("button", { name: "Verify", exact: true }).click();
+  await createCustomer(page);
 }
 
 test.beforeEach(async ({ page }) => {

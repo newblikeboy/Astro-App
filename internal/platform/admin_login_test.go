@@ -65,7 +65,7 @@ func TestProductionAdminConfiguration(t *testing.T) {
 		"ENV_FILE": "none", "APP_ENV": "production", "APP_ORIGIN": "https://fixture.invalid",
 		"MONGODB_URI": "mongodb://fixture.invalid", "ADMIN_EMAIL": " Owner@Example.Test ", "ADMIN_PASSWORD": "Demo!789",
 		"PAYMENT_MODE": "razorpay", "RAZORPAY_KEY_ID": "rzp_test_fixture", "RAZORPAY_KEY_SECRET": "fixture", "RAZORPAY_WEBHOOK_SECRET": "fixture",
-		"OTP_MODE": "http", "OTP_GATEWAY_URL": "https://fixture.invalid/otp", "OTP_GATEWAY_TOKEN": "fixture",
+		"OTP_MODE": "simulation", "OTP_GATEWAY_URL": "", "OTP_GATEWAY_TOKEN": "",
 		"ZOOM_MODE": "zoom", "ZOOM_ACCOUNT_ID": "fixture", "ZOOM_CLIENT_ID": "fixture", "ZOOM_CLIENT_SECRET": "fixture",
 		"NOTIFICATION_URL": "https://fixture.invalid/notifications", "NOTIFICATION_TOKEN": "fixture",
 		"ALLOW_LIVE_PAYMENTS": "false", "ADMIN_TOTP_SECRET": "",

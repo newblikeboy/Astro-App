@@ -879,7 +879,7 @@ export default function ShopApp() {
                         <h2>{t("Keep your order connected to you")}</h2>
                         <p>
                           {t(
-                            "Log in with your mobile number to complete your purchase.",
+                            "Log in with your email and password to complete your purchase.",
                           )}
                         </p>
                       </div>
@@ -1044,7 +1044,7 @@ export default function ShopApp() {
                 <h2>{t("Your orders, in one place")}</h2>
                 <p>
                   {t(
-                    "Log in with the same mobile number used for your purchase.",
+                    "Log in with the same email used for your purchase.",
                   )}
                 </p>
                 <Link to={loginPath("/shop/orders")} className="button">

@@ -23,7 +23,7 @@ func testApp(t *testing.T) *App {
 	if e != nil {
 		t.Fatal(e)
 	}
-	a := NewApp(s, Config{Origin: "http://localhost:5173", DataDir: t.TempDir(), EpheDir: "../../ephe", FontPath: "../../assets/NotoSansDevanagari-Regular.ttf", PaymentMode: "simulation", ZoomMode: "simulation", OTPMode: "simulation", AdminEmail: "local-admin@example.test", AdminPassword: "test-admin"})
+	a := NewApp(s, Config{Origin: "http://localhost:5173", DataDir: t.TempDir(), EpheDir: "../../ephe", FontPath: "../../assets/NotoSansDevanagari-Regular.ttf", PaymentMode: "simulation", ZoomMode: "simulation", AdminEmail: "local-admin@example.test", AdminPassword: "test-admin"})
 	now := time.Date(2026, 10, 18, 6, 0, 0, 0, time.UTC)
 	a.Now = func() time.Time { return now }
 	return a
@@ -167,52 +167,6 @@ func TestOwnershipCSRFAndSecureSession(t *testing.T) {
 	}
 	if w := request(t, a, "GET", "/api/admin", nil, cookie, ""); w.Code != 401 {
 		t.Fatal("customer entered admin")
-	}
-}
-
-// TestOTPAttemptsExpiryOneTimeAndCookies checks OTP attempt limits, expiry, one-time use and session cookies.
-func TestOTPAttemptsExpiryOneTimeAndCookies(t *testing.T) {
-	a := testApp(t)
-	w := request(t, a, "POST", "/api/auth/request", map[string]string{"phone": "9876543210"}, nil, "")
-	if w.Code != 200 {
-		t.Fatal(w.Body.String())
-	}
-	var challenge struct {
-		ID   string `json:"challenge"`
-		Code string `json:"demo_code"`
-	}
-	_ = json.Unmarshal(w.Body.Bytes(), &challenge)
-	for i := 0; i < 5; i++ {
-		w = request(t, a, "POST", "/api/auth/verify", map[string]string{"challenge": challenge.ID, "code": "wrong"}, nil, "")
-		if w.Code != 401 {
-			t.Fatal("wrong OTP accepted")
-		}
-	}
-	w = request(t, a, "POST", "/api/auth/verify", map[string]string{"challenge": challenge.ID, "code": challenge.Code}, nil, "")
-	if w.Code != 401 {
-		t.Fatal("retry limit not persisted")
-	}
-	w = request(t, a, "POST", "/api/auth/request", map[string]string{"phone": "9876543211"}, nil, "")
-	_ = json.Unmarshal(w.Body.Bytes(), &challenge)
-	w = request(t, a, "POST", "/api/auth/verify", map[string]string{"challenge": challenge.ID, "code": challenge.Code}, nil, "")
-	if w.Code != 200 {
-		t.Fatal(w.Body.String())
-	}
-	cookies := w.Result().Cookies()
-	if len(cookies) != 1 || !cookies[0].HttpOnly || cookies[0].SameSite != http.SameSiteLaxMode {
-		t.Fatal("insecure session cookie")
-	}
-	w = request(t, a, "POST", "/api/auth/verify", map[string]string{"challenge": challenge.ID, "code": challenge.Code}, nil, "")
-	if w.Code != 401 {
-		t.Fatal("OTP replay accepted")
-	}
-	w = request(t, a, "POST", "/api/auth/request", map[string]string{"phone": "9876543212"}, nil, "")
-	_ = json.Unmarshal(w.Body.Bytes(), &challenge)
-	now := a.Now().Add(6 * time.Minute)
-	a.Now = func() time.Time { return now }
-	w = request(t, a, "POST", "/api/auth/verify", map[string]string{"challenge": challenge.ID, "code": challenge.Code}, nil, "")
-	if w.Code != 401 {
-		t.Fatal("expired OTP accepted")
 	}
 }
 

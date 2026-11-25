@@ -1,3 +1,4 @@
+import { createCustomer } from "./customer-auth";
 import { test, expect } from "@playwright/test";
 import { customerReturn } from "../src/routing";
 
@@ -40,7 +41,7 @@ test("direct protected URLs, reload and browser history use separate pages", asy
   await expect(page.locator(".site-header,.site-footer,dialog")).toHaveCount(0);
   await expect(page).toHaveTitle(/Log in to your account/);
   await page.reload();
-  await expect(page.locator("#phone")).toBeVisible();
+  await expect(page.locator("#customer-email")).toBeVisible();
   await page.goBack();
   await expect(page.locator("#name")).toHaveValue("Preserved route draft");
   await page.goForward();
@@ -55,7 +56,7 @@ test("direct protected URLs, reload and browser history use separate pages", asy
   await expect(page).toHaveURL(/\/admin\/login$/);
   await expect(page.locator("#admin-password")).toBeVisible();
   await expect(
-    page.locator("#phone,.site-header,.site-footer,.consent"),
+    page.locator("#customer-email,.site-header,.site-footer,.consent"),
   ).toHaveCount(0);
   await page.reload();
   await expect(page.locator("#admin-password")).toBeVisible();
@@ -73,14 +74,18 @@ test("customer and administrator sessions do not grant or revoke each other's ac
     localStorage.setItem("m4y-language", "en");
     localStorage.setItem("m4y-analytics", "no");
   });
-  const phone = "+9198" + String(Date.now()).slice(-8);
-  /** customerLogin logs the isolated browser-test customer in using the explicit development OTP flow. */
+  const email = `route-${Date.now()}@example.test`;
+  let registered = false;
+  /** customerLogin creates the isolated account once and later verifies its email/password credentials. */
   async function customerLogin() {
-    await page.locator("#phone").fill(phone);
-    await page.getByRole("button", { name: "Get OTP", exact: true }).click();
-    const code = await page.locator(".auth-card .notice b").textContent();
-    await page.locator("#otp").fill(code!);
-    await page.getByRole("button", { name: "Verify", exact: true }).click();
+    if (!registered) {
+      await createCustomer(page, email);
+      registered = true;
+    } else {
+      await page.locator("#customer-email").fill(email);
+      await page.locator("#customer-password").fill("Browser!123");
+      await page.locator('.auth-card form button[type="submit"]').click();
+    }
     await expect(page).toHaveURL(/\/account$/);
     await expect(
       page.locator(".saved-reports,.account-page h1").first(),

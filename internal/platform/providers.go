@@ -245,9 +245,6 @@ func (SimMeeting) Create(_ context.Context, b *Booking, _ int) (Meeting, error) 
 // Delete completes a simulated meeting deletion without contacting Zoom.
 func (SimMeeting) Delete(context.Context, string) error { return nil }
 
-type OTPProvider interface {
-	Send(context.Context, string, string) error
-}
 type NotificationProvider interface {
 	Send(context.Context, string, string, string) error
 }
@@ -278,13 +275,6 @@ func (g Gateway) post(ctx context.Context, body any) error {
 		return fmt.Errorf("notification gateway HTTP %d", res.StatusCode)
 	}
 	return nil
-}
-
-type OTPGateway struct{ Gateway }
-
-// Send sends a phone authentication code with its purpose and expiry metadata.
-func (g OTPGateway) Send(ctx context.Context, phone, code string) error {
-	return g.post(ctx, map[string]string{"phone": phone, "code": code, "purpose": "authentication", "expires_in": "300"})
 }
 
 type NotificationGateway struct{ Gateway }

@@ -68,6 +68,7 @@ const ShopApp = lazy(() => import("./ShopApp"));
 const KundliReport = lazy(() => import("./KundliReport"));
 const AdminApp = lazy(() => import("./AdminApp"));
 const LoginPage = lazy(() => import("./LoginPage"));
+const AccountCredentials = lazy(() => import("./AccountCredentials"));
 const MatchingApp = lazy(() => import("./MatchingApp"));
 const DevotionalLibrary = lazy(() => import("./DevotionalLibrary"));
 const PujaLibrary = lazy(() => import("./PujaLibrary"));
@@ -859,7 +860,7 @@ function CustomerApp() {
                       <ShieldCheck size={23} />
                       <span>
                         {t(
-                          "आप बिना लॉग इन किए कुंडली देख सकते हैं। सहेजने के लिए मोबाइल सत्यापन करें।",
+                          "आप बिना लॉग इन किए कुंडली देख सकते हैं। सहेजने के लिए अपने खाते में लॉग इन करें।",
                         )}
                       </span>
                     </div>
@@ -1141,7 +1142,6 @@ function CustomerApp() {
             ))}
           {view === "login" && (!account || finishingLogin.current) && (
             <LoginPage
-              config={config}
               onPolicy={setPolicy}
               onSuccess={async () => {
                 finishingLogin.current = true;
@@ -1925,8 +1925,7 @@ function AccountView({
           <div className="eyebrow">{t("आपकी अपनी जगह")}</div>
           <h1>{t("मेरा खाता")}</h1>
           <p>
-            {account.user.phone}
-            {t(" \u00B7 सुरक्षित मोबाइल सत्यापन")}
+            {account.user.email || account.user.phone}
           </p>
         </div>
         <button className="text-button" onClick={() => void logout()}>
@@ -1934,6 +1933,7 @@ function AccountView({
           {t("लॉग आउट")}
         </button>
       </div>
+      {!account.user.email && <Suspense fallback={null}><AccountCredentials csrf={account.csrf} refresh={refresh} /></Suspense>}
       <p>
         <a
           className="button secondary"

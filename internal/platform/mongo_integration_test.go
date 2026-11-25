@@ -105,7 +105,7 @@ func TestMongoTransactionsAcrossConnections(t *testing.T) {
 		first.mu.Unlock()
 		t.Fatal("Mongo reads waited for the application write mutex")
 	}
-	config := Config{PaymentMode: "simulation", ZoomMode: "simulation", OTPMode: "simulation"}
+	config := Config{PaymentMode: "simulation", ZoomMode: "simulation"}
 	apps := []*App{NewApp(first, config), NewApp(second, config)}
 	now := time.Now().UTC()
 	for _, a := range apps {

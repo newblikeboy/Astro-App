@@ -11,7 +11,7 @@ const results={passed:false,layouts:[],audits:0,checks:[],errors:[]};
     const context=await browser.newContext({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
     await context.addInitScript(()=>{if(!localStorage.getItem('m4y-language'))localStorage.setItem('m4y-language','en');localStorage.setItem('m4y-analytics','no')});
     const page=await context.newPage();page.setDefaultTimeout(20000);page.on('pageerror',e=>results.errors.push(e.message));
-    const conf=await (await context.request.get(base+'/api/config')).json();assert.equal(conf.storage,'local development file');assert(conf.simulation&&conf.otp_simulation);
+    const conf=await (await context.request.get(base+'/api/config')).json();assert.equal(conf.storage,'local development file');assert(conf.simulation&&conf.auth_method==='email_password');
     /** call sends an authenticated request to the isolated shop QA server and requires successful JSON. */
     const call=async(path,method='GET',body,csrf)=>{const res=await context.request.fetch(base+'/api'+path,{method,headers:{Origin:base,...(csrf?{'X-CSRF-Token':csrf}:{})},data:body});assert(res.ok(),path+': '+await res.text());return res.json()};
     await call('/admin/login','POST',{email:'local-admin@example.test',password:'shop-qa-local-only'});
@@ -31,8 +31,7 @@ const results={passed:false,layouts:[],audits:0,checks:[],errors:[]};
     for(const [i,name] of ['Ruby','Emerald','Yellow sapphire','Blue sapphire'].entries())stones.push(await call('/admin/shop/products','POST',{...productTemplate,name,slug:prefix+'-'+i,stock:i===3?0:3,price:123456+i*100000},admin.csrf));
     await call('/admin/shop/products','POST',{...productTemplate,name:'Hidden draft',slug:prefix+'-draft',status:'draft'},admin.csrf);
     await call('/admin/shop/settings','PUT',{enabled:true,shipping_fee:12500,tax_mode:'exclusive',tax_bps:300,delivery_policy:'QA only: dispatch after payment confirmation. Shipping within India.',return_policy:'QA only: contact the seller for return instructions before returning a stone.'},admin.csrf);
-    const otp=await call('/auth/request','POST',{phone:'+919876543210'});
-    await call('/auth/verify','POST',{challenge:otp.challenge,code:otp.demo_code});
+    await call('/auth/register','POST',{email:prefix+'@example.test',password:'Shop-QA!123'});
     const buyer=await call('/me');
     /** inspect checks the current shop view across both languages, responsive widths and optional accessibility audits. */
     const inspect=async(name,{axe=true}={})=>{

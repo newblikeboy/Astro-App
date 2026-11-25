@@ -334,7 +334,8 @@ func stateSubset(s *State, kinds []string) (map[string]any, error) {
 	all := map[string]any{
 		"video_links": s.VideoLinks,
 		"settings":    s.Settings, "gemstones": s.Gemstones, "users": s.Users,
-		"sessions": s.Sessions, "otps": s.OTPs, "reports": s.Reports,
+		"password_credentials": s.PasswordCredentials,
+		"sessions":             s.Sessions, "otps": s.OTPs, "reports": s.Reports,
 		"orders": s.Orders, "bookings": s.Bookings, "meetings": s.Meetings,
 		"rules": s.Rules, "jobs": s.Jobs, "webhooks": s.Webhooks,
 		"expenses": s.Expenses, "distributions": s.Distributions,

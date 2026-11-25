@@ -10,10 +10,16 @@ import (
 type User struct {
 	ID        string    `json:"id"`
 	Phone     string    `json:"phone"`
+	Email     string    `json:"email,omitempty"`
 	Created   time.Time `json:"created"`
 	Marketing bool      `json:"marketing"`
 	Deleted   bool      `json:"deleted"`
 	Analytics bool      `json:"analytics"`
+}
+
+// PasswordCredential is stored separately from public customer profiles and account exports.
+type PasswordCredential struct {
+	Hash string `json:"password_hash"`
 }
 type Session struct {
 	UserID  string    `json:"user_id"`
@@ -226,30 +232,32 @@ type Settings struct {
 	Content           Content      `json:"content"`
 }
 type State struct {
-	VideoLinks      map[string]VideoLink      `json:"video_links"`
-	Gemstones       map[string]*Gemstone      `json:"gemstones"`
-	Users           map[string]*User          `json:"users"`
-	Sessions        map[string]*Session       `json:"sessions"`
-	OTPs            map[string]*OTP           `json:"otps"`
-	Reports         map[string]*Report        `json:"reports"`
-	Orders          map[string]*Order         `json:"orders"`
-	Bookings        map[string]*Booking       `json:"bookings"`
-	Meetings        map[string]Meeting        `json:"meetings"`
-	Rules           map[string]Rule           `json:"rules"`
-	Jobs            map[string]*Job           `json:"jobs"`
-	Webhooks        map[string]bool           `json:"webhooks"`
-	Expenses        map[string]*Expense       `json:"expenses"`
-	Distributions   map[string]*Distribution  `json:"distributions"`
-	Reconciliations map[string]Reconciliation `json:"reconciliations"`
-	Events          []Event                   `json:"events"`
-	Audits          []Audit                   `json:"audits"`
-	Settings        Settings                  `json:"settings"`
+	VideoLinks          map[string]VideoLink           `json:"video_links"`
+	Gemstones           map[string]*Gemstone           `json:"gemstones"`
+	Users               map[string]*User               `json:"users"`
+	PasswordCredentials map[string]*PasswordCredential `json:"password_credentials"`
+	Sessions            map[string]*Session            `json:"sessions"`
+	OTPs                map[string]*OTP                `json:"otps"`
+	Reports             map[string]*Report             `json:"reports"`
+	Orders              map[string]*Order              `json:"orders"`
+	Bookings            map[string]*Booking            `json:"bookings"`
+	Meetings            map[string]Meeting             `json:"meetings"`
+	Rules               map[string]Rule                `json:"rules"`
+	Jobs                map[string]*Job                `json:"jobs"`
+	Webhooks            map[string]bool                `json:"webhooks"`
+	Expenses            map[string]*Expense            `json:"expenses"`
+	Distributions       map[string]*Distribution       `json:"distributions"`
+	Reconciliations     map[string]Reconciliation      `json:"reconciliations"`
+	Events              []Event                        `json:"events"`
+	Audits              []Audit                        `json:"audits"`
+	Settings            Settings                       `json:"settings"`
 }
 
 // seed creates development defaults and empty entity collections for a new application state.
 func seed() *State {
 	// Additive collections stay empty until the merchant adds real inventory.
 	s := &State{Users: map[string]*User{}, Sessions: map[string]*Session{}, OTPs: map[string]*OTP{}, Reports: map[string]*Report{}, Orders: map[string]*Order{}, Bookings: map[string]*Booking{}, Meetings: map[string]Meeting{}, Rules: map[string]Rule{}, Jobs: map[string]*Job{}, Webhooks: map[string]bool{}, Expenses: map[string]*Expense{}, Distributions: map[string]*Distribution{}, Reconciliations: map[string]Reconciliation{}, Events: []Event{}, Audits: []Audit{}}
+	s.PasswordCredentials = map[string]*PasswordCredential{}
 	s.Settings = Settings{PDFPrice: 9900, ConsultationPrice: 350100, Buffer: 15, LeadHours: 24, HorizonDays: 30, ChangeHours: 24, Zone: "Asia/Kolkata", TaxMode: "unconfigured", Availability: []Window{{1, "10:00", "13:00"}, {3, "15:00", "18:00"}, {6, "10:00", "13:00"}}, Blocked: []string{}, Content: Content{Intro: "अपनी कुंडली को समझने और सोच-समझकर आगे बढ़ने की एक सहज शुरुआत। पं. राजा मिश्रा का स्वीकृत परिचय यहाँ जोड़ा जाएगा।", Videos: FeaturedVideoIDs(), Support: "संपर्क विवरण जल्द उपलब्ध होंगे।", FAQ: []FAQ{{"जन्म समय नहीं पता हो तो?", "आप विवरण दर्ज कर सकते हैं। सही समय के बिना लग्न, भाव और ग्रहों की निश्चित स्थिति नहीं दिखाई जाएगी।"}, {"उपाय PDF कैसे मिलेगा?", "सत्यापित भुगतान के बाद PDF आपके खाते में मिलेगा। आप उसे सुरक्षित रूप से डाउनलोड कर सकेंगे।"}, {"परामर्श कैसे होगा?", "उपलब्ध समय चुनने और भुगतान के बाद आपके खाते में निजी Zoom लिंक उपलब्ध होगा। अवधि की पुष्टि बुकिंग शुरू होने से पहले की जाएगी।"}, {"बुकिंग बदल या रद्द कर सकते हैं?", "खाते से अनुरोध करें। लागू समय-सीमा और स्वीकृत रद्दीकरण नीति बुकिंग से पहले दिखाई जाएगी।"}}, Policies: map[string]string{"privacy": "समीक्षा हेतु प्रारूप: जन्म विवरण और संपर्क जानकारी केवल रिपोर्ट, खाते और बुकिंग के लिए सुरक्षित रखी जाती है। अपने खाते से मिटाने का अनुरोध करें। भुगतान अभिलेखों की कानूनी अवधि संचालक द्वारा तय की जानी है।", "terms": "समीक्षा हेतु प्रारूप: ज्योतिषीय व्याख्या सांस्कृतिक और व्यक्तिगत चिंतन के लिए है। यह चिकित्सा, कानूनी या वित्तीय सलाह नहीं है। किसी परिणाम की गारंटी नहीं है।", "refund": "समीक्षा हेतु प्रारूप: PDF और परामर्श की रद्दीकरण, पुनर्निर्धारण और धनवापसी शर्तों को व्यवसाय की स्वीकृति के बाद यहाँ प्रकाशित किया जाएगा। लाइव बिक्री अभी बंद है।", "contact": "स्वीकृत संपर्क विवरण अभी उपलब्ध नहीं हैं। कृपया लाइव सेवा शुरू होने पर यहाँ दी गई सहायता जानकारी का उपयोग करें।"}}}
 	s.Gemstones = map[string]*Gemstone{}
 	s.VideoLinks = map[string]VideoLink{}

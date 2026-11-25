@@ -26,7 +26,7 @@ layouts. The public header links to customer login and does not expose admin nav
 | Route | Purpose |
 | --- | --- |
 | `/` | Public landing page and daily tools |
-| `/login` | Standalone customer mobile/OTP login |
+| `/login` | Standalone customer email/password login and registration |
 | `/account` | Protected customer reports, bookings and privacy settings |
 | `/kundli` | Current guest Kundli, retained only in this browser tab |
 | `/kundli-matching` | Public two-person Ashtakoota comparison; no login or saving |
@@ -264,7 +264,7 @@ With `MONGODB_URI` blank, the app uses `.local/development-state.json`. This is 
 
 - Create a guest Kundli with a listed city and a birth date from 1940 through today. See the real calculation, chart, table, settings and limitations before login.
 - Open `/kundli-matching`, enter both birth details and review all eight base scores and the separate Mangal geometry. No login or saved report is created.
-- Save it using mobile OTP. In local simulation, the dialog displays a randomly generated development code; no SMS is sent. The form survives authentication and tab refresh.
+- Save it by creating an email/password account or logging in to an existing one. Passwords are stored as private bcrypt hashes. The birth form and pending save survive authentication and tab refresh.
 - Choose the ₹99 PDF. The server snapshots the calculation/rules and creates a 9,900-paise order. Explicitly confirm the **local payment simulation**. The private Hindi PDF becomes available in the account; the worker retries failures without another purchase.
 - Book the ₹3,501 consultation independently. The order is 350,100 paise. Choose an available time, obtain a ten-minute hold and confirm the simulated payment. Simulated Zoom does not invent an attendee link. Reschedule/cancel in the account.
 - Open **http://localhost:5173/admin**. Local-only demo email: `local-admin@example.test`; password: `local-admin-change-me`. Set `ADMIN_EMAIL` and `ADMIN_PASSWORD` privately on the server. Production requires a configured email and a password of at least 8 characters; local demo credentials are refused. Administrator sign-in uses email and password without an authenticator code. Login rate limits, separate administrator cookies and CSRF protection remain enforced.
@@ -315,6 +315,6 @@ For a workspace-local test replica set on port 27028, `MONGODB_TEST_INIT=true` p
 
 See [integration configuration](docs/INTEGRATIONS.md), [deployment and operations](docs/OPERATIONS.md), [calculation contract](docs/CALCULATIONS.md), [scope](docs/PLAN.md) and [verification results](docs/VERIFICATION.md).
 
-Awaiting external configuration: Atlas URI/network access, Razorpay test credentials/webhook, SMS gateway and approved OTP template, Zoom Server-to-Server OAuth account, notification gateway. Awaiting business approvals: Swiss Ephemeris licensing choice, applicable tax treatment, session duration/availability, policies/support contact, Guru Ji portrait/introduction/videos and approved applicable interpretation/remedy coverage. Live service stays blocked until the relevant settings and content are ready.
+Awaiting external configuration: Atlas URI/network access, Razorpay test credentials/webhook, Zoom Server-to-Server OAuth account, notification gateway. Awaiting business approvals: Swiss Ephemeris licensing choice, applicable tax treatment, session duration/availability, policies/support contact, Guru Ji portrait/introduction/videos and approved applicable interpretation/remedy coverage. Live service stays blocked until the relevant settings and content are ready.
 
 Infrastructure cost of ₹1,700/month is a planning estimate, not an automatically booked expense or a promise covering providers, licences, Atlas tiers or future traffic.

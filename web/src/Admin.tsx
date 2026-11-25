@@ -203,7 +203,7 @@ export default function Admin({
   const activeSection = adminSections.find(section => section.id === tab)!;
   const matchingOrders = data.orders.filter(order => (orderStatus === "all" || order.status === orderStatus) &&
     [order.id, order.provider_id, order.title, t(order.title)].join(" ").toLowerCase().includes(recordSearch.toLowerCase())).sort((a, b) => b.created.localeCompare(a.created));
-  const matchingUsers = data.users.filter(user => [user.id, user.phone].join(" ").toLowerCase().includes(recordSearch.toLowerCase()));
+  const matchingUsers = data.users.filter(user => [user.id, user.email, user.phone].join(" ").toLowerCase().includes(recordSearch.toLowerCase()));
   return (
     <div className="container workspace admin-workspace">
       <aside className="admin-sidebar">
@@ -1683,7 +1683,7 @@ export default function Admin({
               <thead>
                 <tr>
                   <th>{t("ग्राहक ID")}</th>
-                  <th>{t("मोबाइल")}</th>
+                  <th>{t("ईमेल / मोबाइल")}</th>
                   <th>{t("बना")}</th>
                   <th>{t("प्रोफ़ाइल")}</th>
                   <th>{t("प्रचार सहमति")}</th>
@@ -1694,7 +1694,7 @@ export default function Admin({
                 {matchingUsers.map((u) => (
                   <tr key={u.id}>
                     <td className="reference">{u.id}</td>
-                    <td>{u.phone}</td>
+                    <td>{u.email || u.phone || "—"}</td>
                     <td>{localTime(u.created)}</td>
                     <td>
                       {data.profiles.filter((p) => p.user_id === u.id).length}

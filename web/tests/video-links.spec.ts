@@ -1,3 +1,4 @@
+import { createCustomer } from "./customer-auth";
 import { test, expect } from "@playwright/test";
 import type { Page } from "@playwright/test";
 import { customerReturn } from "../src/routing";
@@ -29,7 +30,7 @@ test("video return paths and focused rules preserve chart matching and approvals
   expect(videoReadings({ ...report, chart: null }, link)).toEqual([]);
 });
 
-test("admin publishes a topic link; a visitor gets only matching guidance and can continue to full Kundli and purchases", async ({ page, context }) => {
+test("published topic links exclude legacy authored readings and preserve full Kundli and purchase login", async ({ page, context }) => {
   await context.addInitScript(() => {
     localStorage.setItem("m4y-language", "en");
     localStorage.setItem("m4y-analytics", "no");
@@ -85,12 +86,15 @@ test("admin publishes a topic link; a visitor gets only matching guidance and ca
   await enterBirth(page);
   await expect(page).toHaveURL(new RegExp("/kundli\\?video=debt-" + suffix + "$"));
   await expect(page.locator(".video-chart-card svg")).toBeVisible();
-  await expect(page.getByText("This approved debt guidance matches your Moon placement.", { exact: true })).toBeVisible();
+  // Legacy admin-authored rules remain excluded by the Guruji-PDF-only reading contract.
+  await expect(page.getByText("This approved debt guidance matches your Moon placement.", { exact: true })).toHaveCount(0);
+  await expect(page.locator('.video-reading [role="status"]')).toContainText("Guruji has not yet approved a matching reading");
   await expect(page.getByText("This reading must not appear for this chart.", { exact: true })).toHaveCount(0);
   await expect(page.locator(".kundli-workspace")).toHaveCount(0);
   await page.screenshot({ path: "../.local/video-reading-desktop.png", fullPage: true });
   await page.reload();
-  await expect(page.getByText("This approved debt guidance matches your Moon placement.", { exact: true })).toBeVisible();
+  await expect(page.getByText("This approved debt guidance matches your Moon placement.", { exact: true })).toHaveCount(0);
+  await expect(page.locator('.video-reading [role="status"]')).toContainText("Guruji has not yet approved a matching reading");
   await page.setViewportSize({ width: 390, height: 844 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({ path: "../.local/video-reading-mobile.png", fullPage: true });
@@ -107,10 +111,7 @@ test("admin publishes a topic link; a visitor gets only matching guidance and ca
   await expect(page).toHaveURL(/\/login\?next=/);
   expect(new URL(page.url()).searchParams.get("next")).toBe("/kundli?video=debt-" + suffix);
   await page.reload();
-  await page.locator("#phone").fill("+9196" + suffix.slice(-8));
-  await page.getByRole("button", { name: "Get OTP", exact: true }).click();
-  await page.locator("#otp").fill((await page.locator(".auth-card .notice b").textContent())!);
-  await page.getByRole("button", { name: "Verify", exact: true }).click();
+  await createCustomer(page);
   await expect(page).toHaveURL(new RegExp("/account/reports/[^?]+\\?video=debt-" + suffix));
   await expect(page.locator("dialog")).toBeVisible();
   await page.keyboard.press("Escape");
