@@ -2,3 +2,4 @@
 *.pdf binary
 *.ogg binary
 *.gz binary
+references/guruji/**/guruji-*.txt binary

@@ -7,8 +7,8 @@ import (
 	"math"
 )
 
-// MangalMethod identifies only the two user-supplied Guruji recordings dated 24 November 2026.
-const MangalMethod = "m4y-mangal-guruji-audio-2026-11-24-v1"
+// MangalMethod versions Guruji's recorded base rule and the explicit cancellations in his supplied Hindi text.
+const MangalMethod = "m4y-mangal-guruji-audio-parihar-2026-11-25-v2"
 
 //go:embed data/guruji-mangal-rules.json
 var gurujiMangalJSON []byte
@@ -40,10 +40,16 @@ func loadGurujiMangalRules() gurujiMangalConfig {
 }
 
 type MangalRule struct {
-	Code       string `json:"code"`
-	Met        bool   `json:"met"`
-	Reference  string `json:"reference"`
-	SourcePage int    `json:"source_pdf_page"`
+	Code           string   `json:"code"`
+	Met            bool     `json:"met"`
+	Reference      string   `json:"reference"`
+	SourcePage     int      `json:"source_pdf_page"`
+	SourceNumber   int      `json:"source_rule_number,omitempty"`
+	Heading        string   `json:"heading,omitempty"`
+	Text           string   `json:"text,omitempty"`
+	Effect         string   `json:"effect,omitempty"`
+	Evaluation     string   `json:"evaluation,omitempty"`
+	MatchedClauses []string `json:"matched_clauses,omitempty"`
 }
 type MangalReference struct {
 	Reference  string   `json:"reference"`
@@ -53,17 +59,18 @@ type MangalReference struct {
 	Exceptions []string `json:"exceptions"`
 }
 type MangalAssessment struct {
-	Classification   string            `json:"classification,omitempty"`
-	Strength         *MangalStrength   `json:"strength,omitempty"`
-	References       []MangalReference `json:"references"`
-	BaseCount        int               `json:"base_count"`
-	ActiveCount      int               `json:"active_count"`
-	BaseLevel        string            `json:"base_level"`
-	Level            string            `json:"level"`
-	SunSeparation    float64           `json:"sun_separation_degrees"`
-	Rules            []MangalRule      `json:"rules"`
-	ReviewConditions []string          `json:"review_conditions"`
-	NotEvaluated     []string          `json:"not_evaluated"`
+	Classification     string            `json:"classification,omitempty"`
+	BaseClassification string            `json:"base_classification,omitempty"`
+	Strength           *MangalStrength   `json:"strength,omitempty"`
+	References         []MangalReference `json:"references"`
+	BaseCount          int               `json:"base_count"`
+	ActiveCount        int               `json:"active_count"`
+	BaseLevel          string            `json:"base_level"`
+	Level              string            `json:"level"`
+	SunSeparation      float64           `json:"sun_separation_degrees"`
+	Rules              []MangalRule      `json:"rules"`
+	ReviewConditions   []string          `json:"review_conditions"`
+	NotEvaluated       []string          `json:"not_evaluated"`
 }
 type MangalPair struct {
 	Method string           `json:"method"`
@@ -120,8 +127,8 @@ func mangalPositions(chart Kundali) (map[string]Graha, error) {
 	return byName, nil
 }
 
-// CalculateMangal applies Guruji's five-house Lagna/Moon rule without importing cancellations or a Venus reference.
-// A Lagna indication is Manglik; only a Moon indication is partial. Legacy high/low fields encode these classes, not strength.
+// CalculateMangal keeps Guruji's recorded base placement separate from supported text cancellations and conditional mitigations.
+// A remaining Lagna indication is Manglik; a remaining Moon-only indication is partial. Legacy levels encode classes, not strength.
 func CalculateMangal(chart Kundali) (MangalAssessment, error) {
 	positions, err := mangalPositions(chart)
 	if err != nil {
@@ -129,7 +136,7 @@ func CalculateMangal(chart Kundali) (MangalAssessment, error) {
 	}
 	mars := positions["Mars"]
 	lagna := zodiacPosition(chart.Lagna.Longitude).RashiNumber
-	out := MangalAssessment{References: []MangalReference{}, Rules: []MangalRule{}, ReviewConditions: []string{}, NotEvaluated: []string{"cancellations_not_supplied_in_guruji_audio", "pair_exceptions_not_supplied_in_guruji_audio"}, Classification: "none", BaseLevel: "none", Level: "none"}
+	out := MangalAssessment{References: []MangalReference{}, Rules: []MangalRule{}, ReviewConditions: []string{}, NotEvaluated: []string{}, Classification: "none", BaseLevel: "none", Level: "none"}
 	if sun, ok := positions["Sun"]; ok {
 		separation := math.Abs(mars.Longitude - sun.Longitude)
 		out.SunSeparation = math.Min(separation, 360-separation)
@@ -150,10 +157,12 @@ func CalculateMangal(chart Kundali) (MangalAssessment, error) {
 		out.Classification, out.Level = "partial", "low"
 	}
 	out.BaseLevel = out.Level
+	out.BaseClassification = out.Classification
+	applyGurujiMangalParihar(&out, positions, lagna)
 	return out, nil
 }
 
-// CalculateMangalPair compares Guruji classifications independently; the supplied recordings give no partner cancellations or Guna bonuses.
+// CalculateMangalPair records partner balance separately so no partner's natal diagnosis or Guna score is erased.
 func CalculateMangalPair(bride, groom Kundali) (MangalPair, error) {
 	b, err := CalculateMangal(bride)
 	if err != nil {
@@ -169,5 +178,6 @@ func CalculateMangalPair(bride, groom Kundali) (MangalPair, error) {
 	} else if b.Classification == g.Classification {
 		out.Status = "similar_active_levels"
 	}
+	applyGurujiMangalPairParihar(&out, bride, groom)
 	return out, nil
 }

@@ -98,6 +98,20 @@ The overview shows D1, Moon and D9 together, with natal degrees, nakshatra/pada
 and recorded motion/condition symbols. Each chart expands into an accessible
 dialog with a full position table. The D9 labels explicitly retain natal
 degrees and nakshatras; no divisional longitude is invented for saved reports.
+The Yogas & Doshas tab keeps both Mangal and Kaal Sarp assessments visible,
+including absent/cancelled states, while hiding absent yoga patterns and
+Rajyog. Birthplace suggestions close after mouse or keyboard selection and
+stay closed when the selected field regains focus; editing starts a new search.
+
+Guruji's 25 November Mangal parihar text is archived byte for byte and indexed
+into 24 original Hindi sections in `internal/swisseph/data/guruji-mangal-parihar.json`.
+The recorded Lagna/Moon base rule remains separate from explicit cancellations
+in source rules 4, 17 and 24. Rule 17 applies to the stated natal house/sign
+combination; Moon evidence remains independent. Conditional, disputed and
+strength-dependent passages require review without invented cutoffs. Equal
+active Manglik classes receive a pair balance under rule 1; neither natal
+assessment nor Ashtakoota points are erased. Browser and new PDF renders show
+the corresponding source wording without translating Guruji's Hindi text.
 
 Yoga/Dosha checks and astronomical calculations remain numerical evidence,
 without separately authored life-outcome prose. Existing report and purchase

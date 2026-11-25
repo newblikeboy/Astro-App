@@ -36,9 +36,16 @@ export type MangalRule = {
   met: boolean;
   reference: string;
   source_pdf_page: number;
+  source_rule_number?: number;
+  heading?: string;
+  text?: string;
+  effect?: "cancellation" | "mitigation" | "review" | "balance";
+  evaluation?: "met" | "not_met" | "review";
+  matched_clauses?: string[];
 };
 export type MangalAssessment = {
-  classification?: "mangal" | "partial" | "none";
+  classification?: "mangal" | "partial" | "none" | "cancelled";
+  base_classification?: "mangal" | "partial" | "none";
   strength?:{method:string;conditions:{planet:string;eligible:boolean;ratio:number;confirmed:boolean;limitations:string[]}[]};
   references: {
     reference: "lagna" | "moon" | "venus";

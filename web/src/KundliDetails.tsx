@@ -15,6 +15,7 @@ import AstroSymbol from "./AstroSymbol";
 import ChartViewer from "./ChartViewer";
 import TimeRange from "./TimeRange";
 import NatalYogaChecks from "./NatalYogaChecks";
+import MangalEvidence from "./MangalEvidence";
 import { mangalConclusion, placementConclusion } from "./yoga-conclusions";
 import { minuteTimestamp } from "./time-display";
 import "./kundli-details.css";
@@ -594,10 +595,11 @@ export function PlanetAnalysisPanel({ report }: { report: Report }) {
   );
 }
 
-/** ExpandedYogaPatterns renders the supplementary chart's labelled placement patterns and supporting evidence. */
+/** ExpandedYogaPatterns always shows both dosha assessments and filters additional yogas to present patterns. */
 export function ExpandedYogaPatterns({ report }: { report: Report }) {
   if (!report.details) return null;
   const mangal = report.details.mangal && mangalConclusion(report.details.mangal);
+  const patterns = report.details.analysis.patterns.filter((pattern) => pattern.matches);
   return (
     <section className="kundli-details">
       <NatalYogaChecks report={report} />
@@ -611,17 +613,18 @@ export function ExpandedYogaPatterns({ report }: { report: Report }) {
             <span className="detail-card-label">{t("Conclusion")}</span>
             <p className="natal-yoga-status">{mangal?.status}</p>
             <p>{mangal?.meaning}</p>
+            {report.details.mangal.base_classification && report.details.mangal.base_classification !== report.details.mangal.classification && <p>{t("mangal.parihar.base")}: {t(`mangal.guruji.${report.details.mangal.base_classification}`)}</p>}
           </div>
-
+          <MangalEvidence rules={report.details.mangal.rules} />
         </div>
       )}
-      <div className="detail-section-heading">
+      {patterns.length > 0 && <><div className="detail-section-heading">
         <Sparkles size={20} aria-hidden="true" />
         <h3>{t("Additional yoga placement patterns")}</h3>
       </div>
       <p className="muted">{t("yoga.scope")}</p>
       <div className="yoga-pattern-grid">
-        {report.details.analysis.patterns.map((p) => (
+        {patterns.map((p) => (
           <article key={p.code}>
             <div>
               <h4>{t(`yoga.name.${p.code}`)}</h4>
@@ -636,6 +639,7 @@ export function ExpandedYogaPatterns({ report }: { report: Report }) {
           </article>
         ))}
       </div>
+      </>}
     </section>
   );
 }

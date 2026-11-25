@@ -103,3 +103,26 @@ than a certified verbatim transcript. The runtime JSON is
 `output/guruji-bhagyaphal/`. Native placement checks, matching, Kundli status
 labels and new PDF renders use this same rule. Stored source snapshots stay
 unchanged; their presentation copies recompute Mangal from the saved chart.
+
+## Mangal parihar text (25 November 2026)
+
+The supplied text is archived in
+[`2026-11-25/mangal-parihar/`](2026-11-25/mangal-parihar/), with its original
+bytes and SHA-256 manifest. `internal/swisseph/data/guruji-mangal-parihar.json`
+contains the complete unchanged text and all 24 numbered Hindi sections.
+Minified JSON and gzip exports are under `output/guruji-bhagyaphal/`.
+
+The user approved applying clear rules and leaving ambiguous rules for review.
+Explicit cancellations: exalted Mars in Capricorn (4); the five stated natal
+house/sign pairs (17); Jupiter's full sign aspect or both Moon and Venus in
+the second natal house (the explicit clauses of 24). Source 17 cancels only
+the Lagna reference, preserving an independent Moon indication. An existing
+base indication is required. Own sign, D9 dignity and conjunction passages
+are recorded as mitigating evidence where the text does not unconditionally
+cancel. Disputed rules 12/13/18, retrograde/combust claims, undefined strength,
+Guna thresholds and node clauses never silently cancel a finding. Partner
+balance under rule 1 is separate from either person's natal assessment.
+
+The engine uses its established whole-sign conjunction/aspect convention
+(Jupiter 5/7/9; Mercury 7), not an invented orb or a new strength cutoff.
+No rule from another text or website is added to fill the unspecified cases.

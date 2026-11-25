@@ -192,7 +192,7 @@ function validResponse(value: MatchingResponse) {
         value.mangal?.[role]?.references?.length === 2 &&
         value.mangal[role].references[0].reference === "lagna" &&
         value.mangal[role].references[1].reference === "moon" &&
-        ["none", "partial", "mangal"].includes(value.mangal[role].classification ?? "") &&
+        ["none", "partial", "mangal", "cancelled"].includes(value.mangal[role].classification ?? "") &&
         value.mangal[role].references.every(
           (r) => Number.isInteger(r.house) && r.house >= 1 && r.house <= 12,
         ) &&

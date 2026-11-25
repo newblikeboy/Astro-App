@@ -245,10 +245,14 @@ func (l pdfLocale) sections(r *Report, zone *time.Location) []pdfSection {
 		}
 		m := d.Mangal
 		mangal := pdfBlock{Title: l.text("मंगल आकलन"), Note: l.text("Conclusion") + ": " + l.mangalConclusion(m), Headers: []string{l.text("संदर्भ"), l.text("मंगल का भाव"), l.text("संकेत")}}
+		if m.BaseClassification != "" && m.BaseClassification != m.Classification {
+			mangal.Note += "\n" + l.text("mangal.parihar.base") + ": " + l.text("mangal.guruji."+m.BaseClassification)
+		}
 		for _, p := range m.References {
 			mangal.Rows = append(mangal.Rows, []string{l.text(p.Reference), fmt.Sprint(p.House), l.yes(p.Flagged)})
 		}
 		yogas.Blocks = append(yogas.Blocks, mangal)
+		yogas.Blocks = append(yogas.Blocks, l.mangalEvidenceBlocks(m.Rules)...)
 		yogas.Blocks = append(yogas.Blocks, patterns...)
 		sections = append(sections, yogas)
 	}

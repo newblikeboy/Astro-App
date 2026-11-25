@@ -691,7 +691,7 @@ export default function KundliReport({
                 <ExpandedYogaPatterns report={report} />
                 {report.checks?.length ? (
                   <div className="placement-list">
-                    {report.checks.filter((check) => !report.details?.mangal || !check.code.startsWith("mangal-")).map((check) => {
+                    {report.checks.filter((check) => (check.matches || check.code.startsWith("mangal-")) && (!report.details?.mangal || !check.code.startsWith("mangal-"))).map((check) => {
                       const copy = checkCopy[check.code];
                       return (
                         copy && (

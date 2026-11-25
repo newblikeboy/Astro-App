@@ -1424,7 +1424,8 @@ function BirthForm({
   }, [selectedPlace, birth.place_id, language]);
   useEffect(() => {
     if (birth.place_id) {
-      setPlaces(selectedPlace ? [selectedPlace] : []);
+      setPlaces([]);
+      setOpen(false);
       setSearching(!selectedPlace);
       setSearchError("");
       return;
@@ -1489,6 +1490,7 @@ function BirthForm({
       setFold(message.includes("UTC"));
     }
   }
+  const expanded = open && !birth.place_id;
   return (
     <form className="birth-form" onSubmit={submit}>
       <div className="form-heading">
@@ -1562,14 +1564,16 @@ function BirthForm({
           )}
         </p>
       )}
-      <div ref={root} className="place-field">
+      <div ref={root} className="place-field" onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setOpen(false);
+      }}>
         <label htmlFor="birthplace">{t("जन्म स्थान")}</label>
         <div className="input-icon">
           <Globe2 size={17} />
           <input
             id="birthplace"
             role="combobox"
-            aria-expanded={open}
+            aria-expanded={expanded}
             aria-controls="place-options"
             aria-autocomplete="list"
             aria-describedby="place-help"
@@ -1577,7 +1581,7 @@ function BirthForm({
             autoComplete="off"
             placeholder={t("शहर या गाँव खोजें")}
             value={query}
-            onFocus={() => setOpen(true)}
+            onFocus={() => { if (!birth.place_id) setOpen(true); }}
             onChange={(e) => {
               setQuery(e.target.value);
               setSelectedPlace(undefined);
@@ -1599,7 +1603,7 @@ function BirthForm({
           />
           <ChevronDown size={16} />
         </div>
-        {open && (
+        {expanded && (
           <ul
             id="place-options"
             className="place-options"
@@ -1627,8 +1631,8 @@ function BirthForm({
                       setQuery(
                         language === "hi" ? p.hindi + " · " + p.name : p.name,
                       );
-                      setOpen(false);
                       document.getElementById("birthplace")?.focus();
+                      setOpen(false);
                     }}
                   >
                     <b>{language === "hi" ? p.hindi : p.name}</b>

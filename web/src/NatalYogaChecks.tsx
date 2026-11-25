@@ -2,7 +2,7 @@ import type { Report } from "./types";
 import { t } from "./i18n";
 import { hindiPlanets } from "./Chart";
 
-/** NatalYogaChecks renders saved server evidence for Kaal Sarp and basic Rajyog, with an explicit older-snapshot state. */
+/** NatalYogaChecks always shows Kaal Sarp status, while hiding absent Rajyog and missing Yogakarakas. */
 export default function NatalYogaChecks({ report }: { report: Report }) {
   const checks = report.details?.yoga_checks;
   if (!checks) return <section className="natal-yoga-checks">
@@ -28,18 +28,18 @@ export default function NatalYogaChecks({ report }: { report: Report }) {
 
 
     </section>
-    <section aria-labelledby="rajyog-heading">
+    {(raj.matches || raj.yogakarakas.length > 0) && <section aria-labelledby="rajyog-heading">
       <h3 id="rajyog-heading">{t("Rajyog · Kendra–Trikona relationships")}</h3>
-      <div className="yoga-conclusion" data-status={raj.matches ? "present" : "absent"}>
+      {raj.matches && <div className="yoga-conclusion" data-status="present">
         <span className="detail-card-label">{t("Conclusion")}</span>
         <p className="natal-yoga-status">{t(raj.matches ? "rajyog.present" : "rajyog.absent")}</p>
-      </div>
+      </div>}
 
-      <h4>{t("Yogakaraka lordship")}</h4>
-      {raj.yogakarakas.length ? <>
+      {raj.yogakarakas.length > 0 && <>
+        <h4>{t("Yogakaraka lordship")}</h4>
         {raj.yogakarakas.map((lord) => <p key={lord.planet}>{t("yogakaraka.present", { v1: t(hindiPlanets[lord.planet] || lord.planet) })}</p>)}
-      </> : <p>{t("yogakaraka.absent")}</p>}
+      </>}
       <p className="report-caption">{t("yoga.scope")}</p>
-    </section>
+    </section>}
   </div>;
 }

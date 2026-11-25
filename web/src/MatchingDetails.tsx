@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import {
   Flame,
-  Info,
   Layers3,
   Moon,
   Orbit,
@@ -16,6 +15,7 @@ import { clockMinutes } from "./time-display";
 import { followRoute, loginPath } from "./routing";
 import { mangalConclusion } from "./yoga-conclusions";
 import { mangalStatusLabels } from "./matching-display";
+import MangalEvidence from "./MangalEvidence";
 import type {
   MangalAssessment,
   MatchingPerson,
@@ -58,7 +58,7 @@ export function MatchingMangal({ result }: { result: MatchingResponse }) {
       <div className="matching-pair-summary">
         <h4>{t("Conclusion")}</h4>
         <strong>{t(mangalStatusLabels[result.mangal.status])}</strong>
-
+        <MangalEvidence rules={result.mangal.rules} />
       </div>
     </section>
   );
@@ -81,13 +81,8 @@ function MangalPerson({
       </h4>
       <p className="natal-yoga-status">{mangalConclusion(a).status}</p>
       <p>{mangalConclusion(a).meaning}</p>
-      {a.review_conditions.length > 0 && (
-        <p className="matching-strength-note">
-          <Info size={14} aria-hidden="true" />
-          {t("Benefic strength requires review")}
-        </p>
-      )}
-
+      {a.base_classification && a.base_classification !== a.classification && <p>{t("mangal.parihar.base")}: {t(`mangal.guruji.${a.base_classification}`)}</p>}
+      <MangalEvidence rules={a.rules} />
     </article>
   );
 }

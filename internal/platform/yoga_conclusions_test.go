@@ -41,7 +41,7 @@ func TestYogaConclusionsRespectAssessmentState(t *testing.T) {
 				t.Fatalf("lost cancellation distinction: %s", text)
 			}
 		}
-		for _, class := range []string{"none", "partial", "mangal"} {
+		for _, class := range []string{"none", "partial", "mangal", "cancelled"} {
 			got := l.mangalConclusion(swisseph.MangalAssessment{Classification: class})
 			if !strings.HasPrefix(got, l.text("mangal.guruji."+class)) {
 				t.Fatalf("lost Guruji classification %s: %s", class, got)

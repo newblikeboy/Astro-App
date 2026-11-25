@@ -805,11 +805,11 @@
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   border-top: 1px solid var(--match-line);
 }
-.matching-mangal-people article {
+.matching-mangal-people > article {
   min-width: 0;
   padding: 20px 25px;
 }
-.matching-mangal-people article + article {
+.matching-mangal-people > article + article {
   border-left: 1px solid var(--match-line);
 }
 .matching-mangal-people h4 {
@@ -1870,10 +1870,10 @@
   .matching-mangal-people {
     grid-template-columns: 1fr;
   }
-  .matching-mangal-people article {
+  .matching-mangal-people > article {
     padding: 18px;
   }
-  .matching-mangal-people article + article {
+  .matching-mangal-people > article + article {
     border-left: 0;
     border-top: 1px solid var(--match-line);
   }

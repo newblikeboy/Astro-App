@@ -41,7 +41,7 @@ func (l pdfLocale) mangalConclusion(m swisseph.MangalAssessment) string {
 
 // mangalReading returns the recorded assessment state without a forecast.
 func (l pdfLocale) mangalReading(m swisseph.MangalAssessment) (string, string) {
-	if m.Classification == "mangal" || m.Classification == "partial" || m.Classification == "none" {
+	if m.Classification == "mangal" || m.Classification == "partial" || m.Classification == "none" || m.Classification == "cancelled" {
 		return l.text("mangal.guruji." + m.Classification), ""
 	}
 	status := "mangal.absent"

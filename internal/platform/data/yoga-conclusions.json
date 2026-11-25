@@ -134,6 +134,15 @@
   "mangal.guruji.mangal": {"hi": "मांगलिक दोष", "en": "Manglik Dosha"},
   "mangal.guruji.partial": {"hi": "आंशिक मांगलिक", "en": "Partial Manglik"},
   "mangal.guruji.none": {"hi": "मांगलिक दोष नहीं", "en": "No Manglik Dosha"},
+  "mangal.guruji.cancelled": {"hi": "मंगल दोष भंग", "en": "Mangal Dosha cancelled"},
+  "mangal.parihar.title": {"hi": "गुरु जी के अनुसार मंगल दोष परिहार", "en": "Mangal parihar according to Guruji"},
+  "mangal.parihar.base": {"hi": "मूल स्थिति", "en": "Base placement"},
+  "mangal.parihar.basis": {"hi": "लागू होने का आधार", "en": "Condition that applies"},
+  "mangal.parihar.cancellation": {"hi": "दोष-भंग का नियम मिला", "en": "Cancellation condition met"},
+  "mangal.parihar.mitigation": {"hi": "शमन की स्थिति", "en": "Mitigating condition"},
+  "mangal.parihar.balance": {"hi": "परस्पर संतुलन", "en": "Mutual balance"},
+  "mangal.parihar.review": {"hi": "समीक्षा आवश्यक", "en": "Review required"},
+  "mangal.parihar.review-note": {"hi": "इसे अपने आप दोष-भंग नहीं माना गया है। इस नियम की शर्तों की समीक्षा आवश्यक है।", "en": "This has not been treated as an automatic cancellation. The conditions in this rule require review."},
   "mangal.present": {
     "hi": "आपकी कुण्डली में जाँचे गए दोषभंग नियमों के बाद भी मंगलदोष का संकेत बना हुआ है।",
     "en": "A Mangal Dosha indication remains in your Kundli after the checked cancellation rules."

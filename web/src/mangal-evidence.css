@@ -1,0 +1,15 @@
+.guruji-mangal-evidence { margin-top: 24px; min-width: 0; }
+.guruji-mangal-evidence > h4 { margin: 0 0 14px; }
+.guruji-mangal-evidence > article { padding: 20px; margin: 0 0 14px; border: 1px solid #e7d7c5; border-radius: 12px; background: #fffdf8; }
+.mangal-evidence-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.mangal-evidence-heading h5 { font-size: 1rem; line-height: 1.7; margin: 0; flex: 1 1 220px; }
+.mangal-evidence-state { display: inline-block; font-size: .8rem; line-height: 1.6; padding: 3px 9px; border-radius: 6px; background: #f3e6ce; color: #704213; }
+[data-effect="cancellation"] .mangal-evidence-state, [data-effect="balance"] .mangal-evidence-state { background: #e6efdf; color: #36542a; }
+.mangal-evidence-source { white-space: pre-line; line-height: 1.95; margin-top: 12px; overflow-wrap: anywhere; text-align: justify; }
+.mangal-evidence-note { font-size: .85rem; line-height: 1.7; color: #79542e; background: #fff1d8; padding: 10px 12px; border-radius: 6px; }
+.mangal-evidence-basis { font-size: .9rem; line-height: 1.8; margin-top: 12px; padding: 10px 12px; background: #f6efe3; border-radius: 6px; }
+.mangal-evidence-basis p { margin: 5px 0 0; }
+.mangal-evidence-pending { padding: 14px 18px; border: 1px dashed #d8bf9f; border-radius: 10px; }
+.mangal-evidence-pending h5 { margin: 0; font-size: .95rem; }
+.mangal-evidence-pending ul { padding-left: 20px; line-height: 1.9; font-size: .9rem; }
+@media (max-width: 480px) { .guruji-mangal-evidence > article { padding: 14px; } }

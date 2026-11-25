@@ -220,7 +220,7 @@ func (a *App) calculateMatching(ctx context.Context, in MatchingRequest) (*Match
 			"groom_timezone":     groom.Place.Zone,
 			"score_basis":        "AIFAS 2021 North Indian base Ashtakoota; no cancellation bonuses",
 			"mangal_method":      swisseph.MangalMethod,
-			"mangal_level":       "Guruji: Lagna indication is Manglik; Moon-only indication is partial; houses 1,4,7,8,12; no supplied cancellation rules",
+			"mangal_level":       "Guruji audio: Lagna indication is Manglik; Moon-only indication is partial; houses 1,4,7,8,12. Text rules 4,17,24 provide explicit cancellations; conditional or disputed passages require review. Partner balance does not erase natal findings.",
 			"clock":              "UTC via Swiss; before 1972 Swiss uses its documented UT1 convention",
 		},
 	}, nil

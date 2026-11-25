@@ -51,7 +51,7 @@ func setMangalFixture(chart *Kundali, name string, lon float64) {
 	}
 }
 
-// TestGurujiMangalAllSignsAndReferences checks every sign and every Lagna/Moon house against the recorded five-house rule.
+// TestGurujiMangalAllSignsAndReferences keeps every recorded base placement intact after the later text's separate parihar stage.
 func TestGurujiMangalAllSignsAndReferences(t *testing.T) {
 	flagged := map[int]bool{1: true, 4: true, 7: true, 8: true, 12: true}
 	for sign := 1; sign <= 12; sign++ {
@@ -81,33 +81,33 @@ func TestGurujiMangalAllSignsAndReferences(t *testing.T) {
 						count++
 					}
 				}
-				if got.Classification != class || got.Level != level || got.BaseLevel != level || got.BaseCount != count || got.ActiveCount != count || len(got.References) != 2 || got.Strength != nil || len(got.Rules) != 0 {
+				if got.BaseClassification != class || got.BaseLevel != level || got.BaseCount != count || got.ActiveCount > count || len(got.References) != 2 || got.Strength != nil {
 					t.Fatalf("%d/%d/%d: %+v", sign, lagnaHouse, moonHouse, got)
 				}
 				for i, h := range []int{lagnaHouse, moonHouse} {
 					ref := got.References[i]
-					if ref.House != h || ref.Flagged != flagged[h] || ref.Cancelled || len(ref.Exceptions) != 0 {
+					if ref.House != h || ref.Flagged != flagged[h] || ref.Cancelled && !ref.Flagged {
 						t.Fatalf("incorrect reference: %+v", ref)
 					}
 				}
-				// Venus cannot create a flag or change partial into full Manglik.
+				// Venus cannot create a base indication; rule 24 may cancel an existing one.
 				setMangalFixture(&c, "Venus", float64(sign-1)*30+14)
 				changed, _ := CalculateMangal(c)
-				if changed.Classification != got.Classification || changed.ActiveCount != got.ActiveCount {
-					t.Fatal("Venus changed Guruji assessment")
+				if changed.BaseClassification != got.BaseClassification || changed.BaseCount != got.BaseCount {
+					t.Fatal("Venus changed Guruji base assessment")
 				}
 			}
 		}
 	}
 }
 
-// TestGurujiMangalBoundariesAndPair keeps sign boundaries, partial/full precedence and pair comparisons independent of old exceptions.
+// TestGurujiMangalBoundariesAndPair keeps sign boundaries and recorded partial/full precedence distinct from text partner balance.
 func TestGurujiMangalBoundariesAndPair(t *testing.T) {
 	c := mangalFixture()
 	c.Lagna = zodiacPosition(10)
 	setMangalFixture(&c, "Moon", 10)
 	setMangalFixture(&c, "Mars", math.Nextafter(30, 0))
-	if got, e := CalculateMangal(c); e != nil || got.Classification != "mangal" {
+	if got, e := CalculateMangal(c); e != nil || got.BaseClassification != "mangal" {
 		t.Fatal("end of first house", got, e)
 	}
 	setMangalFixture(&c, "Mars", 30)
@@ -119,11 +119,11 @@ func TestGurujiMangalBoundariesAndPair(t *testing.T) {
 	partial.Lagna = zodiacPosition(100)
 	full := mangalFixture()
 	pair, e := CalculateMangalPair(full, partial)
-	if e != nil || pair.Method != MangalMethod || pair.Bride.Classification != "mangal" || pair.Groom.Classification != "partial" || pair.Status != "different_active_levels" || len(pair.Rules) != 0 {
+	if e != nil || pair.Method != MangalMethod || pair.Bride.Classification != "mangal" || pair.Groom.Classification != "partial" || pair.Status != "different_active_levels" || len(pair.Rules) != 5 {
 		t.Fatal("full and partial must differ", pair, e)
 	}
 	same, e := CalculateMangalPair(partial, partial)
-	if e != nil || same.Status != "similar_active_levels" {
+	if e != nil || same.Status != "pair_exception_found" || !same.Rules[0].Met || same.Bride.Classification != "partial" || same.Groom.Classification != "partial" {
 		t.Fatal(same, e)
 	}
 	none := partial
